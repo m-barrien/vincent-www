@@ -39,3 +39,4 @@ themes/vincent2/js/*
 public_html/*
 !mysql-data/.gitkeep
 mysql-data/*
+style.css
