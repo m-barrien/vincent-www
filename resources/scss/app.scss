@@ -1,3 +1,10 @@
+/*
+ * Theme Name: Vincent Wordpress
+ * Author: Marcelo Barrientos
+ * Description: Wordpress
+ * Version: 2.0.0
+ * Tags: bootstrap
+*/
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 @import url("https://fonts.googleapis.com/css?family=Roboto");
@@ -256,94 +263,7 @@ footer{
 		}
 	}
 }
-.flags{
-	@extend .mx-auto;
-	width: auto;
-	max-width: 230px;
-}
-.proud-to-be{
-	@extend .d-block;
-	@extend .mx-auto;
-	width: auto;
-	max-width: 100px;
-}
-.brands{
-	@extend .py-4;
-	@include make-col(12);
-	@include media-breakpoint-up(sm) {
-		padding-left: 18%;
-		padding-right: 18%;
-    }
-    @include media-breakpoint-down(sm) {
-        // Smaller than md: 768px
-        padding-left: 10%;
-		padding-right: 10%;
-    }	
-	.row{
 
-	}
-	.icon{
-		@extend .p-2;
-		@extend .px-3;
-		height: 80px;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: contain;
-		@include media-breakpoint-up(sm) {
-	        @include make-col(2);
-	    }
-	    @include media-breakpoint-down(sm) {
-	        // Smaller than md: 768px
-	        @include make-col(4);
-	    }		
-	}
-	h1{
-    	font-size: 1.5rem;
-    }
-}
-
-.sale-point{
-	@extend .px-4;
-	@include media-breakpoint-up(sm) {
-
-	    @include make-col(4);
-	    .icon{
-	    	@include make-col(12)
-	    	height: 100px;
-	    }
-	    .sale-text{
-	    	@include make-col(12)
-	    	text-align: center;
-	    }
-        
-    }
-    @include media-breakpoint-down(sm) {
-        // Smaller than md: 768px
-        @include make-col(12);
-	    .icon{
-	    	@include make-col(3)
-	    }
-	    .sale-text{
-	    	@include make-col(9)
-	    	text-align: left;
-	    	padding: 5px
-	    	
-	    }
-	}
-	.img-fluid{
-		width: 100%;
-		max-width: 100px;
-	}
-}
-.fancy-font{
-	width: 100%;
-	font-family: 'Kaushan Script', cursive;
-	font-size: 2.3rem;
-}
-#manutenciones{
-
-		@extend .text-center;
-}
 .blog-single-resumido{
 	@extend .p-3;
 	color:inherit;
@@ -401,37 +321,7 @@ article{
 		}
 	}
 }
-.nav-links{
-	@include make-row();
-	@extend .px-4;
-	width: 100%;
-	.previous{
-		@include media-breakpoint-up(sm) {
-	        @include make-col(6);
-	        text-align: left;
-	    }
-	    @include media-breakpoint-down(sm) {
-	        // Smaller than md: 768px
-	        @include make-col(12);
-	        text-align: center;
-	    }	
-	}
-	.next{
-		@include media-breakpoint-up(sm) {
-	        @include make-col(6);
-	        text-align: right;
-	    }
-	    @include media-breakpoint-down(sm) {
-	        // Smaller than md: 768px
-	        @include make-col(12);
-	        text-align: center;
-	    }
 
-	}
-	a{
-		width: 100%;
-	}
-}
 .wp-post-image{
 	@extend .img-fluid;
 }
@@ -587,66 +477,6 @@ article{
 		}
 	}
 }
-.shortcut-galeria{
-	h2{
-		@extend .text-center;
-	}
-	img{
-		width:100%;
-	}
-	.swiper-container {
-		width: 100%;
-		height: 400px;
-		margin-left: auto;
-		margin-right: auto;
-		&.gallery-thumbs {
-			height: 90px;
-			width: 100%;
-		}
-	}
-	.swiper-slide {
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position: center;
-	}
-	.gallery-thumbs {
-		height: 100px;
-		box-sizing: border-box;
-		padding: 10px 0;
-	}
-	.gallery-thumbs .swiper-slide {
-		width: 25%;
-		height: 60px;
-		opacity: 0.4;
-	}
-	.gallery-thumbs .swiper-slide-thumb-active {
-		opacity: 1;
-	}	
-}
-.oferta{
-	h2{
-		color: $vincent-blue;
-		small{
-			white-space: nowrap;
-			color: $gray-500;
-		}
-	}
-	.oferta-body{
-		p,ul{
-			font-size: $font-size-base*1.2;
-		}
-	}
-}
-.see-all-offers-btn{
-	@extend .d-block;
-	@extend .mx-auto ;
-	@extend .btn ;
-	@extend .btn-danger;
-	@extend .text-uppercase;
-	max-width: 400px;
-	font-weight: bold;
-	
-}
 
 .bottom-dock{
 	position: fixed;
@@ -726,28 +556,5 @@ article{
 		}
 		
 
-	}
-}
-#solution-blocks{
-
-}
-
-#collage-gallery{
-	.gallery-grid-img{
-		display: block;
-		margin: 2px;
-		height: 200px;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		&.s1{
-			height: 200px;
-		}
-		&.s2{
-			height: 250px;
-		}
-		&.s3{
-			height: 300px;
-		}
 	}
 }
