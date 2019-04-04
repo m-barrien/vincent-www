@@ -20,6 +20,8 @@ wp-content/
 
 node_modules/
 themes/*
+plugins/*
+!plugins/vincent-custom-types.php
 !themes/vincentcustom/
 !themes/vincent/
 !themes/vincent2/
