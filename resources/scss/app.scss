@@ -5,95 +5,96 @@
  * Version: 2.0.0
  * Tags: vincentsolar
 */
+// Variables
+@import 'variables';
 // Fonts
 @font-face{
 	font-family: AzoSans;
 	font-weight: 900;
 	font-style: italic;
-	src: url('fonts/AzoSans-BlackItalic.otf');
+	src: url('#{$fa-font-path}/AzoSans-BlackItalic.otf');
 	
 }
 @font-face{
 	font-family: AzoSans;
 	font-weight: 900;
 	font-style: normal;
-	src: url('fonts/AzoSans-Black.otf');
+	src: url('#{$fa-font-path}/AzoSans-Black.otf');
 	
 }
 @font-face{
 	font-family: AzoSans;
 	font-weight: 700;
 	font-style: normal;
-	src: url('fonts/AzoSans-BoldItalic.otf');
+	src: url('#{$fa-font-path}/AzoSans-BoldItalic.otf');
 	
 }
 @font-face{
 	font-family: AzoSans;
 	font-weight: 700;
 	font-style: italic;
-	src: url('fonts/AzoSans-Bold.otf');
+	src: url('#{$fa-font-path}/AzoSans-Bold.otf');
 	
 }
 @font-face{
 	font-family: AzoSans;
 	font-weight: 400;
 	font-style: italic;
-	src: url('fonts/AzoSans-Italic.otf');
+	src: url('#{$fa-font-path}/AzoSans-Italic.otf');
 	
 }
 @font-face{
 	font-family: AzoSans;
 	font-weight: 200;
 	font-style: italic;
-	src: url('fonts/AzoSans-LightItalic.otf');
+	src: url('#{$fa-font-path}/AzoSans-LightItalic.otf');
 	
 }
 @font-face{
 	font-family: AzoSans;
 	font-weight: 200;
 	font-style: normal;
-	src: url('fonts/AzoSans-Light.otf');
+	src: url('#{$fa-font-path}/AzoSans-Light.otf');
 	
 }
 @font-face{
 	font-family: AzoSans;
 	font-weight: 500;
 	font-style: italic;
-	src: url('fonts/AzoSans-MediumItalic.otf');
+	src: url('#{$fa-font-path}/webfonts/AzoSans-MediumItalic.otf');
 	
 }
 @font-face{
 	font-family: AzoSans;
 	font-weight: 500;
 	font-style: normal;
-	src: url('fonts/AzoSans-Medium.otf');
+	src: url('#{$fa-font-path}/AzoSans-Medium.otf');
 	
 }
 @font-face{
 	font-family: AzoSans;
 	font-weight: 400;
 	font-style: normal;
-	src: url('fonts/AzoSans-Regular.otf');
+	src: url('#{$fa-font-path}/AzoSans-Regular.otf');
 	
 }
 @font-face{
 	font-family: AzoSans;
 	font-weight: 100;
 	font-style: italic;
-	src: url('fonts/AzoSans-ThinItalic.otf');
+	src: url('#{$fa-font-path}/AzoSans-ThinItalic.otf');
 	
 }
 @font-face{
 	font-family: AzoSans;
 	font-weight: 100;
 	font-style: normal;
-	src: url('fonts/AzoSans-Thin.otf');
+	src: url('#{$fa-font-path}/AzoSans-Thin.otf');
 	
 }
 
 
-// Variables
-@import 'variables';
+
 
 // Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap"; 
