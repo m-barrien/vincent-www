@@ -87,7 +87,24 @@ get_header();
 </div>
 <div class="container">
 	<section class="main-buttons-group-mov">
-		
+		<div class="pill">
+			<a href="#">
+				<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/pills/paneles.png">
+				<p>Paneles <br> Solares</p>
+			</a>
+		</div>
+		<div class="pill">
+			<a href="#">
+				<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/pills/inversor.png">
+				<p>Inversores <br> Solares</p>
+			</a>
+		</div>
+		<div class="pill">
+			<a href="#">
+				<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/pills/kits.png"	>
+				<p>Kits <br> Solares</p>
+			</a>
+		</div>
 	</section>
 	<section class="main-buttons-group">
 		<div class="col-sm-12 col-md-4 columna ">

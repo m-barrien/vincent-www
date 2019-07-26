@@ -533,7 +533,49 @@ transition: all .2s ease-in-out;
 		}
 	}
 }
+.main-buttons-group-mov{
+	.pill{
+		display: block;
+		width: 33.33%;
+		height:auto;
+		min-height: 32vw;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;	
+		a{
+			display: block;
+			border: solid;
+			border-radius: 4px;
+			border-width: 1px;
+			margin: 5px;
+			overflow: hidden;
+			border-color: $gray-300;
+			text-decoration: none;
+			font-weight: bold;
+			color: $vincent-blue;
+			
+			background-color: white;
+			-webkit-transition: background-color 500ms ease;
+			-moz-transition: background-color 500ms ease;
+			-o-transition: background-color 500ms ease;
+			transition: background-color 500ms ease;
 
+
+			&:hover{
+				background-color: $vincent-blue;
+				border-color: $vincent-blue;
+				color: white;
+  				cursor: pointer;
+				text-decoration: none;
+			}			
+			p{
+				display: block;
+				width: 100%;
+				text-align: center;
+			}
+		}	
+	}
+}
 .flags{
 	@extend .mx-auto;
 	width: auto;
