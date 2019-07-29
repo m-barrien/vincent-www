@@ -115,9 +115,6 @@ get_header();
 						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/botonhogar.jpg">
 					</div>
 				</div>
-				<div class="">
-					<p> Solución todo en uno para su sistema solar de hogar. </p>
-				</div>
 			</a>
 		</div>
 		<div class="col-sm-12 col-md-4 columna ">
@@ -127,9 +124,6 @@ get_header();
 					<div class="w-100">
 						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/botonempresa.jpg">
 					</div>
-				</div>
-				<div class="">
-					<p> Solución de alta potencia para grandes consumidores. </p>
 				</div>			
 			</a>
 		</div>
@@ -140,9 +134,6 @@ get_header();
 					<div class="w-100">
 						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/botonmanutencion.jpg">
 					</div>
-				</div>
-				<div class="">
-					<p> Vea nuestras ofertas, proyectos llave en mano sin cobros extra. </p>
 				</div>				
 			</a>
 		</div>
