@@ -175,7 +175,11 @@ get_header();
 	<section>
 		<h1><a href="/productos"> Productos </a></h1>
 		<?php
-		$params = array('posts_per_page' => 15, 'post_type' => 'product');
+		$params = array('posts_per_page' => 15, 
+			'post_type' => 'product',
+			'product_cat'=>'paneles-solares,inversores,kits-solares',
+			'orderby' => 'rand' 
+		);
 		$wc_query = new WP_Query($params);
 		?>
 		<?php if ($wc_query->have_posts()) : ?>
