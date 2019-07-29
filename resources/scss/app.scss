@@ -476,7 +476,8 @@ transition: all .2s ease-in-out;
 			border-style: solid;
 			border-width: 1px;
 			border-color: $gray-300;
-			border-radius: 0px;
+			border-radius: 5px;
+			overflow: hidden;
 			img{
 				width: 100%;
 			}
@@ -1004,16 +1005,19 @@ article{
 		}
 	}
 	.oferta-body{
-		@extend .px-2;
+		@extend .px-3;
 		@include media-breakpoint-up(sm) {
 			p,ul{
-				font-size: $font-size-base*1.4;
+				font-size: $font-size-base*1.2;
 			}
 		}
 		@include media-breakpoint-down(sm) {
 			p,ul{
-				font-size: $font-size-base*1.2;
+				font-size: $font-size-base*1.1;
 			}
+		}
+		.productos{
+
 		}
 	}
 }
