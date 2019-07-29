@@ -88,19 +88,19 @@ get_header();
 <div class="container">
 	<section class="main-buttons-group-mov">
 		<div class="pill">
-			<a href="#">
+			<a href="/categoria/paneles-solares">
 				<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/pills/paneles.png">
 				<p>Paneles <br> Solares</p>
 			</a>
 		</div>
 		<div class="pill">
-			<a href="#">
+			<a href="/categoria/inversores">
 				<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/pills/inversor.png">
 				<p>Inversores <br> Solares</p>
 			</a>
 		</div>
 		<div class="pill">
-			<a href="#">
+			<a href="/ofertas">
 				<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/pills/kits.png"	>
 				<p>Kits <br> Solares</p>
 			</a>
@@ -109,7 +109,7 @@ get_header();
 	<section class="main-buttons-group">
 		<div class="col-sm-12 col-md-4 columna ">
 			<a class="card grow" href="/soluciones-hogar">
-				<h2>Solar para su casa</h2>
+				<h2>Energía solar hogar</h2>
 				<div class="">
 					<div class="w-100">
 						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/botonhogar.jpg">
@@ -119,7 +119,7 @@ get_header();
 		</div>
 		<div class="col-sm-12 col-md-4 columna ">
 			<a class="card grow" href="/soluciones-empresa">
-				<h2>Solar para su empresa</h2>
+				<h2>Energía solar empresas</h2>
 				<div class="">
 					<div class="w-100">
 						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/botonempresa.jpg">

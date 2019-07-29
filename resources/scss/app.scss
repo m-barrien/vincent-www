@@ -534,6 +534,9 @@ transition: all .2s ease-in-out;
 	}
 }
 .main-buttons-group-mov{
+	@include media-breakpoint-up(sm) {
+		display: none;
+	}
 	.pill{
 		display: block;
 		width: 33.33%;
@@ -581,7 +584,7 @@ transition: all .2s ease-in-out;
 	width: auto;
 	max-width: 230px;
 	@include media-breakpoint-up(sm) {
-		display: block;
+		display: none;
 	}
 	@include media-breakpoint-down(sm) {
 		display: none;
