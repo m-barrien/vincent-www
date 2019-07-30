@@ -1,7 +1,6 @@
 <section class="oferta">
 	
 	<div class="col-sm-12 col-md-10 offset-md-1">
-		<h2 class="px-2"><?php the_title() ;?> <small>Instalación incluida</small></h2>
 		<div class="row">
 				<div class="col-sm-12 col-md-6 col-lg-5">
 					<?php if ( has_post_thumbnail() ) : ?>
@@ -11,6 +10,7 @@
 					<?php endif; ?>
 				</div>
 				<div class="col-sm-12 col-md-6 col-lg-7 oferta-body">
+					<h2 class=""><?php the_title() ;?> <small>Instalación incluida</small></h2>
 					<?php 
 						$nombre_paneles_value = get_post_meta( get_the_ID(), 'nombre_paneles', true );
 						$nombre_inversor_value = get_post_meta( get_the_ID(), 'nombre_inversor', true );
