@@ -166,7 +166,38 @@ get_header();
 		</div>
 	</section>
 </div>
+<div class="container-fluid">
+	<section class="cover-swiper"><!-- ofertas -->
+		
+		<div class="swiper-container oferta-swiper d-none d-xs-none d-sm-none d-md-block">
+		    <div class="swiper-wrapper">
+		      <div class="swiper-slide">
+		      	<a href="/ofertas">
+		      		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-1.jpg">
+		      	</a>
+		      </div>
+		      <div class="swiper-slide">
+		      	<a href="/ofertas">
+		      		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-2.jpg">
+		      	</a>
+		      </div>
+		      <!--
+		      <div class="swiper-slide">
+		      	<a href="/ofertas">
+		      		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-3.jpg">
+		      	</a>
+		      </div>
+		      <div class="swiper-slide" id="soluciones">
+		      	<a href="/ofertas">
+		      		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-4.jpg">
+		      	</a>
+		      </div>
+		  		-->
+		    </div>
+		</div>
 
+	</section> <!-- ofertas -->
+</div>
 <div class="container-fluid">
 	<section>
 		<h1><a href="/productos"> Productos </a></h1>
@@ -210,38 +241,7 @@ get_header();
 		</ul>		
 	</section>
 </div>
-<div class="container-fluid">
-	<section class="cover-swiper"><!-- ofertas -->
-		
-		<div class="swiper-container oferta-swiper d-none d-xs-none d-sm-none d-md-block">
-		    <div class="swiper-wrapper">
-		      <div class="swiper-slide">
-		      	<a href="/ofertas">
-		      		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-1.jpg">
-		      	</a>
-		      </div>
-		      <div class="swiper-slide">
-		      	<a href="/ofertas">
-		      		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-2.jpg">
-		      	</a>
-		      </div>
-		      <!--
-		      <div class="swiper-slide">
-		      	<a href="/ofertas">
-		      		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-3.jpg">
-		      	</a>
-		      </div>
-		      <div class="swiper-slide" id="soluciones">
-		      	<a href="/ofertas">
-		      		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-4.jpg">
-		      	</a>
-		      </div>
-		  		-->
-		    </div>
-		</div>
 
-	</section> <!-- ofertas -->
-</div>
 
 <div class="container">
 	<section> <!-- noticias -->
