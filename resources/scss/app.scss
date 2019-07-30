@@ -458,6 +458,7 @@ transition: all .2s ease-in-out;
 	}
 	@include media-breakpoint-down(sm) {}
 	.columna{
+		@extend .py-2;
 		display: block;
 		@include media-breakpoint-up(sm) {
 			padding-left: 10px !important;

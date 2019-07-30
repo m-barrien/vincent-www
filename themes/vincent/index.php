@@ -79,11 +79,6 @@ get_header();
 		?>
 
 	</div> <!-- cover -->
-	<section><!-- SECOND TO MAIN COVERS -->
-		<div class="flags">
-			<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/flags.png">
-		</div>
-	</section><!-- SECOND TO MAIN COVERS -->
 </div>
 <div class="container">
 	<section class="main-buttons-group-mov">
@@ -107,7 +102,7 @@ get_header();
 		</div>
 	</section>
 	<section class="main-buttons-group">
-		<div class="col-sm-12 col-md-4 columna ">
+		<div class="col-xs-6 col-sm-6 col-md-4 columna ">
 			<a class="card grow" href="/soluciones-hogar">
 				<h2>Energía solar hogar</h2>
 				<div class="">
@@ -117,7 +112,7 @@ get_header();
 				</div>
 			</a>
 		</div>
-		<div class="col-sm-12 col-md-4 columna ">
+		<div class="col-xs-6 col-sm-6 col-md-4 columna ">
 			<a class="card grow" href="/soluciones-empresa">
 				<h2>Energía solar empresas</h2>
 				<div class="">
@@ -127,9 +122,39 @@ get_header();
 				</div>			
 			</a>
 		</div>
-		<div class="col-sm-12 col-md-4 columna ">
+		<div class="col-xs-6 col-sm-6 col-md-4 columna ">
+			<a class="card grow" href="/productos">
+				<h2>Productos</h2>
+				<div class="">
+					<div class="w-100">
+						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/botonproductos.jpg">
+					</div>
+				</div>				
+			</a>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-4 columna ">
 			<a class="card grow" href="/ofertas">
-				<h2>Ofertas</h2>
+				<h2>Servicio Técnico</h2>
+				<div class="">
+					<div class="w-100">
+						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/botonserviciotec.jpg">
+					</div>
+				</div>				
+			</a>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-4 columna ">
+			<a class="card grow" href="/soluciones-empresa#gallery">
+				<h2>Proyectos Empresas</h2>
+				<div class="">
+					<div class="w-100">
+						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/botonmanutencion.jpg">
+					</div>
+				</div>				
+			</a>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-4 columna ">
+			<a class="card grow" href="/soluciones-hogar#gallery">
+				<h2>Noticias</h2>
 				<div class="">
 					<div class="w-100">
 						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/botonmanutencion.jpg">
@@ -139,38 +164,7 @@ get_header();
 		</div>
 	</section>
 </div>
-<div class="container-fluid">
-	<section class="cover-swiper"><!-- ofertas -->
-		
-		<div class="swiper-container oferta-swiper d-none d-xs-none d-sm-none d-md-block">
-		    <div class="swiper-wrapper">
-		      <div class="swiper-slide">
-		      	<a href="/ofertas">
-		      		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-1.jpg">
-		      	</a>
-		      </div>
-		      <div class="swiper-slide">
-		      	<a href="/ofertas">
-		      		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-2.jpg">
-		      	</a>
-		      </div>
-		      <!--
-		      <div class="swiper-slide">
-		      	<a href="/ofertas">
-		      		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-3.jpg">
-		      	</a>
-		      </div>
-		      <div class="swiper-slide" id="soluciones">
-		      	<a href="/ofertas">
-		      		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-4.jpg">
-		      	</a>
-		      </div>
-		  		-->
-		    </div>
-		</div>
 
-	</section> <!-- ofertas -->
-</div>
 <div class="container-fluid">
 	<section>
 		<h1><a href="/productos"> Productos </a></h1>
@@ -214,6 +208,39 @@ get_header();
 		</ul>		
 	</section>
 </div>
+<div class="container-fluid">
+	<section class="cover-swiper"><!-- ofertas -->
+		
+		<div class="swiper-container oferta-swiper d-none d-xs-none d-sm-none d-md-block">
+		    <div class="swiper-wrapper">
+		      <div class="swiper-slide">
+		      	<a href="/ofertas">
+		      		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-1.jpg">
+		      	</a>
+		      </div>
+		      <div class="swiper-slide">
+		      	<a href="/ofertas">
+		      		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-2.jpg">
+		      	</a>
+		      </div>
+		      <!--
+		      <div class="swiper-slide">
+		      	<a href="/ofertas">
+		      		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-3.jpg">
+		      	</a>
+		      </div>
+		      <div class="swiper-slide" id="soluciones">
+		      	<a href="/ofertas">
+		      		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-4.jpg">
+		      	</a>
+		      </div>
+		  		-->
+		    </div>
+		</div>
+
+	</section> <!-- ofertas -->
+</div>
+
 <div class="container">
 	<section> <!-- noticias -->
 		<h1><a href="/noticias"> Noticias </a></h1>
