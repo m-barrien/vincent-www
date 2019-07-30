@@ -81,6 +81,7 @@ get_header();
 	</div> <!-- cover -->
 </div>
 <div class="container">
+	<!--
 	<section class="main-buttons-group-mov">
 		<div class="pill">
 			<a href="/categoria/paneles-solares">
@@ -101,10 +102,11 @@ get_header();
 			</a>
 		</div>
 	</section>
+	-->
 	<section class="main-buttons-group">
-		<div class="col-xs-6 col-sm-6 col-md-4 columna ">
+		<div class="columna">
 			<a class="card grow" href="/soluciones-hogar">
-				<h2>Energía solar hogar</h2>
+				<h2 class="dowrap">Energía solar <br> Hogar</h2>
 				<div class="">
 					<div class="w-100">
 						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/botonhogar.jpg">
@@ -112,9 +114,9 @@ get_header();
 				</div>
 			</a>
 		</div>
-		<div class="col-xs-6 col-sm-6 col-md-4 columna ">
+		<div class="columna">
 			<a class="card grow" href="/soluciones-empresa">
-				<h2>Energía solar empresas</h2>
+				<h2 class="dowrap">Energía solar <br> Empresas</h2>
 				<div class="">
 					<div class="w-100">
 						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/botonempresa.jpg">
@@ -122,7 +124,7 @@ get_header();
 				</div>			
 			</a>
 		</div>
-		<div class="col-xs-6 col-sm-6 col-md-4 columna ">
+		<div class="columna">
 			<a class="card grow" href="/productos">
 				<h2>Productos</h2>
 				<div class="">
@@ -132,7 +134,7 @@ get_header();
 				</div>				
 			</a>
 		</div>
-		<div class="col-xs-6 col-sm-6 col-md-4 columna ">
+		<div class="columna">
 			<a class="card grow" href="/ofertas">
 				<h2>Servicio Técnico</h2>
 				<div class="">
@@ -142,7 +144,7 @@ get_header();
 				</div>				
 			</a>
 		</div>
-		<div class="col-xs-6 col-sm-6 col-md-4 columna ">
+		<div class="columna">
 			<a class="card grow" href="/soluciones-empresa#gallery">
 				<h2>Proyectos Empresas</h2>
 				<div class="">
@@ -152,7 +154,7 @@ get_header();
 				</div>				
 			</a>
 		</div>
-		<div class="col-xs-6 col-sm-6 col-md-4 columna ">
+		<div class="columna">
 			<a class="card grow" href="/soluciones-hogar#gallery">
 				<h2>Noticias</h2>
 				<div class="">
