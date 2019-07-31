@@ -135,7 +135,7 @@ get_header();
 			</a>
 		</div>
 		<div class="columna">
-			<a class="card grow" href="/ofertas">
+			<a class="card grow" href="/servicios">
 				<h2>Servicio Técnico</h2>
 				<div class="">
 					<div class="w-100">
@@ -146,17 +146,22 @@ get_header();
 		</div>
 		<div class="columna">
 			<div id="gallery-card" class="card grow" onclick="flip()">
-				<div class="front">
-					<h2>XXXXXXX</h2>
-					<div class="w-100">
-						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/botonmanutencion.jpg">
+				<div class="">
+					<h2>Proyectos</h2>
+					<div class="">
+						<a class="d-block w-100" href="/soluciones-hogar#gallery-head">
+							<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/botonproyectos-hogar.jpg">
+						</a>
+						<a class="d-block w-100" href="/soluciones-empresa#gallery-head">
+							<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/botonproyectos-empresas.jpg">
+						</a>
 					</div>
 				</div>
 
 			</div>
 		</div>
 		<div class="columna">
-			<a class="card grow" href="/soluciones-hogar#gallery">
+			<a class="card grow" href="/noticias">
 				<h2>Noticias</h2>
 				<div class="">
 					<div class="w-100">

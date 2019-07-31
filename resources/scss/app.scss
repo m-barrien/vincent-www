@@ -450,7 +450,13 @@ transition: all .2s ease-in-out;
 }
 
  
-
+.boton-proyectos-section{
+	width: 100%;
+	height: 50%;
+	&:hover{
+		background-color: $vincent-orange;
+	}
+}
 .main-buttons-group{
 	@include media-breakpoint-up(sm) {
 		padding-left: 10%;

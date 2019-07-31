@@ -61,6 +61,7 @@
 		</div>
 		<? wp_reset_query(); ?>
 		<div class="col-xs-12 col-sm-12 col-md-12 shortcut-galeria">
+			<div id="gallery-head"></div>
 			<h2>
 				Galería Soluciones Residenciales
 			</h2>

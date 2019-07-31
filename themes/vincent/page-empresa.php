@@ -60,6 +60,7 @@
 		</div>
 
 		<div class="col-xs-12 col-sm-12 col-md-12 shortcut-galeria">
+			<div id="gallery-head"></div>
 			<h2>
 				Galería Soluciones Empresariales
 			</h2>
