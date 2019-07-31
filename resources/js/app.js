@@ -159,3 +159,7 @@ function chunkArray(myArray, chunk_size){
     
     return results;
 }
+
+function flip() {
+    $('#gallery-card').toggleClass('flipped');
+}

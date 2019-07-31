@@ -490,6 +490,7 @@ transition: all .2s ease-in-out;
 			border-color: $gray-300;
 			border-radius: 5px;
 			overflow: hidden;
+
 			img{
 				width: 100%;
 			}
@@ -503,7 +504,7 @@ transition: all .2s ease-in-out;
 				@include media-breakpoint-between(xs,sm) {
 					padding-top: $spacer * 0.8;
 					padding-bottom: $spacer * 0.8;
-					font-size: $font-size-base * 0.9;
+					font-size: $font-size-base * 1;
 					font-weight: bold;
 					br{
 						display: inline;
@@ -568,7 +569,7 @@ transition: all .2s ease-in-out;
 	display: block;
 	width: 33.33%;
 	height:auto;
-	min-height: 32vh;
+	
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;	

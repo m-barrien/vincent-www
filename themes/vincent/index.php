@@ -145,14 +145,15 @@ get_header();
 			</a>
 		</div>
 		<div class="columna">
-			<a class="card grow" href="/soluciones-empresa#gallery">
-				<h2>Proyectos Empresas</h2>
-				<div class="">
+			<div id="gallery-card" class="card grow" onclick="flip()">
+				<div class="front">
+					<h2>XXXXXXX</h2>
 					<div class="w-100">
 						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/botonmanutencion.jpg">
 					</div>
-				</div>				
-			</a>
+				</div>
+
+			</div>
 		</div>
 		<div class="columna">
 			<a class="card grow" href="/soluciones-hogar#gallery">
