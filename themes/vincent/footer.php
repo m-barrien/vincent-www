@@ -18,11 +18,6 @@
 	          ?>
 			</div>
 			<div class="col-md-4 footer-center">
-
-	            <div class="footer-contact-pill">
-	                <i class="fas fa-map-marker"></i>
-	                <p><span>Los conquistadores 1925 </span> Santiago, Chile</p>
-	            </div>
 	            <div class="footer-contact-pill">
 	                <i class="fas fa-map-marker"></i>
 	                <p><span>Av. Industrial 1198 </span> Quilpué, Chile</p>
