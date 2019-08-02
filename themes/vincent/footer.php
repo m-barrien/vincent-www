@@ -1,4 +1,28 @@
 
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#microsoftForm">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="microsoftForm" tabindex="-1" role="dialog" aria-labelledby="microsoftFormLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="microsoftFormLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <iframe width="100%" height= "480px" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=wiHU_bQEpkWgA5Jwpd0b1OSxIO-_lUVMl_LPXIGf95JUMDA1VlpFRlo1NVpWUlFBUThISTRFMFYwNC4u" frameborder= "0" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
 <footer class="container-fluid">
 		<div class="row">
 			<p class="d-block fancy-font text-center px-3"> Confianza y calidad europea a su alcance </p>
@@ -24,7 +48,7 @@
                 </div>
 	            <div class="footer-contact-pill">
 	                <i class="fas fa-map-marker"></i>
-	                <p>Oficina Operativa:<span>Av. Industrial 1198 </span> El Belloto, Chile</p>
+	                <p>Oficina Operativa y Distribucí&oacute;n:<span>Av. Industrial 1198 </span> El Belloto, Chile</p>
 	            </div>
 	            <div class="footer-contact-pill">
 	                <i class="fas fa-map-marker"></i>
