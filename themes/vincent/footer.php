@@ -35,7 +35,7 @@
 
 <!-- Modal oferta -->
 <div class="modal fade" id="modalOferta" tabindex="-1" role="dialog" aria-labelledby="modalOfertaLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl" role="document">
+  <div id="oferta-modal-dialog" class="modal-dialog modal-xl" role="document">
     <div class="modal-content">
 		<div class="modal-oferta-body">
 	    	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
