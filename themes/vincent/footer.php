@@ -1,15 +1,57 @@
 
-<!-- Modal -->
+<!-- Modal contacto -->
 <div class="modal fade" id="modalContacto" tabindex="-1" role="dialog" aria-labelledby="modalContactoLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
-    	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        	<span aria-hidden="true">&times;</span>
-        </button>
-        Contactenos
+    	<div class="modal-header">
+    		Uno de nuestros propios técnicos especialistas lo contactará.
+	    	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	        	<span aria-hidden="true">&times;</span>
+	        </button>
+    	</div>
+		<div class="modal-contacto-body">
+			<img class="d-block img-fluid w-100"
+				 src="<?php echo get_template_directory_uri() ?>/image/snippets/solar-pact.png"
+				 alt="Venta de paneles solares kit placas solares kit"
+        	>
+        	<div class="button-container">
+				<a href="tel:+322948569">
+					<h4>Llamar</h4>
+					
+					<i class="fas fa-phone"></i>
+					+(56) 32 2948569
+				</a>
+				<a href="mailto:info@vincentsolar.com">
+					<h4>Escribanos</h4>
+					
+					<i class="fas fa-envelope"></i>
+					info@vincentsolar.com
+				</a>
+        	</div>
+		</div>
     </div>
   </div>
-</div>
+</div><!-- Modal contacto -->
+
+<!-- Modal oferta -->
+<div class="modal fade" id="modalOferta" tabindex="-1" role="dialog" aria-labelledby="modalOfertaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+		<div class="modal-oferta-body">
+	    	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	        	<span aria-hidden="true">&times;</span>
+	        </button>
+			<a class="d-block w-100" href="/ofertas">
+			        <img class="d-block img-fluid w-100"
+			        	 src="<?php echo get_template_directory_uri() ?>/image/banners/wide_general.jpg"
+			        	 alt="Venta de paneles solares kit placas solares kit"
+			        	 >    
+			</a>
+		</div>
+    </div>
+  </div>
+</div><!-- Modal oferta -->
+
 <footer class="container-fluid">
 		<div class="row">
 			<p class="d-block fancy-font text-center px-3"> Confianza y calidad europea a su alcance </p>
@@ -126,7 +168,7 @@
 		<img src="<?php echo get_template_directory_uri() ?>/image/snippets/it_line.png">
 	</div>
 	<div class="dock-button d-none d-xs-none d-sm-none d-md-block">
-		<a data-toggle="modal" data-target="#modalContacto">
+		<a data-toggle="modal" data-target="#modalOferta">
 			Contactenos&nbsp;<i class="fas fa-envelope"></i>
 		</a>
 		<img src="<?php echo get_template_directory_uri() ?>/image/snippets/it_line.png">

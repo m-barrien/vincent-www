@@ -69,7 +69,7 @@ get_header();
 				$image = null;
 					?>
 		      		<a class=" d-block d-md-none" href="<?php echo get_post_permalink(); ?>">
-		      		<img class="img-fluid w-100" src="<?php echo the_post_thumbnail_url(); ?>">
+		      		<img class="img-fluid w-100" alt="kit solar chile paneles solares para casas" src="<?php echo the_post_thumbnail_url(); ?>">
 		      		</a>
 					<?php
 
@@ -80,6 +80,18 @@ get_header();
 
 	</div> <!-- cover -->
 </div>
+
+<div class="container-fluid">
+	<section><!-- cover a ofertas -->
+		<a class="d-block w-100" href="/ofertas">
+		        <img class="d-block img-fluid w-100"
+		        	 src="<?php echo get_template_directory_uri() ?>/image/banners/wide_general.jpg"
+		        	 alt="Venta de paneles solares kit placas solares kit"
+		        	 >    
+		</a>
+	</section><!-- cover a ofertas -->
+</div>
+
 <div class="container">
 	<!--
 	<section class="main-buttons-group-mov">
@@ -172,38 +184,7 @@ get_header();
 		</div>
 	</section>
 </div>
-<div class="container-fluid">
-	<section class="cover-swiper"><!-- ofertas -->
-		
-		<div class="swiper-container oferta-swiper d-none d-xs-none d-sm-none d-md-block">
-		    <div class="swiper-wrapper">
-		      <div class="swiper-slide">
-		      	<a href="/ofertas">
-		      		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-1.jpg">
-		      	</a>
-		      </div>
-		      <div class="swiper-slide">
-		      	<a href="/ofertas">
-		      		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-2.jpg">
-		      	</a>
-		      </div>
-		      <!--
-		      <div class="swiper-slide">
-		      	<a href="/ofertas">
-		      		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-3.jpg">
-		      	</a>
-		      </div>
-		      <div class="swiper-slide" id="soluciones">
-		      	<a href="/ofertas">
-		      		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-4.jpg">
-		      	</a>
-		      </div>
-		  		-->
-		    </div>
-		</div>
 
-	</section> <!-- ofertas -->
-</div>
 <div class="container-fluid">
 	<section>
 		<h1><a href="/productos"> Productos </a></h1>
@@ -266,10 +247,12 @@ get_header();
 </div>
 <div class="container-fluid">
 	<section><!-- productos con sello -->
-		<h1>Soluciones Con Sello</h1>			
-		<div class="w-100">
-		        <img class="d-block img-fluid w-100" src="<?php echo get_template_directory_uri() ?>/image/banners/consello.jpg">    
-		</div>
+		<a class="d-block w-100" href="/soluciones-hogar#gallery-head">
+			<h1>Soluciones Con Sello</h1>			
+			<div class="w-100">
+			        <img class="d-block img-fluid w-100" src="<?php echo get_template_directory_uri() ?>/image/banners/consello.jpg">    
+			</div>
+		</a>
 	</section><!-- productos con sello -->
 </div>
 
