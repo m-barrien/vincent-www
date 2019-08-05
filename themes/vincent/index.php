@@ -81,7 +81,7 @@ get_header();
 	</div> <!-- cover -->
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid d-none d-xs-none d-sm-none d-md-block">
 	<section><!-- cover a ofertas -->
 		<a class="d-block w-100" href="/ofertas">
 		        <img class="d-block img-fluid w-100"
