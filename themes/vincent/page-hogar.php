@@ -35,7 +35,7 @@
 			$image_thumb = wp_get_attachment_image_src( get_the_ID(), $size="medium" ); 
 				?>
 				<script type="text/javascript">
-					photo_arr.push( { "full":"<?php echo $image[0]; ?>", "thumb" :"<?php echo $image_thumb[0]; ?>" });
+					photo_arr.push( { "full":"<?php echo $image[0]; ?>", "thumb" :"<?php echo $image_thumb[0]; ?>" , "title":"<?php echo get_the_title(); ?>"});
 				</script>								
 				<?php
 
@@ -75,6 +75,7 @@
 		$(document).ready(function () {
 			$(".gallery-grid-img").click(function(){
 				$("#selectedImg").attr("src",$(this).attr("data-link"));
+				$("#pic-title").text($(this).attr("data-title"));
 				$("#dimScreen").fadeIn();
 			});
 
@@ -96,7 +97,7 @@
 					<img id="selectedImg" class="img-fluid" src="">
 				</div>
 				<div id="imageDescription" class="col-sm-12 col-md-4" >
-					<h2>Proyecto</h2>
+					<h2 id="pic-title">Proyecto</h2>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
