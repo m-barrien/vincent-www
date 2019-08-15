@@ -12,3 +12,6 @@ js:
 	npm run bundle-js
 	npm run minify
 	make copy
+perm:
+	sudo chown -R www-data:www-data ./mysql-data/
+	sudo chown -R marcelo:marcelo ./public_html
