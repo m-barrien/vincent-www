@@ -4,34 +4,22 @@ $header-height : 100px ;
 
 $header-top-margin: 16px;
 
-$grid-breakpoints: (
-  xs: 0,
-  sm: 500px,
-  md: 900px,
-  lg: 1400px,
-  xl: 1900px
-) ;
-
-$container-max-widths: (
-  sm: 540px,
-  md: 1000px,
-  lg: 1100px,
-  xl: 1400px
-);
 
 // Body
 $body-bg: #fff;
-$dark-bg: #c80606;
-$dark-bg-high: #ff0000;
+$dark-bg: #aaa;
+$dark-bg-high: #ddd;
 
 // Typography
-$font-family-sans-serif: "Nunito", sans-serif;
+$font-family-sans-serif: "Pragmatica Condensed", sans-serif;
 $font-size-base: 0.8rem;
 $line-height-base: 1.6;
 
 // Colors
 $vincent-blue: #262262;
 $vincent-orange: #e94e1b;
+$text-black: #222;
+$text-white: #fff;
 $blue: #3490dc;
 $indigo: #6574cd;
 $purple: #9561e2;
