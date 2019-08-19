@@ -22,11 +22,11 @@ var swiper = new Swiper('.swiper-container', {
         },
         768: {
           slidesPerView: 2,
-          spaceBetween: 30,
+          spaceBetween: 10,
         },
         640: {
           slidesPerView: 1,
-          spaceBetween: 20,
+          spaceBetween: 10,
         },
         320: {
           slidesPerView: 1,

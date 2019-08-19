@@ -7,6 +7,7 @@ get_header();
 	    <div class="swiper-wrapper">
 	      <div class="swiper-slide">
 	      	<div class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/1.jpg">
+		      	<div class="bar"></div>
 		      	<h1>
 		      		¿Quiere ahorrar con energ&iacute;a solar?
 		      	</h1>
@@ -19,6 +20,7 @@ get_header();
 	      </div>
 	      <div class="swiper-slide">
 	      	<div class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/2.jpg">
+		      	<div class="bar"></div>
 		      	<h1>
 		      		¿Grandes sistemas fotovoltaicos para la empresa?
 		      	</h1>
@@ -33,6 +35,7 @@ get_header();
 	      </div>
 	      <div class="swiper-slide">
 	      	<div class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/3.jpg">
+		      	<div class="bar"></div>
 		      	<h1>
 		      		¿Quiere aprovechar al m&aacute;ximo su sistema fotovoltaico?
 		      	</h1>
@@ -49,5 +52,12 @@ get_header();
 	</div>	
 
 </div>
-
+<div class="container-fluid">
+	<section>
+		<div class="col-md-6">
+			<h1>¿Por qu&eacute; elegirnos?</h1>
+			<p>Queremos estar a su lado incluso después de instalar el sistema fotovoltaico y durante el tiempo que desee. Su objetivo de independencia energética es nuestro.</p>
+		</div>
+	</section>
+</div>	
 <?php get_footer(); ?>
