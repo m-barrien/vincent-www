@@ -92,6 +92,46 @@ header{
 	max-width: $max-width;
 	margin: 0 auto;
 	z-index: 9999;
+	.flex-container{
+		.logo{
+			max-width: 240px !important;
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+		nav{
+			ul{
+				li{
+					display: inline;
+					a{
+						font-size: 16px;
+						color: $white;
+						text-transform: uppercase;
+						text-decoration: none;
+						margin: 0 0.4vw;
+						font-weight: bold;						
+						&:hover{
+							color: $white;
+						}
+					}
+				}
+			}
+		}
+		.secondary-nav{
+			ul{
+				li{
+					display: inline;
+					a{
+						color: $white;
+						&:hover{
+							color: $white;
+						}
+					}
+				}
+			}			
+		}
+	}
 }
 .flex-container{
 	display: -webkit-box; 
@@ -109,6 +149,13 @@ header{
 	-moz-box-pack: center; 
 	-ms-flex-pack: center; 
 	justify-content: center;
+}
+.space-between {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 .site-cover{
 	width: 100vw;
