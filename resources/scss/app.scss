@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'Pragmatica Condensed';
-    src: url($fa-font-path+'/pragmatica-condensed.ttf') format('truetype');
+    src: url($fa-font-path+'/Pragmatica Condensed Condensed.ttf') format('truetype');
 }
 
 // Bootstrap
@@ -109,4 +109,12 @@ header{
 	-moz-box-pack: center; 
 	-ms-flex-pack: center; 
 	justify-content: center;
+}
+.site-cover{
+	width: 100vw;
+	height: 500px;
+	background-image: url('https://via.placeholder.com/1920x800');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }

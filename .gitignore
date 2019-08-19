@@ -22,13 +22,20 @@ node_modules/
 themes/*
 !themes/vincentcustom/
 !themes/vincent/
+!themes/vincent2/
+!themes/vincent/
+!themes/vincent2/
 !themes/index.php
 themes/vincentcustom/css/*
 themes/vincent/css/*
+themes/vincent2/css/*
 themes/vincent/js/*
+themes/vincent2/js/*
 !themes/vincentcustom/css/.gitkeep
 !themes/vincent/css/.gitkeep
+!themes/vincent2/css/.gitkeep
 !themes/vincent/js/.gitkeep
+!themes/vincent2/js/.gitkeep
 
 !public_html/.gitkeep
 public_html/*
