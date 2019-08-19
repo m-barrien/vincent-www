@@ -100,4 +100,10 @@ get_header();
 		</div>
 	</section>
 </div>	
+<div class="container-fluid">
+	<section id="gmap">
+		<iframe src="https://www.google.com/maps/d/u/1/embed?mid=1esJ8hm0NRIbOCvnfSud4YkPrvegNzPl8" width="105%" height="500"></iframe>
+		
+	</section>
+</div>
 <?php get_footer(); ?>
