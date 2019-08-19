@@ -9,9 +9,11 @@ $max-width: 1920px;
 $body-bg: #fff;
 $dark-bg: #aaa;
 $dark-bg-high: #ddd;
+$gray-overlay: rgba(0,0,0,0.5);
+$white-overlay: rgba(255,255,255,0.3);
 
 // Typography
-$font-family-sans-serif: "Pragmatica Condensed", sans-serif;
+$font-family-sans-serif: "Roboto", sans-serif;
 $font-size-base: 0.8rem;
 $line-height-base: 1.6;
 
@@ -31,6 +33,9 @@ $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
 
+$text-light-gray: #ddd;
+$primary: $vincent-blue;
+$secondary: $vincent-orange;
 
 $zindex-dropdown:                   1000;
 $zindex-sticky:                     1020;

@@ -7,9 +7,46 @@ var photo_arr = [];
 
 
 $(document).ready(function () {
+var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 0,
+      // init: false,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        }
+      }
+    });
+
+$('.swiper-slide').mouseenter(
+  function(){
+    var bg_link = "url('" + $(this).find( '.cover-slide' ).attr("data-bg-im") + "')";
+    $( this ).find( '.cover-slide > .hidden-desc' ).css("height","200px");
+    $('.site-cover').css("background-image",bg_link);
+
+  }).mouseleave(
+  function (){
+    $( this ).find( '.cover-slide > .hidden-desc' ).css("height","0px");
+  });
 
 });
-
 if(photo_arr.length >0 ){
   var chunk = Math.floor( photo_arr.length / 4 );
   var bundles = chunkArray(photo_arr,chunk);
