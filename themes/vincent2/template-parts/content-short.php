@@ -3,6 +3,7 @@
 		<div class="noticia-body-wrapper">
 			<div class="text-container">
 				<h2><?php the_title() ;?></h2>
+				<button> Leer más </button>
 			</div>
 			<?php if ( has_post_thumbnail() ) : ?>
 				<div class="image-container">

@@ -533,7 +533,7 @@ header{
 		@include media-breakpoint-down(sm) {
 			@include make-col(12);  
 		}	
-		@extend .mb-3;	
+		@extend .mb-2;	
 		.noticia-card{
 			display: block;
 			background-color: $white;
@@ -587,6 +587,38 @@ header{
 					@include media-breakpoint-down(sm) {
 						@include make-col(12);  
 					}	
+					h2{
+						font-weight: 900;
+						font-size: 24px;
+						display: block;
+						line-height: 32px;		
+					}
+					button{
+						font-weight: bold;
+						font-size: 15px;
+						color: $text-black;
+						border: 2px solid $vincent-orange;
+						-webkit-transition: all .4s;
+						-moz-transition: all .4s;
+						-o-transition: all .4s;
+						transition: all .4s;
+						cursor: pointer;
+						-webkit-border-radius: 50px;
+						-moz-border-radius: 50px;
+						border-radius: 50px;
+						padding: 5px 20px;
+						display: inline-block;
+						text-transform: none;			
+						&:hover{
+							-webkit-transition: all .4s;
+							-moz-transition: all .4s;
+							-o-transition: all .4s;
+							transition: all .4s;
+							background-color: $vincent-orange;
+							color: $white;
+							text-decoration: none;							
+						}			
+					}			
 				}
 				.image-container{
 					@include make-col-ready();
