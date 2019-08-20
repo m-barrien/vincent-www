@@ -230,8 +230,6 @@ get_header();
 	</section>
 </div>
 <div class="container-fluid">
-	<section id="generacion">
-
 <?php
 $datetime1 = new DateTime('2014-01-01');
 $datetime2 = new DateTime('now');
@@ -240,8 +238,12 @@ $elapsed_secs = $interval->days*86400 + $interval->h*3600 + $interval->i*60;
 $factor_generacion=200.0*1750.0*(1.0/(365*24*60*60*365*24*60*59.9));
 $factor_co2=409*$factor_generacion;
 $co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_secs*$elapsed_secs);
-echo $co2_per_sec;
 ?>
+	<section id="generacion" style="background-image:url('<?php echo get_template_directory_uri() ?>/image/covers/co2-min.png')">
+		<div class="col-sm-12">
+			<h1>Reducción de CO2</h1>
+			<p>Gracias a los sitemas fotovoltaicos instalados por nosotros.</p>
+		</div>
 		
 	</section>
 </div>

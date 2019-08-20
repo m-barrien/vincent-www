@@ -480,3 +480,21 @@ header{
 	    }
 	}
 }
+
+#generacion{
+	padding-top: $section-padding-top/2;
+	padding-bottom: $section-padding-bottom;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	h1{
+		font-size: 48px;
+		text-align: center;
+	}
+	p{
+		font-size: 22px;
+		text-align: center;
+		line-height: 1.5;
+		color: #6b7c93;
+	}
+}
