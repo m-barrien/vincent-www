@@ -19,6 +19,7 @@ $line-height-base: 1.6;
 
 // Colors
 $vincent-blue: #262262;
+$vincent-blue-alpha: #26226244;
 $vincent-orange: #e94e1b;
 $text-black: #222;
 $text-white: #fff;
@@ -36,6 +37,9 @@ $cyan: #6cb2eb;
 $text-light-gray: #ddd;
 $primary: $vincent-blue;
 $secondary: $vincent-orange;
+
+$section-padding-top:115px;
+$section-padding-bottom:85px;
 
 $zindex-dropdown:                   1000;
 $zindex-sticky:                     1020;

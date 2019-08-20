@@ -3,7 +3,7 @@ get_header();
 ?>
 <div class="site-cover">
 
-	<div class="swiper-container">
+	<div class="swiper-container swiper-cover">
 	    <div class="swiper-wrapper">
 	      <div class="swiper-slide">
 	      	<div class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/1.jpg">
@@ -100,6 +100,127 @@ get_header();
 		</div>
 	</section>
 </div>	
+<div class="container-fluid">
+	<section id="how-we-work">
+		<div class="col-sm-12">
+			<h1>Cómo trabajamos...</h1>
+			<p>Estamos constantemente proyectados hacia el mañana.<br> Trabajamos todos los días pensando en su futuro, tal como lo hace con las personas que ama.</p>
+		</div>
+		<div class="col-sm-12">
+			<section class="cloud-container" style="background-image:url('<?php echo get_template_directory_uri() ?>/image/covers/cloud-bg.png')">
+				<div class="swiper-container swiper-how-we-work">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="how-we-work-slide">
+								<div class="img-container">
+									<div class="img-wrapper">
+										<img src="https://via.placeholder.com/500'">
+									</div>
+								</div>
+								<div class="text-container">
+									<div class="bar-container">
+										<div class="bar"></div>
+										<span class="bar-number">1</span>
+									</div>
+									<h1>Inspección</h1>
+									<p>Llevamos a cabo una inspección técnica cuidadosa de su hogar o su empresa, con el fin de extraer elementos de evaluación y juicio.</p>
+								</div>
+							</div>	
+						</div>
+						<div class="swiper-slide">
+							<div class="how-we-work-slide">
+								<div class="img-container">
+									<div class="img-wrapper">
+										<img src="https://via.placeholder.com/500'">
+									</div>
+								</div>
+								<div class="text-container">
+									<div class="bar-container">
+										<div class="bar"></div>
+										<span class="bar-number">2</span>
+									</div>
+									<h1>Acuerdo</h1>
+									<p>Juntos elegimos la mejor solución para su propiedad y nos encargamos de todos los trámites necesarios para iniciar el procedimiento.</p>
+								</div>
+							</div>	
+						</div>
+						<div class="swiper-slide">
+							<div class="how-we-work-slide">
+								<div class="img-container">
+									<div class="img-wrapper">
+										<img src="https://via.placeholder.com/500'">
+									</div>
+								</div>
+								<div class="text-container">
+									<div class="bar-container">
+										<div class="bar"></div>
+										<span class="bar-number">3</span>
+									</div>
+									<h1>Instalación</h1>
+									<p>Diseñamos e instalamos el sistema de producción de energía limpia que es adecuado para usted, para ello es nuestro equipo de instaladores especializados.</p>
+								</div>
+							</div>	
+						</div>
+						<div class="swiper-slide">
+							<div class="how-we-work-slide">
+								<div class="img-container">
+									<div class="img-wrapper">
+										<img src="https://via.placeholder.com/500'">
+									</div>
+								</div>
+								<div class="text-container">
+									<div class="bar-container">
+										<div class="bar"></div>
+										<span class="bar-number">4</span>
+									</div>
+									<h1>Activación</h1>
+									<p>Nos aseguramos de que la conexión al suministro de electricidad sea correcta para poder contar la producción de su energía.</p>
+								</div>
+							</div>	
+						</div>
+						<div class="swiper-slide">
+							<div class="how-we-work-slide">
+								<div class="img-container">
+									<div class="img-wrapper">
+										<img src="https://via.placeholder.com/500'">
+									</div>
+								</div>
+								<div class="text-container">
+									<div class="bar-container">
+										<div class="bar"></div>
+										<span class="bar-number">5</span>
+									</div>
+									<h1>Monitoreo</h1>
+									<p>Monitoreamos constantemente sus resultados, porque queremos saber cómo estar tranquilos y poder mostrarle los ahorros reales a lo largo del tiempo.</p>
+								</div>
+							</div>	
+						</div>
+						<div class="swiper-slide">
+							<div class="how-we-work-slide">
+								<div class="img-container">
+									<div class="img-wrapper">
+										<img src="https://via.placeholder.com/500'">
+									</div>
+								</div>
+								<div class="text-container">
+									<div class="bar-container">
+										<div class="bar"></div>
+										<span class="bar-number">6</span>
+									</div>
+									<h1>También estamos después!</h1>
+									<p>Cada tres meses tendrá un informe gratuito que resume los resultados obtenidos y los que obtendrá en el primer año de vida de la planta.</p>
+								</div>
+							</div>	
+						</div>
+
+					</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+				</div>
+			</section>
+		</div>
+	</section>
+</div>
 <div class="container-fluid">
 	<section id="gmap">
 		<iframe src="https://www.google.com/maps/d/u/1/embed?mid=1esJ8hm0NRIbOCvnfSud4YkPrvegNzPl8" width="105%" height="500"></iframe>

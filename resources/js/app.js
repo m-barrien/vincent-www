@@ -7,7 +7,7 @@ var photo_arr = [];
 
 
 $(document).ready(function () {
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.swiper-cover', {
       slidesPerView: 3,
       spaceBetween: 0,
       // init: false,
@@ -34,6 +34,7 @@ var swiper = new Swiper('.swiper-container', {
         }
       }
     });
+var swiper = new Swiper('.swiper-how-we-work');
 
 $('.swiper-slide').mouseenter(
   function(){
