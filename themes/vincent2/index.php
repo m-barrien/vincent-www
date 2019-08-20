@@ -229,4 +229,20 @@ get_header();
 		
 	</section>
 </div>
+<div class="container-fluid">
+	<section id="generacion">
+
+<?php
+$datetime1 = new DateTime('2014-01-01');
+$datetime2 = new DateTime('now');
+$interval = $datetime1->diff($datetime2);
+$elapsed_secs = $interval->days*86400 + $interval->h*3600 + $interval->i*60;
+$factor_generacion=200.0*1750.0*(1.0/(365*24*60*60*365*24*60*59.9));
+$factor_co2=409*$factor_generacion;
+$co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_secs*$elapsed_secs);
+echo $co2_per_sec;
+?>
+		
+	</section>
+</div>
 <?php get_footer(); ?>
