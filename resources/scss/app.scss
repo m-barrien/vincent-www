@@ -637,3 +637,28 @@ header{
 		}
 	}
 }
+
+#contacto-footer{
+	padding-top: $section-padding-top;
+	padding-bottom: $section-padding-bottom;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 500px;
+	h1{
+		color: $white;
+		text-align: center;
+	}
+	label{
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $white;
+		font-size: 14px;		
+	}
+}
+
+form{
+	.form-control{
+		height: calc(2.6em + .75rem + 2px);
+	}
+}
