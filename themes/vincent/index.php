@@ -233,7 +233,7 @@ get_header();
 <div class="container">
 	<section> <!-- noticias -->
 		<h1><a href="/noticias"> Noticias </a></h1>
-		<?php $the_query = new WP_Query( 'posts_per_page=3' ); ?>
+		<?php $the_query = new WP_Query( 'posts_per_page=5' ); ?>
 		 
 		<?php while ($the_query -> have_posts()) : $the_query -> the_post(); 
 		 

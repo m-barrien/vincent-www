@@ -244,7 +244,29 @@ $co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_sec
 			<h1>Reducción de CO2</h1>
 			<p>Gracias a los sitemas fotovoltaicos instalados por nosotros.</p>
 		</div>
-		
+		<div class="numbers">
+			<?php echo $elapsed_secs*$elapsed_secs*$factor_co2; ?> gr co2 <br>
+			<?php echo $elapsed_secs*$elapsed_secs*$factor_generacion; ?> kwh
+		</div>
+	</section>
+</div>
+<div class="container-fluid">
+	<section class="noticias">
+		<div class="ultimas-titulo">
+			<h4>Manténgase al día con las noticias de Vincent Solar</h4>
+			<h1>Últimas noticias</h1>
+		</div>
+		<?php $the_query = new WP_Query( 'posts_per_page=5' ); ?>
+		 
+		<?php while ($the_query -> have_posts()) : $the_query -> the_post(); 
+		 	
+			get_template_part( 'template-parts/content-short', get_post_format() );
+		 
+			endwhile;
+			wp_reset_postdata();
+			wp_reset_query();
+		?>
+
 	</section>
 </div>
 <?php get_footer(); ?>
