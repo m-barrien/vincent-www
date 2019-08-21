@@ -8,7 +8,7 @@ get_header();
 	      <div class="swiper-slide">
 	      	<div class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/1.jpg">
 		      	<div class="bar"></div>
-		      	<h1>
+		      	<h1 class="shrink">
 		      		¿Quiere ahorrar con energ&iacute;a solar?
 		      	</h1>
 	      		<div class="hidden-desc">
@@ -21,7 +21,7 @@ get_header();
 	      <div class="swiper-slide">
 	      	<div class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/2.jpg">
 		      	<div class="bar"></div>
-		      	<h1>
+		      	<h1 class="shrink">
 		      		¿Grandes sistemas fotovoltaicos para la empresa?
 		      	</h1>
 	      		<div class="hidden-desc">
@@ -36,7 +36,7 @@ get_header();
 	      <div class="swiper-slide">
 	      	<div class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/3.jpg">
 		      	<div class="bar"></div>
-		      	<h1>
+		      	<h1 class="shrink">
 		      		¿Quiere aprovechar al m&aacute;ximo su sistema fotovoltaico?
 		      	</h1>
 		      	<div class="hidden-desc">

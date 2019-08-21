@@ -186,7 +186,7 @@
 		<div class="subscribe-container">
 			<div class="subscribe-body">
 			<div class="subscribe-wrapper">
-			    <h1 class="title">Suscríbase a nuestro boletín</h1>
+			    <h1 class="shrink">Suscríbase a nuestro boletín</h1>
 				<form>
 				  <div class="form-group">
 				    <input type="email" class="form-control" id="ingresarCorreo" aria-describedby="emailHelp" placeholder="Ingresar Correo">

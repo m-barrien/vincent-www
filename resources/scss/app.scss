@@ -33,13 +33,19 @@ section {
 h1{
 	font-weight: 900;
 	@include media-breakpoint-between(lg,xl) {
-		font-size: $font-size-base*2.4;
+		font-size: 48px;
+		&.shrink{
+			font-size: 42px;
+		}
 	}
 	@include media-breakpoint-between(md,lg) {
-		font-size: $font-size-base*1.45;
+		font-size: 48px;
+		&.shrink{
+			font-size: 42px;
+		}		
 	}
 	@include media-breakpoint-down(sm) {
-		font-size: $font-size-base*1.4;	        
+		font-size: $font-size-base*2;	        
 	}
 }
 
@@ -338,6 +344,7 @@ header{
 					color: white;
 					margin-left: -6px;
 					h2{
+						font-size: 14px;
 						@include media-breakpoint-up(sm) {
 							display: inline;
 						}
@@ -363,7 +370,6 @@ header{
 	background-repeat: no-repeat;
 	background-size: cover;
 	h1{
-		font-size: 48px;
 
 	}
 	p{
@@ -421,7 +427,6 @@ header{
 	padding-top: $section-padding-top/2;
 	padding-bottom: $section-padding-bottom;
 	h1{
-		font-size: 48px;
 		text-align: center;
 	}
 	p{
@@ -582,7 +587,6 @@ header{
 	background-size: cover;
 	min-height: 500px;
 	h1{
-		font-size: 48px;
 		text-align: center;
 	}
 	p{
@@ -739,7 +743,6 @@ header{
 	background-size: cover;
 	min-height: 500px;
 	h1{
-		font-size: 48px;
 		color: $white;
 		font-weight: 900;
 		text-align: center;
