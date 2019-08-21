@@ -184,7 +184,18 @@
 			</div>
 		</div>
 		<div class="subscribe-container">
-			hola mundo
+			<div class="subscribe-body">
+			<div class="subscribe-wrapper">
+			    <h1 class="title">Suscríbase a nuestro boletín</h1>
+				<form>
+				  <div class="form-group">
+				    <input type="email" class="form-control" id="ingresarCorreo" aria-describedby="emailHelp" placeholder="Ingresar Correo">
+				    <small id="emailHelp" class="form-text">Nunca compartiremos tu información personal.</small>
+				  </div>
+				  <button type="submit" class="btn btn-primary">Suscribirme</button>
+				</form>
+			</div>
+			</div>
 		</div>
 	</section>
 </footer>

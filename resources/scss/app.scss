@@ -753,10 +753,22 @@ footer{
 			}
 			@include media-breakpoint-down(sm) {
 				@include make-col(12);  
+				padding-top:20px;
 			}		
 			color: #666;
 			font-size: 14px;
 			line-height: 20px;
+			.social{
+				a{
+					i{
+						margin-right: 5px;
+					}
+					display: inline;
+					color: $text-black;
+					font-size: 17px;
+					margin-right: 10px;
+				}
+			}
 		}
 		.partners-container{
 			@include make-col-ready();
@@ -768,12 +780,14 @@ footer{
 			}
 			@include media-breakpoint-down(sm) {
 				@include make-col(12);  
+				padding-top:20px;
 			}
 			.row{
 				.icon{
 					@include make-col-ready();
 					@include make-col(12);
 					min-height: 10px;
+					padding-right: 30%;
 				}
 			}
 		}
@@ -787,6 +801,35 @@ footer{
 			}
 			@include media-breakpoint-down(sm) {
 				@include make-col(12);  
+				padding-top:20px;
+			}
+			.subscribe-body{
+				background-color: $orange;
+				border-radius: 15px;
+				.subscribe-wrapper{
+					padding: 15px;
+					color: $white;
+					.title{
+						color: $white;
+					}	
+					form{
+						button{
+							font-weight: bold;
+							border: none;
+							-webkit-box-shadow: none;
+							-moz-box-shadow: none;
+							box-shadow: none;
+							padding: 7px 34px;
+							font-size: 18px;
+							-webkit-border-radius: 50px;
+							-moz-border-radius: 50px;
+							border-radius: 50px;							
+						}
+						small{
+							color: $white;
+						}
+					}
+				}
 			}
 		}
 
