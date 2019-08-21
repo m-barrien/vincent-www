@@ -18,6 +18,7 @@
 @import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
 @import '../../node_modules/@fortawesome/fontawesome-free/scss/solid';
 @import '../../node_modules/@fortawesome/fontawesome-free/scss/regular';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/brands';
 
 //swiper
 @import "../../node_modules/swiper/dist/css/swiper"; 
@@ -187,6 +188,15 @@ header{
 	margin-left: 10px;
 	margin-right: auto;
 	margin-bottom: 20px;
+}
+.ft-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 5px;
+    line-height: 20px;
+    font-family: pragmatica-condensed,sans-serif;
+    color: #6b7c93;
 }
 .site-cover{
 	width: 100vw;
@@ -730,6 +740,55 @@ footer{
 		}
 	}
 	.footer-down{
-		
+		border-top: 1px solid #ddd;
+		margin-top: 45px;
+		padding-top: 30px;
+		.text-container{
+			@include make-col-ready();
+			@include media-breakpoint-between(lg,xl) {
+				@include make-col(6);
+			}
+			@include media-breakpoint-between(md,lg) {
+				@include make-col(5);
+			}
+			@include media-breakpoint-down(sm) {
+				@include make-col(12);  
+			}		
+			color: #666;
+			font-size: 14px;
+			line-height: 20px;
+		}
+		.partners-container{
+			@include make-col-ready();
+			@include media-breakpoint-between(lg,xl) {
+				@include make-col(2);
+			}
+			@include media-breakpoint-between(md,lg) {
+				@include make-col(2);
+			}
+			@include media-breakpoint-down(sm) {
+				@include make-col(12);  
+			}
+			.row{
+				.icon{
+					@include make-col-ready();
+					@include make-col(12);
+					min-height: 10px;
+				}
+			}
+		}
+		.subscribe-container{
+			@include make-col-ready();
+			@include media-breakpoint-between(lg,xl) {
+				@include make-col(4);
+			}
+			@include media-breakpoint-between(md,lg) {
+				@include make-col(5);
+			}
+			@include media-breakpoint-down(sm) {
+				@include make-col(12);  
+			}
+		}
+
 	}
 }
