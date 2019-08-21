@@ -122,6 +122,9 @@
 		</div>
 		
 	</section>
+	<section class="footer-down">
+		
+	</section>
 </footer>
   </body>
 </html>
