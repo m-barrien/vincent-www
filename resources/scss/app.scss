@@ -646,14 +646,44 @@ header{
 	background-size: cover;
 	min-height: 500px;
 	h1{
+		font-size: 48px;
 		color: $white;
+		font-weight: 900;
 		text-align: center;
+	}
+	p{
+		font-size: 24px;
+		text-align: center;
+		color: $white;
+		margin-bottom: 45px;
+		opacity: .5;		
 	}
 	label{
 		font-weight: 700;
 		text-transform: uppercase;
 		color: $white;
 		font-size: 14px;		
+	}
+	button{
+		display: block;
+		@extend .mx-auto;
+		font-size: 22px;
+		padding: 10px 65px;
+		-webkit-border-radius: 60px;
+		-moz-border-radius: 60px;
+		border-radius: 60px;
+		color: $white;
+		background-color: transparent;		
+		
+		border: 2px solid $vincent-orange;
+		-webkit-transition: all .4s;
+		-moz-transition: all .4s;
+		-o-transition: all .4s;
+		transition: all .4s;
+		cursor: pointer;		
+		&:hover{
+			background-color: $vincent-orange;
+		}
 	}
 }
 

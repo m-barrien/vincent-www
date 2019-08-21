@@ -13,8 +13,8 @@
 				      <input type="text" class="form-control" id="inputName4" placeholder="Nombre">
 				    </div>
 				    <div class="form-group col-md-6">
-				      <label for="inputPassword4">Password</label>
-				      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+				      <label for="inputEmail4">Email</label>
+				      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
 				    </div>
 				  </div>
 				  <div class="form-row">
@@ -49,15 +49,7 @@
 				      <input type="text" class="form-control" id="inputZip">
 				    </div>
 				  </div>
-				  <div class="form-group">
-				    <div class="form-check">
-				      <input class="form-check-input" type="checkbox" id="gridCheck">
-				      <label class="form-check-label" for="gridCheck">
-				        Check me out
-				      </label>
-				    </div>
-				  </div>
-				  <button type="submit" class="btn btn-primary">Sign in</button>
+				  <button type="submit" class="btn">Enviar la Solicitud</button>
 				</form>				
 			</div>			
 		</div>
