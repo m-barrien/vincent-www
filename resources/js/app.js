@@ -61,7 +61,18 @@ $('.swiper-slide').mouseenter(
     $( this ).find( '.cover-slide > .hidden-desc' ).css("height","0px");
   });
 
+
+$('.kit-col-container').mouseenter(
+  function(){
+    $( this ).find( '.white-container > .text-body' ).toggleClass("rise");
+  }).mouseleave(
+  function (){
+    $( this ).find( '.white-container > .text-body' ).toggleClass("rise");
+  });
+
+//DOC READY
 });
+
 if(photo_arr.length >0 ){
   var chunk = Math.floor( photo_arr.length / 4 );
   var bundles = chunkArray(photo_arr,chunk);

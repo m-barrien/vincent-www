@@ -41,3 +41,4 @@ themes/vincent2/js/*
 public_html/*
 !mysql-data/.gitkeep
 mysql-data/*
+vin-theme.zip
