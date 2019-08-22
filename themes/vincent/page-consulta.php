@@ -1,4 +1,7 @@
 <?php
+/*
+Template Name: Serve formulario
+*/
 //Importamos las variables del formulario de contacto
 require_once("wp-load.php");
 
@@ -95,6 +98,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recaptcha_response'])
             header("Location: /index.php?status=fail");
             die();
 
+      }
     } else {
         header("Location: /index.php?status=fail");
         die();

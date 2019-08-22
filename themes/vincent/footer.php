@@ -57,7 +57,7 @@ grecaptcha.ready(function () {
 				 alt="Venta de paneles solares kit placas solares kit"
         	>
         	</div>
-			<form method="POST" action="/consulta.php">
+			<form method="POST" action="/consulta">
 			  <div class="form-group">
 			    <label for="exampleInputCorreo1">Correo</label>
 			    <input name="cmail" type="email" class="form-control form-control-lg" id="exampleInputCorreo1" aria-describedby="emailHelp" placeholder="Ingresar Correo">
