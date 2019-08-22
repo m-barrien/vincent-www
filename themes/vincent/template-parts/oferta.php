@@ -21,7 +21,7 @@
 							<i class="fas fa-phone"></i>
 							Llamar
 						</a>
-						<a href="mailto:info@vincentsolar.com?subject=Intersado en <?php the_title() ;?>&body=Nombre:%0D%0ACiudad:%0D%0ATelefono:%0D%0AComentario:">
+						<a href="mailto:info@vincentsolar.com?subject=Intersado en kit solar&body=Nombre:%0D%0ACiudad:%0D%0ATelefono:%0D%0AComentario:">
 							<i class="fas fa-envelope"></i>
 							Correo
 						</a>

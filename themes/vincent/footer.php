@@ -19,10 +19,11 @@ grecaptcha.ready(function () {
 	        </button>
     	</div>
 		<div class="modal-contacto-body">
-			<img class="d-block img-fluid w-100"
-				 src="<?php echo get_template_directory_uri() ?>/image/snippets/solar-pact.jpg"
+			<div class="banner-img"
+				 style="background-image: url('<?php echo get_template_directory_uri() ?>/image/snippets/solar-pact.jpg');"
 				 alt="Venta de paneles solares kit placas solares kit"
         	>
+        	</div>
 			<form method="POST" action="/consulta.php">
 			  <div class="form-group">
 			    <label for="exampleInputCorreo1">Correo e-mail</label>
@@ -154,7 +155,13 @@ grecaptcha.ready(function () {
 				
 			</a>
 		</div>
+		<!-- 
 		<a id="contactoExpander" data-toggle="collapse" href="#collapseContacto" role="button" aria-expanded="false" aria-controls="collapseContacto">
+			<i class="fas fa-hand-pointer"></i>
+			Cont&aacute;ctenos
+		</a>
+	-->	
+		<a id="contactoExpander" role="button" data-toggle="modal" data-target="#modalContacto">
 			<i class="fas fa-hand-pointer"></i>
 			Cont&aacute;ctenos
 		</a>
