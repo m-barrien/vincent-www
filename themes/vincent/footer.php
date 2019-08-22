@@ -1,4 +1,13 @@
 <!-- Modal contacto -->
+<script src="https://www.google.com/recaptcha/api.js?render=6LecWrQUAAAAAE83dQ6F_0YUAhDb-LpgPijunvQL"></script>
+<script>
+grecaptcha.ready(function () {
+    grecaptcha.execute('6LecWrQUAAAAAE83dQ6F_0YUAhDb-LpgPijunvQL', { action: 'contact' }).then(function (token) {
+        var recaptchaResponse = document.getElementById('recaptchaResponse');
+        recaptchaResponse.value = token;
+    });
+});
+</script>
 <div class="modal fade" id="modalContacto" tabindex="-1" role="dialog" aria-labelledby="modalContactoLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
@@ -17,13 +26,14 @@
 			<form method="POST" action="/consulta.php">
 			  <div class="form-group">
 			    <label for="exampleInputCorreo1">Correo e-mail</label>
-			    <input name="cmail" type="email" class="form-control" id="exampleInputCorreo1" aria-describedby="emailHelp" placeholder="Ingresar Correo">
+			    <input name="cmail" type="email" class="form-control form-control-lg" id="exampleInputCorreo1" aria-describedby="emailHelp" placeholder="Ingresar Correo">
 			    <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu correo con terceros.</small>
 			  </div>
 				<div class="form-group">
 				<label for="consultaTextbox">Consulta</label>
-					<textarea name="cmessage" class="form-control" id="consultaTextbox" rows="3"></textarea>
+					<textarea name="cmessage" class="form-control form-control-lg" id="consultaTextbox" rows="3"></textarea>
 				</div>
+				<input type="hidden" name="recaptcha_response" id="recaptchaResponse">
 			  <button type="submit" class="btn btn-primary">Enviar</button>
 			</form>        	
 		</div>

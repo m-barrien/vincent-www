@@ -1431,7 +1431,7 @@ a.product-slide{
 	max-width: none;
 }
 .modal-dialog{
-	margin-top: 20vh;
+	margin-top: 7vh;
 	.modal-content{
 		overflow: hidden;
 		.modal-header{
@@ -1487,6 +1487,31 @@ a.product-slide{
 						margin:0;
 						padding: 0;
 					}
+				}
+			}
+			form{
+				@include media-breakpoint-up(lg) {
+					font-size: 19px;				
+				
+				}
+				@include media-breakpoint-down(lg) {
+					font-size: 14px;				
+				
+				}
+				@extend .p-3;
+				.btn-primary{
+					@extend .d-block;
+					width: 100%;
+					background-color: $vincent-blue;
+					font-weight: bold;
+					@include media-breakpoint-up(lg) {
+						font-size: 1.5rem;				
+					
+					}
+					@include media-breakpoint-down(lg) {
+						font-size: 1.2rem;				
+					
+					}					
 				}
 			}
 		}

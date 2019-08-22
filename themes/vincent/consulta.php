@@ -18,7 +18,7 @@ $cabeceras .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 $cabeceras .= "From: $Correo\r\n" //La persona que envia el correo
  . "Reply-To: $Correo\r\n";
 $asunto = "$Motivo VINCENT SOLAR \n"; //asunto aparecera en la bandeja del servidor de correo
-$email_to = "marcelo@vincentsolar.com"; //cambiar por tu email
+$email_to = "info@vincentsolar.com"; //cambiar por tu email
 $contenido = "
 <!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
 <html xmlns='http://www.w3.org/1999/xhtml'>
@@ -30,38 +30,25 @@ $contenido = "
   
 <body style='margin: 0; padding: 0; font-family: arial;font-size: 15pt;'>
 <div style='width:600px;margin-left: auto;margin-right: auto;'  >
- <div style='background: #2b6daf; border-radius: 20px 20px 0 0;'>
-   <img src='http://www.vincentsolar.com/images/logo_negativo.png' alt='VincentSolar Logo' width='300' height='auto' style='display: block; padding: 6px' />
+ <div style='background: #2b6daf; border-radius: 20px 20px 0 0; height: auto;'>
+   <p style='color:white; display; block; padding: 15px; font-weight:bold'>
+      Formulario Vincent Solar
+   </p>
  </div>
   <div style='background: #eee'>
     <div style='padding:10px'>
-      $Nombre ha enviado un mensaje de $Motivo desde el sitio web www.vincentsolar.com
+      Se ha enviado un formulario de contacto desde el sitio web www.vincentsolar.com
     </div>
     <table width='100%' style='padding:10px'>
       <col width='100px' >
       <col>
+
       <tr>
         <td style='text-align: right'>
-          Nombre:
+          e-Mail:
         </td>
         <td>
-          $Nombre
-        </td>
-      </tr>
-      <tr>
-        <td style='text-align: right'>
-          Telefono:
-        </td>
-        <td>
-          <a href='tel:$Telefono'>$Telefono</a>
-        </td>
-      </tr>
-      <tr>
-        <td style='text-align: right'>
-          Motivo:
-        </td>
-        <td>
-          $Motivo
+          <a href='mailto:$Correo'>$Correo</a>
         </td>
       </tr>
       <tr>
@@ -72,18 +59,10 @@ $contenido = "
           $Mensaje
         </td>
       </tr>
-      <tr>
-        <td style='text-align: right'>
-          e-Mail:
-        </td>
-        <td>
-          <a href='mailto:$Correo'>$Correo</a>
-        </td>
-      </tr>
     </table>
   </div>
- <div style='text-align: center; background: #f39200 ; border-radius: 0 0 20px 20px ;'>
-   Mensaje automatizado por <a href='www.vincentsolar.com'>www.vincentsolar.com</a> .
+ <div style='padding:15px;text-align: center; background: #f39200 ; border-radius: 0 0 20px 20px ;'>
+   Mensaje automatizado por www.vincentsolar.com .
 </div>
 </body>
 
@@ -91,24 +70,41 @@ $contenido = "
 </html>
 ";
 
-//Enviamos el mensaje y comprobamos el resultado
-if ( strlen($Correo) >2 && 
-    wp_mail($email_to, $asunto, $contenido, $cabeceras)
-  ) { 
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recaptcha_response'])) {
 
-//Si el mensaje se envía muestra una confirmación
-echo '
-    <div class="alert alert-success alert-dismissable">
-        <button type="button" class="close" data-dismiss="modal">×</button>
-        <strong>Su mensaje ha sido enviado correctamente.</strong>
-    </div>';
-}else{
-//Si el mensaje no se envía muestra el mensaje de error
-echo '
-    <div class="alert alert-danger alert-dismissable">
-        <button type="button" class="close" data-dismiss="modal">×</button>
-        <strong>ERROR. Intente mas tarde.</strong>
-    </div> ';
-}
+    // Build POST request:
+    $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+    $recaptcha_secret = '6LecWrQUAAAAAOopdIXQd-U-fqFWeha1R-jXzSFE';
+    $recaptcha_response = $_POST['recaptcha_response'];
 
-?> 
+    // Make and decode POST request:
+    $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response);
+    $recaptcha = json_decode($recaptcha);
+
+    // Take action based on the score returned:
+    if ($recaptcha->score >= 0.5) {
+      //Enviamos el mensaje y comprobamos el resultado
+      if ( strlen($Correo) >2 && 
+          wp_mail($email_to, $asunto, $contenido, $cabeceras)
+        ) { 
+
+      //Si el mensaje se envía muestra una confirmación
+      echo '
+          <div class="alert alert-success alert-dismissable">
+              <button type="button" class="close" data-dismiss="modal">×</button>
+              <strong>Su mensaje ha sido enviado correctamente.</strong>
+          </div>';
+      }else{
+      //Si el mensaje no se envía muestra el mensaje de error
+      echo '
+          <div class="alert alert-danger alert-dismissable">
+              <button type="button" class="close" data-dismiss="modal">×</button>
+              <strong>ERROR. Intente mas tarde.</strong>
+          </div> ';
+      }
+
+    } else {
+        // Not verified - show form error
+    }
+
+} 
