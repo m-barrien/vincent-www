@@ -1021,6 +1021,7 @@ article{
 			.badge-oferta{
 				@extend .badge;
 				@extend .badge-danger;
+				@extend .my-1;
 				//color: $vincent-orange;
 				display: block;
 				width: 50%;
@@ -1192,7 +1193,7 @@ article{
 	color: white;	
 	z-index: $zindex-fixed;
 	@include media-breakpoint-down(sm) {
-		bottom:70px;
+		bottom:5vh;
 	}
 	@include media-breakpoint-up(sm) {
 
@@ -1200,7 +1201,7 @@ article{
 
 
 	.dock-button{
-		pointer-events   : all;
+		pointer-events: all;
 		cursor: pointer;
 		background-color: $vincent-blue;
 		text-align: center;
@@ -1533,4 +1534,7 @@ a.product-slide{
 			}
 		}
 	}
+}
+.grecaptcha-badge {
+	display: none !important;
 }

@@ -18,7 +18,7 @@ $cabeceras .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 $cabeceras .= "From: $Correo\r\n" //La persona que envia el correo
  . "Reply-To: $Correo\r\n";
 $asunto = "$Motivo VINCENT SOLAR \n"; //asunto aparecera en la bandeja del servidor de correo
-$email_to = "info@vincentsolar.com"; //cambiar por tu email
+$email_to = "marcelo@vincentsolar.com"; //cambiar por tu email
 $contenido = "
 <!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
 <html xmlns='http://www.w3.org/1999/xhtml'>
@@ -87,24 +87,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recaptcha_response'])
       if ( strlen($Correo) >2 && 
           wp_mail($email_to, $asunto, $contenido, $cabeceras)
         ) { 
-
-      //Si el mensaje se envía muestra una confirmación
-      echo '
-          <div class="alert alert-success alert-dismissable">
-              <button type="button" class="close" data-dismiss="modal">×</button>
-              <strong>Su mensaje ha sido enviado correctamente.</strong>
-          </div>';
-      }else{
-      //Si el mensaje no se envía muestra el mensaje de error
-      echo '
-          <div class="alert alert-danger alert-dismissable">
-              <button type="button" class="close" data-dismiss="modal">×</button>
-              <strong>ERROR. Intente mas tarde.</strong>
-          </div> ';
-      }
+            header("Location: /index.php?status=ok");
+            die();
+          }
+      else{
+          //Si el mensaje no se envía muestra el mensaje de error
+            header("Location: /index.php?status=fail");
+            die();
 
     } else {
-        // Not verified - show form error
+        header("Location: /index.php?status=fail");
+        die();
     }
 
 } 

@@ -8,6 +8,39 @@ grecaptcha.ready(function () {
     });
 });
 </script>
+<?php if($_GET['status']) : ?>
+<div class="modal fade" id="modalGracias" tabindex="-1" role="dialog" aria-labelledby="modalGraciasLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+    	<div class="modal-header">
+			<img class="" style="width: 10%; height:auto;" src="<?php site_icon_url(); ?>" alt="Vincent Solar">
+    		
+	    	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	        	<span aria-hidden="true">&times;</span>
+	        </button>
+    	</div>
+		<div class="modal-contacto-body">
+			<div class="banner-img"
+				 style="background-image: url('<?php echo get_template_directory_uri() ?>/image/snippets/solar-pact.jpg');"
+				 alt="Venta de paneles solares kit placas solares kit"
+        	>
+        	</div>
+        	<div class="text-container" style="padding: 20px">
+        		
+        	<?php if($_GET['status'] == "ok") :?>
+				<h1>Gracias!</h1>    	
+				<h4>Uno de nuestros técnicos especialistas se contactará con Ud a la brevedad.</h4>
+        	<?php elseif($_GET['status'] == "fail") :?>
+				<h1>Oops!</h1>    	
+				<h4>Hubo un problema al enviar su formulario, favor intentar denuevo.</h4>
+			<?php endif; ?>
+        	</div>
+		</div>
+    </div>
+  </div>
+</div><!-- Modal gracias -->
+<?php endif; ?>
+
 <div class="modal fade" id="modalContacto" tabindex="-1" role="dialog" aria-labelledby="modalContactoLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
@@ -26,7 +59,7 @@ grecaptcha.ready(function () {
         	</div>
 			<form method="POST" action="/consulta.php">
 			  <div class="form-group">
-			    <label for="exampleInputCorreo1">Correo e-mail</label>
+			    <label for="exampleInputCorreo1">Correo</label>
 			    <input name="cmail" type="email" class="form-control form-control-lg" id="exampleInputCorreo1" aria-describedby="emailHelp" placeholder="Ingresar Correo">
 			    <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu correo con terceros.</small>
 			  </div>
@@ -140,7 +173,14 @@ grecaptcha.ready(function () {
 		</div>
 </footer>
 <div class="bottom-dock">
-	<div class="dock-button">
+	<div class="desk-only blk dock-button">
+		<a id="contactoExpander" role="button" data-toggle="modal" data-target="#modalContacto">
+			<i class="fas fa-hand-pointer"></i>
+			Cont&aacute;ctenos
+		</a>
+		<img src="<?php echo get_template_directory_uri() ?>/image/snippets/it_line.png">
+	</div>
+	<div class="mov-only blk dock-button">
 		<div id="collapseContacto" class="collapse">
 			<a href="mailto:info@vincentsolar.com" class="inside-a">
 				<i class="fas fa-envelope"></i>
@@ -161,13 +201,12 @@ grecaptcha.ready(function () {
 			Cont&aacute;ctenos
 		</a>
 	-->	
-		<a id="contactoExpander" role="button" data-toggle="modal" data-target="#modalContacto">
+		<a href="mailto:info@vincentsolar.com" class="inside-a">
 			<i class="fas fa-hand-pointer"></i>
 			Cont&aacute;ctenos
 		</a>
 		<img src="<?php echo get_template_directory_uri() ?>/image/snippets/it_line.png">
 	</div>
-	
 </div>
   </body>
 </html>

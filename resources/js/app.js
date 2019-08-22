@@ -146,6 +146,7 @@ $('.contacto-oferta').click(function(){
 
 });
 
+$('#modalGracias').modal('show');
 //DOC READY
 //show_popup();
 /*
