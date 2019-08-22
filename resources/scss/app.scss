@@ -26,11 +26,17 @@
 	}
 	@include media-breakpoint-down(sm) {
 		display: inline;
+		&.blk{
+			display: block;
+		}
 	}
 }
 .desk-only{
 	@include media-breakpoint-up(sm) {
 		display: inline;
+		&.blk{
+			display: block;
+		}		
 	}
 	@include media-breakpoint-down(sm) {
 		display: none;

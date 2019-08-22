@@ -5,6 +5,8 @@ copy:
 	cp -rf ./themes/vincent/css ./public_html/
 	cp -rf ./themes/vincent/js ./public_html/
 	cp -rf ./themes/vincent/fonts ./public_html/
+	cp -rf ./plugins/* ./public_html/wp-content/plugins/
+	cp  ./themes/vincent/consulta.php ./public_html/consulta.php
 sass:
 	npm run sass
 	make copy

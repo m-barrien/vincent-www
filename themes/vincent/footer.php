@@ -14,20 +14,18 @@
 				 src="<?php echo get_template_directory_uri() ?>/image/snippets/solar-pact.jpg"
 				 alt="Venta de paneles solares kit placas solares kit"
         	>
-        	<div class="button-container">
-				<a href="tel:322948569">
-					<h4>Llamar</h4>
-					
-					<i class="fas fa-phone"></i>
-					+(56) 32 2948569
-				</a>
-				<a href="mailto:info@vincentsolar.com">
-					<h4>Contacto</h4>
-					
-					<i class="fas fa-envelope"></i>
-					info@vincentsolar.com
-				</a>
-        	</div>
+			<form method="POST" action="/consulta.php">
+			  <div class="form-group">
+			    <label for="exampleInputCorreo1">Correo e-mail</label>
+			    <input name="cmail" type="email" class="form-control" id="exampleInputCorreo1" aria-describedby="emailHelp" placeholder="Ingresar Correo">
+			    <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu correo con terceros.</small>
+			  </div>
+				<div class="form-group">
+				<label for="consultaTextbox">Consulta</label>
+					<textarea name="cmessage" class="form-control" id="consultaTextbox" rows="3"></textarea>
+				</div>
+			  <button type="submit" class="btn btn-primary">Enviar</button>
+			</form>        	
 		</div>
     </div>
   </div>
