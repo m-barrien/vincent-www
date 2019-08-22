@@ -1207,6 +1207,22 @@ article{
 		text-align: center;
 		padding: 4px;
 		font-weight: bold;
+		&.desk{
+			@include media-breakpoint-down(sm) {
+				display: none;
+			}
+			@include media-breakpoint-up(sm) {
+				display: block;
+			}	
+		}
+		&.mov{
+			@include media-breakpoint-down(sm) {
+				display: block;
+			}
+			@include media-breakpoint-up(sm) {
+				display: none;
+			}
+		}		
 		@include media-breakpoint-between(lg,xl) {
 			font-size: 2rem;
 			border-radius: 6px 6px 0 0;

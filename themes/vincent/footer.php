@@ -173,14 +173,14 @@ grecaptcha.ready(function () {
 		</div>
 </footer>
 <div class="bottom-dock">
-	<div class="desk-only blk dock-button">
+	<div class="dock-button desk">
 		<a id="contactoExpander" role="button" data-toggle="modal" data-target="#modalContacto">
 			<i class="fas fa-hand-pointer"></i>
 			Cont&aacute;ctenos
 		</a>
 		<img src="<?php echo get_template_directory_uri() ?>/image/snippets/it_line.png">
 	</div>
-	<div class="mov-only blk dock-button">
+	<div class="dock-button mov">
 		<div id="collapseContacto" class="collapse">
 			<a href="mailto:info@vincentsolar.com" class="inside-a">
 				<i class="fas fa-envelope"></i>

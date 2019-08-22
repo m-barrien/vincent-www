@@ -21,7 +21,7 @@ $cabeceras .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 $cabeceras .= "From: $Correo\r\n" //La persona que envia el correo
  . "Reply-To: $Correo\r\n";
 $asunto = "$Motivo VINCENT SOLAR \n"; //asunto aparecera en la bandeja del servidor de correo
-$email_to = "marcelo@vincentsolar.com"; //cambiar por tu email
+$email_to = "info@vincentsolar.com"; //cambiar por tu email
 $contenido = "
 <!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
 <html xmlns='http://www.w3.org/1999/xhtml'>
