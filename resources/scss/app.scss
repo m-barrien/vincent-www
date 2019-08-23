@@ -32,6 +32,15 @@ section {
 .container-fluid{
 	max-width: 1920px;
 }
+a{
+	-moz-outline-style: none;
+	outline: none;
+	&:active, :focus{
+		-moz-outline-style: none;
+		outline: none;
+
+	}
+}
 h1{
 	font-weight: 900;
 	@include media-breakpoint-between(lg,xl) {
@@ -199,6 +208,24 @@ header{
 		font-size: 18px;
 		line-height: 26px;
 		font-weight: 400;
+	}
+	ul{
+		position: relative;
+		list-style: none;
+		margin-left: 2.0em;
+		padding-left: 2.2em;		
+		li{
+			color: $text-black;
+			font-size: 18px;
+			line-height: 26px;
+			font-weight: 400;
+			&:before {
+				color: $green ;
+				content: "\2714";
+				position: absolute;
+				left: 0;
+			}
+		}
 	}
 }
 .flex-container{

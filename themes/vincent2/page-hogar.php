@@ -6,9 +6,8 @@
 		<div class="row">
 			<div class="col">
 				<div class="text-wrapper">
-					<h2><a href="/">HOME</a>&nbsp; / &nbsp; Instalaciones residenciales</h2>
-					<h1>Instalaciones residenciales</h1>
-					
+					<h2><a href="/">HOME</a>&nbsp; / &nbsp; <?php the_title(); ?></h2>
+					<h1><?php the_title(); ?></h1>
 				</div>
 				
 			</div>
