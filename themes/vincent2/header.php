@@ -45,7 +45,11 @@
           
         </div>
         <div class="hamburguer">
-          
+          <div id="hamburguer-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>          
         </div>
       </div>
       <?php wp_nav_menu( array( '

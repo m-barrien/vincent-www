@@ -72,6 +72,7 @@ $('.kit-col-container').mouseenter(
 
 $('.hamburguer').click(function(){
   $('.menu-mov-container').toggleClass('visible');
+  $('#hamburguer-icon').toggleClass('open');
 });
 //DOC READY
 });
