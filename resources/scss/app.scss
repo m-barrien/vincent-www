@@ -164,19 +164,19 @@ header{
 		nav{
 			ul{
 				margin-bottom: 0;
-				li{
-					display: inline;
-					a{
-						font-size: 12px;
-						color: $white;
-						text-transform: uppercase;
-						text-decoration: none;
-						margin: 0 0.4vw;
-						font-weight: bold;						
-						&:hover{
-							color: $white;
-						}
-					}
+			}
+			li{
+				display: inline;
+			}
+			a{
+				font-size: 12px;
+				color: $white;
+				text-transform: uppercase;
+				text-decoration: none;
+				margin: 0 0.4vw;
+				font-weight: bold;						
+				&:hover{
+					color: $white;
 				}
 			}
 		}
@@ -208,6 +208,7 @@ header{
 		height: 100%;
 		width: 50%;
 		padding: 3px;
+		overflow: hidden;
 		img{
 			@extend .img-fluid;
 		}
@@ -333,17 +334,17 @@ header{
 		list-style: none;
 		margin-left: 2.0em;
 		padding-left: 2.2em;		
-		li{
-			color: $text-black;
-			font-size: 18px;
-			line-height: 26px;
-			font-weight: 400;
-			&:before {
-				color: $green ;
-				content: "\2714";
-				position: absolute;
-				left: 0;
-			}
+	}
+	li{
+		color: $text-black;
+		font-size: 18px;
+		line-height: 26px;
+		font-weight: 400;
+		&:before {
+			color: $green ;
+			content: "\2714";
+			position: absolute;
+			left: 0;
 		}
 	}
 }
