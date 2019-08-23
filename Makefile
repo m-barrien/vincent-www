@@ -15,3 +15,7 @@ js:
 perm:
 	sudo docker-compose exec mysql chown -R mysql:mysql /var/lib/mysql
 	sudo chown -R marcelo:marcelo ./public_html
+package:
+	cd public_html/ && \
+	zip -r vin-theme.zip css/app.css js/app.js wp-content/themes/vincent2/*
+	mv public_html/vin-theme.zip ./vin-theme.zip
