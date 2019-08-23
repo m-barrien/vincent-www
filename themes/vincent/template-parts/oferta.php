@@ -16,18 +16,8 @@
 				<h2 class="px-2"><span class="badge-oferta">OFERTA</span><?php the_title() ;?> </h2>
 				<?php the_content() ;?>
 				<div class="boton-cotizar-mov">
-					<div id="collapseContacto<?php the_ID() ?>" class="collapse show">
-						<a href="tel:322948569">
-							<i class="fas fa-phone"></i>
-							Llamar
-						</a>
-						<a href="mailto:info@vincentsolar.com?subject=Intersado en kit solar&body=Nombre:%0D%0ACiudad:%0D%0ATelefono:%0D%0AComentario:">
-							<i class="fas fa-envelope"></i>
-							Correo
-						</a>
-					</div>
-					<a id="contactoExpander" data-toggle="collapse" href="#collapseContacto<?php the_ID() ?>" role="button" aria-expanded="false" aria-controls="collapseContacto<?php the_ID() ?>">
-						Visita T&eacute;cnica Gratis
+					<a id="contactoExpander" role="button" data-toggle="modal" data-target="#modalContacto">
+						Cont&aacute;ctenos
 						<br>
 					</a>
 				</div>	

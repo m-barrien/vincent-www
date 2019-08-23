@@ -1479,7 +1479,14 @@ a.product-slide{
 		.modal-contacto-body{
 			width: 100%;
 			.banner-img{
-				height: 11vw;
+				@include media-breakpoint-up(sm) {
+					height: 23vh;
+
+				}
+				@include media-breakpoint-down(sm) {
+					height: 23vh;
+
+				}
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: cover;

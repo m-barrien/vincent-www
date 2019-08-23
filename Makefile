@@ -15,5 +15,5 @@ js:
 	make copy
 package:
 	cd public_html/ && \
-	zip vin-theme.zip css/app.css js/app.js wp-content/themes/vincent/*
+	zip -r vin-theme.zip css/app.css js/app.js wp-content/themes/vincent/*
 	mv public_html/vin-theme.zip ./vin-theme.zip

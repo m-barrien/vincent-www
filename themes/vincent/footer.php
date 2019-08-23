@@ -8,7 +8,7 @@ grecaptcha.ready(function () {
     });
 });
 </script>
-<?php if($_GET['status']) : ?>
+<?php if(isset($_GET['status'])) : ?>
 <div class="modal fade" id="modalGracias" tabindex="-1" role="dialog" aria-labelledby="modalGraciasLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
@@ -109,7 +109,7 @@ grecaptcha.ready(function () {
 	            </div>
 
 	            <div class="footer-contact-pill">
-	                <a href="tel:322948569" rel="nofollow"> 					
+	                <a href="tel:322948569" style="pointer-events: none;" rel="nofollow"> 					
 		                <i class="fas fa-phone"></i>
 		                <p>322 948569</p>
 	            	</a>
@@ -174,7 +174,7 @@ grecaptcha.ready(function () {
 </footer>
 <div class="bottom-dock">
 	<div class="dock-button desk">
-		<a id="contactoExpander" role="button" data-toggle="modal" data-target="#modalContacto">
+		<a href="mailto:info@vincentsolar.com">
 			<i class="fas fa-hand-pointer"></i>
 			Cont&aacute;ctenos
 		</a>
@@ -188,7 +188,7 @@ grecaptcha.ready(function () {
 				<span class="desk-only">info@vincentsolar.com</span>
 				
 			</a>
-			<a href="tel:322948569" class="inside-a">
+			<a href="tel:322948569" style="pointer-events: none;" class="inside-a">
 				<i class="fas fa-phone"></i>
 				<span class="mov-only">Llamar</span>
 				<span class="desk-only">(32) 294 8569</span>

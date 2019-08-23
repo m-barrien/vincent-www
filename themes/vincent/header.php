@@ -4,8 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" id="vincentstylesheetid-css" href="/css/app.css?ver=14" type="text/css" media="all">
-    <script type="text/javascript" src="/js/app.js?ver=14"></script>
+    <link rel="stylesheet" id="vincentstylesheetid-css" href="/css/app.css?ver=15" type="text/css" media="all">
+    <script type="text/javascript" src="/js/app.js?ver=15"></script>
     <?php wp_head();?>
     <title><?php echo get_bloginfo( 'name' ); ?></title>
   </head>
