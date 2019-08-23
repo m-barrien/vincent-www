@@ -123,6 +123,28 @@ header{
 	max-width: $max-width;
 	margin: 0 auto;
 	z-index: 9999;
+	&.desk{
+		@include media-breakpoint-between(lg,xl) {
+			display: block;
+		}
+		@include media-breakpoint-between(md,lg) {
+			display: block;
+		}
+		@include media-breakpoint-down(sm) {
+			display: none;
+		}		
+	}
+	&.mov{
+		@include media-breakpoint-between(lg,xl) {
+			display: none;
+		}
+		@include media-breakpoint-between(md,lg) {
+			display: none;
+		}
+		@include media-breakpoint-down(sm) {
+			display: block;
+		}		
+	}
 	.flex-container{
 		.logo{
 			max-width: 190px !important;
@@ -164,6 +186,20 @@ header{
 				}
 			}			
 		}
+	}
+}
+.menu-mov-container{
+	background-color: black;
+	height: 100vh;
+	width: 75vw;
+	min-width: 200px;
+	z-index: $zindex-fixed;
+	position: fixed;
+	left: 0;
+	top:0;
+	color: $white !important;
+	a{
+		color: inherit !important;
 	}
 }
 .blog-container-width{
