@@ -119,14 +119,16 @@ p{
 header{
 	@include media-breakpoint-between(lg,xl) {
 		padding: 30px 40px;
+		position: absolute;
 	}
 	@include media-breakpoint-between(md,lg) {
 		padding: 30px 40px;
+		position: absolute;
 	}
 	@include media-breakpoint-down(sm) {
 		padding: 0;
+		position: relative;
 	}	
-	position: absolute;
 	z-index: $zindex-fixed;
 	left: 0;
 	right: 0;
@@ -201,7 +203,7 @@ header{
 	}
 }
 .top-bar{
-	position: absolute;
+	position: relative;
 	height: $menu-height;
 	width: 100vw;
 	background-color: $white;
@@ -589,7 +591,7 @@ header{
 		height: 500px;
 	}
 	@include media-breakpoint-down(sm) {
-		height:360px;	        
+		height:400px;	        
 	}
 	&.gray-overlay{
 		background-image:
