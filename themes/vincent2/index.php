@@ -1,7 +1,7 @@
 <?php 
 get_header(); 
 ?>
-<div class="site-cover">
+<div class="site-cover" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/covers/1.jpg');">
 
 	<div class="swiper-container swiper-cover">
 	    <div class="swiper-wrapper">
