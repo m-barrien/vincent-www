@@ -40,7 +40,7 @@
 
     </header> 
     <header class="mov">
-      <div class="flex-container space-between">
+      <div class="top-bar">
         <div class="logo">
           <?php
           $custom_logo_id = get_theme_mod( 'custom_logo' );
@@ -49,7 +49,9 @@
           ?>
           
         </div>
-        
+        <div class="hamburguer">
+          
+        </div>
       </div>
       <?php wp_nav_menu( array( '
       theme_location' => 'header-menu',          

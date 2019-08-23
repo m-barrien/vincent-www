@@ -70,6 +70,9 @@ $('.kit-col-container').mouseenter(
     $( this ).find( '.white-container > .text-body' ).toggleClass("rise");
   });
 
+$('.hamburguer').click(function(){
+  $('.menu-mov-container').toggleClass('visible');
+});
 //DOC READY
 });
 

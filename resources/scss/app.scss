@@ -108,12 +108,20 @@ p{
 :target {
   display: block;
   position: relative;
-  top: -$header-height; 
+  top: -$menu-height; 
   visibility: hidden;
 }
 
 header{
-	padding: 30px 40px;
+	@include media-breakpoint-between(lg,xl) {
+		padding: 30px 40px;
+	}
+	@include media-breakpoint-between(md,lg) {
+		padding: 30px 40px;
+	}
+	@include media-breakpoint-down(sm) {
+		padding: 0;
+	}	
 	position: absolute;
 	z-index: $zindex-fixed;
 	left: 0;
@@ -175,31 +183,106 @@ header{
 		.secondary-nav{
 			ul{
 				margin-bottom: 0;
-				li{
-					display: inline;
-					a{
-						color: $white;
-						&:hover{
-							color: $white;
-						}
-					}
-				}
 			}			
+			li{
+				display: inline;
+			}
+			a{
+				color: $white;
+				&:hover{
+					color: $white;
+				}
+			}
 		}
 	}
 }
+.top-bar{
+	position: absolute;
+	height: $menu-height;
+	width: 100vw;
+	background-color: $green;
+	.logo{
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 50%;
+		padding: 3px;
+		img{
+			@extend .img-fluid;
+		}
+	}
+	.hamburguer{
+		position: absolute;
+		top:0;
+		right:0;
+		height: $menu-height;
+		width: $menu-height;
+		background-color: $white;
+	}
+}
 .menu-mov-container{
+	-webkit-transition: margin-left .4s;
+	-moz-transition: margin-left .4s;
+	-o-transition: margin-left .4s;
+	transition: margin-left .4s;
 	background-color: black;
 	height: 100vh;
-	width: 75vw;
 	min-width: 200px;
 	z-index: $zindex-fixed;
 	position: fixed;
 	left: 0;
 	top:0;
 	color: $white !important;
+	width: 75vw;
+	margin-left: -75vw;
+	&.visible{
+		margin-left: 0;
+	}
 	a{
 		color: inherit !important;
+		font-weight: bold;
+		font-size: 16px;
+		&:after{
+		    content: ">";
+		    position: absolute;
+		    top: -webkit-calc(50% - 10px);
+		    top: -moz-calc(50% - 10px);
+		    top: calc(50% - 10px);
+		    right: 20px;
+		    width: 5px;
+		    height: 5px;
+		}
+	}
+	ul{
+		padding:10px;
+		position: relative;
+		list-style: none;
+		&:before{
+			content: "MENU";
+			top: 0;
+			left: 0;
+			font-size: 16px;
+		}
+		li{
+			font-size: 18px;
+			line-height: 26px;
+			padding: 10px 5px 10px 5px;
+			font-weight: 400;
+			border-style: solid;
+			border-color: $white-overlay;
+			border-width: 0 0 1px 0;
+			&:first-child{
+				border-width: 1px 0 1px 0;
+
+			}
+			&:before {
+				color: transparent; ;
+				content: none;
+				position: absolute;
+				left: 0;
+			}
+		}
 	}
 }
 .blog-container-width{
@@ -361,8 +444,8 @@ header{
 
     	.hidden-desc{
 			height: 0px;
-			transition:height 0.5s; 
 			overflow: hidden;
+			transition:height 0.5s; 
     		-webkit-transition:height 0.5s; 
     		.grow{
 				height: 190px;			
