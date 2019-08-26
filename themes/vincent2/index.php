@@ -344,7 +344,7 @@ $co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_sec
 		            </div>
 		</div>
 		<div class="col-sm-12">
-			<img class="d-block mx-auto img-fluid" src="https://via.placeholder.com/200'">
+			<img class="d-block mx-auto" style="padding-top:20px;height:auto;max-width: 110px;" src="<?php echo get_template_directory_uri() ?>/image/snippets/logo_cgreen.png">
 		</div>		
 	</section>
 </div>
