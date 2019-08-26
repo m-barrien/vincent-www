@@ -249,10 +249,100 @@ $co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_sec
 			<h1>Reducción de CO2</h1>
 			<p>Gracias a los sitemas fotovoltaicos instalados por nosotros.</p>
 		</div>
-		<div class="numbers">
+		<div class="numbers d-none">
 			<?php echo $elapsed_secs*$elapsed_secs*$factor_co2; ?> gr co2 <br>
 			<?php echo $elapsed_secs*$elapsed_secs*$factor_generacion; ?> kwh
 		</div>
+		<div class="col-sm-12 counter-container">
+		            <div class="super-digit-group">
+		            	<div class="digit-group">
+			                <div class=" schermo schermo10">
+			                    <div class="numero">
+			                        <img src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_0.png" data-o="0" alt="numero">
+			                    </div>
+			                </div>
+			                <div class="schermo schermo11">
+			                    <div class="numero">
+			                        <img src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_0.png" data-o="0" alt="numero">
+			                    </div>
+			                </div>
+			                <div class="schermo schermo12">
+			                    <div class="numero">
+			                        <img src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_0.png" data-o="0" alt="numero">
+			                    </div>
+			                </div>
+
+		            	</div>
+		                <div style="clear: both"></div>
+		                <h2>kt</h2>
+		            </div>
+		            <div class="super-digit-group">
+		            	<div class="digit-group">
+			                <div class="schermo schermo7">
+			                    <div class="numero">
+			                        <img src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_3.png" data-o="3" alt="numero">
+			                    </div>
+			                </div>
+			                <div class="schermo schermo8">
+			                    <div class="numero">
+			                        <img src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_0.png" data-o="0" alt="numero">
+			                    </div>
+			                </div>
+			                <div class="schermo schermo9">
+			                    <div class="numero">
+			                        <img src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_0.png" data-o="0" alt="numero">
+			                    </div>
+			                </div>
+
+		            	</div>
+		                <div style="clear: both"></div>
+		                <h2>t</h2>
+		            </div>
+		            <div class="super-digit-group">
+		            	<div class="digit-group">
+
+			                <div class="schermo schermo4">
+			                    <div class="numero" style="top: 0px;">
+			                        
+			                    <img src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_4.png"></div>
+			                </div>
+			                <div class="schermo schermo5">
+			                    <div class="numero" style="top: 0px;">
+			                        
+			                    <img src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_7.png"></div>
+			                </div>
+			                <div class="schermo schermo6">
+			                    <div class="numero" style="top: 0px;">
+			                        
+			                    <img src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_8.png"></div>
+			                </div>
+		            	</div>
+		                <div style="clear: both"></div>
+		                <h2>kg</h2>
+		            </div>
+		            <div class="super-digit-group">
+		            	<div class="digit-group">
+
+			                <div class="schermo schermo1">
+			                    <div class="numero">
+			                        <img src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_5.png" data-o="5" alt="numero">
+			                    </div>
+			                </div>
+			                <div class="schermo schermo2">
+			                    <div class="numero" style="top: 0px;">
+			                        
+			                    <img src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_3.png"></div>
+			                </div>
+			                <div class="schermo schermo3">
+			                    <div class="numero" style="top: 0px;">
+			                        
+			                    <img src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_0.png"></div>
+			                </div>
+		            	</div>
+		                <div style="clear: both"></div>
+		                <h2>g</h2>
+		            </div>
+		</div>		
 	</section>
 </div>
 <div class="w-100 gray-bg">	

@@ -23,6 +23,8 @@
 //swiper
 @import "../../node_modules/swiper/dist/css/swiper"; 
 
+
+
 body{
 	font-family: $font-family-sans-serif;
 }
@@ -897,26 +899,6 @@ header{
 	}
 }
 
-#generacion{
-	padding-top: $section-padding-top;
-	padding-bottom: $section-padding-bottom;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	min-height: 500px;
-	h1{
-		text-align: center;
-	}
-	p{
-		font-size: 22px;
-		text-align: center;
-		line-height: 1.5;
-		color: #6b7c93;
-	}
-	.numbers{
-		margin: 0 auto 0 auto;
-	}
-}
 .gray-bg{
 	background-color: $dark-bg-high;	
 }
@@ -1442,3 +1424,5 @@ footer{
 			}
 	}
 }
+
+@import 'generacion';
