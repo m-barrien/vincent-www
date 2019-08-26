@@ -870,8 +870,15 @@ header{
     .previous, .next{
 		width: 50%;
 		display: inline-block;
-		padding: 58px 50px;
-		font-size: 24px;
+		@include media-breakpoint-up(sm) {
+			padding: 58px 50px;
+			font-size: 24px;
+		}
+		@include media-breakpoint-down(sm) {
+			font-size: 14px;
+			padding: 50px 20px;
+
+		}
 		display: -webkit-inline-box;
 		display: -webkit-inline-flex;
 		display: -moz-inline-box;
