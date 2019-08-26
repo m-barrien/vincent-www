@@ -231,7 +231,7 @@ get_header();
 <div class="container-fluid" id="gmap">
 	<div class="proyectos">
 		<div class="text-wrapper">
-			<h1>Vincent Solar instala <span>soluciones solares</span> en todo Chile</h1>
+			<h2 class="shrink">Vincent Solar instala <span>soluciones solares</span> en todo Chile</h2>
 			<div class="flex-container space-between" style="align-items: start;">
 				<div class="button-container">
 					<button>

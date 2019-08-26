@@ -16,9 +16,9 @@ $iframe-margin-bottom:-20px;
 		@include media-breakpoint-between(md,lg) {
 			position: absolute;
 			height: auto;
-			right:200px;
+			right:50px;
 			width: 440px;
-			margin-top: 140px;
+			margin-top: 100px;
 		}
 		@include media-breakpoint-down(sm) {
 			position: relative;
@@ -27,7 +27,7 @@ $iframe-margin-bottom:-20px;
 	}
 	.text-wrapper{
 		padding: 20px;
-		h1{
+		h2{
 			text-align: center;
 			span{
 				color: $vincent-blue;
@@ -36,17 +36,22 @@ $iframe-margin-bottom:-20px;
 	}
 	.button-container{
 		width: 30%;
+		color: $text-gray;
 		p{
 			text-align: center;
+			color: inherit;
 		}
 	}
 	button{
 		@extend .btn;
 		@extend .border-primary;
 		@extend .rounded-circle;
+		@extend .mx-auto;
+		display: block;
 		font-size: 36px;
-		font-weight: bolder;
+		font-weight: 900;
 		text-align: center;
+		color: inherit;
 		@include media-breakpoint-between(lg,xl) {
 			height: 112px;
 			width: 112px;

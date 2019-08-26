@@ -23,8 +23,11 @@ $line-height-base: 1.6;
 $vincent-blue: #0e4194;
 $vincent-blue-alpha: #0e419444;
 $vincent-orange: #dd6722;
-$text-black: #222;
 $text-white: #fff;
+$text-light-gray: #ddd;
+$text-gray: #888;
+$text-black: #222;
+
 $blue: #3490dc;
 $indigo: #6574cd;
 $purple: #9561e2;
@@ -36,7 +39,6 @@ $green: #9fc66b;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
 
-$text-light-gray: #ddd;
 $primary: $vincent-blue;
 $secondary: $vincent-orange;
 
@@ -64,7 +66,7 @@ $modal-sm:                          300px;
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
-  md: 768px,
+  md: 850px,
   lg: 992px,
   xl: 1200px
 ) ;
@@ -74,8 +76,8 @@ $grid-breakpoints: (
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
+  sm: 545px,
+  md: 800px,
   lg: 960px,
   xl: 1140px
 ) ;
