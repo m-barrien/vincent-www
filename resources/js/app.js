@@ -115,3 +115,98 @@ function chunkArray(myArray, chunk_size){
 function flip() {
     $('#gallery-card').toggleClass('flipped');
 }
+
+function ContatoreCO2(n, t, i, r) {
+    function d(n) {
+        for (n = "" + n; n.length < 12; )
+            n = "0" + n;
+        return n
+    }
+    function g() {
+        f = f + k;
+        r = d(f);
+        cifra1n = parseInt(r.charAt(11));
+        cifra2n = parseInt(r.charAt(10));
+        cifra3n = parseInt(r.charAt(9));
+        cifra4n = parseInt(r.charAt(8));
+        cifra5n = parseInt(r.charAt(7));
+        cifra6n = parseInt(r.charAt(6));
+        cifra7n = parseInt(r.charAt(5));
+        cifra8n = parseInt(r.charAt(4));
+        cifra9n = parseInt(r.charAt(3));
+        cifra10n = parseInt(r.charAt(2));
+        cifra11n = parseInt(r.charAt(1));
+        cifra12n = parseInt(r.charAt(0));
+        e != cifra1n && u(1, cifra1n);
+        o != cifra2n && u(2, cifra2n);
+        s != cifra3n && u(3, cifra3n);
+        h != cifra4n && u(4, cifra4n);
+        c != cifra5n && u(5, cifra5n);
+        l != cifra6n && u(6, cifra6n);
+        a != cifra7n && u(7, cifra7n);
+        v != cifra8n && u(8, cifra8n);
+        y != cifra9n && u(9, cifra9n);
+        p != cifra10n && u(10, cifra10n);
+        w != cifra11n && u(11, cifra11n);
+        b != cifra12n && u(12, cifra12n);
+        e = cifra1n;
+        o = cifra2n;
+        s = cifra3n;
+        h = cifra4n;
+        c = cifra5n;
+        l = cifra6n;
+        a = cifra7n;
+        v = cifra8n;
+        y = cifra9n;
+        p = cifra10n;
+        w = cifra11n;
+        b = cifra12n;
+        $(".km-container .counter").html(Math.round(f / 13 * 100).toString().replace(/\B(?=(\d{3})+(?!\d))/g, "."));
+        $(".tree-container .counter").html(Math.round(f / 35).toString().replace(/\B(?=(\d{3})+(?!\d))/g, "."));
+        $(".oil-container .counter").html(Math.round(f / 172.8).toString().replace(/\B(?=(\d{3})+(?!\d))/g, "."))
+    }
+    function u(t, r) {
+        $("<img src='/Content/Images/mc_" + r + ".png' />").appendTo("#" + n + " .schermo" + t + " .numero");
+        $("#" + n + " .schermo" + t + " .numero").animate({
+            top: "-=" + i + "px"
+        }, 200, function() {
+            $("#" + n + " .schermo" + t + " .numero img").length > 1 && ($("#" + n + " .schermo" + t + " .numero img").eq(0).remove(),
+            $("#" + n + " .schermo" + t + " .numero").css("top", 0))
+        })
+    }
+    var k = 1, f, e, o, s, h, c, l, a, v, y, p, w, b;
+    t < minSpeed && (k = Math.round(minSpeed / t),
+    t = minSpeed);
+    f = r;
+    r = d(f);
+    e = parseInt(r.charAt(11));
+    $("#" + n + " .schermo1 .numero img").attr("data-o", e);
+    o = parseInt(r.charAt(10));
+    $("#" + n + " .schermo2 .numero img").attr("data-o", o);
+    s = parseInt(r.charAt(9));
+    $("#" + n + " .schermo3 .numero img").attr("data-o", s);
+    h = parseInt(r.charAt(8));
+    $("#" + n + " .schermo4 .numero img").attr("data-o", h);
+    c = parseInt(r.charAt(7));
+    $("#" + n + " .schermo5 .numero img").attr("data-o", c);
+    l = parseInt(r.charAt(6));
+    $("#" + n + " .schermo6 .numero img").attr("data-o", l);
+    a = parseInt(r.charAt(5));
+    $("#" + n + " .schermo7 .numero img").attr("data-o", a);
+    v = parseInt(r.charAt(4));
+    $("#" + n + " .schermo8 .numero img").attr("data-o", v);
+    y = parseInt(r.charAt(3));
+    $("#" + n + " .schermo9 .numero img").attr("data-o", y);
+    p = parseInt(r.charAt(2));
+    $("#" + n + " .schermo10 .numero img").attr("data-o", p);
+    w = parseInt(r.charAt(1));
+    $("#" + n + " .schermo11 .numero img").attr("data-o", w);
+    b = parseInt(r.charAt(0));
+    $("#" + n + " .schermo12 .numero img").attr("data-o", b);
+    $("#" + n + " .numero img").each(function() {
+        $(this).attr("src", "/Content/Images/mc_" + $(this).attr("data-o") + ".png")
+    });
+    window.setInterval(function() {
+        g()
+    }, t)
+}
