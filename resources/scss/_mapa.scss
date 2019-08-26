@@ -1,0 +1,92 @@
+$gmap-height:500px;
+$iframe-margin-top:-50px;
+$iframe-margin-bottom:-20px;
+#gmap{
+	overflow: hidden;
+	.proyectos{
+		z-index: 900;
+		background-color: $white;
+		@include media-breakpoint-between(lg,xl) {
+			position: absolute;
+			height: auto;
+			right:200px;
+			width: 440px;
+			margin-top: 140px;
+		}
+		@include media-breakpoint-between(md,lg) {
+			position: absolute;
+			height: auto;
+			right:200px;
+			width: 440px;
+			margin-top: 140px;
+		}
+		@include media-breakpoint-down(sm) {
+			position: relative;
+			width: 100%;
+		}
+	}
+	.text-wrapper{
+		padding: 20px;
+		h1{
+			text-align: center;
+			span{
+				color: $vincent-blue;
+			}
+		}
+	}
+	.button-container{
+		width: 30%;
+		p{
+			text-align: center;
+		}
+	}
+	button{
+		@extend .btn;
+		@extend .border-primary;
+		@extend .rounded-circle;
+		font-size: 36px;
+		font-weight: bolder;
+		text-align: center;
+		@include media-breakpoint-between(lg,xl) {
+			height: 112px;
+			width: 112px;
+		}
+		@include media-breakpoint-between(md,lg) {
+			height: 112px;
+			width: 112px;
+		
+		}
+		@include media-breakpoint-down(sm) {
+			height: 90px;
+			width: 90px;
+			font-size: 26px;
+		
+		}		
+	}
+}
+#gmap-iframe{
+	z-index: 899;
+	overflow: hidden;
+	section{
+	}
+	iframe{
+		@include media-breakpoint-between(lg,xl) {
+			height:$gmap-height * 1.3;
+			pointer-events:none;
+		}
+		@include media-breakpoint-between(md,lg) {
+			height:$gmap-height;
+			pointer-events:none;
+		
+		}
+		@include media-breakpoint-down(sm) {
+			height:$gmap-height;
+		
+		}		
+		margin-top: $iframe-margin-top;
+		margin-bottom: $iframe-margin-bottom;
+		margin-right: -4px;
+		margin-left: -4px;
+		width:105%; 
+	}
+}

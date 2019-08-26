@@ -743,15 +743,7 @@ header{
 		}
 	}
 }
-#gmap{
-	overflow: hidden;
-	iframe{
-		margin-top: -50px;
-		margin-bottom: -20px;
-		margin-right: -4px;
-		margin-left: -4px;
-	}
-}
+
 #how-we-work{
 	padding-top: $section-padding-top/2;
 	padding-bottom: $section-padding-bottom;
@@ -1426,3 +1418,4 @@ footer{
 }
 
 @import 'generacion';
+@import 'mapa';

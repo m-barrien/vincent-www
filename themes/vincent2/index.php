@@ -228,9 +228,34 @@ get_header();
 		</div>
 	</section>
 </div>
-<div class="container-fluid">
-	<section id="gmap">
-		<iframe src="https://www.google.com/maps/d/u/0/embed?mid=127rBG1dGQN7SgGPHxe0oXfoQiH35qhlI" width="105%" height="500"></iframe>
+<div class="container-fluid" id="gmap">
+	<div class="proyectos">
+		<div class="text-wrapper">
+			<h1>Vincent Solar instala <span>soluciones solares</span> en todo Chile</h1>
+			<div class="flex-container space-between" style="align-items: start;">
+				<div class="button-container">
+					<button>
+						1034
+					</button>
+					<p>Sistemas fotovoltaicos en 6 años</p>
+				</div>
+				<div class="button-container">
+					<button>
+						29k
+					</button>
+					<p>m<sup>2</sup> de paneles fotovoltaicos en Chile</p>
+				</div>
+				<div class="button-container">
+					<button>
+						2.8k
+					</button>
+					<p> t de CO<sub>2</sub> evitada con los sistemas fotovoltaicos Vincent Solar</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section id="gmap-iframe">
+		<iframe src="https://www.google.com/maps/d/u/0/embed?mid=127rBG1dGQN7SgGPHxe0oXfoQiH35qhlI"></iframe>
 		
 	</section>
 </div>
