@@ -1,6 +1,11 @@
 <?php 
 get_header(); 
 ?>
+<div class="w-100 video-container">
+	<iframe  src="" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="resizelistener" id="iframe39000" ></iframe>
+	<div class="fullvideo-cover"></div>
+</div>	
+
 <div class="site-cover" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/covers/1.jpg');">
 
 	<div class="swiper-container swiper-cover">
