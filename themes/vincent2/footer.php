@@ -22,7 +22,7 @@
 				      <label for="inputCiudad">Ciudad</label>
 				      <input type="text" class="form-control" id="inputCiudad">
 				    </div>
-				    <div class="form-group col-md-4">
+				    <div class="form-group col-md-6">
 				      <label for="inputRegion">Region</label>
 				      <select id="inputRegion" name="region" class="form-control">
 							<option value="" disabled> Seleccionar Region </option>
@@ -44,11 +44,13 @@
 							<option>XVI del Ñuble</option>
 				      </select>
 				    </div>
-				    <div class="form-group col-md-2">
-				      <label for="inputZip">Zip</label>
-				      <input type="text" class="form-control" id="inputZip">
-				    </div>
 				  </div>
+					  <div class="form-row">
+					    <div class="form-group col-md-12">
+					      <label for="inputConsulta">Consulta</label>
+					      <textarea name="consulta" type="text" class="form-control" id="inputConsulta" placeholder="Consulta o comentario" rows="3" style="height: auto;"></textarea>
+					    </div>
+					  </div>				    
 				  <button type="submit" class="btn">Enviar la Solicitud</button>
 				</form>				
 			</div>			
