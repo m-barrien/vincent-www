@@ -804,6 +804,13 @@ header{
 		    	-ms-flex-align: center;
 		    	-webkit-align-items: center;
 		    	align-items: center;
+				@include media-breakpoint-between(sm,md) {
+					padding: 0 15% !important; 	
+				}			    	
+				@include media-breakpoint-between(xs,sm) {
+					padding-left: 20px;   
+					padding-right: 20px; 	
+				}		    	
 			    .how-we-work-slide{
 			    	padding-top: 1rem;
 			    	display: -webkit-box;
@@ -818,8 +825,8 @@ header{
 			    	-ms-flex-align: center;
 			    	-webkit-align-items: center;
 			    	align-items: center;			    	
-			    	@include make-row();
-					@include media-breakpoint-down(sm) {
+			    	@include make-row();	
+					@include media-breakpoint-between(xs,sm) {
 						padding-left: 20px;   
 						padding-right: 20px; 	
 					}

@@ -2,7 +2,6 @@ $gmap-height:500px;
 $iframe-margin-top:-50px;
 $iframe-margin-bottom:-20px;
 #gmap{
-	overflow: hidden;
 	.proyectos{
 		z-index: 900;
 		background-color: $white;
@@ -23,6 +22,9 @@ $iframe-margin-bottom:-20px;
 		@include media-breakpoint-down(sm) {
 			position: relative;
 			width: 100%;
+			-webkit-box-shadow: 0 -6px 12px 0 rgba(0,0,0,.07);
+			-moz-box-shadow: 0 -6px 12px 0 rgba(0,0,0,.07);
+			box-shadow: 0 -6px 12px 0 rgba(0,0,0,.07);
 		}
 	}
 	.text-wrapper{
@@ -39,6 +41,7 @@ $iframe-margin-bottom:-20px;
 		color: $text-gray;
 		p{
 			text-align: center;
+			line-height: 1.1;
 			color: inherit;
 		}
 	}
