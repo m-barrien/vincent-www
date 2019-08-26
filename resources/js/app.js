@@ -7,7 +7,7 @@ var photo_arr = [];
 
 
 $(document).ready(function () {
-var swiper = new Swiper('.swiper-cover', {
+var swiper_home = new Swiper('.swiper-cover', {
       slidesPerView: 3,
       spaceBetween: 0,
       // init: false,
@@ -34,7 +34,12 @@ var swiper = new Swiper('.swiper-cover', {
         }
       }
     });
-var swiper = new Swiper('.swiper-how-we-work', {
+swiper_home.on('transitionEnd', function () {
+  var bg_link = "url('" + $( '.swiper-slide-active').find( '.cover-slide' ).attr("data-bg-im") + "')";
+  $('.site-cover').css("background-image",bg_link);
+});
+
+var swiper_how = new Swiper('.swiper-how-we-work', {
       loop: true,
       navigation: {
         nextEl: '.swiper-button-next',
