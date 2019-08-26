@@ -250,23 +250,25 @@ $co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_sec
 		</div>
 	</section>
 </div>
-<div class="container-fluid">
-	<section class="noticias">
-		<div class="ultimas-titulo">
-			<h4>Manténgase al día con las noticias de Vincent Solar</h4>
-			<h1>Últimas noticias</h1>
-		</div>
-		<?php $the_query = new WP_Query( 'posts_per_page=5' ); ?>
-		 
-		<?php while ($the_query -> have_posts()) : $the_query -> the_post(); 
-		 	
-			get_template_part( 'template-parts/content-short', get_post_format() );
-		 
-			endwhile;
-			wp_reset_postdata();
-			wp_reset_query();
-		?>
+<div class="w-100 gray-bg">	
+	<div id="noticias-full-container" class="container">
+		<section class="noticias">
+			<div class="ultimas-titulo">
+				<h4>Manténgase al día con las noticias de Vincent Solar</h4>
+				<h1>Últimas noticias</h1>
+			</div>
+			<?php $the_query = new WP_Query( 'posts_per_page=5' ); ?>
+			 
+			<?php while ($the_query -> have_posts()) : $the_query -> the_post(); 
+			 	
+				get_template_part( 'template-parts/content-short', get_post_format() );
+			 
+				endwhile;
+				wp_reset_postdata();
+				wp_reset_query();
+			?>
 
-	</section>
+		</section>
+	</div>
 </div>
 <?php get_footer(); ?>
