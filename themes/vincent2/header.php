@@ -10,7 +10,7 @@
   <body> 
     <header class="desk">
       <div class="flex-container space-between">
-        <div class="logo">
+        <div class="logo" onclick="window.location='/'">
           <?php
           $custom_logo_id = get_theme_mod( 'custom_logo' );
           $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
@@ -41,7 +41,7 @@
     </header> 
     <header class="mov">
       <div class="top-bar">
-        <div class="logo" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/snippets/logo-mov.png') ">
+        <div class="logo" onclick="window.location='/'" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/snippets/logo-mov.png') ">
           
         </div>
         <div class="hamburguer">

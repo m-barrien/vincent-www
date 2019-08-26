@@ -13,7 +13,7 @@ get_header();
 		      	</h1>
 	      		<div class="hidden-desc">
 		      		<p>Dele a su hogar la capacidad de usar energía solar para las necesidades energéticas de su familia. Estudiaremos con usted la solución más adecuada.</p>
-		      		<a href="">Descubra nuestras soluciones</a>
+		      		<a href="/soluciones-hogar">Descubra nuestras soluciones</a>
 	      			
 	      		</div>
 	      	</div>
@@ -28,7 +28,7 @@ get_header();
 		      		<p>
 		      			Dele a su empresa independencia energética y ahorre grandes cantidades de dinero. Juntos encontraremos la solución más adecuada para el consumo de energía de su negocio.
 		      		</p>
-		      		<a href="">Pida nuestro consejo</a>
+		      		<a href="/soluciones-empresa">Pida nuestro consejo</a>
 	      			
 	      		</div>
 	      	</div>

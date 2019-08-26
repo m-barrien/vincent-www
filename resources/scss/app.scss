@@ -1230,9 +1230,15 @@ footer{
 			.row{
 				.icon{
 					@include make-col-ready();
-					@include make-col(12);
+					@include media-breakpoint-up(sm) {
+						@include make-col(12);
+						padding-right: 30%;
+
+					}
+					@include media-breakpoint-down(sm) {
+						@include make-col(4);
+					}
 					min-height: 10px;
-					padding-right: 30%;
 				}
 			}
 		}
