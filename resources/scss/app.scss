@@ -910,6 +910,7 @@ header{
 			align-items: stretch;
 
 			text-decoration: none;
+			overflow: hidden;
 			&:hover{
 				text-decoration: none;
 
@@ -975,15 +976,25 @@ header{
 					}			
 				}
 				.image-container{
+					height: 260px;
+					background-repeat: no-repeat;
+					background-size: cover;
 					@include make-col-ready();
 					@include media-breakpoint-between(lg,xl) {
 						@include make-col(6);
+						background-position: right center;
+						margin-left: -15px !important;
 					}
 					@include media-breakpoint-between(md,lg) {
 						@include make-col(6);
+						background-position: right center;
+						margin-left: -15px !important;
 					}
 					@include media-breakpoint-down(sm) {
-						@include make-col(12);  
+						width: 105%;
+						background-position: center;
+						margin-left: -5px;
+						margin-right: -5px;
 					}	
 
 				}
