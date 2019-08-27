@@ -99,20 +99,20 @@ add_action( 'init', 'create_oferta_custom_taxonomy', 0 );
 function create_oferta_custom_taxonomy() {
  
   $labels = array(
-    'name' => _x( 'Types', 'taxonomy general name' ),
+    'name' => _x( 'Tipo oferta', 'taxonomy general name' ),
     'singular_name' => _x( 'Type', 'taxonomy singular name' ),
-    'search_items' =>  __( 'Search Types' ),
-    'all_items' => __( 'All Types' ),
+    'search_items' =>  __( 'Search Tipo oferta' ),
+    'all_items' => __( 'All Tipo oferta' ),
     'parent_item' => __( 'Parent Type' ),
     'parent_item_colon' => __( 'Parent Type:' ),
     'edit_item' => __( 'Edit Type' ), 
     'update_item' => __( 'Update Type' ),
     'add_new_item' => __( 'Add New Type' ),
     'new_item_name' => __( 'New Type Name' ),
-    'menu_name' => __( 'Types' ),
+    'menu_name' => __( 'Tipo oferta' ),
   );  
  
-  register_taxonomy('types',array('oferta'), array(
+  register_taxonomy('tipo-kit',array('oferta'), array(
     'hierarchical' => true,
     'labels' => $labels,
     'show_ui' => true,
