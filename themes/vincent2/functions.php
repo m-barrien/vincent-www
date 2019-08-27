@@ -125,3 +125,4 @@ add_filter('wp_nav_menu_objects', 'my_reverse_nav_menu', 10, 2);
  * Hide category product count in product archives
  */
 add_filter( 'woocommerce_subcategory_count_html', '__return_false' );
+

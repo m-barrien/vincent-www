@@ -78,6 +78,9 @@ function lc_custom_post_oferta() {
     'has_archive'       => true,
     'show_in_admin_bar' => true,
     'show_in_nav_menus' => true,
+    'show_in_menu'      => true,
+    'taxonomies'        => array('oferta_tag'),
+    'publicly_queryable'=> true,
     'has_archive'       => true,
     'rewrite' => array('slug' => 'ofertas'),
     'query_var'         => 'oferta'
@@ -87,4 +90,34 @@ function lc_custom_post_oferta() {
   // Parameter 1 is a name for the post type
   // Parameter 2 is the $args array
   register_post_type( 'oferta', $args);
+}
+
+// Let us create Taxonomy for Custom Post Type
+add_action( 'init', 'create_oferta_custom_taxonomy', 0 );
+ 
+//create a custom taxonomy name it "type" for your posts
+function create_oferta_custom_taxonomy() {
+ 
+  $labels = array(
+    'name' => _x( 'Types', 'taxonomy general name' ),
+    'singular_name' => _x( 'Type', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Search Types' ),
+    'all_items' => __( 'All Types' ),
+    'parent_item' => __( 'Parent Type' ),
+    'parent_item_colon' => __( 'Parent Type:' ),
+    'edit_item' => __( 'Edit Type' ), 
+    'update_item' => __( 'Update Type' ),
+    'add_new_item' => __( 'Add New Type' ),
+    'new_item_name' => __( 'New Type Name' ),
+    'menu_name' => __( 'Types' ),
+  );  
+ 
+  register_taxonomy('types',array('oferta'), array(
+    'hierarchical' => true,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'tipo-kit' ),
+  ));
 }

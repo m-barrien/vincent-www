@@ -961,38 +961,49 @@ footer{
 	padding-top: $section-padding-top;
 	padding-bottom: $section-padding-bottom;
 	@extend .container;
-	.footer-menu{
+	ul.menu{
+		@include make-row();
 		@extend .space-between;
-		.footer-menu-col{
-			@include make-col-ready();
-			@include media-breakpoint-between(lg,xl) {
-				@include make-col(3);
-			}
-			@include media-breakpoint-between(md,lg) {
-				@include make-col(6);
-			}
-			@include media-breakpoint-down(sm) {
-				@include make-col(12);  
-			}			
-			.footer-menu-title{
-				font-size: 20px;
-				font-weight: 900;
-				color: #000;
-				line-height: 1.3;
-				margin-bottom: 18px;
-			}
-			.footer-menu-li{
-				color: #666;
-				font-size: 16px;
-				display: block;
-				line-height: 1.1;
-				margin-bottom: 11px;
-				text-decoration: none;
-				&:hover{
-					text-decoration: underline;
-				}
-			}
+		padding: 0;
+		list-style:none; 
+	}
+	li.menu-item-has-children{
+		list-style:none; 
+		padding: 0;
+		@include make-col-ready();
+		@include media-breakpoint-between(lg,xl) {
+			@include make-col(3);
 		}
+		@include media-breakpoint-between(md,lg) {
+			@include make-col(6);
+		}
+		@include media-breakpoint-down(sm) {
+			@include make-col(12);  
+		}	
+		a{
+			font-size: 20px;
+			font-weight: 900;
+			color: #000;
+			line-height: 1.3;
+			margin-bottom: 18px;			
+		}	
+	}
+	ul.sub-menu{
+		padding: 0;
+		list-style: none;
+		margin-top: 18px;
+	}
+	ul.sub-menu > li > a{
+		color: #666;
+		font-size: 16px;
+		font-weight: 400;
+		display: block;
+		line-height: 1.1;
+		margin-bottom: 11px;
+		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		}			
 	}
 	.footer-down{
 		border-top: 1px solid #ddd;
