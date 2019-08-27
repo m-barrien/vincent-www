@@ -31,7 +31,7 @@
 			</div>			
 			<div class="kit-group-body">
 				<div class="kit-group-body-image">
-					<img class="img-fluid" src="https://via.placeholder.com/500">
+					<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $wcatTerm->slug; ?>/kit-group-image.png">
 				</div>
 				<div class="kit-group-body-ofertas">
 					<?php if(have_posts()) : while(have_posts()) : the_post(); 

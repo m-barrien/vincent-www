@@ -30,11 +30,69 @@
 	@extend .space-between;
 }
 .kit-group-body-image{
-	width: 30%;
+	padding: 30px;
+	@include media-breakpoint-between(lg,xl) {
+		width: 30%;
+	}
+	@include media-breakpoint-between(md,lg) {
+		width: 50%;
+	}
+	@include media-breakpoint-down(sm) {
+		width: 100%;
+	}
 }
 .kit-group-body-ofertas{
-	width: 30%;
+	@include media-breakpoint-between(lg,xl) {
+		width: 20%;
+	}
+	@include media-breakpoint-between(md,lg) {
+		width: 50%;
+	}
+	@include media-breakpoint-down(sm) {
+		width: 100%;
+	}
 }
+.oferta-short{
+	width: auto;
+	margin-bottom: 15px;
+	font-weight: 900;
+	cursor: pointer;
+	@include media-breakpoint-between(lg,xl) {
+		font-size: 18px;
+	}
+	@include media-breakpoint-between(md,lg) {
+		font-size: 18px;
+	}
+	@include media-breakpoint-down(sm) {
+		font-size: 16px;
+	}	
+}
+.oferta-short-title{
+	span{
+		font-size: inherit;
+		background-color: $red-impact;
+		color: $white;
+		font-weight: inherit;
+		padding: 3px;
+		border-radius: 3px;
+	}
+}
+.oferta-price-tag{
+	span{
+		font-size: inherit;
+		color: $text-black;
+		font-weight: inherit;
+
+	}
+}	
 .kit-group-body-banner{
-	width: 30%;
+	@include media-breakpoint-between(lg,xl) {
+		width: 50%;
+	}
+	@include media-breakpoint-between(md,lg) {
+		width: 100%;
+	}
+	@include media-breakpoint-down(sm) {
+		width: 100%;
+	}
 }

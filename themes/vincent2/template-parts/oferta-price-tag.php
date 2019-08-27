@@ -1,9 +1,13 @@
-<div class="w-100">
+<div class="oferta-short" onclick="window.location='<?php echo get_permalink() ; ?>'">
 	<div class="oferta-short-title">
-		<?php echo get_post_meta($post->ID, 'short-title')[0] ; ?>
+		<span>
+			<?php echo get_post_meta($post->ID, 'short-title')[0] ; ?>
+		</span>
 	</div>	
 	<div class="oferta-price-tag">
-		<?php echo get_post_meta($post->ID, 'price-tag')[0] ; ?>
+		<span>
+			<?php echo get_post_meta($post->ID, 'price-tag')[0] ; ?>
+		</span>
 	</div>
 	
 </div>
