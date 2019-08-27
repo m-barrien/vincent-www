@@ -23,7 +23,15 @@
 	}
 }
 .kit-group-header-icons{
-	
+	@include media-breakpoint-between(lg,xl) {
+		max-width: 400px;
+	}
+	@include media-breakpoint-between(md,lg) {
+		max-width: 300px;
+	}
+	@include media-breakpoint-down(sm) {
+		max-width: 100%;
+	} 	
 }
 .kit-group-body{
 	@extend .flex-container;

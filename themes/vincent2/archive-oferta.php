@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="site-cover-secondary" style="background-image:linear-gradient(to bottom, #00000080 0%, #00000000 25%,#00000000 75%, #00000080 100%),url('<?php echo get_template_directory_uri() ?>/image/covers/ofertas.jpg')">
-	<div class="blog-container-width">
+	<div class="container">
 		<div class="row">
 			<div class="col">
 				<div class="text-wrapper">
@@ -25,7 +25,7 @@
 						<?php echo term_description( $wcatTerm->term_id, 'tipo-kit' ); ?>
 				</div>
 				<div class="kit-group-header-icons">
-					ICONOS
+					<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/kit-feats.png">
 				</div>
 				
 			</div>			
