@@ -1208,6 +1208,41 @@ footer{
 			}
 	}
 }
+.servicio-block{
+	@include make-col-ready();
+	@include make-col(12);
+	@extend .my-3;
+}
+.servicio-wrapper{
+	@include make-row();
+}
+.servicio-image{
+	@include make-col-ready();
+	@include media-breakpoint-up(sm) {
+
+		@include make-col(4);  
+	}	
+	@include media-breakpoint-down(sm) {
+		@include make-col(12);  
+	}	
+	.img-fluid{
+		border-radius: 7px;
+
+	}
+}
+.servicio-text{
+	@include make-col-ready();
+	@include media-breakpoint-up(sm) {
+		@include make-col(8);  
+	}	
+	@include media-breakpoint-down(sm) {
+		@include make-col(12);  
+	}	
+	h2{
+		padding-top: 5px;
+	}
+}
+
 
 @import 'generacion';
 @import 'mapa';
