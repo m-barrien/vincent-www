@@ -33,35 +33,42 @@
 		
 	</section>
 </div>
+<?php 
+$query = new WP_Query(array(
+    'post_type' => 'oferta',
+    'post_status' => 'publish',
+	'posts_per_page' => -1,
+	'meta_key'		=> 'featured',
+	'orderby'		=> 'meta_value',
+	'order'			=> 'DESC'    
+));
+$i=0;
+?>
 <div class="blog-container wide">
 	<section class="kits-container">
-		<div class="kit-col-container" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-3kw.jpg')">
-			<a class="white-container" href="#">
-				<div class="text-body">
-					<div class="number">01</div>
-					<div class="little-title">Instalación Residencial 3KW</div>
-					<div class="kw">3KW</div>
+		<?php 
+			while ($query->have_posts()) {
+			    $query->the_post();
+			    $post_id = get_the_ID();
+			    $tax_term = get_the_terms( $post_id ,'tipo-kit');
+			    $oferta_category ="Instalaci&oacute;n Residencial";
+			    if ($tax_term) {
+			    	$oferta_category = $tax_term[0]->name;
+			    }
+		?>
+				<div class="kit-col-container" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-3kw.jpg')">
+					<a class="white-container" href="#">
+						<div class="text-body">
+							<div class="number">0<?php echo ++$i; ?></div>
+							<div class="little-title"><?php echo $oferta_category; ?></div>
+							<div class="kw"><?php echo get_post_meta($post_id, 'short-title')[0] ; ?></div>
+						</div>
+					</a>
 				</div>
-			</a>
-		</div>
-		<div class="kit-col-container" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-5kw.jpg')">
-			<a class="white-container" href="#">
-				<div class="text-body">
-					<div class="number">02</div>
-					<div class="little-title">Instalación Residencial 5KW</div>
-					<div class="kw">5KW</div>
-				</div>
-			</a>
-		</div>
-		<div class="kit-col-container" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-6kw.jpg')">
-			<a class="white-container" href="#">
-				<div class="text-body">
-					<div class="number">03</div>
-					<div class="little-title">Instalación Residencial 6KW</div>
-					<div class="kw">6KW</div>
-				</div>
-			</a>
-		</div>
+		<?php 
+			}
+			wp_reset_query();
+		?>
 	</section>
 </div>
 <?php get_footer(); ?>

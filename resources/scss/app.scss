@@ -1113,17 +1113,17 @@ footer{
 }
 
 .kits-container{
+	@extend .justify-content-center;
 	padding-top: 0 !important;
 	.kit-col-container{
-			@include make-col-ready();
 			@include media-breakpoint-between(lg,xl) {
-				@include make-col(4);
+				width: 333px;
 			}
 			@include media-breakpoint-between(md,lg) {
-				@include make-col(4);
+				width: 333px;
 			}
 			@include media-breakpoint-down(sm) {
-				@include make-col(12);  
+				width: 100vw;
 			}
 			padding:0;
 			height: 600px;
@@ -1150,14 +1150,14 @@ footer{
 					color: $text-black;
 					padding-left: 10%;
 					padding-right: 20%;
-					padding-top: 200px;
+					margin-top: 200px;
 
 					-webkit-transition: all 1s;
 					-moz-transition: all 1s;
 					-o-transition: all 1s;
 					transition: all 1s;		
 					&.rise{
-						padding-top: 10%;
+						margin-top: 10%;
 						color: $white; 
 						.number{
 							color: $white;
@@ -1170,7 +1170,7 @@ footer{
 						}
 					}								
 					.number{
-						color: $text-light-gray;
+						color: $text-gray;
 						font-size: 22px;
 						font-weight: 300;
 						-webkit-transition: all 1s;
@@ -1191,6 +1191,7 @@ footer{
 						color: inherit;
 						font-size: 70px;
 						font-weight: 900;
+						line-height: 1.2;
 						-webkit-transition: all 1s;
 						-moz-transition: all 1s;
 						-o-transition: all 1s;

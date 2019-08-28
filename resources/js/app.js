@@ -85,6 +85,36 @@ $('.fullvideo-cover').click(function(){
 });
 
 
+
+var swiper_kits = new Swiper('.kits-swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 0,
+      freeMode: true,
+      // init: false,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 0,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+        },
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        }
+      }
+    });
+
 //DOC READY
 });
 
@@ -215,3 +245,4 @@ function ContatoreCO2(n, t, i, r) {
         g()
     }, t)
 }
+
