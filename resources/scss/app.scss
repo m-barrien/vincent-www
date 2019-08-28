@@ -38,6 +38,12 @@ section {
 	width: 100% !important; 
 	max-width: none !important;
 }
+.wp-block-image{
+	@extend .img-fluid;
+	img{
+		@extend .img-fluid;
+	}
+}
 a{
 	-moz-outline-style: none;
 	outline: none;
