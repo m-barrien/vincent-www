@@ -187,3 +187,81 @@
 		@include make-col(12);  
 	}	
 }
+.oferta-consultar-button{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 5px;
+	.consultar-button-wrapper{
+		display: block;
+		width: auto;
+		margin: 0 0 0 auto;
+	}
+	.consultar-button{
+		position: absolute;
+		right: 0;	
+		text-align: center;
+		width: auto;
+		background-color: $vincent-orange;
+		color: $white;
+		font-weight: 900;
+		font-size: 20px;
+		text-decoration: none;
+		padding: 8px 37px;
+		border-radius: 50px;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+.oferta-price-header{
+	@extend .flex-container;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 5px;
+	border-style: solid;
+	border-color: $dark-bg;
+	border-width: 1px 0 1px 0;
+
+	.price-tag{
+		font-size: 33px;
+		font-weight: 900;
+		color: $red-impact;
+
+	}
+	.price-facilidades{
+		font-weight: bold;
+		position: absolute;
+		top: 105px;
+	}
+}
+.oferta-gallery-container{
+	@include make-col-ready();	
+	@include make-col(12);	
+}
+.oferta-gallery{
+	@include make-row();
+}
+.oferta-gallery-img{
+	@include make-col-ready();
+	@include media-breakpoint-between(lg,xl) {
+		@include make-col(4);
+	}
+	@include media-breakpoint-between(md,lg) {
+		@include make-col(4);
+	}
+	@include media-breakpoint-down(sm) {
+		@include make-col(6);  
+	}
+	padding-top: 10px;
+	a{
+		display: block;
+		height: 200px;
+		width: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+	}	
+}
