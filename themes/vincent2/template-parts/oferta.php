@@ -1,28 +1,17 @@
-<section class="oferta">
-	
-	<div class="col-sm-12 col-md-10 offset-md-1">
-		<div class="row">
-				<div class="col-sm-12 col-md-6 col-lg-5">
-					<?php if ( has_post_thumbnail() ) : ?>
-						<div class="py-2">
-							<img class="img-fluid" src="<?php the_post_thumbnail_url(); ?>"/>
-						</div>
-					<?php endif; ?>
-				</div>
-				<div class="col-sm-12 col-md-6 col-lg-7 oferta-body">
-					<h2 class=""><?php the_title() ;?> <small>Instalación incluida</small></h2>
-					<?php the_content() ;?>
-					<a class="boton-cotizar mov" href="mailto:info@vincentsolar.com?subject=Intersado en <?php the_title() ;?>&body=Nombre:%0D%0ACiudad:%0D%0ATelefono:%0D%0AComentario:">
-						Contáctenos <br> <i class="fas fa-hand-pointer"></i>
-					</a>
-					
-					<button type="button" class="boton-cotizar" data-toggle="modal" data-target="#modalContacto">
-						Contáctenos <br> <i class="fas fa-hand-pointer"></i>
-					</button>
-				</div>
-					
-		</div>
+<?php 
+$tax_term = get_the_terms( get_the_ID() ,'tipo-kit');
+$oferta_category ="Instalaci&oacute;n Residencial";
+if ($tax_term) {
+	$oferta_category = $tax_term[0]->name;
+}
 
-	</div> <!-- /.row -->
-
+?>
+<section class="oferta-single-row">
+	<div class="oferta-category-kit-img">
+		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-group-image.png">
+	</div>
+	<div class="oferta-description-container">
+		<?php the_content() ;?>
+	</div>
 </section>
+

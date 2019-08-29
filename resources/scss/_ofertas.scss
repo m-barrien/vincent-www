@@ -155,3 +155,35 @@
 		width: 100%;
 	}
 }
+
+
+.oferta-single-row{
+
+}
+.oferta-header{
+
+}
+.oferta-category-kit-img{
+	@include make-col-ready();
+	@include media-breakpoint-between(lg,xl) {
+		@include make-col(4);
+	}
+	@include media-breakpoint-between(md,lg) {
+		@include make-col(4);
+	}
+	@include media-breakpoint-down(sm) {
+		@include make-col(12);  
+	}	
+}
+.oferta-description-container{
+	@include make-col-ready();
+	@include media-breakpoint-between(lg,xl) {
+		@include make-col(8);
+	}
+	@include media-breakpoint-between(md,lg) {
+		@include make-col(8);
+	}
+	@include media-breakpoint-down(sm) {
+		@include make-col(12);  
+	}	
+}
