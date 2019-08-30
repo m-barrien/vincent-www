@@ -1,0 +1,51 @@
+.preguntas-container{
+
+}
+.pregunta-block{
+
+}
+.pregunta-wrapper{
+
+}
+.pregunta-text{
+
+}
+.boton-acordeon{
+	padding: 0 !important;
+	margin: 0 !important;
+    line-height: 1.4;
+    text-decoration: none;
+	i{
+		-webkit-transition: all .4s;
+		-moz-transition: all .4s;
+		-o-transition: all .4s;
+		transition: all .4s;		
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+		-o-transform: rotate(-90deg);
+		transform: rotate(-90deg);		
+		color: $green;
+	}
+	.collapsed > i{
+		-webkit-transform: rotate(0);
+		-moz-transform: rotate(0);
+		-o-transform: rotate(0);
+		transform: rotate(0);			
+	}
+    button.btn-link{
+    	text-decoration: none;
+    	font-size: 24px;
+    	text-align: left;
+    	padding:0 !important;
+    	margin: 0 !important;
+    	color:$text-black;
+    }
+}
+.faq-accordion{
+	-webkit-box-shadow: 2.5px 4.33px 10px 0 rgba(0,0,0,.05);
+    -moz-box-shadow: 2.5px 4.33px 10px 0 rgba(0,0,0,.05);
+    box-shadow: 2.5px 4.33px 10px 0 rgba(0,0,0,.05);
+    .card-header{
+    	background-color: transparent !important;
+    }
+}
