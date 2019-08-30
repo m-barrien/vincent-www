@@ -1,0 +1,23 @@
+$map-overlay-height: 150px;
+#fs-contacto-iframe{
+	width: 100%;
+	z-index: 100;
+	position: relative;
+	@include media-breakpoint-up(sm) {
+		top:-280px;
+		height: 1000px;
+	}	
+	@include media-breakpoint-down(sm) {
+		height: 500px;
+		top:-1 * $map-overlay-height;
+	}	
+}
+.gray-overlay-map{
+	@include media-breakpoint-down(sm) {
+		display: none;
+	}
+	background-image:linear-gradient(to bottom, #00000080 0%, #00000000 100%);
+	height: $map-overlay-height;
+	position: relative;
+	z-index: 101;
+}
