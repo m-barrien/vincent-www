@@ -4,7 +4,7 @@ $map-overlay-height: 150px;
 	z-index: 100;
 	position: relative;
 	@include media-breakpoint-up(sm) {
-		top:-280px;
+		top:-295px;
 		height: 1000px;
 	}	
 	@include media-breakpoint-down(sm) {
