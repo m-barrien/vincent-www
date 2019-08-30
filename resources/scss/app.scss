@@ -193,7 +193,12 @@ header{
 				display: inline;
 			}
 			a{
-				font-size: 12px;
+				@include media-breakpoint-up(lg) {
+					font-size: 16px;
+				}
+				@include media-breakpoint-down(lg) {
+					font-size: 12px;
+				}				
 				color: $white;
 				text-transform: uppercase;
 				text-decoration: none;
@@ -212,6 +217,12 @@ header{
 				display: inline;
 			}
 			a{
+				@include media-breakpoint-up(lg) {
+					font-size: 16px;
+				}
+				@include media-breakpoint-down(lg) {
+					font-size: 12px;
+				}				
 				color: $white;
 				&:hover{
 					color: $white;
@@ -480,6 +491,7 @@ header{
 		font-size: 18px;
 		line-height: 26px;
 		font-weight: 400;
+		text-align: justify;
 	}
 	ul{
 		position: relative;
@@ -643,10 +655,17 @@ header{
 				color: $white;
 				text-transform: none;
 				padding: 8px 37px;
-				font-size: 18px;
+
 				background-color: $vincent-orange;
 				text-decoration: none;
 				font-weight: bold;
+				
+				@include media-breakpoint-up(lg) {
+					font-size: 28px;
+				}				
+				@include media-breakpoint-down(lg) {
+					font-size: 18px;
+				}
 				&:hover{
 					color: $white;
 					text-decoration: none;
@@ -768,7 +787,6 @@ header{
 		text-align: center;
 	}
 	p{
-		font-size: 22px;
 		text-align: center;
 		line-height: 1.5;
 		color: #6b7c93;
@@ -851,7 +869,7 @@ header{
 							@include make-col(4);
 						}
 						@include media-breakpoint-between(md,lg) {
-							@include make-col(6);
+							@include make-col(5);
 						}
 						@include media-breakpoint-down(sm) {
 							@include make-col(12);  
@@ -859,6 +877,11 @@ header{
 						}
 						.img-wrapper{
 				    		padding: 20px;
+				    		margin: 0 auto 0 auto ;
+							@include media-breakpoint-down(sm) {
+								max-width: 300px;
+			  
+							}				    		
 					    	img{
 					    		display: block;
 					    		width: 100%;
@@ -877,7 +900,7 @@ header{
 							@include make-col(6);
 						}
 						@include media-breakpoint-between(md,lg) {
-							@include make-col(6);
+							@include make-col(5);
 						}
 						@include media-breakpoint-down(sm) {
 							@include make-col(12);     
@@ -1250,4 +1273,5 @@ footer{
 @import 'generacion';
 @import 'mapa';
 @import 'noticias';
-@import 'ofertas'
+@import 'ofertas';
+//@import 'contacto';
