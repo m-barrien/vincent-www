@@ -61,7 +61,7 @@ get_header();
 	<section id="porque-elegirnos" class="flex-container space-between" style="background-image:url('<?php echo get_template_directory_uri() ?>/image/covers/fade-paneles.png')">
 		<div class="col-md-5">
 			<h1>¿Por qu&eacute; elegirnos?</h1>
-			<p>Queremos estar a su lado incluso después de instalar el sistema fotovoltaico y durante el tiempo que desee. Su objetivo de independencia energética es nuestro.</p>
+			<p class="highlight">Queremos estar a su lado incluso después de instalar el sistema fotovoltaico y durante el tiempo que desee. Su objetivo de independencia energética es nuestro.</p>
 		</div>
 		<div class="col-md-7">
 			<div class="row">
@@ -109,7 +109,7 @@ get_header();
 	<section id="how-we-work">
 		<div class="col-sm-12">
 			<h1>Cómo trabajamos...</h1>
-			<p>Estamos constantemente proyectados hacia el mañana.<br> Trabajamos todos los días pensando en su futuro, tal como lo hace con las personas que ama.</p>
+			<p class="highlight">Estamos constantemente proyectados hacia el mañana.<br> Trabajamos todos los días pensando en su futuro, tal como lo hace con las personas que ama.</p>
 		</div>
 		<div class="col-sm-12">
 			<section class="cloud-container" style="background-image:url('<?php echo get_template_directory_uri() ?>/image/covers/cloud-bg.png')">
@@ -128,7 +128,7 @@ get_header();
 										<span class="bar-number">1</span>
 									</div>
 									<h1>Inspección</h1>
-									<p>Llevamos a cabo una inspección técnica cuidadosa de su hogar o su empresa, con el fin de extraer elementos de evaluación y juicio.</p>
+									<p class="highlight">Llevamos a cabo una inspección técnica cuidadosa de su hogar o su empresa, con el fin de extraer elementos de evaluación y juicio.</p>
 								</div>
 							</div>	
 						</div>
@@ -145,7 +145,7 @@ get_header();
 										<span class="bar-number">2</span>
 									</div>
 									<h1>Acuerdo</h1>
-									<p>Juntos elegimos la mejor solución para su propiedad y nos encargamos de todos los trámites necesarios para iniciar el procedimiento.</p>
+									<p class="highlight">Juntos elegimos la mejor solución para su propiedad y nos encargamos de todos los trámites necesarios para iniciar el procedimiento.</p>
 								</div>
 							</div>	
 						</div>
@@ -162,7 +162,7 @@ get_header();
 										<span class="bar-number">3</span>
 									</div>
 									<h1>Instalación</h1>
-									<p>Diseñamos e instalamos el sistema de producción de energía limpia que es adecuado para usted, para ello es nuestro equipo de instaladores especializados.</p>
+									<p class="highlight">Diseñamos e instalamos el sistema de producción de energía limpia que es adecuado para usted, para ello es nuestro equipo de instaladores especializados.</p>
 								</div>
 							</div>	
 						</div>
@@ -179,7 +179,7 @@ get_header();
 										<span class="bar-number">4</span>
 									</div>
 									<h1>Activación</h1>
-									<p>Nos aseguramos de que la conexión al suministro de electricidad sea correcta para poder contar la producción de su energía.</p>
+									<p class="highlight">Nos aseguramos de que la conexión al suministro de electricidad sea correcta para poder contar la producción de su energía.</p>
 								</div>
 							</div>	
 						</div>
@@ -196,7 +196,7 @@ get_header();
 										<span class="bar-number">5</span>
 									</div>
 									<h1>Monitoreo</h1>
-									<p>Monitoreamos constantemente sus resultados, porque queremos saber cómo estar tranquilos y poder mostrarle los ahorros reales a lo largo del tiempo.</p>
+									<p class="highlight">Monitoreamos constantemente sus resultados, porque queremos saber cómo estar tranquilos y poder mostrarle los ahorros reales a lo largo del tiempo.</p>
 								</div>
 							</div>	
 						</div>
@@ -213,7 +213,7 @@ get_header();
 										<span class="bar-number">6</span>
 									</div>
 									<h1>También estamos después!</h1>
-									<p>Cada tres meses tendrá un informe gratuito que resume los resultados obtenidos y los que obtendrá en el primer año de vida de la planta.</p>
+									<p class="highlight">Cada tres meses tendrá un informe gratuito que resume los resultados obtenidos y los que obtendrá en el primer año de vida de la planta.</p>
 								</div>
 							</div>	
 						</div>
@@ -272,7 +272,7 @@ $co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_sec
 	<section id="generacion" style="background-image:url('<?php echo get_template_directory_uri() ?>/image/covers/co2-min.png')">
 		<div class="col-sm-12">
 			<h1>Reducción de CO2</h1>
-			<p>Gracias a los sitemas fotovoltaicos instalados por nosotros.</p>
+			<p class="highlight">Gracias a los sitemas fotovoltaicos instalados por nosotros.</p>
 		</div>
 		<div class="numbers d-none">
 			<?php echo $elapsed_secs*$elapsed_secs*$factor_co2; ?> gr co2 <br>

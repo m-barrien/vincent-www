@@ -2,7 +2,7 @@
 	<section id="contacto-footer" style="background-image:url('<?php echo get_template_directory_uri() ?>/image/covers/form-min.png')">
 		<div class="col-sm-12 col-md-12">
 			<h1>Contacto</h1>
-			<p class="text-center">Contáctenos y reserve una visita gratuita y sin compromiso</p>
+			<p class="highlight text-center">Contáctenos y reserve una visita gratuita y sin compromiso</p>
 		</div>
 		<div class="container">
 			<div class="row">

@@ -17,7 +17,7 @@ var swiper_home = new Swiper('.swiper-cover', {
       },
       breakpoints: {
         1024: {
-          slidesPerView: 3,
+          slidesPerView: 2,
           spaceBetween: 40,
         },
         768: {
