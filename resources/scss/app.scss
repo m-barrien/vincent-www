@@ -123,7 +123,7 @@ p{
 	&.highlight{
 		font-size: 22px;
 		line-height: 1.5;
-		color: #6b7c93;		
+		color: $baby-blue-text;		
 	}
 }
 
@@ -482,7 +482,7 @@ header{
 	}
 	h3{
 		font-size: 22px;
-		color: #6b7c93;
+		color: $baby-blue-text;
 		line-height: 30px;
 		font-weight: 900;		
 	}
@@ -573,7 +573,7 @@ header{
     margin-bottom: 5px;
     line-height: 20px;
     font-family: pragmatica-condensed,sans-serif;
-    color: #6b7c93;
+    color: $baby-blue-text;
 }
 .site-cover{
 	@include media-breakpoint-up(sm) {
@@ -789,7 +789,7 @@ header{
 	p{
 		text-align: center;
 		line-height: 1.5;
-		color: #6b7c93;
+		color: $baby-blue-text;
 	}
 	.cloud-container{
 		background-position: center top;
@@ -1030,7 +1030,7 @@ footer{
 		margin-top: 18px;
 	}
 	ul.sub-menu > li > a{
-		color: #666;
+		color: $text-gray;
 		font-size: 16px;
 		font-weight: 400;
 		display: block;
@@ -1042,7 +1042,7 @@ footer{
 		}			
 	}
 	.footer-down{
-		border-top: 1px solid #ddd;
+		border-top: 1px solid $text-light-gray;
 		margin-top: 45px;
 		padding-top: 30px;
 		.text-container{
@@ -1057,7 +1057,7 @@ footer{
 				@include make-col(12);  
 				padding-top:20px;
 			}		
-			color: #666;
+			color: $text-gray;
 			font-size: 14px;
 			line-height: 20px;
 			.social{
