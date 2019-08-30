@@ -121,3 +121,44 @@ function create_oferta_custom_taxonomy() {
     'rewrite' => array( 'slug' => 'tipo-kit' ),
   ));
 }
+
+add_action( 'init', 'lc_custom_post_pregunta' );
+ 
+// The custom function to register a pregunta post type
+function lc_custom_post_pregunta() {
+ 
+  // Set the labels, this variable is used in the $args array
+  $labels = array(
+    'name'               => __( 'Preguntas frecuentes' ),
+    'singular_name'      => __( 'Pregunta' ),
+    'add_new'            => __( 'Nueva Pregunta' ),
+    'add_new_item'       => __( 'Nueva Pregunta' ),
+    'edit_item'          => __( 'Editar Pregunta' ),
+    'new_item'           => __( 'Nueva Pregunta' ),
+    'all_items'          => __( 'Todas Preguntas frecuentes' ),
+    'view_item'          => __( 'Ver Pregunta' ),
+    'search_items'       => __( 'Buscar Preguntas frecuentes' ),
+    'featured_image'     => 'Portada',
+    'set_featured_image' => 'Add Portada'
+  );
+ 
+  // The arguments for our post type, to be entered as parameter 2 of register_post_type()
+  $args = array(
+    'labels'            => $labels,
+    'description'       => 'Holds our preguntas and pregunta specific data',
+    'public'            => true,
+    'menu_position'     => 5,
+    'supports'          => array( 'title', 'thumbnail', 'excerpt', 'editor', 'custom-fields' ),
+    'has_archive'       => true,
+    'show_in_admin_bar' => true,
+    'show_in_nav_menus' => true,
+    'has_archive'       => true,
+    'rewrite' => array('slug' => 'preguntas-frecuentes'),
+    'query_var'         => 'pregunta'
+  );
+ 
+  // Call the actual WordPress function
+  // Parameter 1 is a name for the post type
+  // Parameter 2 is the $args array
+  register_post_type( 'pregunta', $args);
+}
