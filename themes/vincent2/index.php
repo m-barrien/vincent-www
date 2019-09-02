@@ -2,7 +2,7 @@
 get_header(); 
 ?>
 <div class="w-100 video-container">
-	<iframe  src="" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="resizelistener" id="iframe39000" ></iframe>
+	<iframe src="" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="resizelistener" id="iframe39000" ></iframe>
 	<div class="fullvideo-cover"></div>
 </div>	
 
@@ -11,7 +11,7 @@ get_header();
 	<div class="swiper-container swiper-cover">
 	    <div class="swiper-wrapper">
 	      <div class="swiper-slide">
-	      	<div class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/1.jpg">
+	      	<div class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/1.jpg" >
 		      	<div class="bar"></div>
 		      	<h1 class="shrink">
 		      		¿Quiere ahorrar con energ&iacute;a solar?
@@ -58,7 +58,7 @@ get_header();
 
 </div>
 <div class="container-fluid">
-	<section id="porque-elegirnos" class="flex-container space-between" style="background-image:url('<?php echo get_template_directory_uri() ?>/image/covers/fade-paneles.png')">
+	<section id="porque-elegirnos" class="flex-container space-between bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/fade-paneles.png">
 		<div class="col-md-5">
 			<h1>¿Por qu&eacute; elegirnos?</h1>
 			<p class="highlight">Queremos estar a su lado incluso después de instalar el sistema fotovoltaico y durante el tiempo que desee. Su objetivo de independencia energética es nuestro.</p>
@@ -68,7 +68,7 @@ get_header();
 				<div class="col-md-6">
 					<div class="card">
 						<div class="card-body">
-							<img src="<?php echo get_template_directory_uri() ?>/image/snippets/h-shake.png">
+							<img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/h-shake.png">
 							<h3>Transparencia y Confianza</h3>
 							<p>Nos encanta ser sinceros y directos en la comunicación y siempre decimos las cosas como son. La confianza en las relaciones es fundamental para nosotros.</p>
 						</div>
@@ -77,7 +77,7 @@ get_header();
 				<div class="col-md-6">
 					<div class="card">
 						<div class="card-body">
-							<img src="<?php echo get_template_directory_uri() ?>/image/snippets/h-shake.png">
+							<img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/h-shake.png">
 							<h3>Tenemos un sueño</h3>
 							<p>Creemos que hacerse independiente de la energía es un derecho y una opción libre para todos.</p>					
 						</div>
@@ -86,7 +86,7 @@ get_header();
 				<div class="col-md-6">
 					<div class="card">
 						<div class="card-body">
-							<img src="<?php echo get_template_directory_uri() ?>/image/snippets/h-shake.png">
+							<img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/h-shake.png">
 							<h3>No tendr&aacute;s preocupaciones</h3>
 							<p>Estás en primer plano, entonces llegamos. Esta es la filosofía que nos ha guiado todos los días durante veinte años. No tendrás que preocuparte por nada.</p>
 						</div>
@@ -95,7 +95,7 @@ get_header();
 				<div class="col-md-6">
 					<div class="card">
 						<div class="card-body">
-							<img src="<?php echo get_template_directory_uri() ?>/image/snippets/h-shake.png">
+							<img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/h-shake.png">
 							<h3>Tambi&eacute;n estamos despu&eacute;s</h3>
 							<p>Con el servicio "1 año junto a usted", un grupo de técnicos especializados supervisará la producción y la situación económica para verificar que se logren los objetivos esperados.</p>					
 						</div>
@@ -112,14 +112,14 @@ get_header();
 			<p class="highlight">Estamos constantemente proyectados hacia el mañana.<br> Trabajamos todos los días pensando en su futuro, tal como lo hace con las personas que ama.</p>
 		</div>
 		<div class="col-sm-12">
-			<section class="cloud-container" style="background-image:url('<?php echo get_template_directory_uri() ?>/image/covers/cloud-bg.png')">
+			<section class="cloud-container bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/cloud-bg.png">
 				<div class="swiper-container swiper-how-we-work">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<div class="how-we-work-slide">
 								<div class="img-container">
 									<div class="img-wrapper">
-										<img src="https://via.placeholder.com/500'">
+										<img class="lazy" data-src="https://via.placeholder.com/500'">
 									</div>
 								</div>
 								<div class="text-container">
@@ -136,7 +136,7 @@ get_header();
 							<div class="how-we-work-slide">
 								<div class="img-container">
 									<div class="img-wrapper">
-										<img src="https://via.placeholder.com/500'">
+										<img class="lazy" data-src="https://via.placeholder.com/500'">
 									</div>
 								</div>
 								<div class="text-container">
@@ -153,7 +153,7 @@ get_header();
 							<div class="how-we-work-slide">
 								<div class="img-container">
 									<div class="img-wrapper">
-										<img src="https://via.placeholder.com/500'">
+										<img class="lazy" data-src="https://via.placeholder.com/500'">
 									</div>
 								</div>
 								<div class="text-container">
@@ -170,7 +170,7 @@ get_header();
 							<div class="how-we-work-slide">
 								<div class="img-container">
 									<div class="img-wrapper">
-										<img src="https://via.placeholder.com/500'">
+										<img class="lazy" data-src="https://via.placeholder.com/500'">
 									</div>
 								</div>
 								<div class="text-container">
@@ -187,7 +187,7 @@ get_header();
 							<div class="how-we-work-slide">
 								<div class="img-container">
 									<div class="img-wrapper">
-										<img src="https://via.placeholder.com/500'">
+										<img class="lazy" data-src="https://via.placeholder.com/500'">
 									</div>
 								</div>
 								<div class="text-container">
@@ -204,7 +204,7 @@ get_header();
 							<div class="how-we-work-slide">
 								<div class="img-container">
 									<div class="img-wrapper">
-										<img src="https://via.placeholder.com/500'">
+										<img class="lazy" data-src="https://via.placeholder.com/500'">
 									</div>
 								</div>
 								<div class="text-container">
@@ -228,7 +228,7 @@ get_header();
 		</div>
 	</section>
 </div>
-<div class="container-fluid" id="gmap">
+<div class="container-fluid" id="gmap" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/covers/mapa.jpg');">
 	<div class="proyectos">
 		<div class="text-wrapper">
 			<h2 class="shrink">Vincent Solar instala <span>soluciones solares</span> en todo Chile</h2>
@@ -255,7 +255,7 @@ get_header();
 		</div>
 	</div>
 	<section id="gmap-iframe">
-		<iframe src="https://www.google.com/maps/d/u/0/embed?mid=127rBG1dGQN7SgGPHxe0oXfoQiH35qhlI"></iframe>
+		<iframe class="lazy" data-src="https://www.google.com/maps/d/u/0/embed?mid=127rBG1dGQN7SgGPHxe0oXfoQiH35qhlI"></iframe>
 		
 	</section>
 </div>
@@ -269,7 +269,7 @@ $factor_generacion=200.0*1750.0*(1.0/(365*24*60*60*365*24*60*59.9));
 $factor_co2=409*$factor_generacion;
 $co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_secs*$elapsed_secs);
 ?>
-	<section id="generacion" style="background-image:url('<?php echo get_template_directory_uri() ?>/image/covers/co2-min.png')">
+	<section id="generacion" class="bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/co2-min.png">
 		<div class="col-sm-12">
 			<h1>Reducción de CO2</h1>
 			<p class="highlight">Gracias a los sitemas fotovoltaicos instalados por nosotros.</p>
@@ -283,17 +283,17 @@ $co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_sec
 		            	<div class="digit-group">
 			                <div class=" schermo schermo10">
 			                    <div class="numero">
-			                        <img src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_0.png" data-o="0" alt="numero">
+			                        <img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_0.png" data-o="0" alt="numero">
 			                    </div>
 			                </div>
 			                <div class="schermo schermo11">
 			                    <div class="numero">
-			                        <img src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_0.png" data-o="0" alt="numero">
+			                        <img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_0.png" data-o="0" alt="numero">
 			                    </div>
 			                </div>
 			                <div class="schermo schermo12">
 			                    <div class="numero">
-			                        <img src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_0.png" data-o="0" alt="numero">
+			                        <img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_0.png" data-o="0" alt="numero">
 			                    </div>
 			                </div>
 
@@ -305,17 +305,17 @@ $co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_sec
 		            	<div class="digit-group">
 			                <div class="schermo schermo7">
 			                    <div class="numero">
-			                        <img src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_3.png" data-o="3" alt="numero">
+			                        <img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_3.png" data-o="3" alt="numero">
 			                    </div>
 			                </div>
 			                <div class="schermo schermo8">
 			                    <div class="numero">
-			                        <img src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_0.png" data-o="0" alt="numero">
+			                        <img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_0.png" data-o="0" alt="numero">
 			                    </div>
 			                </div>
 			                <div class="schermo schermo9">
 			                    <div class="numero">
-			                        <img src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_0.png" data-o="0" alt="numero">
+			                        <img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_0.png" data-o="0" alt="numero">
 			                    </div>
 			                </div>
 
@@ -329,17 +329,17 @@ $co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_sec
 			                <div class="schermo schermo4">
 			                    <div class="numero" style="top: 0px;">
 			                        
-			                    <img src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_4.png"></div>
+			                    <img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_4.png"></div>
 			                </div>
 			                <div class="schermo schermo5">
 			                    <div class="numero" style="top: 0px;">
 			                        
-			                    <img src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_7.png"></div>
+			                    <img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_7.png"></div>
 			                </div>
 			                <div class="schermo schermo6">
 			                    <div class="numero" style="top: 0px;">
 			                        
-			                    <img src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_8.png"></div>
+			                    <img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_8.png"></div>
 			                </div>
 		            	</div>
 		                <div style="clear: both"></div>
@@ -350,18 +350,18 @@ $co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_sec
 
 			                <div class="schermo schermo1">
 			                    <div class="numero">
-			                        <img src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_5.png" data-o="5" alt="numero">
+			                        <img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_5.png" data-o="5" alt="numero">
 			                    </div>
 			                </div>
 			                <div class="schermo schermo2">
 			                    <div class="numero" style="top: 0px;">
 			                        
-			                    <img src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_3.png"></div>
+			                    <img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_3.png"></div>
 			                </div>
 			                <div class="schermo schermo3">
 			                    <div class="numero" style="top: 0px;">
 			                        
-			                    <img src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_0.png"></div>
+			                    <img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_0.png"></div>
 			                </div>
 		            	</div>
 		                <div style="clear: both"></div>
@@ -369,7 +369,7 @@ $co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_sec
 		            </div>
 		</div>
 		<div class="col-sm-12">
-			<img class="d-block mx-auto" style="padding-top:20px;height:auto;max-width: 110px;" src="<?php echo get_template_directory_uri() ?>/image/snippets/logo_cgreen.png">
+			<img class="d-block mx-auto lazy" style="padding-top:20px;height:auto;max-width: 110px;" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/logo_cgreen.png">
 		</div>		
 	</section>
 </div>

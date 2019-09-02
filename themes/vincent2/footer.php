@@ -1,5 +1,5 @@
 <div class="container-fluid">
-	<section id="contacto-footer" style="background-image:url('<?php echo get_template_directory_uri() ?>/image/covers/form-min.png')">
+	<section id="contacto-footer" class="bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/form-min.png">
 		<div class="col-sm-12 col-md-12">
 			<h1>Contacto</h1>
 			<p class="highlight text-center">Contáctenos y reserve una visita gratuita y sin compromiso</p>
@@ -119,7 +119,7 @@
 						$image = wp_get_attachment_image_src( get_the_ID(), $size="full" ); 
 							?>
 							<div class="icon">
-								<img class="img-fluid" src="<?php echo $image[0]; ?>">
+								<img class="img-fluid lazy" data-src="<?php echo $image[0]; ?>">
 							</div>								
 							<?php
 

@@ -2,6 +2,9 @@ $gmap-height:500px;
 $iframe-margin-top:-50px;
 $iframe-margin-bottom:-20px;
 #gmap{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;	
 	.proyectos{
 		z-index: 900;
 		background-color: $white;

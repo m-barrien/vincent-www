@@ -6,7 +6,7 @@
 				<button> Leer más </button>
 			</div>
 			<?php if ( has_post_thumbnail() ) : ?>
-				<div class="image-container" style="background-image: url('<?php the_post_thumbnail_url('medium'); ?>');">
+				<div class="image-container bg-lazy" data-src="<?php the_post_thumbnail_url('medium'); ?>">
 				</div>
 			<?php endif; ?>
 			
