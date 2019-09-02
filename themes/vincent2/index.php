@@ -119,7 +119,7 @@ get_header();
 							<div class="how-we-work-slide">
 								<div class="img-container">
 									<div class="img-wrapper">
-										<img class="lazy" data-src="https://via.placeholder.com/500'">
+										<img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/inspeccion.jpg">
 									</div>
 								</div>
 								<div class="text-container">
@@ -136,7 +136,7 @@ get_header();
 							<div class="how-we-work-slide">
 								<div class="img-container">
 									<div class="img-wrapper">
-										<img class="lazy" data-src="https://via.placeholder.com/500'">
+										<img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/contrato.jpg">
 									</div>
 								</div>
 								<div class="text-container">
@@ -153,7 +153,7 @@ get_header();
 							<div class="how-we-work-slide">
 								<div class="img-container">
 									<div class="img-wrapper">
-										<img class="lazy" data-src="https://via.placeholder.com/500'">
+										<img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/instalacion.jpg">
 									</div>
 								</div>
 								<div class="text-container">
@@ -170,7 +170,7 @@ get_header();
 							<div class="how-we-work-slide">
 								<div class="img-container">
 									<div class="img-wrapper">
-										<img class="lazy" data-src="https://via.placeholder.com/500'">
+										<img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/activacion.jpg">
 									</div>
 								</div>
 								<div class="text-container">
@@ -187,7 +187,7 @@ get_header();
 							<div class="how-we-work-slide">
 								<div class="img-container">
 									<div class="img-wrapper">
-										<img class="lazy" data-src="https://via.placeholder.com/500'">
+										<img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/monitoreo.jpg">
 									</div>
 								</div>
 								<div class="text-container">
@@ -204,7 +204,7 @@ get_header();
 							<div class="how-we-work-slide">
 								<div class="img-container">
 									<div class="img-wrapper">
-										<img class="lazy" data-src="https://via.placeholder.com/500'">
+										<img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/despues.jpg">
 									</div>
 								</div>
 								<div class="text-container">
