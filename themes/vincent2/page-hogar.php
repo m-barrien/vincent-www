@@ -57,7 +57,7 @@ $i=0;
 			    }
 		?>
 				<div class="kit-col-container" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-3kw.jpg')">
-					<a class="white-container" href="#">
+					<a class="white-container" href="<?php echo get_permalink() ; ?>">
 						<div class="text-body">
 							<div class="number">0<?php echo ++$i; ?></div>
 							<div class="little-title"><?php echo $oferta_category; ?></div>
