@@ -1006,11 +1006,8 @@ footer{
 		list-style:none; 
 		padding: 0;
 		@include make-col-ready();
-		@include media-breakpoint-between(lg,xl) {
+		@include media-breakpoint-up(sm) {
 			@include make-col(3);
-		}
-		@include media-breakpoint-between(md,lg) {
-			@include make-col(6);
 		}
 		@include media-breakpoint-down(sm) {
 			@include make-col(12);  
