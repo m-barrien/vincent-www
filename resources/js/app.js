@@ -46,6 +46,7 @@ swiper_home.on('transitionEnd', function () {
 
 var swiper_how = new Swiper('.swiper-how-we-work', {
       loop: true,
+      lazy: true,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
