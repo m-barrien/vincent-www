@@ -18,7 +18,6 @@ header{
 	width: 100%;
 	max-width: $max-width;
 	margin: 0 auto;
-	z-index: 9999;
 	&.desk{
 		@include media-breakpoint-between(lg,xl) {
 			display: block;
@@ -147,7 +146,7 @@ nav{
 	}
 	background-color: $white;
 	color: $text-black;
-	z-index: 9999;
+	z-index: $zindex-fixed +1;
 	ul{
 		padding-left: 0;
 		@include make-row();
