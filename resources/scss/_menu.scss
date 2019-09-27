@@ -138,7 +138,12 @@ nav{
 	display: none;
 	overflow: hidden;
 	&.visible{
-		display: block !important;
+		@include media-breakpoint-up(md) {
+			display: block !important;
+		}
+		@include media-breakpoint-down(md) {
+			display: none;
+		}		
 	}
 	background-color: $white;
 	color: $text-black;
@@ -168,7 +173,7 @@ nav{
 		color: $vincent-blue;
 		font-size: 15px;
 		&:before{
-			content: ">";
+			content: "> ";
 		}
 	}
 	.bg-image{
