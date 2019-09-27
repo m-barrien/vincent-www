@@ -54,6 +54,22 @@ function register_my_menus() {
 }
 add_action( 'init', 'register_my_menus' );
 
+
+function set_ofertas_cookie() {
+    //Seccion php para fijar edad de cookie para mostrar pop up de publicidad
+    $value ="some value";
+    if (isset($_COOKIE['ofertas_cookie'])) {
+      $_SESSION['show_modal'] = false;
+    }
+    else{
+      setcookie("ofertas_cookie", $value, time()+100, '/');  /* expira en una hora */
+      $_SESSION['show_modal'] = true;
+    }
+}
+add_action( 'init', 'set_ofertas_cookie');
+
+
+
 function custom_woocommerce_product_add_to_cart_text( $text ) {
  
     if( 'Read more' == $text ) {
