@@ -86,9 +86,9 @@ $('.hamburguer').click(function(){
   $('#hamburguer-icon').toggleClass('open');
 });
 
-$('.fullvideo-cover').click(function(){
-  $( '.video-container > iframe' ).attr("src", "https://player.vimeo.com/video/356704763?&amp;autoplay=1&amp;muted=1&amp;loop=1?autoplay=0&amp;background=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;player_id=iframe39000&amp;api=1");
-});
+//$('.fullvideo-cover').click(function(){
+//  $( '.video-container > iframe' ).attr("src", "https://player.vimeo.com/video/356704763?&amp;autoplay=1&amp;muted=1&amp;loop=1?autoplay=0&amp;background=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;player_id=iframe39000&amp;api=1");
+//});
 
 
 
@@ -121,6 +121,31 @@ var swiper_kits = new Swiper('.kits-swiper-container', {
       }
     });
 
+$('ul.menu li').mouseenter(
+  function(){
+    //$('.floating-menu').toggleClass('visible');
+    $('.floating-menu').fadeOut(50);
+    var menu_code = $( this ).find( 'ul.sub-menu' ).html();
+    if(menu_code){
+      $('.floating-menu ul.primary').html(menu_code);
+      $('.floating-menu ul.primary li.casa-ongrid a').prepend('<div class="bg-image casa-ongrid"></div>');
+      $('.floating-menu ul.primary li.casa-offgrid a').prepend('<div class="bg-image casa-offgrid"></div>');
+      $('.floating-menu ul.primary li.empresa-ongrid a').prepend('<div class="bg-image empresa-ongrid"></div>');
+      $('.floating-menu ul.primary > li.menu-secondary').remove();
+
+      $('.floating-menu ul.side').html(menu_code);
+      $('.floating-menu ul.side').prepend("<h5>Información relacionada</h5>");
+      $('.floating-menu ul.side > li.menu-image').remove();
+
+      $('.floating-menu').fadeIn();
+    }
+  }
+);
+$('.floating-menu').mouseleave(
+  function(){
+    $('.floating-menu').fadeOut();
+  }
+);
 //DOC READY
 });
 
