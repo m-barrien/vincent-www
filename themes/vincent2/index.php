@@ -119,7 +119,7 @@ get_header();
 							<div class="how-we-work-slide">
 								<div class="img-container">
 									<div class="img-wrapper">
-										<img class="swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/inspeccion.jpg">
+										<img class="swiper-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/inspeccion.jpg">
 										<div class="swiper-lazy-preloader"></div>
 									</div>
 								</div>
@@ -137,7 +137,7 @@ get_header();
 							<div class="how-we-work-slide">
 								<div class="img-container">
 									<div class="img-wrapper">
-										<img class="swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/contrato.jpg">
+										<img class="swiper-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/contrato.jpg">
 										<div class="swiper-lazy-preloader"></div>
 									</div>
 								</div>
@@ -155,7 +155,7 @@ get_header();
 							<div class="how-we-work-slide">
 								<div class="img-container">
 									<div class="img-wrapper">
-										<img class="swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/instalacion.jpg">
+										<img class="swiper-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/instalacion.jpg">
 										<div class="swiper-lazy-preloader"></div>
 									</div>
 								</div>
@@ -173,7 +173,7 @@ get_header();
 							<div class="how-we-work-slide">
 								<div class="img-container">
 									<div class="img-wrapper">
-										<img class="swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/activacion.jpg">
+										<img class="swiper-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/activacion.jpg">
 										<div class="swiper-lazy-preloader"></div>
 									</div>
 								</div>
@@ -191,7 +191,7 @@ get_header();
 							<div class="how-we-work-slide">
 								<div class="img-container">
 									<div class="img-wrapper">
-										<img class="swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/monitoreo.jpg">
+										<img class="swiper-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/monitoreo.jpg">
 										<div class="swiper-lazy-preloader"></div>
 									</div>
 								</div>
@@ -209,7 +209,7 @@ get_header();
 							<div class="how-we-work-slide">
 								<div class="img-container">
 									<div class="img-wrapper">
-										<img class="swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/despues.jpg">
+										<img class="swiper-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/despues.jpg">
 										<div class="swiper-lazy-preloader"></div>
 									</div>
 								</div>
