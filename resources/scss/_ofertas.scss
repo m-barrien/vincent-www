@@ -271,3 +271,16 @@
 
 	}	
 }
+
+.ofertas-index-container{
+	@include make-container();
+	@include media-breakpoint-between(lg,xl) {
+		display: none;
+	}
+	@include media-breakpoint-between(md,lg) {
+		display: none;
+	}
+	@include media-breakpoint-down(sm) {
+		display: block;
+	}
+}

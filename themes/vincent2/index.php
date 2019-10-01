@@ -1,6 +1,39 @@
 <?php 
 get_header(); 
 ?>
+<div class="ofertas-index-container"><!-- ofertas celu -->
+	<div class="ofertas-index-header">
+		OFERTAS
+	</div>
+	<?php
+	wp_reset_postdata();
+    wp_reset_query();
+    $args= array(
+	'post_type' => array('oferta'),
+	'post_status' => 'publish',
+	'posts_per_page' => -1,
+	'meta_key'		=> 'featured',
+	'orderby'		=> 'meta_value',
+	'order'			=> 'DESC'
+	);
+
+	$loop = new WP_Query( $args );
+	?>	
+    <?php
+		while ( $loop->have_posts() ) : $loop->the_post();
+			$image = null;
+				?>
+
+					<?php get_template_part( 'template-parts/oferta-movil-index', 'single' ); ?>
+					
+				<?php
+
+		endwhile;
+		wp_reset_postdata();
+        wp_reset_query();
+	?>
+
+</div> <!-- ofertas celu -->
 <div class="w-100 video-container">
 	<iframe class="lazy" src="" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="resizelistener" id="iframe39000" data-src="https://player.vimeo.com/video/356704763?&amp;autoplay=1&amp;muted=1&amp;loop=1?autoplay=0&amp;background=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;player_id=iframe39000&amp;api=1"></iframe>
 	<div class="fullvideo-cover"></div>
