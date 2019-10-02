@@ -284,3 +284,54 @@
 		display: block;
 	}
 }
+.ofertas-index-header-line{
+	display: block;
+	width: 75vw;
+	height: 2px;
+	background-color: $vincent-blue;
+	border-radius: 2px;
+	margin: 0 auto;
+}
+.ofertas-index-header{
+	@include make-row();
+	background-color: $vincent-blue;
+	color: #fff;
+	font-size: 60px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 900;
+	margin-top: 7px;
+	margin-bottom: 1px;
+}
+.oferta-index-banner-image, .oferta-index-contacto{
+	@include make-col(12);
+}
+.oferta-index-contacto{
+	background-color: $vincent-blue;
+	color: #fff;
+	font-size: 60px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 900;	
+}
+
+.oferta-index-category-kit-img{
+	@extend .flex-container;
+	width: 100%;
+	img{
+		width: 100%;
+		height: auto;
+	}
+	.left-img{
+		width: 10vw;
+	}
+	.center-img{
+		height: auto;
+		width: 40vw;
+
+	}
+	.right-img{
+		width: 10vw;
+
+	}
+}

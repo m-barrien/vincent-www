@@ -2,8 +2,12 @@
 get_header(); 
 ?>
 <div class="ofertas-index-container"><!-- ofertas celu -->
+	<div class="ofertas-index-header-line"></div>
 	<div class="ofertas-index-header">
-		OFERTAS
+		<div class="col">
+			OFERTAS
+			
+		</div>
 	</div>
 	<?php
 	wp_reset_postdata();
