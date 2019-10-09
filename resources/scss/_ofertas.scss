@@ -295,6 +295,7 @@
 .ofertas-index-header{
 	@include make-row();
 	background-color: $vincent-blue;
+	max-height: 100px;
 	color: #fff;
 	font-size: 60px;
 	text-align: center;
@@ -303,6 +304,9 @@
 	font-weight: 900;
 	margin-top: 7px;
 	margin-bottom: 1px;
+	svg{
+		width: 100%;
+	}
 }
 .oferta-index-banner-image, .oferta-index-contacto{
 	@include make-col(12);
@@ -325,13 +329,13 @@
 		height: auto;
 	}
 	.left-img{
-		width: 15vw;
+		width: 17vw;
 		.italian-flag{
 			position: absolute;
-			bottom: 0;
-			right: 0;
 			height: 10px;
-			width: 10px;
+			width: 15vw;
+			margin-right: 0;
+			margin-left: auto;
 			background-color: red;
 		}
 	}
@@ -341,10 +345,66 @@
 
 	}
 	.right-img{
-		width: 15vw;
+		width: 17vw;
 
 	}
 }
 .oferta-index-single-row{
 	@include make-row();
+}
+.oferta-index-title{
+	@extend .mx-auto;
+	display: block;
+	font-style: italic;
+    font-weight: bold;
+    text-align: left;
+    min-width: 70%;
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 1.0;
+    padding-top: 10px;
+    span{
+    	text-align: left;
+    	color: $vincent-orange;
+    	font-size: 40px;
+    }
+}
+.oferta-index-price-header{
+	width: 100%;
+    padding: 0 19px;
+    line-height: 0.8;
+	text-align: right;
+	font-size: 18vw;
+	font-weight: 900;
+	font-style: italic;
+	color: $vincent-orange;
+	&:before{
+		content: "$";
+		color: $vincent-blue;
+	    font-size: 10vw;
+	    font-weight: 900;
+	    font-style: italic;
+	    margin-left: -22px;
+	    margin-top: 0;
+	    position: absolute;
+	}
+}
+.oferta-index-description-container{
+	width: 100%;
+
+}
+.oferta-index-bullets{
+	padding-left: 20%;
+	width: 100%;
+    margin-top: -20px;
+	.bullet{
+	    padding-top: 2px;
+	    font-size: 20px;
+		color: $vincent-blue;
+		.bullet-image{
+			width: 30px;
+			height: 20px;
+			display: inline-block;
+		}
+	}
 }
