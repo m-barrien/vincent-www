@@ -305,6 +305,7 @@
 }
 .oferta-index-banner-image, .oferta-index-contacto{
 	@include make-col(12);
+	display: block;
 }
 .oferta-index-contacto{
 	background-color: $vincent-blue;
@@ -334,4 +335,7 @@
 		width: 10vw;
 
 	}
+}
+.oferta-index-single-row{
+	@include make-row();
 }

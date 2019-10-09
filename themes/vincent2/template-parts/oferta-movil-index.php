@@ -6,7 +6,7 @@ if ($tax_term) {
 }
 
 ?>
-<section class="oferta-index-single-row">
+<a href="<?php the_permalink(); ?>" class="oferta-index-single-row">
 	<div class="oferta-index-banner-image">
 		<img class="lazy img-fluid" src="" data-src="https://via.placeholder.com/300x100">
 	</div>
@@ -37,5 +37,5 @@ if ($tax_term) {
 	<div class="oferta-index-contacto">
 		Contacto
 	</div>
-</section>
+</a>
 
