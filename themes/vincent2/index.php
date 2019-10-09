@@ -24,11 +24,21 @@ get_header();
 	$loop = new WP_Query( $args );
 	?>	
     <?php
+    	$i=0;
 		while ( $loop->have_posts() ) : $loop->the_post();
 			$image = null;
 				?>
 
-					<?php get_template_part( 'template-parts/oferta-movil-index', 'single' ); ?>
+					<?php
+						if ($i==0) {
+							get_template_part( 'template-parts/oferta-movil-index', 'single' ); 
+						}
+						else{
+							get_template_part( 'template-parts/oferta-movil-index-lazy', 'single' ); 
+
+						}
+						$i +=1; 
+						?>
 					
 				<?php
 
