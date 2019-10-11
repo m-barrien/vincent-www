@@ -57,7 +57,7 @@ a{
 	}
 }
 h1{
-	font-weight: 900;
+	font-weight: 700;
 	@include media-breakpoint-up(lg) {
 		font-size: 53px;
 		&.shrink{
@@ -80,7 +80,7 @@ h1{
 }
 
 h2{
-	font-weight: 900;
+	font-weight: 700;
 	@include media-breakpoint-between(lg,xl) {
 		font-size: 24px;
 	}
@@ -705,7 +705,6 @@ p{
 	min-height: 500px;
 	h1{
 		color: $white;
-		font-weight: 900;
 		text-align: center;
 	}
 	p{
