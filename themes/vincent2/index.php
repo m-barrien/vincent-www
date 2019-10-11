@@ -426,7 +426,6 @@ $co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_sec
 		<div class="col-sm-12">
 			<h1>Videos</h1>
 		</div>
-		<div class="col-sm-12">
 	<?php
 	wp_reset_postdata();
     wp_reset_query();
@@ -439,20 +438,26 @@ $co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_sec
 
 	$loop = new WP_Query( $args );
 	?>	
+	<div class="swiper-container swiper-videos">
+	    <div class="swiper-wrapper">
     <?php
     	$i=0;
 		while ( $loop->have_posts() ) : $loop->the_post();
 			$image = null;
-				?>
+				?>	
+		      <div class="swiper-slide">
 				<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/<?php echo get_post_meta($post->ID, 'youtube_code')[0] ; ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					
+		      </div>
 				<?php
 
 		endwhile;
 		wp_reset_postdata();
         wp_reset_query();
 	?>
-		</div>
+
+	    </div>
+	    <div class="swiper-pagination"></div>
+	</div>	
 	</section>
 </div>
 

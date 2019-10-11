@@ -2,3 +2,9 @@
 	min-height: 100px;
 	color: $text-black;
 }
+.swiper-videos{
+	width: 100%;
+	.swiper-wrapper > .swiper-slide{
+		width: 100%;
+	}
+}
