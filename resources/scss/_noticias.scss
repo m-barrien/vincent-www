@@ -184,6 +184,10 @@ article{
 					}
 					h2{
 						display: block;
+						text-transform: lowercase;
+					}
+					h2::first-letter{
+						text-transform: uppercase;
 					}
 					button{
 						font-weight: bold !important;
