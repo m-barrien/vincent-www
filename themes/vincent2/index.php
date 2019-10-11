@@ -420,6 +420,19 @@ $co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_sec
 	</section>
 </div>
 -->
+<!-- SECCION VIDEOS -->
+<div class="container-fluid">
+	<section id="coleccion-videos" class=" bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/fade-paneles.png">
+		<div class="col-sm-12">
+			<h1>Videos</h1>
+		</div>
+		<div class="col-sm-12">
+			gola mundo
+		</div>
+	</section>
+</div>
+
+
 <div class="w-100 gray-bg">	
 	<div id="noticias-full-container" class="container">
 		<section class="noticias">
