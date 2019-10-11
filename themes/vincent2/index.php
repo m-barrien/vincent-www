@@ -53,6 +53,9 @@ get_header();
 	<div class="fullvideo-cover"></div>
 </div>	
 
+
+<!-- SECCION 3 PAGINAS COVER DDE TGREEN -->
+<!--
 <div class="site-cover" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/covers/1.jpg');">
 
 	<div class="swiper-container swiper-cover">
@@ -99,11 +102,11 @@ get_header();
 	      	</div>
 	      </div>
 	    </div>
-	    <!-- Add Pagination -->
 	    <div class="swiper-pagination"></div>
 	</div>	
 
 </div>
+-->
 <div class="container-fluid">
 	<section id="porque-elegirnos" class="flex-container space-between bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/fade-paneles.png">
 		<div class="col-md-5">
@@ -281,6 +284,10 @@ get_header();
 		</div>
 	</section>
 </div>
+
+<!-- SECCION MAPA -->
+<!--
+
 <div class="container-fluid" id="gmap" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/covers/mapa.jpg');">
 	<div class="proyectos">
 		<div class="text-wrapper">
@@ -312,6 +319,10 @@ get_header();
 		
 	</section>
 </div>
+-->
+
+<!-- SECCION AHORRO ECONOMICO -->
+<!--
 <div class="container-fluid">
 <?php
 $datetime1 = new DateTime('2014-01-01');
@@ -426,6 +437,7 @@ $co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_sec
 		</div>		
 	</section>
 </div>
+-->
 <div class="w-100 gray-bg">	
 	<div id="noticias-full-container" class="container">
 		<section class="noticias">
