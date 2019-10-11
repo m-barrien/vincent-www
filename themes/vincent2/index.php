@@ -138,7 +138,7 @@ get_header();
 						<div class="card-body">
 							<img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/h-shake.png">
 							<h3>No tendr&aacute;s preocupaciones</h3>
-							<p>Estás en primer plano, entonces llegamos. Esta es la filosofía que nos ha guiado todos los días durante veinte años. No tendrás que preocuparte por nada.</p>
+							<p>Nuestra dedicación a la satisfacción del cliente no tiene comparación. Esta es la filosofía que nos ha guiado todos los días durante treinta años. No tendrás que preocuparte por nada.</p>
 						</div>
 					</div>
 				</div>
@@ -147,7 +147,7 @@ get_header();
 						<div class="card-body">
 							<img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/h-shake.png">
 							<h3>Tambi&eacute;n estamos despu&eacute;s</h3>
-							<p>Con el servicio "1 año junto a usted", un grupo de técnicos especializados supervisará la producción y la situación económica para verificar que se logren los objetivos esperados.</p>					
+							<p>Con nuestro servicio de posventa dedicado tendrá el respaldo necesario para garnatizar que su planta solar funcione a la perfección.</p>					
 						</div>
 					</div>
 				</div>
@@ -169,7 +169,7 @@ get_header();
 							<div class="how-we-work-slide">
 								<div class="img-container">
 									<div class="img-wrapper">
-										<img class="swiper-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/inspeccion.jpg">
+										<img class="swiper-lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAQAAAD8IX00AAAADklEQVR42mNkAANGFAoAAD8ABLZPixAAAAAASUVORK5CYII=" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/inspeccion.jpg">
 										<div class="swiper-lazy-preloader"></div>
 									</div>
 								</div>
@@ -187,7 +187,7 @@ get_header();
 							<div class="how-we-work-slide">
 								<div class="img-container">
 									<div class="img-wrapper">
-										<img class="swiper-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/contrato.jpg">
+										<img class="swiper-lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAQAAAD8IX00AAAADklEQVR42mNkAANGFAoAAD8ABLZPixAAAAAASUVORK5CYII=" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/contrato.jpg">
 										<div class="swiper-lazy-preloader"></div>
 									</div>
 								</div>
@@ -205,7 +205,7 @@ get_header();
 							<div class="how-we-work-slide">
 								<div class="img-container">
 									<div class="img-wrapper">
-										<img class="swiper-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/instalacion.jpg">
+										<img class="swiper-lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAQAAAD8IX00AAAADklEQVR42mNkAANGFAoAAD8ABLZPixAAAAAASUVORK5CYII=" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/instalacion.jpg">
 										<div class="swiper-lazy-preloader"></div>
 									</div>
 								</div>
@@ -215,7 +215,7 @@ get_header();
 										<span class="bar-number">3</span>
 									</div>
 									<h1>Instalación</h1>
-									<p class="highlight">Diseñamos e instalamos el sistema de producción de energía limpia que es adecuado para usted, para ello es nuestro equipo de instaladores especializados.</p>
+									<p class="highlight">Diseñamos e instalamos el sistema de producción de energía limpia que es adecuado para usted, para ello está nuestro equipo de instaladores especializados.</p>
 								</div>
 							</div>	
 						</div>
@@ -223,7 +223,7 @@ get_header();
 							<div class="how-we-work-slide">
 								<div class="img-container">
 									<div class="img-wrapper">
-										<img class="swiper-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/activacion.jpg">
+										<img class="swiper-lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAQAAAD8IX00AAAADklEQVR42mNkAANGFAoAAD8ABLZPixAAAAAASUVORK5CYII=" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/activacion.jpg">
 										<div class="swiper-lazy-preloader"></div>
 									</div>
 								</div>
@@ -241,25 +241,7 @@ get_header();
 							<div class="how-we-work-slide">
 								<div class="img-container">
 									<div class="img-wrapper">
-										<img class="swiper-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/monitoreo.jpg">
-										<div class="swiper-lazy-preloader"></div>
-									</div>
-								</div>
-								<div class="text-container">
-									<div class="bar-container">
-										<div class="bar"></div>
-										<span class="bar-number">5</span>
-									</div>
-									<h1>Monitoreo</h1>
-									<p class="highlight">Monitoreamos constantemente sus resultados, porque queremos saber cómo estar tranquilos y poder mostrarle los ahorros reales a lo largo del tiempo.</p>
-								</div>
-							</div>	
-						</div>
-						<div class="swiper-slide">
-							<div class="how-we-work-slide">
-								<div class="img-container">
-									<div class="img-wrapper">
-										<img class="swiper-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/despues.jpg">
+										<img class="swiper-lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAQAAAD8IX00AAAADklEQVR42mNkAANGFAoAAD8ABLZPixAAAAAASUVORK5CYII=" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/despues.jpg">
 										<div class="swiper-lazy-preloader"></div>
 									</div>
 								</div>
@@ -269,7 +251,7 @@ get_header();
 										<span class="bar-number">6</span>
 									</div>
 									<h1>También estamos después!</h1>
-									<p class="highlight">Cada tres meses tendrá un informe gratuito que resume los resultados obtenidos y los que obtendrá en el primer año de vida de la planta.</p>
+									<p class="highlight">Con nuestra garantía de 5 años está cubierto ante cualquier falla en el funcionamiento de su sistema solar.</p>
 								</div>
 							</div>	
 						</div>
