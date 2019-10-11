@@ -162,3 +162,45 @@ function lc_custom_post_pregunta() {
   // Parameter 2 is the $args array
   register_post_type( 'pregunta', $args);
 }
+
+// Hook <strong>lc_custom_post_video()</strong> to the init action hook
+add_action( 'init', 'lc_custom_post_video' );
+ 
+// The custom function to register a video post type
+function lc_custom_post_video() {
+ 
+  // Set the labels, this variable is used in the $args array
+  $labels = array(
+    'name'               => __( 'Videos' ),
+    'singular_name'      => __( 'Video' ),
+    'add_new'            => __( 'Add New Video' ),
+    'add_new_item'       => __( 'Add New Video' ),
+    'edit_item'          => __( 'Edit Video' ),
+    'new_item'           => __( 'New Video' ),
+    'all_items'          => __( 'All Videos' ),
+    'view_item'          => __( 'View Video' ),
+    'search_items'       => __( 'Search Videos' ),
+    'featured_image'     => 'Poster',
+    'set_featured_image' => 'Add Poster'
+  );
+ 
+  // The arguments for our post type, to be entered as parameter 2 of register_post_type()
+  $args = array(
+    'labels'            => $labels,
+    'description'       => 'Holds our videos and video specific data',
+    'public'            => true,
+    'menu_position'     => 5,
+    'supports'          => array( 'title', 'thumbnail', 'excerpt', 'custom-fields' ),
+    'has_archive'       => true,
+    'show_in_admin_bar' => true,
+    'show_in_nav_menus' => true,
+    'has_archive'       => true,
+    'rewrite' => array('slug' => 'videos'),
+    'query_var'         => 'video'
+  );
+ 
+  // Call the actual WordPress function
+  // Parameter 1 is a name for the post type
+  // Parameter 2 is the $args array
+  register_post_type( 'video', $args);
+}

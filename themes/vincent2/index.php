@@ -427,7 +427,31 @@ $co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_sec
 			<h1>Videos</h1>
 		</div>
 		<div class="col-sm-12">
-			gola mundo
+	<?php
+	wp_reset_postdata();
+    wp_reset_query();
+    $args= array(
+	'post_type' => array('video'),
+	'post_status' => 'publish',
+	'posts_per_page' => -1,
+	'order'			=> 'DESC'
+	);
+
+	$loop = new WP_Query( $args );
+	?>	
+    <?php
+    	$i=0;
+		while ( $loop->have_posts() ) : $loop->the_post();
+			$image = null;
+				?>
+				<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/<?php echo get_post_meta($post->ID, 'youtube_code')[0] ; ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					
+				<?php
+
+		endwhile;
+		wp_reset_postdata();
+        wp_reset_query();
+	?>
 		</div>
 	</section>
 </div>
