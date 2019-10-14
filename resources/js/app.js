@@ -90,19 +90,7 @@ $('.hamburguer').click(function(){
 //  $( '.video-container > iframe' ).attr("src", "https://player.vimeo.com/video/356704763?&amp;autoplay=1&amp;muted=1&amp;loop=1?autoplay=0&amp;background=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;player_id=iframe39000&amp;api=1");
 //});
 
-var swiper_videos = new Swiper('.swiper-videos', {
-      spaceBetween: 0,
-      loop: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },      
-      // init: false,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
+
 
 var swiper_kits = new Swiper('.kits-swiper-container', {
       slidesPerView: 3,
