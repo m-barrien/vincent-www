@@ -7,19 +7,13 @@ if ($tax_term) {
 
 ?>
 <a href="<?php the_permalink(); ?>" class="oferta-index-single-row">
-	<object type="image/svg+xml" data="<?php echo get_template_directory_uri() ?>/image/svg/titulo_precio_oferta_mov.svg" class="oferta-index-title-svg">
-	  <?php the_title(); ?> <!-- fallback image in CSS -->
-	</object>	
+
 	<div class="oferta-index-banner-image">
 		<img class=" img-fluid"  src="https://via.placeholder.com/300x75">
 	</div>
-	<div class="oferta-index-title">
-		<?php the_title(); ?>
-		<br>
-		<span>
-			<?php echo get_post_meta($post->ID, 'short-title')[0] ; ?>
-		</span>
-	</div>
+	<object type="image/svg+xml" data="<?php echo get_template_directory_uri() ?>/image/svg/titulo_precio_oferta_mov.svg" class="oferta-index-title-svg" data-title="<?php the_title(); ?>">
+	  <?php the_title(); ?> <!-- fallback image in CSS -->
+	</object>	
 	<div class="oferta-index-category-kit-img">
 		<div class="left-img">
 			<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/100euro.png">

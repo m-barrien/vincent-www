@@ -161,6 +161,7 @@ $('.floating-menu').mouseleave(
     $('.floating-menu').fadeOut();
   }
 );
+
 //DOC READY
 });
 
