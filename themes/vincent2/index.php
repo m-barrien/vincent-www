@@ -248,7 +248,7 @@ get_header();
 								<div class="text-container">
 									<div class="bar-container">
 										<div class="bar"></div>
-										<span class="bar-number">6</span>
+										<span class="bar-number">5</span>
 									</div>
 									<h1>También estamos después!</h1>
 									<p class="highlight">Con nuestra garantía de 5 años está cubierto ante cualquier falla en el funcionamiento de su sistema solar.</p>
@@ -421,11 +421,15 @@ $co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_sec
 </div>
 -->
 <!-- SECCION VIDEOS -->
-<div class="container-fluid">
-	<section id="coleccion-videos" class=" bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/fade-paneles.png">
+<div class="container">
+	<section>
 		<div class="col-sm-12">
 			<h1>Videos</h1>
 		</div>
+	</section>
+</div>
+<div class="container-fluid">
+	<section id="coleccion-videos" class="" data-src="<?php echo get_template_directory_uri() ?>/image/covers/fade-paneles.png">
 	<?php
 	wp_reset_postdata();
     wp_reset_query();
@@ -438,26 +442,42 @@ $co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_sec
 
 	$loop = new WP_Query( $args );
 	?>	
-	<div class="swiper-container swiper-videos">
-	    <div class="swiper-wrapper">
-    <?php
-    	$i=0;
-		while ( $loop->have_posts() ) : $loop->the_post();
-			$image = null;
-				?>	
-		      <div class="swiper-slide">
-				<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/<?php echo get_post_meta($post->ID, 'youtube_code')[0] ; ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		      </div>
-				<?php
+		<div class="swiper-container swiper-videos">
+		    <div class="swiper-wrapper">
+	    <?php
+	    	$i=0;
+			while ( $loop->have_posts() ) : $loop->the_post();
+				$image = null;
+					?>	
+			      <div class="swiper-slide">
+			      	<div class="container">
+			      		<div class="row">
+			      			<div class="col-md-6">
+								<iframe class="youtube-iframe" src="https://www.youtube-nocookie.com/embed/<?php echo get_post_meta($post->ID, 'youtube_code')[0] ; ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			      			</div>
+			      			<div class="col-md-6">
+			      				<h2>
+			      					<?php the_title(); ?>
+			      				</h2>
+			      				<p>
+			      					<?php the_excerpt(); ?>
+			      				</p>
+			      			</div>
+			      		</div>
+			      		
+			      	</div>
+			      </div>
+					<?php
 
-		endwhile;
-		wp_reset_postdata();
-        wp_reset_query();
-	?>
+			endwhile;
+			wp_reset_postdata();
+	        wp_reset_query();
+		?>
 
-	    </div>
-	    <div class="swiper-pagination"></div>
-	</div>	
+		    </div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>	
 	</section>
 </div>
 

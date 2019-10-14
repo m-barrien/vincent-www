@@ -1,10 +1,15 @@
 #coleccion-videos{
 	min-height: 100px;
 	color: $text-black;
+	margin-bottom: 30px;
 }
 .swiper-videos{
 	width: 100%;
 	.swiper-wrapper > .swiper-slide{
 		width: 100%;
 	}
+}
+.youtube-iframe{
+	width: 100%;
+	min-height: 280px;
 }
