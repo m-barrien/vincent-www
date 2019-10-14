@@ -67,7 +67,9 @@ if ($tax_term) {
 	<div class="oferta-index-category-kit-img">
 		<div class="left-img">
 			<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/100euro.png">
-			<div class="italian-flag"></div>
+			<div class="italian-flag">
+				<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/it_flag.png">
+			</div>
 		</div>
 		<div class="center-img">
 			<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-group-image.png">
