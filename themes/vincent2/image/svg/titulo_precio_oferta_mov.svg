@@ -1,63 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-stylesheet type="text/css" href="/css/app.css" ?><svg
-   xmlns:x="adobe:ns:meta/"
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1440"
-   height="750"
-   viewBox="0 0 1440 750"
-   version="1.1"
-   id="svg19"
-   sodipodi:docname="titulo_precio_oferta_mov.svg"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)">
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1280"
-     inkscape:window-height="716"
-     id="namedview21"
-     showgrid="false"
-     inkscape:zoom="0.2639379"
-     inkscape:cx="708.50001"
-     inkscape:cy="375"
-     inkscape:window-x="0"
-     inkscape:window-y="28"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg19" />
-  <metadata
-     id="metadata2">
-<?xpacket begin="" id="W5M0MpCehiHzreSzNTczkc9d"?>    <x:xmpmeta
-       x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-      <metadata>
-        <rdf:RDF>
-          <rdf:Description
-             rdf:about="" />
-          <cc:Work
-             rdf:about="">
-            <dc:format>image/svg+xml</dc:format>
-            <dc:type
-               rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-            <dc:title></dc:title>
-          </cc:Work>
-        </rdf:RDF>
-      </metadata>
-    </x:xmpmeta>
-<?xpacket end="w"?>  </metadata>
-  <defs
-     id="defs6">
-    <style
-       id="style4">
+<?xml-stylesheet type="text/css" href="/css/app.css" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="750" viewBox="0 0 1440 750">
+  <metadata>
+    <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+    <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+          <rdf:Description rdf:about=""/>
+       </rdf:RDF>
+    </x:xmpmeta>                                                                                                  
+                             
+    <?xpacket end="w"?>
+  </metadata>
+  <defs>
+    <style>
       .cls-1, .cls-2, .cls-4 {
         font-size: 26.102px;
       }
@@ -88,58 +42,9 @@
       }
     </style>
   </defs>
-  <text
-     id="_"
-     data-name="$"
-     class="cls-1"
-     transform="scale(0.99990061,1.0000994)"
-     x="46.968662"
-     y="358.44037"
-     style="font-style:italic;font-weight:500;font-size:131.30610657px;font-family:Montserrat;fill:#ffffff;stroke-width:5.03049994">$</text>
-  <text
-     id="Solución_solar_Off_Grid_con_Batería"
-     data-name="Solución solar  Off Grid con Batería"
-     class="cls-2"
-     transform="scale(0.99989401,1.000106)"
-     x="9.2399836"
-     y="174.66447"
-     style="font-style:italic;font-weight:500;font-size:123.08397675px;font-family:Montserrat;stroke-width:4.71549988">Solución solar <tspan
-   x="9.2399836"
-   dy="147.7036"
-   id="titulo_oferta"
-   style="stroke-width:4.71549988">titulo_oferta
- </tspan>
-</text>
-  <text
-     id="_Solución_térmica"
-     data-name="+ Solución térmica"
-     class="cls-3"
-     x="630.35303"
-     y="427.798"
-     style="font-style:italic;font-weight:500;font-size:120.12664795px;font-family:Montserrat;stroke-width:3.81900001">+ Solución<tspan
-   x="630.35303"
-   dy="105.96198"
-   id="tspan12"
-   style="stroke-width:3.81900001">térmica</tspan>
-</text>
-  <text
-     id="_2KW"
-     data-name="2KW"
-     class="cls-4"
-     transform="scale(0.99994851,1.0000515)"
-     x="15.487801"
-     y="527.82684"
-     style="font-style:italic;font-weight:700;font-size:253.43736267px;font-family:Montserrat;stroke-width:9.70950031">2KW</text>
-  <text
-     id="_160_Litros_agua_caliente."
-     data-name="160 Litros agua caliente."
-     class="cls-4"
-     transform="scale(0.99987951,1.0001205)"
-     x="3.042367"
-     y="628.72125"
-     style="font-style:italic;font-weight:700;font-size:108.3102417px;font-family:Montserrat;stroke-width:4.14949989">160 Litros <tspan
-   class="cls-5"
-   id="tspan16"
-   style="font-weight:500;stroke-width:4.14949989">agua caliente.</tspan>
-</text>
+  <text id="_" data-name="$" class="cls-1" transform="translate(146.964 358.476) scale(5.03 5.031)">$</text>
+  <text id="Solución_solar_Off_Grid_con_Batería" data-name="Solución solar  Off Grid con Batería" class="cls-2" transform="translate(109.239 174.683) scale(4.715 4.716)">Solución solar <tspan x="0" dy="31.323">Off Grid con Batería</tspan></text>
+  <text id="_Solución_térmica" data-name="+ Solución térmica" class="cls-3" transform="translate(730.353 427.798) scale(3.819 3.819)">+ Solución<tspan x="0" dy="27.746">térmica</tspan></text>
+  <text id="_2KW" data-name="2KW" class="cls-4" transform="translate(115.487 527.854) scale(9.709 9.71)">2KW</text>
+  <text id="_160_Litros_agua_caliente." data-name="160 Litros agua caliente." class="cls-4" transform="translate(103.042 628.797) scale(4.149 4.15)">160 Litros <tspan class="cls-5">agua caliente.</tspan></text>
 </svg>

@@ -34,7 +34,7 @@ get_header();
 							get_template_part( 'template-parts/oferta-movil-index', 'single' ); 
 						}
 						else{
-							//get_template_part( 'template-parts/oferta-movil-index-lazy', 'single' ); 
+							get_template_part( 'template-parts/oferta-movil-index-lazy', 'single' ); 
 
 						}
 						$i +=1; 

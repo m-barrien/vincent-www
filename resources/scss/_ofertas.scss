@@ -297,7 +297,7 @@
 	background-color: $vincent-blue;
 	max-height: 100px;
 	color: #fff;
-	font-size: 60px;
+	font-size: 44px;
 	text-align: center;
 	text-transform: uppercase;
 	font-style: italic;
@@ -315,7 +315,7 @@
 .oferta-index-contacto{
 	background-color: $vincent-blue;
 	color: #fff;
-	font-size: 60px;
+	font-size: 50px;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 900;	
@@ -370,25 +370,36 @@
     }
 }
 .oferta-index-single-row{
-	object.oferta-index-title-svg{
+}
+
+.oferta-index-title-svg{
+	width: 100%;
+	margin-left: -15px;
+	svg{
 		width: 100%;
+		height: auto;
+	}
+	text.cls-2{
+		fill: $vincent-blue;
+	}
+	text.cls-3, text.cls-4{
+		fill: $vincent-orange;
 	}
 }
-text.cls-2{
-	fill: $vincent-blue;
-}
-text.cls-3, text.cls-4{
-	fill: $vincent-orange;
-}
+
+
+
+
 .oferta-index-price-header{
 	width: 100%;
     padding: 0 19px;
     line-height: 0.8;
 	text-align: right;
-	font-size: 16vw;
+	font-size: 14.5vw;
 	font-weight: 900;
 	font-style: italic;
 	color: $vincent-orange;
+	padding-right: 9vw;
 	&:before{
 		content: "$";
 		color: $vincent-blue;
@@ -407,7 +418,8 @@ text.cls-3, text.cls-4{
 .oferta-index-bullets{
 	padding-left: 20%;
 	width: 100%;
-    margin-top: -20px;
+    margin-top: -7px;
+    padding-bottom: 10px;
 	.bullet{
 	    padding-top: 2px;
 	    font-size: 20px;
