@@ -475,6 +475,7 @@ $co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_sec
 		?>
 
 		    </div>
+			<div class="swiper-pagination"></div>
 			<div class="swiper-button-prev"></div>
 			<div class="swiper-button-next"></div>
 		</div>	

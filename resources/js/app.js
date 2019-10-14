@@ -121,6 +121,21 @@ var swiper_kits = new Swiper('.kits-swiper-container', {
       }
     });
 
+var swiper_videos = new Swiper('.swiper-videos', {
+      spaceBetween: 0,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },      
+      // init: false,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+
+
 $('ul.menu li').mouseenter(
   function(){
     //$('.floating-menu').toggleClass('visible');
