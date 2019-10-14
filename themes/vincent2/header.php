@@ -40,6 +40,8 @@
 
     </header> 
     <header class="mov">
+      <div class="top-bar-padding">
+      </div>
       <div class="top-bar">
         <div class="logo" onclick="window.location='/'" style="background-image: url('<?php echo esc_url( $custom_logo_url ) ?>')">
           
