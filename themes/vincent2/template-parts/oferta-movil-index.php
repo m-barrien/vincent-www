@@ -7,6 +7,9 @@ if ($tax_term) {
 
 ?>
 <a href="<?php the_permalink(); ?>" class="oferta-index-single-row">
+	<object type="image/svg+xml" data="<?php echo get_template_directory_uri() ?>/image/svg/titulo_precio_oferta_mov.svg" class="oferta-index-title-svg">
+	  <?php the_title(); ?> <!-- fallback image in CSS -->
+	</object>	
 	<div class="oferta-index-banner-image">
 		<img class=" img-fluid"  src="https://via.placeholder.com/300x75">
 	</div>

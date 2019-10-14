@@ -369,12 +369,23 @@
     	font-size: 40px;
     }
 }
+.oferta-index-single-row{
+	object.oferta-index-title-svg{
+		width: 100%;
+	}
+}
+text.cls-2{
+	fill: $vincent-blue;
+}
+text.cls-3, text.cls-4{
+	fill: $vincent-orange;
+}
 .oferta-index-price-header{
 	width: 100%;
     padding: 0 19px;
     line-height: 0.8;
 	text-align: right;
-	font-size: 18vw;
+	font-size: 16vw;
 	font-weight: 900;
 	font-style: italic;
 	color: $vincent-orange;
@@ -408,3 +419,4 @@
 		}
 	}
 }
+
