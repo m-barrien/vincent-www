@@ -124,6 +124,7 @@ var swiper_kits = new Swiper('.kits-swiper-container', {
 var swiper_videos = new Swiper('.swiper-videos', {
       spaceBetween: 0,
       loop: true,
+      lazy: true,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
