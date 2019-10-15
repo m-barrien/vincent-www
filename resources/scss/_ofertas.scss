@@ -332,13 +332,16 @@
 		width: 17vw;
 		.italian-flag{
 			position: absolute;
-			height: 5vw;
+			height: auto;
 			width: 5vw;
 			margin-right: 0;
 			margin-left: 13vw;
 			border-radius: 50%;
 			margin-top: -1vw;
 			overflow: hidden;
+			img{
+				margin-top: -4px;
+			}
 		}
 	}
 	.center-img{
