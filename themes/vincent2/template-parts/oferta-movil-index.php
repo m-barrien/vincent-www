@@ -11,7 +11,7 @@ if ($tax_term) {
 	<div class="oferta-index-banner-image">
 		<img class=" img-fluid"  src="https://via.placeholder.com/300x75">
 	</div>
-	<div class="oferta-index-title-svg">
+	<div class="oferta-index-title-svg"><!-- SVG CONTAINER -->
 		<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="auto" viewBox="0 0 1440 750">
 		  <metadata>
 		    <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">

@@ -62,7 +62,7 @@ function set_ofertas_cookie() {
       $_SESSION['show_modal'] = false;
     }
     else{
-      setcookie("ofertas_cookie", $value, time()+100, '/');  /* expira en una hora */
+      setcookie("ofertas_cookie", $value, time()+200, '/');  /* expira en una hora */
       $_SESSION['show_modal'] = true;
     }
 }

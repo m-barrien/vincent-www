@@ -147,26 +147,24 @@
 	if ($_SESSION['show_modal']) {
 		?>
       <div class="modal fade" id="modalOferta" tabindex="-1" role="dialog" aria-labelledby="modalOfertaTitle" aria-hidden="false">
-        <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
           <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalOfertaTitle">Ofertas</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <div class="modal-body" style="padding:0;">
+              <button type="button" class="close popup-close-button" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="false">&times;</span>
               </button>
-            </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <a href="/ofertas">
+              	<img class="img-fluid" src="https://via.placeholder.com/1280x500">
+              </a>
             </div>
           </div>
         </div>
       </div>
       <script type="text/javascript">
-      	$('#modalOferta').modal('show');
+	    var width = $(window).width();  
+	    if(width > 849){
+      		$('#modalOferta').modal('show');
+	    }      	
       </script>
 		<?php
 	}
