@@ -119,7 +119,7 @@
 						$image = wp_get_attachment_image_src( get_the_ID(), $size="full" ); 
 							?>
 							<div class="icon">
-								<img class="img-fluid lazy" data-src="<?php echo $image[0]; ?>">
+								<img class="img-fluid lazy" src="" data-src="<?php echo $image[0]; ?>">
 							</div>								
 							<?php
 
