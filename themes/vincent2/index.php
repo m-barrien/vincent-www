@@ -420,6 +420,12 @@ $co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_sec
 	</section>
 </div>
 -->
+<!-- FEAT PRODUCTS -->
+<div class="feat-prod w-100">
+	<img class="img-fluid lazy" src="" data-src="<?php echo get_template_directory_uri() ?>/image/covers/featured-product.jpg">
+</div>
+<!-- FEAT PRODUCTS -->
+
 <!-- SECCION VIDEOS -->
 <div class="container">
 	<section>

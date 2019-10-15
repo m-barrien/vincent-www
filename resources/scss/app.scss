@@ -1021,6 +1021,10 @@ footer{
 	}
 }
 
+.feat-prod{
+	padding-top: $section-padding-top / 2;
+	padding-bottom: $section-padding-bottom;
+}
 
 @import 'generacion';
 @import 'mapa';
