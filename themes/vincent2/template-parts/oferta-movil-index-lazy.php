@@ -17,7 +17,7 @@ else {
 		<img class=" img-fluid"  src="https://via.placeholder.com/300x75">
 	</div>
 	<div class="oferta-index-title-svg">
-		<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="auto" viewBox="0 0 1440 750">
+		<svg xmlns="http://www.w3.org/2000/svg" width="1440" viewBox="0 0 1440 750">
 		  <metadata>
 		    <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
 		       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
