@@ -48,22 +48,23 @@ get_header();
 	?>
 
 </div> <!-- ofertas celu -->
+
+<!-- VIDEO -->
+<!-- 
 <div class="w-100 video-container">
 	<iframe class="lazy" src="" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="resizelistener" id="iframe39000" data-src="https://player.vimeo.com/video/356704763?&amp;autoplay=1&amp;muted=1&amp;loop=1?autoplay=0&amp;background=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;player_id=iframe39000&amp;api=1"></iframe>
 	<div class="fullvideo-cover"></div>
 </div>	
-
+-->
 
 <!-- SECCION 3 PAGINAS COVER DDE TGREEN -->
-<!--
 <div class="site-cover" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/covers/1.jpg');">
 
 	<div class="swiper-container swiper-cover">
 	    <div class="swiper-wrapper">
 	      <div class="swiper-slide">
 	      	<div class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/1.jpg" >
-		      	<div class="bar"></div>
-		      	<h1 class="shrink">
+		      	<h1 class="shrink-cover">
 		      		¿Quiere ahorrar con energ&iacute;a solar?
 		      	</h1>
 	      		<div class="hidden-desc">
@@ -75,8 +76,7 @@ get_header();
 	      </div>
 	      <div class="swiper-slide">
 	      	<div class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/2.jpg">
-		      	<div class="bar"></div>
-		      	<h1 class="shrink">
+		      	<h1 class="shrink-cover">
 		      		¿Grandes sistemas fotovoltaicos para la empresa?
 		      	</h1>
 	      		<div class="hidden-desc">
@@ -90,8 +90,7 @@ get_header();
 	      </div>
 	      <div class="swiper-slide">
 	      	<div class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/3.jpg">
-		      	<div class="bar"></div>
-		      	<h1 class="shrink">
+		      	<h1 class="shrink-cover">
 		      		¿Quiere aprovechar al m&aacute;ximo su sistema fotovoltaico?
 		      	</h1>
 		      	<div class="hidden-desc">
@@ -102,11 +101,9 @@ get_header();
 	      	</div>
 	      </div>
 	    </div>
-	    <div class="swiper-pagination"></div>
 	</div>	
 
 </div>
--->
 <div class="container-fluid">
 	<section id="porque-elegirnos" class="flex-container space-between bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/fade-paneles.png">
 		<div class="col-md-5">

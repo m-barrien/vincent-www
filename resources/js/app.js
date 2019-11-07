@@ -136,6 +136,7 @@ var swiper_videos = new Swiper('.swiper-videos', {
       },
     });
 
+/*
 
 $('ul.menu li').mouseenter(
   function(){
@@ -162,7 +163,7 @@ $('.floating-menu').mouseleave(
     $('.floating-menu').fadeOut();
   }
 );
-
+*/
 
 //DOC READY
 });

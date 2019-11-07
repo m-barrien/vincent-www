@@ -60,12 +60,18 @@ h1{
 	font-weight: 700;
 	@include media-breakpoint-up(lg) {
 		font-size: 53px;
+		&.shrink-cover{
+			font-size: 7mm;
+		}		
 		&.shrink{
 			font-size: 49px;
 		}		
 	}
 	@include media-breakpoint-between(md,lg) {
 		font-size: 48px;
+		&.shrink-cover{
+			font-size: 6mm;
+		}		
 		&.shrink{
 			font-size: 42px;
 		}		
@@ -346,9 +352,9 @@ p{
 	background-repeat: no-repeat;
 	background-size: cover;
     .swiper-container {
+    	@extend .gray-overlay;
       width: 100%;
       height: 100%;
-      background-color: $gray-overlay;
     }
     .swiper-slide {
       border-right: solid 1px $white-overlay;
@@ -399,7 +405,7 @@ p{
     		-webkit-transition:height 0.5s; 
     		.grow{
 				@include media-breakpoint-up(sm) {
-					height: 190px;	
+					height: 180px;	
 				}				
 			    transition:height 0.5s; 
     			-webkit-transition:height 0.5s; 

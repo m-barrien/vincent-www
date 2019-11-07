@@ -26,6 +26,8 @@
           'reverse'      => FALSE,
           'menu_class'     => 'menu' ) ); 
           ?>
+
+          <!-- 
           <?php wp_nav_menu( array( '
           theme_location' => 'header-menu',          
           'container'      => 'div',
@@ -34,7 +36,8 @@
           'menu'      => 'menu-secondary',
           'reverse'      => FALSE,
           'menu_class'     => 'menu' ) ); 
-          ?>
+          ?> 
+          -->
         
       </div>
 
