@@ -141,6 +141,41 @@ get_header();
 
 						<div class="swiper-slide">
 							<div class="single-oferta-container">
+								<h2><span>1.5 KW</span> solución fotovoltaica ongrid</h2>
+								<div class="row">
+									<div class="col-fotos">asdf</div>
+									<div class="col-precio">
+										<div class="oferta-index-bullets">
+											<div class="bullet">
+												<div class="bullet-image">
+													<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/checkmark.png">
+												</div>
+												Instalación incluida
+											</div>
+											<div class="bullet">
+												<div class="bullet-image">
+													<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/checkmark.png">
+												</div>
+												5 Años de garantía
+											</div>
+											<div class="bullet">
+												<div class="bullet-image">
+													<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/checkmark.png">
+												</div>
+												Tramitación SEC
+											</div>
+											<div class="bullet">
+												<div class="bullet-image">
+													<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/checkmark.png">
+												</div>
+												Productos Europeos
+											</div>
+										</div>	
+										<div class="oferta-wide-pricetag">
+											2.300.000
+										</div>									
+									</div>
+								</div>
 							</div>
 						</div>
 								
