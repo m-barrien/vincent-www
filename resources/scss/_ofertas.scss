@@ -444,3 +444,23 @@
 #modalOferta > .modal-dialog{
 	margin: 6.75rem auto;
 }
+
+.swiper-ofertas{
+	height: 400px;
+}
+.single-oferta-container{
+	height: 340px;
+	background-color: blue;
+}
+
+
+.ofertas-wide-container-header{
+	margin-top: 100px;
+	h3{
+		font-size: 2.04rem;
+		text-transform: uppercase;
+		font-weight: 900;
+		font-style: italic;
+		color: $red-impact;
+	}
+}

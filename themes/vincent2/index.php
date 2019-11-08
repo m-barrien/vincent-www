@@ -104,6 +104,67 @@ get_header();
 	</div>	
 
 </div>
+
+
+<!-- ofertas wide -->
+<div class="container ofertas-wide-container-header">
+	<section>
+		<div class="col">
+			<h3>Oferta</h3>
+		</div>
+	</section>
+</div>
+<div class="container-fluid">
+	<section class="">
+		<div class="col-md-12">
+			<div class="swiper-container swiper-ofertas">
+				<div class="swiper-wrapper">
+				<?php
+				wp_reset_postdata();
+			    wp_reset_query();
+			    $args= array(
+				'post_type' => array('oferta'),
+				'post_status' => 'publish',
+				'posts_per_page' => -1,
+				'meta_key'		=> 'featured',
+				'orderby'		=> 'meta_value',
+				'order'			=> 'DESC'
+				);
+
+				$loop = new WP_Query( $args );
+				?>	
+			    <?php
+			    	$i=0;
+					while ( $loop->have_posts() ) : $loop->the_post();
+						$image = null;
+							?>
+
+						<div class="swiper-slide">
+							<div class="single-oferta-container">
+							</div>
+						</div>
+								
+							<?php
+
+					endwhile;
+					wp_reset_postdata();
+			        wp_reset_query();
+				?>
+
+				</div>
+
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>				
+			</div>
+		</div>
+	</section>
+</div>
+
+
+<!-- porque elegirnos -->
+<!--
 <div class="container-fluid">
 	<section id="porque-elegirnos" class="flex-container space-between bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/fade-paneles.png">
 		<div class="col-md-5">
@@ -152,6 +213,8 @@ get_header();
 		</div>
 	</section>
 </div>	
+-->
+
 <div class="container-fluid">
 	<section id="how-we-work">
 		<div class="col-sm-12">
@@ -254,10 +317,10 @@ get_header();
 						</div>
 
 					</div>
-				<!-- Add Pagination -->
-				<div class="swiper-pagination"></div>
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
 				</div>
 			</section>
 		</div>

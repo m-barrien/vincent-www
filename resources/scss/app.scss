@@ -314,10 +314,10 @@ p{
   background: $vincent-blue;
 }
 .swiper-button-prev{
-	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23007affaa'%2F%3E%3C%2Fsvg%3E");
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ff8000aa'%2F%3E%3C%2Fsvg%3E");
 }
 .swiper-button-next{
-	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23007affaa'%2F%3E%3C%2Fsvg%3E");
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ff8000aa'%2F%3E%3C%2Fsvg%3E");
 }
 //pretty horizontal bar
 .bar{
@@ -542,6 +542,22 @@ p{
 	}
 }
 
+.swiper-pagination-bullet{
+	background-color: $text-black;
+}
+.swiper-pagination-bullet-active {
+	color:#fff;
+	background: $vincent-orange;
+}
+.swiper-button-next ,.swiper-button-prev{
+	@include media-breakpoint-down(sm) {
+		display: none;
+	}
+	@include media-breakpoint-up(sm) {	
+		display: block;
+	}
+}
+
 #how-we-work{
 	padding-top: $section-padding-top/2;
 	padding-bottom: $section-padding-bottom;
@@ -572,18 +588,6 @@ p{
 				}
 	      	}
 
-			.swiper-pagination-bullet-active {
-			  color:#fff;
-			  background: $vincent-blue;
-			}
-			.swiper-button-next ,.swiper-button-prev{
-				@include media-breakpoint-down(sm) {
-					display: none;
-				}
-				@include media-breakpoint-up(sm) {
-					display: block;
-				}
-			}
 		    .swiper-slide {
 
 		    	text-align: center;
