@@ -720,6 +720,8 @@ p{
 	h1{
 		color: $text-gray;
 		text-align: center;
+		font-weight: 400;
+		font-size: 4vw;
 	}
 	p{
 		font-size: 24px;
@@ -736,14 +738,15 @@ p{
 	}
 	button{
 		display: block;
-		@extend .mx-auto;
+		@include float-right();
 		font-size: 22px;
-		padding: 10px 65px;
+		padding: 0px 55px;
 		-webkit-border-radius: 60px;
 		-moz-border-radius: 60px;
 		border-radius: 60px;
 		color: $text-gray;
 		background-color: transparent;		
+		margin-top: -30px;
 		
 		border: 2px solid $vincent-orange;
 		-webkit-transition: all .4s;

@@ -1,31 +1,35 @@
 <div class="container-fluid">
 	<section id="contacto-footer" >
 		<div class="col-sm-12 col-md-12">
-			<h1>Contacto</h1>
-			<p class="highlight text-center">Contáctenos y reserve una visita gratuita y sin compromiso</p>
+			<h1>Solicita una llamada</h1>
+			<p class="highlight text-center">Contáctenos y reserve una visita gratuita sin compromiso</p>
 		</div>
 		<div class="container">
 			<div class="row">
 				<form class="col">
 				  <div class="form-row">
-				    <div class="form-group col-md-6">
+				    <div class="form-group offset-md-1 col-md-5">
 				      <label for="inputName4">Nombre Completo*</label>
-				      <input type="text" class="form-control" id="inputName4" placeholder="Nombre">
+				      <input type="text" class="form-control" id="inputName4" >
 				      <label for="inputEmail4">Correo*</label>
-				      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+				      <input type="email" class="form-control" id="inputEmail4" >
 				      <label for="inputTelefono">Teléfono*</label>
 				      <input type="text" class="form-control" id="inputTelefono">
 				    </div>
-				    <div class="form-group col-md-6">
+				    <div class="form-group col-md-5">
 					  <div class="form-row">
 					    <div class="form-group col-md-12">
 					      <label for="inputConsulta">Consulta</label>
-					      <textarea name="consulta" type="text" class="form-control" id="inputConsulta" placeholder="Consulta o comentario" style="min-height: 222px;"></textarea>
+					      <textarea name="consulta" type="text" class="form-control" id="inputConsulta"  style="min-height: 223px;"></textarea>
 					    </div>
 					  </div>				    
 				    </div>
 				  </div>
-				  <button type="submit" class="btn">Enviar mensaje</button>
+				  <div class="form-row">
+				  	<div class="col-md-10 offset-md-1">
+				  		<button type="submit" class="btn">Enviar mensaje</button>
+				  	</div>
+				  </div>
 				</form>				
 			</div>			
 		</div>
