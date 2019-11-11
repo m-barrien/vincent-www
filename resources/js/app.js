@@ -63,9 +63,11 @@ var swiper_how = new Swiper('.swiper-how-we-work', {
 
 $('.swiper-slide').mouseenter(
   function(){
-    var bg_link = "url('" + $(this).find( '.cover-slide' ).attr("data-bg-im") + "')";
-    $( this ).find( '.cover-slide > .hidden-desc' ).css("height","200px");
-    $('.site-cover').css("background-image",bg_link);
+    if($(this).find( '.cover-slide' ).attr("data-bg-im")){
+      var bg_link = "url('" + $(this).find( '.cover-slide' ).attr("data-bg-im") + "')";
+      $( this ).find( '.cover-slide > .hidden-desc' ).css("height","200px");
+      $('.site-cover').css("background-image",bg_link);
+    }
 
   }).mouseleave(
   function (){
