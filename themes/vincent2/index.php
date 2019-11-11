@@ -139,11 +139,33 @@ get_header();
 						$image = null;
 							?>
 
+						<?php 
+							$oferta_category ="Instalaci&oacute;n Residencial";
+							$tax_term = get_the_terms( get_the_ID() ,'tipo-kit');
+							if ($tax_term) {
+								$oferta_category = $tax_term[0]->name;
+							}						
+						?>
 						<div class="swiper-slide">
 							<div class="single-oferta-container">
 								<h2><span>1.5 KW</span> solución fotovoltaica ongrid</h2>
 								<div class="row">
-									<div class="col-fotos">asdf</div>
+									<div class="col-fotos">
+										<div class="col-fotos-kit">
+											<div class="italian-and-cgreen">
+												<img class="kit-icon" src="<?php echo get_template_directory_uri() ?>/image/snippets/it_flag.png">
+												<img class="kit-icon" src="<?php echo get_template_directory_uri() ?>/image/snippets/logo_cgreen.png">
+											</div>
+											<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-group-ima	ge.png">
+											
+										</div>
+										<div class="col-fotos-kit">
+											
+										</div>
+										<div class="col-fotos-kit">
+											
+										</div>
+									</div>
 									<div class="col-precio">
 										<div class="oferta-index-bullets">
 											<div class="bullet">

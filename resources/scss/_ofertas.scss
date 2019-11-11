@@ -475,7 +475,22 @@
 	}
 	@include media-breakpoint-between(lg,xl) {
 		.col-fotos{
+			@include make-col-ready();
 			@include make-col(9);
+			.col-fotos-kit{
+				@include make-col(4);
+				.italian-and-cgreen{
+					position: absolute;
+					margin-left: 210px;
+
+				}
+				.kit-icon{	
+					width:35px;
+					height: 35px;
+					border-radius: 50%;
+				}
+
+			}
 		}
 		.col-precio{
 			@include make-col(3);
@@ -483,6 +498,7 @@
 	}
 	@include media-breakpoint-between(md,lg) {
 		.col-fotos{
+			@include make-col-ready();
 			@include make-col(9);
 		}
 		.col-precio{
