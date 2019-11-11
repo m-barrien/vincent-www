@@ -173,6 +173,16 @@ get_header();
 										</div>	
 										<div class="oferta-wide-pricetag">
 											2.300.000
+										</div>
+										<div class="oferta-wide-contacto-container">
+											<div class="oferta-wide-contacto-button">
+												<div class="oferta-wide-contacto-text">
+													Contacto
+												</div>
+												<div class="oferta-wide-contacto-bg">
+													
+												</div>
+											</div>
 										</div>									
 									</div>
 								</div>

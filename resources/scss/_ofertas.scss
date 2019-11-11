@@ -532,3 +532,61 @@
 	    margin-top: 4vw;
 	}
 }
+
+.oferta-wide-contacto-container{
+	width: 100%;
+	height: 50px ;
+	color: $white;
+	display: block;
+	.oferta-wide-contacto-button{
+		@extend .mx-auto;
+		display: block;
+		overflow: hidden;
+		width: 200px;
+		height: 50px;
+		margin-top: 10px;
+		&:hover{
+			.oferta-wide-contacto-bg{
+				-webkit-transform: width .5s;
+				-moz-transform: width .5s;
+				-o-transform: width .5s;
+				transform: width .5s;			
+
+				width: 0;
+
+			}
+			.oferta-wide-contacto-text{
+				color: $vincent-blue;
+			}
+		}
+		.oferta-wide-contacto-text{
+			position: absolute;
+			width: 200px;
+			height: 50px;
+			color: $white;
+			z-index: 101;
+			text-align: center;
+			font-weight: 700;
+			font-size: 2vw;			
+
+			-webkit-transition: .5s ease-in-out;
+			-moz-transition: .5s ease-in-out;
+			-o-transition: .5s ease-in-out;
+			transition: .5s ease-in-out;			
+		}
+		.oferta-wide-contacto-bg{
+			display: block;
+			position: absolute;
+			background-color: $vincent-blue;
+			width: 200px;
+			height: 50px;
+			margin-right: 100%;
+			z-index: 100;
+
+			-webkit-transition: .5s ease-in-out;
+			-moz-transition: .5s ease-in-out;
+			-o-transition: .5s ease-in-out;
+			transition: .5s ease-in-out;
+		}
+	}
+}
