@@ -721,20 +721,38 @@ p{
 		color: $text-gray;
 		text-align: center;
 		font-weight: 400;
-		font-size: 4vw;
+		@include media-breakpoint-up(up) {				
+			font-size: 4vw;
+		}
+		@include media-breakpoint-down(sm) {				
+			font-size: 8vw;
+		}		
 	}
 	p{
 		font-size: 24px;
 		text-align: center;
 		color: $text-gray;
 		margin-bottom: 45px;
-		opacity: .5;		
+		opacity: .5;	
+		&.highlight{
+			@include media-breakpoint-up(up) {				
+				font-size: 24px;
+			}
+			@include media-breakpoint-down(sm) {				
+				font-size: 5vw;
+			}		
+		}	
 	}
 	label{
 		font-weight: 400;
 		text-transform: capitalize;
 		color: $text-gray;
-		font-size: 1.4vw;		
+		@include media-breakpoint-up(up) {				
+			font-size: 1.4vw;
+		}
+		@include media-breakpoint-down(sm) {				
+			font-size: 4.4vw;
+		}
 	}
 	button{
 		display: block;
