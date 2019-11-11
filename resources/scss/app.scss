@@ -713,22 +713,26 @@ p{
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 500px;
+	form .form-control {
+	    height: calc(2.1em + .75rem + 2px);
+	    margin-bottom: 14px;
+	}	
 	h1{
-		color: $white;
+		color: $text-gray;
 		text-align: center;
 	}
 	p{
 		font-size: 24px;
 		text-align: center;
-		color: $white;
+		color: $text-gray;
 		margin-bottom: 45px;
 		opacity: .5;		
 	}
 	label{
-		font-weight: 700;
-		text-transform: uppercase;
-		color: $white;
-		font-size: 14px;		
+		font-weight: 400;
+		text-transform: capitalize;
+		color: $text-gray;
+		font-size: 1.4vw;		
 	}
 	button{
 		display: block;
@@ -738,7 +742,7 @@ p{
 		-webkit-border-radius: 60px;
 		-moz-border-radius: 60px;
 		border-radius: 60px;
-		color: $white;
+		color: $text-gray;
 		background-color: transparent;		
 		
 		border: 2px solid $vincent-orange;

@@ -1,5 +1,5 @@
 <div class="container-fluid">
-	<section id="contacto-footer" class="bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/form-min.png">
+	<section id="contacto-footer" >
 		<div class="col-sm-12 col-md-12">
 			<h1>Contacto</h1>
 			<p class="highlight text-center">Contáctenos y reserve una visita gratuita y sin compromiso</p>
@@ -9,49 +9,23 @@
 				<form class="col">
 				  <div class="form-row">
 				    <div class="form-group col-md-6">
-				      <label for="inputName4">Nombre</label>
+				      <label for="inputName4">Nombre Completo*</label>
 				      <input type="text" class="form-control" id="inputName4" placeholder="Nombre">
-				    </div>
-				    <div class="form-group col-md-6">
-				      <label for="inputEmail4">Email</label>
+				      <label for="inputEmail4">Correo*</label>
 				      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-				    </div>
-				  </div>
-				  <div class="form-row">
-				    <div class="form-group col-md-6">
-				      <label for="inputCiudad">Ciudad</label>
-				      <input type="text" class="form-control" id="inputCiudad">
+				      <label for="inputTelefono">Teléfono*</label>
+				      <input type="text" class="form-control" id="inputTelefono">
 				    </div>
 				    <div class="form-group col-md-6">
-				      <label for="inputRegion">Region</label>
-				      <select id="inputRegion" name="region" class="form-control">
-							<option value="" disabled> Seleccionar Region </option>
-							<option>I de Tarapacá</option>
-							<option>II de Antofagasta</option>
-							<option>III de Atacama</option>
-							<option>IV de Coquimbo</option>
-							<option>V de Valparaíso</option>
-							<option>Metropolitana de Santiago</option>
-							<option>VI del Libertador General Bernardo O’Higgins</option>
-							<option>VII del Maule</option>
-							<option>VIII de Concepción</option>
-							<option>IX de la Araucanía</option>
-							<option>X de Los Lagos</option>
-							<option>XI de Aysén del General Carlos Ibañez del Campo</option>
-							<option>XII de Magallanes y de la Antártica Chilena</option>
-							<option>XIV de Los Ríos</option>
-							<option>XV de Arica y Parinacota</option>
-							<option>XVI del Ñuble</option>
-				      </select>
-				    </div>
-				  </div>
 					  <div class="form-row">
 					    <div class="form-group col-md-12">
 					      <label for="inputConsulta">Consulta</label>
-					      <textarea name="consulta" type="text" class="form-control" id="inputConsulta" placeholder="Consulta o comentario" rows="3" style="height: auto;"></textarea>
+					      <textarea name="consulta" type="text" class="form-control" id="inputConsulta" placeholder="Consulta o comentario" style="min-height: 222px;"></textarea>
 					    </div>
 					  </div>				    
-				  <button type="submit" class="btn">Enviar la Solicitud</button>
+				    </div>
+				  </div>
+				  <button type="submit" class="btn">Enviar mensaje</button>
 				</form>				
 			</div>			
 		</div>

@@ -473,11 +473,12 @@
 		}
 
 	}
-	@include media-breakpoint-between(lg,xl) {
+	@include media-breakpoint-between(md,xl) {
 		.col-fotos{
 			@include make-col-ready();
 			@include make-col(9);
 			.col-fotos-kit{
+				z-index: 100;
 				@include make-col(4);
 				.italian-and-cgreen{
 					position: absolute;
@@ -489,17 +490,15 @@
 					height: 35px;
 					border-radius: 50%;
 				}
+				.kit-footer-icons{
+					position: absolute;
+				}
+				.icon-sello{
+					width: 60px;
+					height: 60px;
+				}
 
 			}
-		}
-		.col-precio{
-			@include make-col(3);
-		}
-	}
-	@include media-breakpoint-between(md,lg) {
-		.col-fotos{
-			@include make-col-ready();
-			@include make-col(9);
 		}
 		.col-precio{
 			@include make-col(3);

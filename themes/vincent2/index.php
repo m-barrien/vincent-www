@@ -148,22 +148,25 @@ get_header();
 						?>
 						<div class="swiper-slide">
 							<div class="single-oferta-container">
-								<h2><span>1.5 KW</span> solución fotovoltaica ongrid</h2>
+								<h2><span><?php echo get_post_meta($post->ID, 'short-title')[0] ; ?></span> solución solar</h2>
 								<div class="row">
 									<div class="col-fotos">
-										<div class="col-fotos-kit">
-											<div class="italian-and-cgreen">
-												<img class="kit-icon" src="<?php echo get_template_directory_uri() ?>/image/snippets/it_flag.png">
-												<img class="kit-icon" src="<?php echo get_template_directory_uri() ?>/image/snippets/logo_cgreen.png">
+										<div class="row">
+											<div class="col-fotos-kit">
+												<div class="italian-and-cgreen">
+													<img class="kit-icon" src="<?php echo get_template_directory_uri() ?>/image/snippets/it_flag.png">
+													<img class="kit-icon" src="<?php echo get_template_directory_uri() ?>/image/snippets/logo_cgreen.png">
+												</div>
+												<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-group-ima	ge.png">
+												<div class="kit-footer-icons">
+													<img class="icon-sello" src="<?php echo get_template_directory_uri() ?>/image/snippets/100euro.png">
+													<img class="icon-sello" src="<?php echo get_template_directory_uri() ?>/image/snippets/5anos.png">
+												</div>
+
 											</div>
-											<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-group-ima	ge.png">
-											
-										</div>
-										<div class="col-fotos-kit">
-											
-										</div>
-										<div class="col-fotos-kit">
-											
+											<div class="col-md-8" style="z-index: 0">
+												<img class="img-fluid" src="<?php the_post_thumbnail_url(); ?>"/>
+											</div>
 										</div>
 									</div>
 									<div class="col-precio">
@@ -194,7 +197,7 @@ get_header();
 											</div>
 										</div>	
 										<div class="oferta-wide-pricetag">
-											2.300.000
+											<?php echo get_post_meta($post->ID, 'price-tag')[0] ; ?>
 										</div>
 										<div class="oferta-wide-contacto-container">
 											<div class="oferta-wide-contacto-button">
