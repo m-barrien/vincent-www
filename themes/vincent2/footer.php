@@ -36,48 +36,50 @@
 	</section>
 </div>
 <footer>
-	<?php wp_nav_menu( array( '
-      theme_location' => '',          
-      'menu'      => 'menu-footer',
-      'container'      => '',
-      'menu_id'      => '',
-      'reverse'      => FALSE,
-      'menu_class'     => 'menu' ) ); 
-    ?>
-	<section class="footer-down">
-		<div class="text-container">
-			<address>
-	            &copy; copyright 2014-2019 Vincent Solar
-	            <br><br>
-	            Oficina Legal: Los Conquistadores 1925, Santiago, Chile.
-	            <br>
-	            Oficina Operativa y Distribución: Av. Industrial 1198, El Belloto, Chile.
-	            <br>
-	            Proximamente Florianopolis, Brasil.
-	            <br>
-	            <br>
-	            Tel <strong><a class="" href="tel:+56322948569">(32)294-8569</a> </strong>
-	            <br>
-	            E-Mail <strong><a class="" href="mailto:info@vincentsolar.com">info@vincentsolar.com</a></strong>
-            </address>
-            <div class="social">
-            	<div class="ft-label">Síguenos en las redes sociales</div>
-            	<a href="#">
-            		<i class="fab fa-instagram"></i>
-            		Instagram
-            	</a>
-            	<a href="#">
-            		<i class="fab fa-facebook-f"></i>
-            		Facebook
-            	</a>
-            	<a href="#">
-            		<i class="fab fa-linkedin-in"></i>
-            		Linked In
-            	</a>
-            </div>
-		</div>
+	<section class="footer-address">
+		<address>
+			<i class="fas fa-map-marker-alt"></i>
+			<div class="address-text">
+				Los Conquistadores 1925
+				<br>
+				<span>Santiago, Chile</span>
+			</div>
+		</address>
+		<address>
+			<i class="fas fa-map-marker-alt"></i>
+			<div class="address-text">
+				Av. Industrial 1198
+				<br>
+				<span>El Belloto, Chile</span>
+			</div>
+		</address>
+		<address>
+			<i class="fas fa-map-marker-alt"></i>
+			<div class="address-text">
+				Florianopolis
+				<br>
+				<span>Brasil</span>
+			</div>
+		</address>
+		<address>
+			<a href="tel:+56322948569">
+				<i class="fas fa-phone"></i>
+				+56 32 2948 569
+			</a>
+		</address>
+		<address>
+			<i class="fas fa-globe"></i>
+			www.vincentsolar.com
+			<br>
+			<a href="mailto:info@vincentsolar.com">
+				<i class="fas fa-envelope"></i>
+				info@vincentsolar.com
+			</a>
+		</address>
+	</section>
+	<section>
 		<div class="partners-container">
-			<div class="ft-label">Somos socios de</div>
+			<h3>Nuestros Partners</h3>
 			<div class="row">
 					<?php
 					wp_reset_query();
@@ -86,7 +88,7 @@
 					        'post_mime_type' => 'image',
 					        'orderby' => 'post_date',
 					        'order' => 'desc',
-					        'posts_per_page' => '3',
+					        'posts_per_page' => '-1',
 					        'post_status'    => 'inherit',
 					        'category_name'=>'partners',
 					         );
@@ -105,20 +107,9 @@
 					?>				
 			</div>
 		</div>
-		<div class="subscribe-container">
-			<div class="subscribe-body">
-			<div class="subscribe-wrapper">
-			    <h1 class="shrink">Suscríbase a nuestro boletín</h1>
-				<form>
-				  <div class="form-group">
-				    <input type="email" class="form-control" id="ingresarCorreo" aria-describedby="emailHelp" placeholder="Ingresar Correo">
-				    <small id="emailHelp" class="form-text">Nunca compartiremos tu información personal.</small>
-				  </div>
-				  <button type="submit" class="btn btn-primary">Suscribirme</button>
-				</form>
-			</div>
-			</div>
-		</div>
+	</section>
+	<section>
+		<h3 style="width: 100%; text-align: center; padding-top: 100px;">2019 Vincent Solar | Todos los derechos reservados</h3>
 	</section>
 
 <?php
