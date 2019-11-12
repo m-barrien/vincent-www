@@ -352,9 +352,11 @@ p{
 	background-repeat: no-repeat;
 	background-size: cover;
     .swiper-container {
-    	@extend .gray-overlay;
-      width: 100%;
-      height: 100%;
+    	background-image:
+			linear-gradient(to bottom, #00000077 0%, #00000000 25%,#00000000 75%, #00000077 100%),
+			url('') !important;
+     	width: 100%;
+    	height: 100%;
     }
     .swiper-slide {
       border-right: solid 1px $white-overlay;
