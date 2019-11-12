@@ -38,7 +38,6 @@
           'menu_class'     => 'menu' ) ); 
           ?> 
           -->
-        
       </div>
 
     </header> 
