@@ -309,7 +309,7 @@ get_header();
 										<span class="bar-number">1</span>
 									</div>
 									<h1>Inspección</h1>
-									<p class="highlight">Llevamos a cabo una inspección técnica cuidadosa de su hogar o su empresa, con el fin de extraer elementos de evaluación y juicio.</p>
+									<p class="highlight">Revisamos los detalles de la factibilidad ofreciendo asesoria para su instalación.</p>
 								</div>
 							</div>	
 						</div>
@@ -326,8 +326,8 @@ get_header();
 										<div class="bar"></div>
 										<span class="bar-number">2</span>
 									</div>
-									<h1>Acuerdo</h1>
-									<p class="highlight">Juntos elegimos la mejor solución para su propiedad y nos encargamos de todos los trámites necesarios para iniciar el procedimiento.</p>
+									<h1>Oferta a la medida</h1>
+									<p class="highlight">Explicamos los detalles y el tipo de soluciones que vamos a implementar considerando la necesidad del cliente.</p>
 								</div>
 							</div>	
 						</div>
@@ -344,8 +344,8 @@ get_header();
 										<div class="bar"></div>
 										<span class="bar-number">3</span>
 									</div>
-									<h1>Instalación</h1>
-									<p class="highlight">Diseñamos e instalamos el sistema de producción de energía limpia que es adecuado para usted, para ello está nuestro equipo de instaladores especializados.</p>
+									<h1>Instalación &amp; puesta en marcha</h1>
+									<p class="highlight">Instalamos con el más alto estándar de certificación a nivel nacional e internacional. Nuestros clientes siempre recomiendan nuestro servicio por su eficiencia.</p>
 								</div>
 							</div>	
 						</div>
@@ -362,8 +362,8 @@ get_header();
 										<div class="bar"></div>
 										<span class="bar-number">4</span>
 									</div>
-									<h1>Activación</h1>
-									<p class="highlight">Nos aseguramos de que la conexión al suministro de electricidad sea correcta para poder contar la producción de su energía.</p>
+									<h1>¡Hecho!</h1>
+									<p class="highlight">Disfruta de la energía más limpia del mundo.</p>
 								</div>
 							</div>	
 						</div>
@@ -380,8 +380,8 @@ get_header();
 										<div class="bar"></div>
 										<span class="bar-number">5</span>
 									</div>
-									<h1>También estamos después!</h1>
-									<p class="highlight">Con nuestra garantía de 5 años está cubierto ante cualquier falla en el funcionamiento de su sistema solar.</p>
+									<h1>Soporte &amp; posventa</h1>
+									<p class="highlight">Con nuestra garantía de 5 años sobre la instalación, lider en el mercado, ofrecemos asesoría y soporte a todos nuestros clientes.</p>
 								</div>
 							</div>	
 						</div>
