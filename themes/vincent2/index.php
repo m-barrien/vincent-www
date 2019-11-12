@@ -77,11 +77,11 @@ get_header();
 	      <div class="swiper-slide">
 	      	<div class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/2.jpg">
 		      	<h1 class="shrink-cover">
-		      		¿Grandes sistemas fotovoltaicos para la empresa?
+		      		¿Quiere elevar el estándar de su empresa?
 		      	</h1>
 	      		<div class="hidden-desc">
 		      		<p>
-		      			Dele a su empresa independencia energética y ahorre grandes cantidades de dinero. Juntos encontraremos la solución más adecuada para el consumo de energía de su negocio.
+		      			Juntos encontraremos la solución más adecuada para el consumo de energía de su negocio.
 		      		</p>
 		      		<a href="/soluciones-empresa">Pida nuestro consejo</a>
 	      			
@@ -91,11 +91,11 @@ get_header();
 	      <div class="swiper-slide">
 	      	<div class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/3.jpg">
 		      	<h1 class="shrink-cover">
-		      		¿Quiere aprovechar al m&aacute;ximo su sistema fotovoltaico?
+		      		¿Quiere aprovechar al máximo su sistema solar?
 		      	</h1>
 		      	<div class="hidden-desc">
-			      	<p>También estamos después! Con el servicio "1 año junto a usted", un grupo de técnicos supervisará la producción y el rendimiento económico de su sistema fotovoltaico. Nuestro deseo es permanecer a su lado incluso después de la instalación.</p>
-		      		<a href="">Descubre más</a>
+			      	<p>Ofrecemos kits diseñados a la medida en soluciones fotovoltaicas y soluciones térmicas para su abastecimiento de electricidad y gas.</p>
+		      		<a href="">Contactactanos</a>
 		      		
 		      	</div>
 	      	</div>
@@ -552,11 +552,18 @@ $co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_sec
 -->
 <!-- FEAT PRODUCTS -->
 <div class="feat-prod w-100">
+	<div class="cinta-header-container">
+		<img class="favicon lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/favicon.png">
+		<h2 class="cinta-header">
+			Nuestros Proveedores
+		</h2>
 
+	</div>
 </div>
 <!-- FEAT PRODUCTS -->
 
 <!-- SECCION VIDEOS -->
+<!--
 <div class="container">
 	<section>
 		<div class="col-sm-12">
@@ -617,39 +624,49 @@ $co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_sec
 		</div>	
 	</section>
 </div>
+-->
+<!-- //SECCION VIDEOS -->
 
 
+<!-- SECCION PRODUCTOS -->
 <div class="container-fluid">
 	<section>
-		<h1><a href="/productos"> Productos </a></h1>
-		<?php
-		$params = array('posts_per_page' => 15, 
-			'post_type' => 'product',
-			'product_cat'=>'paneles-solares,inversores,kits-solares',
-			'orderby' => 'rand' 
-		);
-		$wc_query = new WP_Query($params);
-		?>
-		<?php if ($wc_query->have_posts()) : ?>
-		<div class="swiper-container products-swiper">
-			<div class="swiper-wrapper">
-			<?php while ($wc_query->have_posts()) :
-		                $wc_query->the_post(); ?>
-				<div class="swiper-slide">
-		        	<a class="product-slide" href="<?php the_permalink(); ?>">
-			        	<?php the_post_thumbnail(); ?>
-			            <h4>
-			               <?php the_title(); ?>
-			               
-			           </h4>
-		           </a>
+		<div class="cinta-header-container">
+			<img class="favicon lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/favicon.png">
+			<h2 class="cinta-header">
+				Nuestros Productos
+			</h2>
+
+		</div>
+			<?php
+			$params = array('posts_per_page' => 15, 
+				'post_type' => 'product',
+				'product_cat'=>'paneles-solares,inversores,kits-solares',
+				'orderby' => 'rand' 
+			);
+			$wc_query = new WP_Query($params);
+			?>
+			<?php if ($wc_query->have_posts()) : ?>
+		<div class="col-md-12">
+			<div class="swiper-container products-swiper">
+				<div class="swiper-wrapper">
+				<?php while ($wc_query->have_posts()) :
+			                $wc_query->the_post(); ?>
+					<div class="swiper-slide">
+			        	<a class="product-slide" href="<?php the_permalink(); ?>">
+				        	<img class="img-fluid swiper-lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png"  data-src="<?php the_post_thumbnail_url(); ?>">
+				            <h4>
+				               <?php the_title(); ?>
+				           </h4>
+			           </a>
+
+					</div>
+			    <?php endwhile; ?>
 
 				</div>
-		    <?php endwhile; ?>
-
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
 			</div>
-		<!-- Add Pagination -->
-			<div class="swiper-pagination"></div>
 		</div>
 		<?php wp_reset_postdata(); ?>
 		<?php else:  ?>
@@ -662,7 +679,7 @@ $co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_sec
 		</ul>		
 	</section>
 </div>
-
+<!-- /SECCION PRODUCTOS -->
 
 <div class="w-100 gray-bg">	
 	<div id="noticias-full-container" class="container">

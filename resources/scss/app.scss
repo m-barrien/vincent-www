@@ -985,6 +985,35 @@ footer{
 	padding-bottom: $section-padding-bottom;
 }
 
+
+.products-swiper{
+	@include media-breakpoint-up(sm) {
+		height: 28vw;
+	}
+	@include media-breakpoint-down(sm) {
+		height: 500px;
+	}
+
+}
+
+.cinta-header-container{
+	background-color: $dark-bg;
+	margin-left: 0;
+	margin-bottom: 4vw;
+	width: 50vw;
+	h2.cinta-header{
+		font-size: 2.5vw;
+		color: $text-gray ;
+		padding: 7px 45px;
+		margin: 0;
+	}
+	.favicon{
+		position: absolute;
+		width: 4vw;
+		left: 45vw;
+	}
+}
+
 @import 'generacion';
 @import 'mapa';
 @import 'noticias';

@@ -153,6 +153,39 @@ var swiper_videos = new Swiper('.swiper-ofertas', {
       },
     });
 
+
+var swiper = new Swiper('.swiper-container.products-swiper', {
+  slidesPerView: 5,
+  spaceBetween: 50,
+  autoplay: {
+    delay: 5000,
+  },
+  loop: true,
+  lazy: true,      
+  navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+  }, 
+  breakpoints: {
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 40,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    }
+  }
+});
+
 /*
 
 $('ul.menu li').mouseenter(
