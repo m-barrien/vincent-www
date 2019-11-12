@@ -65,7 +65,7 @@ $('.swiper-slide').mouseenter(
   function(){
     if($(this).find( '.cover-slide' ).attr("data-bg-im")){
       var bg_link = "url('" + $(this).find( '.cover-slide' ).attr("data-bg-im") + "')";
-      $( this ).find( '.cover-slide > .hidden-desc' ).css("height","200px");
+      $( this ).find( '.cover-slide > .hidden-desc' ).css("height","11vw");
       $('.site-cover').css("background-image",bg_link);
     }
 
