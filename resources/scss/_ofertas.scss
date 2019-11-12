@@ -461,6 +461,7 @@
 	@extend .container;
 	height: 340px;
 	background-color: none;
+	cursor: default;
 
 	h2{
 		color: $text-gray ;
@@ -552,8 +553,10 @@
 	height: 50px ;
 	color: $white;
 	display: block;
+
 	.oferta-wide-contacto-button{
 		@extend .mx-auto;
+		cursor: pointer;
 		display: block;
 		overflow: hidden;
 		width: 200px;
