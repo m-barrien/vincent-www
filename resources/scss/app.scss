@@ -1013,7 +1013,7 @@ footer{
 		}
 	}
 	@include media-breakpoint-down(sm) {
-		height: 500px;
+		height: auto;
 		.product-title{
 			text-align: center;
 			font-size: 4vw;
