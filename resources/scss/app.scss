@@ -793,6 +793,21 @@ footer{
 	padding-bottom: $section-padding-bottom;
 	@extend .container-fluid;
 
+	.footer-cgreen-logo{
+		padding-bottom: 55px;
+	}
+	.footer-cgreen-logo > img{
+		@extend .mx-auto;
+		@include media-breakpoint-up(sm) {
+			width: 10vw;
+			height: 10vw;
+
+		}
+		@include media-breakpoint-down(sm) {
+			width: 30vw;
+			height: 30vw;			
+		}
+	}
 	.footer-address{
 		@extend .flex-container;
 		@extend .space-between;

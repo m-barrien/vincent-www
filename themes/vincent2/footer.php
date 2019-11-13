@@ -36,6 +36,9 @@
 	</section>
 </div>
 <footer>
+	<section class="footer-cgreen-logo">
+		<img src="<?php echo get_template_directory_uri() ?>/image/snippets/logo_cgreen.png">
+	</section>
 	<section class="footer-address">
 		<address>
 			<i class="fas fa-map-marker-alt"></i>
