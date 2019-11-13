@@ -992,11 +992,19 @@ footer{
 .products-swiper{
 	@include media-breakpoint-up(sm) {
 		height: 28vw;
+		.product-title{
+			text-align: center;
+			font-size: 1.2vw;
+		}
 	}
 	@include media-breakpoint-down(sm) {
 		height: 500px;
+		.product-title{
+			text-align: center;
+			font-size: 4vw;
+			
+		}
 	}
-
 }
 
 .cinta-header-container{

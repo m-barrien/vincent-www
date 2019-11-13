@@ -363,7 +363,13 @@ get_header();
 										<span class="bar-number">4</span>
 									</div>
 									<h1>¡Hecho!</h1>
-									<p class="highlight">Disfruta de la energía más limpia del mundo.</p>
+									<p class="highlight">
+										Disfruta de la energía más limpia del mundo.
+										<span style="color: transparent;">
+											Disfruta de la energía más limpia del mundo.
+											Disfruta de la energía más limpia del mundo.
+										</span>
+									</p>
 								</div>
 							</div>	
 						</div>
@@ -384,7 +390,7 @@ get_header();
 									<p class="highlight">Con nuestra garantía de 5 años sobre la instalación, lider en el mercado, ofrecemos asesoría y soporte a todos nuestros clientes.</p>
 								</div>
 							</div>	
-						</div>
+						</div>						
 
 					</div>
 					<!-- Add Pagination -->
@@ -655,7 +661,7 @@ $co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_sec
 					<div class="swiper-slide">
 			        	<a class="product-slide" href="<?php the_permalink(); ?>">
 				        	<img class="img-fluid swiper-lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png"  data-src="<?php the_post_thumbnail_url(); ?>">
-				            <h4>
+				            <h4 class="product-title">
 				               <?php the_title(); ?>
 				           </h4>
 			           </a>
