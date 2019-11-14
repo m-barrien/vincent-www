@@ -105,7 +105,6 @@ get_header();
 
 </div>
 
-
 <!-- ofertas wide -->
 <div class="container ofertas-wide-container-header">
 	<section>

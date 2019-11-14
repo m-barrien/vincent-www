@@ -14,7 +14,12 @@
           <?php
           $custom_logo_id = get_theme_mod( 'custom_logo' );
           $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
-          echo '<img src="' . esc_url( $custom_logo_url ) . '" alt="" href="/">';
+          if( $_SERVER['REQUEST_URI'] == "/" || is_404()){
+            echo '<img src="' . esc_url( $custom_logo_url ) . '" alt="" href="/">';
+          } 
+          else{
+            echo '<img src="' . get_site_icon_url() . '" style="height:81.7px;width:auto;" alt="" href="/">';
+          }
           ?>
           
         </div>
