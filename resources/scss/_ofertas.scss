@@ -509,7 +509,14 @@
 	}	
 }
 
-
+.ofertas-wide{
+	@include media-breakpoint-up(sm) {
+		display: block;
+	}
+	@include media-breakpoint-down(sm) {
+		display: none;
+	}	
+}
 .ofertas-wide-container-header{
 	margin-top: 100px;
 	h3{
