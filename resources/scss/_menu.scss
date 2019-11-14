@@ -82,7 +82,12 @@ nav{
 	ul.menu > li.menu-item{
 		display: inline;
 		padding-bottom: 30px;
-		padding-right: 80px;
+		@include media-breakpoint-between(md,xl) {
+			padding-right: 6vw;
+		}
+		@include media-breakpoint-between(sm,md) {
+			padding-right: 4vw;
+		}
 	}	
 	ul.sub-menu{
 		display: none;

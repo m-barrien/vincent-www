@@ -662,7 +662,6 @@ p{
 				    		border-style: solid;
 				    		border-width: 15px;
 				    		border-color: $vincent-blue-alpha;
-				    		z-index: 101;
 				    	}
 				    	.extra-bg{
 				    		position: absolute;
@@ -870,8 +869,8 @@ footer{
 			@include media-breakpoint-between(lg,xl) {
 				max-width: 5vw;
 			}
-			@include media-breakpoint-between(lg,xl) {
-				max-width: 5vw;
+			@include media-breakpoint-between(md,lg) {
+				max-width: 8vw;
 			}
 			@include media-breakpoint-down(sm) {
 				max-width: 70px;

@@ -1,7 +1,7 @@
 <div class="container-fluid">
 	<section id="contacto-footer" >
 		<div class="col-sm-12 col-md-12">
-			<h1>Solicita una llamada</h1>
+			<h1>Contactanos</h1>
 			<p class="highlight text-center">Contáctenos y reserve una visita gratuita sin compromiso</p>
 		</div>
 		<div class="container">
