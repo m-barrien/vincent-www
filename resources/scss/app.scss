@@ -716,9 +716,15 @@ p{
 					}  		
 			    	h1{
 			    		text-align: left;
+			    		@include media-breakpoint-down(sm) {
+							font-size: 9vw;
+						}	  
 			    	}
 			    	p{
 			    		text-align: left;
+			    		@include media-breakpoint-down(sm) {
+							font-size: 5vw;
+						}	 
 			    	}
 		    	}
 		    }	

@@ -288,7 +288,7 @@ get_header();
 	<section id="how-we-work">
 		<div class="col-sm-12">
 			<h1>Cómo trabajamos...</h1>
-			<p class="highlight">Estamos constantemente proyectados hacia el mañana.<br> Trabajamos todos los días pensando en su futuro, tal como lo hace con las personas que ama.</p>
+			<p class="highlight">Estamos comprometidos con entregar la mejor solución para sus necesidades.</p>
 		</div>
 		<div class="col-sm-12">
 			<section class="cloud-container bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/cloud-bg.png">
