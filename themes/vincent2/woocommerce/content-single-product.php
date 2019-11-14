@@ -33,7 +33,7 @@ defined( 'ABSPATH' ) || exit;
 	<div class="d-none">
 	<?php
 
-		$feat_image = wp_get_attachment_image_src( get_post_thumbnail_id( the_ID() ), '	full' );
+		$feat_image = wp_get_attachment_image_src( get_post_thumbnail_id( the_ID() ), 'medium' );
 	?>
 	</div>
 	<?php
