@@ -572,16 +572,15 @@
 		margin-top: 10px;
 		&:hover{
 			.oferta-wide-contacto-bg{
-				-webkit-transform: width .5s;
-				-moz-transform: width .5s;
-				-o-transform: width .5s;
-				transform: width .5s;			
+				-webkit-transform: all .5s;
+				-moz-transform: all .5s;
+				-o-transform: all .5s;
+				transform: all .5s;			
 
-				width: 0;
-
+				background-color: $white;
 			}
 			.oferta-wide-contacto-text{
-				color: $vincent-blue;
+				color: $red-impact;
 			}
 		}
 		.oferta-wide-contacto-text{
@@ -593,6 +592,7 @@
 			text-align: center;
 			font-weight: 700;
 			font-size: 2vw;			
+			padding-top: 3px;
 
 			-webkit-transition: .5s ease-in-out;
 			-moz-transition: .5s ease-in-out;
@@ -602,11 +602,16 @@
 		.oferta-wide-contacto-bg{
 			display: block;
 			position: absolute;
-			background-color: $vincent-blue;
+			background-color: $red-impact;
 			width: 200px;
 			height: 50px;
 			margin-right: 100%;
 			z-index: 100;
+
+			border-radius: 10px;
+			border-width: 2px;
+			border-style: solid;
+			border-color: $red-impact;			
 
 			-webkit-transition: .5s ease-in-out;
 			-moz-transition: .5s ease-in-out;

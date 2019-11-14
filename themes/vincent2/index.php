@@ -660,7 +660,7 @@ $co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_sec
 			                $wc_query->the_post(); ?>
 					<div class="swiper-slide">
 			        	<a class="product-slide" href="<?php the_permalink(); ?>">
-				        	<img class="img-fluid swiper-lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png"  data-src="<?php the_post_thumbnail_url(); ?>">
+				        	<img class="img-fluid swiper-lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png"  data-src="<?php the_post_thumbnail_url('medium'); ?>">
 				            <h4 class="product-title">
 				               <?php the_title(); ?>
 				           </h4>
