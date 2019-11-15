@@ -34,9 +34,6 @@
 	@include media-breakpoint-down(sm) {
 		display: block;
 	} 	
-	border-style: solid;
-	border-color: $dark-bg;
-	border-width: 0 0 1px 0;
 }
 .kit-group-header-text{
 	h1{
@@ -99,13 +96,13 @@
 }
 .kit-group-body-ofertas{
 	@include media-breakpoint-between(lg,xl) {
-		width: 20%;
+		width: 25%;
 	}
 	@include media-breakpoint-between(md,lg) {
-		width: 50%;
+		width: 30%;
 	}
 	@include media-breakpoint-down(sm) {
-		@include make-row();
+		width: 100%;
 
 	}
 }

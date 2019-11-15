@@ -77,10 +77,10 @@ $('.swiper-slide').mouseenter(
 
 $('.kit-col-container').mouseenter(
   function(){
-    $( this ).find( '.white-container > .text-body' ).toggleClass("rise");
+    $( this ).find( '.gray-container > .text-body' ).toggleClass("rise");
   }).mouseleave(
   function (){
-    $( this ).find( '.white-container > .text-body' ).toggleClass("rise");
+    $( this ).find( '.gray-container > .text-body' ).toggleClass("rise");
   });
 
 $('.hamburguer').click(function(){

@@ -1,20 +1,19 @@
 <?php get_header(); ?>
 <div class="site-cover-secondary" style="background-image:linear-gradient(to bottom, #00000080 0%, #00000000 25%,#00000000 75%, #00000080 100%),url('<?php echo get_template_directory_uri() ?>/image/covers/ofertas.jpg')">
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<div class="text-wrapper">
-					<h2><a href="/">HOME</a>&nbsp; / &nbsp; Ofertas</h2>
-					<h1>Ofertas</h1>
-				</div>
-				
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col">
+			<div class="text-wrapper">
+				<h1>Kit solares hogar</h1>
 			</div>
+			
 		</div>
 	</div>
 </div>
 <div class="container">
 	
-<?php $wcatTerms = get_terms('tipo-kit', array('hide_empty' => 0, 'parent' =>0)); 
+<?php $wcatTerms = get_terms('tipo-kit', array('hide_empty' => 0, 'parent' =>0, 'orderby'=>'count')); 
    foreach($wcatTerms as $wcatTerm) : 
    ?>
 	<section>
@@ -24,27 +23,31 @@
 	    			<h1 href="<?php echo get_term_link( $wcatTerm->slug, $wcatTerm->taxonomy ); ?>"><?php echo $wcatTerm->name; ?></h1>
 						<?php echo term_description( $wcatTerm->term_id, 'tipo-kit' ); ?>
 				</div>
-				<div class="kit-group-header-icons">
-					<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/kit-feats.png">
-				</div>
 				
 			</div>			
-			<div class="kit-group-body">
-				<div class="kit-group-body-image">
-					<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $wcatTerm->slug; ?>/kit-group-image.png">
-				</div>
-				<div class="kit-group-body-ofertas">
-					<?php if(have_posts()) : while(have_posts()) : the_post(); 
-				   			$tax_id = get_the_terms($post,'tipo-kit')[0]->term_id;
-							if ($tax_id == $wcatTerm->term_id) {
-				   				get_template_part( 'template-parts/oferta-price-tag', 'single' ); 
-							}
+			<div class="kit-group-body" >
+					<?php $termchildren = get_term_children( $wcatTerm->term_id, 'tipo-kit' ); ?>
+					<?php 
+						foreach ( $termchildren as $child ) {
+						    $term = get_term_by( 'id', $child, 'tipo-kit' );
+						    ?>
+							<div class="kit-col-container" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-3kw.jpg')">
+								<div class="color-bg" style="background-color: red;"></div>
+								<a class="gray-container" href="#">
+									<div class="text-body">
+										<div class="little-title">Soluciones Hogar</div>
+										<div class="kw">
+											<?php echo substr( $term->name , 0, 4); ?>
+										</div>
+									</div>
+								</a>
+								
+							</div>						    	
+							<?php
+						}						
 					?>
-					<?php endwhile; endif; ?>      
-				</div>
-				<div class="kit-group-body-banner">
-					<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $wcatTerm->slug; ?>/kit-group-banner.jpg">
-				</div>								
+
+
 			</div>	
 		</div>
 	</section>
