@@ -77,9 +77,11 @@ $('.swiper-slide').mouseenter(
 
 $('.kit-col-container').mouseenter(
   function(){
+    $( this ).find( 'img' ).toggleClass("hover");
     $( this ).find( '.gray-container > .text-body' ).toggleClass("rise");
   }).mouseleave(
   function (){
+    $( this ).find( 'img' ).toggleClass("hover");
     $( this ).find( '.gray-container > .text-body' ).toggleClass("rise");
   });
 
