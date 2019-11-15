@@ -64,7 +64,7 @@
 							<?php if(have_posts()) : while(have_posts()) : the_post(); 
 						   			$tax_id = get_the_terms($post,'tipo-kit')[0]->term_id;
 									if ($tax_id == $term->term_id) {
-						   				get_template_part( 'template-parts/oferta-price-tag', 'single' ); 
+						   				get_template_part( 'template-parts/oferta-wide', 'single' ); 
 									}
 								endwhile;
 								endif;
