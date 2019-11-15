@@ -1,3 +1,25 @@
+#titulo-ofertas{
+	text-transform: uppercase;
+	color: $text-gray;
+	line-height: 1;
+	span{
+		font-weight: 800;
+		font-style: italic;
+		@include media-breakpoint-between(md,xl) {
+			font-size: 2.2vw;
+		}
+		@include media-breakpoint-down(sm) {
+			font-size: 18px;
+		}		
+		&.ongrid{
+			color: $green;
+		}
+		&.offgrid{
+			color: $red;
+		}
+	}
+}
+
 .kit-group{
 	margin-top: 40px;
 	margin-bottom: 10px;
@@ -72,13 +94,8 @@
 	} 	
 }
 .kit-group-body{
-	@include media-breakpoint-between(md,xl) {
-		@include make-col-ready();
-		@include make-col(12);
-	}
-	@include media-breakpoint-down(sm) {
-		display: block;
-	} 	
+	@include make-col-ready();
+	@include make-col(12);
 }
 .kit-group-body-image{
 	padding: 30px;

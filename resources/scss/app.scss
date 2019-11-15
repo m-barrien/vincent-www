@@ -90,11 +90,8 @@ h1{
 
 h2{
 	font-weight: 700;
-	@include media-breakpoint-between(lg,xl) {
-		font-size: 24px;
-	}
-	@include media-breakpoint-between(md,lg) {
-		font-size: 22px;
+	@include media-breakpoint-between(md,xl) {
+		font-size: 2.7vw;
 	}
 	@include media-breakpoint-down(sm) {
 		font-size: 22px;

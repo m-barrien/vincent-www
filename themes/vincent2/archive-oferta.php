@@ -1,17 +1,23 @@
 <?php get_header(); ?>
 <div class="site-cover-secondary" style="background-image:linear-gradient(to bottom, #00000080 0%, #00000000 25%,#00000000 75%, #00000080 100%),url('<?php echo get_template_directory_uri() ?>/image/covers/ofertas.jpg')">
 </div>
-<div class="container">
+<div class="container kit-group">
 	<div class="row">
 		<div class="col">
 			<div class="text-wrapper">
-				<h1>Kit solares hogar</h1>
+				<h2 id="titulo-ofertas">
+					Kit solares hogar
+					<br>
+					<span class="ongrid">ONGRID</span>
+					<span>/</span>
+					<span class="offgrid">OFFGRID</span>
+
+				</h2>
+
 			</div>
 			
 		</div>
 	</div>
-</div>
-<div class="container kit-group">
 	
 <?php $wcatTerms = get_terms('tipo-kit', array('hide_empty' => 0, 'parent' =>0, 'orderby'=>'count')); 
    foreach($wcatTerms as $wcatTerm) : 
@@ -32,7 +38,7 @@
 					    $term = get_term_by( 'id', $child, 'tipo-kit' );
 					    ?>
 						<div class="kit-col-container">
-							<a class="gray-container" href="#">
+							<a class="gray-container" data-toggle="collapse" href="#<?php echo $term->slug ?>" role="button" aria-expanded="false" aria-controls="<?php echo $term->slug ?>">
 								<img src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-3kw.jpg">
 								<div class="text-body">
 									<div class="little-title">Soluciones Hogar</div>
@@ -46,6 +52,29 @@
 						<?php
 					}						
 				?>
+			</div>
+
+			<div class="row accordion" id="accordion<?php echo $wcatTerm->slug; ?>">
+				<?php 
+					foreach ( $termchildren as $child ) {
+					    $term = get_term_by( 'id', $child, 'tipo-kit' );
+					    ?>
+					    <div id="<?php echo $term->slug ?>" class="col-md-12 collapse" aria-labelledby="headingOne" data-parent="#accordion<?php echo $wcatTerm->slug; ?>">
+					      <div class="w-100">
+							<?php if(have_posts()) : while(have_posts()) : the_post(); 
+						   			$tax_id = get_the_terms($post,'tipo-kit')[0]->term_id;
+									if ($tax_id == $term->term_id) {
+						   				get_template_part( 'template-parts/oferta-price-tag', 'single' ); 
+									}
+								endwhile;
+								endif;
+							?>
+					      </div>
+					    </div>						    	
+						<?php
+					}						
+				?>				
+
 			</div>
 		</div>	
 	</section>
