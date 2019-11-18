@@ -48,7 +48,7 @@ section {
 a{
 	-moz-outline-style: none !important;
 	outline: none !important;
-	text-decoration: none !important;
+	text-decoration: none ;
 	&:active, :focus{
 		-moz-outline-style: none !important;
 		outline: none !important;
@@ -57,9 +57,10 @@ a{
 	}
 }
 h1{
-	font-weight: 700;
+	font-weight: 400;
+	color: $text-gray;
 	@include media-breakpoint-up(lg) {
-		font-size: 53px;
+		font-size: 3.6vw;
 		&.shrink-cover{
 			font-size: 7mm;
 		}		
@@ -91,7 +92,7 @@ h1{
 h2{
 	font-weight: 700;
 	@include media-breakpoint-between(md,xl) {
-		font-size: 2.7vw;
+		font-size: 1.8vw;
 	}
 	@include media-breakpoint-down(sm) {
 		font-size: 22px;
@@ -120,6 +121,7 @@ h3{
 	}
 }
 p{
+	font-weight: 300;
 	@include media-breakpoint-up(lg) {
 		font-size: $font-size-base*1.7;
 	}
@@ -306,19 +308,19 @@ p{
   text-align: center;
   line-height: 20px;
   font-size: 12px;
-  color:$white;
+  color:$white !important;
   opacity: 1;
-  background: rgba(0,0,0,0.2);
+  background-color: $text-gray !important;
 }
 .swiper-pagination-bullet-active {
-  color:#fff;
-  background: $vincent-blue;
+  color:$text-gray !important;
+  background-color: $vincent-orange !important;
 }
 .swiper-button-prev{
-	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ff8000aa'%2F%3E%3C%2Fsvg%3E");
+	background-image: url($svg-arrow-prev);
 }
 .swiper-button-next{
-	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ff8000aa'%2F%3E%3C%2Fsvg%3E");
+	background-image: url($svg-arrow-next);
 }
 //pretty horizontal bar
 .bar{
@@ -586,13 +588,14 @@ p{
 		color: $baby-blue-text;
 	}
 	.cloud-container{
+		margin-top:-5vw;
 		background-position: center top;
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
     .swiper-container {
       width: 100vw;
-      height: 100%;
+      min-height: 80vh;
       background-color: transparent;
       overflow-y: visible;
       overflow-x: hidden;
@@ -652,7 +655,7 @@ p{
 						@include make-col(4);
 					}
 					@include media-breakpoint-between(md,lg) {
-						@include make-col(5);
+						@include make-col(4);
 					}
 					@include media-breakpoint-down(sm) {
 						@include make-col(12);  
@@ -685,31 +688,26 @@ p{
 					}	    		
 		    	}
 		    	.text-container{
+					color: $text-gray;
 		    		@include make-col-ready();
 					@include media-breakpoint-up(lg) {
-						@include make-col(6);
+						@include make-col(7);
 					}
 					@include media-breakpoint-between(md,lg) {
-						@include make-col(5);
+						@include make-col(7);
 					}
 					@include media-breakpoint-down(sm) {
 						@include make-col(12);     
 					}	  
-					.bar-container{
+					.step-container{
 						width: 100%;
 						text-align: left;
 						display: block;
-						.bar{
-							text-align: left;
-							display: inline-block; 
-							margin-bottom: 5px;
-							margin-right: 4px;
-						}
 						.bar-number{
 							display: inline-block;
 							text-align: left;
-							font-weight: bold;
-							font-size: 20px;
+							font-weight: 400;
+							font-size: 2vw;
 						}
 					}  		
 			    	h1{
@@ -815,6 +813,7 @@ form{
 footer{
 	padding-top: $section-padding-top;
 	padding-bottom: $section-padding-bottom;
+	color: $text-gray;
 	@extend .container-fluid;
 
 	.footer-cgreen-logo{
@@ -961,27 +960,11 @@ footer{
 	}
 }
 
-.cinta-header-container{
-	background-color: $dark-bg;
-	margin-left: 0;
-	margin-bottom: 4vw;
-	width: 50vw;
-	h2.cinta-header{
-		font-size: 2.5vw;
-		color: $text-gray ;
-		padding: 7px 45px;
-		margin: 0;
-	}
-	.favicon{
-		position: absolute;
-		width: 4vw;
-		left: 45vw;
-	}
-}
 
 
 .half-banner{
 	min-height: 500px;
+	height: 80vh;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1006,12 +989,47 @@ footer{
 	p{
 		font-size: 1.8vw;
 		line-height: 1.1;
-	}
-	a{
-		color: $vincent-orange;
-		text-decoration: underline;
+		padding: 3vw 0;
 	}
 
+}
+a.orange-with-arrow{
+	display: inline-block;
+	color: $vincent-orange;
+	font-size: 1.3vw;
+	text-decoration: underline;
+	&:after{
+		content: url($svg-arrow-next);
+		display: inline-block;
+		width: 0.85vw;
+		bottom: 5.34vw;
+		position: absolute;
+		margin-left: 6px;
+	}
+}
+
+section > h1.section-header{
+	width: 100%;
+	text-align: center;
+	@include media-breakpoint-up(sm) {
+		padding-bottom: 4vw;
+	}
+	@include media-breakpoint-down(sm) {
+		padding-bottom: 20px;
+	}
+}
+
+.product-highlight-container{
+	.text-body{
+		@include make-col-ready();
+		@include make-col(6);
+		@include make-col-offset(1);
+	}
+	.image-wrapper{
+		@include make-col-ready();
+		@include make-col(5);
+
+	}
 }
 
 @import 'generacion';

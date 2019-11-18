@@ -54,9 +54,9 @@ var swiper_how = new Swiper('.swiper-how-we-work', {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (index + 1) + '</span>';
-        },
+        //renderBullet: function (index, className) {
+        //  return '<span class="' + className + '">' + (index + 1) + '</span>';
+        //},
       },      
     }
   );

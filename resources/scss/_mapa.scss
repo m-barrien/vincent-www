@@ -1,108 +1,15 @@
-$gmap-height:500px;
-$iframe-margin-top:-50px;
-$iframe-margin-bottom:-20px;
-#gmap{
-	@include media-breakpoint-up(sm) {
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;	
-	}
-	@include media-breakpoint-down(sm) {
-		background-image: none !important;
-	}
-	.proyectos{
-		z-index: 900;
-		background-color: $white;
-		@include media-breakpoint-between(lg,xl) {
-			position: absolute;
-			height: auto;
-			right:200px;
-			width: 440px;
-			margin-top: 140px;
-		}
-		@include media-breakpoint-between(md,lg) {
-			position: absolute;
-			height: auto;
-			right:50px;
-			width: 440px;
-			margin-top: 100px;
-		}
+.map-container{
+	.image-wrapper{
+		@include make-col-ready();
 		@include media-breakpoint-down(sm) {
-			position: relative;
-			width: 100%;
-			-webkit-box-shadow: 0 -6px 12px 0 rgba(0,0,0,.07);
-			-moz-box-shadow: 0 -6px 12px 0 rgba(0,0,0,.07);
-			box-shadow: 0 -6px 12px 0 rgba(0,0,0,.07);
-		}
-	}
-	.text-wrapper{
-		padding: 20px;
-		h2{
-			text-align: center;
-			span{
-				color: $vincent-blue;
+			@include make-col(5);
+			&:first-child{
+				@include make-col-offset(1);
 			}
 		}
-	}
-	.button-container{
-		width: 30%;
-		color: $text-gray;
-		p{
-			text-align: center;
-			line-height: 1.1;
-			color: inherit;
-		}
-	}
-	button{
-		@extend .btn;
-		@extend .border-primary;
-		@extend .rounded-circle;
-		@extend .mx-auto;
-		display: block;
-		font-size: 36px;
-		font-weight: 900;
-		text-align: center;
-		color: inherit;
-		@include media-breakpoint-between(lg,xl) {
-			height: 112px;
-			width: 112px;
-		}
-		@include media-breakpoint-between(md,lg) {
-			height: 112px;
-			width: 112px;
-		
-		}
 		@include media-breakpoint-down(sm) {
-			height: 90px;
-			width: 90px;
-			font-size: 26px;
-		
-		}		
-	}
-}
-#gmap-iframe{
-	z-index: 899;
-	overflow: hidden;
-	section{
-	}
-	iframe{
-		@include media-breakpoint-between(lg,xl) {
-			height:$gmap-height * 1.3;
-			pointer-events:none;
+			@include make-col-offset(0);
+			@include make-col(12);
 		}
-		@include media-breakpoint-between(md,lg) {
-			height:$gmap-height;
-			pointer-events:none;
-		
-		}
-		@include media-breakpoint-down(sm) {
-			height:$gmap-height;
-		
-		}		
-		margin-top: $iframe-margin-top;
-		margin-bottom: $iframe-margin-bottom;
-		margin-right: -4px;
-		margin-left: -4px;
-		width:105%; 
 	}
 }

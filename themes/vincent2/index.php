@@ -77,7 +77,7 @@ get_header();
 	      <div class="swiper-slide">
 	      	<div class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/2.jpg">
 		      	<h1 class="shrink-cover">
-		      		¿Quiere elevar el estándar de su empresa?
+		      		¿Quiere maximizar la productividad de su empresa?
 		      	</h1>
 	      		<div class="hidden-desc">
 		      		<p>
@@ -172,9 +172,9 @@ get_header();
 					La energía solar es fácil con Vincent Solar.
 				</h1>
 				<p>
-					Nuestros expertos lo ayudaran a encontrar la mejor solución para sus necesidades, asegurando que su instalación se realice sin problemas.
+					Con más de 30 años en el rubro a nivel internacional, somos expertos en proyectos residenciales y empresariales.
 				</p>
-				<a href="">Más sobre energía solar</a>
+				<a class="orange-with-arrow" href="">Más sobre energía solar</a>
 			</div>
 		</div>
 	</section>
@@ -182,12 +182,9 @@ get_header();
 
 <div class="container-fluid">
 	<section id="how-we-work">
+		<h1 class="section-header">Cómo trabajamos...</h1>
 		<div class="col-sm-12">
-			<h1>Cómo trabajamos...</h1>
-			<p class="highlight">Estamos comprometidos con entregar la mejor solución para sus necesidades.</p>
-		</div>
-		<div class="col-sm-12">
-			<section class="cloud-container bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/cloud-bg.png">
+			<section class="cloud-container">
 				<div class="swiper-container swiper-how-we-work">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
@@ -199,9 +196,8 @@ get_header();
 									</div>
 								</div>
 								<div class="text-container">
-									<div class="bar-container">
-										<div class="bar"></div>
-										<span class="bar-number">1</span>
+									<div class="step-container">
+										<span class="bar-number">Paso 1</span>
 									</div>
 									<h1>Inspección</h1>
 									<p class="highlight">Revisamos los detalles de la factibilidad ofreciendo asesoria para su instalación.</p>
@@ -217,9 +213,8 @@ get_header();
 									</div>
 								</div>
 								<div class="text-container">
-									<div class="bar-container">
-										<div class="bar"></div>
-										<span class="bar-number">2</span>
+									<div class="step-container">
+										<span class="bar-number">Paso 2</span>
 									</div>
 									<h1>Oferta a la medida</h1>
 									<p class="highlight">Explicamos los detalles y el tipo de soluciones que vamos a implementar considerando la necesidad del cliente.</p>
@@ -235,11 +230,10 @@ get_header();
 									</div>
 								</div>
 								<div class="text-container">
-									<div class="bar-container">
-										<div class="bar"></div>
-										<span class="bar-number">3</span>
+									<div class="step-container">
+										<span class="bar-number">Paso 3</span>
 									</div>
-									<h1>Instalación &amp; puesta en marcha</h1>
+									<h1>Instalación</h1>
 									<p class="highlight">Instalamos con el más alto estándar de certificación a nivel nacional e internacional. Nuestros clientes siempre recomiendan nuestro servicio por su eficiencia.</p>
 								</div>
 							</div>	
@@ -254,9 +248,8 @@ get_header();
 									</div>
 								</div>
 								<div class="text-container">
-									<div class="bar-container">
-										<div class="bar"></div>
-										<span class="bar-number">4</span>
+									<div class="step-container">
+										<span class="bar-number">Paso 4</span>
 									</div>
 									<h1>¡Hecho!</h1>
 									<p class="highlight">
@@ -278,9 +271,8 @@ get_header();
 									</div>
 								</div>
 								<div class="text-container">
-									<div class="bar-container">
-										<div class="bar"></div>
-										<span class="bar-number">5</span>
+									<div class="step-container">
+										<span class="bar-number">Paso 5</span>
 									</div>
 									<h1>Soporte &amp; posventa</h1>
 									<p class="highlight">Con nuestra garantía de 5 años sobre la instalación, lider en el mercado, ofrecemos asesoría y soporte a todos nuestros clientes.</p>
@@ -295,6 +287,21 @@ get_header();
 					<div class="swiper-button-prev"></div>
 				</div>
 			</section>
+		</div>
+	</section>
+</div>
+
+<div class="container-fluid product-highlight-container">
+	<section>
+		<div class="text-body">
+			<h1>El mejor equipamiento</h1>
+			<p>
+				Los sistemas solares de Vincent Solar están compuestos por componentes de las mejores y más eficientes marcas a nivel internacional. Diseñados para trabajar en conjunto a la perfección. Con una excelente relación de precio calidad.
+			</p>
+			<a class="orange-with-arrow" href="#">Conozca más sobre nuestros equipos </a>
+		</div>
+		<div class="image-wrapper">
+			<img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/despues.jpg">
 		</div>
 	</section>
 </div>
@@ -334,135 +341,6 @@ get_header();
 	</section>
 </div>
 -->
-
-<!-- SECCION AHORRO ECONOMICO -->
-<!--
-<div class="container-fluid">
-<?php
-$datetime1 = new DateTime('2014-01-01');
-$datetime2 = new DateTime('now');
-$interval = $datetime1->diff($datetime2);
-$elapsed_secs = $interval->days*86400 + $interval->h*3600 + $interval->i*60;
-$factor_generacion=200.0*1750.0*(1.0/(365*24*60*60*365*24*60*59.9));
-$factor_co2=409*$factor_generacion;
-$co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_secs*$elapsed_secs);
-?>
-	<section id="generacion" class="bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/co2-min.png">
-		<div class="col-sm-12">
-			<h1>Reducción de CO2</h1>
-			<p class="highlight">Gracias a los sitemas fotovoltaicos instalados por nosotros.</p>
-		</div>
-		<div class="numbers d-none">
-			<?php echo $elapsed_secs*$elapsed_secs*$factor_co2; ?> gr co2 <br>
-			<?php echo $elapsed_secs*$elapsed_secs*$factor_generacion; ?> kwh
-		</div>
-		<div class="col-sm-12 counter-container">
-		            <div class="super-digit-group">
-		            	<div class="digit-group">
-			                <div class=" schermo schermo10">
-			                    <div class="numero">
-			                        <img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_0.png" data-o="0" alt="numero">
-			                    </div>
-			                </div>
-			                <div class="schermo schermo11">
-			                    <div class="numero">
-			                        <img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_0.png" data-o="0" alt="numero">
-			                    </div>
-			                </div>
-			                <div class="schermo schermo12">
-			                    <div class="numero">
-			                        <img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_0.png" data-o="0" alt="numero">
-			                    </div>
-			                </div>
-
-		            	</div>
-		                <div style="clear: both"></div>
-		                <h2>kt</h2>
-		            </div>
-		            <div class="super-digit-group">
-		            	<div class="digit-group">
-			                <div class="schermo schermo7">
-			                    <div class="numero">
-			                        <img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_3.png" data-o="3" alt="numero">
-			                    </div>
-			                </div>
-			                <div class="schermo schermo8">
-			                    <div class="numero">
-			                        <img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_0.png" data-o="0" alt="numero">
-			                    </div>
-			                </div>
-			                <div class="schermo schermo9">
-			                    <div class="numero">
-			                        <img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_0.png" data-o="0" alt="numero">
-			                    </div>
-			                </div>
-
-		            	</div>
-		                <div style="clear: both"></div>
-		                <h2>t</h2>
-		            </div>
-		            <div class="super-digit-group">
-		            	<div class="digit-group">
-
-			                <div class="schermo schermo4">
-			                    <div class="numero" style="top: 0px;">
-			                        
-			                    <img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_4.png"></div>
-			                </div>
-			                <div class="schermo schermo5">
-			                    <div class="numero" style="top: 0px;">
-			                        
-			                    <img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_7.png"></div>
-			                </div>
-			                <div class="schermo schermo6">
-			                    <div class="numero" style="top: 0px;">
-			                        
-			                    <img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_8.png"></div>
-			                </div>
-		            	</div>
-		                <div style="clear: both"></div>
-		                <h2>kg</h2>
-		            </div>
-		            <div class="super-digit-group">
-		            	<div class="digit-group">
-
-			                <div class="schermo schermo1">
-			                    <div class="numero">
-			                        <img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_5.png" data-o="5" alt="numero">
-			                    </div>
-			                </div>
-			                <div class="schermo schermo2">
-			                    <div class="numero" style="top: 0px;">
-			                        
-			                    <img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_3.png"></div>
-			                </div>
-			                <div class="schermo schermo3">
-			                    <div class="numero" style="top: 0px;">
-			                        
-			                    <img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mc_0.png"></div>
-			                </div>
-		            	</div>
-		                <div style="clear: both"></div>
-		                <h2>g</h2>
-		            </div>
-		</div>
-		<div class="col-sm-12">
-			<img class="d-block mx-auto lazy" style="padding-top:20px;height:auto;max-width: 110px;" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/logo_cgreen.png">
-		</div>		
-	</section>
-</div>
--->
-<!-- FEAT PRODUCTS -->
-<div class="feat-prod w-100">
-	<div class="cinta-header-container">
-		<img class="favicon lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/favicon.png">
-		<h2 class="cinta-header">
-			Nuestros Proveedores
-		</h2>
-
-	</div>
-</div>
-<!-- FEAT PRODUCTS -->
 
 <!-- SECCION VIDEOS -->
 <!--
@@ -533,13 +411,9 @@ $co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_sec
 <!-- SECCION PRODUCTOS -->
 <div class="container-fluid">
 	<section>
-		<div class="cinta-header-container">
-			<img class="favicon lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/favicon.png">
-			<h2 class="cinta-header">
-				Nuestros Productos
-			</h2>
-
-		</div>
+		<h1 class="section-header">
+			Productos con los que trabajamos
+		</h1>
 			<?php
 			$params = array('posts_per_page' => 15, 
 				'post_type' => 'product',
@@ -583,6 +457,32 @@ $co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_sec
 </div>
 <!-- /SECCION PRODUCTOS -->
 
+
+<!-- SECCION MAPA -->
+<div class="container map-container">
+	<section>
+		<h1 class="section-header">Niveles de radiación en america latina</h1>
+	</section>
+	<section>
+		<div class="image-wrapper">
+			<img class="img-fluid lazy" data-src="https://via.placeholder.com/400x500">
+		</div>
+		<div class="image-wrapper">
+			<img class="img-fluid lazy" data-src="https://via.placeholder.com/400x500">
+		</div>
+		<div class="text-wrapper">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			</p>
+		</div>
+	</section>
+</div>
+<!-- /SECCION MAPA -->
+
+<!-- SECCION NOTICIAS -->
+
 <div class="w-100 gray-bg">	
 	<div id="noticias-full-container" class="container">
 		<section class="noticias">
@@ -604,4 +504,5 @@ $co2_per_sec = $factor_co2*((($elapsed_secs+1)*($elapsed_secs+1)) - $elapsed_sec
 		</section>
 	</div>
 </div>
+<!-- /SECCION NOTICIAS -->
 <?php get_footer(); ?>
