@@ -996,8 +996,14 @@ footer{
 a.orange-with-arrow{
 	display: inline-block;
 	color: $vincent-orange;
-	font-size: 1.3vw;
 	text-decoration: underline;
+	white-space: nowrap;
+	@include media-breakpoint-up(sm) {
+		font-size: 1.3vw;
+	}	
+	@include media-breakpoint-down(sm) {
+		font-size: 3.5vw;
+	}
 	&:after{
 		content: url($svg-arrow-next);
 		display: inline-block;
@@ -1022,12 +1028,25 @@ section > h1.section-header{
 .product-highlight-container{
 	.text-body{
 		@include make-col-ready();
-		@include make-col(6);
-		@include make-col-offset(1);
+		@include media-breakpoint-up(sm) {
+			@include make-col(5);
+			@include make-col-offset(1);
+			p{
+				font-size: 1.65vw;	
+			}
+		}	
+		@include media-breakpoint-down(sm) {
+			@include make-col(12);
+		}
 	}
 	.image-wrapper{
 		@include make-col-ready();
-		@include make-col(5);
+		@include media-breakpoint-up(sm) {
+			@include make-col(6);
+		}	
+		@include media-breakpoint-down(sm) {
+			@include make-col(12);
+		}		
 
 	}
 }

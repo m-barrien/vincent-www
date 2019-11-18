@@ -294,14 +294,14 @@ get_header();
 <div class="container-fluid product-highlight-container">
 	<section>
 		<div class="text-body">
-			<h1>El mejor equipamiento</h1>
+			<h1>La mejor solución fotovoltaica</h1>
 			<p>
-				Los sistemas solares de Vincent Solar están compuestos por componentes de las mejores y más eficientes marcas a nivel internacional. Diseñados para trabajar en conjunto a la perfección. Con una excelente relación de precio calidad.
+				<strong>Vincent Solar</strong> es sinonimo de calidad en todos los productos que instalamos, trabajando con prestigiosas marcas y equipamiento que hacen posible nuestra <strong>garantía por 5 años</strong> sobre su instalación.
 			</p>
 			<a class="orange-with-arrow" href="#">Conozca más sobre nuestros equipos </a>
 		</div>
 		<div class="image-wrapper">
-			<img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/despues.jpg">
+			<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/equipamiento_inicio.png">
 		</div>
 	</section>
 </div>
