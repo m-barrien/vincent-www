@@ -182,7 +182,11 @@ get_header();
 
 <div class="container-fluid">
 	<section id="how-we-work">
-		<h1 class="section-header">Cómo trabajamos...</h1>
+		<div class="col-sm-12">
+			<h1 class="section-header">Cómo trabajamos...</h1>
+			<p class="highlight">Estamos comprometidos con entregar la mejor solución para sus necesidades.</p>
+			
+		</div>
 		<div class="col-sm-12">
 			<section class="cloud-container">
 				<div class="swiper-container swiper-how-we-work">
@@ -410,7 +414,7 @@ get_header();
 
 <!-- SECCION PRODUCTOS -->
 <div class="container-fluid">
-	<section>
+	<section class="products-swiper-container">
 		<h1 class="section-header">
 			Productos con los que trabajamos
 		</h1>

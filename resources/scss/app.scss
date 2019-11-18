@@ -48,7 +48,7 @@ section {
 a{
 	-moz-outline-style: none !important;
 	outline: none !important;
-	text-decoration: none ;
+	text-decoration: none !important;
 	&:active, :focus{
 		-moz-outline-style: none !important;
 		outline: none !important;
@@ -942,6 +942,10 @@ footer{
 }
 
 
+.products-swiper-container{
+	padding-top: $section-padding-top;
+	padding-bottom: $section-padding-bottom;
+}
 .products-swiper{
 	@include media-breakpoint-up(sm) {
 		height: 28vw;
@@ -963,6 +967,8 @@ footer{
 
 
 .half-banner{
+	margin-top: $section-padding-top;
+	margin-bottom: $section-padding-bottom;
 	min-height: 500px;
 	height: 80vh;
 	background-position: center;
@@ -1026,6 +1032,8 @@ section > h1.section-header{
 }
 
 .product-highlight-container{
+	padding-top: $section-padding-top;
+	padding-bottom: $section-padding-bottom;
 	.text-body{
 		@include make-col-ready();
 		@include media-breakpoint-up(sm) {
