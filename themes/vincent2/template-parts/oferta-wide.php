@@ -13,18 +13,18 @@ $oferta_category = $tax_term[0]->name;
 			<div class="row">
 				<div class="col-fotos-kit">
 					<div class="italian-and-cgreen">
-						<img class="kit-icon swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/it_flag.png">
-						<img class="kit-icon swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/logo_cgreen.png">
+						<img class="kit-icon swiper-lazy " data-src="<?php echo get_template_directory_uri() ?>/image/snippets/it_flag.png">
+						<img class="kit-icon swiper-lazy " data-src="<?php echo get_template_directory_uri() ?>/image/snippets/logo_cgreen.png">
 					</div>
-					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-group-ima	ge.png">
+					<img class="img-fluid swiper-lazy " data-src="<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-group-ima	ge.png">
 					<div class="kit-footer-icons">
-						<img class="icon-sello swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/100euro.png">
-						<img class="icon-sello swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/5anos.png">
+						<img class="icon-sello swiper-lazy " data-src="<?php echo get_template_directory_uri() ?>/image/snippets/100euro.png">
+						<img class="icon-sello swiper-lazy " data-src="<?php echo get_template_directory_uri() ?>/image/snippets/5anos.png">
 					</div>
 
 				</div>
 				<div class="col-md-8" style="z-index: 0">
-					<img class="img-fluid swiper-lazy" data-src="<?php the_post_thumbnail_url(); ?>"/>
+					<img class="img-fluid swiper-lazy " data-src="<?php the_post_thumbnail_url(); ?>"/>
 				</div>
 			</div>
 		</div>

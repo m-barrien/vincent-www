@@ -160,58 +160,25 @@ get_header();
 	</section>
 </div>
 
-
-<!-- porque elegirnos -->
-<!--
+<!-- Banner a seccion de hogar -->
 <div class="container-fluid">
-	<section id="porque-elegirnos" class="flex-container space-between bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/fade-paneles.png">
-		<div class="col-md-5">
-			<h1>¿Por qu&eacute; elegirnos?</h1>
-			<p class="highlight">Queremos estar a su lado incluso después de instalar el sistema fotovoltaico y durante el tiempo que desee. Su objetivo de independencia energética es nuestro.</p>
-		</div>
-		<div class="col-md-7">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="card">
-						<div class="card-body">
-							<img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/h-shake.png">
-							<h3>Transparencia y Confianza</h3>
-							<p>Nos encanta ser sinceros y directos en la comunicación y siempre decimos las cosas como son. La confianza en las relaciones es fundamental para nosotros.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="card">
-						<div class="card-body">
-							<img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/h-shake.png">
-							<h3>Tenemos un sueño</h3>
-							<p>Creemos que hacerse independiente de la energía es un derecho y una opción libre para todos.</p>					
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="card">
-						<div class="card-body">
-							<img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/h-shake.png">
-							<h3>No tendr&aacute;s preocupaciones</h3>
-							<p>Nuestra dedicación a la satisfacción del cliente no tiene comparación. Esta es la filosofía que nos ha guiado todos los días durante treinta años. No tendrás que preocuparte por nada.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="card">
-						<div class="card-body">
-							<img class="lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/h-shake.png">
-							<h3>Tambi&eacute;n estamos despu&eacute;s</h3>
-							<p>Con nuestro servicio de posventa dedicado tendrá el respaldo necesario para garnatizar que su planta solar funcione a la perfección.</p>					
-						</div>
-					</div>
-				</div>
+	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/3.jpg">
+		<div class="half-banner-body">
+			<div class="flex-container">
+				<img class="favicon lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/favicon.png">
+			</div>
+			<div class="w-100">
+				<h1>
+					La energía solar es fácil con Vincent Solar.
+				</h1>
+				<p>
+					Nuestros expertos lo ayudaran a encontrar la mejor solución para sus necesidades, asegurando que su instalación se realice sin problemas.
+				</p>
+				<a href="">Más sobre energía solar</a>
 			</div>
 		</div>
 	</section>
-</div>	
--->
+</div>
 
 <div class="container-fluid">
 	<section id="how-we-work">

@@ -979,6 +979,41 @@ footer{
 	}
 }
 
+
+.half-banner{
+	min-height: 500px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.half-banner-body{
+	@include make-col-ready();
+	@include make-col(6);
+	@include make-col-offset(6);
+	padding: 30px 4vw !important; 
+	background-color: $white-overlay;
+
+	.favicon{
+		@extend .mx-auto;
+		height: auto;
+		width: 4vw;
+	}
+	h1{
+		font-weight: 400;
+		line-height: 1;
+	}
+	p{
+		font-size: 1.8vw;
+		line-height: 1.1;
+	}
+	a{
+		color: $vincent-orange;
+		text-decoration: underline;
+	}
+
+}
+
 @import 'generacion';
 @import 'mapa';
 @import 'noticias';
