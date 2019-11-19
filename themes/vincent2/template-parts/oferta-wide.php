@@ -12,10 +12,6 @@ $oferta_category = $tax_term[0]->name;
 		<div class="col-fotos">
 			<div class="row">
 				<div class="col-fotos-kit">
-					<div class="italian-and-cgreen">
-						<img class="kit-icon swiper-lazy " data-src="<?php echo get_template_directory_uri() ?>/image/snippets/it_flag.png">
-						<img class="kit-icon swiper-lazy " data-src="<?php echo get_template_directory_uri() ?>/image/snippets/logo_cgreen.png">
-					</div>
 					<img class="img-fluid swiper-lazy " data-src="<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-group-ima	ge.png">
 					<div class="kit-footer-icons">
 						<img class="icon-sello swiper-lazy " data-src="<?php echo get_template_directory_uri() ?>/image/snippets/100euro.png">

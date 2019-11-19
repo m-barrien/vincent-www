@@ -68,7 +68,7 @@ get_header();
 		      		¿Quiere ahorrar con energ&iacute;a solar?
 		      	</h1>
 	      		<div class="hidden-desc">
-		      		<p>Dele a su hogar la capacidad de usar energía solar para las necesidades energéticas de su familia. Estudiaremos con usted la solución más adecuada.</p>
+		      		<p>Ahorro inmediato sobre su cuenta de luz. Es una inversión para Ud. y su familia. Cuidamos el medio ambiente.</p>
 		      		<a href="/soluciones-hogar">Descubra nuestras soluciones</a>
 	      			
 	      		</div>
