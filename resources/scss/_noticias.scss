@@ -77,7 +77,6 @@ article{
 
 }
 #noticias-full-container{
-	background-color: $dark-bg-high;
 	@include media-breakpoint-up(lg) {
 		width: 1290px;
 	}		
@@ -86,23 +85,20 @@ article{
 .noticias{
 	padding-top: $section-padding-top;
 	padding-bottom: $section-padding-bottom;
-	background-color: $dark-bg-high;
 
 	.ultimas-titulo{
 		@include make-col-ready();
-		@include media-breakpoint-between(lg,xl) {
-			@include make-col(6);
-		}
-		@include media-breakpoint-between(md,lg) {
-			@include make-col(6);
-		}
-		@include media-breakpoint-down(sm) {
-			@include make-col(12);  
-		}		
+		@include make-col(12);  
 		h1{
-
+			width: 100%;
+			text-align: center;
 		}
-		h4{
+		p{
+			width: 100%;
+			text-align: center;
+			@include media-breakpoint-up(sm) {
+				font-size: 1.6vw;
+			}
 
 		}
 	}

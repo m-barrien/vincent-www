@@ -469,16 +469,14 @@ get_header();
 	</section>
 	<section>
 		<div class="image-wrapper">
-			<img class="img-fluid lazy" data-src="https://via.placeholder.com/400x500">
+			<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mapa_sudamerica.jpg">
 		</div>
 		<div class="image-wrapper">
-			<img class="img-fluid lazy" data-src="https://via.placeholder.com/400x500">
+			<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mapa_chile.jpg">
 		</div>
 		<div class="text-wrapper">
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				<strong>Chile</strong> es uno de los lugares con más radiación solar de la tierra, lo que lo hace <strong>ideal para invertir en un proyecto solar y ahorrar en costos energéticos</strong>.
 			</p>
 		</div>
 	</section>
@@ -487,12 +485,12 @@ get_header();
 
 <!-- SECCION NOTICIAS -->
 
-<div class="w-100 gray-bg">	
+<div class="w-100">	
 	<div id="noticias-full-container" class="container">
 		<section class="noticias">
 			<div class="ultimas-titulo">
-				<h4>Manténgase al día con las noticias de Vincent Solar</h4>
 				<h1>Últimas noticias</h1>
+				<p>Manténgase al día con las noticias de Vincent Solar</p>
 			</div>
 			<?php $the_query = new WP_Query( 'posts_per_page=5' ); ?>
 			 
