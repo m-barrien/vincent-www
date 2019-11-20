@@ -163,10 +163,8 @@ get_header();
 <!-- Banner a seccion de hogar -->
 <div class="container-fluid">
 	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/3.jpg">
+		<img class="favicon lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/favicon.png">
 		<div class="half-banner-body">
-			<div class="flex-container">
-				<img class="favicon lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/favicon.png">
-			</div>
 			<div class="w-100">
 				<h1>
 					La energía solar es fácil con Vincent Solar.
@@ -492,7 +490,7 @@ get_header();
 				<h1>Últimas noticias</h1>
 				<p>Manténgase al día con las noticias de Vincent Solar</p>
 			</div>
-			<?php $the_query = new WP_Query( 'posts_per_page=5' ); ?>
+			<?php $the_query = new WP_Query( 'posts_per_page=4' ); ?>
 			 
 			<?php while ($the_query -> have_posts()) : $the_query -> the_post(); 
 			 	

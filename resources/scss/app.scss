@@ -33,7 +33,7 @@ section {
     @include make-row();
 }
 .container-fluid{
-	max-width: 1920px;
+	max-width: $max-width;
 }
 .img-fluid{
 	width: 100% !important; 
@@ -57,7 +57,7 @@ a{
 	}
 }
 h1{
-	font-weight: 400;
+	font-weight: 600;
 	color: $text-gray;
 	@include media-breakpoint-up(lg) {
 		font-size: 3.6vw;
@@ -122,21 +122,22 @@ h3{
 	}
 }
 p{
-	font-weight: 300;
-	@include media-breakpoint-up(lg) {
+	font-weight: 400;
+	@include media-breakpoint-up(sm) {
 		font-size: $font-size-base*1.7;
-	}
-	@include media-breakpoint-between(md,lg) {
-		font-size: $font-size-base*1.2;
+		&.highlight{
+			font-size: 1.4vw;
+		}		
 	}
 	@include media-breakpoint-down(sm) {
-		font-size: $font-size-base*1.2;	        
+		font-size: $font-size-base*1.2;	   
+		&.highlight{
+			font-size: 22px;
+		}		     
 	}
 	color: $text-gray;
 	&.highlight{
-		font-size: 22px;
 		line-height: 1.5;
-		color: $baby-blue-text;		
 	}
 }
 
@@ -976,6 +977,13 @@ footer{
 	background-repeat: no-repeat;
 	background-size: cover;
 
+	.favicon{
+		position: absolute;
+		margin: 2vw;
+		height: auto;
+		width: 4vw;
+	}
+
 }
 .half-banner-body{
 	@include make-col-ready();
@@ -984,13 +992,7 @@ footer{
 	padding: 30px 4vw !important; 
 	background-color: $white-overlay;
 
-	.favicon{
-		@extend .mx-auto;
-		height: auto;
-		width: 4vw;
-	}
 	h1{
-		font-weight: 400;
 		line-height: 1;
 	}
 	p{
@@ -1006,7 +1008,7 @@ a.orange-with-arrow{
 	text-decoration: underline;
 	white-space: nowrap;
 	@include media-breakpoint-up(sm) {
-		font-size: 1.3vw;
+		font-size: 1.35vw;
 	}	
 	@include media-breakpoint-down(sm) {
 		font-size: 3.5vw;

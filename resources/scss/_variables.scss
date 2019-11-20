@@ -6,7 +6,7 @@ $header-top-margin: 16px;
 
 $hamburguer-scale:0.5;
 
-$max-width: 1920px;
+$max-width: none;
 // Body
 $body-bg: #fff;
 $dark-bg: #e3e3e3;
@@ -79,9 +79,9 @@ $grid-breakpoints: (
 
 $container-max-widths: (
   sm: 576px,
-  md: 800px,
-  lg: 1000px,
-  xl: 1200px
+  md: 80vw,
+  lg: 80vw,
+  xl: 80vw
 ) ;
 
 $menu-li-height: 80px;
