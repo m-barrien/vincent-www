@@ -59,19 +59,10 @@ a{
 h1{
 	font-weight: 600;
 	color: $text-gray;
-	@include media-breakpoint-up(lg) {
-		font-size: 3.6vw;
+	@include media-breakpoint-up(sm) {
+		font-size: 3vw;
 		&.shrink-cover{
-			font-size: 7mm;
-		}		
-		&.shrink{
-			font-size: 49px;
-		}		
-	}
-	@include media-breakpoint-between(md,lg) {
-		font-size: 48px;
-		&.shrink-cover{
-			font-size: 6mm;
+			font-size: 2.1vw;
 		}		
 		&.shrink{
 			font-size: 42px;
@@ -126,7 +117,7 @@ p{
 	@include media-breakpoint-up(sm) {
 		font-size: $font-size-base*1.7;
 		&.highlight{
-			font-size: 1.4vw;
+			font-size: 1.6vw;
 		}		
 	}
 	@include media-breakpoint-down(sm) {
@@ -390,9 +381,9 @@ p{
       align-items: center;
     }	
     .cover-slide{
-    	@extend .px-3;
 		@include media-breakpoint-up(sm) {
     		margin-bottom: 10px;
+    		padding: 0 1.5vw;
 		}
 		@include media-breakpoint-down(sm) {
 	    	margin-bottom: 45px;
@@ -427,10 +418,9 @@ p{
 			}
 			a{
 				@extend .btn;
-				border-radius: 50px;
 				color: $white;
+				border-radius: 3vw;
 				text-transform: none;
-				padding: 8px 37px;
 				white-space: nowrap;
 				background-color: $vincent-orange;
 				text-decoration: none;
@@ -438,12 +428,16 @@ p{
 				
 				@include media-breakpoint-between(lg,xl) {
 					font-size: 1.3vw;
+					padding: .5vw 1.7vw;
 				}
 				@include media-breakpoint-between(md,lg) {
 					font-size: 1.5vw;
+					padding: .5vw 1.7vw;
 				}				
 				@include media-breakpoint-down(sm) {
+					padding: 8px 37px;
 					font-size: 4vw;
+					border-radius: 50px;
 				}
 				&:hover{
 					color: $white;
@@ -455,6 +449,7 @@ p{
 				color: $text-light-gray;
 				@include media-breakpoint-up(sm) {
 					height: 5vw;
+					font-size: 1.3vw;
 				}
 				@include media-breakpoint-down(sm) {
 					font-size: 18px;
@@ -990,7 +985,7 @@ footer{
 	@include make-col(6);
 	@include make-col-offset(6);
 	padding: 30px 4vw !important; 
-	background-color: $white-overlay;
+	background-color: $white-overlay-strong;
 
 	h1{
 		line-height: 1;

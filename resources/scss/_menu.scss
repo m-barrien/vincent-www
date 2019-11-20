@@ -42,7 +42,7 @@ header{
 	}
 	.flex-container{
 		.logo{
-			max-width: 230px !important;
+			max-width: 19vw !important;
 			img{
 				width: 100%;
 				height: auto;
@@ -113,12 +113,7 @@ nav{
 	}
 */
 	a{
-		@include media-breakpoint-up(lg) {
-			font-size: 16px;
-		}
-		@include media-breakpoint-down(lg) {
-			font-size: 12px;
-		}				
+		font-size: 1vw;
 		color: $white;
 		text-transform: uppercase;
 		text-decoration: none;
