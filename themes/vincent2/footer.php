@@ -20,7 +20,7 @@
 					  <div class="form-row">
 					    <div class="form-group col-md-12">
 					      <label for="inputConsulta">Consulta</label>
-					      <textarea name="consulta" type="text" class="form-control" id="inputConsulta"  style="min-height: 223px;"></textarea>
+					      <textarea name="consulta" type="text" class="form-control" id="inputConsulta"  style=""></textarea>
 					    </div>
 					  </div>				    
 				    </div>

@@ -21,3 +21,104 @@ $map-overlay-height: 150px;
 	position: relative;
 	z-index: 101;
 }
+
+#contacto-footer{
+	padding-top: $section-padding-top;
+	padding-bottom: $section-padding-bottom;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 500px;
+	form .form-control {
+
+		@include media-breakpoint-up(sm) {				
+	    	height: 3vw;
+	    	font-size: 1.2vw;
+	    	margin-bottom: 1vw;
+		}
+		@include media-breakpoint-down(sm) {				
+	    	height: calc(2.1em + .75rem + 2px);
+		}
+
+	    margin-bottom: 14px;
+	}
+	textarea.form-control{
+		@include media-breakpoint-up(sm) {
+			height: 15.6vw;
+		}
+		@include media-breakpoint-down(sm) {
+			height: 200px;
+		}	
+	}	
+	h1{
+		color: $text-gray;
+		text-align: center;
+		font-weight: 400;
+		@include media-breakpoint-up(sm) {				
+			font-size: 4vw;
+		}
+		@include media-breakpoint-down(sm) {				
+			font-size: 8vw;
+		}		
+	}
+	p{
+		font-size: 24px;
+		text-align: center;
+		color: $text-gray;
+		margin-bottom: 45px;
+		opacity: .5;	
+		&.highlight{
+			@include media-breakpoint-up(sm) {				
+				font-size: 24px;
+			}
+			@include media-breakpoint-down(sm) {				
+				font-size: 5vw;
+			}		
+		}	
+	}
+	label{
+		font-weight: 400;
+		text-transform: capitalize;
+		color: $text-gray;
+		@include media-breakpoint-up(sm) {				
+			margin-bottom: .1vw;
+			font-size: 1.4vw;
+		}
+		@include media-breakpoint-down(sm) {				
+			font-size: 4.4vw;
+		}
+	}
+	button{
+		display: block;
+		@include float-right();
+		@include media-breakpoint-up(sm) {				
+			font-size: 1.8vw;
+		}
+		@include media-breakpoint-down(sm) {				
+			font-size: 22px;
+		}
+		padding: 0px 55px;
+		-webkit-border-radius: 60px;
+		-moz-border-radius: 60px;
+		border-radius: 60px;
+		color: $text-gray;
+		background-color: transparent;		
+		margin-top: -30px;
+		
+		border: 2px solid $vincent-orange;
+		-webkit-transition: all .4s;
+		-moz-transition: all .4s;
+		-o-transition: all .4s;
+		transition: all .4s;
+		cursor: pointer;		
+		&:hover{
+			background-color: $vincent-orange;
+		}
+	}
+}
+
+form{
+	.form-control{
+		height: calc(2.6em + .75rem + 2px);
+	}
+}
