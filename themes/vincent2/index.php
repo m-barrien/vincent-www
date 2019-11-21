@@ -472,11 +472,6 @@ get_header();
 		<div class="image-wrapper">
 			<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mapa_chile.jpg">
 		</div>
-		<div class="text-wrapper">
-			<p>
-				<strong>Chile</strong> es uno de los lugares con más radiación solar de la tierra, lo que lo hace <strong>ideal para invertir en un proyecto solar y ahorrar en costos energéticos</strong>.
-			</p>
-		</div>
 	</section>
 </div>
 <!-- /SECCION MAPA -->

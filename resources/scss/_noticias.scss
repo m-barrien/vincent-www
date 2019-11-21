@@ -165,7 +165,7 @@ article{
 					@include media-breakpoint-between(lg,xl) {
 						@include make-col(6);
 						line-height: 32px;
-						padding-right: 20px;
+						padding-right: 4%;
 					}
 					@include media-breakpoint-between(md,lg) {
 						@include make-col(6);
