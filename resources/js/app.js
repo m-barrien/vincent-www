@@ -160,7 +160,7 @@ var swiper = new Swiper('.swiper-container.products-swiper', {
   slidesPerView: 5,
   spaceBetween: 50,
   autoplay: {
-    delay: 5000,
+    delay: 4000,
   },
   loop: true,
   lazy: true,      
