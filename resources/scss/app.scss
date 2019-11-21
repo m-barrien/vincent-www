@@ -337,6 +337,7 @@ p{
 .site-cover{
 	@include media-breakpoint-up(sm) {
 		height: 95vh;
+		min-height: 600px;
 	}
 	@include media-breakpoint-down(sm) {
 		height: 85vh;
@@ -901,13 +902,19 @@ footer{
 		margin: 2vw;
 		height: auto;
 		width: 4vw;
+		&.right{
+			right: 0;
+		}
 	}
 
 }
 .half-banner-body{
 	@include make-col-ready();
 	@include make-col(6);
-	@include make-col-offset(6);
+	&.right{
+		@include make-col-offset(6);
+	}
+	
 	padding: 30px 4vw !important; 
 	background-color: $white-overlay-strong;
 
@@ -925,9 +932,9 @@ a.orange-with-arrow{
 	display: inline-block;
 	color: $vincent-orange;
 	text-decoration: underline;
-	white-space: nowrap;
 	@include media-breakpoint-up(sm) {
 		font-size: 1.35vw;
+		white-space: nowrap;
 	}	
 	@include media-breakpoint-down(sm) {
 		font-size: 3.5vw;
@@ -935,10 +942,13 @@ a.orange-with-arrow{
 	&:after{
 		content: url($svg-arrow-next);
 		display: inline-block;
-		width: 0.85vw;
-		bottom: 5.34vw;
-		position: absolute;
-		margin-left: 6px;
+		@include media-breakpoint-up(sm) {
+			width: .5vw;
+		}
+		@include media-breakpoint-down(sm) {
+			width: 1.5vw;
+
+		}
 	}
 }
 

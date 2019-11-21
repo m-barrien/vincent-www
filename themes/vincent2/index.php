@@ -164,7 +164,7 @@ get_header();
 <div class="container-fluid">
 	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/3.jpg">
 		<img class="favicon lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/favicon.png">
-		<div class="half-banner-body">
+		<div class="half-banner-body right">
 			<div class="w-100">
 				<h1>
 					La energía solar es fácil con Vincent Solar.
@@ -172,11 +172,12 @@ get_header();
 				<p>
 					Con más de 30 años en el rubro a nivel internacional, somos expertos en proyectos residenciales y empresariales.
 				</p>
-				<a class="orange-with-arrow" href="">Más sobre energía solar</a>
+				<a class="orange-with-arrow" href="/soluciones-hogar">Más sobre energía solar</a>
 			</div>
 		</div>
 	</section>
 </div>
+<!-- Banner a seccion de hogar -->
 
 <div class="container-fluid">
 	<section id="how-we-work">
@@ -293,20 +294,26 @@ get_header();
 	</section>
 </div>
 
-<div class="container-fluid product-highlight-container">
-	<section>
-		<div class="text-body">
-			<h1>La mejor solución fotovoltaica</h1>
-			<p>
-				<strong>Vincent Solar</strong> es sinonimo de calidad en todos los productos que instalamos, trabajando con prestigiosas marcas y equipamiento que hacen posible nuestra <strong>garantía por 5 años</strong> sobre su instalación.
-			</p>
-			<a class="orange-with-arrow" href="#">Conozca más sobre nuestros equipos </a>
-		</div>
-		<div class="image-wrapper">
-			<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/equipamiento_inicio.png">
+
+<!-- Banner a calidad productos -->
+<div class="container-fluid">
+	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/equipamiento_inicio.png">
+		<img class="favicon right lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/favicon.png">
+		<div class="half-banner-body">
+			<div class="w-100">
+				<h1>
+					La mejor solución fotovoltaica.
+				</h1>
+				<p>
+					<strong>Vincent Solar</strong> es sinonimo de calidad en todos los productos que instalamos, trabajando con prestigiosas marcas y equipamiento que hacen posible nuestra <strong>garantía por 5 años</strong> sobre su instalación.
+				</p>
+				<a class="orange-with-arrow" href="#">Conozca más sobre nuestros equipos </a>
+			</div>
 		</div>
 	</section>
 </div>
+<!-- Banner a calidad productos -->
+
 
 <!-- SECCION MAPA -->
 <!--
