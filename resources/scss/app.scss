@@ -35,6 +35,11 @@ section {
 .container-fluid{
 	max-width: $max-width;
 }
+.container{
+	@include media-breakpoint-up(sm) {
+		width: 80vw !important;
+	}
+}
 .img-fluid{
 	width: 100% !important; 
 	max-width: none !important;
@@ -82,11 +87,20 @@ h1{
 
 h2{
 	font-weight: 700;
-	@include media-breakpoint-between(md,xl) {
-		font-size: 1.8vw;
+	color: $text-gray;
+	@include media-breakpoint-up(sm) {
+		font-size: 2.8vw;
 	}
 	@include media-breakpoint-down(sm) {
 		font-size: 22px;
+	}
+	&.site-title{
+		@include media-breakpoint-up(sm) {
+			margin: 3vw 0;
+		}
+		@include media-breakpoint-down(sm) {
+			margin: 15px 0;
+		}
 	}
 }
 h3{
@@ -889,7 +903,6 @@ footer{
 
 
 .half-banner{
-	margin-top: $section-padding-top;
 	margin-bottom: $section-padding-bottom;
 	min-height: 500px;
 	height: 80vh;
@@ -915,7 +928,7 @@ footer{
 		@include make-col-offset(6);
 	}
 	
-	padding: 30px 4vw !important; 
+	padding: 4vw; 
 	background-color: $white-overlay-strong;
 
 	h1{
@@ -926,6 +939,31 @@ footer{
 		line-height: 1.1;
 		padding: 3vw 0;
 	}
+	ul{
+		position: relative;
+		list-style: none;
+		padding-left: 2.2em;		
+		margin-top: 2vw; 
+	}
+	li{
+		color: $text-gray;
+		line-height: 26px;
+		font-weight: 400;
+		@include media-breakpoint-up(sm) {
+			font-size: 1.5vw;
+			padding-top: 1vw;
+		}
+		@include media-breakpoint-down(sm) {
+			font-size: 18px;
+		}
+		&:before {
+			color: $text-gray ;
+			content: "\2b24";
+			position: absolute;
+			left: 0;
+		}
+	}
+
 
 }
 a.orange-with-arrow{
@@ -963,6 +1001,7 @@ section > h1.section-header{
 	}
 }
 
+/*
 .product-highlight-container{
 	padding-top: $section-padding-top;
 	padding-bottom: $section-padding-bottom;
@@ -989,6 +1028,44 @@ section > h1.section-header{
 		}		
 
 	}
+}
+*/
+
+.full-width-diagram{
+	.img-wrapper{
+		@include make-col(12);
+	}
+}
+.gallery-container{
+	@extend .container;
+	padding-top: $section-padding-top;
+	padding-bottom:$section-padding-bottom;
+}
+.gallery-img-wrapper{
+	display: inline-block;
+	width: 9vw;
+	min-width: 100px;
+	margin-right: 4vw;
+}
+.gallery-image{
+	width: 9vw;
+	min-width: 100px;
+	height: 9vw;
+	min-height: 100px;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.gallery-title{
+	@include media-breakpoint-up(sm) {
+		font-size: 1vw;
+	}
+	@include media-breakpoint-down(sm) {
+		font-size: 3vw;
+	}
+	color: $text-black;
+	font-weight: 700;
 }
 
 @import 'generacion';
