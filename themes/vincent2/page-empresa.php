@@ -6,9 +6,7 @@
 
 
 <div class="container">
-	<section>
-		<h2 class="site-title"> <?php the_title(); ?></h2>
-	</section>
+	<h2 class="site-title"> <?php the_title(); ?></h2>
 </div>
 
 
@@ -17,6 +15,9 @@
 	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/2.jpg">
 		<img class="favicon lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/favicon.png">
 		<div class="half-banner-body right">
+			<div class="mov-img">
+				<img class=" img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/2.jpg">
+			</div>			
 			<div class="w-100">
 				<h1>
 					Beneficios de la energía fotovoltaica para tu empresa
@@ -38,6 +39,9 @@
 	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/equipamiento_inicio.png">
 		<img class="favicon right lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/favicon.png">
 		<div class="half-banner-body">
+			<div class="mov-img">
+				<img class=" img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/equipamiento_inicio.png">
+			</div>
 			<div class="w-100">
 				<h1>
 					La mejor solución para su empresa
@@ -53,14 +57,12 @@
 
 <!-- como funciona ongrid -->
 <div class="container">
-	<section>
-		<h1>¿Como funciona el sistema <span>ON GRID</span> en tu empresa?</h1>
-	</section>
+	<h1>¿Como funciona el sistema <span class="orange">ON GRID</span> en tu empresa?</h1>
 </div>
 <div class="container-fluid">
 	<section class="full-width-diagram">
 		<div class="img-wrapper">
-			<img class="img-fluid lazy" data-src="https://via.placeholder.com/1000x500">
+			<img class="img-fluid lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/covers/diagrama_empresas.png">
 		</div>
 	</section>
 </div>

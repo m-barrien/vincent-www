@@ -99,7 +99,7 @@ h2{
 			margin: 3vw 0;
 		}
 		@include media-breakpoint-down(sm) {
-			margin: 15px 0;
+			margin: 35px 0;
 		}
 	}
 }
@@ -152,7 +152,9 @@ p{
   top: -$menu-height; 
   visibility: hidden;
 }
-
+.orange{
+	color: $vincent-orange;
+}
 
 .blog-container-width{
 	@extend .container;
@@ -923,9 +925,21 @@ footer{
 }
 .half-banner-body{
 	@include make-col-ready();
-	@include make-col(6);
-	&.right{
-		@include make-col-offset(6);
+	@include media-breakpoint-up(sm) {
+		@include make-col(6);
+		&.right{
+			@include make-col-offset(6);
+		}
+		.mov-img{
+			display: none;
+		}
+	}
+	@include media-breakpoint-down(xs) {
+		@include make-col(12);
+		.mov-img{
+			@include make-row();
+			margin: -4vw -4vw 0 -4vw; 
+		}
 	}
 	
 	padding: 4vw; 
@@ -933,9 +947,15 @@ footer{
 
 	h1{
 		line-height: 1;
+		@include media-breakpoint-down(sm) {
+			padding-top: 20px;
+		}
 	}
 	p{
 		font-size: 1.8vw;
+		@include media-breakpoint-down(sm) {
+			font-size: 3.8vw;
+		}
 		line-height: 1.1;
 		padding: 3vw 0;
 	}
@@ -955,6 +975,7 @@ footer{
 		}
 		@include media-breakpoint-down(sm) {
 			font-size: 18px;
+			padding-top: 10px;
 		}
 		&:before {
 			color: $text-gray ;
