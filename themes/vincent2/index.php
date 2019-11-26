@@ -470,9 +470,17 @@ get_header();
 <!-- SECCION MAPA -->
 <div class="container map-container">
 	<section>
-		<h1 class="section-header">Niveles de radiación en america latina</h1>
+		<h1 class="section-header">Niveles de radiación en el mundo</h1>
 	</section>
 	<section>
+		<div class="col">
+			<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mapa_mundo.jpg">
+		</div>
+	</section>
+	<section class="v-padding-top">
+		<h1 class="section-header">Niveles de radiación en am&eacute;rica latina</h1>
+	</section>
+	<section class="">
 		<div class="image-wrapper">
 			<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mapa_sudamerica.jpg">
 		</div>
