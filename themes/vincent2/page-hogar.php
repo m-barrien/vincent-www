@@ -57,7 +57,7 @@
 	<h1 class="pb-4">¿Como funciona el sistema <span class="orange">ON GRID?</span></h1>
 </div>
 <div class="container-fluid">
-	<section class="full-width-diagram bg-lazy" data-src="https://via.placeholder.com/1000x500">
+	<section class="full-width-diagram bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/paneles-faded.jpg">
 		<div class="img-wrapper">
 			<img class="img-fluid lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/covers/diagrama_hogar_on.png">
 		</div>
@@ -70,7 +70,7 @@
 	<h1 class="pb-4">¿Como funciona el sistema <span class="orange">OFF GRID?</span></h1>
 </div>
 <div class="container-fluid v-padding-bottom" >
-	<section class="full-width-diagram bg-lazy" data-src="https://via.placeholder.com/1000x500">
+	<section class="full-width-diagram bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/paneles-faded.jpg">
 		<div class="img-wrapper">
 			<img class="img-fluid lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/covers/diagrama_hogar_off.png">
 		</div>

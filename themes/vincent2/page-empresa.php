@@ -60,7 +60,7 @@
 	<h1>¿Como funciona el sistema <span class="orange">ON GRID</span> en tu empresa?</h1>
 </div>
 <div class="container-fluid">
-	<section class="full-width-diagram">
+	<section class="full-width-diagram bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/paneles-faded.jpg">
 		<div class="img-wrapper">
 			<img class="img-fluid lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/covers/diagrama_empresas.png">
 		</div>
