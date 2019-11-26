@@ -102,4 +102,119 @@
 	</div>
 </div>
 
+
+<div class="footer-ofertas-container">
+	<div class="container">
+		<h1>Nuestros kits en <span class="orange">OFERTA</span></h1>
+	</div>
+	<div class="container">
+		<section>
+			<div class="kit-group-body" >
+				<div class="row">
+					<div class="kit-col-container">
+						<a class="gray-container"  href="#slide1">
+							<img src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-3kw.jpg">
+							<div class="text-body">
+								<div class="little-title">Soluciones Empresa</div>
+								<div class="kw">
+									20kw
+								</div>
+							</div>
+						</a>
+						
+					</div>	
+					<div class="kit-col-container">
+						<a class="gray-container"  href="#slide2">
+							<img src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-3kw.jpg">
+							<div class="text-body">
+								<div class="little-title">Soluciones Empresa</div>
+								<div class="kw">
+									30kw
+								</div>
+							</div>
+						</a>
+						
+					</div>	
+					<div class="kit-col-container">
+						<a class="gray-container"  href="#slide3">
+							<img src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-3kw.jpg">
+							<div class="text-body">
+								<div class="little-title">Soluciones Empresa</div>
+								<div class="kw">
+									50kw
+								</div>
+							</div>
+						</a>
+						
+					</div>	
+					<div class="kit-col-container">
+						<a class="gray-container"  href="#slide4">
+							<img src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-3kw.jpg">
+							<div class="text-body">
+								<div class="little-title">Soluciones Empresa</div>
+								<div class="kw">
+									100kw
+								</div>
+							</div>
+						</a>
+						
+					</div>						    	
+				</div>
+
+			</div>				
+		</section>
+		<section>
+		<div class="swiper-container footer-ofertas-swiper">
+			<div class="swiper-wrapper">
+			  <div class="swiper-slide" data-hash="slide1">
+			  	<div class="descripcion-oferta">
+			  		<h2>20kw</h2>
+			  		<p>Oferta buenisima</p>
+			  		<ul>
+			  			<li>Para consumos desde XXXXXkWh</li>
+			  			<li>Industrias de alimentos</li>
+			  			<li>Cámaras de refrigeración</li>
+			  		</ul>
+			  	</div>
+			  </div>
+			  <div class="swiper-slide" data-hash="slide2">
+			  	<div class="descripcion-oferta">
+			  		<h2>20kw</h2>
+			  		<p>Oferta buenisima</p>
+			  		<ul>
+			  			<li>Para consumos desde XXXXXkWh</li>
+			  			<li>Industrias de alimentos</li>
+			  			<li>Cámaras de refrigeración</li>
+			  		</ul>
+			  	</div>
+			  </div>
+			  <div class="swiper-slide" data-hash="slide3">
+			  	<div class="descripcion-oferta">
+			  		<h2>20kw</h2>
+			  		<p>Oferta buenisima</p>
+			  		<ul>
+			  			<li>Para consumos desde XXXXXkWh</li>
+			  			<li>Industrias de alimentos</li>
+			  			<li>Cámaras de refrigeración</li>
+			  		</ul>
+			  	</div>
+			  </div>
+			  <div class="swiper-slide" data-hash="slide4">
+			  	<div class="descripcion-oferta">
+			  		<h2>20kw</h2>
+			  		<p>Oferta buenisima</p>
+			  		<ul>
+			  			<li>Para consumos desde XXXXXkWh</li>
+			  			<li>Industrias de alimentos</li>
+			  			<li>Cámaras de refrigeración</li>
+			  		</ul>
+			  	</div>
+			  </div>
+			</div>
+		</div>			
+		</section>
+	</div>
+	
+</div>
+
 <?php get_footer(); ?>

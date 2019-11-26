@@ -188,6 +188,12 @@ var swiper = new Swiper('.swiper-container.products-swiper', {
   }
 });
 
+var swiper = new Swiper('.swiper-container.footer-ofertas-swiper', {
+  spaceBetween: 30,
+  hashNavigation: {
+    watchState: true,
+  },
+});
 /*
 
 $('ul.menu li').mouseenter(
