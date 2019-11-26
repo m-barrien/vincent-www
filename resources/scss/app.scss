@@ -89,7 +89,7 @@ h2{
 	font-weight: 700;
 	color: $text-gray;
 	@include media-breakpoint-up(sm) {
-		font-size: 2.8vw;
+		font-size: 1.8vw;
 	}
 	@include media-breakpoint-down(sm) {
 		font-size: 22px;
@@ -152,6 +152,18 @@ p{
   top: -$menu-height; 
   visibility: hidden;
 }
+
+.v-padding{
+	padding-top: $section-padding-top;
+	padding-bottom: $section-padding-bottom;
+}
+.v-padding-top{
+	padding-top: $section-padding-top;
+}
+.v-padding-bottom{
+	padding-bottom: $section-padding-bottom;
+}
+
 .orange{
 	color: $vincent-orange;
 }
@@ -1053,14 +1065,37 @@ section > h1.section-header{
 */
 
 .full-width-diagram{
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
 	.img-wrapper{
-		@include make-col(12);
+		
+		@include media-breakpoint-between(lg,xl) {
+			@include make-col-offset(2);	
+			@include make-col(8);	
+		}
+		@include media-breakpoint-between(sm,lg) {
+			@include make-col-offset(1);	
+			@include make-col(10);
+		}
+		@include media-breakpoint-down(sm) {
+			@include make-col(12);
+		}
 	}
 }
 .gallery-container{
 	@extend .container;
 	padding-top: $section-padding-top;
 	padding-bottom:$section-padding-bottom;
+
+	h1{
+		@include media-breakpoint-up(sm) {
+			margin-bottom: 3vw;
+		}
+		@include media-breakpoint-down(sm) {
+			margin-bottom: 20px;	
+		}
+	}
 }
 .gallery-img-wrapper{
 	display: inline-block;
