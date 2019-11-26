@@ -25,8 +25,7 @@
 				<ul>
 					<li>Ahorro inmediato en el gasto de energía.</li>
 					<li>Inversión que dura en el tiempo.</li>
-					<li>Marketing ecológico para su empresa.</li>
-					<li>Cuida el medioambiente.</li>
+					<li>Cuida el medioambiente, Marketing ecológico para su empresa.</li>
 				</ul>
 			</div>
 		</div>
@@ -47,7 +46,7 @@
 					La mejor solución para su empresa
 				</h1>
 				<p>
-					Las soluciones solares de la <strong>Vincent Solar</strong> se distinguen por sus componentes del más alto estándar a nivel internacional, instalado y ejecutado para lograr el máximo beneficio con la mejor relación precio-calidad.
+					Las soluciones solares de la <strong>Vincent Solar</strong> se distinguen por sus componentes del más alto estándar a nivel internacional, instalado y ejecutado para lograr el máximo beneficio con la <strong>mejor relación precio-calidad</strong>.
 				</p>
 			</div>
 		</div>

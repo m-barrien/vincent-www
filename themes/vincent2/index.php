@@ -161,7 +161,7 @@ get_header();
 </div>
 
 <!-- Banner a seccion de hogar -->
-<div class="container-fluid">
+<div class="container-fluid v-padding-top">
 	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-inicio-1.jpg">
 		<img class="favicon lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/favicon.png">
 		<div class="half-banner-body right">
@@ -302,10 +302,10 @@ get_header();
 		<div class="half-banner-body">
 			<div class="w-100">
 				<h1>
-					La mejor solución fotovoltaica.
+					La mejor solución para tu necesidad
 				</h1>
 				<p>
-					<strong>Vincent Solar</strong> es sinonimo de calidad en todos los productos que instalamos, trabajando con prestigiosas marcas y equipamiento que hacen posible nuestra <strong>garantía por 5 años</strong> sobre su instalación.
+					<strong>Vincent Solar</strong> es sinónimo de calidad en todos los productos que instalamos, trabajando con prestigiosas marcas y equipamiento que hacen posible nuestra <strong>garantía por 5 años</strong> sobre su instalación.
 				</p>
 				<a class="orange-with-arrow" href="#">Conozca más sobre nuestros equipos </a>
 			</div>

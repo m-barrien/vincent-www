@@ -22,7 +22,7 @@
 					Independiente,<br> inteligente, <br>conveniente
 				</h1>
 				<p>
-					Los sistemas fotovoltaicos Vincent Solar le permiten ser <strong>más independiente</strong> del <strong>aumento de los costos de electricidad</strong>.
+					Las soluciones fotovoltaicas Vincent Solar, permiten ser más independiente del aumento de los costos de electricidad. Proporcionando suministro de energía sostenible y renovable.
 				</p>
 			</div>
 		</div>
