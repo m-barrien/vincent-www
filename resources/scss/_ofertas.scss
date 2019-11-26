@@ -145,7 +145,7 @@
 	overflow: hidden;
 
 	img{
-		z-index: -1;
+		z-index: 1;
 		position: absolute;
 		display: block;
 		height: 400px;
@@ -176,6 +176,8 @@
 
 		}				
 		.text-body{
+			position: relative;
+			z-index: 3;
 			color: $white;
 			padding-left: 10%;
 			padding-right: 20%;
@@ -747,6 +749,7 @@
 
 .footer-ofertas-container{
 	@extend .container-fluid;
+	background-color: $dark-bg;
 
 }
 .footer-ofertas-swiper{
