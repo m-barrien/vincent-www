@@ -33,9 +33,13 @@ section {
     @include make-row();
 }
 .container-fluid{
+	position: relative;
+	z-index: 0;
 	max-width: $max-width;
 }
 .container{
+	position: relative;
+	z-index: 0;
 	@include media-breakpoint-up(sm) {
 		width: 80vw !important;
 	}
@@ -363,6 +367,7 @@ p{
     color: $baby-blue-text;
 }
 .site-cover{
+	position: relative;
 	@include media-breakpoint-up(sm) {
 		height: 95vh;
 		min-height: 600px;
@@ -1131,4 +1136,5 @@ section > h1.section-header{
 @import 'contacto';
 @import 'preguntas';
 @import 'videos';
+@import 'floatingbutton';
 @import 'menu';
