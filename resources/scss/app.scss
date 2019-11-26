@@ -840,7 +840,7 @@ footer{
 				max-width: 5vw;
 			}
 			@include media-breakpoint-between(md,lg) {
-				max-width: 8vw;
+				max-width: 6vw;
 			}
 			@include media-breakpoint-down(sm) {
 				max-width: 70px;
