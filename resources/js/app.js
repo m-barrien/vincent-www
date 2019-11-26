@@ -1,5 +1,6 @@
 // require ../../node_modules/jquery/dist/jquery.min.js
 // require popper.js
+// require ../../node_modules/lightgallery/dist/js/lightgallery-all.min.js
 // require bootstrap
 // require swiper
 
@@ -198,6 +199,9 @@ var swiper = new Swiper('.swiper-container.footer-ofertas-swiper', {
     watchState: true,
   },
 });
+
+$("#lightgallery").lightGallery(); 
+
 /*
 
 $('ul.menu li').mouseenter(

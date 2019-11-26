@@ -4,12 +4,7 @@
 // Variables
 @import 'variables';
 
-/*
-@font-face {
-    font-family: 'Pragmatica Condensed';
-    src: url($fa-font-path+'/Pragmatica Condensed Condensed.ttf') format('truetype');
-}
-*/
+
 
 // Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap"; 
@@ -24,7 +19,12 @@
 //swiper
 @import "../../node_modules/swiper/dist/css/swiper"; 
 
-
+//lightgallery
+@import "../../node_modules/lightgallery/src/sass/lightgallery"; 
+@font-face {
+    font-family: 'lg';
+    src: url($fa-font-path+'/lg.ttf') format('truetype');
+}
 
 body{
 	font-family: $font-family-sans-serif;

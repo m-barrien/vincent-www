@@ -68,8 +68,8 @@
 <!-- como funciona ongrid -->
 
 <div class="gallery-container">
-	<div class="w-100">
-		<h1>Galería de proyecto <strong>empresas</strong></h1>
+	<h1>Galería de proyecto <strong>empresas</strong></h1>
+	<div id="lightgallery" class="w-100">
 			<?php
 			$args = array(
 			        'post_type' => 'attachment',
@@ -86,14 +86,14 @@
 				$image = wp_get_attachment_image_src( get_the_ID(), $size="large" ); 
 				$image_thumb = wp_get_attachment_image_src( get_the_ID(), $size="thumbnail" ); 
 					?>
-				<div class="gallery-img-wrapper">
+				<a class="gallery-img-wrapper" href="<?php echo $image[0]; ?>">
 					<div class="gallery-image bg-lazy" data-src="<?php echo $image_thumb[0]; ?>" hd-src="<?php echo $image[0]; ?>">
 						
 					</div>
 					<p class="gallery-title">
 						<?php the_title(); ?>
 					</p>
-				</div>
+				</a>
 
 				<?php
 			endwhile;				    
