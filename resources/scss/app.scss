@@ -426,9 +426,9 @@ p{
 		text-align: left;
 
     	h1{
-			font-weight: 900;
+			font-weight: 700;
 			line-height: 1.1;
-			margin-bottom: 15px;
+			margin-bottom: 5px;
     		color: $white;
     	}
 
@@ -922,9 +922,10 @@ footer{
 
 
 .half-banner{
+	margin-top: $section-padding-top;
 	margin-bottom: $section-padding-bottom;
-	min-height: 500px;
-	height: 80vh;
+	min-height: 400px;
+	height: 35vw;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;

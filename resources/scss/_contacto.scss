@@ -92,12 +92,12 @@ $map-overlay-height: 150px;
 		display: block;
 		@include float-right();
 		@include media-breakpoint-up(sm) {				
-			font-size: 1.8vw;
+			font-size: 1.6vw;
 		}
 		@include media-breakpoint-down(sm) {				
 			font-size: 22px;
 		}
-		padding: 0px 55px;
+		padding: 3px 30px;
 		-webkit-border-radius: 60px;
 		-moz-border-radius: 60px;
 		border-radius: 60px;
@@ -113,6 +113,7 @@ $map-overlay-height: 150px;
 		cursor: pointer;		
 		&:hover{
 			background-color: $vincent-orange;
+			color: $white;
 		}
 	}
 }
