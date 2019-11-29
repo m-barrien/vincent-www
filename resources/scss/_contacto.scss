@@ -90,6 +90,7 @@ $map-overlay-height: 150px;
 	}
 	button{
 		display: block;
+		font-weight: 500;
 		@include float-right();
 		@include media-breakpoint-up(sm) {				
 			font-size: 1.6vw;
