@@ -1,6 +1,6 @@
 <?php
-//update_option( 'siteurl', 'http://192.168.43.213:8080' );
-//update_option( 'home', 'http://192.168.43.213:8080' );
+//update_option( 'siteurl', 'http://192.168.1.100:8080' );
+//update_option( 'home', 'http://192.168.1.100:8080' );
 add_theme_support( 'custom-logo' );
 add_theme_support('post-thumbnails');
 

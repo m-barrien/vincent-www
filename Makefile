@@ -15,7 +15,8 @@ js:
 	make copy
 perm:
 	sudo docker-compose exec mysql chown -R mysql:mysql /var/lib/mysql
-	sudo chown -R marcelo:marcelo ./public_html
+	sudo chown -R www-data:www-data ./public_html
+	sudo chmod 755 ./public_html
 package:
 	cd public_html/ && \
 	zip -r vin-theme.zip css/app.css js/app.js wp-content/themes/vincent2/*
