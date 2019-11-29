@@ -11,18 +11,18 @@
 
 <!-- Banner a beneficios hogar -->
 <div class="container-fluid">
-	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/1.jpg">
+	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-hogar-1.jpg">
 		<img class="favicon lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/favicon.png">
 		<div class="half-banner-body right">
 			<div class="mov-img">
-				<img class=" img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/1.jpg">
+				<img class=" img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-hogar-1.jpg">
 			</div>			
 			<div class="w-100">
 				<h1>
 					Independiente,<br> inteligente, <br>conveniente
 				</h1>
 				<p>
-					Los sistemas fotovoltaicos Vincent Solar le permiten ser <strong>más independiente</strong> del <strong>aumento de los costos de electricidad</strong>.
+					Las soluciones fotovoltaicas Vincent Solar, permiten ser más independiente del aumento de los costos de electricidad. Proporcionando suministro de energía sostenible y renovable.
 				</p>
 			</div>
 		</div>
@@ -32,11 +32,11 @@
 
 <!-- Banner a soluciones hogar -->
 <div class="container-fluid">
-	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/equipamiento_inicio.png">
+	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-hogar-2.jpg">
 		<img class="favicon right lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/favicon.png">
 		<div class="half-banner-body">
 			<div class="mov-img">
-				<img class=" img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/equipamiento_inicio.png">
+				<img class=" img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-hogar-2.jpg">
 			</div>
 			<div class="w-100">
 				<h1>
@@ -53,11 +53,11 @@
 
 
 <!-- como funciona ongrid -->
-<div class="container">
-	<h1>¿Como funciona el sistema <span class="orange">ON GRID?</span></h1>
+<div class="container v-padding-top">
+	<h1 class="pb-4">¿Como funciona el sistema <span class="orange">ON GRID?</span></h1>
 </div>
 <div class="container-fluid">
-	<section class="full-width-diagram">
+	<section class="full-width-diagram bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/paneles-faded.jpg">
 		<div class="img-wrapper">
 			<img class="img-fluid lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/covers/diagrama_hogar_on.png">
 		</div>
@@ -66,11 +66,11 @@
 <!-- como funciona ongrid -->
 
 <!-- como funciona offgrid -->
-<div class="container">
-	<h1>¿Como funciona el sistema <span class="orange">OFF GRID?</span></h1>
+<div class="container v-padding-top">
+	<h1 class="pb-4">¿Como funciona el sistema <span class="orange">OFF GRID?</span></h1>
 </div>
-<div class="container-fluid">
-	<section class="full-width-diagram">
+<div class="container-fluid v-padding-bottom" >
+	<section class="full-width-diagram bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/paneles-faded.jpg">
 		<div class="img-wrapper">
 			<img class="img-fluid lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/covers/diagrama_hogar_off.png">
 		</div>
@@ -81,8 +81,8 @@
 
 
 <div class="gallery-container">
-	<div class="w-100">
-		<h1>Galería de proyecto <strong>hogar</strong></h1>
+	<h1>Galería de proyecto <strong>hogar</strong></h1>
+	<div id="lightgallery" class="w-100">
 			<?php
 			$args = array(
 			        'post_type' => 'attachment',
@@ -99,14 +99,15 @@
 				$image = wp_get_attachment_image_src( get_the_ID(), $size="large" ); 
 				$image_thumb = wp_get_attachment_image_src( get_the_ID(), $size="thumbnail" ); 
 					?>
-				<div class="gallery-img-wrapper">
+				<a class="gallery-img-wrapper" href="<?php echo $image[0]; ?>">
+					<img class="d-none lazy" data-src="<?php echo $image_thumb[0]; ?>">
 					<div class="gallery-image bg-lazy" data-src="<?php echo $image_thumb[0]; ?>" hd-src="<?php echo $image[0]; ?>">
 						
 					</div>
 					<p class="gallery-title">
 						<?php the_title(); ?>
 					</p>
-				</div>
+				</a>
 
 				<?php
 			endwhile;				    

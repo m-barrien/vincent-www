@@ -115,6 +115,8 @@
 		<h3 style="width: 100%; text-align: center; padding-top: 100px;">2019 Vincent Solar | Todos los derechos reservados</h3>
 	</section>
 
+</footer>
+
 <?php
 	if ($_SESSION['show_modal']) {
 		?>
@@ -141,6 +143,48 @@
 		<?php
 	}
 ?>
-</footer>
+	<div class="fixed-button-container">
+		<div class="fixed-button-wrapper desk">
+			<div class="fixed-button-header">
+				<div class="text-container">
+					Contactanos
+				</div>
+			</div>
+			<div class="fixed-button-body">
+					<form class="col">
+					  <div class="form-row">
+					    <div class="form-group col-md-12">
+					      <label for="inputName4">Nombre Completo*</label>
+					      <input type="text" class="form-control" id="inputName4" >
+					      <label for="inputEmail4">Correo*</label>
+					      <input type="email" class="form-control" id="inputEmail4" >
+					      <label for="inputTelefono">Teléfono*</label>
+					      <input type="text" class="form-control" id="inputTelefono">
+					    </div>
+					    <div class="form-group col-md-12">
+						  <div class="form-row">
+						    <div class="form-group col-md-12">
+						      <label for="inputConsulta">Consulta</label>
+						      <textarea name="consulta" type="text" class="form-control" id="inputConsulta"  style=""></textarea>
+						    </div>
+						  </div>				    
+					    </div>
+					  </div>
+					  <div class="form-row">
+					  	<div class="col-md-12">
+					  		<button type="submit" class="btn">Enviar mensaje</button>
+					  	</div>
+					  </div>
+					</form>	
+			</div>
+		</div>
+		<div class="fixed-button-wrapper mov">
+			<div class="fixed-button-header">
+				<div class="text-container">
+					Contactanos
+				</div>
+			</div>
+		</div>
+	</div>
   </body>
 </html>

@@ -1,5 +1,6 @@
 // require ../../node_modules/jquery/dist/jquery.min.js
 // require popper.js
+// require ../../node_modules/lightgallery/dist/js/lightgallery-all.min.js
 // require bootstrap
 // require swiper
 
@@ -88,6 +89,10 @@ $('.kit-col-container').mouseenter(
 $('.hamburguer').click(function(){
   $('.menu-mov-container').toggleClass('visible');
   $('#hamburguer-icon').toggleClass('open');
+});
+
+$('.fixed-button-header').click(function(){
+  $('.fixed-button-body').toggleClass('open');
 });
 
 //$('.fullvideo-cover').click(function(){
@@ -187,6 +192,15 @@ var swiper = new Swiper('.swiper-container.products-swiper', {
     }
   }
 });
+
+var swiper = new Swiper('.swiper-container.footer-ofertas-swiper', {
+  spaceBetween: 30,
+  hashNavigation: {
+    watchState: true,
+  },
+});
+
+$("#lightgallery").lightGallery(); 
 
 /*
 

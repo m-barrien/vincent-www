@@ -66,6 +66,7 @@ get_header();
 	      	<div class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/1.jpg" >
 		      	<h1 class="shrink-cover">
 		      		¿Quiere ahorrar con energ&iacute;a solar?
+		      		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		      	</h1>
 	      		<div class="hidden-desc">
 		      		<p>Ahorro inmediato sobre su cuenta de luz. Es una inversión para Ud. y su familia. Cuidamos el medio ambiente.</p>
@@ -92,6 +93,7 @@ get_header();
 	      	<div class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/3.jpg">
 		      	<h1 class="shrink-cover">
 		      		¿Quiere aprovechar al máximo su sistema solar?
+		      		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		      	</h1>
 		      	<div class="hidden-desc">
 			      	<p>Ofrecemos kits diseñados a la medida en soluciones fotovoltaicas y soluciones térmicas para su abastecimiento de electricidad y gas.</p>
@@ -162,7 +164,7 @@ get_header();
 
 <!-- Banner a seccion de hogar -->
 <div class="container-fluid">
-	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/3.jpg">
+	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-inicio-1.jpg">
 		<img class="favicon lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/favicon.png">
 		<div class="half-banner-body right">
 			<div class="w-100">
@@ -297,15 +299,15 @@ get_header();
 
 <!-- Banner a calidad productos -->
 <div class="container-fluid">
-	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/equipamiento_inicio.png">
+	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-inicio-2.jpg">
 		<img class="favicon right lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/favicon.png">
 		<div class="half-banner-body">
 			<div class="w-100">
 				<h1>
-					La mejor solución fotovoltaica.
+					La mejor solución para tu necesidad
 				</h1>
 				<p>
-					<strong>Vincent Solar</strong> es sinonimo de calidad en todos los productos que instalamos, trabajando con prestigiosas marcas y equipamiento que hacen posible nuestra <strong>garantía por 5 años</strong> sobre su instalación.
+					<strong>Vincent Solar</strong> es sinónimo de calidad en todos los productos que instalamos, trabajando con prestigiosas marcas y equipamiento que hacen posible nuestra <strong>garantía por 5 años</strong> sobre su instalación.
 				</p>
 				<a class="orange-with-arrow" href="#">Conozca más sobre nuestros equipos </a>
 			</div>
@@ -470,9 +472,17 @@ get_header();
 <!-- SECCION MAPA -->
 <div class="container map-container">
 	<section>
-		<h1 class="section-header">Niveles de radiación en america latina</h1>
+		<h1 class="section-header">Niveles de radiación en el mundo</h1>
 	</section>
 	<section>
+		<div class="col">
+			<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mapa_mundo.jpg">
+		</div>
+	</section>
+	<section class="v-padding-top">
+		<h1 class="section-header">Niveles de radiación en am&eacute;rica latina</h1>
+	</section>
+	<section class="">
 		<div class="image-wrapper">
 			<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mapa_sudamerica.jpg">
 		</div>

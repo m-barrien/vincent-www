@@ -25,8 +25,7 @@
 				<ul>
 					<li>Ahorro inmediato en el gasto de energía.</li>
 					<li>Inversión que dura en el tiempo.</li>
-					<li>Marketing ecológico para su empresa.</li>
-					<li>Cuida el medioambiente.</li>
+					<li>Cuida el medioambiente, Marketing ecológico para su empresa.</li>
 				</ul>
 			</div>
 		</div>
@@ -36,18 +35,18 @@
 
 <!-- Banner a soluciones empresa -->
 <div class="container-fluid">
-	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/equipamiento_inicio.png">
+	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-empresa-2.jpg">
 		<img class="favicon right lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/favicon.png">
 		<div class="half-banner-body">
 			<div class="mov-img">
-				<img class=" img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/equipamiento_inicio.png">
+				<img class=" img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-empresa-2.jpg">
 			</div>
 			<div class="w-100">
 				<h1>
 					La mejor solución para su empresa
 				</h1>
 				<p>
-					Las soluciones solares de la <strong>Vincent Solar</strong> se distinguen por sus componentes del más alto estándar a nivel internacional, instalado y ejecutado para lograr el máximo beneficio con la mejor relación precio-calidad.
+					Las soluciones solares de la <strong>Vincent Solar</strong> se distinguen por sus componentes del más alto estándar a nivel internacional, instalado y ejecutado para lograr el máximo beneficio con la <strong>mejor relación precio-calidad</strong>.
 				</p>
 			</div>
 		</div>
@@ -60,7 +59,7 @@
 	<h1>¿Como funciona el sistema <span class="orange">ON GRID</span> en tu empresa?</h1>
 </div>
 <div class="container-fluid">
-	<section class="full-width-diagram">
+	<section class="full-width-diagram bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/paneles-faded.jpg">
 		<div class="img-wrapper">
 			<img class="img-fluid lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/covers/diagrama_empresas.png">
 		</div>
@@ -69,8 +68,8 @@
 <!-- como funciona ongrid -->
 
 <div class="gallery-container">
-	<div class="w-100">
-		<h1>Galería de proyecto <strong>empresas</strong></h1>
+	<h1>Galería de proyecto <strong>empresas</strong></h1>
+	<div id="lightgallery" class="w-100">
 			<?php
 			$args = array(
 			        'post_type' => 'attachment',
@@ -87,19 +86,135 @@
 				$image = wp_get_attachment_image_src( get_the_ID(), $size="large" ); 
 				$image_thumb = wp_get_attachment_image_src( get_the_ID(), $size="thumbnail" ); 
 					?>
-				<div class="gallery-img-wrapper">
+				<a class="gallery-img-wrapper" href="<?php echo $image[0]; ?>">
+					<img class="d-none lazy" data-src="<?php echo $image_thumb[0]; ?>">
 					<div class="gallery-image bg-lazy" data-src="<?php echo $image_thumb[0]; ?>" hd-src="<?php echo $image[0]; ?>">
 						
 					</div>
 					<p class="gallery-title">
 						<?php the_title(); ?>
 					</p>
-				</div>
+				</a>
 
 				<?php
 			endwhile;				    
 			?>			
 	</div>
+</div>
+
+
+<div class="footer-ofertas-container v-padding">
+	<div class="container">
+		<h1>Nuestros kits en <span class="orange">OFERTA</span></h1>
+	</div>
+	<div class="container">
+		<section>
+			<div class="kit-group-body" >
+				<div class="row">
+					<div class="kit-col-container">
+						<a class="gray-container"  href="#slide1">
+							<img src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-3kw.jpg">
+							<div class="text-body">
+								<div class="little-title">Soluciones Empresa</div>
+								<div class="kw">
+									20kw
+								</div>
+							</div>
+						</a>
+						
+					</div>	
+					<div class="kit-col-container">
+						<a class="gray-container"  href="#slide2">
+							<img src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-3kw.jpg">
+							<div class="text-body">
+								<div class="little-title">Soluciones Empresa</div>
+								<div class="kw">
+									30kw
+								</div>
+							</div>
+						</a>
+						
+					</div>	
+					<div class="kit-col-container">
+						<a class="gray-container"  href="#slide3">
+							<img src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-3kw.jpg">
+							<div class="text-body">
+								<div class="little-title">Soluciones Empresa</div>
+								<div class="kw">
+									50kw
+								</div>
+							</div>
+						</a>
+						
+					</div>	
+					<div class="kit-col-container">
+						<a class="gray-container"  href="#slide4">
+							<img src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-3kw.jpg">
+							<div class="text-body">
+								<div class="little-title">Soluciones Empresa</div>
+								<div class="kw">
+									100kw
+								</div>
+							</div>
+						</a>
+						
+					</div>						    	
+				</div>
+
+			</div>				
+		</section>
+		<section>
+		<div class="swiper-container footer-ofertas-swiper">
+			<div class="swiper-wrapper">
+			  <div class="swiper-slide" data-hash="slide1">
+			  	<div class="descripcion-oferta">
+			  		<h2>20kw</h2>
+			  		<p>Oferta buenisima</p>
+			  		<ul>
+			  			<li>Para consumos desde XXXXXkWh</li>
+			  			<li>Industrias de alimentos</li>
+			  			<li>Cámaras de refrigeración</li>
+			  		</ul>
+			  	</div>
+			  </div>
+			  <div class="swiper-slide" data-hash="slide2">
+			  	<div class="descripcion-oferta">
+			  		<h2>20kw</h2>
+			  		<p>Oferta buenisima</p>
+			  		<ul>
+			  			<li>Para consumos desde XXXXXkWh</li>
+			  			<li>Industrias de alimentos</li>
+			  			<li>Cámaras de refrigeración</li>
+			  		</ul>
+			  	</div>
+			  </div>
+			  <div class="swiper-slide" data-hash="slide3">
+			  	<div class="descripcion-oferta">
+			  		<h2>20kw</h2>
+			  		<p>Oferta buenisima</p>
+			  		<ul>
+			  			<li>Para consumos desde XXXXXkWh</li>
+			  			<li>Industrias de alimentos</li>
+			  			<li>Cámaras de refrigeración</li>
+			  		</ul>
+			  	</div>
+			  </div>
+			  <div class="swiper-slide" data-hash="slide4">
+			  	<div class="descripcion-oferta">
+			  		<h2>20kw</h2>
+			  		<p>Oferta buenisima</p>
+			  		<ul>
+			  			<li>Para consumos desde XXXXXkWh</li>
+			  			<li>Industrias de alimentos</li>
+			  			<li>Cámaras de refrigeración</li>
+			  		</ul>
+			  	</div>
+			  </div>
+			</div>
+		</div>			
+		</section>
+	</div>
+	
 </div>
 
 <?php get_footer(); ?>

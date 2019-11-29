@@ -1,0 +1,90 @@
+.fixed-button-container{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	display:block;
+	pointer-events:none;
+	z-index: $zindex-fixed -2;
+}
+.fixed-button-wrapper{
+	position: relative;
+	z-index: $zindex-fixed - 1;
+	margin-right: 3vw;
+	margin-left: auto;
+	margin-bottom: -1px;
+	margin-top: 1px;
+	pointer-events:none;
+	max-width: 500px;
+	width: 20vw;
+
+
+	overflow: hidden;
+
+	border-style: solid;
+	border-width: 1px;
+	border-color: $orange;
+	-webkit-border-radius: 8px 8px 0 0;
+	-moz-border-radius: 8px 8px 0 0;
+	border-radius: 8px 8px 0 0;
+	-webkit-box-shadow: 1.5px 2.598px 5px 0 $gray-overlay;
+	-moz-box-shadow: 1.5px 2.598px 5px 0 $gray-overlay;
+	box-shadow: 1.5px 2.598px 5px 0 $gray-overlay;
+	
+	display: none;
+	&.mov{
+		@include media-breakpoint-up(sm) {
+			display: none;
+		}
+		@include media-breakpoint-down(sm) {
+			display: block;
+		}
+	}
+	&.desk{
+		@include media-breakpoint-up(sm) {
+			display: block;
+		}
+		@include media-breakpoint-down(sm) {
+			display: none;
+		}
+
+	}
+}
+.fixed-button-header{
+	position: relative;
+	display: block;
+	z-index: $zindex-fixed;
+	width: 100%;
+	pointer-events: all;
+	background-color: $vincent-orange;
+	color: $white;
+	cursor: pointer;
+	.text-container{
+		display: block;
+		padding: 3px;
+		width: 100%;
+		font-size: 2vw;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+	}
+}
+.fixed-button-body{
+	pointer-events: all;
+	overflow: hidden;
+	background-color: $white;
+	color: $text-gray;
+
+	height: 0px;
+	max-height: 85vh;
+
+	transition:height 0.5s; 
+    -webkit-transition:height 0.5s; 
+
+    &.open{
+    	height: 400px;
+    }
+
+    .form-control{
+    	height: auto !important;
+    }
+}
