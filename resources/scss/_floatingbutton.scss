@@ -7,7 +7,6 @@
 	z-index: $zindex-fixed -2;
 }
 .fixed-button-wrapper{
-	position: relative;
 	z-index: $zindex-fixed - 1;
 	margin-right: 3vw;
 	margin-left: auto;
@@ -16,7 +15,6 @@
 	pointer-events:none;
 	max-width: 500px;
 	width: 20vw;
-
 
 	overflow: hidden;
 
@@ -67,6 +65,20 @@
 		text-transform: uppercase;
 		text-align: center;
 	}
+	.cross{
+		display: none;
+		position:absolute;
+		right: 0;
+		top: 0;
+		width: 1.5vw ;
+		height: 1.5vw ;
+		color: $text-gray;
+	}
+	&.open {
+		.cross{
+			display: block !important;
+		}
+	}
 }
 .fixed-button-body{
 	pointer-events: all;
@@ -86,5 +98,17 @@
 
     .form-control{
     	height: auto !important;
+    }
+    form{
+    	@extend .py-1;
+    }
+    label{
+    	font-weight: 500;
+    }
+    button{
+    	background-color: $vincent-orange;
+    	display: block;
+    	margin: 0 auto;
+    	font-weight: 600;
     }
 }

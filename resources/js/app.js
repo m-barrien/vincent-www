@@ -93,6 +93,7 @@ $('.hamburguer').click(function(){
 
 $('.fixed-button-header').click(function(){
   $('.fixed-button-body').toggleClass('open');
+  $( this ).toggleClass('open');
 });
 
 //$('.fullvideo-cover').click(function(){
