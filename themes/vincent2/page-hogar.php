@@ -32,7 +32,7 @@
 
 <!-- Banner a soluciones hogar -->
 <div class="container-fluid">
-	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-hogar-2.jpg">
+	<section class="half-banner tall bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-hogar-2.jpg">
 		<img class="favicon right lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/favicon.png">
 		<div class="half-banner-body">
 			<div class="mov-img">
@@ -45,6 +45,9 @@
 				<p>
 					Las soluciones solares de la <strong>Vincent Solar</strong> se distinguen por sus componentes del más alto estándar a nivel internacional, instalado y ejecutado para lograr el máximo beneficio con la mejor relación precio-calidad.
 				</p>
+				<div class="img-wrapper">
+					<img class="kit-img lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/equipamiento_hogar.png">
+				</div>
 			</div>
 		</div>
 	</section>

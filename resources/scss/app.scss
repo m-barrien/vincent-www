@@ -924,8 +924,17 @@ footer{
 .half-banner{
 	margin-top: $section-padding-top;
 	margin-bottom: $section-padding-bottom;
-	min-height: 400px;
-	height: 35vw;
+	@include media-breakpoint-up(sm) {
+		min-height: 400px;
+		height: 35vw;
+		&.tall{
+			height: 38vw;
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		min-height: none;
+		height: auto;
+	}	
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1000,6 +1009,24 @@ footer{
 			content: "\2b24";
 			position: absolute;
 			left: 0;
+		}
+	}
+	.img-wrapper{
+		margin-top: -6vw;
+	}
+	img.kit-img{
+		@include media-breakpoint-up(md) {
+			width: 21vw;
+			display: block;
+			margin-right: 0;
+			margin-left: auto;
+
+		}
+		@include media-breakpoint-down(md) {
+			width: 100%;
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
 		}
 	}
 
