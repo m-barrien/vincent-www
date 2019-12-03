@@ -41,6 +41,7 @@
             theme_location' => 'header-menu',          
             'container'      => '',
             'menu_id'      => '',
+            'menu'      => 'menu-top',
             'reverse'      => FALSE,
             'menu_class'     => 'menu d-none d-xs-none d-sm-none d-md-block' ) ); 
             ?>

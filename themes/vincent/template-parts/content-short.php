@@ -1,7 +1,7 @@
 <a class="blog-single-resumido" href="<?php the_permalink(); ?>">
 	<?php if ( has_post_thumbnail() ) : ?>
 		<div class="">
-			<img class="img-fluid" src="<?php the_post_thumbnail_url('medium'); ?>"/>
+			<img class="img-fluid lazy" data-src="<?php the_post_thumbnail_url('medium'); ?>"/>
 		</div>
 	<?php endif; ?>
 	<div class="">

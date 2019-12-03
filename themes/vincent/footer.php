@@ -10,8 +10,8 @@
 	        </button>
     	</div>
 		<div class="modal-contacto-body">
-			<img class="d-block img-fluid w-100"
-				 src="<?php echo get_template_directory_uri() ?>/image/snippets/solar-pact.png"
+			<img class="d-block img-fluid w-100 lazy"
+				 data-src="<?php echo get_template_directory_uri() ?>/image/snippets/solar-pact.png"
 				 alt="Venta de paneles solares kit placas solares kit"
         	>
         	<div class="button-container">
@@ -42,8 +42,8 @@
 	        	<span aria-hidden="true">&times;</span>
 	        </button>
 			<a class="d-block w-100" href="/ofertas">
-			        <img class="d-block img-fluid w-100"
-			        	 src="<?php echo get_template_directory_uri() ?>/image/banners/wide_general.jpg"
+			        <img class="d-block img-fluid w-100 lazy"
+			        	 data-src="<?php echo get_template_directory_uri() ?>/image/banners/wide_general.jpg"
 			        	 alt="Venta de paneles solares kit placas solares kit"
 			        	 >    
 			</a>
@@ -58,7 +58,7 @@
 		</div>
 		<section><!-- flags -->
 			<div class="proud-to-be">
-				<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/proud-to-be.png">
+				<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/proud-to-be.png">
 				
 			</div>
 		</section><!-- flags -->
@@ -67,7 +67,7 @@
 			  <?php
 	          $custom_logo_id = get_theme_mod( 'custom_logo' );
 	          $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
-	          echo '<img class="img-fluid footer-logo" src="' . esc_url( $custom_logo_url ) . '" alt="" href="/">';
+	          echo '<img class="img-fluid footer-logo lazy" data-src="' . esc_url( $custom_logo_url ) . '" alt="" href="/">';
 	          ?>
 			</div>
 			<div class="col-md-4 footer-center">
@@ -131,7 +131,7 @@
 					while ( $loop->have_posts() ) : $loop->the_post();
 						$image = wp_get_attachment_image_src( get_the_ID(), $size="full" ); 
 							?>
-							<div class="icon" style="background-image:url(<?php echo $image[0]; ?>)">
+							<div class="icon bg-lazy" data-src="<?php echo $image[0]; ?>">
 							</div>						
 							<?php
 
@@ -142,7 +142,7 @@
 
 		<div class="row">
 			<div class="w-100">
-				<img class="cert-img" src="<?php echo get_template_directory_uri() ?>/image/snippets/cert.png">
+				<img class="cert-img lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/cert.png">
 			</div>
 		</div>
 		<div class="row">
@@ -180,7 +180,7 @@
 					<div class="col-md-12 offset-lg-2 col-lg-8">
 						<div class="row">
 							<div class="col-sm-2">
-								<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/water-logo-sm.png">
+								<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/water-logo-sm.png">
 							</div>
 							<div class="col-sm-6">
 								<p><strong>Conozca sobre todas nuestras soluciones solares.</strong></p>								

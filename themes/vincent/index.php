@@ -26,6 +26,7 @@ get_header();
                         );
 
                $loop = new WP_Query( $args );
+               $i=0;
                ?>              
                <div class="swiper-container desk-swiper d-none d-xs-none d-sm-none d-md-block">
                    <div class="swiper-wrapper">
@@ -37,10 +38,16 @@ get_header();
 
                                              <div class="swiper-slide">
                                                <a href="<?php echo wp_get_attachment_caption(get_the_ID()); ?>">
+                                               		<?php if ($i == 0): ?>
                                                        <img class="img-fluid" src="<?php echo $image[0]; ?>">
+                                               		<?php else: ?>
+                                                       <img class="img-fluid swiper-lazy" data-src="<?php echo $image[0]; ?>">
+                                               			
+                                               		<?php endif ?>
                                                </a>
                                              </div>
                                                        <?php
+                                            $i = $i +1;
 
                                        endwhile;                                   
                                ?>                    
@@ -63,16 +70,22 @@ get_header();
 		);
 
 		$loop = new WP_Query( $args );
+		$i=0;
 		?>	
 	    <?php
 			while ( $loop->have_posts() ) : $loop->the_post();
 				$image = null;
 					?>
 		      		<a class=" d-block d-md-none w-100" href="<?php echo get_post_permalink(); ?>">
-		      		<img style="max-width: none" class="img-fluid w-100" alt="kit solar chile paneles solares para casas" src="<?php echo the_post_thumbnail_url(); ?>">
+		      			<?php if ($i == 0 ): ?>
+		      				<img style="max-width: none" class="img-fluid w-100" alt="kit solar chile paneles solares para casas" src="<?php echo the_post_thumbnail_url(); ?>">
+		      			<?php else: ?>
+		      				<img style="max-width: none" class="img-fluid w-100 lazy" alt="kit solar chile paneles solares para casas" data-src="<?php echo the_post_thumbnail_url(); ?>">
+		      				
+		      			<?php endif ?>
 		      		</a>
 					<?php
-
+					$i = $i+1;
 			endwhile;
 			wp_reset_postdata();
 	        wp_reset_query();
@@ -81,15 +94,40 @@ get_header();
 	</div> <!-- cover -->
 </div>
 
-<div class="container-fluid d-none d-xs-none d-sm-none d-md-block">
-	<section><!-- cover a ofertas -->
-		<a class="d-block w-100" href="/ofertas">
-		        <img class="d-block img-fluid w-100"
-		        	 src="<?php echo get_template_directory_uri() ?>/image/banners/wide_general.jpg"
-		        	 alt="Venta de paneles solares kit placas solares kit"
-		        	 >    
-		</a>
-	</section><!-- cover a ofertas -->
+<div class="container-fluid">
+	<section class="cover-swiper"><!-- ofertas -->
+		
+		<div class="swiper-container oferta-swiper d-none d-xs-none d-sm-none d-md-block">
+		    <div class="swiper-wrapper">
+		      <div class="swiper-slide">
+		      	<a href="/ofertas#15kw">
+		      		<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-1.jpg">
+		      	</a>
+		      </div>
+		      <div class="swiper-slide">
+		      	<a href="/ofertas#2kw160l">
+		      		<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-2.jpg">
+		      	</a>
+		      </div>
+		      <div class="swiper-slide">
+		      	<a href="/ofertas#3kw">
+		      		<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-3.jpg">
+		      	</a>
+		      </div>
+		      <div class="swiper-slide" id="soluciones">
+		      	<a href="/ofertas#3kw160l">
+		      		<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-4.jpg">
+		      	</a>
+		      </div>
+		      <div class="swiper-slide" id="soluciones">
+		      	<a href="/ofertas#3kwoff">
+		      		<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-5.jpg">
+		      	</a>
+		      </div>
+		    </div>
+		</div>
+
+	</section> <!-- ofertas -->
 </div>
 
 <div class="container">
@@ -121,7 +159,7 @@ get_header();
 				<h2 class="dowrap">Energía solar <br> Hogar</h2>
 				<div class="">
 					<div class="w-100">
-						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/botonhogar.jpg">
+						<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonhogar.jpg">
 					</div>
 				</div>
 			</a>
@@ -131,7 +169,7 @@ get_header();
 				<h2 class="dowrap">Energía solar <br> Empresas</h2>
 				<div class="">
 					<div class="w-100">
-						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/botonempresa.jpg">
+						<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonempresa.jpg">
 					</div>
 				</div>			
 			</a>
@@ -141,7 +179,7 @@ get_header();
 				<h2>Productos</h2>
 				<div class="">
 					<div class="w-100">
-						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/botonproductos.jpg">
+						<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonproductos.jpg">
 					</div>
 				</div>				
 			</a>
@@ -151,7 +189,7 @@ get_header();
 				<h2>Servicio Técnico</h2>
 				<div class="">
 					<div class="w-100">
-						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/botonserviciotec.jpg">
+						<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonserviciotec.jpg">
 					</div>
 				</div>				
 			</a>
@@ -162,10 +200,10 @@ get_header();
 					<h2>Proyectos</h2>
 					<div class="">
 						<a class="d-block w-100" href="/soluciones-hogar#gallery-head">
-							<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/botonproyectos-hogar.jpg">
+							<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonproyectos-hogar.jpg">
 						</a>
 						<a class="d-block w-100" href="/soluciones-empresa#gallery-head">
-							<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/botonproyectos-empresas.jpg">
+							<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonproyectos-empresas.jpg">
 						</a>
 					</div>
 				</div>
@@ -177,7 +215,7 @@ get_header();
 				<h2>Noticias</h2>
 				<div class="">
 					<div class="w-100">
-						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/botonmanutencion.jpg">
+						<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonmanutencion.jpg">
 					</div>
 				</div>				
 			</a>
@@ -203,7 +241,7 @@ get_header();
 		                $wc_query->the_post(); ?>
 				<div class="swiper-slide">
 		        	<a class="product-slide" href="<?php the_permalink(); ?>">
-			        	<?php the_post_thumbnail(); ?>
+			        	<?php the_post_thumbnail('thumbnail'); ?>
 			            <h4>
 			               <?php the_title(); ?>
 			               
@@ -250,7 +288,7 @@ get_header();
 		<a class="d-block w-100" href="/soluciones-hogar#gallery-head">
 			<h1>Soluciones Con Sello</h1>			
 			<div class="w-100">
-			        <img class="d-block img-fluid w-100" src="<?php echo get_template_directory_uri() ?>/image/banners/consello.jpg">    
+			        <img class="d-block img-fluid w-100 lazy" data-src="<?php echo get_template_directory_uri() ?>/image/banners/consello.jpg">    
 			</div>
 		</a>
 	</section><!-- productos con sello -->
