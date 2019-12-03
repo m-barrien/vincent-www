@@ -6,51 +6,10 @@
 var photo_arr = [];
 
 
-$(document).ready(function () {
+//$(document).ready(function () {
 //initialize swiper when document ready
 
-
-var galleryThumbs = new Swiper('#woocommerce .gallery-thumbs', {
-  spaceBetween: 10,
-  slidesPerView: 4,
-  loop: true,
-  freeMode: true,
-  loopedSlides: 5, //looped slides should be the same
-  watchSlidesVisibility: true,
-  watchSlidesProgress: true,
-});
-var galleryTop = new Swiper('#woocommerce .gallery-top', {
-  autoplay: {
-    delay: 4000,
-  },
-  spaceBetween: 10,
-  loop:true,
-  loopedSlides: 5, //looped slides should be the same
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  thumbs: {
-    swiper: galleryThumbs,
-  },
-});
-
-
-
-
-//DOC READY
-//show_popup();
-/*
-$("#contactoExpander").click(function () {
-  if($(this).attr("aria-expanded") =="true"){
-    $(this).html('<i class="fas fa-hand-pointer"></i>&nbsp; Contactenos')
-  }
-  else{
-    $(this).html('<i class="fas  fa-window-close"></i>&nbsp; Cerrar')
-  }
-});
-*/
-});
+//});
 
 /**
  * Returns an array with arrays of the given size.

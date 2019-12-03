@@ -120,4 +120,39 @@ defined( 'ABSPATH' ) || exit;
 	</div>
 </section>
 
+
+<script type="text/javascript">
+$(document).ready(function () {
+//initialize swiper when document ready
+
+
+var galleryThumbs = new Swiper('#woocommerce .gallery-thumbs', {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  loop: true,
+  freeMode: true,
+  loopedSlides: 5, //looped slides should be the same
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+});
+var galleryTop = new Swiper('#woocommerce .gallery-top', {
+  autoplay: {
+    delay: 4000,
+  },
+  spaceBetween: 10,
+  loop:true,
+  loopedSlides: 5, //looped slides should be the same
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  thumbs: {
+    swiper: galleryThumbs,
+  },
+});
+
+});
+
+</script>
+
 <?php do_action( 'woocommerce_after_single_product' ); ?>

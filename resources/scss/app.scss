@@ -1264,6 +1264,12 @@ a.product-slide{
 		color: $gray-800;
 	}
 }
+.product-slide{
+	img{
+		display: block;
+		margin: 0 auto;
+	}
+}
 
 .swiper-pagination-bullet-active{
 	background: $vincent-blue;
