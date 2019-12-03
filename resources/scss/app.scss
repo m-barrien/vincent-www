@@ -1,6 +1,4 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
-@import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Expanded');
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 
@@ -14,7 +12,6 @@
 
 @import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
 @import '../../node_modules/@fortawesome/fontawesome-free/scss/solid';
-@import '../../node_modules/@fortawesome/fontawesome-free/scss/regular';
 
 //swiper
 @import "../../node_modules/swiper/dist/css/swiper"; 
@@ -842,7 +839,7 @@ article{
 		}
 	}
 	a,h2{
-		font-family: 'Roboto', sans-serif;
+		font-family: inherit;
 		text-decoration: none;
 		color: $gray-800;
 		&:hover{
