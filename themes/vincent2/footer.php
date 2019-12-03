@@ -184,7 +184,7 @@
 		<div class="fixed-button-wrapper mov">
 			<div class="fixed-button-header">
 				<div class="text-container">
-					Contactanos
+					<a href="mailto:info@vincentsolar.com">Contactanos</a>
 				</div>
 			</div>
 		</div>
