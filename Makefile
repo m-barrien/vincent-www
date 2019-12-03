@@ -10,8 +10,8 @@ sass:
 	make copy
 js:
 	npm run bundle-js
-	npm run minify
 	make copy
+	npm run minify
 perm:
 	sudo docker-compose exec mysql chown -R mysql:mysql /var/lib/mysql
 	sudo chown -R vincent:vincent ./public_html
