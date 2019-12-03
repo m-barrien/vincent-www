@@ -15,7 +15,7 @@ js:
 	make copy
 perm:
 	sudo docker-compose exec mysql chown -R mysql:mysql /var/lib/mysql
-	sudo chown -R vincent:vincent ./public_html
+	sudo chown -R $USER:$USER ./public_html
 	sudo chmod 755 ./public_html
 package:
 	cd public_html/ && \
