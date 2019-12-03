@@ -8,49 +8,7 @@ var photo_arr = [];
 
 $(document).ready(function () {
 //initialize swiper when document ready
-var mySwiper = new Swiper ('.cover-swiper .swiper-container.desk-swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  autoplay: {
-    delay: 5000,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  lazy: true,
-  loop: true
-});
 
-var mySwiper = new Swiper ('.cover-swiper .swiper-container.movil-swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  autoplay: {
-    delay: 10000,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  // Disable preloading of all images
-  preloadImages: false,
-  // Enable lazy loading
-  lazy: true,
-  loop: true
-});
-var mySwiper = new Swiper ('.cover-swiper .swiper-container.oferta-swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  autoplay: {
-    delay: 8000,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  loop: true,
-  lazy: true,
-});
 
 var galleryThumbs = new Swiper('#woocommerce .gallery-thumbs', {
   spaceBetween: 10,
@@ -77,59 +35,8 @@ var galleryTop = new Swiper('#woocommerce .gallery-top', {
   },
 });
 
-//icon containers logos etc
-var swiper = new Swiper('.swiper-container.icon-container', {
-  slidesPerView: 5,
-  spaceBetween: 10,
-  autoplay: {
-    delay: 1000,
-  },
-});
 
-var swiper = new Swiper('.swiper-container.products-swiper', {
-  slidesPerView: 5,
-  spaceBetween: 50,
-  autoplay: {
-    delay: 5000,
-  },
-  loop: true,
-  // init: false,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  breakpoints: {
-    1024: {
-      slidesPerView: 5,
-      spaceBetween: 40,
-    },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-    640: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 10,
-    }
-  }
-});
 
-if(photo_arr.length >0 ){
-  var chunk = Math.floor( photo_arr.length / 4 );
-  var bundles = chunkArray(photo_arr,chunk);
-  for (var i = bundles.length - 1; i >= 0; i--) {
-    for (var j = bundles[i].length - 1; j >= 0; j--) {
-      var size=Math.floor(Math.random() * 3) + 1;  
-      $("#collage-gallery #gallery-col-"+(i+1)).append(
-        "<div class=\"gallery-grid-img s"+size+"\"  data-title=\"" +bundles[i][j]["title"]+ "\" data-link=\"" +bundles[i][j]["full"]+ "\" style=\"background-image:url("+ bundles[i][j]["thumb"] +")\" > </div>"
-        );
-    }
-  }
-}
 
 //DOC READY
 //show_popup();

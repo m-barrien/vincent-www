@@ -294,4 +294,73 @@ get_header();
 	</section><!-- productos con sello -->
 </div>
 
+
+
+<script type="text/javascript">	
+if (window.matchMedia("(min-width: 900px)").matches) {
+	var mySwiper = new Swiper ('.cover-swiper .swiper-container.desk-swiper', {
+	    // Optional parameters
+	    direction: 'horizontal',
+	    autoplay: {
+	      delay: 5000,
+	    },
+	    navigation: {
+	      nextEl: '.swiper-button-next',
+	      prevEl: '.swiper-button-prev',
+	    },
+	    lazy: true,
+	    loop: true
+	  });
+
+
+	var mySwiper = new Swiper ('.cover-swiper .swiper-container.oferta-swiper', {
+	  // Optional parameters
+	  direction: 'horizontal',
+	  autoplay: {
+	    delay: 8000,
+	  },
+	  navigation: {
+	    nextEl: '.swiper-button-next',
+	    prevEl: '.swiper-button-prev',
+	  },
+	  loop: true,
+	  lazy: true,
+	});
+}
+
+var swiper = new Swiper('.swiper-container.products-swiper', {
+  slidesPerView: 5,
+  spaceBetween: 50,
+  autoplay: {
+    delay: 5000,
+  },
+  loop: true,
+  // init: false,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 40,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    }
+  }
+});
+
+</script>	
+
+
 <?php get_footer(); ?>

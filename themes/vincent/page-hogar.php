@@ -114,4 +114,19 @@
 	</section>
 
 </div>
+
+<script type="text/javascript">
+if(photo_arr.length >0 ){
+  var chunk = Math.floor( photo_arr.length / 4 );
+  var bundles = chunkArray(photo_arr,chunk);
+  for (var i = bundles.length - 1; i >= 0; i--) {
+    for (var j = bundles[i].length - 1; j >= 0; j--) {
+      var size=Math.floor(Math.random() * 3) + 1;  
+      $("#collage-gallery #gallery-col-"+(i+1)).append(
+        "<a class=\"bg-lazy gallery-grid-img s"+size+"\" href=\"" +bundles[i][j]["full"]+ "\" data-src=\""+ bundles[i][j]["thumb"] +"\" > </a>"
+        );
+    }
+  }
+}
+</script>
 <?php get_footer(); ?>

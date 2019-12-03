@@ -1,5 +1,4 @@
 all:sass js
-	notify-send "Ready"
 copy:
 	cp -rf ./themes/vincent ./public_html/wp-content/themes
 	cp -rf ./themes/vincent/css ./public_html/
@@ -15,7 +14,7 @@ js:
 	make copy
 perm:
 	sudo docker-compose exec mysql chown -R mysql:mysql /var/lib/mysql
-	sudo chown -R $USER:$USER ./public_html
+	sudo chown -R vincent:vincent ./public_html
 	sudo chmod 755 ./public_html
 package:
 	cd public_html/ && \
