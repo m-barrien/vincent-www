@@ -173,35 +173,8 @@ grecaptcha.ready(function () {
 		</div>
 </footer>
 <div class="bottom-dock">
-	<div class="dock-button desk">
+	<div class="dock-button">
 		<a href="mailto:info@vincentsolar.com">
-			<i class="fas fa-hand-pointer"></i>
-			Cont&aacute;ctenos
-		</a>
-		<img src="<?php echo get_template_directory_uri() ?>/image/snippets/it_line.png">
-	</div>
-	<div class="dock-button mov">
-		<div id="collapseContacto" class="collapse">
-			<a href="mailto:info@vincentsolar.com" class="inside-a">
-				<i class="fas fa-envelope"></i>
-				<span class="mov-only">Contacto</span>
-				<span class="desk-only">info@vincentsolar.com</span>
-				
-			</a>
-			<a href="tel:322948569" style="pointer-events: none;" class="inside-a">
-				<i class="fas fa-phone"></i>
-				<span class="mov-only">Llamar</span>
-				<span class="desk-only">(32) 294 8569</span>
-				
-			</a>
-		</div>
-		<!-- 
-		<a id="contactoExpander" data-toggle="collapse" href="#collapseContacto" role="button" aria-expanded="false" aria-controls="collapseContacto">
-			<i class="fas fa-hand-pointer"></i>
-			Cont&aacute;ctenos
-		</a>
-	-->	
-		<a href="mailto:info@vincentsolar.com" class="inside-a">
 			<i class="fas fa-hand-pointer"></i>
 			Cont&aacute;ctenos
 		</a>
