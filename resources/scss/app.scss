@@ -312,15 +312,14 @@ footer{
 	.bottom-text{
 		color: $gray-500;
 		width: 100%;
-		@include media-breakpoint-up(md) {
-			font-size: $font-size-base * 1.3;
-		}
+		font-size: $font-size-base * 1.25;
 	}
 	.footer-company-about{
 		@extend .p-2;
 		@extend .text-center;
 		max-width: 400px;
 		color: $gray-600;
+		font-size: $font-size-base * 1.25;
 	}
 	.footer-center{
 		.footer-contact-pill{
