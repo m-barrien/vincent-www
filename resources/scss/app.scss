@@ -155,7 +155,6 @@ header{
 
 	.menu {
 		@extend .p-4;
-		background-color: $body-bg;
 		margin-right:auto;
 		margin-top: auto;
 
@@ -171,6 +170,7 @@ header{
 			margin-bottom: 0px;
 			padding-top: 1rem;
 			padding-bottom: 1rem;
+			background-color: $body-bg;
 		}
 
 		li{
