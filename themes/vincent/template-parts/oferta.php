@@ -5,7 +5,7 @@
 				<div class="col-sm-12 col-md-6 col-lg-5">
 					<?php if ( has_post_thumbnail() ) : ?>
 						<div class="py-2">
-							<img class="img-fluid" src="<?php the_post_thumbnail_url(); ?>"/>
+							<img class="img-fluid" alt="kit solar <?php the_title() ;?>" src="<?php the_post_thumbnail_url(); ?>"/>
 						</div>
 					<?php endif; ?>
 				</div>
