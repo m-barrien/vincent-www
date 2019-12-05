@@ -41,7 +41,10 @@ function sdt_remove_ver_css_js( $src ) {
   return $src;
 }
 
-
+function wpassist_remove_block_library_css(){
+    wp_dequeue_style( 'wp-block-library' );
+} 
+add_action( 'wp_enqueue_scripts', 'wpassist_remove_block_library_css' );
 
 
 function register_my_menus() {
