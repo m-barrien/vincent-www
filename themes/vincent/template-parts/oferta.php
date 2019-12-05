@@ -12,9 +12,12 @@
 				<div class="col-sm-12 col-md-6 col-lg-7 oferta-body">
 					<h2 class=""><?php the_title() ;?> <small>Instalación incluida</small></h2>
 					<?php the_content() ;?>
-					<a class="boton-cotizar" href="mailto:info@vincentsolar.com?subject=Intersado en <?php the_title() ;?>&body=Nombre:%0D%0ACiudad:%0D%0ATelefono:%0D%0AComentario:">
-						Contáctenos <br> <i class="fas fa-hand-pointer"></i>
-					</a>
+					<div class="w-100 d-block">
+						<a class="boton-cotizar" href="mailto:info@vincentsolar.com?subject=Intersado en <?php the_title() ;?>&body=Nombre:%0D%0ACiudad:%0D%0ATelefono:%0D%0AComentario:">
+							Contáctenos <br> <i class="fas fa-hand-pointer"></i>
+						</a>
+						
+					</div>
 				</div>
 					
 		</div>
