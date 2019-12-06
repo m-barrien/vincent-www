@@ -1,4 +1,5 @@
 <!-- Modal contacto -->
+<!--
 <script src="https://www.google.com/recaptcha/api.js?render=6LecWrQUAAAAAE83dQ6F_0YUAhDb-LpgPijunvQL"></script>
 <script>
 grecaptcha.ready(function () {
@@ -8,12 +9,13 @@ grecaptcha.ready(function () {
     });
 });
 </script>
+-->
 <?php if(isset($_GET['status'])) : ?>
 <div class="modal fade" id="modalGracias" tabindex="-1" role="dialog" aria-labelledby="modalGraciasLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
     	<div class="modal-header">
-			<img class="" style="width: 10%; height:auto;" src="<?php site_icon_url(); ?>" alt="Vincent Solar">
+			<img class="lazy" style="width: 10%; height:auto;" data-src="<?php site_icon_url(); ?>" alt="Vincent Solar">
     		
 	    	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 	        	<span aria-hidden="true">&times;</span>
@@ -45,7 +47,7 @@ grecaptcha.ready(function () {
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
     	<div class="modal-header">
-			<img class="" style="width: 10%; height:auto;" src="<?php site_icon_url(); ?>" alt="Vincent Solar">
+			<img class="lazy" style="width: 10%; height:auto;" data-src="<?php site_icon_url(); ?>" alt="Vincent Solar">
     		
 	    	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 	        	<span aria-hidden="true">&times;</span>
@@ -81,7 +83,7 @@ grecaptcha.ready(function () {
 		</div>
 		<section><!-- flags -->
 			<div class="proud-to-be">
-				<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/proud-to-be.png">
+				<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/proud-to-be.png">
 				
 			</div>
 		</section><!-- flags -->
@@ -90,7 +92,7 @@ grecaptcha.ready(function () {
 			  <?php
 	          $custom_logo_id = get_theme_mod( 'custom_logo' );
 	          $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
-	          echo '<img class="img-fluid footer-logo" src="' . esc_url( $custom_logo_url ) . '" alt="" href="/">';
+	          echo '<img class="img-fluid footer-logo lazy" data-src="' . esc_url( $custom_logo_url ) . '" alt="" href="/">';
 	          ?>
 			</div>
 			<div class="col-md-4 footer-center">
@@ -165,7 +167,7 @@ grecaptcha.ready(function () {
 
 		<div class="row">
 			<div class="w-100">
-				<img class="cert-img" src="<?php echo get_template_directory_uri() ?>/image/snippets/cert.png">
+				<img class="cert-img lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/cert.png">
 			</div>
 		</div>
 		<div class="row">
