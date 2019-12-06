@@ -5,6 +5,11 @@
 // Variables
 @import 'variables';
 
+@font-face {
+    font-family: 'Azo Sans';
+    src: url($fa-font-path+'/AzoSans-Bold.ttf') format('truetype');
+}
+
 // Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap"; 
 //@import "../../plugins/woocommerce/assets/css/woocommerce.scss"; 
@@ -1360,6 +1365,88 @@ a.product-slide{
 				right: 4px;
 				top: 4px;
 			}
+		}
+	}
+}
+
+.oferta-wide-container{
+
+	display: block;
+	position:relative;
+	width: 100%;
+	padding: 30px 0;
+	height: 30vw;
+	
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
+
+
+	.text-container{
+		display: block;
+		margin-left: 27vw;
+		width: auto;
+		color: $vincent-blue;
+	}
+	.arrow{
+		display: inline-block;
+
+		background-image: url("data:image/svg+xml,%3Csvg id='Capa_1' data-name='Capa 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 321.01 411.3'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23399100;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Earrow2%3C/title%3E%3Cpolygon class='cls-1' points='321.01 90.28 321.01 0 160.5 154.24 0 0 0 90.28 160.5 244.52 321.01 90.28'/%3E%3Cpolygon class='cls-1' points='321.01 257.06 321.01 166.78 160.5 321.01 0 166.78 0 257.06 160.5 411.3 321.01 257.06'/%3E%3C/svg%3E");
+
+		width: 2vw;
+		height: 2vw;
+		position: relative;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+	.short-title{
+		font-weight: 600;
+		text-transform: uppercase;
+		font-size:3vw;
+		font-family: 'Azo Sans'
+
+	}
+	.long-title{
+		text-transform: uppercase;
+		font-size: 2.3vw;
+		line-height: 2.2vw;
+
+	}
+	.price{
+		text-transform: uppercase;
+		color: $red;
+		font-weight: 600;
+		line-height: 3.8vw;
+		font-size: 1.8vw;
+		span.big{
+			font-weight: 900;
+			font-size: 4vw;
+			font-family: 'Azo Sans';
+			letter-spacing: 0.4vw;
+		}
+
+	}
+	ul li{
+		text-transform: uppercase;
+		font-weight: 500;
+		padding-left: 0 !important;
+		font-size: 1.2vw;
+		line-height: 1.8vw;
+		font-weight: 600;
+		list-style-type:none;
+		margin-left: 3vw;
+		&:before {
+			color: $green ;
+			content: "\2714";
+			display: inline-block;
+			left: 0;
+			font-size: 2vw;
 		}
 	}
 }
