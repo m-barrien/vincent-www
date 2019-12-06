@@ -111,15 +111,15 @@ grecaptcha.ready(function () {
 	            </div>
 
 	            <div class="footer-contact-pill">
-	                <a href="tel:322948569" style="pointer-events: none;" rel="nofollow"> 					
+	                <a href="tel:+56322948569" style="pointer-events: none;" rel="nofollow"> 					
 		                <i class="fas fa-phone"></i>
-		                <p>322 948569</p>
+		                <p>+56 322 948569</p>
 	            	</a>
 	            </div>
 
 	            <div class="footer-contact-pill">
 	                <i class="fas fa-envelope"></i>
-	                <p><a href="mailto:info@vincentsolar.com">info@vincentsolar.com</a></p>
+	                <p><a href="mailto:info@vincentsolar.com?subject=Consulta&body=Nombre:%0D%0ACiudad:%0D%0ATelefono:%0D%0AComentario:">info@vincentsolar.com</a></p>
 	            </div>
 
 	        
@@ -175,13 +175,42 @@ grecaptcha.ready(function () {
 		</div>
 </footer>
 <div class="bottom-dock">
-	<div class="dock-button">
-		<a href="mailto:info@vincentsolar.com">
+	<div class="dock-button desk">
+		<div id="collapseContacto" class="collapse">
+			<a href="tel:+56322948569">
+				<i class="fas fa-phone"></i>
+				(32) 294 8569
+			</a>
+			<a href="mailto:info@vincentsolar.com?subject=Consulta&body=Nombre:%0D%0ACiudad:%0D%0ATelefono:%0D%0AComentario:">
+				<i class="fas fa-envelope"></i>
+				info@vincentsolar.com
+			</a>
+		</div>
+		<a id="contactoExpander" data-toggle="collapse" href="#collapseContacto" role="button" aria-expanded="false" aria-controls="collapseContacto">
 			<i class="fas fa-hand-pointer"></i>
-			Cont&aacute;ctenos
+			Contactenos
 		</a>
 		<img src="<?php echo get_template_directory_uri() ?>/image/snippets/it_line.png">
 	</div>
+	<div class="dock-button mov">
+		<div id="collapseContacto" class="collapse">
+			<a href="tel:+56322948569">
+				<i class="fas fa-phone"></i>
+				Llamar
+			</a>
+			<a href="mailto:info@vincentsolar.com?subject=Consulta&body=Nombre:%0D%0ACiudad:%0D%0ATelefono:%0D%0AComentario:">
+				<i class="fas fa-envelope"></i>
+				Correo
+			</a>
+		</div>
+		<a id="contactoExpander" data-toggle="collapse" href="#collapseContacto" role="button" aria-expanded="false" aria-controls="collapseContacto">
+			<i class="fas fa-hand-pointer"></i>
+			Contactenos
+		</a>
+		<img src="<?php echo get_template_directory_uri() ?>/image/snippets/it_line.png">
+	</div>
+
 </div>
+
   </body>
 </html>
