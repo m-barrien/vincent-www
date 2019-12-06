@@ -156,7 +156,7 @@ grecaptcha.ready(function () {
 					while ( $loop->have_posts() ) : $loop->the_post();
 						$image = wp_get_attachment_image_src( get_the_ID(), $size="full" ); 
 							?>
-							<div class="icon" style="background-image:url(<?php echo $image[0]; ?>)">
+							<div class="icon bg-lazy" data-src="<?php echo $image[0]; ?>">
 							</div>						
 							<?php
 
