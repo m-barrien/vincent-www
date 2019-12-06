@@ -20,7 +20,7 @@ get_header();
                        'post_mime_type' => 'image',
                        'orderby' => 'post_date',
                        'order' => 'asc',
-                       'posts_per_page' => '3000',
+                       'posts_per_page' => '10',
                        'post_status'    => 'inherit',
                        'category_name'=>'cover-grande',
                         );
@@ -37,14 +37,30 @@ get_header();
                                                        ?>
 
                                              <div class="swiper-slide">
-                                               <a href="<?php echo wp_get_attachment_caption(get_the_ID()); ?>">
                                                		<?php if ($i == 0): ?>
-                                                       <img class="img-fluid" alt="kit solar paneles solares" src="<?php echo $image[0]; ?>">
+                                               		<a href="<?php echo wp_get_attachment_caption(get_the_ID()); ?>"
+                                               			style="background-image: url('<?php echo $image[0]; ?>');"
+                                               			>
+                                                       <div class="bg-gray" alt="kit solar paneles solares" 
+                                                       
+                                                       >
+                                                       	<h3> "Where sun is!"<sup>&nbsp;&trade;</sup></h3>
+                                                       	<h1><?php the_title(); ?></h1>
+                                                       </div>
+                                               		</a>
                                                		<?php else: ?>
-                                                       <img alt="kit solar paneles solares" class="img-fluid swiper-lazy" data-src="<?php echo $image[0]; ?>">
-                                               			
+                                               		<a href="<?php echo wp_get_attachment_caption(get_the_ID()); ?>"
+                                               			data-background="<?php echo $image[0]; ?>"
+                                               			class="swiper-lazy"
+                                               			>
+                                                       <div alt="kit solar paneles solares" class="bg-gray " >
+                                                       		<div class="swiper-lazy-preloader"></div>
+                                               				<h3> "Where sun is!"<sup>&nbsp;&trade;</sup></h3>
+                                               				<h1><?php the_title(); ?></h1>
+                                                       	</div>
+                                               		</a>
                                                		<?php endif ?>
-                                               </a>
+
                                              </div>
                                                        <?php
                                             $i = $i +1;

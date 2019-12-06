@@ -294,8 +294,51 @@ header{
 	  align-items: center;
 	  a{
 	  	width: 100%;
-	  	img{
-	  		width: 100%;
+  		height: 40vw;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;		  		
+	  	display: block;
+	  	text-decoration: none;
+
+
+	  	&:hover{
+	  		text-decoration: none;
+	  	}
+	  	.bg-gray{
+	  		height: 40vw;
+	  		background-image:
+				linear-gradient(to bottom, #00000077 0%, #00000000 25%,#00000000 60%, #000000cc 100%),
+				url('') !important;
+		  	h1{
+				display: block;
+				font-size: 4vw;
+				width: 100%;
+				text-align: right;
+				position: relative;
+				padding-top: 23vw;
+				font-weight: 900;
+				padding-right: 3vw;
+				text-decoration: none;
+				color:
+				white;
+
+		  	}
+			h3{
+				display: block;
+				font-size: 2.8vw;
+				font-style: italic;
+				width: 100%;
+				text-align: left;
+				position: relative;
+				padding-top: 4vw;
+				font-weight: 900;
+				padding-left: 3vw;
+				text-decoration: none;
+				color:
+				white;
+
+		  	}		  	
 	  	}
 	  }
 	}
