@@ -39,9 +39,9 @@ get_header();
                                              <div class="swiper-slide">
                                                <a href="<?php echo wp_get_attachment_caption(get_the_ID()); ?>">
                                                		<?php if ($i == 0): ?>
-                                                       <img class="img-fluid" src="<?php echo $image[0]; ?>">
+                                                       <img class="img-fluid" alt="kit solar paneles solares" src="<?php echo $image[0]; ?>">
                                                		<?php else: ?>
-                                                       <img class="img-fluid swiper-lazy" data-src="<?php echo $image[0]; ?>">
+                                                       <img alt="kit solar paneles solares" class="img-fluid swiper-lazy" data-src="<?php echo $image[0]; ?>">
                                                			
                                                		<?php endif ?>
                                                </a>
@@ -159,7 +159,7 @@ get_header();
 				<h2 class="dowrap">Energía solar <br> Hogar</h2>
 				<div class="">
 					<div class="w-100">
-						<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonhogar.jpg">
+						<img alt="kit solar paneles solares hogar empresas" class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonhogar.jpg">
 					</div>
 				</div>
 			</a>
@@ -169,7 +169,7 @@ get_header();
 				<h2 class="dowrap">Energía solar <br> Empresas</h2>
 				<div class="">
 					<div class="w-100">
-						<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonempresa.jpg">
+						<img alt="kit solar paneles solares hogar empresas" class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonempresa.jpg">
 					</div>
 				</div>			
 			</a>
@@ -179,7 +179,7 @@ get_header();
 				<h2>Productos</h2>
 				<div class="">
 					<div class="w-100">
-						<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonproductos.jpg">
+						<img alt="kit solar paneles solares hogar empresas" class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonproductos.jpg">
 					</div>
 				</div>				
 			</a>
@@ -189,7 +189,7 @@ get_header();
 				<h2>Servicio Técnico</h2>
 				<div class="">
 					<div class="w-100">
-						<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonserviciotec.jpg">
+						<img alt="kit solar paneles solares hogar empresas" class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonserviciotec.jpg">
 					</div>
 				</div>				
 			</a>
@@ -200,10 +200,10 @@ get_header();
 					<h2>Proyectos</h2>
 					<div class="">
 						<a class="d-block w-100" href="/soluciones-hogar#gallery-head">
-							<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonproyectos-hogar.jpg">
+							<img alt="kit solar paneles solares hogar empresas" class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonproyectos-hogar.jpg">
 						</a>
 						<a class="d-block w-100" href="/soluciones-empresa#gallery-head">
-							<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonproyectos-empresas.jpg">
+							<img alt="kit solar paneles solares hogar empresas" class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonproyectos-empresas.jpg">
 						</a>
 					</div>
 				</div>
@@ -215,7 +215,7 @@ get_header();
 				<h2>Noticias</h2>
 				<div class="">
 					<div class="w-100">
-						<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonmanutencion.jpg">
+						<img alt="kit solar paneles solares hogar empresas" class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonmanutencion.jpg">
 					</div>
 				</div>				
 			</a>
