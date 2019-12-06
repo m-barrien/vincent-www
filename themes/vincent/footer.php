@@ -1,4 +1,5 @@
 <!-- Modal contacto -->
+<!--
 <script src="https://www.google.com/recaptcha/api.js?render=6LecWrQUAAAAAE83dQ6F_0YUAhDb-LpgPijunvQL"></script>
 <script>
 grecaptcha.ready(function () {
@@ -8,12 +9,13 @@ grecaptcha.ready(function () {
     });
 });
 </script>
+-->
 <?php if(isset($_GET['status'])) : ?>
 <div class="modal fade" id="modalGracias" tabindex="-1" role="dialog" aria-labelledby="modalGraciasLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
     	<div class="modal-header">
-			<img class="" style="width: 10%; height:auto;" src="<?php site_icon_url(); ?>" alt="Vincent Solar">
+			<img class="lazy" style="width: 10%; height:auto;" data-src="<?php site_icon_url(); ?>" alt="Vincent Solar">
     		
 	    	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 	        	<span aria-hidden="true">&times;</span>
@@ -45,7 +47,7 @@ grecaptcha.ready(function () {
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
     	<div class="modal-header">
-			<img class="" style="width: 10%; height:auto;" src="<?php site_icon_url(); ?>" alt="Vincent Solar">
+			<img class="lazy" style="width: 10%; height:auto;" data-src="<?php site_icon_url(); ?>" alt="Vincent Solar">
     		
 	    	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 	        	<span aria-hidden="true">&times;</span>
@@ -81,7 +83,7 @@ grecaptcha.ready(function () {
 		</div>
 		<section><!-- flags -->
 			<div class="proud-to-be">
-				<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/proud-to-be.png">
+				<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/proud-to-be.png">
 				
 			</div>
 		</section><!-- flags -->
@@ -90,7 +92,7 @@ grecaptcha.ready(function () {
 			  <?php
 	          $custom_logo_id = get_theme_mod( 'custom_logo' );
 	          $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
-	          echo '<img class="img-fluid footer-logo" src="' . esc_url( $custom_logo_url ) . '" alt="" href="/">';
+	          echo '<img class="img-fluid footer-logo lazy" data-src="' . esc_url( $custom_logo_url ) . '" alt="" href="/">';
 	          ?>
 			</div>
 			<div class="col-md-4 footer-center">
@@ -109,15 +111,15 @@ grecaptcha.ready(function () {
 	            </div>
 
 	            <div class="footer-contact-pill">
-	                <a href="tel:322948569" style="pointer-events: none;" rel="nofollow"> 					
+	                <a href="tel:+56322948569" style="pointer-events: none;" rel="nofollow"> 					
 		                <i class="fas fa-phone"></i>
-		                <p>322 948569</p>
+		                <p>+56 322 948569</p>
 	            	</a>
 	            </div>
 
 	            <div class="footer-contact-pill">
 	                <i class="fas fa-envelope"></i>
-	                <p><a href="mailto:info@vincentsolar.com">info@vincentsolar.com</a></p>
+	                <p><a href="mailto:info@vincentsolar.com?subject=Consulta&body=Nombre:%0D%0ACiudad:%0D%0ATelefono:%0D%0AComentario:">info@vincentsolar.com</a></p>
 	            </div>
 
 	        
@@ -154,7 +156,7 @@ grecaptcha.ready(function () {
 					while ( $loop->have_posts() ) : $loop->the_post();
 						$image = wp_get_attachment_image_src( get_the_ID(), $size="full" ); 
 							?>
-							<div class="icon" style="background-image:url(<?php echo $image[0]; ?>)">
+							<div class="icon bg-lazy" data-src="<?php echo $image[0]; ?>">
 							</div>						
 							<?php
 
@@ -165,7 +167,7 @@ grecaptcha.ready(function () {
 
 		<div class="row">
 			<div class="w-100">
-				<img class="cert-img" src="<?php echo get_template_directory_uri() ?>/image/snippets/cert.png">
+				<img class="cert-img lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/cert.png">
 			</div>
 		</div>
 		<div class="row">
@@ -173,13 +175,42 @@ grecaptcha.ready(function () {
 		</div>
 </footer>
 <div class="bottom-dock">
-	<div class="dock-button">
-		<a href="mailto:info@vincentsolar.com">
+	<div class="dock-button desk">
+		<div id="collapseContacto" class="collapse">
+			<a href="tel:+56322948569">
+				<i class="fas fa-phone"></i>
+				(32) 294 8569
+			</a>
+			<a href="mailto:info@vincentsolar.com?subject=Consulta&body=Nombre:%0D%0ACiudad:%0D%0ATelefono:%0D%0AComentario:">
+				<i class="fas fa-envelope"></i>
+				info@vincentsolar.com
+			</a>
+		</div>
+		<a id="contactoExpander" data-toggle="collapse" href="#collapseContacto" role="button" aria-expanded="false" aria-controls="collapseContacto">
 			<i class="fas fa-hand-pointer"></i>
-			Cont&aacute;ctenos
+			Contactenos
 		</a>
 		<img src="<?php echo get_template_directory_uri() ?>/image/snippets/it_line.png">
 	</div>
+	<div class="dock-button mov">
+		<div id="collapseContacto" class="collapse">
+			<a href="tel:+56322948569">
+				<i class="fas fa-phone"></i>
+				Llamar
+			</a>
+			<a href="mailto:info@vincentsolar.com?subject=Consulta&body=Nombre:%0D%0ACiudad:%0D%0ATelefono:%0D%0AComentario:">
+				<i class="fas fa-envelope"></i>
+				Correo
+			</a>
+		</div>
+		<a id="contactoExpander" data-toggle="collapse" href="#collapseContacto" role="button" aria-expanded="false" aria-controls="collapseContacto">
+			<i class="fas fa-hand-pointer"></i>
+			Contactenos
+		</a>
+		<img src="<?php echo get_template_directory_uri() ?>/image/snippets/it_line.png">
+	</div>
+
 </div>
+
   </body>
 </html>
