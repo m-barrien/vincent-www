@@ -111,32 +111,32 @@ get_header();
 </div>
 
 <div class="container-fluid">
-	<section class="cover-swiper"><!-- ofertas -->
+	<section class=""><!-- ofertas -->
 		
-		<div class="swiper-container oferta-swiper d-none d-xs-none d-sm-none d-md-block">
+		<div class="swiper-container oferta-swiper w-100 d-none d-xs-none d-sm-none d-md-block">
 		    <div class="swiper-wrapper">
 		      <div class="swiper-slide">
-		      	<a href="/ofertas#15kw">
+		      	<a class="d-block w-100 py-4" href="/ofertas#15kw">
 		      		<img class="img-fluid swiper-lazy" alt="kit solar paneles solares" data-src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-1.jpg">
 		      	</a>
 		      </div>
 		      <div class="swiper-slide">
-		      	<a href="/ofertas#2kw160l">
+		      	<a class="d-block w-100 py-4" href="/ofertas#2kw160l">
 		      		<img class="img-fluid swiper-lazy" alt="kit solar paneles solares" data-src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-2.jpg">
 		      	</a>
 		      </div>
 		      <div class="swiper-slide">
-		      	<a href="/ofertas#3kw">
+		      	<a class="d-block w-100 py-4" href="/ofertas#3kw">
 		      		<img class="img-fluid swiper-lazy" alt="kit solar paneles solares" data-src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-3.jpg">
 		      	</a>
 		      </div>
 		      <div class="swiper-slide" id="soluciones">
-		      	<a href="/ofertas#3kw160l">
+		      	<a class="d-block w-100 py-4" href="/ofertas#3kw160l">
 		      		<img class="img-fluid swiper-lazy" alt="kit solar paneles solares" data-src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-4.jpg">
 		      	</a>
 		      </div>
 		      <div class="swiper-slide" id="soluciones">
-		      	<a href="/ofertas#3kwoff">
+		      	<a class="d-block w-100 py-4" href="/ofertas#3kwoff">
 		      		<img class="img-fluid swiper-lazy" alt="kit solar paneles solares" data-src="<?php echo get_template_directory_uri() ?>/image/banner_ofertas/oferta-5.jpg">
 		      	</a>
 		      </div>
@@ -329,7 +329,7 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 	  });
 
 
-	var mySwiper = new Swiper ('.cover-swiper .swiper-container.oferta-swiper', {
+	var mySwiper = new Swiper ('.oferta-swiper', {
 	  // Optional parameters
 	  direction: 'horizontal',
 	  autoplay: {

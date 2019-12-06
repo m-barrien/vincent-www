@@ -22,6 +22,10 @@ body{
 ul{
 	@extend .px-2;
 }
+.img-fluid{
+	width: 100%;
+	max-width: none;
+}
 section {
 	@extend .pt-2;
 	@extend .pb-3;
