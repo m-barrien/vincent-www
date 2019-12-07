@@ -186,7 +186,7 @@ grecaptcha.ready(function () {
 				info@vincentsolar.com
 			</a>
 		</div>
-		<a id="contactoExpander" data-toggle="collapse" href="#collapseContacto" role="button" aria-expanded="false" aria-controls="collapseContacto">
+		<a href="mailto:info@vincentsolar.com?subject=Consulta">
 			<i class="fas fa-hand-pointer"></i>
 			Contactenos
 		</a>
@@ -203,7 +203,7 @@ grecaptcha.ready(function () {
 				Correo
 			</a>
 		</div>
-		<a id="contactoExpander" data-toggle="collapse" href="#collapseContacto" role="button" aria-expanded="false" aria-controls="collapseContacto">
+		<a href="mailto:info@vincentsolar.com?subject=Consulta">
 			<i class="fas fa-hand-pointer"></i>
 			Contactenos
 		</a>
