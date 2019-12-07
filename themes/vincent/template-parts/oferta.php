@@ -16,7 +16,7 @@
 					<h2 class=""><?php the_title() ;?> <small>Instalación incluida</small></h2>
 					<?php the_content() ;?>
 					<div class="w-100 d-block">
-						<a class="boton-cotizar" href="mailto:info@vincentsolar.com?subject=Intersado en <?php the_title() ;?>&body=Nombre:%0D%0ACiudad:%0D%0ATelefono:%0D%0AComentario:">
+						<a class="boton-cotizar" href="mailto:info@vincentsolar.com?subject=Consulta">
 							Contáctenos <br> <i class="fas fa-hand-pointer"></i>
 						</a>
 						

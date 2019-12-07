@@ -119,7 +119,7 @@ grecaptcha.ready(function () {
 
 	            <div class="footer-contact-pill">
 	                <i class="fas fa-envelope"></i>
-	                <p><a href="mailto:info@vincentsolar.com?subject=Consulta&body=Nombre:%0D%0ACiudad:%0D%0ATelefono:%0D%0AComentario:">info@vincentsolar.com</a></p>
+	                <p><a href="mailto:info@vincentsolar.com?subject=Consulta">info@vincentsolar.com</a></p>
 	            </div>
 
 	        
@@ -181,7 +181,7 @@ grecaptcha.ready(function () {
 				<i class="fas fa-phone"></i>
 				(32) 294 8569
 			</a>
-			<a href="mailto:info@vincentsolar.com?subject=Consulta&body=Nombre:%0D%0ACiudad:%0D%0ATelefono:%0D%0AComentario:">
+			<a href="mailto:info@vincentsolar.com?subject=Consulta">
 				<i class="fas fa-envelope"></i>
 				info@vincentsolar.com
 			</a>
@@ -198,7 +198,7 @@ grecaptcha.ready(function () {
 				<i class="fas fa-phone"></i>
 				Llamar
 			</a>
-			<a href="mailto:info@vincentsolar.com?subject=Consulta&body=Nombre:%0D%0ACiudad:%0D%0ATelefono:%0D%0AComentario:">
+			<a href="mailto:info@vincentsolar.com?subject=Consulta">
 				<i class="fas fa-envelope"></i>
 				Correo
 			</a>
