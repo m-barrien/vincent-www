@@ -1,6 +1,9 @@
 <section class="oferta">
-	
+	<?php
+	 $hash = get_post_meta(get_the_ID(), 'hash', true); 
+	?>	
 	<div class="col-sm-12 col-md-10 offset-md-1">
+		<div id="<?php if($hash) {echo $hash;} ?>"></div>
 		<div class="row">
 				<div class="col-sm-12 col-md-6 col-lg-5">
 					<?php if ( has_post_thumbnail() ) : ?>

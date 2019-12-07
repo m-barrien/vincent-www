@@ -69,12 +69,11 @@
 			</a>
 		</div>
 	</section>
-	<div id="gallery"></div>
-	<section id="collage-gallery" class="no-gutters">
-		<div id="gallery-col-1" class="col-sm-6 col-md-3 col-lg-3"></div>
-		<div id="gallery-col-2" class="col-sm-6 col-md-3 col-lg-3"></div>
-		<div id="gallery-col-3" class="col-sm-6 col-md-3 col-lg-3"></div>
-		<div id="gallery-col-4" class="col-sm-6 col-md-3 col-lg-3"></div>
+	<section  class="no-gutters" style="padding-bottom: 0 !important;">
+		<div id="collage-gallery" class="col no-gutters"></div>
+	</section>
+	<section>
+		<div class="fadetowhite"></div>
 	</section>
 
 </div>
@@ -86,11 +85,16 @@ if(photo_arr.length >0 ){
   for (var i = bundles.length - 1; i >= 0; i--) {
     for (var j = bundles[i].length - 1; j >= 0; j--) {
       var size=Math.floor(Math.random() * 3) + 1;  
-      $("#collage-gallery #gallery-col-"+(i+1)).append(
-        "<a class=\"bg-lazy gallery-grid-img s"+size+"\" href=\"" +bundles[i][j]["full"]+ "\" data-src=\""+ bundles[i][j]["thumb"] +"\" > </a>"
+      $("#collage-gallery").append(
+        "<a class=\"bg-lazy gallery-grid-img s"+size+"\" href=\"" +bundles[i][j]["full"]+ "\" data-src=\""+ bundles[i][j]["thumb"] +"\" ><img class=\"d-none lazy\" data-src=\""+ bundles[i][j]["thumb"] +"\"> </a>"
         );
     }
   }
 }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.12/dist/js/lightgallery-all.min.js" integrity="sha256-w14QFJrxOYkUnF0hb8pVFCSgYcsF0hMIKrqGb8A7J8A=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.12/dist/css/lightgallery.min.css" integrity="sha256-8rfHbJr+ju3Oc099jFJMR1xAPu8CTPHU8uP5J3X/VAY=" crossorigin="anonymous">
+<script type="text/javascript">
+	$("#collage-gallery").lightGallery(); 
 </script>
 <?php get_footer(); ?>
