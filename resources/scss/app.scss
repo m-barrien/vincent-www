@@ -192,7 +192,7 @@ header{
 		li{
 			list-style-type: none;
 			@include media-breakpoint-between(md,xl) {
-				margin-right:19px !important; 
+				margin-right:1vw !important; 
 				display: inline;
 				margin-right:6px; 
 				text-align: center;
