@@ -367,7 +367,7 @@ get_header();
 		                $wc_query->the_post(); ?>
 				<div class="swiper-slide">
 		        	<a class="product-slide" href="<?php the_permalink(); ?>">
-			        	<?php the_post_thumbnail('thumbnail'); ?>
+			        	<img class="img-fluid swiper-lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo wp_get_attachment_image_url( get_post_thumbnail_id(), 'thumbnail' ); ?>"/>
 			            <h4>
 			               <?php the_title(); ?>
 			               
@@ -461,6 +461,7 @@ var swiper = new Swiper('.swiper-container.products-swiper', {
     delay: 5000,
   },
   loop: true,
+  lazy: true,
   // init: false,
   pagination: {
     el: '.swiper-pagination',
