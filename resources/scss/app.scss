@@ -1175,6 +1175,7 @@ article{
 		text-align: center;
 		padding: 4px;
 		font-weight: bold;
+		white-space: nowrap;
 		&.desk{
 			@include media-breakpoint-up(sm) {
 				display: block;
@@ -1196,14 +1197,15 @@ article{
 			border-radius: 6px 6px 0 0;
 			margin-right: 20px;
 			margin-left: auto;
-			max-width: 350px;
+			max-width: 20vw;
 	    }
 	    @include media-breakpoint-between(md,lg) {
 			font-size: 2rem;
 			border-radius: 6px 6px 0 0;
 			margin-right: 20px;
 			margin-left: auto;
-			max-width: 25vw;
+			min-width: 25vw;
+			max-width: 30vw;
 	    }
 		@include media-breakpoint-down(sm) {
 			font-size: $font-size-base*1.6;
@@ -1221,6 +1223,7 @@ article{
 			text-decoration: none;
 			color: inherit;
 			outline: none;
+			white-space: nowrap;
 		}
 		#collapseContacto{
 			z-index: $zindex-fixed+1;
