@@ -8,6 +8,7 @@
     <title><?php echo get_bloginfo( 'name' ); ?></title>
   </head>
   <body> 
+     <?php do_action( 'body_open' ); ?>
     <div class="header-fill">
       
     </div>
