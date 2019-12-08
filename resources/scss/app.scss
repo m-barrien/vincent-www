@@ -1163,7 +1163,7 @@ article{
 	color: white;	
 	z-index: $zindex-fixed;
 	@include media-breakpoint-down(sm) {
-		bottom:70px;
+		bottom:90px;
 	}
 	@include media-breakpoint-up(sm) {
 

@@ -203,7 +203,7 @@ grecaptcha.ready(function () {
 				Correo
 			</a>
 		</div>
-		<a href="mailto:info@vincentsolar.com?subject=Consulta">
+		<a id="contactoExpander" data-toggle="collapse" href="#collapseContacto" role="button" aria-expanded="false" aria-controls="collapseContacto">
 			<i class="fas fa-hand-pointer"></i>
 			Contactenos
 		</a>
