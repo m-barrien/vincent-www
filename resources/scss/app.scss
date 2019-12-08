@@ -1192,18 +1192,18 @@ article{
 			}
 		}
 		@include media-breakpoint-between(lg,xl) {
-			font-size: $font-size-base*1.9;
+			font-size: 2vw;
 			border-radius: 6px 6px 0 0;
 			margin-right: 20px;
 			margin-left: auto;
 			max-width: 350px;
 	    }
 	    @include media-breakpoint-between(md,lg) {
-			font-size: $font-size-base*1.4;
+			font-size: 2rem;
 			border-radius: 6px 6px 0 0;
 			margin-right: 20px;
 			margin-left: auto;
-			max-width: 280px;
+			max-width: 25vw;
 	    }
 		@include media-breakpoint-down(sm) {
 			font-size: $font-size-base*1.6;
