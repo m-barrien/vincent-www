@@ -77,68 +77,55 @@ grecaptcha.ready(function () {
   </div>
 </div><!-- Modal contacto -->
 
-<footer class="container-fluid">
-		<div class="row">
-			<p class="d-block fancy-font text-center px-3"> Confianza y calidad europea a su alcance </p>
-		</div>
-		<section><!-- flags -->
-			<div class="proud-to-be">
-				<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/proud-to-be.png">
-				
+<footer>
+	<section class="footer-cgreen-logo">
+		<img src="<?php echo get_template_directory_uri() ?>/image/snippets/logo_cgreen.png">
+	</section>
+	<section class="footer-address">
+		<address>
+			<i class="fas fa-map-marker-alt"></i>
+			<div class="address-text">
+				Los Conquistadores 1925
+				<br>
+				<span>Santiago, Chile</span>
 			</div>
-		</section><!-- flags -->
-		<div class="row">
-			<div class="col-md-4 d-none d-xs-none d-sm-none d-md-block">
-			  <?php
-	          $custom_logo_id = get_theme_mod( 'custom_logo' );
-	          $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
-	          echo '<img class="img-fluid footer-logo lazy" data-src="' . esc_url( $custom_logo_url ) . '" alt="" href="/">';
-	          ?>
+		</address>
+		<address>
+			<i class="fas fa-map-marker-alt"></i>
+			<div class="address-text">
+				Av. Industrial 1198
+				<br>
+				<span>El Belloto, Chile</span>
 			</div>
-			<div class="col-md-4 footer-center">
-
-                <div class="footer-contact-pill">
-                    <i class="fas fa-map-marker"></i>
-                    <p>Oficina Legal:<span>Los conquistadores 1925 </span> Santiago, Chile</p>                   
-                </div>
-	            <div class="footer-contact-pill">
-	                <i class="fas fa-map-marker"></i>
-	                <p>Oficina Operativa y Distribucí&oacute;n:<span>Av. Industrial 1198 </span> El Belloto, Chile</p>
-	            </div>
-	            <div class="footer-contact-pill">
-	                <i class="fas fa-map-marker"></i>
-	                <p>Proximamente:<span>Florianopolis </span> Brasil</p>
-	            </div>
-
-	            <div class="footer-contact-pill">
-	                <a href="tel:+56322948569" style="pointer-events: none;" rel="nofollow"> 					
-		                <i class="fas fa-phone"></i>
-		                <p>+56 322 948569</p>
-	            	</a>
-	            </div>
-
-	            <div class="footer-contact-pill">
-	                <i class="fas fa-envelope"></i>
-	                <p><a href="mailto:info@vincentsolar.com?subject=Consulta">info@vincentsolar.com</a></p>
-	            </div>
-
-	        
+		</address>
+		<address>
+			<i class="fas fa-map-marker-alt"></i>
+			<div class="address-text">
+				Florianopolis
+				<br>
+				<span>Brasil</span>
 			</div>
-
-			<div class="col-md-4">
-
-	            <p class="footer-company-about">
-	            	<?php echo get_bloginfo( 'description' ); ?>
-	            	<!--
-	                En Vincent Solar nos especializamos en el diseño e implementación de soluciones solares integrales para nuestros clientes. Nuestros kits solares incluyen productos como paneles solares, inversores, colectores solares, tanto como la instalación de estos. Al producir su propia electricidad solar no solo podra ahorrar en su cuenta de energía sino que también será parte de la revolución ecológica de energía sustentables en el país y el mundo.
-	            	-->
-	            </p>
-
-			</div>
-		</div>
-		<div class="brands">
-			<h2>Nuestros Partners</h2>
-			  <!-- Swiper -->
+		</address>
+		<address>
+			<a href="tel:+56322948569">
+				<i class="fas fa-phone"></i>
+				+56 32 2948 569
+			</a>
+		</address>
+		<address>
+			<i class="fas fa-globe"></i>
+			www.vincentsolar.com
+			<br>
+			<a href="mailto:info@vincentsolar.com">
+				<i class="fas fa-envelope"></i>
+				info@vincentsolar.com
+			</a>
+		</address>
+	</section>
+	<section>
+		<div class="partners-container">
+			<h3>Nuestros Partners</h3>
+			<div class="row">
 					<?php
 					wp_reset_query();
 					$args = array(
@@ -146,34 +133,30 @@ grecaptcha.ready(function () {
 					        'post_mime_type' => 'image',
 					        'orderby' => 'post_date',
 					        'order' => 'desc',
-					        'posts_per_page' => '3000',
+					        'posts_per_page' => '-1',
 					        'post_status'    => 'inherit',
 					        'category_name'=>'partners',
 					         );
-
 					$loop = new WP_Query( $args );
-
 					while ( $loop->have_posts() ) : $loop->the_post();
 						$image = wp_get_attachment_image_src( get_the_ID(), $size="full" ); 
 							?>
-							<div class="icon bg-lazy" data-src="<?php echo $image[0]; ?>">
-							</div>						
+							<div class="icon">
+								<img class="img-fluid lazy" src="" data-src="<?php echo $image[0]; ?>">
+							</div>								
 							<?php
-
 					endwhile;
-					?>
-					
-		</div>
-
-		<div class="row">
-			<div class="w-100">
-				<img class="cert-img lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/cert.png">
+					?>				
 			</div>
 		</div>
-		<div class="row">
-			<p class="d-block bottom-text text-center"> 2019 © Vincent Solar | Todos los derechos reservados	</p>	
-		</div>
+	</section>
+	<section>
+		<h3 style="width: 100%; text-align: center; padding-top: 100px;">2019 Vincent Solar | Todos los derechos reservados</h3>
+	</section>
+
 </footer>
+
+
 <div class="bottom-dock">
 	<div class="dock-button desk">
 		<div id="collapseContacto" class="collapse">
