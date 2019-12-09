@@ -1151,12 +1151,12 @@ article{
 			max-width: 20vw;
 	    }
 	    @include media-breakpoint-between(md,lg) {
-			font-size: 1.8rem;
+			font-size: 1.55rem;
 			border-radius: 6px 6px 6px 6px;
 			margin-right: 20px;
 			margin-left: auto;
-			min-width: 25vw;
-			max-width: 30vw;
+			min-width: 20vw;
+			max-width: 23vw;
 	    }
 		@include media-breakpoint-down(sm) {
 			font-size: $font-size-base*1.6;
