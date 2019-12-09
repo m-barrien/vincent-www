@@ -164,8 +164,8 @@ header{
 
 	.menu {
 		@extend .p-4;
-		margin-right:auto;
 		margin-top: auto;
+		
 		@include media-breakpoint-between(lg,xl) {
 			margin-top: 2vw !important;
 
@@ -175,13 +175,15 @@ header{
 
 		}
 		@include media-breakpoint-up(sm) {
-			margin-left: 20px;
+			margin-left: auto;
+			margin-right:0;
 			width: auto;
 			margin-bottom: -6px;
 			padding-top: 2.4rem;
 		}
 		@include media-breakpoint-down(sm) {
 			margin-left: 0px;
+			margin-right:auto;
 			width: 100%;
 			margin-bottom: 0px;
 			padding-top: 1rem;

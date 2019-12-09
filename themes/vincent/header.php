@@ -49,6 +49,7 @@
           <?php wp_nav_menu( array( '
             theme_location' => 'header-menu',          
             'container'      => '',
+            'menu'      => 'menu-top',
             'menu_id'      => 'collapseMenu',
             'menu_class'     => 'menu collapse ' ) ); 
             ?>
