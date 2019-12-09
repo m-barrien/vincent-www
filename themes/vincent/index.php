@@ -94,9 +94,9 @@ get_header();
 					?>
 		      		<a class=" d-block d-md-none w-100" href="<?php echo get_post_permalink(); ?>">
 		      			<?php if ($i == 0 ): ?>
-		      				<img style="max-width: none" class="img-fluid w-100" alt="kit solar chile paneles solares para casas" src="<?php echo the_post_thumbnail_url(); ?>">
+		      				<img style="max-width: none" class="img-fluid w-100" alt="" src="<?php echo the_post_thumbnail_url(); ?>">
 		      			<?php else: ?>
-		      				<img style="max-width: none" class="img-fluid w-100 lazy" alt="kit solar chile paneles solares para casas" data-src="<?php echo the_post_thumbnail_url(); ?>">
+		      				<img style="max-width: none" class="img-fluid w-100 lazy" alt="" data-src="<?php echo the_post_thumbnail_url(); ?>">
 		      				
 		      			<?php endif ?>
 		      		</a>
@@ -258,7 +258,7 @@ get_header();
 				<h2 class="dowrap">Energía solar <br> Hogar</h2>
 				<div class="">
 					<div class="w-100">
-						<img alt="kit solar paneles solares hogar empresas" class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonhogar.jpg">
+						<img alt="" class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonhogar.jpg">
 					</div>
 				</div>
 			</a>
@@ -268,7 +268,7 @@ get_header();
 				<h2 class="dowrap">Energía solar <br> Empresas</h2>
 				<div class="">
 					<div class="w-100">
-						<img alt="kit solar paneles solares hogar empresas" class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonempresa.jpg">
+						<img alt="" class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonempresa.jpg">
 					</div>
 				</div>			
 			</a>
@@ -278,7 +278,7 @@ get_header();
 				<h2>Productos</h2>
 				<div class="">
 					<div class="w-100">
-						<img alt="kit solar paneles solares hogar empresas" class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonproductos.jpg">
+						<img alt="" class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonproductos.jpg">
 					</div>
 				</div>				
 			</a>
@@ -288,7 +288,7 @@ get_header();
 				<h2>Servicio Técnico</h2>
 				<div class="">
 					<div class="w-100">
-						<img alt="kit solar paneles solares hogar empresas" class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonserviciotec.jpg">
+						<img alt="" class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonserviciotec.jpg">
 					</div>
 				</div>				
 			</a>
@@ -299,10 +299,10 @@ get_header();
 					<h2>Proyectos</h2>
 					<div class="">
 						<a class="d-block w-100" href="/soluciones-hogar#gallery-head">
-							<img alt="kit solar paneles solares hogar empresas" class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonproyectos-hogar.jpg">
+							<img alt="" class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonproyectos-hogar.jpg">
 						</a>
 						<a class="d-block w-100" href="/soluciones-empresa#gallery-head">
-							<img alt="kit solar paneles solares hogar empresas" class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonproyectos-empresas.jpg">
+							<img alt="" class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonproyectos-empresas.jpg">
 						</a>
 					</div>
 				</div>
@@ -314,7 +314,7 @@ get_header();
 				<h2>Noticias</h2>
 				<div class="">
 					<div class="w-100">
-						<img alt="kit solar paneles solares hogar empresas" class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonmanutencion.jpg">
+						<img alt="" class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/botonmanutencion.jpg">
 					</div>
 				</div>				
 			</a>
