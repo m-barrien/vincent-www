@@ -193,7 +193,7 @@ grecaptcha.ready(function () {
 		<img src="<?php echo get_template_directory_uri() ?>/image/snippets/it_line.png">
 	</div>
 	<div class="dock-button mov">
-		<div id="collapseContacto" class="collapse">
+		<div id="collapseContacto" class="collapse show">
 			<a href="tel:+56322948569">
 				<i class="fas fa-phone"></i>
 				Llamar
