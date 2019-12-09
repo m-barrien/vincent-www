@@ -5,7 +5,7 @@
 	<section>
 		<h1>Soluciones Fotovoltaicas para Empresas</h1>
 		<div class="col-sm-12 col-md-12 py-2">
-			<img class="img-fluid d-none d-xs-none d-sm-none d-md-block" src="<?php echo get_template_directory_uri() ?>/image/soluciones/hogar-fv-banner.png">
+			<img class="img-fluid d-none d-xs-none d-sm-none d-md-block" src="<?php echo get_template_directory_uri() ?>/image/soluciones/empresa-fv-banner.png">
 			<img class="img-fluid d-md-none mx-auto" src="<?php echo get_template_directory_uri() ?>/image/soluciones/hogar-fv-banner-mob.png">
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-5 offset-md-1">
@@ -44,7 +44,7 @@
 	<section>
 		<h1>Soluciones Térmicas</h1>
 		<div class="col-sm-12 col-md-12 py-2">
-			<img class="img-fluid d-none d-xs-none d-sm-none d-md-block" src="<?php echo get_template_directory_uri() ?>/image/soluciones/hogar-term-banner.png">
+			<img class="img-fluid d-none d-xs-none d-sm-none d-md-block" src="<?php echo get_template_directory_uri() ?>/image/soluciones/empresa-term-banner.png">
 			<img class="img-fluid d-block d-md-none mx-auto" src="<?php echo get_template_directory_uri() ?>/image/soluciones/hogar-term-banner-mob.png">
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-4">
