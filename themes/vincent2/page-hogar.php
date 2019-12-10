@@ -108,7 +108,7 @@
 						
 					</div>
 					<p class="gallery-title">
-						<?php the_title(); ?>
+						<?php echo mb_strimwidth(get_the_title(), 0, 33, '...');?>
 					</p>
 				</a>
 

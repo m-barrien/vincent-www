@@ -1211,13 +1211,13 @@ section > h1.section-header{
 }
 .gallery-title{
 	@include media-breakpoint-between(lg,xl) {
-		font-size: 1.2vw;
+		font-size: 1.0vw;
 	}
 	@include media-breakpoint-between(md,lg) {
-		font-size: 1.5vw;
+		font-size: 0.8rem;
 	}
 	@include media-breakpoint-between(sm,md) {
-		font-size: 1.5vw;
+		font-size: 0.7rem;
 
 	}
 	@include media-breakpoint-down(xs) {
