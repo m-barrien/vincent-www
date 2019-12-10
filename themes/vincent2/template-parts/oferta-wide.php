@@ -12,7 +12,7 @@ $oferta_category = $tax_term[0]->name;
 		<div class="col-fotos">
 			<div class="row">
 				<div class="col-fotos-kit">
-					<img class="img-fluid swiper-lazy " data-src="<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-group-ima	ge.png">
+					<img class="img-fluid swiper-lazy " data-src="<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-group-image.png">
 					<div class="kit-footer-icons">
 						<img class="icon-sello swiper-lazy " data-src="<?php echo get_template_directory_uri() ?>/image/snippets/100euro.png">
 						<img class="icon-sello swiper-lazy " data-src="<?php echo get_template_directory_uri() ?>/image/snippets/5anos.png">

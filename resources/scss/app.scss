@@ -80,7 +80,7 @@ h1{
 	@include media-breakpoint-down(sm) {
 		font-size: 38px;
 		&.shrink-cover{
-			font-size: 8vw;
+			font-size: 3vw;
 		}			
     	&.shrink{
 			font-size: 34px;
@@ -101,9 +101,11 @@ h2{
 	&.site-title{
 		@include media-breakpoint-up(sm) {
 			margin: 3vw 0;
+			font-size: 3.3vw;
 		}
 		@include media-breakpoint-down(sm) {
-			margin: 35px 0;
+			margin-top: 35px;
+			font-size: 40px;
 		}
 	}
 }
@@ -370,7 +372,8 @@ p{
 	position: relative;
 	@include media-breakpoint-up(sm) {
 		height: 95vh;
-		min-height: 600px;
+		min-height: 500px;
+		max-height: 800px;
 	}
 	@include media-breakpoint-down(sm) {
 		height: 85vh;
@@ -415,12 +418,13 @@ p{
       align-items: center;
     }	
     .cover-slide{
-		@include media-breakpoint-up(sm) {
+		@include media-breakpoint-between(md,xl) {
     		margin-bottom: 10px;
     		padding: 0 1.5vw;
 		}
 		@include media-breakpoint-down(sm) {
 	    	margin-bottom: 45px;
+	    	padding: 0 20px;
 		}
     	margin-top: auto;
 		text-align: left;
@@ -430,6 +434,9 @@ p{
 			line-height: 1.1;
 			margin-bottom: 5px;
     		color: $white;
+			@include media-breakpoint-down(xs) {
+				font-size: 5vw;
+			}
     	}
 
     	.hidden-desc{
@@ -443,9 +450,12 @@ p{
 			transition:height 0.5s; 
     		-webkit-transition:height 0.5s; 
     		.grow{
-				@include media-breakpoint-up(sm) {
+				@include media-breakpoint-up(md) {
 					height: 180px;	
 				}				
+				@include media-breakpoint-between(sm,md) {
+					height: 200px;	
+				}
 			    transition:height 0.5s; 
     			-webkit-transition:height 0.5s; 
 
@@ -468,7 +478,12 @@ p{
 					font-size: 1.5vw;
 					padding: .5vw 1.7vw;
 				}				
-				@include media-breakpoint-down(sm) {
+				@include media-breakpoint-between(sm,md) {
+					padding: 8px 37px;
+					font-size: 1.5vw;
+					border-radius: 50px;
+				}
+				@include media-breakpoint-down(xs) {
 					padding: 8px 37px;
 					font-size: 4vw;
 					border-radius: 50px;
@@ -481,11 +496,16 @@ p{
 			p{
 				line-height: 1;
 				color: $text-light-gray;
-				@include media-breakpoint-up(sm) {
+				@include media-breakpoint-up(md) {
 					height: 5vw;
 					font-size: 1.3vw;
 				}
-				@include media-breakpoint-down(sm) {
+				@include media-breakpoint-between(sm,md) {
+					height: 7vw;
+					font-size: 1.6vw;
+					margin: 0;
+				}
+				@include media-breakpoint-down(xs) {
 					font-size: 18px;
 	    			line-height: 1.2;
 				}				
@@ -913,7 +933,7 @@ footer{
 		height: auto;
 		.product-title{
 			text-align: center;
-			font-size: 4vw;
+			font-size: 0.8rem;
 			
 		}
 	}
@@ -952,10 +972,19 @@ footer{
 }
 .half-banner-body{
 	@include make-col-ready();
-	@include media-breakpoint-up(sm) {
+	@include media-breakpoint-between(md,lg) {
 		@include make-col(6);
 		&.right{
 			@include make-col-offset(6);
+		}
+		.mov-img{
+			display: none;
+		}		
+	}
+	@include media-breakpoint-between(sm,md) {
+		@include make-col(8);
+		&.right{
+			@include make-col-offset(4);
 		}
 		.mov-img{
 			display: none;
@@ -974,14 +1003,29 @@ footer{
 
 	h1{
 		line-height: 1;
-		@include media-breakpoint-down(sm) {
+
+		@include media-breakpoint-between(lg,xl) {
+			font-size: 1.8vw;
+		}
+		@include media-breakpoint-between(md,lg) {
+			font-size: 3.0vw;
+		}
+		@include media-breakpoint-between(sm,md) {
+			font-size: 2.3rem;
+
+		}
+		@include media-breakpoint-down(xs) {
+			font-size: 7.5vw;
 			padding-top: 20px;
 		}
 	}
 	p{
 		font-size: 1.8vw;
-		@include media-breakpoint-down(sm) {
-			font-size: 3.8vw;
+		@include media-breakpoint-between(sm,md) {
+			font-size: 1rem;
+		}
+		@include media-breakpoint-down(xs) {
+			font-size: 5vw;
 		}
 		line-height: 1.1;
 		padding: 3vw 0;
@@ -996,8 +1040,13 @@ footer{
 		color: $text-gray;
 		line-height: 26px;
 		font-weight: 400;
-		@include media-breakpoint-up(sm) {
+
+		@include media-breakpoint-up(md) {
 			font-size: 1.5vw;
+			padding-top: 1vw;
+		}
+		@include media-breakpoint-between(sm,md) {
+			font-size: 1.8vw;
 			padding-top: 1vw;
 		}
 		@include media-breakpoint-down(sm) {
@@ -1015,14 +1064,21 @@ footer{
 		margin-top: -6vw;
 	}
 	img.kit-img{
-		@include media-breakpoint-up(md) {
+		@include media-breakpoint-up(sm) {
 			width: 21vw;
 			display: block;
 			margin-right: 0;
 			margin-left: auto;
 
 		}
-		@include media-breakpoint-down(md) {
+
+		@include media-breakpoint-between(sm,md) {
+			width: 40%;
+			display: block;
+			margin-right: 0;
+			margin-left: auto;
+		}
+		@include media-breakpoint-down(xs) {
 			width: 100%;
 			display: block;
 			margin-right: auto;
@@ -1036,20 +1092,27 @@ a.orange-with-arrow{
 	display: inline-block;
 	color: $vincent-orange;
 	text-decoration: underline;
-	@include media-breakpoint-up(sm) {
+	@include media-breakpoint-up(md) {
 		font-size: 1.35vw;
+		white-space: nowrap;		
+	}
+	@include media-breakpoint-between(sm,md) {
+		font-size: 1rem;
 		white-space: nowrap;
 	}	
-	@include media-breakpoint-down(sm) {
+	@include media-breakpoint-down(xs) {
 		font-size: 3.5vw;
 	}
 	&:after{
 		content: url($svg-arrow-next);
 		display: inline-block;
-		@include media-breakpoint-up(sm) {
+		@include media-breakpoint-up(md) {
 			width: .5vw;
 		}
-		@include media-breakpoint-down(sm) {
+		@include media-breakpoint-between(sm,md) {
+			width: 0.4rem;
+		}			
+		@include media-breakpoint-down(xs) {
 			width: 1.5vw;
 
 		}
@@ -1107,7 +1170,7 @@ section > h1.section-header{
 			@include make-col-offset(2);	
 			@include make-col(8);	
 		}
-		@include media-breakpoint-between(sm,lg) {
+		@include media-breakpoint-between(md,lg) {
 			@include make-col-offset(1);	
 			@include make-col(10);
 		}
@@ -1147,11 +1210,18 @@ section > h1.section-header{
 
 }
 .gallery-title{
-	@include media-breakpoint-up(sm) {
-		font-size: 1vw;
+	@include media-breakpoint-between(lg,xl) {
+		font-size: 1.2vw;
 	}
-	@include media-breakpoint-down(sm) {
-		font-size: 3vw;
+	@include media-breakpoint-between(md,lg) {
+		font-size: 1.5vw;
+	}
+	@include media-breakpoint-between(sm,md) {
+		font-size: 1.5vw;
+
+	}
+	@include media-breakpoint-down(xs) {
+		font-size: 0.7rem;
 	}
 	color: $text-black;
 	font-weight: 700;

@@ -15,7 +15,7 @@ get_header();
     $args= array(
 	'post_type' => array('oferta'),
 	'post_status' => 'publish',
-	'posts_per_page' => -1,
+	'posts_per_page' => 2,
 	'meta_key'		=> 'featured',
 	'orderby'		=> 'meta_value',
 	'order'			=> 'DESC'
@@ -167,6 +167,9 @@ get_header();
 	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-inicio-1.jpg">
 		<img class="favicon lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/favicon.png">
 		<div class="half-banner-body right">
+			<div class="mov-img">
+				<img class=" img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-inicio-1.jpg">
+			</div>						
 			<div class="w-100">
 				<h1>
 					La energía solar es fácil con Vincent Solar.
@@ -247,7 +250,6 @@ get_header();
 							<div class="how-we-work-slide">
 								<div class="img-container">
 									<div class="img-wrapper">
-										<img class="swiper-lazy extra-bg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAQAAAD8IX00AAAADklEQVR42mNkAANGFAoAAD8ABLZPixAAAAAASUVORK5CYII=" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/sun-vector.png">
 										<img class="swiper-lazy bubble-img" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAQAAAD8IX00AAAADklEQVR42mNkAANGFAoAAD8ABLZPixAAAAAASUVORK5CYII=" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/activacion.jpg">
 										<div class="swiper-lazy-preloader"></div>
 									</div>
@@ -302,6 +304,9 @@ get_header();
 	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-inicio-2.jpg">
 		<img class="favicon right lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/favicon.png">
 		<div class="half-banner-body">
+			<div class="mov-img">
+				<img class=" img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-inicio-2.jpg">
+			</div>								
 			<div class="w-100">
 				<h1>
 					La mejor solución para tu necesidad
@@ -423,7 +428,7 @@ get_header();
 <div class="container-fluid">
 	<section class="products-swiper-container">
 		<h1 class="section-header">
-			Productos con los que trabajamos
+			Productos
 		</h1>
 			<?php
 			$params = array('posts_per_page' => 15, 
@@ -441,7 +446,7 @@ get_header();
 			                $wc_query->the_post(); ?>
 					<div class="swiper-slide">
 			        	<a class="product-slide" href="<?php the_permalink(); ?>">
-				        	<img class="img-fluid swiper-lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png"  data-src="<?php the_post_thumbnail_url('medium'); ?>">
+				        	<img class="img-fluid swiper-lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png"  data-src="<?php the_post_thumbnail_url('thumbnail'); ?>">
 				            <h4 class="product-title">
 				               <?php the_title(); ?>
 				           </h4>
