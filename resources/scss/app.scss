@@ -646,15 +646,21 @@ p{
 	}
     .swiper-container {
       width: 100vw;
-      min-height: 80vh;
       background-color: transparent;
       overflow-y: visible;
       overflow-x: hidden;
+      @include media-breakpoint-up(sm) {
+      	min-height: 80vh;
+      }
+      @include media-breakpoint-down(sm) {
+      	min-height: 50vh;
+      	padding:20px 0;
+      }
       	.swiper-pagination{
-			@include media-breakpoint-down(sm) {
+			@include media-breakpoint-down(xs) {
 				top: 0;
 			}
-			@include media-breakpoint-up(sm) {
+			@include media-breakpoint-up(xs) {
 				bottom: 0;
 			}
       	}
@@ -695,7 +701,7 @@ p{
 					padding-left: 7% !important;   
 					padding-right: 7% !important; 	
 				}
-				@include media-breakpoint-down(sm) {
+				@include media-breakpoint-down(xs) {
 					padding-left: 7% !important;   
 					padding-right: 7% !important; 	
 				}
@@ -705,17 +711,21 @@ p{
 					@include media-breakpoint-up(lg) {
 						@include make-col(4);
 					}
-					@include media-breakpoint-between(md,lg) {
+					@include media-breakpoint-between(sm,lg) {
 						@include make-col(4);
 					}
-					@include media-breakpoint-down(sm) {
+					@include media-breakpoint-down(xs) {
 						@include make-col(12);  
 	  
 					}
 					.img-wrapper{
-			    		padding: 20px;
+			    		padding: 20px ;
 			    		margin: 0 auto 0 auto ;
-						@include media-breakpoint-down(sm) {
+			    		@include media-breakpoint-between(sm,md) {
+			    			padding: 0px;
+
+			    		}
+						@include media-breakpoint-down(xs) {
 							max-width: 300px;
 		  
 						}				    		
@@ -744,10 +754,10 @@ p{
 					@include media-breakpoint-up(lg) {
 						@include make-col(7);
 					}
-					@include media-breakpoint-between(md,lg) {
+					@include media-breakpoint-between(sm,lg) {
 						@include make-col(7);
 					}
-					@include media-breakpoint-down(sm) {
+					@include media-breakpoint-down(xs) {
 						@include make-col(12);     
 					}	  
 					.step-container{
@@ -758,18 +768,23 @@ p{
 							display: inline-block;
 							text-align: left;
 							font-weight: 400;
-							font-size: 2vw;
+							@include media-breakpoint-up(md) {
+								font-size: 2vw;
+							}
+							@include media-breakpoint-down(md) {
+								font-size: 3.5vw;
+							}
 						}
 					}  		
 			    	h1{
 			    		text-align: left;
-			    		@include media-breakpoint-down(sm) {
+			    		@include media-breakpoint-down(xs) {
 							font-size: 9vw;
 						}	  
 			    	}
 			    	p{
 			    		text-align: left;
-			    		@include media-breakpoint-down(sm) {
+			    		@include media-breakpoint-down(xs) {
 							font-size: 5vw;
 						}	 
 			    	}

@@ -186,7 +186,7 @@ get_header();
 
 <div class="container-fluid">
 	<section id="how-we-work">
-		<div class="col-sm-12">
+		<div class="col-sm-12 py-3">
 			<h1 class="section-header">Cómo trabajamos...</h1>
 			<p class="highlight">Estamos comprometidos con entregar la mejor solución para sus necesidades.</p>
 			
