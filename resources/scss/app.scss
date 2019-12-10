@@ -1229,20 +1229,46 @@ section > h1.section-header{
 
 .vincent-by-img{
 	display: block;
-	padding: 0 20px ;
+	padding: 20px 20px ;
 	margin: -3vw auto 0 auto;
 	@include media-breakpoint-between(lg,xl) {
 		width: 50%;
+		&.desk{
+			display: block;
+		}
+		&.mov{
+			display: none;
+		}
 	}
 	@include media-breakpoint-between(md,lg) {
-		width: 50%;
+		width: 60%;
+
+		&.desk{
+			display: block;
+		}
+		&.mov{
+			display: none;
+		}
 	}
 	@include media-breakpoint-between(sm,md) {
-		width: 50%;
+		width: 95%;
+
+		&.desk{
+			display: block;
+		}
+		&.mov{
+			display: none;
+		}
 
 	}
 	@include media-breakpoint-down(xs) {
 		width: 100%;
+		&.desk{
+			display: none;
+		}
+		&.mov{
+			display: block;
+		}
 	}
 }
 @import 'generacion';
