@@ -25,6 +25,19 @@
     font-family: 'lg';
     src: url($fa-font-path+'/lg.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'Azo Sans';
+    font-style: normal;
+	font-weight: 700;
+    src: url($fa-font-path+'/AzoSans-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Azo Sans';
+    font-style: normal;
+	font-weight: 400;
+    src: url($fa-font-path+'/AzoSans-Regular.otf') format('opentype');
+}
 
 body{
 	font-family: $font-family-sans-serif;
