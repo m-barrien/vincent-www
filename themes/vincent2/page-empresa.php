@@ -116,7 +116,7 @@
 				<div class="row">
 					<div class="kit-col-container">
 						<a class="gray-container"  href="#slide1">
-							<img src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-3kw.jpg">
+							<img src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-20kw.jpg">
 							<div class="text-body">
 								<div class="little-title">Soluciones Empresa</div>
 								<div class="kw">
@@ -128,7 +128,7 @@
 					</div>	
 					<div class="kit-col-container">
 						<a class="gray-container"  href="#slide2">
-							<img src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-3kw.jpg">
+							<img src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-30kw.jpg">
 							<div class="text-body">
 								<div class="little-title">Soluciones Empresa</div>
 								<div class="kw">
@@ -140,7 +140,7 @@
 					</div>	
 					<div class="kit-col-container">
 						<a class="gray-container"  href="#slide3">
-							<img src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-3kw.jpg">
+							<img src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-50kw.jpg">
 							<div class="text-body">
 								<div class="little-title">Soluciones Empresa</div>
 								<div class="kw">
@@ -152,7 +152,7 @@
 					</div>	
 					<div class="kit-col-container">
 						<a class="gray-container"  href="#slide4">
-							<img src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-3kw.jpg">
+							<img src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-100kw.jpg">
 							<div class="text-body">
 								<div class="little-title">Soluciones Empresa</div>
 								<div class="kw">

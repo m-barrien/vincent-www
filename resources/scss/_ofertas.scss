@@ -169,6 +169,8 @@
 			padding-right: 20%;
 			margin-top: 220px;
 
+			text-shadow: 0px 0px 4px $text-black;
+
 			-webkit-transition: all 1s;
 			-moz-transition: all 1s;
 			-o-transition: all 1s;
@@ -211,7 +213,6 @@
 			}
 			.kw{
 				color: $white;
-				font-size: 60px;
 				font-weight: 800;
 				line-height: 1.2;
 				white-space: nowrap;
@@ -219,6 +220,19 @@
 				-moz-transition: all 1s;
 				-o-transition: all 1s;
 				transition: all 1s;	
+				@include media-breakpoint-between(lg,xl) {
+					font-size: 60px;
+				}
+				@include media-breakpoint-between(md,lg) {
+					font-size: 50px;
+				}
+				@include media-breakpoint-between(sm,md) {
+					font-size: 46px;
+				}
+				@include media-breakpoint-down(xs) {
+					font-size: 12vw;
+				}
+
 
 			}
 		}
