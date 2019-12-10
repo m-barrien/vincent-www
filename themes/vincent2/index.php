@@ -96,7 +96,7 @@ get_header();
 		      		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		      	</h1>
 		      	<div class="hidden-desc">
-			      	<p>Ofrecemos kits diseñados a la medida en soluciones fotovoltaicas y soluciones térmicas para su abastecimiento de electricidad y gas.</p>
+			      	<p>Ofrecemos kits diseñados a la medida en soluciones fotovoltaicas y térmicas para su abastecimiento de electricidad y gas.</p>
 		      		<a href="">Contactactanos</a>
 		      		
 		      	</div>
@@ -430,6 +430,9 @@ get_header();
 		<h1 class="section-header">
 			Productos
 		</h1>
+		<div class="w-100">
+			<img class="lazy vincent-by-img" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png"  data-src="<?php echo get_template_directory_uri() ?>/image/snippets/vincent-by.png">
+		</div>
 			<?php
 			$params = array('posts_per_page' => 15, 
 				'post_type' => 'product',
@@ -445,12 +448,12 @@ get_header();
 				<?php while ($wc_query->have_posts()) :
 			                $wc_query->the_post(); ?>
 					<div class="swiper-slide">
-			        	<a class="product-slide" href="<?php the_permalink(); ?>">
+			        	<div class="product-slide" href="<?php the_permalink(); ?>">
 				        	<img class="img-fluid swiper-lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png"  data-src="<?php the_post_thumbnail_url('thumbnail'); ?>">
 				            <h4 class="product-title">
 				               <?php the_title(); ?>
 				           </h4>
-			           </a>
+			           </div>
 
 					</div>
 			    <?php endwhile; ?>

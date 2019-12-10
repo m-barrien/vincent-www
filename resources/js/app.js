@@ -22,19 +22,19 @@ var swiper_home = new Swiper('.swiper-cover', {
         clickable: true,
       },
       breakpoints: {
-        1500: {
+        1499: {
           slidesPerView: 3,
           spaceBetween: 0,
         },
-        1100: {
+        1099: {
           slidesPerView: 3,
           spaceBetween: 0,
         },
-        900: {
+        899: {
           slidesPerView: 2,
           spaceBetween: 0,
         },
-        576: {
+        575: {
           slidesPerView: 1,
           spaceBetween: 0,
         }

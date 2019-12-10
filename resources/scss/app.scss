@@ -479,12 +479,12 @@ p{
 					padding: .5vw 1.7vw;
 				}				
 				@include media-breakpoint-between(sm,md) {
-					padding: 8px 37px;
+					padding: 8px 25px;
 					font-size: 1.5vw;
 					border-radius: 50px;
 				}
 				@include media-breakpoint-down(xs) {
-					padding: 8px 37px;
+					padding: 8px 25px;
 					font-size: 4vw;
 					border-radius: 50px;
 				}
@@ -1227,6 +1227,24 @@ section > h1.section-header{
 	font-weight: 700;
 }
 
+.vincent-by-img{
+	display: block;
+	padding: 0 20px ;
+	margin: -3vw auto 0 auto;
+	@include media-breakpoint-between(lg,xl) {
+		width: 50%;
+	}
+	@include media-breakpoint-between(md,lg) {
+		width: 50%;
+	}
+	@include media-breakpoint-between(sm,md) {
+		width: 50%;
+
+	}
+	@include media-breakpoint-down(xs) {
+		width: 100%;
+	}
+}
 @import 'generacion';
 @import 'mapa';
 @import 'noticias';
