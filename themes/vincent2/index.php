@@ -1,10 +1,10 @@
 <?php 
 get_header(); 
 ?>
-<div class="w-100">
+<div class="w-100 d-block d-sm-none">
 	<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/test-flyer-mov.jpg">
 </div>
-<div class="w-100">
+<div class="w-100 d-block d-sm-none">
 	<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/test-flyer-mov.jpg">
 </div>
 <div class="ofertas-index-container"><!-- ofertas celu -->
