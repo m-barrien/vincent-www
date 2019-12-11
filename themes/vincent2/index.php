@@ -108,13 +108,6 @@ get_header();
 </div>
 
 <!-- ofertas wide -->
-<div class="container ofertas-wide ofertas-wide-container-header">
-	<section>
-		<div class="col">
-			<h3>Oferta</h3>
-		</div>
-	</section>
-</div>
 <div class="container-fluid ofertas-wide">
 	<section class="">
 		<div class="col-md-12">

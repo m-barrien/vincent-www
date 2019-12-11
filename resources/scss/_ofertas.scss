@@ -1,10 +1,9 @@
 #titulo-ofertas{
 	text-transform: uppercase;
-	color: $text-gray;
+	color: $text-grayer;
 	line-height: 1;
 	span{
 		font-weight: 800;
-		font-style: italic;
 		@include media-breakpoint-between(md,xl) {
 			font-size: 2.2vw;
 		}
@@ -39,7 +38,6 @@
 	h1{
 		margin: 0;
 		text-transform: uppercase;
-		font-style: italic;
 		font-weight: 900;
 		padding-bottom: 20px;
 		@include media-breakpoint-up(sm) {
@@ -51,7 +49,7 @@
 	}
 	p{
 		line-height: 1.1;
-		color: $text-gray;
+		color: $text-grayer;
 		@include media-breakpoint-up(sm) {
 			font-size: 1.8vw;
 		}
@@ -429,7 +427,6 @@
 	font-size: 44px;
 	text-align: center;
 	text-transform: uppercase;
-	font-style: italic;
 	font-weight: 900;
 	margin-top: 7px;
 	margin-bottom: 1px;
@@ -489,7 +486,6 @@
 .oferta-index-title{
 	@extend .mx-auto;
 	display: block;
-	font-style: italic;
     font-weight: bold;
     text-align: left;
     min-width: 70%;
@@ -531,7 +527,6 @@
 	text-align: right;
 	font-size: 14.5vw;
 	font-weight: 900;
-	font-style: italic;
 	color: $vincent-orange;
 	padding-right: 9vw;
 	&:before{
@@ -539,7 +534,6 @@
 		color: $vincent-blue;
 	    font-size: 10vw;
 	    font-weight: 900;
-	    font-style: italic;
 	    margin-left: -6vw;
 	    margin-top: 0;
 	    position: absolute;
@@ -550,9 +544,8 @@
 
 }
 .oferta-index-bullets{
-	color: $text-gray;
+	color: $text-grayer;
     @include media-breakpoint-between(md,xl) {
-		padding-left: 10px;
 		width: 100%;
 		margin-top:0;
     }
@@ -563,11 +556,10 @@
 	    padding-bottom: 10px;
     }
 	.bullet{
-	    padding-top: 2px;
-	    font-size: 20px;
-	    font-style: italic;
+	    font-size: 1.7vw;
 		color: inherit;
 		white-space: nowrap;
+		line-height: 1.2;
 		.bullet-image{
 			width: 24px;
 			height: 20px;
@@ -585,50 +577,57 @@
 }
 
 .swiper-ofertas{
-	height: 28vw;
+	height: 50vw;
 	min-height: 400px;
+	.swiper-pagination{
+		top: 4vw;
+		height: 2vw;
+	}
 }
 .single-oferta-container{
-	@extend .container;
+	@extend .container-fluid;
+	margin-top: 100px;
+	font-family: "Azo Sans";
 	height: auto;
 	background-color: none;
 	cursor: default;
 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
 	h2{
-		color: $text-gray ;
-		font-size: 34px;
+		color: $text-grayer ;
+		font-size: 3.7vw;
 		font-weight: 500;
-		font-style: italic;		
 		span{
 			color: inherit;
-			font-weight: 800;
+			text-transform: lowercase;
 		}
 
 	}
+	h3{
+		font-size: 3.7vw;
+		text-transform: uppercase;
+		font-weight: 900;
+		color: $red-impact;
+	}	
 	@include media-breakpoint-between(md,xl) {
 		.col-fotos{
 			@include make-col-ready();
-			@include make-col(9);
+			@include make-col(4);
 			.col-fotos-kit{
 				z-index: 100;
-				@include make-col(4);
-				.kit-icon{	
-					width:35px;
-					height: 35px;
-					border-radius: 50%;
-				}
-				.kit-footer-icons{
-					position: absolute;
-				}
-				.icon-sello{
-					width: 60px;
-					height: 60px;
+				@include make-col(12);
+				.kit-img{	
+					padding: 0 4vw;
 				}
 
 			}
 		}
 		.col-precio{
-			@include make-col(3);
+			@include make-col(8);
+			padding-left:4vw !important;
 		}
 	}
 	@include media-breakpoint-down(sm) {
@@ -644,21 +643,11 @@
 		display: none;
 	}	
 }
-.ofertas-wide-container-header{
-	margin-top: 100px;
-	h3{
-		font-size: 2.04rem;
-		text-transform: uppercase;
-		font-weight: 900;
-		font-style: italic;
-		color: $red-impact;
-	}
-}
+
 .oferta-wide-pricetag{
 	color: $red-impact;
 	font-weight: 900;
-	font-style: italic;
-	text-align: right;
+	text-align: left;
 	white-space: nowrap;
 	width: 100%;
 	font-size: 3.5vw;
@@ -667,7 +656,6 @@
 		color: inherit;
 	    font-size: 2vw;
 	    font-weight: inherit;
-	    font-style: italic;
 	    margin-left: -1.3vw;
 		margin-top: 1vw;
 	    position: absolute;
@@ -681,71 +669,15 @@
 	    margin-top: 4vw;
 	}
 }
-
-.oferta-wide-contacto-container{
+.valor-oferta{
 	width: 100%;
-	height: 50px ;
-	color: $white;
-	display: block;
-
-	.oferta-wide-contacto-button{
-		@extend .mx-auto;
-		cursor: pointer;
-		display: block;
-		overflow: hidden;
-		width: 200px;
-		height: 50px;
-		margin-top: 10px;
-		&:hover{
-			.oferta-wide-contacto-bg{
-				-webkit-transform: all .5s;
-				-moz-transform: all .5s;
-				-o-transform: all .5s;
-				transform: all .5s;			
-
-				background-color: $white;
-			}
-			.oferta-wide-contacto-text{
-				color: $red-impact;
-			}
-		}
-		.oferta-wide-contacto-text{
-			position: absolute;
-			width: 200px;
-			height: 50px;
-			color: $white;
-			z-index: 101;
-			text-align: center;
-			font-weight: 700;
-			font-size: 2vw;			
-			padding-top: 3px;
-
-			-webkit-transition: .5s ease-in-out;
-			-moz-transition: .5s ease-in-out;
-			-o-transition: .5s ease-in-out;
-			transition: .5s ease-in-out;			
-		}
-		.oferta-wide-contacto-bg{
-			display: block;
-			position: absolute;
-			background-color: $red-impact;
-			width: 200px;
-			height: 50px;
-			margin-right: 100%;
-			z-index: 100;
-
-			border-radius: 10px;
-			border-width: 2px;
-			border-style: solid;
-			border-color: $red-impact;			
-
-			-webkit-transition: .5s ease-in-out;
-			-moz-transition: .5s ease-in-out;
-			-o-transition: .5s ease-in-out;
-			transition: .5s ease-in-out;
-		}
-	}
+	font-size: 2vw;
+	font-weight: 500;
+	color: $red-impact;
+	margin-top: 2vw;
+	margin-bottom: -1vw;
 }
+
 
 .footer-ofertas-container{
 	@extend .container-fluid;
@@ -756,5 +688,20 @@
 	padding: 0 $grid-gutter-width/2;
 	.descripcion-oferta{
 		min-height: 200px;
+	}
+}
+.oferta-wide-footer{
+	display: block;
+	width: 100%;
+	.proud-to-be{
+		width: 5vw;
+		height: auto;
+		margin: 0 auto;
+	}
+	.cgreen-logo{
+		position:absolute;
+		width: 6vw;
+		left: 1vw;
+		top:30vw;
 	}
 }
