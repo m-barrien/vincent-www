@@ -4,10 +4,6 @@ get_header();
 <div class="ofertas-index-container"><!-- ofertas celu -->
 	<div class="ofertas-index-header-line"></div>
 	<div class="ofertas-index-header">
-		<div class="col">
-			OFERTAS
-			
-		</div>
 	</div>
 	<?php
 	wp_reset_postdata();
@@ -15,7 +11,7 @@ get_header();
     $args= array(
 	'post_type' => array('oferta'),
 	'post_status' => 'publish',
-	'posts_per_page' => 2,
+	'posts_per_page' => 4,
 	'meta_key'		=> 'featured',
 	'orderby'		=> 'meta_value',
 	'order'			=> 'DESC'
@@ -34,12 +30,12 @@ get_header();
 							get_template_part( 'template-parts/oferta-movil-index', 'single' ); 
 						}
 						else{
-							get_template_part( 'template-parts/oferta-movil-index-lazy', 'single' ); 
+							get_template_part( 'template-parts/oferta-movil-index', 'single' ); 
 
 						}
 						$i +=1; 
 						?>
-					
+					<div class="ofertas-index-header-line my-4"></div>
 				<?php
 
 		endwhile;

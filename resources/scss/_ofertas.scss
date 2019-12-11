@@ -434,18 +434,7 @@
 		width: 100%;
 	}
 }
-.oferta-index-banner-image, .oferta-index-contacto{
-	@include make-col(12);
-	display: block;
-}
-.oferta-index-contacto{
-	background-color: $vincent-blue;
-	color: #fff;
-	font-size: 50px;
-	text-align: center;
-	text-transform: uppercase;
-	font-weight: 900;	
-}
+
 
 .oferta-index-category-kit-img{
 	@extend .flex-container;
@@ -454,34 +443,17 @@
 		width: 100%;
 		height: auto;
 	}
-	.left-img{
-		width: 17vw;
-		.italian-flag{
-			position: absolute;
-			height: auto;
-			width: 5vw;
-			margin-right: 0;
-			margin-left: 13vw;
-			border-radius: 50%;
-			margin-top: -1vw;
-			overflow: hidden;
-			img{
-				margin-top: -4px;
-			}
-		}
-	}
 	.center-img{
 		height: auto;
-		width: 40vw;
-
-	}
-	.right-img{
-		width: 17vw;
+		width: 64vw;
 
 	}
 }
 .oferta-index-single-row{
 	@include make-row();
+	background-position: contain;
+	background-repeat: no-repeat;
+	background-size: cover;	
 }
 .oferta-index-title{
 	@extend .mx-auto;
@@ -501,23 +473,6 @@
 }
 .oferta-index-single-row{
 }
-
-.oferta-index-title-svg{
-	width: 100%;
-	margin-left: -15px;
-	svg{
-		width: 100%;
-		height: auto;
-	}
-	text.cls-2{
-		fill: $vincent-blue;
-	}
-	text.cls-3, text.cls-4{
-		fill: $vincent-orange;
-	}
-}
-
-
 
 
 .oferta-index-price-header{
@@ -545,18 +500,18 @@
 }
 .oferta-index-bullets{
 	color: $text-grayer;
-    @include media-breakpoint-between(md,xl) {
-		width: 100%;
+	width: 100%;
+    @include media-breakpoint-up(xs) {
 		margin-top:0;
+		font-size:1.7vw;
     }
-    @include media-breakpoint-between(xs,sm) {
-		padding-left: 20%;
-		width: 100%;
-	    margin-top: -7px;
-	    padding-bottom: 10px;
+    @include media-breakpoint-down(xs) {
+		font-size:3.5vw;
+		font-weight: 500;
+	    padding: 2vw 10vw;
     }
 	.bullet{
-	    font-size: 1.7vw;
+	    font-size: inherit;
 		color: inherit;
 		white-space: nowrap;
 		line-height: 1.2;
@@ -584,6 +539,38 @@
 		height: 2vw;
 	}
 }
+h3.super-oferta{
+	text-transform: uppercase;
+	color: $red-impact;
+	@include media-breakpoint-up(xs) {
+		font-size: 3.7vw;
+		font-weight: 900;
+	}		
+	@include media-breakpoint-down(xs) {
+		font-size: 8vw;
+		text-align: center;
+		font-weight: 700;
+
+	}		
+}	
+h2.titulo-oferta{
+	color: $text-grayer ;
+	font-weight: 500;
+	span{
+		color: inherit;
+		text-transform: lowercase;
+	}
+	@include media-breakpoint-up(xs) {
+		font-size: 3.7vw;
+	}		
+	@include media-breakpoint-down(xs) {
+		text-align: center;
+		font-size: 7.75vw;
+		font-weight: 700;
+
+	}	
+
+}
 .single-oferta-container{
 	@extend .container-fluid;
 	margin-top: 100px;
@@ -596,22 +583,6 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 
-	h2{
-		color: $text-grayer ;
-		font-size: 3.7vw;
-		font-weight: 500;
-		span{
-			color: inherit;
-			text-transform: lowercase;
-		}
-
-	}
-	h3{
-		font-size: 3.7vw;
-		text-transform: uppercase;
-		font-weight: 900;
-		color: $red-impact;
-	}	
 	@include media-breakpoint-between(md,xl) {
 		.col-fotos{
 			@include make-col-ready();
@@ -647,31 +618,60 @@
 .oferta-wide-pricetag{
 	color: $red-impact;
 	font-weight: 900;
-	text-align: left;
 	white-space: nowrap;
 	width: 100%;
-	font-size: 3.5vw;
+	@include media-breakpoint-up(xs) {
+		text-align: left;
+		font-size: 3.5vw;
+	}
+	@include media-breakpoint-down(xs) {
+		text-align: left;
+		font-size: 9vw;
+	}		
+
 	&:before{
 		content: "$";
 		color: inherit;
-	    font-size: 2vw;
+		@include media-breakpoint-up(xs) {
+			font-size: 2vw;
+		    margin-left: -1.3vw;
+			margin-top: 1vw;
+		}
+		@include media-breakpoint-down(xs) {
+			font-size: 5.14vw;
+		    margin-left: -5.3vw;
+			margin-top: 3vw;
+		}		
 	    font-weight: inherit;
-	    margin-left: -1.3vw;
-		margin-top: 1vw;
 	    position: absolute;
 	}
 	&:after{
 		content: "(Precio con IVA incluido)";
 		color: inherit;
-		font-size: 1vw;
+
+		@include media-breakpoint-up(xs) {
+			font-size: 1vw;
+		    margin-left: -13.4vw;
+		    margin-top: 4vw;
+		}
+		@include media-breakpoint-down(xs) {
+			font-size: 2.57vw;
+		    margin-left: -30.4vw;
+		    margin-top: 11vw;
+		}		
 	    position: absolute;
-	    margin-left: -13.4vw;
-	    margin-top: 4vw;
 	}
 }
 .valor-oferta{
 	width: 100%;
-	font-size: 2vw;
+	@include media-breakpoint-up(xs) {
+		font-size: 2vw;
+	}
+	@include media-breakpoint-down(xs) {
+		font-size: 4.14vw;
+		font-weight: 500;
+		line-height: 0;
+	}
 	font-weight: 500;
 	color: $red-impact;
 	margin-top: 2vw;
@@ -694,9 +694,17 @@
 	display: block;
 	width: 100%;
 	.proud-to-be{
-		width: 5vw;
 		height: auto;
 		margin: 0 auto;
+		@include media-breakpoint-up(xs) {
+			width: 5vw;
+		}
+		@include media-breakpoint-down(xs) {
+			width: 20vw;
+			padding-top: 16vw;
+		    padding-bottom: 5px;
+
+		}
 	}
 	.cgreen-logo{
 		position:absolute;
@@ -704,4 +712,13 @@
 		left: 1vw;
 		top:30vw;
 	}
+}
+.oferta-price-mov-container{
+	display: block;
+	width: 100%;
+	padding:0 25vw;
+}
+.oferta-mov-header{
+	width: 100%;
+
 }

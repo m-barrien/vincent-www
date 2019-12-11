@@ -7,12 +7,12 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 }						
 ?>
 
-<div class="single-oferta-container">
+<div class="single-oferta-container swiper-lazy" data-background="<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-bg.jpg">
 	<div class="row">
 		<div class="col-fotos">
 			<div class="row">
 				<div class="col">
-					<h3>Super oferta</h3>
+					<h3 class="super-oferta">Super oferta</h3>
 				</div>
 			</div>
 			<div class="row">
@@ -28,7 +28,7 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 			</div>
 		</div>
 		<div class="col-precio">
-			<h2>Kit Solar OnGrid
+			<h2 class="titulo-oferta">Kit Solar OnGrid
 				<br>
 				<span><?php echo $short_title;  ?></span>
 			</h2>
