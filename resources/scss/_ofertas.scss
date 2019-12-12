@@ -1,3 +1,4 @@
+$factor-kit:1;
 #titulo-ofertas{
 	text-transform: uppercase;
 	color: $text-grayer;
@@ -503,12 +504,12 @@
 	width: 100%;
     @include media-breakpoint-up(xs) {
 		margin-top:0;
-		font-size:1.7vw;
+		font-size:1.7vw ;
     }
     @include media-breakpoint-down(xs) {
-		font-size:3.5vw;
+		font-size:3.5vw ;
 		font-weight: 500;
-	    padding: 2vw 10vw;
+	    padding: 2vw  10vw ;
     }
 	.bullet{
 	    font-size: inherit;
@@ -516,8 +517,8 @@
 		white-space: nowrap;
 		line-height: 1.2;
 		.bullet-image{
-			width: 24px;
-			height: 20px;
+			width: 24px ;
+			height: 20px ;
 			display: inline-block;
 		}
 	}
@@ -543,11 +544,11 @@ h3.super-oferta{
 	text-transform: uppercase;
 	color: $red-impact;
 	@include media-breakpoint-up(xs) {
-		font-size: 3.7vw;
+		font-size: 3.7vw ;
 		font-weight: 900;
 	}		
 	@include media-breakpoint-down(xs) {
-		font-size: 8vw;
+		font-size: 8vw ;
 		text-align: center;
 		font-weight: 700;
 
@@ -561,11 +562,11 @@ h2.titulo-oferta{
 		text-transform: lowercase;
 	}
 	@include media-breakpoint-up(xs) {
-		font-size: 3.7vw;
+		font-size: 3.7vw ;
 	}		
 	@include media-breakpoint-down(xs) {
 		text-align: center;
-		font-size: 7.75vw;
+		font-size: 7.75vw ;
 		font-weight: 700;
 
 	}	
@@ -578,8 +579,7 @@ h2.titulo-oferta{
 	height: auto;
 	background-color: none;
 	cursor: default;
-	padding-top:1vw;
-	padding-bottom:1vw;
+	padding: 3vw ;
 
 	background-position: center;
 	background-repeat: no-repeat;
@@ -593,14 +593,14 @@ h2.titulo-oferta{
 				z-index: 100;
 				@include make-col(12);
 				.kit-img{	
-					padding: 0 4vw;
+					padding: 0 4vw ;
 				}
 
 			}
 		}
 		.col-precio{
 			@include make-col(8);
-			padding-left:4vw !important;
+			padding-left:4vw  !important;
 		}
 	}
 	@include media-breakpoint-down(xs) {
@@ -625,25 +625,25 @@ h2.titulo-oferta{
 	width: 100%;
 	@include media-breakpoint-up(xs) {
 		text-align: left;
-		font-size: 3.5vw;
+		font-size: 3.5vw ;
 	}
 	@include media-breakpoint-down(xs) {
 		text-align: left;
-		font-size: 9vw;
+		font-size: 9vw ;
 	}		
 
 	&:before{
 		content: "$";
 		color: inherit;
 		@include media-breakpoint-up(xs) {
-			font-size: 2vw;
-		    margin-left: -1.3vw;
-			margin-top: 1vw;
+			font-size: 2vw ;
+		    margin-left: -1.3vw ;
+			margin-top: 1vw ;
 		}
 		@include media-breakpoint-down(xs) {
-			font-size: 5.14vw;
-		    margin-left: -5.3vw;
-			margin-top: 3vw;
+			font-size: 5.14vw ;
+		    margin-left: -5.3vw ;
+			margin-top: 3vw ;
 		}		
 	    font-weight: inherit;
 	    position: absolute;
@@ -653,14 +653,14 @@ h2.titulo-oferta{
 		color: inherit;
 
 		@include media-breakpoint-up(xs) {
-			font-size: 1vw;
-		    margin-left: -13.4vw;
-		    margin-top: 4vw;
+			font-size: 1vw ;
+		    margin-left: -13.4vw ;
+		    margin-top: 4vw ;
 		}
 		@include media-breakpoint-down(xs) {
-			font-size: 2.57vw;
-		    margin-left: -30.4vw;
-		    margin-top: 11vw;
+			font-size: 2.57vw ;
+		    margin-left: -30.4vw ;
+		    margin-top: 11vw ;
 		}		
 	    position: absolute;
 	}
@@ -668,17 +668,17 @@ h2.titulo-oferta{
 .valor-oferta{
 	width: 100%;
 	@include media-breakpoint-up(xs) {
-		font-size: 2vw;
+		font-size: 2vw ;
 	}
 	@include media-breakpoint-down(xs) {
-		font-size: 4.14vw;
+		font-size: 4.14vw ;
 		font-weight: 500;
 		line-height: 0;
 	}
 	font-weight: 500;
 	color: $red-impact;
-	margin-top: 2vw;
-	margin-bottom: -1vw;
+	margin-top: 2vw ;
+	margin-bottom: -1vw ;
 }
 
 

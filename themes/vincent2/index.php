@@ -110,51 +110,47 @@ get_header();
 </div>
 
 <!-- ofertas wide -->
-<div class="container-fluid ofertas-wide">
-	<section class="">
-		<div class="col-md-12">
-			<div class="swiper-container swiper-ofertas">
-				<div class="swiper-wrapper">
-				<?php
-				wp_reset_postdata();
-			    wp_reset_query();
-			    $args= array(
-				'post_type' => array('oferta'),
-				'post_status' => 'publish',
-				'posts_per_page' => -1,
-				'meta_key'		=> 'featured',
-				'orderby'		=> 'meta_value',
-				'order'			=> 'DESC'
-				);
+<div class="ofertas-wide">
+	<div class="swiper-container swiper-ofertas">
+		<div class="swiper-wrapper">
+		<?php
+		wp_reset_postdata();
+	    wp_reset_query();
+	    $args= array(
+		'post_type' => array('oferta'),
+		'post_status' => 'publish',
+		'posts_per_page' => -1,
+		'meta_key'		=> 'featured',
+		'orderby'		=> 'meta_value',
+		'order'			=> 'DESC'
+		);
 
-				$loop = new WP_Query( $args );
-				?>	
-			    <?php
-			    	$i=0;
-					while ( $loop->have_posts() ) : $loop->the_post();
-						$image = null;
-							?>
+		$loop = new WP_Query( $args );
+		?>	
+	    <?php
+	    	$i=0;
+			while ( $loop->have_posts() ) : $loop->the_post();
+				$image = null;
+					?>
 
-						<div class="swiper-slide">
-							<?php get_template_part( 'template-parts/oferta-wide', 'single' ); ?>
-						</div>
-								
-							<?php
-
-					endwhile;
-					wp_reset_postdata();
-			        wp_reset_query();
-				?>
-
+				<div class="swiper-slide">
+					<?php get_template_part( 'template-parts/oferta-wide', 'single' ); ?>
 				</div>
+						
+					<?php
 
-				<!-- Add Pagination -->
-				<div class="swiper-pagination"></div>
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>				
-			</div>
+			endwhile;
+			wp_reset_postdata();
+	        wp_reset_query();
+		?>
+
 		</div>
-	</section>
+
+		<!-- Add Pagination -->
+		<div class="swiper-pagination"></div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>				
+	</div>
 </div>
 
 <!-- Banner a seccion de hogar -->
