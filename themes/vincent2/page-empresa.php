@@ -72,14 +72,14 @@
 
 <div class="gallery-container">
 	<h1>Galería de proyecto <strong>empresas</strong></h1>
-	<div id="lightgallery" class="w-100">
+	<div id="lightgallery" class="gallery">
 			<?php
 			$args = array(
 			        'post_type' => 'attachment',
 			        'post_mime_type' => 'image',
 			        'orderby' => 'post_date',
 			        'order' => 'desc',
-			        'posts_per_page' => '8',
+			        'posts_per_page' => '-1',
 			        'post_status'    => 'inherit',
 			        'category_name'=>'empresas',
 			         );

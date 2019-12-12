@@ -1230,6 +1230,10 @@ section > h1.section-header{
 	padding-top: $section-padding-top;
 	padding-bottom:$section-padding-bottom;
 
+	&.in-main-page{
+		padding-top: 0;
+		padding-bottom:$section-padding-bottom;		
+	}
 	h1{
 		@include media-breakpoint-up(sm) {
 			margin-bottom: 3vw;
@@ -1238,9 +1242,31 @@ section > h1.section-header{
 			margin-bottom: 20px;	
 		}
 	}
+	.gallery{
+		display: -webkit-box; 
+		display: -webkit-flex; 
+		display: -moz-box; 
+		display: -ms-flexbox; 
+		display: flex; 
+		-webkit-box-align: flex-start; 
+		-webkit-align-items: flex-start; 
+		-moz-box-align: flex-start; 
+		-ms-flex-align: flex-start; 
+		align-items: flex-start; 
+		-webkit-box-pack: flex-start; 
+		-webkit-justify-content: flex-start; 
+		-moz-box-pack: flex-start; 
+		-ms-flex-pack: flex-start; 
+		justify-content: flex-start;
+		margin: auto;
+		max-width: 100%;
+		overflow-y:auto;
+		flex-direction:row;
+	}
 }
 .gallery-img-wrapper{
 	display: inline-block;
+	align-self: stretch;
 	width: 9vw;
 	min-width: 100px;
 	margin-right: 4vw;
