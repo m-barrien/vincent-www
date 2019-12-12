@@ -660,8 +660,13 @@ p{
 	}
 	p{
 		text-align: center;
-		line-height: 1.5;
 		color: $baby-blue-text;
+		@include media-breakpoint-up(sm) {
+			line-height: 1.5;
+		}
+		@include media-breakpoint-down(sm) {
+			line-height: 1.2;
+		}
 	}
 	.cloud-container{
 		margin-top:-5vw;
@@ -793,11 +798,14 @@ p{
 							display: inline-block;
 							text-align: left;
 							font-weight: 400;
-							@include media-breakpoint-up(md) {
+							@include media-breakpoint-between(md,xl) {
 								font-size: 2vw;
 							}
-							@include media-breakpoint-down(md) {
+							@include media-breakpoint-between(sm,md) {
 								font-size: 3.5vw;
+							}
+							@include media-breakpoint-down(xs) {
+								font-size: 6vw;
 							}
 						}
 					}  		
@@ -1242,7 +1250,7 @@ section > h1.section-header{
 			margin-bottom: 20px;	
 		}
 	}
-	.gallery{
+	.lightgallery{
 		display: -webkit-box; 
 		display: -webkit-flex; 
 		display: -moz-box; 

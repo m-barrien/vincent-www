@@ -166,7 +166,7 @@ get_header();
 					La energía solar es fácil con Vincent Solar.
 				</h1>
 				<p>
-					Con más de 30 años en el rubro a nivel internacional, somos expertos en proyectos residenciales y empresariales.
+					Con más de 30 años en el rubro a nivel internacional, somos expertos en soluciones residenciales y empresariales.
 				</p>
 				<a class="orange-with-arrow" href="/soluciones-hogar">Más sobre energía solar</a>
 			</div>
@@ -198,28 +198,12 @@ get_header();
 									<div class="step-container">
 										<span class="bar-number">Paso 1</span>
 									</div>
-									<h1>Inspección</h1>
-									<p class="highlight">Revisamos los detalles de la factibilidad ofreciendo asesoria para su instalación.</p>
+									<h1>Inspección &amp; Oferta</h1>
+									<p class="highlight">Revisamos los detalles de la factibilidad ofreciendo asesoria para su instalación. Explicamos los detalles y el tipo de soluciones que vamos a implementar considerando la necesidad del cliente.</p>
 								</div>
 							</div>	
 						</div>
-						<div class="swiper-slide">
-							<div class="how-we-work-slide">
-								<div class="img-container">
-									<div class="img-wrapper">
-										<img class="swiper-lazy bubble-img" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAQAAAD8IX00AAAADklEQVR42mNkAANGFAoAAD8ABLZPixAAAAAASUVORK5CYII=" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/contrato.jpg">
-										<div class="swiper-lazy-preloader"></div>
-									</div>
-								</div>
-								<div class="text-container">
-									<div class="step-container">
-										<span class="bar-number">Paso 2</span>
-									</div>
-									<h1>Oferta a la medida</h1>
-									<p class="highlight">Explicamos los detalles y el tipo de soluciones que vamos a implementar considerando la necesidad del cliente.</p>
-								</div>
-							</div>	
-						</div>
+
 						<div class="swiper-slide">
 							<div class="how-we-work-slide">
 								<div class="img-container">
@@ -230,7 +214,7 @@ get_header();
 								</div>
 								<div class="text-container">
 									<div class="step-container">
-										<span class="bar-number">Paso 3</span>
+										<span class="bar-number">Paso 2</span>
 									</div>
 									<h1>Instalación</h1>
 									<p class="highlight">Instalamos con el más alto estándar de certificación a nivel nacional e internacional. Nuestros clientes siempre recomiendan nuestro servicio por su eficiencia.</p>
@@ -247,7 +231,7 @@ get_header();
 								</div>
 								<div class="text-container">
 									<div class="step-container">
-										<span class="bar-number">Paso 4</span>
+										<span class="bar-number">Paso 3</span>
 									</div>
 									<h1>¡Hecho!</h1>
 									<p class="highlight">
@@ -270,10 +254,10 @@ get_header();
 								</div>
 								<div class="text-container">
 									<div class="step-container">
-										<span class="bar-number">Paso 5</span>
+										<span class="bar-number">Paso 4</span>
 									</div>
 									<h1>Soporte &amp; posventa</h1>
-									<p class="highlight">Con nuestra garantía de 5 años sobre la instalación, lider en el mercado, ofrecemos asesoría y soporte a todos nuestros clientes.</p>
+									<p class="highlight">Nuestra garant&iacute;a  <i>World-Class</i> es de 5 años sobre la instalación, lider en el mercado, ofrecemos asesoría y soporte a todos nuestros clientes.</p>
 								</div>
 							</div>	
 						</div>						
@@ -303,7 +287,7 @@ get_header();
 					La mejor solución para tu necesidad
 				</h1>
 				<p>
-					<strong>Vincent Solar</strong> es sinónimo de calidad en todos los productos que instalamos, trabajando con prestigiosas marcas y equipamiento que hacen posible nuestra <strong>garantía por 5 años</strong> sobre su instalación.
+					Vincent Solar es sinónimo de calidad en todos los productos, trabajando con prestigiosas marcas y equipamiento que hacen posible nuestra garantía <i>World-Class</i> por 5 años sobre su instalación.
 				</p>
 				<a class="orange-with-arrow" href="#">Conozca más sobre nuestros equipos </a>
 			</div>
@@ -312,8 +296,9 @@ get_header();
 </div>
 <!-- Banner a calidad productos -->
 <div class="gallery-container in-main-page">
-	<h1>Galería de proyecto <strong>hogar</strong></h1>
-	<div id="lightgallery" class="gallery">
+	<h1>Algunos <strong>proyectos</strong> realizados</h1>
+	<h2 class="pt-2">Residenciales</h2>
+	<div class="lightgallery">
 			<?php
 			$args = array(
 			        'post_type' => 'attachment',
@@ -344,6 +329,38 @@ get_header();
 			endwhile;				    
 			?>			
 	</div>
+	<h2 class="pt-2">Empresas</h2>
+	<div class="lightgallery">
+			<?php
+			$args = array(
+			        'post_type' => 'attachment',
+			        'post_mime_type' => 'image',
+			        'orderby' => 'post_date',
+			        'order' => 'desc',
+			        'posts_per_page' => '-1',
+			        'post_status'    => 'inherit',
+			        'category_name'=>'empresas',
+			         );
+
+			$loop = new WP_Query( $args );
+			while ( $loop->have_posts() ) : $loop->the_post();
+				$image = wp_get_attachment_image_src( get_the_ID(), $size="large" ); 
+				$image_thumb = wp_get_attachment_image_src( get_the_ID(), $size="thumbnail" ); 
+					?>
+				<a class="gallery-img-wrapper" href="<?php echo $image[0]; ?>">
+					<img class="d-none lazy" data-src="<?php echo $image_thumb[0]; ?>">
+					<div class="gallery-image bg-lazy" data-src="<?php echo $image_thumb[0]; ?>" hd-src="<?php echo $image[0]; ?>">
+						
+					</div>
+					<p class="gallery-title">
+						<?php echo mb_strimwidth(get_the_title(), 0, 33, '...');?>
+					</p>
+				</a>
+
+				<?php
+			endwhile;				    
+			?>			
+	</div>	
 </div>
 
 <!-- SECCION MAPA -->

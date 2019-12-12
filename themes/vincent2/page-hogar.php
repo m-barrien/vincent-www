@@ -85,7 +85,7 @@
 
 <div class="gallery-container">
 	<h1>Galería de proyecto <strong>hogar</strong></h1>
-	<div id="lightgallery" class="gallery">
+	<div id="" class="lightgallery">
 			<?php
 			$args = array(
 			        'post_type' => 'attachment',
