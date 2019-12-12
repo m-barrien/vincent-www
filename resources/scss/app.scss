@@ -295,14 +295,14 @@ p{
 	h2{
 		padding-top: $section-padding-top / 3;
 		font-size: 28px;
-		font-weight: 900;
+		font-weight: 700;
 		margin-bottom: 10px;
 	}
 	h3{
 		font-size: 22px;
-		color: $baby-blue-text;
+		color: $text-gray;
 		line-height: 30px;
-		font-weight: 900;		
+		font-weight: 700;		
 	}
 	p{
 		color: $text-black;
@@ -391,7 +391,7 @@ p{
     margin-bottom: 5px;
     line-height: 20px;
     font-family: pragmatica-condensed,sans-serif;
-    color: $baby-blue-text;
+    color: $text-gray;
 }
 .site-cover{
 	position: relative;
@@ -660,7 +660,7 @@ p{
 	}
 	p{
 		text-align: center;
-		color: $baby-blue-text;
+		color: $text-gray;
 		@include media-breakpoint-up(sm) {
 			line-height: 1.5;
 		}
