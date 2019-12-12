@@ -7,7 +7,7 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 }						
 ?>
 
-<div class="single-oferta-container swiper-lazy" data-background="<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-bg.jpg">
+<a href="<?php the_permalink(); ?>" class="single-oferta-container swiper-lazy" data-background="<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-bg.jpg">
 	<div class="row">
 		<div class="col-fotos">
 			<div class="row">
@@ -90,5 +90,5 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 			<img class="swiper-lazy img-fluid" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/proud-to-be.png">
 		</div>
 	</div>
-</div>
+</a>
 

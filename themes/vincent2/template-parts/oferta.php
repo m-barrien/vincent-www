@@ -11,20 +11,6 @@ if ($tax_term) {
 		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-group-image.png">
 	</div>
 	<div class="oferta-description-container">
-		<div class="oferta-consultar-button">
-			<div class="consultar-button-wrapper">
-				<a class="consultar-button" href="/">Consultar</a>
-				
-			</div>
-		</div>
-		<div class="oferta-price-header">
-			<div class="">
-				<span class="price-tag">
-					<?php echo get_post_meta($post->ID, 'price-tag')[0] ; ?>
-				</span>
-				<span class="price-facilidades">Facilidades de pago </span>
-			</div>
-		</div>
 		<?php the_content() ;?>
 	</div>
 	<div class="oferta-gallery-container">
