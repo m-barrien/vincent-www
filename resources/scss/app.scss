@@ -1018,7 +1018,7 @@ footer{
 }
 .half-banner-body{
 	@include make-col-ready();
-	@include media-breakpoint-between(md,lg) {
+	@include media-breakpoint-between(md,xl) {
 		@include make-col(6);
 		&.right{
 			@include make-col-offset(6);
