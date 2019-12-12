@@ -680,7 +680,8 @@ p{
       overflow-y: visible;
       overflow-x: hidden;
       @include media-breakpoint-up(sm) {
-      	min-height: 80vh;
+      	min-height: 0;
+      	padding-top:30px;
       }
       @include media-breakpoint-down(sm) {
       	min-height: 50vh;
