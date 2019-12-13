@@ -3,6 +3,7 @@ $tax_term = get_the_terms( get_the_ID() ,'tipo-kit');
 $oferta_category ="Instalaci&oacute;n Residencial";
 if ($tax_term) {
 	$oferta_category = $tax_term[0]->name;
+	$parent_name= $tax_term[1]->name;
 }
 $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 ?>
@@ -10,6 +11,9 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 	<div class="oferta-mov-header">
 		<h2 class="titulo-oferta">Kit Solar <?php the_title(); ?>
 		</h2>
+	</div>
+	<div class="superoferta-wrapper">
+		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/superoferta.png">
 	</div>
 	<div class="oferta-index-category-kit-img">
 		<div class="center-img">
@@ -29,6 +33,12 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 				<div class="bullet-image">
 					<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/check.svg">
 				</div>
+				Instalacion Incluida
+			</div>
+			<div class="bullet">
+				<div class="bullet-image">
+					<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/check.svg">
+				</div>
 				Paneles Solares Sunergy o Canadian Solar
 			</div>
 			<div class="bullet">
@@ -42,12 +52,6 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 					<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/check.svg">
 				</div>
 				Certificacion SEC e Internacional
-			</div>
-			<div class="bullet">
-				<div class="bullet-image">
-					<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/check.svg">
-				</div>
-				Instalacion Incluida
 			</div>
 			<div class="bullet">
 				<div class="bullet-image">

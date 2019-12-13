@@ -515,7 +515,7 @@ h2.titulo-oferta{
 		font-size: 7vw ;
 		font-weight: 700;
 		margin-top:20px;
-
+		letter-spacing: -1.75px;
 	}	
 
 }
@@ -672,4 +672,15 @@ h2.titulo-oferta{
 .oferta-mov-header{
 	width: 100%;
 
+}
+.superoferta-wrapper{
+	height: 0;
+	width: 100%;
+	position: relative;
+    width: 27%;
+	overflow: visible;
+	pointer-events: none;
+	img{
+		margin-left: 50vw ;
+	}
 }

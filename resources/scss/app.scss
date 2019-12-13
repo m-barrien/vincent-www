@@ -1353,6 +1353,18 @@ section > h1.section-header{
 		}
 	}
 }
+
+//galeria movil
+@include media-breakpoint-down(xs) {
+	button.lg-next{
+		min-width: 0;
+		width: 10vw;
+	}
+	button.lg-prev{
+		min-width: 0;
+		width: 10vw;
+	}
+}
 @import 'generacion';
 @import 'mapa';
 @import 'noticias';

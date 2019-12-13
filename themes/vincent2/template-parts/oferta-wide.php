@@ -3,8 +3,9 @@ $oferta_category ="Instalaci&oacute;n Residencial";
 $tax_term = get_the_terms( get_the_ID() ,'tipo-kit');
 if ($tax_term) {
 $oferta_category = $tax_term[0]->name;
-$short_title=get_post_meta($post->ID, 'short-title')[0] ;
+$parent_name= $tax_term[1]->name;
 }						
+$short_title=get_post_meta($post->ID, 'short-title')[0] ;
 ?>
 
 <div class="single-oferta-container swiper-lazy" data-background="<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-bg.jpg">
@@ -28,11 +29,17 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 			</div>
 		</div>
 		<div class="col-precio">
-			<h2 class="titulo-oferta">Kit Solar OnGrid
+			<h2 class="titulo-oferta">Kit Solar <?php echo $parent_name; ?>
 				<br>
 				<span><?php echo $short_title;  ?></span>
 			</h2>
 			<div class="oferta-index-bullets">
+				<div class="bullet">
+					<div class="bullet-image">
+						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/check.svg">
+					</div>
+					Instalacion Incluida
+				</div>
 				<div class="bullet">
 					<div class="bullet-image">
 						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/check.svg">
@@ -50,12 +57,6 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/check.svg">
 					</div>
 					Certificacion SEC e Internacional
-				</div>
-				<div class="bullet">
-					<div class="bullet-image">
-						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/check.svg">
-					</div>
-					Instalacion Incluida
 				</div>
 				<div class="bullet">
 					<div class="bullet-image">
