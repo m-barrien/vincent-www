@@ -448,13 +448,14 @@
 	font-family: 'Azo Sans';
 	color: $text-grayer;
 	width: 100%;
+	font-weight: 500;
     @include media-breakpoint-up(xs) {
 		margin-top:0;
 		font-size:1.7vw ;
+		padding-bottom:3vw;
     }
     @include media-breakpoint-down(xs) {
 		font-size:3.5vw ;
-		font-weight: 500;
 	    padding: 2vw 0 2vw 18vw  ;
 	    letter-spacing: -1.5px;
     }
@@ -490,20 +491,7 @@
 		height: 2vw;
 	}
 }
-h3.super-oferta{
-	text-transform: uppercase;
-	color: $red-impact;
-	@include media-breakpoint-up(xs) {
-		font-size: 3.7vw ;
-		font-weight: 900;
-	}		
-	@include media-breakpoint-down(xs) {
-		font-size: 8vw ;
-		text-align: center;
-		font-weight: 700;
 
-	}		
-}	
 h2.titulo-oferta{
 	color: $text-grayer ;
 	font-weight: 500;
@@ -543,10 +531,11 @@ h2.titulo-oferta{
 			@include make-col-ready();
 			@include make-col(4);
 			.col-fotos-kit{
-				z-index: 100;
+				z-index: 1;
+				position:relative;
 				@include make-col(12);
 				.kit-img{	
-					padding: 0 4vw ;
+					padding: 0 0vw ;
 				}
 
 			}
@@ -574,12 +563,13 @@ h2.titulo-oferta{
 .oferta-wide-pricetag{
 	font-family: 'Azo Sans';
 	color: $red-impact;
-	font-weight: 900;
+	font-weight: 700;
 	white-space: nowrap;
 	width: 100%;
 	@include media-breakpoint-up(xs) {
 		text-align: left;
 		font-size: 3.5vw ;
+		line-height: 1.5;
 	}
 	@include media-breakpoint-down(xs) {
 		text-align: left;
@@ -665,7 +655,6 @@ h2.titulo-oferta{
 			width: 20vw;
 			padding-top: 16vw;
 		    padding-bottom: 5px;
-
 		}
 	}
 	.cgreen-logo{
@@ -674,6 +663,27 @@ h2.titulo-oferta{
 		left: 1vw;
 		top:30vw;
 	}
+}
+.visita-tecnica{
+	position:relative;
+	height: 0;
+	width: 15vw;
+	margin-left: auto;
+	overflow: visible;
+	@include media-breakpoint-between(md,xl) {
+		top: -11.8vw;		
+		margin-right: -3vw;
+	}
+	@include media-breakpoint-between(sm,md) {
+		top: -11.8vw;		
+		margin-right: -3vw;
+	}
+	@include media-breakpoint-down(xs) {
+		top:-30vw;
+		width: 30vw;
+		margin-right: 0;
+	}
+
 }
 .oferta-price-mov-container{
 	display: block;
@@ -686,14 +696,23 @@ h2.titulo-oferta{
 }
 .superoferta-wrapper{
 	height: 0;
-	width: 100%;
-	position: relative;
-    width: 27%;
 	overflow: visible;
 	pointer-events: none;
-	img{
-		margin-left: 50vw ;
+	position: relative;
+	width: 100%;
+	@include media-breakpoint-up(xs) {
+		z-index: 5;
+	    width: 37%;
+		img{
+			margin-left: 20vw ;
+		}
 	}
+	@include media-breakpoint-down(xs) {
+	    width: 27%;
+		img{
+			margin-left: 50vw ;
+		}
+	}	
 }
 .instalacion-red-tag{
 	background-color: $red-impact;
@@ -702,7 +721,14 @@ h2.titulo-oferta{
     white-space: nowrap;
 	text-transform: uppercase;
     display: inline;
-    font-size: 3vw;
-    padding: 1vw; 
     line-height: 0;
+
+	@include media-breakpoint-up(xs) {
+	    font-size: 1vw;
+	    padding: 0.3vw;
+	}
+	@include media-breakpoint-down(xs) {
+	    font-size: 3vw;
+	    padding: 1vw; 
+	}	    
 }

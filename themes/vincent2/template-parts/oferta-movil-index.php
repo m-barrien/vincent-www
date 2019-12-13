@@ -24,7 +24,6 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 	<div class="oferta-index-description-container">
 		<div class="oferta-price-mov-container">
 			<div class="instalacion-red-tag">Instalaci&oacute;n incluida, llave en mano</div>
-			<div class="valor-oferta">Valor Oferta</div>
 			<div class="oferta-wide-pricetag">
 				<?php echo get_post_meta($post->ID, 'price-tag')[0] ; ?>
 			</div>
@@ -66,6 +65,10 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 		<div class="proud-to-be">
 			<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/proud-to-be.png">
 		</div>
+
+		<div class="visita-tecnica">
+			<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/visitatecnica.png">
+		</div>		
 	</div>	
 </a>
 

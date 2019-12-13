@@ -12,11 +12,9 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 	<div class="row">
 		<div class="col-fotos">
 			<div class="row">
-				<div class="col">
-					<h3 class="super-oferta">Super oferta</h3>
-				</div>
-			</div>
-			<div class="row">
+				<div class="superoferta-wrapper">
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/superoferta.png">
+				</div>				
 				<div class="col-fotos-kit">
 					<img class="img-fluid swiper-lazy kit-img" data-src="<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-group-image.png">
 
@@ -34,12 +32,6 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 				<span><?php echo $short_title;  ?></span>
 			</h2>
 			<div class="oferta-index-bullets">
-				<div class="bullet">
-					<div class="bullet-image">
-						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/check.svg">
-					</div>
-					Instalaci&oacute;n Incluida
-				</div>
 				<div class="bullet">
 					<div class="bullet-image">
 						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/check.svg">
@@ -62,12 +54,6 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 					<div class="bullet-image">
 						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/check.svg">
 					</div>
-					Producto llave en mano
-				</div>
-				<div class="bullet">
-					<div class="bullet-image">
-						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/check.svg">
-					</div>
 					5 años de garant&iacute;a sobre instalacion
 				</div>
 				<div class="bullet">
@@ -77,7 +63,7 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 					10 años de garant&iacute;a sobre producto
 				</div>
 			</div>	
-			<div class="valor-oferta">Valor Oferta</div>
+			<div class="instalacion-red-tag">Instalaci&oacute;n incluida, llave en mano</div>
 			<div class="oferta-wide-pricetag">
 				<?php echo get_post_meta($post->ID, 'price-tag')[0] ; ?>
 			</div>
@@ -89,6 +75,9 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 		</div>
 		<div class="proud-to-be">
 			<img class="swiper-lazy img-fluid" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/proud-to-be.png">
+		</div>
+		<div class="visita-tecnica">
+			<img class="swiper-lazy img-fluid" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/visitatecnica.png">
 		</div>
 	</div>
 </div>
