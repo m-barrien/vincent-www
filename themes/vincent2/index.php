@@ -286,7 +286,7 @@ get_header();
 				<p>
 					Vincent Solar es sinónimo de calidad en todos los productos, trabajando con prestigiosas marcas y equipamiento que hacen posible nuestra garantía <i>World-Class</i> por 5 años sobre su instalación.
 				</p>
-				<a class="orange-with-arrow" href="#">Conozca más sobre nuestros equipos </a>
+				<a class="orange-with-arrow" href="/soluciones-hogar">Conozca más sobre nuestros equipos </a>
 			</div>
 		</div>
 	</section>
