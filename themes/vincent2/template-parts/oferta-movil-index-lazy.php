@@ -8,7 +8,6 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 ?>
 <a href="<?php the_permalink(); ?>" class="oferta-index-single-row bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-bg-mov.jpg">
 	<div class="oferta-mov-header">
-		<h3 class="super-oferta">Super oferta</h3>
 		<h2 class="titulo-oferta">Kit Solar OnGrid
 			<br>
 			<span><?php echo $short_title; ?></span>

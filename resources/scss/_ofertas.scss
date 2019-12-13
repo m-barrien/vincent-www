@@ -511,7 +511,8 @@ h2.titulo-oferta{
 	}		
 	@include media-breakpoint-down(xs) {
 		text-align: center;
-		font-size: 7.75vw ;
+		padding:0 20px;
+		font-size: 7vw ;
 		font-weight: 700;
 
 	}	
@@ -594,6 +595,7 @@ h2.titulo-oferta{
 	    position: absolute;
 	}
 	&:after{
+		display: none;
 		content: "(Precio con IVA incluido)";
 		color: inherit;
 
