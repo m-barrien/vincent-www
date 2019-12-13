@@ -501,6 +501,7 @@ h2.titulo-oferta{
 	}
 	@include media-breakpoint-up(xs) {
 		font-size: 3.7vw ;
+		letter-spacing: -2px;
 	}		
 	@include media-breakpoint-down(xs) {
 		font-family: 'Azo Sans';

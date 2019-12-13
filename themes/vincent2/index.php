@@ -11,10 +11,10 @@ get_header();
     $args= array(
 	'post_type' => array('oferta'),
 	'post_status' => 'publish',
-	'posts_per_page' => 4,
-	'meta_key'		=> 'featured',
+	'posts_per_page' => -1,
+	'meta_key'		=> 'price',
 	'orderby'		=> 'meta_value',
-	'order'			=> 'DESC'
+	'order'			=> 'ASC'
 	);
 
 	$loop = new WP_Query( $args );
@@ -116,9 +116,9 @@ get_header();
 		'post_type' => array('oferta'),
 		'post_status' => 'publish',
 		'posts_per_page' => -1,
-		'meta_key'		=> 'featured',
+		'meta_key'		=> 'price',
 		'orderby'		=> 'meta_value',
-		'order'			=> 'DESC'
+		'order'			=> 'ASC'
 		);
 
 		$loop = new WP_Query( $args );
