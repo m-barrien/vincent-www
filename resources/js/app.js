@@ -21,6 +21,10 @@ var swiper_home = new Swiper('.swiper-cover', {
         el: '.swiper-pagination',
         clickable: true,
       },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },      
       breakpoints: {
         1499: {
           slidesPerView: 3,
