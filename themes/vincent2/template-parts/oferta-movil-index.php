@@ -23,18 +23,13 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 	</div>
 	<div class="oferta-index-description-container">
 		<div class="oferta-price-mov-container">
+			<div class="instalacion-red-tag">Instalaci&oacute;n incluida, llave en mano</div>
 			<div class="valor-oferta">Valor Oferta</div>
 			<div class="oferta-wide-pricetag">
 				<?php echo get_post_meta($post->ID, 'price-tag')[0] ; ?>
 			</div>
 		</div>
 		<div class="oferta-index-bullets">
-			<div class="bullet">
-				<div class="bullet-image">
-					<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/check.svg">
-				</div>
-				Instalacion Incluida
-			</div>
 			<div class="bullet">
 				<div class="bullet-image">
 					<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/check.svg">
@@ -52,12 +47,6 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 					<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/check.svg">
 				</div>
 				Certificacion SEC e Internacional
-			</div>
-			<div class="bullet">
-				<div class="bullet-image">
-					<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/check.svg">
-				</div>
-				Producto llave en mano
 			</div>
 			<div class="bullet">
 				<div class="bullet-image">

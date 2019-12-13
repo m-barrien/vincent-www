@@ -667,7 +667,7 @@ h2.titulo-oferta{
 .oferta-price-mov-container{
 	display: block;
 	width: 100%;
-	padding:0 25vw;
+	padding:0 0 0 17vw;
 }
 .oferta-mov-header{
 	width: 100%;
@@ -683,4 +683,15 @@ h2.titulo-oferta{
 	img{
 		margin-left: 50vw ;
 	}
+}
+.instalacion-red-tag{
+	background-color: $red-impact;
+	color: $white;
+    font-weight: 600;
+    white-space: nowrap;
+	text-transform: uppercase;
+    display: inline;
+    font-size: 3vw;
+    padding: 1vw; 
+    line-height: 3;
 }
