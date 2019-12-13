@@ -38,7 +38,7 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 					<div class="bullet-image">
 						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/check.svg">
 					</div>
-					Instalacion Incluida
+					Instalaci&oacute;n Incluida
 				</div>
 				<div class="bullet">
 					<div class="bullet-image">
@@ -56,7 +56,7 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 					<div class="bullet-image">
 						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/check.svg">
 					</div>
-					Certificacion SEC e Internacional
+					Certificaci&oacute;n SEC e Internacional
 				</div>
 				<div class="bullet">
 					<div class="bullet-image">
@@ -68,13 +68,13 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 					<div class="bullet-image">
 						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/check.svg">
 					</div>
-					5 años de garantia sobre instalacion
+					5 años de garant&iacute;a sobre instalacion
 				</div>
 				<div class="bullet">
 					<div class="bullet-image">
 						<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/check.svg">
 					</div>
-					10 años de garantia sobre producto
+					10 años de garant&iacute;a sobre producto
 				</div>
 			</div>	
 			<div class="valor-oferta">Valor Oferta</div>

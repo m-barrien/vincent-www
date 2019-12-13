@@ -1282,6 +1282,7 @@ section > h1.section-header{
 		margin: auto;
 		max-width: 100%;
 		overflow-y:auto;
+		overflow-x: scroll;
 		flex-direction:row;
 	}
 }

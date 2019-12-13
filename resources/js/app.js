@@ -205,8 +205,36 @@ var swiper = new Swiper('.swiper-container.footer-ofertas-swiper', {
   },
 });
 
-$(".lightgallery").lightGallery(); 
+$(".lightgallery").lightGallery({
+  download: false,
+}); 
 
+$('.lightgallery').hover(function(e) {
+  var container = $(this).parent();
+  if ((e.pageX - this.offsetLeft) < container.width() / 2) {
+    var direction = function() {
+      container.stop().animate({
+        scrollLeft: '-=100'
+      }, 1000, 'linear', direction);
+    }
+    container.stop().animate({
+      scrollLeft: '-=100'
+    }, 1000, 'linear', direction);
+  } else {
+    var direction = function() {
+      container.stop().animate({
+        scrollLeft: '+=100'
+      }, 1000, 'linear', direction);
+    }
+    container.stop().animate({
+      scrollLeft: '+=100'
+    }, 1000, 'linear', direction);
+  }
+
+}, function() {
+    var container = $(this).parent();
+    container.stop();
+});
 /*
 
 $('ul.menu li').mouseenter(

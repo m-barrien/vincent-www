@@ -445,6 +445,7 @@
 
 }
 .oferta-index-bullets{
+	font-family: 'Azo Sans';
 	color: $text-grayer;
 	width: 100%;
     @include media-breakpoint-up(xs) {
@@ -454,7 +455,8 @@
     @include media-breakpoint-down(xs) {
 		font-size:3.5vw ;
 		font-weight: 500;
-	    padding: 2vw  10vw ;
+	    padding: 2vw 0 2vw 18vw  ;
+	    letter-spacing: -1.5px;
     }
 	.bullet{
 	    font-size: inherit;
@@ -462,9 +464,12 @@
 		white-space: nowrap;
 		line-height: 1.2;
 		.bullet-image{
-			width: 24px ;
 			height: 20px ;
 			display: inline-block;
+			width: 24px ;
+			@include media-breakpoint-down(xs) {
+				width: 20px ;
+			}
 		}
 	}
 }
@@ -510,6 +515,7 @@ h2.titulo-oferta{
 		font-size: 3.7vw ;
 	}		
 	@include media-breakpoint-down(xs) {
+		font-family: 'Azo Sans';
 		text-align: center;
 		padding:0 20px;
 		font-size: 7vw ;
@@ -566,6 +572,7 @@ h2.titulo-oferta{
 }
 
 .oferta-wide-pricetag{
+	font-family: 'Azo Sans';
 	color: $red-impact;
 	font-weight: 900;
 	white-space: nowrap;
@@ -577,6 +584,9 @@ h2.titulo-oferta{
 	@include media-breakpoint-down(xs) {
 		text-align: left;
 		font-size: 9vw ;
+		padding-left:5vw;
+		font-weight: 700;
+		letter-spacing: -2px;
 	}		
 
 	&:before{
@@ -619,6 +629,7 @@ h2.titulo-oferta{
 		font-size: 2vw ;
 	}
 	@include media-breakpoint-down(xs) {
+		display: none;
 		font-size: 4.14vw ;
 		font-weight: 500;
 		line-height: 0;
@@ -693,5 +704,5 @@ h2.titulo-oferta{
     display: inline;
     font-size: 3vw;
     padding: 1vw; 
-    line-height: 3;
+    line-height: 0;
 }
