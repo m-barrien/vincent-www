@@ -112,3 +112,264 @@
     	font-weight: 600;
     }
 }
+
+.bottom-dock{
+	position: fixed;
+	bottom: 40px;
+	width: 100%;
+	height: auto;
+	color: white;	
+	z-index: $zindex-fixed;
+	@include media-breakpoint-down(sm) {
+		bottom:90px;
+	}
+	@include media-breakpoint-up(sm) {
+
+	}
+
+	.dock-button{
+		background-color: $vincent-blue;
+		cursor: pointer;
+		text-align: center;
+		padding: 4px;
+		font-weight: bold;
+		white-space: nowrap;
+		&.desk{
+			@include media-breakpoint-up(sm) {
+				display: block;
+			}
+			@include media-breakpoint-down(sm) {
+				display: none;
+			}
+		}
+		&.mov{
+			@include media-breakpoint-up(sm) {
+				display: none;
+			}
+			@include media-breakpoint-down(sm) {
+				display: block;
+			}
+		}
+		@include media-breakpoint-between(lg,xl) {
+			font-size: 2vw;
+			border-radius: 6px 6px 6px 6px;
+			margin-right: 20px;
+			margin-left: auto;
+			max-width: 20vw;
+	    }
+	    @include media-breakpoint-between(md,lg) {
+			font-size: 1.55rem;
+			border-radius: 6px 6px 6px 6px;
+			margin-right: 20px;
+			margin-left: auto;
+			min-width: 20vw;
+			max-width: 23vw;
+	    }
+		@include media-breakpoint-down(sm) {
+			font-size: $font-size-base*1.6;
+			border-radius: 6px 0px 0 6px;
+			margin-right: 0;
+			margin-left: auto;
+			width: 45%;
+			min-width: 200px;
+			max-width: 250px;
+	        
+	    }
+		a{
+			display: block;
+			width: 100%;
+			text-decoration: none;
+			color: inherit;
+			outline: none;
+			white-space: nowrap;
+		}
+		#collapseContacto{
+			z-index: $zindex-fixed+1;
+			border-radius: 6px 6px 6px 6px;
+			background-color: $body-bg;
+			a{
+				@extend .p-2;
+				color: $vincent-blue
+			}
+		}
+		img{
+			display: block;
+			width: 50%;
+			max-width: 80px;
+			height: 3px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.dock-panel{
+		@extend .py-2;
+		background-color: $vincent-blue;
+		color: $white;
+		.panel-btn{
+			@extend .mt-2;
+			font-size: $font-size-base*1.6;
+			font-weight: bold;
+			background-color: white;
+			width: 100%;
+			color: $vincent-blue;
+		}
+		p{
+			font-size: $font-size-base*1.1;
+		}
+		
+
+	}
+}
+
+
+.pulse {
+  animation: pulse 1s 1s forwards;
+}
+
+.jump {
+  animation: jump 1s 2s forwards cubic-bezier(.84,-0.54,.31,1.19);
+}
+
+.waggle {
+  animation: waggle 1s 3s forwards ease-out;
+}
+
+.sheen {
+  position: relative;
+  overflow: hidden;
+}
+
+.sheen:after {
+  animation: sheen 1s 4s forwards;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.5) 50%, transparent);
+  transform: rotateZ(60deg) translate(-2em, 6em);
+}
+
+.spin {
+  animation: spin 1.5s 5s forwards cubic-bezier(.56,-0.35,.22,1.5);
+}
+
+.fade {
+  animation: fade 1s 6.5s forwards;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: orange;
+  }
+  25% {
+    background-color: red;
+  }
+  50 {
+    background-color: orange;
+  }
+  75% {
+    background-color: red;
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-2em);
+  }
+}
+
+@keyframes waggle {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: rotateZ(-20deg) scale(1.2);
+  }
+  60% {
+    transform: rotateZ(25deg) scale(1.2);
+  }
+  67.5% {
+    transform: rotateZ(-15deg) scale(1.2);
+  }
+  75% {
+    transform: rotateZ(15deg) scale(1.2);
+  }
+  82.5% {
+    transform: rotateZ(-12deg) scale(1.2);
+  }
+  85% {
+    transform: rotateZ(0) scale(1.2);
+  }
+  100% {
+    transform: rotateZ(0) scale(1);
+  }
+}
+
+@keyframes sheen {
+  100% {
+    transform: rotateZ(60deg) translate(0, -4em);
+  }
+}
+
+@keyframes spin {
+  50% {
+    transform: rotateZ(-20deg);
+    animation-timing-function: ease;
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes fade {
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.start-now, .start-now:after {
+  animation-delay: 0;
+}
+
+html {
+  background: black;
+}
+
+.buttons-container {
+  font-size: 24px;
+  margin: 4em auto 0;
+  text-align: center;
+}
+
+button {
+  background: orange;
+  border: 6px solid #eee;
+  border-radius: 1em;
+  color: #fff;
+  font-size: 24px;
+  padding: 0.5em 1em;
+  margin: 0.25em 0;
+  min-width: 7em;
+}
+
+button:active {
+  border-color: #aaa;
+}
+
+button:focus {
+  outline: none;
+}
