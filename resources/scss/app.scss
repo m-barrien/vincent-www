@@ -696,6 +696,7 @@ p{
       	padding:20px 0;
       }
       	.swiper-pagination{
+      		height: 20px;
 			@include media-breakpoint-down(xs) {
 				top: 0;
 			}
@@ -766,6 +767,8 @@ p{
 			    		}
 						@include media-breakpoint-down(xs) {
 							max-width: 300px;
+							padding-bottom:0;
+							margin-bottom: -5vw;
 		  
 						}				    		
 				    	.bubble-img{
