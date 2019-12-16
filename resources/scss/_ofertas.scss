@@ -1,3 +1,6 @@
+$oferta-wide-scale-sm:1;
+$oferta-wide-scale-md:0.8;
+$oferta-wide-scale-lg:0.7;
 #titulo-ofertas{
 	text-transform: uppercase;
 	color: $text-grayer;
@@ -449,11 +452,21 @@
 	color: $text-grayer;
 	width: 100%;
 	font-weight: 500;
-    @include media-breakpoint-up(xs) {
-		margin-top:0;
-		font-size:1.7vw ;
-		padding-bottom:3vw;
-    }
+	@include media-breakpoint-between(lg,xl) {
+		margin-top:0 * $oferta-wide-scale-lg;
+		font-size:1.7vw  * $oferta-wide-scale-lg;
+		padding-bottom:3vw * $oferta-wide-scale-lg;		
+	}
+	@include media-breakpoint-between(md,lg) {
+		margin-top:0 * $oferta-wide-scale-md;
+		font-size:1.7vw  * $oferta-wide-scale-md;
+		padding-bottom:3vw * $oferta-wide-scale-md;
+	}
+	@include media-breakpoint-between(sm,md) {
+		margin-top:0 * $oferta-wide-scale-sm;
+		font-size:1.7vw  * $oferta-wide-scale-sm;
+		padding-bottom:3vw * $oferta-wide-scale-sm;
+	}	
     @include media-breakpoint-down(xs) {
 		font-size:3.5vw ;
 	    padding: 2vw 0 2vw 18vw  ;
@@ -499,9 +512,17 @@ h2.titulo-oferta{
 		color: inherit;
 		text-transform: lowercase;
 	}
-	@include media-breakpoint-up(xs) {
-		font-size: 3.7vw ;
-		letter-spacing: -2px;
+	@include media-breakpoint-between(lg,xl) {
+		font-size: 3.7vw  * $oferta-wide-scale-lg;
+		letter-spacing: -2px * $oferta-wide-scale-lg;
+	}
+	@include media-breakpoint-between(md,lg) {
+		font-size: 3.7vw  * $oferta-wide-scale-md;
+		letter-spacing: -2px * $oferta-wide-scale-md;
+	}
+	@include media-breakpoint-between(sm,md) {
+		font-size: 3.7vw * $oferta-wide-scale-sm;
+		letter-spacing: -2px * $oferta-wide-scale-sm;
 	}		
 	@include media-breakpoint-down(xs) {
 		font-family: 'Azo Sans';
@@ -513,6 +534,20 @@ h2.titulo-oferta{
 		letter-spacing: -1.75px;
 	}	
 
+}
+
+.single-oferta-container-padding{
+	display: block;
+	margin: 0 auto;
+	@include media-breakpoint-between(lg,xl) {
+		width: 100% * $oferta-wide-scale-lg;
+	}
+	@include media-breakpoint-between(md,lg) {
+		width: 100% * $oferta-wide-scale-md;
+	}
+	@include media-breakpoint-between(sm,md) {
+		width: 100% * $oferta-wide-scale-sm;
+	}	
 }
 .single-oferta-container{
 	display: block;
@@ -527,23 +562,29 @@ h2.titulo-oferta{
 	background-repeat: no-repeat;
 	background-size: cover;
 
-	@include media-breakpoint-between(sm,xl) {
-		.col-fotos{
-			@include make-col-ready();
-			@include make-col(4);
-			.col-fotos-kit{
-				z-index: 1;
-				position:relative;
-				@include make-col(12);
-				.kit-img{	
-					padding: 0 0vw ;
-				}
-
+	.col-fotos{
+		@include make-col-ready();
+		@include make-col(4);
+		.col-fotos-kit{
+			z-index: 1;
+			position:relative;
+			@include make-col(12);
+			.kit-img{	
+				padding: 0 0vw ;
 			}
+
 		}
-		.col-precio{
-			@include make-col(8);
-			padding-left:4vw  !important;
+	}
+	.col-precio{
+		@include make-col(8);
+		@include media-breakpoint-between(lg,xl) {
+			padding-left:4vw  * $oferta-wide-scale-lg !important;
+		}
+		@include media-breakpoint-between(md,lg) {
+			padding-left:4vw  * $oferta-wide-scale-md !important;
+		}
+		@include media-breakpoint-between(sm,md) {
+			padding-left:4vw  * $oferta-wide-scale-sm !important;
 		}
 	}
 	@include media-breakpoint-down(xs) {
@@ -567,13 +608,20 @@ h2.titulo-oferta{
 	font-weight: 700;
 	white-space: nowrap;
 	width: 100%;
-	@include media-breakpoint-up(xs) {
-		text-align: left;
-		font-size: 3.5vw ;
+	text-align: left;
+	@include media-breakpoint-between(lg,xl) {
+		font-size: 3.5vw * $oferta-wide-scale-lg;
+		line-height: 1.5;
+	}
+	@include media-breakpoint-between(md,lg) {
+		font-size: 3.5vw  * $oferta-wide-scale-md;
+		line-height: 1.5;
+	}
+	@include media-breakpoint-between(sm,md) {
+		font-size: 3.5vw * $oferta-wide-scale-sm;
 		line-height: 1.5;
 	}
 	@include media-breakpoint-down(xs) {
-		text-align: left;
 		font-size: 9vw ;
 		padding-left:5vw;
 		font-weight: 700;
@@ -583,11 +631,22 @@ h2.titulo-oferta{
 	&:before{
 		content: "$";
 		color: inherit;
-		@include media-breakpoint-up(xs) {
-			font-size: 2vw ;
-		    margin-left: -1.3vw ;
-			margin-top: 1vw ;
+
+		@include media-breakpoint-between(lg,xl) {
+			font-size: 2vw * $oferta-wide-scale-lg ;
+		    margin-left: -1.3vw * $oferta-wide-scale-lg ;
+			margin-top: 1vw * $oferta-wide-scale-lg ;
 		}
+		@include media-breakpoint-between(md,lg) {
+			font-size: 2vw * $oferta-wide-scale-md ;
+		    margin-left: -1.3vw * $oferta-wide-scale-md ;
+			margin-top: 1vw * $oferta-wide-scale-md ;
+		}
+		@include media-breakpoint-between(sm,md) {
+			font-size: 2vw * $oferta-wide-scale-sm ;
+		    margin-left: -1.3vw * $oferta-wide-scale-sm ;
+			margin-top: 1vw * $oferta-wide-scale-sm ;
+		}		
 		@include media-breakpoint-down(xs) {
 			font-size: 5.14vw ;
 		    margin-left: -5.3vw ;
@@ -600,12 +659,22 @@ h2.titulo-oferta{
 		display: none;
 		content: "(Precio con IVA incluido)";
 		color: inherit;
-
-		@include media-breakpoint-up(xs) {
-			font-size: 1vw ;
-		    margin-left: -13.4vw ;
-		    margin-top: 4vw ;
+		@include media-breakpoint-between(lg,xl) {
+			font-size: 1vw * $oferta-wide-scale-lg ;
+		    margin-left: -13.4vw * $oferta-wide-scale-lg ;
+			margin-top: 4vw * $oferta-wide-scale-lg ;
 		}
+		@include media-breakpoint-between(md,lg) {
+			font-size: 1vw * $oferta-wide-scale-md ;
+		    margin-left: -13.4vw * $oferta-wide-scale-md ;
+			margin-top: 4vw * $oferta-wide-scale-md ;
+		}
+		@include media-breakpoint-between(sm,md) {
+			font-size: 1vw * $oferta-wide-scale-sm ;
+		    margin-left: -13.4vw * $oferta-wide-scale-sm ;
+			margin-top: 4vw * $oferta-wide-scale-sm ;
+		}			
+
 		@include media-breakpoint-down(xs) {
 			font-size: 2.57vw ;
 		    margin-left: -30.4vw ;
@@ -616,19 +685,31 @@ h2.titulo-oferta{
 }
 .valor-oferta{
 	width: 100%;
-	@include media-breakpoint-up(xs) {
-		font-size: 2vw ;
+	@include media-breakpoint-between(lg,xl) {
+		font-size: 2vw * $oferta-wide-scale-lg ;
+		margin-top: 2vw * $oferta-wide-scale-lg;
+		margin-bottom: -1vw * $oferta-wide-scale-lg;
 	}
+	@include media-breakpoint-between(md,lg) {
+		font-size: 2vw * $oferta-wide-scale-md ;
+		margin-top: 2vw * $oferta-wide-scale-md;
+		margin-bottom: -1vw  * $oferta-wide-scale-md;
+	}
+	@include media-breakpoint-between(sm,md) {
+		font-size: 2vw * $oferta-wide-scale-sm ;
+		margin-top: 2vw * $oferta-wide-scale-sm;
+		margin-bottom: -1vw * $oferta-wide-scale-sm;
+	}		
 	@include media-breakpoint-down(xs) {
 		display: none;
 		font-size: 4.14vw ;
 		font-weight: 500;
 		line-height: 0;
+		margin-top: 2vw ;
+		margin-bottom: -1vw ;
 	}
 	font-weight: 500;
 	color: $red-impact;
-	margin-top: 2vw ;
-	margin-bottom: -1vw ;
 }
 
 
@@ -649,9 +730,15 @@ h2.titulo-oferta{
 	.proud-to-be{
 		height: auto;
 		margin: 0 auto;
-		@include media-breakpoint-up(xs) {
-			width: 5vw;
+		@include media-breakpoint-between(lg,xl) {
+			width: 5vw * $oferta-wide-scale-lg ;
 		}
+		@include media-breakpoint-between(md,lg) {
+			width: 5vw * $oferta-wide-scale-md ;
+		}
+		@include media-breakpoint-between(sm,md) {
+			width: 5vw * $oferta-wide-scale-sm ;
+		}			
 		@include media-breakpoint-down(xs) {
 			width: 20vw;
 			padding-top: 16vw;
@@ -660,24 +747,42 @@ h2.titulo-oferta{
 	}
 	.cgreen-logo{
 		position:absolute;
-		width: 6vw;
-		left: 1vw;
-		top:30vw;
+		@include media-breakpoint-between(lg,xl) {
+			width: 6vw * $oferta-wide-scale-lg ;
+			left: 1vw * $oferta-wide-scale-lg ;
+			top: 30vw * $oferta-wide-scale-lg ;
+		}
+		@include media-breakpoint-between(md,lg) {
+			width: 6vw * $oferta-wide-scale-md ;
+			left: 1vw * $oferta-wide-scale-md ;
+			top: 30vw * $oferta-wide-scale-md ;
+		}
+		@include media-breakpoint-between(sm,md) {
+			width: 6vw * $oferta-wide-scale-sm ;
+			left: 1vw * $oferta-wide-scale-sm ;
+			top: 30vw * $oferta-wide-scale-sm ;
+		}		
 	}
 }
 .visita-tecnica{
 	position:relative;
 	height: 0;
-	width: 15vw;
 	margin-left: auto;
 	overflow: visible;
-	@include media-breakpoint-between(md,xl) {
-		top: -11.8vw;		
-		margin-right: -3vw;
+	@include media-breakpoint-between(lg,xl) {
+		top: -10.42vw * $oferta-wide-scale-lg;		
+		margin-right: -4.28vw * $oferta-wide-scale-lg;
+		width: 15vw * $oferta-wide-scale-lg;
+	}
+	@include media-breakpoint-between(md,lg) {
+		top: -11.125vw * $oferta-wide-scale-md;		
+		margin-right: -3.75vw * $oferta-wide-scale-md;
+		width: 15vw * $oferta-wide-scale-md;
 	}
 	@include media-breakpoint-between(sm,md) {
-		top: -11.8vw;		
-		margin-right: -3vw;
+		top: -13.5vw * $oferta-wide-scale-sm;		
+		margin-right: -3vw * $oferta-wide-scale-sm;
+		width: 15vw * $oferta-wide-scale-sm;
 	}
 	@include media-breakpoint-down(xs) {
 		top:-30vw;
@@ -701,13 +806,25 @@ h2.titulo-oferta{
 	pointer-events: none;
 	position: relative;
 	width: 100%;
-	@include media-breakpoint-up(xs) {
-		z-index: 5;
+	z-index: 5;
+	@include media-breakpoint-between(lg,xl) {
 	    width: 37%;
 		img{
-			margin-left: 20vw ;
+			margin-left: 20vw  * $oferta-wide-scale-lg;
 		}
 	}
+	@include media-breakpoint-between(md,lg) {
+	    width: 37%;
+		img{
+			margin-left: 20vw  * $oferta-wide-scale-md;
+		}
+	}
+	@include media-breakpoint-between(sm,md) {
+	    width: 37%;
+		img{
+			margin-left: 20vw  * $oferta-wide-scale-sm;
+		}
+	}	
 	@include media-breakpoint-down(xs) {
 	    width: 27%;
 		img{
@@ -724,9 +841,17 @@ h2.titulo-oferta{
     display: inline;
     line-height: 0;
 
-	@include media-breakpoint-up(xs) {
-	    font-size: 1vw;
-	    padding: 0.3vw;
+	@include media-breakpoint-between(lg,xl) {
+		font-size: 1vw * $oferta-wide-scale-lg;
+	    padding: 0.3vw * $oferta-wide-scale-lg;
+	}
+	@include media-breakpoint-between(md,lg) {
+		font-size: 1vw * $oferta-wide-scale-md;
+	    padding: 0.3vw * $oferta-wide-scale-md;
+	}
+	@include media-breakpoint-between(sm,md) {
+		font-size: 1vw * $oferta-wide-scale-sm;
+	    padding: 0.3vw * $oferta-wide-scale-sm;
 	}
 	@include media-breakpoint-down(xs) {
 	    font-size: 3vw;
