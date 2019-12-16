@@ -71,7 +71,7 @@
 <!-- como funciona ongrid -->
 
 <div class="gallery-container">
-	<h1>Galería de proyecto <strong>empresas</strong></h1>
+	<h1>Proyectos <strong>Vincent</strong> en el pa&iacute;s</h1>
 	<div id="" class="lightgallery">
 			<?php
 			$args = array(

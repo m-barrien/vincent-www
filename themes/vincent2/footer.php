@@ -1,3 +1,12 @@
+<!-- SECCION PRODUCTOS -->
+<?php
+if( $_SERVER['REQUEST_URI'] == "/" || is_404()){
+}
+else{
+	get_template_part( 'template-parts/galeria-productos', 'single' );
+}
+?>
+<!-- /SECCION PRODUCTOS -->
 <div class="container-fluid">
 	<section id="contacto-footer" >
 		<div class="col-sm-12 col-md-12">

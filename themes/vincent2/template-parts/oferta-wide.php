@@ -42,7 +42,7 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 						<div class="bullet-image">
 							<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/check.svg">
 						</div>
-						Inversores de <?php echo $short_title;  ?>
+						Inversores de <?php echo substr($short_title,0,4);  ?>
 					</div>
 					<div class="bullet">
 						<div class="bullet-image">
