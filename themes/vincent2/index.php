@@ -467,10 +467,7 @@ get_header();
 		<h1 class="section-header">
 			Productos
 		</h1>
-		<div class="w-100">
-			<img class="lazy vincent-by-img desk" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png"  data-src="<?php echo get_template_directory_uri() ?>/image/snippets/vincent-by.png">
-			<img class="lazy vincent-by-img mov" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png"  data-src="<?php echo get_template_directory_uri() ?>/image/snippets/vincent-by.mov.png">
-		</div>
+
 			<?php
 			$params = array('posts_per_page' => 15, 
 				'post_type' => 'product',
@@ -500,6 +497,10 @@ get_header();
 				<div class="swiper-button-next"></div>
 				<div class="swiper-button-prev"></div>
 			</div>
+		</div>
+		<div class="w-100">
+			<img class="lazy vincent-by-img desk" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png"  data-src="<?php echo get_template_directory_uri() ?>/image/snippets/vincent-by.png">
+			<img class="lazy vincent-by-img mov" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png"  data-src="<?php echo get_template_directory_uri() ?>/image/snippets/vincent-by.mov.png">
 		</div>
 		<?php wp_reset_postdata(); ?>
 		<?php else:  ?>
