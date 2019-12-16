@@ -59,20 +59,20 @@ get_header();
 	<div class="swiper-container swiper-cover">
 	    <div class="swiper-wrapper">
 	      <div class="swiper-slide">
-	      	<div class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/1.jpg" >
+	      	<a href="/soluciones-hogar" class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/1.jpg" >
 		      	<h1 class="shrink-cover">
 		      		¿Quiere ahorrar con energ&iacute;a solar?
 		      		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		      	</h1>
 	      		<div class="hidden-desc">
 		      		<p>Ahorro inmediato sobre su cuenta de luz. Es una inversión para Ud. y su familia. Cuidamos el medio ambiente.</p>
-		      		<a href="/soluciones-hogar">Descubra nuestras soluciones</a>
+		      		<button >Descubra nuestras soluciones</button>
 	      			
 	      		</div>
-	      	</div>
+	      	</a>
 	      </div>
 	      <div class="swiper-slide">
-	      	<div class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/2.jpg">
+	      	<a href="/soluciones-empresa" class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/2.jpg">
 		      	<h1 class="shrink-cover">
 		      		¿Quiere maximizar la productividad de su empresa?
 		      	</h1>
@@ -80,23 +80,23 @@ get_header();
 		      		<p>
 		      			Juntos encontraremos la solución más adecuada para el consumo de energía de su negocio.
 		      		</p>
-		      		<a href="/soluciones-empresa">Pida nuestro consejo</a>
+		      		<button>Pida nuestro consejo</button>
 	      			
 	      		</div>
-	      	</div>
+	      	</a>
 	      </div>
 	      <div class="swiper-slide">
-	      	<div class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/3.jpg">
+	      	<a href="mailto:info@vincentsolar.com" class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/3.jpg">
 		      	<h1 class="shrink-cover">
 		      		¿Quiere aprovechar al máximo su sistema solar?
 		      		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		      	</h1>
-		      	<div class="hidden-desc">
+		      	<div  class="hidden-desc">
 			      	<p>Ofrecemos kits diseñados a la medida en soluciones fotovoltaicas y térmicas para su abastecimiento de electricidad y gas.</p>
-		      		<a href="">Contactactanos</a>
+		      		<button>Contactactanos</button>
 		      		
 		      	</div>
-	      	</div>
+	      	</a>
 	      </div>
 	    </div>
 		<div class="swiper-button-next"></div>
