@@ -413,7 +413,7 @@ p{
     .swiper-container {
 		@include media-breakpoint-up(sm) {
 	    	background-image:
-				linear-gradient(to bottom, #00000077 0%, #00000000 25%,#00000000 60%, #000000cc 100%),
+				linear-gradient(to bottom, rgba(3, 126, 234, 0.47) 0%, #00000000 20%,#00000000 60%, #000000cc 100%),
 				url('') !important;
 		}
 		@include media-breakpoint-down(sm) {
