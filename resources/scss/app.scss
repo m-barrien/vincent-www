@@ -399,13 +399,14 @@ p{
 		height: 95vh;
 		min-height: 500px;
 		max-height: 800px;
+		z-index: $zindex-fixed + 1;
 	}
 	@include media-breakpoint-down(sm) {
 		height: 85vh;
+		z-index: 0;
 	}
 	width: 100%;
 	min-height: 500px;
-	z-index: 0;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -563,7 +564,7 @@ p{
 		height: 500px;
 	}
 	@include media-breakpoint-down(sm) {
-		height:400px;	        
+		height: 45vw;	        
 	}
 	.container{
 		height: 100%;
@@ -681,12 +682,13 @@ p{
 		background-position: center top;
 		background-repeat: no-repeat;
 		background-size: cover;
+		overflow: hidden;
 	}
     .swiper-container {
       width: 100vw;
       background-color: transparent;
+      overflow: hidden;
       overflow-y: visible;
-      overflow-x: hidden;
       @include media-breakpoint-up(sm) {
       	min-height: 0;
       	padding-top:30px;
