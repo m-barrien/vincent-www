@@ -13,10 +13,10 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 		<div class="col-fotos">
 			<div class="row">
 				<div class="superoferta-wrapper">
-					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/superoferta.png">
+					<img class="img-fluid swiper-lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/superoferta.png">
 				</div>				
 				<div class="col-fotos-kit">
-					<img class="img-fluid swiper-lazy kit-img" data-src="<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-group-image.png">
+					<img class="img-fluid swiper-lazy kit-img" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-group-image.png">
 
 				</div>
 				<!--
@@ -71,13 +71,13 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 	</div>
 	<div class="oferta-wide-footer">
 		<div class="cgreen-logo">
-			<img class="swiper-lazy img-fluid" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/logo_cgreen.png">
+			<img class="swiper-lazy img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/logo_cgreen.png">
 		</div>
 		<div class="proud-to-be">
-			<img class="swiper-lazy img-fluid" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/proud-to-be.png">
+			<img class="swiper-lazy img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/proud-to-be.png">
 		</div>
 		<div class="visita-tecnica">
-			<img class="swiper-lazy img-fluid" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/visitatecnica.png">
+			<img class="swiper-lazy img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/visitatecnica.png">
 		</div>
 	</div>
 </div>
