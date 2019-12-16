@@ -43,10 +43,10 @@
 			</div>
 			<div class="w-100">
 				<h1>
-					La mejor solución para su empresa
+					La mejor solución
 				</h1>
 				<p>
-					Las soluciones solares de la <strong>Vincent Solar</strong> se distinguen por sus componentes del más alto estándar a nivel internacional, instalado y ejecutado para lograr el máximo beneficio con la <strong>mejor relación precio-calidad</strong>.
+					Las soluciones solares de <strong>Vincent Solar</strong> se distinguen por sus componentes del más alto estándar a nivel internacional, instalado y ejecutado para lograr el máximo beneficio con la <strong>mejor relación precio-calidad</strong>.
 				</p>
 				<div class="img-wrapper">
 					<img class="kit-img lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/equipamiento_empresa.png">
@@ -59,7 +59,7 @@
 
 <!-- como funciona ongrid -->
 <div class="container">
-	<h1>¿Como funciona el sistema <span class="orange">ON GRID</span> en tu empresa?</h1>
+	<h1>¿Como funciona el sistema <span class="orange">ON GRID</span> en una empresa?</h1>
 </div>
 <div class="container-fluid">
 	<section class="full-width-diagram bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/paneles-faded.jpg">
