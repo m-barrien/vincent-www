@@ -89,7 +89,7 @@
 				$image = wp_get_attachment_image_src( get_the_ID(), $size="large" ); 
 				$image_thumb = wp_get_attachment_image_src( get_the_ID(), $size="thumbnail" ); 
 					?>
-				<a class="gallery-img-wrapper" href="<?php echo $image[0]; ?>">
+				<a class="gallery-img-wrapper" href="<?php echo $image[0]; ?>" data-sub-html="<h4><?php the_title(); ?></h4>">
 					<img class="d-none lazy" data-src="<?php echo $image_thumb[0]; ?>">
 					<div class="gallery-image bg-lazy" data-src="<?php echo $image_thumb[0]; ?>" hd-src="<?php echo $image[0]; ?>">
 						
