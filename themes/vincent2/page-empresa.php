@@ -13,7 +13,7 @@
 <!-- Banner a beneficios empresa -->
 <div class="container-fluid">
 	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/2.jpg">
-		<img class="favicon lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/favicon.png">
+		<img class="watermark lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/watermark.png">
 		<div class="half-banner-body right">
 			<div class="mov-img">
 				<img class=" img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/2.jpg">
@@ -36,7 +36,7 @@
 <!-- Banner a soluciones empresa -->
 <div class="container-fluid">
 	<section class="half-banner tall bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-empresa-2.jpg">
-		<img class="favicon right lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/favicon.png">
+		<img class="watermark right lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/watermark.png">
 		<div class="half-banner-body">
 			<div class="mov-img">
 				<img class=" img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-empresa-2.jpg">

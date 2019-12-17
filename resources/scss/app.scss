@@ -1014,8 +1014,7 @@ footer{
 	background-repeat: no-repeat;
 	background-size: cover;
 
-	.favicon{
-		display: none;
+	.favicon, .watermark{
 		position: absolute;
 		margin: 2vw;
 		height: auto;
