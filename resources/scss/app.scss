@@ -715,6 +715,7 @@ p{
 	    	align-items: center;
 	    	
 		    .how-we-work-slide{
+
 		    	padding-top: 1rem;
 		    	display: -webkit-box;
 		    	display: -ms-flexbox;
@@ -739,6 +740,7 @@ p{
 				}
 
 		    	.img-container{
+		    		pointer-events:none;
 		    		@include make-col-ready();
 					@include media-breakpoint-up(lg) {
 						@include make-col(4);
@@ -751,6 +753,7 @@ p{
 	  
 					}
 					.img-wrapper{
+						pointer-events:none;
 			    		padding: 20px ;
 			    		margin: 0 auto 0 auto ;
 			    		@include media-breakpoint-between(sm,md) {
@@ -764,6 +767,7 @@ p{
 		  
 						}				    		
 				    	.bubble-img{
+				    		pointer-events:none;
 				    		display: block;
 				    		width: 100%;
 				    		height: auto;
@@ -773,6 +777,7 @@ p{
 				    		border-color: $vincent-blue-alpha;
 				    	}
 				    	.extra-bg{
+				    		pointer-events:none;
 				    		position: absolute;
 				    		width: 10vw;
 				    		height: auto;
@@ -783,6 +788,7 @@ p{
 					}	    		
 		    	}
 		    	.text-container{
+		    		pointer-events:none;
 					color: $text-gray;
 		    		@include make-col-ready();
 					@include media-breakpoint-up(lg) {
@@ -795,10 +801,13 @@ p{
 						@include make-col(12);     
 					}	  
 					.step-container{
+
+						pointer-events:none;
 						width: 100%;
 						text-align: left;
 						display: block;
 						.bar-number{
+							pointer-events:none;
 							display: inline-block;
 							text-align: left;
 							font-weight: 400;
@@ -814,12 +823,14 @@ p{
 						}
 					}  		
 			    	h1{
+			    		pointer-events:none;
 			    		text-align: left;
 			    		@include media-breakpoint-down(xs) {
 							font-size: 9vw;
 						}	  
 			    	}
 			    	p{
+			    		pointer-events:none;
 			    		text-align: left;
 			    		@include media-breakpoint-down(xs) {
 							font-size: 5vw;

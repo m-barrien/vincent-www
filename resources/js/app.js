@@ -62,7 +62,14 @@ var swiper_how = new Swiper('.swiper-how-we-work', {
         //renderBullet: function (index, className) {
         //  return '<span class="' + className + '">' + (index + 1) + '</span>';
         //},
-      },      
+      },
+      on:{
+        click: function(event){
+          if(event.target.id == "magic_start_gallery"){
+            $("#lightgallery a:first-child > img").trigger("click");
+          }
+        }
+      }
     }
   );
 
@@ -209,9 +216,10 @@ $(".lightgallery").lightGallery({
   download: false,
 }); 
 
+/*
 $("#magic_start_gallery").on("click", () => {
     $("#lightgallery a:first-child > img").trigger("click");
-});/*
+});
 
 $('ul.menu li').mouseenter(
   function(){
