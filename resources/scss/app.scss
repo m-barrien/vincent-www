@@ -560,40 +560,27 @@ p{
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: $white;
+	overflow: hidden;
 	@include media-breakpoint-up(sm) {
 		height: 500px;
 	}
 	@include media-breakpoint-down(sm) {
 		height: 45vw;	        
 	}
-	.container{
-		height: 100%;
-		.row{
-			height: 100%;
-			.col{
-				height: 100%;
-				.text-wrapper{
-					position: absolute;
-					bottom: 0;
-					color: white;
-					margin-left: -6px;
-					h2{
-						font-size: 14px;
-						@include media-breakpoint-up(sm) {
-							display: inline;
-						}
-						@include media-breakpoint-down(sm) {
-							display: none;        
-						}					
-					}
-					a{
-						color: inherit;
-						text-decoration: underline;
-					}
-
-				}
-
-			}
+	video{
+		position:relative;
+		width: 100%;
+		height: 56.25vw;
+		min-height: 500px;
+		pointer-events: none;
+		@include media-breakpoint-up(md) {
+			top:-13vw;
+		}
+		@include media-breakpoint-down(lg) {
+			top:-1vw;
+		}
+		@include media-breakpoint-down(sm) {
+			display: none;
 		}
 	}
 }
