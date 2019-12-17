@@ -127,7 +127,7 @@ else{
 </footer>
 
 <?php
-	if ($_SESSION['show_modal']) {
+	if ($_SESSION['show_modal'] && false) {
 		?>
       <div class="modal fade" id="modalOferta" tabindex="-1" role="dialog" aria-labelledby="modalOfertaTitle" aria-hidden="false">
         <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">

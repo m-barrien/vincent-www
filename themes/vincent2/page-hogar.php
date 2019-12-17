@@ -74,7 +74,7 @@
 <!-- galeria ongrid -->
 <div class="gallery-container">
 	<h1>Galería de proyectos <strong>ON GRID</strong></h1>
-	<div id="" class="lightgallery">
+	<div id="lightgallery" class="lightgallery">
 			<?php
 			$args = array(
 			        'post_type' => 'attachment',

@@ -209,33 +209,9 @@ $(".lightgallery").lightGallery({
   download: false,
 }); 
 
-$('.lightgallery').hover(function(e) {
-  var container = $(this).parent();
-  if ((e.pageX - this.offsetLeft) < container.width() / 2) {
-    var direction = function() {
-      container.stop().animate({
-        scrollLeft: '-=100'
-      }, 1000, 'linear', direction);
-    }
-    container.stop().animate({
-      scrollLeft: '-=100'
-    }, 1000, 'linear', direction);
-  } else {
-    var direction = function() {
-      container.stop().animate({
-        scrollLeft: '+=100'
-      }, 1000, 'linear', direction);
-    }
-    container.stop().animate({
-      scrollLeft: '+=100'
-    }, 1000, 'linear', direction);
-  }
-
-}, function() {
-    var container = $(this).parent();
-    container.stop();
-});
-/*
+$("#magic_start_gallery").on("click", () => {
+    $("#lightgallery a:first-child > img").trigger("click");
+});/*
 
 $('ul.menu li').mouseenter(
   function(){

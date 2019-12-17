@@ -1308,6 +1308,19 @@ section > h1.section-header{
 	color: $text-black;
 	font-weight: 700;
 }
+.lg-img-wrap{
+	img.lg-image{
+		&:after{
+			display: block;
+			position: absolute;
+			z-index: 999999;
+			background-color:white;
+			color: white;
+			width: 30vw;
+			height: 30vw;
+		}
+	}
+}
 
 .vincent-by-img{
 	display: block;
@@ -1365,6 +1378,11 @@ section > h1.section-header{
 		width: 10vw;
 	}
 }
+
+#magic_start_gallery{
+	cursor: pointer;
+}
+
 @import 'generacion';
 @import 'mapa';
 @import 'noticias';

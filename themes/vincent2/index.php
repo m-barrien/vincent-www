@@ -159,7 +159,7 @@ get_header();
 			</div>						
 			<div class="w-100">
 				<h1>
-					La energía solar es fácil con Vincent Solar.
+					La energía solar es fácil.
 				</h1>
 				<p>
 					Con más de 30 años en el rubro a nivel internacional, somos expertos en soluciones residenciales y empresariales.
@@ -256,6 +256,23 @@ get_header();
 									<p class="highlight">Nuestra garant&iacute;a  <i>World-Class</i> es de 5 años sobre la instalación, lider en el mercado, ofrecemos asesoría y soporte a todos nuestros clientes.</p>
 								</div>
 							</div>	
+						</div>	
+						<div class="swiper-slide">
+							<div id="magic_start_gallery" class="how-we-work-slide">
+								<div class="img-container">
+									<div class="img-wrapper">
+										<img class="swiper-lazy bubble-img" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAQAAAD8IX00AAAADklEQVR42mNkAANGFAoAAD8ABLZPixAAAAAASUVORK5CYII=" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/vermasgaleria.jpg">
+										<div class="swiper-lazy-preloader"></div>
+									</div>
+								</div>
+								<div class="text-container">
+									<div class="step-container">
+										<span class="bar-number">Ver m&aacute;s</span>
+									</div>
+									<h1>Algunos de nuestros proyectos</h1>
+									<p class="highlight">Visite nuestra galer&iacute;a</p>
+								</div>
+							</div>	
 						</div>						
 
 					</div>
@@ -294,7 +311,7 @@ get_header();
 <div class="gallery-container in-main-page">
 	<h1>Algunos <strong>proyectos</strong> realizados</h1>
 	<h2 class="pt-2">Residenciales</h2>
-	<div class="lightgallery">
+	<div id="lightgallery" class="lightgallery">
 			<?php
 			$args = array(
 			        'post_type' => 'attachment',
