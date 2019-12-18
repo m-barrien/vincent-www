@@ -1157,10 +1157,12 @@ footer{
 
 
 }
+a.orange-with-arrow , p.orange-with-arrow{
+	color: $vincent-orange !important;
+	text-decoration: underline !important;
+}
 a.orange-with-arrow{
 	display: inline-block;
-	color: $vincent-orange;
-	text-decoration: underline;
 	@include media-breakpoint-up(md) {
 		font-size: 1.35vw;
 		white-space: nowrap;		

@@ -270,13 +270,8 @@ get_header();
 										<span class="bar-number">Ver m&aacute;s</span>
 									</div>
 									<h1>Algunos de nuestros proyectos</h1>
-									<p class="highlight">
+									<p class="highlight orange-with-arrow">
 										Visite nuestra galer&iacute;a
-										<span style="color: transparent;">
-											paneles solares para casa kit solares <br>
-											paneles solares para casa kit solares <br>
-											paneles solares para casa kit solares
-										</span>
 									</p>
 								</div>
 							</div>	
