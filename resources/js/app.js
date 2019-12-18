@@ -216,7 +216,7 @@ $(".lightgallery").lightGallery({
   download: false,
 }); 
 $(".lightgallery").on('onBeforeOpen.lg',function(event){
-    window.location.hash = 'about';
+    window.location.hash = 'galeria' + Math.floor(Math.random() * 1000).toString();
 });
 
 /*
