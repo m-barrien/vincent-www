@@ -310,17 +310,15 @@ get_header();
 	</section>
 </div>
 <!-- Banner a calidad productos -->
-<div class="gallery-container in-main-page">
-	<h1>Algunos <strong>proyectos</strong> realizados</h1>
-	<h2 class="pt-2">Residenciales</h2>
-	<div id="lightgallery" class="lightgallery">
+<div class="gallery-container d-none">
+	<div id="lightgallery_hogar" class="lightgallery">
 			<?php
 			$args = array(
 			        'post_type' => 'attachment',
 			        'post_mime_type' => 'image',
-			        'orderby' => 'post_date',
+			        'orderby' => 'rand',
 			        'order' => 'desc',
-			        'posts_per_page' => '-1',
+			        'posts_per_page' => '10',
 			        'post_status'    => 'inherit',
 			        'category_name'=>'hogar',
 			         );
@@ -344,15 +342,14 @@ get_header();
 			endwhile;				    
 			?>			
 	</div>
-	<h2 class="pt-2">Empresas</h2>
-	<div class="lightgallery">
+	<div id="lightgallery_empresa" class="lightgallery">
 			<?php
 			$args = array(
 			        'post_type' => 'attachment',
 			        'post_mime_type' => 'image',
-			        'orderby' => 'post_date',
+			        'orderby' => 'rand',
 			        'order' => 'desc',
-			        'posts_per_page' => '-1',
+			        'posts_per_page' => '10',
 			        'post_status'    => 'inherit',
 			        'category_name'=>'empresas',
 			         );

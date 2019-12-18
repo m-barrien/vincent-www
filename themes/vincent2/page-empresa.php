@@ -2,6 +2,9 @@
  
 <?php get_header(); ?>
 <div class="site-cover-secondary" style="background-image:linear-gradient(to bottom, #00000080 0%, #00000000 25%,#00000000 75%, #00000080 100%),url('<?php echo get_template_directory_uri() ?>/image/covers/comercial.jpg')">
+	<video id="videoPlayer" autoplay loop muted  preload="auto"> 
+	 	<source src="/video/coverempresa" type="video/mp4" media="all and (min-width: 900px)">
+	</video>	
 </div>
 
 

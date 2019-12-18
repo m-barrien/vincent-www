@@ -66,7 +66,7 @@ var swiper_how = new Swiper('.swiper-how-we-work', {
       on:{
         click: function(event){
           if(event.target.id == "magic_start_gallery"){
-            $("#lightgallery a:first-child > img").trigger("click");
+            $("#lightgallery_hogar a:first-child > img").trigger("click");
           }
         }
       }
