@@ -5,7 +5,7 @@
 // require swiper
 
 var photo_arr = [];
-
+var gallery_open = null;
 
 $(document).ready(function () {
 
@@ -215,6 +215,9 @@ var swiper = new Swiper('.swiper-container.footer-ofertas-swiper', {
 $(".lightgallery").lightGallery({
   download: false,
 }); 
+$(".lightgallery").on('onBeforeOpen.lg',function(event){
+    window.location.hash = 'about';
+});
 
 /*
 $("#magic_start_gallery").on("click", () => {
