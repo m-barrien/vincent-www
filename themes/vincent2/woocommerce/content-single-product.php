@@ -26,10 +26,12 @@ defined( 'ABSPATH' ) || exit;
 ?>
 
 <section class="product-singleton" id="product-<?php the_ID(); ?>">
+<div class="col">
 
-	<h1>
+
+	<h2 class="site-title">
 		<?php the_title(); ?>
-	</h1>
+	</h2>
 	<div class="d-none">
 	<?php
 
@@ -103,6 +105,8 @@ defined( 'ABSPATH' ) || exit;
 		?>
 		
 	</div>
+		
+</div>
 </section>
 <section>
 	<div class="col">

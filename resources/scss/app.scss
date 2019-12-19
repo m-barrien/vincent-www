@@ -991,6 +991,10 @@ footer{
 	padding-bottom: $section-padding-bottom;
 }
 .products-swiper{
+	color: $text-gray !important;
+	a{
+		color: inherit;
+	}
 	@include media-breakpoint-up(sm) {
 		height: 28vw;
 		.product-title{
@@ -1439,4 +1443,5 @@ section > h1.section-header{
 @import 'preguntas';
 @import 'videos';
 @import 'floatingbutton';
+@import 'products';
 @import 'menu';
