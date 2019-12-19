@@ -62,9 +62,7 @@
 </div>
 <!-- Banner a soluciones hogar -->
 
-<div id="open-gallery-ongrid" class="banner-link">
-	<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banners/galeria_ongrid.jpg">	
-</div>
+
 
 <!-- como funciona ongrid -->
 <div class="container v-padding-top">
@@ -81,7 +79,11 @@
 <!-- como funciona ongrid -->
 
 <!-- galeria ongrid -->
-<div class="gallery-container">
+<div id="open-gallery-ongrid" class="banner-link">
+	<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banners/galeria_ongrid.jpg">	
+</div>
+
+<div class="gallery-container d-none">
 	<h1>Galería de proyectos <strong>ON GRID</strong></h1>
 	<div id="gallery_ongrid" class="lightgallery">
 			<?php
@@ -117,9 +119,6 @@
 </div>
 <!-- /galeria ongrid -->
 
-<div id="open-gallery-offgrid" class="banner-link">
-	<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banners/galeria_offgrid.jpg">	
-</div>
 
 <!-- como funciona offgrid -->
 <div class="container v-padding-top">
@@ -135,8 +134,11 @@
 <!-- como funciona offgrid -->
 
 
+<div id="open-gallery-offgrid" class="banner-link">
+	<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banners/galeria_offgrid.jpg">	
+</div>
 
-<div class="gallery-container">
+<div class="gallery-container d-none">
 	<h1>Galería de proyectos <strong>OFF GRID</strong></h1>
 	<div id="gallery_offgrid" class="lightgallery">
 			<?php

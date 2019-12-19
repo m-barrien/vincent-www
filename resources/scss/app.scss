@@ -1432,7 +1432,7 @@ section > h1.section-header{
 		padding-right: 0vw ;
 		padding-top: $section-padding-top / 2.5;
 		padding-bottom: $section-padding-bottom / 2.5;
-	}
+	}		
 }
 .vp-t{
 	@include media-breakpoint-between(lg,xl) {
