@@ -76,7 +76,7 @@
 <!-- como funciona ongrid -->
 
 <div class="gallery-container">
-	<h1>Proyectos <strong>Vincent</strong> en el pa&iacute;s</h1>
+	<h1>Proyectos <span style="font-weight: 700;">Vincent</span> en el pa&iacute;s</h1>
 	<div id="gallery_empresa" class="lightgallery">
 			<?php
 			$args = array(

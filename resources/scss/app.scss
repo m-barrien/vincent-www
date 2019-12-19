@@ -1197,12 +1197,7 @@ a.orange-with-arrow{
 section > h1.section-header{
 	width: 100%;
 	text-align: center;
-	@include media-breakpoint-up(md) {
-		padding-bottom: 3vw;
-	}
-	@include media-breakpoint-down(md) {
-		padding-bottom: 20px;
-	}
+	@extend .vp-t;
 }
 
 /*

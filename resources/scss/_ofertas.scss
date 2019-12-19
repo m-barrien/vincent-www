@@ -497,10 +497,10 @@ $oferta-wide-scale-lg:0.7;
 }
 
 .swiper-ofertas{
-	height: 50vw;
+	height: auto;
 	min-height: 400px;
 	.swiper-pagination{
-		top: 4vw;
+		bottom: 0vw;
 		height: 2vw;
 	}
 }

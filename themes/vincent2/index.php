@@ -106,7 +106,7 @@ get_header();
 </div>
 
 <!-- ofertas wide -->
-<div class="ofertas-wide">
+<div class="ofertas-wide vp-b">
 	<div class="swiper-container swiper-ofertas">
 		<div class="swiper-wrapper">
 		<?php
@@ -150,8 +150,8 @@ get_header();
 </div>
 
 <!-- Banner a seccion de hogar -->
-<div class="container-fluid">
-	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-inicio-1.jpg">
+<div class="container-fluid vp-t">
+	<section class="half-banner mt-0 bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-inicio-1.jpg">
 		<img class="watermark lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/watermark.png">
 		<div class="half-banner-body right">
 			<div class="mov-img">

@@ -83,8 +83,6 @@ article{
 		
 }
 .noticias{
-	padding-top: $section-padding-top;
-	padding-bottom: $section-padding-bottom;
 
 	.ultimas-titulo{
 		@include make-col-ready();
