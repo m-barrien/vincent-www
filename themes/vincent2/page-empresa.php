@@ -35,7 +35,9 @@
 	</section>
 </div>
 <!-- Banner a beneficios empresa -->
-
+<div id="open-gallery-empresa" class="banner-link">
+	<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banners/empresa.jpg">	
+</div>
 <!-- Banner a soluciones empresa -->
 <div class="container-fluid">
 	<section class="half-banner tall bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-empresa-2.jpg">
@@ -75,7 +77,7 @@
 
 <div class="gallery-container">
 	<h1>Proyectos <strong>Vincent</strong> en el pa&iacute;s</h1>
-	<div id="" class="lightgallery">
+	<div id="gallery_empresa" class="lightgallery">
 			<?php
 			$args = array(
 			        'post_type' => 'attachment',

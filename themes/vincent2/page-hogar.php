@@ -27,12 +27,17 @@
 				<p>
 					Las soluciones fotovoltaicas Vincent Solar, permiten ser más independiente del aumento de los costos de electricidad. Proporcionando suministro de energía sostenible y renovable.
 				</p>
+				<a class="orange-with-arrow" href="#ongrid">¿Como funcionan los sistemas solares? </a>
 			</div>
 		</div>
 	</section>
 </div>
 <!-- Banner a beneficios hogar -->
-
+<div class="banner-link">
+	<a href="/ofertas">
+		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banners/kits.jpg">	
+	</a>
+</div>
 <!-- Banner a soluciones hogar -->
 <div class="container-fluid">
 	<section class="half-banner tall bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-hogar-2.jpg">
@@ -43,10 +48,10 @@
 			</div>
 			<div class="w-100">
 				<h1>
-					La mejor solución para su hogar
+					La mejor solución.
 				</h1>
 				<p>
-					Las soluciones solares de la <strong>Vincent Solar</strong> se distinguen por sus componentes del más alto estándar a nivel internacional, instalado y ejecutado para lograr el máximo beneficio con la mejor relación precio-calidad.
+					Las soluciones solares de <strong>Vincent Solar</strong> se distinguen por sus componentes del más alto estándar a nivel internacional, instalado y ejecutado para lograr el máximo beneficio con la mejor relación precio-calidad.
 				</p>
 				<div class="img-wrapper">
 					<img class="kit-img lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/equipamiento_hogar.png">
@@ -57,10 +62,14 @@
 </div>
 <!-- Banner a soluciones hogar -->
 
+<div id="open-gallery-ongrid" class="banner-link">
+	<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banners/galeria_ongrid.jpg">	
+</div>
 
 <!-- como funciona ongrid -->
 <div class="container v-padding-top">
-	<h1 class="pb-4">¿Como funciona el sistema <span class="orange">ON GRID</span> residencial?</h1>
+	<div id="ongrid"></div>
+	<h1  class="pb-4">¿Como funciona el sistema <span class="orange">ON GRID</span> residencial?</h1>
 </div>
 <div class="container-fluid">
 	<section class="full-width-diagram bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/paneles-faded.jpg">
@@ -74,12 +83,12 @@
 <!-- galeria ongrid -->
 <div class="gallery-container">
 	<h1>Galería de proyectos <strong>ON GRID</strong></h1>
-	<div id="lightgallery" class="lightgallery">
+	<div id="gallery_ongrid" class="lightgallery">
 			<?php
 			$args = array(
 			        'post_type' => 'attachment',
 			        'post_mime_type' => 'image',
-			        'orderby' => 'post_date',
+			        'orderby' => 'rand',
 			        'order' => 'desc',
 			        'posts_per_page' => '-1',
 			        'post_status'    => 'inherit',
@@ -108,6 +117,10 @@
 </div>
 <!-- /galeria ongrid -->
 
+<div id="open-gallery-offgrid" class="banner-link">
+	<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banners/galeria_offgrid.jpg">	
+</div>
+
 <!-- como funciona offgrid -->
 <div class="container v-padding-top">
 	<h1 class="pb-4">¿Como funciona el sistema <span class="orange">OFF GRID</span> residencial?</h1>
@@ -125,12 +138,12 @@
 
 <div class="gallery-container">
 	<h1>Galería de proyectos <strong>OFF GRID</strong></h1>
-	<div id="" class="lightgallery">
+	<div id="gallery_offgrid" class="lightgallery">
 			<?php
 			$args = array(
 			        'post_type' => 'attachment',
 			        'post_mime_type' => 'image',
-			        'orderby' => 'post_date',
+			        'orderby' => 'rand',
 			        'order' => 'desc',
 			        'posts_per_page' => '-1',
 			        'post_status'    => 'inherit',

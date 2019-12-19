@@ -219,10 +219,16 @@ $(".lightgallery").on('onBeforeOpen.lg',function(event){
     window.location.hash = 'galeria' + Math.floor(Math.random() * 1000).toString();
 });
 
-/*
-$("#magic_start_gallery").on("click", () => {
-    $("#lightgallery a:first-child > img").trigger("click");
+$("#open-gallery-ongrid").on("click", () => {
+    $("#gallery_ongrid a:first-child > img").trigger("click");
 });
+$("#open-gallery-offgrid").on("click", () => {
+    $("#gallery_offgrid a:first-child > img").trigger("click");
+});
+$("#open-gallery-empresa").on("click", () => {
+    $("#gallery_empresa a:first-child > img").trigger("click");
+});
+/*
 
 $('ul.menu li').mouseenter(
   function(){

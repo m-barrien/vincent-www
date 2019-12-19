@@ -8,7 +8,11 @@
     <title><?php echo get_bloginfo( 'name' ); ?></title>
   </head>
   <body> 
+    <?php if( $_SERVER['REQUEST_URI'] == "/" || is_404()): ?>
     <header class="desk">
+    <?php else: ?>
+    <header class="desk" style="background-image: linear-gradient(to bottom, #0000007d 0%, #0000 100%);">
+    <?php endif; ?>
       <div class="flex-container space-between">
         <div class="logo" onclick="window.location='/'">
           <?php

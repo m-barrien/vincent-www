@@ -6,6 +6,11 @@ else{
 	get_template_part( 'template-parts/galeria-productos', 'single' );
 }
 ?>
+<div class="banner-link">
+	<a href="/noticias">
+		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banners/noticias.jpg">	
+	</a>
+</div>
 <!-- /SECCION PRODUCTOS -->
 <div class="container-fluid">
 	<section id="contacto-footer" >

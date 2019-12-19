@@ -304,12 +304,17 @@ get_header();
 				<p>
 					Vincent Solar es sinónimo de calidad en todos los productos, trabajando con prestigiosas marcas y equipamiento que hacen posible nuestra garantía <i>World-Class</i> por 5 años sobre su instalación.
 				</p>
-				<a class="orange-with-arrow" href="/soluciones-hogar">Conozca más sobre nuestros equipos </a>
+				<a class="orange-with-arrow" href="/soluciones-hogar">Conozca más sobre nuestros proyectos </a>
 			</div>
 		</div>
 	</section>
 </div>
 <!-- Banner a calidad productos -->
+<div class="banner-link">
+	<a href="/ofertas">
+		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banners/kits.jpg">	
+	</a>
+</div>
 <div class="gallery-container d-none">
 	<div id="lightgallery_hogar" class="lightgallery">
 			<?php
@@ -506,28 +511,4 @@ get_header();
 </div>
 <!-- /SECCION MAPA -->
 
-<!-- SECCION NOTICIAS -->
-
-<div class="w-100">	
-	<div id="noticias-full-container" class="container">
-		<section class="noticias">
-			<div class="ultimas-titulo">
-				<h1>Últimas noticias</h1>
-				<p>Manténgase al día con las noticias de Vincent Solar</p>
-			</div>
-			<?php $the_query = new WP_Query( 'posts_per_page=4' ); ?>
-			 
-			<?php while ($the_query -> have_posts()) : $the_query -> the_post(); 
-			 	
-				get_template_part( 'template-parts/content-short', get_post_format() );
-			 
-				endwhile;
-				wp_reset_postdata();
-				wp_reset_query();
-			?>
-
-		</section>
-	</div>
-</div>
-<!-- /SECCION NOTICIAS -->
 <?php get_footer(); ?>

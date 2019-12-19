@@ -1402,6 +1402,35 @@ section > h1.section-header{
 	cursor: pointer;
 }
 
+.banner-link{
+	cursor: pointer;
+	@include media-breakpoint-between(lg,xl) {
+		padding-left: 10vw ;
+		padding-right: 10vw ;
+		padding-top: $section-padding-top;
+		padding-bottom: $section-padding-bottom;
+	}
+	@include media-breakpoint-between(md,lg) {
+		padding-left: 6vw ;
+		padding-right: 6vw ;
+		padding-top: $section-padding-top / 1.5;
+		padding-bottom: $section-padding-bottom / 1.5;
+	}
+	@include media-breakpoint-between(sm,md) {
+		padding-left: 0vw ;
+		padding-right: 0vw ;
+		padding-top: $section-padding-top / 2;
+		padding-bottom: $section-padding-bottom / 2;
+
+	}
+	@include media-breakpoint-down(xs) {
+		padding-left: 0vw ;
+		padding-right: 0vw ;
+		padding-top: $section-padding-top / 2.5;
+		padding-bottom: $section-padding-bottom / 2.5;
+	}
+}
+
 @import 'generacion';
 @import 'mapa';
 @import 'noticias';
