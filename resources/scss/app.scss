@@ -1434,7 +1434,36 @@ section > h1.section-header{
 		padding-bottom: $section-padding-bottom / 2.5;
 	}
 }
+.vp-t{
+	@include media-breakpoint-between(lg,xl) {
+		padding-top: $section-padding-top;
+	}
+	@include media-breakpoint-between(md,lg) {
+		padding-top: $section-padding-top / 1.5;
+	}
+	@include media-breakpoint-between(sm,md) {
+		padding-top: $section-padding-top / 2;
 
+	}
+	@include media-breakpoint-down(xs) {
+		padding-top: $section-padding-top / 2.5;
+	}
+}
+.vp-b{
+	@include media-breakpoint-between(lg,xl) {
+		padding-bottom: $section-padding-bottom;
+	}
+	@include media-breakpoint-between(md,lg) {
+		padding-bottom: $section-padding-bottom / 1.5;
+	}
+	@include media-breakpoint-between(sm,md) {
+		padding-bottom: $section-padding-bottom / 2;
+
+	}
+	@include media-breakpoint-down(xs) {
+		padding-bottom: $section-padding-bottom / 2.5;
+	}
+}
 @import 'generacion';
 @import 'mapa';
 @import 'noticias';
