@@ -13,38 +13,5 @@ if ($tax_term) {
 	<div class="oferta-description-container">
 		<?php the_content() ;?>
 	</div>
-	<div class="oferta-gallery-container">
-		<h3>Proyectos instalados</h3>
-		<div class="oferta-gallery">
-			<?php
-			$args = array(
-			        'post_type' => 'attachment',
-			        'post_mime_type' => 'image',
-			        'orderby' => 'post_date',
-			        'order' => 'rand',
-			        'posts_per_page' => '6',
-			        'post_status'    => 'inherit',
-			        'category_name'=>'hogar',
-			         );
-
-			$loop = new WP_Query( $args );
-			while ( $loop->have_posts() ) : $loop->the_post();
-				$image = wp_get_attachment_image_src( get_the_ID(), $size="large" ); 
-				$image_thumb = wp_get_attachment_image_src( get_the_ID(), $size="medium" ); 
-					?>
-					<div class="oferta-gallery-img">
-						<a href="<?php echo $image[0]; ?>"
-							style="background-image: url('<?php echo $image_thumb[0]; ?>');"
-								>
-							
-						</a>
-					</div>
-											
-					<?php
-
-			endwhile;				    
-			?>			
-		</div>
-	</div>
 </section>
 

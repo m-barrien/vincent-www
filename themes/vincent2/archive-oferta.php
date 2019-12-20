@@ -15,7 +15,6 @@
 		<div class="kit-group-header">
 			<div class="kit-group-header-text <?php  echo $wcatTerm->slug ?>">
     			<h1 href="<?php echo get_term_link( $wcatTerm->slug, $wcatTerm->taxonomy ); ?>"><?php echo $wcatTerm->name; ?></h1>
-					<?php echo term_description( $wcatTerm->term_id, 'tipo-kit' ); ?>
 			</div>
 			
 		</div>			
@@ -26,45 +25,20 @@
 					foreach ( $termchildren as $child ) {
 					    $term = get_term_by( 'id', $child, 'tipo-kit' );
 					    ?>
-						<div class="kit-col-container">
-							<a class="gray-container" data-toggle="collapse" href="#<?php echo $term->slug ?>" role="button" aria-expanded="false" aria-controls="<?php echo $term->slug ?>">
-								<img src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-3kw.jpg">
-								<div class="text-body">
-									<div class="little-title">Soluciones Hogar</div>
-									<div class="kw">
-										<?php echo substr( $term->name , 0, 4); ?>
-									</div>
-								</div>
-							</a>
-							
-						</div>						    	
+						<?php if(have_posts()) : while(have_posts()) : the_post(); 
+					   			$tax_id = get_the_terms($post,'tipo-kit')[0]->term_id;
+								if ($tax_id == $term->term_id) {
+					   				get_template_part( 'template-parts/oferta-archive-single', 'single' ); 
+								}
+							endwhile;
+							endif;
+						?>					    
+					    	
 						<?php
 					}						
 				?>
 			</div>
 
-			<div class="row accordion" id="accordion<?php echo $wcatTerm->slug; ?>">
-				<?php 
-					foreach ( $termchildren as $child ) {
-					    $term = get_term_by( 'id', $child, 'tipo-kit' );
-					    ?>
-					    <div id="<?php echo $term->slug ?>" class="col-md-12 collapse" aria-labelledby="headingOne" data-parent="#accordion<?php echo $wcatTerm->slug; ?>">
-					      <div class="w-100">
-							<?php if(have_posts()) : while(have_posts()) : the_post(); 
-						   			$tax_id = get_the_terms($post,'tipo-kit')[0]->term_id;
-									if ($tax_id == $term->term_id) {
-						   				get_template_part( 'template-parts/oferta-wide', 'single' ); 
-									}
-								endwhile;
-								endif;
-							?>
-					      </div>
-					    </div>						    	
-						<?php
-					}						
-				?>				
-
-			</div>
 		</div>	
 	</section>
 
@@ -72,5 +46,45 @@
    endforeach; 
    ?>
 </div>
+<!-- galeria ongrid -->
+<div id="open-gallery-ongrid" class="banner-link">
+	<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banners/hogar.jpg">	
+</div>
+
+<div class="gallery-container d-none">
+	<h1>Galería de proyectos <strong>ON GRID</strong></h1>
+	<div id="gallery_ongrid" class="lightgallery">
+			<?php
+			$args = array(
+			        'post_type' => 'attachment',
+			        'post_mime_type' => 'image',
+			        'orderby' => 'rand',
+			        'order' => 'desc',
+			        'posts_per_page' => '-1',
+			        'post_status'    => 'inherit',
+			        'category_name'=>'hogar',
+			         );
+
+			$loop = new WP_Query( $args );
+			while ( $loop->have_posts() ) : $loop->the_post();
+				$image = wp_get_attachment_image_src( get_the_ID(), $size="large" ); 
+				$image_thumb = wp_get_attachment_image_src( get_the_ID(), $size="thumbnail" ); 
+					?>
+				<a class="gallery-img-wrapper" href="<?php echo $image[0]; ?>" data-sub-html="<h4><?php the_title(); ?></h4>">
+					<img class="d-none lazy" data-src="<?php echo $image_thumb[0]; ?>">
+					<div class="gallery-image bg-lazy" data-src="<?php echo $image_thumb[0]; ?>" hd-src="<?php echo $image[0]; ?>">
+						
+					</div>
+					<p class="gallery-title">
+						<?php echo mb_strimwidth(get_the_title(), 0, 33, '...');?>
+					</p>
+				</a>
+
+				<?php
+			endwhile;				    
+			?>			
+	</div>
+</div>
+<!-- /galeria ongrid -->
 
 <?php get_footer(); ?>
