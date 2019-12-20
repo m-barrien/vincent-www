@@ -311,7 +311,8 @@ get_header();
 <!-- Banner a calidad productos -->
 <div class="banner-link">
 	<a href="/ofertas">
-		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banners/kits.jpg">	
+		<img class="img-fluid lazy desk" data-src="<?php echo get_template_directory_uri() ?>/image/banners/kits.jpg">			
+		<img class="img-fluid lazy mov" data-src="<?php echo get_template_directory_uri() ?>/image/banners/kits.mov.jpg">	
 	</a>
 </div>
 <div class="gallery-container d-none">

@@ -36,7 +36,8 @@
 </div>
 <!-- Banner a beneficios empresa -->
 <div id="open-gallery-empresa" class="banner-link">
-	<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banners/empresa.jpg">	
+	<img class="img-fluid lazy desk" data-src="<?php echo get_template_directory_uri() ?>/image/banners/empresa.jpg">	
+	<img class="img-fluid lazy mov" data-src="<?php echo get_template_directory_uri() ?>/image/banners/empresa.jpg">	
 </div>
 <!-- Banner a soluciones empresa -->
 <div class="container-fluid">

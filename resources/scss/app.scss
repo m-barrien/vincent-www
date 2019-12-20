@@ -1428,6 +1428,22 @@ section > h1.section-header{
 		padding-top: $section-padding-top / 2.5;
 		padding-bottom: $section-padding-bottom / 2.5;
 	}		
+	img.desk{
+		@include media-breakpoint-up(xs) {
+			display: block;
+		}
+		@include media-breakpoint-down(xs) {
+			display: none;
+		}
+	}
+	img.mov{
+		@include media-breakpoint-up(xs) {
+			display: none;
+		}
+		@include media-breakpoint-down(xs) {
+			display: block;
+		}
+	}
 }
 .vp-t{
 	@include media-breakpoint-between(lg,xl) {

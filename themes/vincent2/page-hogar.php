@@ -35,7 +35,8 @@
 <!-- Banner a beneficios hogar -->
 <div class="banner-link">
 	<a href="/ofertas">
-		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banners/kits.jpg">	
+		<img class="img-fluid lazy desk" data-src="<?php echo get_template_directory_uri() ?>/image/banners/kits.jpg">	
+		<img class="img-fluid lazy mov" data-src="<?php echo get_template_directory_uri() ?>/image/banners/kits.mov.jpg">	
 	</a>
 </div>
 <!-- Banner a soluciones hogar -->
@@ -80,7 +81,8 @@
 
 <!-- galeria ongrid -->
 <div id="open-gallery-ongrid" class="banner-link">
-	<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banners/galeria_ongrid.jpg">	
+	<img class="img-fluid lazy desk" data-src="<?php echo get_template_directory_uri() ?>/image/banners/galeria_ongrid.jpg">	
+	<img class="img-fluid lazy mov" data-src="<?php echo get_template_directory_uri() ?>/image/banners/galeria_ongrid.mov.jpg">	
 </div>
 
 <div class="gallery-container d-none">
@@ -135,7 +137,8 @@
 
 
 <div id="open-gallery-offgrid" class="banner-link">
-	<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banners/galeria_offgrid.jpg">	
+	<img class="img-fluid lazy desk" data-src="<?php echo get_template_directory_uri() ?>/image/banners/galeria_offgrid.jpg">	
+	<img class="img-fluid lazy mov" data-src="<?php echo get_template_directory_uri() ?>/image/banners/galeria_offgrid.mov.jpg">	
 </div>
 
 <div class="gallery-container d-none">

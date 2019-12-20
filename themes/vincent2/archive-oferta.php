@@ -48,7 +48,8 @@
 </div>
 <!-- galeria ongrid -->
 <div id="open-gallery-ongrid" class="banner-link">
-	<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banners/hogar.jpg">	
+	<img class="img-fluid lazy desk" data-src="<?php echo get_template_directory_uri() ?>/image/banners/hogar.jpg">	
+	<img class="img-fluid lazy mov" data-src="<?php echo get_template_directory_uri() ?>/image/banners/hogar.mov.jpg">	
 </div>
 
 <div class="gallery-container d-none">
