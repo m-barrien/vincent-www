@@ -8,7 +8,8 @@ else{
 ?>
 <div class="banner-link">
 	<a href="/noticias">
-		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/banners/noticias.jpg">	
+		<img class="img-fluid lazy desk" data-src="<?php echo get_template_directory_uri() ?>/image/banners/noticias.jpg">	
+		<img class="img-fluid lazy mov" data-src="<?php echo get_template_directory_uri() ?>/image/banners/noticias.mov.jpg">	
 	</a>
 </div>
 <!-- /SECCION PRODUCTOS -->
