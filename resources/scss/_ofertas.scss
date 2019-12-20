@@ -498,7 +498,16 @@ $oferta-wide-scale-lg:0.7;
 
 .swiper-ofertas{
 	height: auto;
-	min-height: 550px;
+	@include media-breakpoint-between(lg,xl) {
+		min-width: 34vw;
+	}
+	@include media-breakpoint-between(md,lg) {
+		min-width: 34vw;
+	}
+	@include media-breakpoint-between(sm,md) {
+		min-width: 450px;
+	}	
+
 	.swiper-pagination{
 		bottom: 0vw;
 		height: 2vw;

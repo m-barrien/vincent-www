@@ -159,17 +159,13 @@ var swiper_videos = new Swiper('.swiper-videos', {
 
 var swiper_videos = new Swiper('.swiper-ofertas', {
       spaceBetween: 0,
-      loop: true,
+      loop: false,
       lazy: true,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },      
       // init: false,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
     });
 
 

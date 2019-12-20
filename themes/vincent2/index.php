@@ -143,7 +143,6 @@ get_header();
 		</div>
 
 		<!-- Add Pagination -->
-		<div class="swiper-pagination"></div>
 		<div class="swiper-button-next"></div>
 		<div class="swiper-button-prev"></div>				
 	</div>
