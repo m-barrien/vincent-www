@@ -3,10 +3,7 @@
 		@extend .py-1;
 		@include make-col-ready();
 		@include media-breakpoint-up(md) {
-			@include make-col(5);
-			&:first-child{
-				@include make-col-offset(1);
-			}
+			@include make-col(6);
 		}
 		@include media-breakpoint-down(md) {
 			@include make-col-offset(0);
