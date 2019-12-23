@@ -40,9 +40,40 @@
 
 }
 
-.col-svg-mapa-grande, .col-svg-mapa-region{
+.col-svg-mapa-grande{
 	@include make-col-ready();
-	@include make-col(6);
+	@include media-breakpoint-between(lg,xl) {
+		@include make-col(3);
+	}
+	@include media-breakpoint-between(md,lg) {
+		@include make-col(3);
+	}
+	@include media-breakpoint-between(sm,md) {
+		@include make-col(3);
+
+	}
+	@include media-breakpoint-down(xs) {
+		@include make-col(12);
+	}	
+}
+.col-svg-mapa-region{
+	@include make-col-ready();
+	@include media-breakpoint-between(lg,xl) {
+		@include make-col-offset(2);
+		@include make-col(6);
+	}
+	@include media-breakpoint-between(md,lg) {
+		@include make-col-offset(2);
+		@include make-col(6);
+	}
+	@include media-breakpoint-between(sm,md) {
+		@include make-col(9);
+
+	}
+	@include media-breakpoint-down(xs) {
+		@include make-col(12);
+	}	
+
 }
 .mapa-swiper{
 	min-height: 400px;

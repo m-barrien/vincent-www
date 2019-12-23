@@ -578,14 +578,14 @@ get_header();
 		  </div>
 		</div>
 	  <script>
-    var swiper = new Swiper('.mapa-swiper', {
-      spaceBetween: 30,
-      lazy: true,
-      hashNavigation: {
-        watchState: true,
-      },
-    });
-  </script>
+	    var swiper = new Swiper('.mapa-swiper', {
+	      spaceBetween: 30,
+	      lazy: true,
+	      hashNavigation: {
+	        watchState: true,
+	      },
+	    });
+	  </script>
 	</section>	
 </div>
 <!-- /SECCION MAPA -->
