@@ -215,13 +215,13 @@ $(".lightgallery").on('onBeforeOpen.lg',function(event){
     window.location.hash = 'galeria' + Math.floor(Math.random() * 1000).toString();
 });
 
-$("#open-gallery-ongrid").on("click", () => {
+$("#open-gallery-ongrid").on("click", function() {
     $("#gallery_ongrid a:first-child > img").trigger("click");
 });
-$("#open-gallery-offgrid").on("click", () => {
+$("#open-gallery-offgrid").on("click", function() {
     $("#gallery_offgrid a:first-child > img").trigger("click");
 });
-$("#open-gallery-empresa").on("click", () => {
+$("#open-gallery-empresa").on("click", function() {
     $("#gallery_empresa a:first-child > img").trigger("click");
 });
 /*
