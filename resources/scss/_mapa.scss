@@ -23,3 +23,19 @@
 		}
 	}
 }
+.svg-wrapper{
+	min-height: 500px;
+	@include media-breakpoint-up(xs) {
+		height: 95vh;
+		width: 100%;
+	}
+	@include media-breakpoint-down(xs) {
+		height: 95vh;
+		width: 100%;
+	}
+	#mapa{
+		width: 100%;
+		height: 100%;
+	}
+
+}

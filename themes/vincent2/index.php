@@ -508,6 +508,15 @@ get_header();
 			<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mapa_chile.jpg">
 		</div>
 	</section>
+	<section class="v-padding-top">
+		<h1 class="section-header">Proyectos Vincent en Chile</h1>
+	</section>
+	<section class="">
+		<div class="svg-wrapper">
+			<?php get_template_part( 'template-parts/svg-map' );  ?>
+		</div>
+	
+	</section>	
 </div>
 <!-- /SECCION MAPA -->
 
