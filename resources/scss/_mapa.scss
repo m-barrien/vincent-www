@@ -49,11 +49,12 @@
 		@include make-col(3);
 	}
 	@include media-breakpoint-between(sm,md) {
-		@include make-col(3);
-
+		//@include make-col(3);
+		display: none;
 	}
 	@include media-breakpoint-down(xs) {
-		@include make-col(12);
+		//@include make-col(12);
+		display: none;
 	}	
 }
 .col-svg-mapa-region{
@@ -67,11 +68,13 @@
 		@include make-col(6);
 	}
 	@include media-breakpoint-between(sm,md) {
-		@include make-col(9);
+		//@include make-col(9);
+		display: none;
 
 	}
 	@include media-breakpoint-down(xs) {
-		@include make-col(12);
+		//@include make-col(12);
+		display: none;
 	}	
 
 }

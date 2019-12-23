@@ -79,6 +79,14 @@ section {
 		@extend .img-fluid;
 	}
 }
+.md-block{
+	@include media-breakpoint-up(md) {
+		display: block;
+	}
+	@include media-breakpoint-down(md) {
+		display: none;
+	}
+}
 a{
 	-moz-outline-style: none !important;
 	outline: none !important;

@@ -12,6 +12,9 @@ if ($tax_term) {
 	</div>
 	<div class="oferta-description-container">
 		<?php the_content() ;?>
+		<div class="w-100">
+			<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/pills/boton_contacto.jpg">
+		</div>
 	</div>
 </section>
 
