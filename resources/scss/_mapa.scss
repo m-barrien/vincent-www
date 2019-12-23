@@ -39,3 +39,11 @@
 	}
 
 }
+
+.col-svg-mapa-grande, .col-svg-mapa-region{
+	@include make-col-ready();
+	@include make-col(6);
+}
+.mapa-swiper{
+	min-height: 400px;
+}

@@ -512,10 +512,80 @@ get_header();
 		<h1 class="section-header">Proyectos Vincent en Chile</h1>
 	</section>
 	<section class="">
-		<div class="svg-wrapper">
-			<?php get_template_part( 'template-parts/svg-map' );  ?>
+		<div class="col-svg-mapa-grande">
+			<div class="svg-wrapper">
+				<?php get_template_part( 'template-parts/svg-map' );  ?>
+			</div>
 		</div>
-	
+		<div class="col-svg-mapa-region">
+		  <div class="mapa-swiper swiper-container">
+		    <div class="swiper-wrapper">
+				<div class="swiper-slide"  data-hash="swiper_antofagasta_1_"> 
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
+				</div>
+				<div class="swiper-slide"  data-hash="swiper_coquimbo_1_"> 
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
+				</div>
+				<div class="swiper-slide"  data-hash="swiper_atacama_1_"> 
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
+				</div>
+				<div class="swiper-slide"  data-hash="swiper_maule_1_"> 
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
+				</div>
+				<div class="swiper-slide"  data-hash="swiper_bio_x5F_bio_1_"> 
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
+				</div>
+				<div class="swiper-slide"  data-hash="swiper_carlos_x5F_ibañez_1_"> 
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
+				</div>
+				<div class="swiper-slide"  data-hash="swiper_carlos_x5F_ibañez"> 
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
+				</div>
+				<div class="swiper-slide"  data-hash="swiper_araucania_1_"> 
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
+				</div>
+				<div class="swiper-slide"  data-hash="swiper_los_x5F_rios_1_"> 
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
+				</div>
+				<div class="swiper-slide"  data-hash="swiper_santiago_1_"> 
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
+				</div>
+				<div class="swiper-slide"  data-hash="swiper_tarapaca_1_"> 
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
+				</div>
+				<div class="swiper-slide"  data-hash="swiper_los_x5F_lagos_1_"> 
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
+				</div>
+				<div class="swiper-slide"  data-hash="swiper_los_x5F_lagos"> 
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
+				</div>
+				<div class="swiper-slide"  data-hash="swiper_ohiggins_1_"> 
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
+				</div>
+				<div class="swiper-slide"  data-hash="swiper_arica_x5F_y_x5F_parinacota">
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
+				</div>
+				<div class="swiper-slide"  data-hash="swiper_valparaiso_1_">
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/valparaiso.svg">
+				</div>
+				<div class="swiper-slide"  data-hash="swiper_magallanes_1_">
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/valparaiso.svg">
+				</div>
+				<div class="swiper-slide"  data-hash="swiper_magallanes">
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/valparaiso.svg">
+				</div>
+		    </div>
+		  </div>
+		</div>
+	  <script>
+    var swiper = new Swiper('.mapa-swiper', {
+      spaceBetween: 30,
+      lazy: true,
+      hashNavigation: {
+        watchState: true,
+      },
+    });
+  </script>
 	</section>	
 </div>
 <!-- /SECCION MAPA -->
