@@ -520,59 +520,45 @@ get_header();
 		<div class="col-svg-mapa-region">
 		  <div class="mapa-swiper swiper-container">
 		    <div class="swiper-wrapper">
-				<div class="swiper-slide"  data-hash="swiper_antofagasta_1_"> 
-					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
+				<div class="swiper-slide"  data-hash="swiper_atacama_1_"> 
+					<h3 class="text-center">Atacama</h3>
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/mapa_ATACAMA.svg">
 				</div>
 				<div class="swiper-slide"  data-hash="swiper_coquimbo_1_"> 
-					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
-				</div>
-				<div class="swiper-slide"  data-hash="swiper_atacama_1_"> 
-					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
-				</div>
-				<div class="swiper-slide"  data-hash="swiper_maule_1_"> 
-					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
-				</div>
-				<div class="swiper-slide"  data-hash="swiper_bio_x5F_bio_1_"> 
-					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
-				</div>
-				<div class="swiper-slide"  data-hash="swiper_carlos_x5F_ibañez_1_"> 
-					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
-				</div>
-				<div class="swiper-slide"  data-hash="swiper_carlos_x5F_ibañez"> 
-					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
-				</div>
-				<div class="swiper-slide"  data-hash="swiper_araucania_1_"> 
-					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
-				</div>
-				<div class="swiper-slide"  data-hash="swiper_los_x5F_rios_1_"> 
-					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
-				</div>
-				<div class="swiper-slide"  data-hash="swiper_santiago_1_"> 
-					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
-				</div>
-				<div class="swiper-slide"  data-hash="swiper_tarapaca_1_"> 
-					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
-				</div>
-				<div class="swiper-slide"  data-hash="swiper_los_x5F_lagos_1_"> 
-					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
-				</div>
-				<div class="swiper-slide"  data-hash="swiper_los_x5F_lagos"> 
-					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
-				</div>
-				<div class="swiper-slide"  data-hash="swiper_ohiggins_1_"> 
-					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
-				</div>
-				<div class="swiper-slide"  data-hash="swiper_arica_x5F_y_x5F_parinacota">
-					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/arica.svg">
+					<h3 class="text-center">Coquimbo</h3>
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/mapa_coquimbo.svg">
 				</div>
 				<div class="swiper-slide"  data-hash="swiper_valparaiso_1_">
-					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/valparaiso.svg">
+					<h3 class="text-center">Valparaiso</h3>
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/mapa_valparaiso2.svg">
 				</div>
-				<div class="swiper-slide"  data-hash="swiper_magallanes_1_">
-					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/valparaiso.svg">
+				<div class="swiper-slide"  data-hash="swiper_santiago_1_"> 
+					<h3 class="text-center">Santiago</h3>
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/mapa_SANTIAGO.svg">
 				</div>
-				<div class="swiper-slide"  data-hash="swiper_magallanes">
-					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/valparaiso.svg">
+				<div class="swiper-slide"  data-hash="swiper_ohiggins_1_"> 
+					<h3 class="text-center">Libertador Bernardo O'Higgins</h3>
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/mapa_OHIGGINS.svg">
+				</div>
+				<div class="swiper-slide"  data-hash="swiper_maule_1_"> 
+					<h3 class="text-center">Maule</h3>
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/mapa_MAULE.svg">
+				</div>
+				<div class="swiper-slide"  data-hash="swiper_bio_x5F_bio_1_"> 
+					<h3 class="text-center">Biob&iacute;o</h3>
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/mapa_BIO_BIO.svg">
+				</div>
+				<div class="swiper-slide"  data-hash="swiper_araucania_1_"> 
+					<h3 class="text-center">Araucania</h3>
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/mapa_ARAUCANIA.svg">
+				</div>
+				<div class="swiper-slide"  data-hash="swiper_los_x5F_rios_1_"> 
+					<h3 class="text-center">Los Rios</h3>
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/mapa_los_rios.svg">
+				</div>
+				<div class="swiper-slide"  data-hash="swiper_los_x5F_lagos_1_"> 
+					<h3 class="text-center">Los Lagos</h3>
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/mapa_los_LAGOS.svg">
 				</div>
 		    </div>
 		  </div>
