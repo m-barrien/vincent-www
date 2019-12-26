@@ -494,30 +494,12 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 
 
 		<div class="col-svg-mapa-grande" >
-			<div class="svg-wrapper" id="svgContainer">
+			<div class="svg-wrapper lazy-map" id="svgContainer" data-rendered="false">
 				
 			</div>
 		</div>
 		<script type="text/javascript">
-			if (window.matchMedia("(min-width: 900px)").matches) {
-				xhr = new XMLHttpRequest();
-				xhr.open("GET","/mapa-svg",true);
-				// Following line is just to be on the safe side;
-				// not needed if your server delivers SVG with correct MIME type
-				xhr.overrideMimeType("image/svg+xml");
 
-				xhr.onload = function () {
-				  if (xhr.readyState === xhr.DONE && xhr.status === 200) {
-					document.getElementById("svgContainer").appendChild(xhr.responseXML.documentElement);
-				  }
-				};
-
-				xhr.send("");
-
-			}
-			else{
-
-			}
 			function goto(hash) {
 				location.hash = "#" + hash;
 			}

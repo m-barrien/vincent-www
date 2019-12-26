@@ -384,6 +384,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var lazyloadImages = document.querySelectorAll("img.lazy");    
   var lazyloadBGImages = document.querySelectorAll(".bg-lazy");    
   var lazyloadIframes = document.querySelectorAll("iframe.lazy");    
+  var lazyloadSVGMaps = document.querySelectorAll(".lazy-map");    
   var lazyloadThrottleTimeout;
   
   function lazyload () {
@@ -412,7 +413,28 @@ document.addEventListener("DOMContentLoaded", function() {
               bg_div.classList.remove('bg-lazy');
             }
         });
-        if(lazyloadImages.length == 0 && lazyloadIframes.length == 0 && lazyloadBGImages.length == 0) { 
+        lazyloadSVGMaps.forEach(function(svg_div) {
+            if(svg_div.offsetTop < (window.innerHeight + scrollTop)) {
+              if ( svg_div.dataset.rendered == "false" &&  window.matchMedia("(min-width: 900px)").matches) {
+                xhr = new XMLHttpRequest();
+                xhr.open("GET","/mapa-svg",true);
+                // Following line is just to be on the safe side;
+                // not needed if your server delivers SVG with correct MIME type
+                xhr.overrideMimeType("image/svg+xml");
+
+                xhr.onload = function () {
+                  if (xhr.readyState === xhr.DONE && xhr.status === 200) {
+                  document.getElementById("svgContainer").appendChild(xhr.responseXML.documentElement);
+                  }
+                };
+                xhr.send("");
+
+              }
+              svg_div.dataset.rendered = "true";
+              svg_div.classList.remove('lazy-map');
+            }
+        });
+        if(lazyloadImages.length == 0 && lazyloadIframes.length == 0 && lazyloadBGImages.length == 0 && lazyloadSVGMaps.length == 0) { 
           document.removeEventListener("scroll", lazyload);
           window.removeEventListener("resize", lazyload);
           window.removeEventListener("orientationChange", lazyload);
