@@ -10,6 +10,17 @@
 	.st0{fill:#8E8E8E;}
 	.st1{fill:#606060;}
 	.st2{fill:#BFBFBF;}
+	.disabled_map{
+		fill: #d0d0d0 !important;
+	}
+	svg#mapa > g.disabled_map > path,
+	svg#mapa > g.disabled_map > polygon,
+	svg#mapa > g.disabled_map > g > path,
+	svg#mapa > g.disabled_map > g > rect,
+	svg#mapa > g.disabled_map > g > polygon
+	{
+		fill: #d0d0d0 !important;
+	}
 	svg#mapa > g:hover > path,
 	svg#mapa > g:hover > polygon,
 	svg#mapa > g:hover > g > path,
@@ -19,7 +30,7 @@
 		fill: #ff8000 ;
 	}
 </style>
-<g onclick="goto('swiper_antofagasta_1_')" id="antofagasta_1_">
+<g onclick="goto('swiper_antofagasta_1_')" id="antofagasta_1_" class="disabled_map">
 	<path id="antofagasta" class="st0" d="M659,730.6c-1.2-10.5-1.6-20.5,8.7-29.1c9.2-7.7,10.5-34.4,3.2-43.9
 		c-11.7-15.4-9.3-32.8-7.3-49.8c2.5-20.9,6.4-41.7,10.1-65.2c-6.8,1.6-11.3,2.8-15.9,3.7c-1.7,0.3-3.7,0.5-5.3-0.1
 		c-0.6-0.2-0.8-2.8-0.5-4.1c3.4-12.2,6.9-24.4,10.5-37.3c1.6,1,3.7,2.7,6,3.4c6.4,1.9,11.3,0.5,11.8-7.4c1.4-19.2,2.7-38.4,4.4-57.6
@@ -144,7 +155,7 @@
 			C525.2,1567.2,529.8,1562.7,529.8,1556.4z"/>
 	</g>
 </g>
-<g onclick="goto('swiper_carlos_x5F_ibañez_1_')" id="carlos_x5F_ibañez_1_">
+<g onclick="goto('swiper_carlos_x5F_ibañez_1_')" id="carlos_x5F_ibañez_1_" class="disabled_map">
 	<g>
 		<path class="st2" d="M663.9,2127.6c9.5-2.3,19-4.4,28.9-6.7c0.5-3,1.2-7.2,2-11.9c-5.1-3-11.7-6.1-17.4-10.4
 			c-4.8-3.6-9.6-7.8-7.6-15.5c2.1-7.8-4-13.3-11.7-10.5c-11.9,4.4-21.8,1.1-30.7-7c-1.1-1-2.1-2.4-3.4-2.7
@@ -316,7 +327,7 @@
 			 M997.2,1294.3c0-6.3-4.6-10.8-10.8-10.8s-10.8,4.5-10.8,10.8s4.6,10.8,10.8,10.8C992.6,1305.1,997.2,1300.6,997.2,1294.3z"/>
 	</g>
 </g>
-<g onclick="goto('swiper_tarapaca_1_')" id="tarapaca_1_">
+<g onclick="goto('swiper_tarapaca_1_')" id="tarapaca_1_" class="disabled_map">
 	<g>
 		<path class="st1" d="M410.4,313h-10.2v-4.8h26v4.8H416v25.8h-5.7L410.4,313L410.4,313z"/>
 		<path class="st1" d="M448.9,331.8h-15.3l-3,7.1h-5.9l13.8-30.7h5.6l13.8,30.7h-6L448.9,331.8z M447,327.3l-5.8-13.4l-5.7,13.4H447
@@ -430,7 +441,7 @@
 			c0,4.9-4,9.1-12.4,9.1C409.4,1424.1,404.7,1422.7,402.1,1420.5z"/>
 	</g>
 </g>
-<g onclick="goto('swiper_arica_x5F_y_x5F_parinacota')" id="arica_x5F_y_x5F_parinacota">
+<g onclick="goto('swiper_arica_x5F_y_x5F_parinacota')" id="arica_x5F_y_x5F_parinacota" class="disabled_map">
 	<g>
 		<path class="st1" d="M797.9,128.8h-15.3l-3,7.1h-5.9l13.8-30.7h5.6l13.8,30.7h-6L797.9,128.8z M796,124.3l-5.8-13.4l-5.7,13.4H796
 			z"/>
@@ -497,7 +508,7 @@
 			S613.9,1232.6,613.9,1226.4z"/>
 	</g>
 </g>
-<g onclick="goto('swiper_magallanes_1_')" id="magallanes_1_">
+<g onclick="goto('swiper_magallanes_1_')" id="magallanes_1_" class="disabled_map">
 	<g>
 		<path class="st1" d="M747.6,2565.3V2545l-10.1,16.8H735l-10.1-16.6v20.1h-5.4v-30.7h4.7l12.2,20.3l12-20.3h4.7v30.7H747.6z"/>
 		<path class="st1" d="M781.1,2558.2h-15.3l-3,7.1h-5.9l13.8-30.7h5.6l13.8,30.7h-6L781.1,2558.2z M779.2,2553.7l-5.8-13.4
