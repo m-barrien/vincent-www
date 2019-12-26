@@ -508,7 +508,7 @@ get_header();
 			<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mapa_chile.jpg">
 		</div>
 	</section>
-	<section class="v-padding-top md-block">
+	<section class="v-padding-top">
 		<h1 class="section-header">Proyectos Vincent en Chile</h1>
 	</section>
 	<section class="">
@@ -561,6 +561,8 @@ get_header();
 					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/mapa_los_LAGOS.svg">
 				</div>
 		    </div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
 		  </div>
 		</div>
 	  <script>
@@ -570,6 +572,11 @@ get_header();
 	      hashNavigation: {
 	        watchState: true,
 	      },
+	      navigation: {
+	        nextEl: '.swiper-button-next',
+	        prevEl: '.swiper-button-prev',
+	      }
+
 	    });
 	  </script>
 	</section>	

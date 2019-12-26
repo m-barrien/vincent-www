@@ -2,10 +2,10 @@
 	.image-wrapper{
 		@extend .py-1;
 		@include make-col-ready();
-		@include media-breakpoint-up(md) {
+		@include media-breakpoint-up(sm) {
 			@include make-col(6);
 		}
-		@include media-breakpoint-down(md) {
+		@include media-breakpoint-down(sm) {
 			@include make-col-offset(0);
 			@include make-col(12);
 		}
@@ -49,10 +49,9 @@
 		@include make-col(3);
 	}
 	@include media-breakpoint-between(sm,md) {
-		//@include make-col(3);
-		display: none;
+		@include make-col(4);
 	}
-	@include media-breakpoint-down(xs) {
+	@include media-breakpoint-down(sm) {
 		//@include make-col(12);
 		display: none;
 	}	
@@ -68,16 +67,32 @@
 		@include make-col(6);
 	}
 	@include media-breakpoint-between(sm,md) {
-		//@include make-col(9);
-		display: none;
+		@include make-col-offset(0);
+		@include make-col(8);
 
 	}
-	@include media-breakpoint-down(xs) {
-		//@include make-col(12);
-		display: none;
-	}	
+	@include media-breakpoint-down(sm) {
+		@include make-col-offset(0);
+		@include make-col(12);
+	}
 
 }
 .mapa-swiper{
 	min-height: 400px;
+	@include media-breakpoint-up(md){
+		.swiper-button-next{
+				display: none;
+		}
+		.swiper-button-prev{
+				display: none;
+		}
+	}
+	@include media-breakpoint-down(md){
+		.swiper-button-next{
+				display: block;
+		}
+		.swiper-button-prev{
+				display: block;
+		}
+	}
 }
