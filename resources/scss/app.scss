@@ -192,17 +192,6 @@ p{
   visibility: hidden;
 }
 
-.v-padding{
-	padding-top: $section-padding-top;
-	padding-bottom: $section-padding-bottom;
-}
-.v-padding-top{
-	padding-top: $section-padding-top;
-}
-.v-padding-bottom{
-	padding-bottom: $section-padding-bottom;
-}
-
 .orange{
 	color: $vincent-orange;
 }
@@ -660,8 +649,6 @@ p{
 }
 
 #how-we-work{
-	padding-top: $section-padding-top;
-	padding-bottom: $section-padding-bottom;
 	h1{
 		text-align: center;
 	}
@@ -873,8 +860,8 @@ footer{
 
 		}
 		@include media-breakpoint-down(sm) {
-			width: 30vw;
-			height: 30vw;			
+			width: 25vw;
+			height: 25vw;			
 		}
 	}
 	.footer-address{
@@ -896,7 +883,7 @@ footer{
 				padding: 0 20px;	
 			}			
 			@include media-breakpoint-down(xs) {
-				font-size: 5vw;
+				font-size: 4.5vw;
 				width: 100%;
 				padding: 0 20px;
 				text-align:center;	
@@ -1023,8 +1010,6 @@ footer{
 
 
 .half-banner{
-	margin-top: $section-padding-top;
-	margin-bottom: $section-padding-bottom;
 	@include media-breakpoint-up(sm) {
 		min-height: 400px;
 		height: 35vw;

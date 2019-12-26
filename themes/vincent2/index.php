@@ -161,8 +161,9 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 </div>
 
 <!-- Banner a seccion de hogar -->
-<div class="container-fluid vp-t">
-	<section class="half-banner mt-0 bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-inicio-1.jpg">
+<div class="vp-t"></div>
+<div class="container-fluid vp-t vp-b">
+	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-inicio-1.jpg">
 		<img class="watermark lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/watermark.png">
 		<div class="half-banner-body right">
 			<div class="mov-img">
@@ -182,9 +183,9 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 </div>
 <!-- Banner a seccion de hogar -->
 
-<div class="container-fluid">
+<div class="container-fluid vp-t vp-b">
 	<section id="how-we-work">
-		<div class="col-sm-12 py-3">
+		<div class="col-sm-12">
 			<h1 class="section-header">Cómo trabajamos...</h1>
 			<p class="highlight">Estamos comprometidos con entregar la mejor solución para sus necesidades.</p>
 			
@@ -301,7 +302,7 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 
 
 <!-- Banner a calidad productos -->
-<div class="container-fluid">
+<div class="container-fluid vp-t vp-b">
 	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-inicio-2.jpg">
 		<img class="watermark right lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/watermark.png">
 		<div class="half-banner-body">

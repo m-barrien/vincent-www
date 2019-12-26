@@ -127,7 +127,7 @@ else{
 		</div>
 	</section>
 	<section>
-		<h3 style="width: 100%; text-align: center; padding-top: 100px;">2019 Vincent Solar | Todos los derechos reservados</h3>
+		<h3 class="px-2" style="width: 100%; text-align: center; padding-top: 100px;">2019 Vincent Solar | Todos los derechos reservados</h3>
 	</section>
 
 </footer>
