@@ -523,6 +523,9 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 	<section class="v-padding-top">
 		<h1 class="section-header">Proyectos Vincent en Chile</h1>
 	</section>
+	<div class="indicador-mapa-wrapper">
+		<img data-src="<?php echo get_template_directory_uri() ?>/image/snippets/indicador_mapa.png" class="lazy indicador-mapa">
+	</div>
 	<section class="">
 		<div class="col-svg-mapa-grande">
 			<div class="svg-wrapper">
@@ -532,44 +535,52 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 		<div class="col-svg-mapa-region">
 		  <div class="mapa-swiper swiper-container">
 		    <div class="swiper-wrapper">
+				<div class="swiper-slide"  data-hash="swiper_tarapaca_1_"> 
+					<h3 class="text-center">Regi&oacute;n de Tarapac&aacute;</h3>
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/mapa_tarapaca.svg">
+				</div>
+				<div class="swiper-slide"  data-hash="swiper_antofagasta_1_"> 
+					<h3 class="text-center">Regi&oacute;n de Antofagasta</h3>
+					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/mapa_ANTOFAGASTA.svg">
+				</div>
 				<div class="swiper-slide"  data-hash="swiper_atacama_1_"> 
-					<h3 class="text-center">Atacama</h3>
+					<h3 class="text-center">Regi&oacute;n de Atacama</h3>
 					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/mapa_ATACAMA.svg">
 				</div>
 				<div class="swiper-slide"  data-hash="swiper_coquimbo_1_"> 
-					<h3 class="text-center">Coquimbo</h3>
+					<h3 class="text-center">Regi&oacute;n de Coquimbo</h3>
 					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/mapa_coquimbo.svg">
 				</div>
 				<div class="swiper-slide"  data-hash="swiper_valparaiso_1_">
-					<h3 class="text-center">Valparaiso</h3>
+					<h3 class="text-center">Regi&oacute;n de Valparaiso</h3>
 					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/mapa_valparaiso2.svg">
 				</div>
 				<div class="swiper-slide"  data-hash="swiper_santiago_1_"> 
-					<h3 class="text-center">Santiago</h3>
+					<h3 class="text-center">Regi&oacute;n de Santiago</h3>
 					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/mapa_SANTIAGO.svg">
 				</div>
 				<div class="swiper-slide"  data-hash="swiper_ohiggins_1_"> 
-					<h3 class="text-center">Libertador Bernardo O'Higgins</h3>
+					<h3 class="text-center">Regi&oacute;n de Libertador Bernardo O'Higgins</h3>
 					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/mapa_OHIGGINS.svg">
 				</div>
 				<div class="swiper-slide"  data-hash="swiper_maule_1_"> 
-					<h3 class="text-center">Maule</h3>
+					<h3 class="text-center">Regi&oacute;n de Maule</h3>
 					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/mapa_MAULE.svg">
 				</div>
 				<div class="swiper-slide"  data-hash="swiper_bio_x5F_bio_1_"> 
-					<h3 class="text-center">Biob&iacute;o</h3>
+					<h3 class="text-center">Regi&oacute;n de Biob&iacute;o</h3>
 					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/mapa_BIO_BIO.svg">
 				</div>
 				<div class="swiper-slide"  data-hash="swiper_araucania_1_"> 
-					<h3 class="text-center">Araucania</h3>
+					<h3 class="text-center">Regi&oacute;n de Araucania</h3>
 					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/mapa_ARAUCANIA.svg">
 				</div>
 				<div class="swiper-slide"  data-hash="swiper_los_x5F_rios_1_"> 
-					<h3 class="text-center">Los Rios</h3>
+					<h3 class="text-center">Regi&oacute;n de Los Rios</h3>
 					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/mapa_los_rios.svg">
 				</div>
 				<div class="swiper-slide"  data-hash="swiper_los_x5F_lagos_1_"> 
-					<h3 class="text-center">Los Lagos</h3>
+					<h3 class="text-center">Regi&oacute;n de Los Lagos</h3>
 					<img class="img-fluid swiper-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/svg/mapa_los_LAGOS.svg">
 				</div>
 		    </div>
