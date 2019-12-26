@@ -508,9 +508,8 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 
 				xhr.onload = function () {
 				  if (xhr.readyState === xhr.DONE && xhr.status === 200) {
-				    console.log(xhr.response, xhr.responseXML);
-				  }
 					document.getElementById("svgContainer").appendChild(xhr.responseXML.documentElement);
+				  }
 				};
 
 				xhr.send("");
