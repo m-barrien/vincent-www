@@ -1,5 +1,4 @@
 all:sass js
-	notify-send "Ready"
 copy:
 	cp -rf ./themes/vincent2 ./public_html/wp-content/themes
 	cp -rf ./themes/vincent2/css ./public_html/
