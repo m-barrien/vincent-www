@@ -54,6 +54,18 @@ get_header();
 -->
 
 <!-- SECCION 3 PAGINAS COVER DDE TGREEN -->
+<script type="text/javascript">
+//preload cover images	
+if (window.matchMedia("(min-width: 900px)").matches) {
+  var cover1=new Image();
+  cover1.src='<?php echo get_template_directory_uri() ?>/image/covers/1.jpg';
+  var cover2=new Image();
+  cover2.src='<?php echo get_template_directory_uri() ?>/image/covers/2.jpg';
+  var cover3=new Image();
+  cover3.src='<?php echo get_template_directory_uri() ?>/image/covers/3.jpg';    
+}
+
+</script>
 <div class="site-cover" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/covers/1.jpg');">
 
 	<div class="swiper-container swiper-cover">
