@@ -17,7 +17,7 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 	</div>
 	<div class="oferta-index-category-kit-img">
 		<div class="center-img">
-			<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-group-image.png">
+			<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-group-image.m.png">
 		</div>
 		
 	</div>
