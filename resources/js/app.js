@@ -68,7 +68,18 @@ var swiper_how = new Swiper('.swiper-how-we-work', {
       }
     }
   );
+var swiper = new Swiper('.mapa-swiper', {
+  spaceBetween: 30,
+  lazy: true,
+  hashNavigation: {
+    watchState: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
 
+});
 $('.swiper-slide').mouseenter(
   function(){
     if($(this).find( '.cover-slide' ).attr("data-bg-im")){

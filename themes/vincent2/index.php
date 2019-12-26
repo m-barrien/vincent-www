@@ -565,20 +565,7 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 			<div class="swiper-button-prev"></div>
 		  </div>
 		</div>
-	  <script>
-	    var swiper = new Swiper('.mapa-swiper', {
-	      spaceBetween: 30,
-	      lazy: true,
-	      hashNavigation: {
-	        watchState: true,
-	      },
-	      navigation: {
-	        nextEl: '.swiper-button-next',
-	        prevEl: '.swiper-button-prev',
-	      }
 
-	    });
-	  </script>
 	</section>	
 </div>
 <!-- /SECCION MAPA -->
