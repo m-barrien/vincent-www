@@ -392,42 +392,6 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 	</div>	
 </div>
 
-<!-- SECCION MAPA -->
-<!--
-
-<div class="container-fluid" id="gmap" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/covers/mapa.jpg');">
-	<div class="proyectos">
-		<div class="text-wrapper">
-			<h2 class="shrink">Vincent Solar instala <span>soluciones solares</span> en todo Chile</h2>
-			<div class="flex-container space-between" style="align-items: start;">
-				<div class="button-container">
-					<button>
-						1034
-					</button>
-					<p>Sistemas fotovoltaicos en 6 años</p>
-				</div>
-				<div class="button-container">
-					<button>
-						29k
-					</button>
-					<p>m<sup>2</sup> de paneles fotovoltaicos en Chile</p>
-				</div>
-				<div class="button-container">
-					<button>
-						2.8k
-					</button>
-					<p> t de CO<sub>2</sub> evitada con los sistemas fotovoltaicos Vincent Solar</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<section id="gmap-iframe">
-		<iframe class="lazy" data-src="https://www.google.com/maps/d/u/0/embed?mid=127rBG1dGQN7SgGPHxe0oXfoQiH35qhlI"></iframe>
-		
-	</section>
-</div>
--->
-
 <!-- SECCION VIDEOS -->
 <!--
 <div class="container">
@@ -527,11 +491,43 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 		<img data-src="<?php echo get_template_directory_uri() ?>/image/snippets/indicador_mapa.png" class="lazy indicador-mapa">
 	</div>
 	<section class="">
-		<div class="col-svg-mapa-grande">
-			<div class="svg-wrapper">
-				<?php get_template_part( 'template-parts/svg-map' );  ?>
+
+
+		<div class="col-svg-mapa-grande" >
+			<div class="svg-wrapper" id="svgContainer">
+				
 			</div>
 		</div>
+		<script type="text/javascript">
+			if (window.matchMedia("(min-width: 900px)").matches) {
+				xhr = new XMLHttpRequest();
+				xhr.open("GET","/mapa-svg",true);
+				// Following line is just to be on the safe side;
+				// not needed if your server delivers SVG with correct MIME type
+				xhr.overrideMimeType("image/svg+xml");
+
+				xhr.onload = function () {
+				  if (xhr.readyState === xhr.DONE && xhr.status === 200) {
+				    console.log(xhr.response, xhr.responseXML);
+				  }
+					document.getElementById("svgContainer").appendChild(xhr.responseXML.documentElement);
+				};
+
+				xhr.send("");
+
+			}
+			else{
+
+			}
+			function goto(hash) {
+				location.hash = "#" + hash;
+			}
+
+
+		</script>
+
+
+
 		<div class="col-svg-mapa-region">
 		  <div class="mapa-swiper swiper-container">
 		    <div class="swiper-wrapper">
