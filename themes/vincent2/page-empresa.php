@@ -112,7 +112,7 @@
 </div>
 
 
-<div class="footer-ofertas-container v-padding">
+<div class="footer-ofertas-container vp-t vp-b d-none">
 	<div class="container">
 		<h1>Nuestros kits en <span class="orange">OFERTA</span></h1>
 	</div>
