@@ -654,15 +654,6 @@ p{
 	color:#fff;
 	background: $vincent-orange;
 }
-.swiper-button-next ,.swiper-button-prev{
-	@include media-breakpoint-down(sm) {
-		display: none;
-	}
-	@include media-breakpoint-up(sm) {	
-		display: block;
-	}
-}
-
 #how-we-work{
 	h1{
 		text-align: center;

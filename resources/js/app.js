@@ -9,6 +9,24 @@ var gallery_open = null;
 
 $(document).ready(function () {
 
+var swiper = new Swiper('.ofertas-empresa-swiper', {
+  effect: 'flip',
+  grabCursor: true,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  on:{
+    click: function(event){
+      this.slideNext();
+    }
+  }  
+});
+
 var swiper_home = new Swiper('.swiper-cover', {
       slidesPerView: 3,
       spaceBetween: 0,

@@ -112,110 +112,151 @@
 </div>
 
 
-<div class="footer-ofertas-container vp-t vp-b d-none">
+<div class="footer-ofertas-container vp-t vp-b">
 	<div class="container">
 		<h1>Nuestros kits en <span class="orange">OFERTA</span></h1>
+		<h3>Elija el sistema fotovoltaico m&aacute;s adeucado para su empresa.</h3>
 	</div>
-	<div class="container">
-		<section>
-			<div class="kit-group-body" >
-				<div class="row">
-					<div class="kit-col-container">
+  <div class="swiper-container ofertas-empresa-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide empresa-slide">
+      		<div class="img-wrapper-empresa">
+      			<div class="empresa-slide" style="background-image: url(<?php echo get_template_directory_uri() ?>/image/pills/20kw-f.jpg);"></div>
+      		</div>
+      </div>			
+      <div class="swiper-slide empresa-slide">
+      		<div class="img-wrapper-empresa">
+      			<div class="empresa-slide" style="background-image: url(<?php echo get_template_directory_uri() ?>/image/pills/20kw-f.jpg);"></div>
+      		</div>
+      </div>
+      <div class="swiper-slide empresa-slide">
+      		<div class="img-wrapper-empresa">
+      			<div class="empresa-slide" style="background-image: url(<?php echo get_template_directory_uri() ?>/image/pills/20kw-f.jpg);"></div>
+      		</div>
+      </div>
+      <div class="swiper-slide empresa-slide">
+      		<div class="img-wrapper-empresa">
+      			<div class="empresa-slide" style="background-image: url(<?php echo get_template_directory_uri() ?>/image/pills/20kw-f.jpg);"></div>
+      		</div>
+      </div>
+      <div class="swiper-slide empresa-slide">
+      		<div class="img-wrapper-empresa">
+      			<div class="empresa-slide" style="background-image: url(<?php echo get_template_directory_uri() ?>/image/pills/20kw-f.jpg);"></div>
+      		</div>
+      </div>
+      <div class="swiper-slide empresa-slide">
+      		<div class="img-wrapper-empresa">
+      			<div class="empresa-slide" style="background-image: url(<?php echo get_template_directory_uri() ?>/image/pills/20kw-f.jpg);"></div>
+      		</div>
+      </div>
+    </div>
+
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- Add Arrows -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+	<div class="container vp-b">
+		<section class="kit-verticals-row">
+					<div class="kit-verticals-col">
 						<a class="gray-container"  href="#slide1">
-							<img src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-20kw.jpg">
-							<div class="text-body">
+							<img class="kit-verticals-img" src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-20kw.jpg">
+							<div class="kit-verticals-text-body">
 								<div class="little-title">Soluciones Empresa</div>
 								<div class="kw">
-									20kw
+									20 <span>kw</span>
 								</div>
 							</div>
 						</a>
 						
 					</div>	
-					<div class="kit-col-container">
+					<div class="kit-verticals-col">
 						<a class="gray-container"  href="#slide2">
-							<img src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-30kw.jpg">
-							<div class="text-body">
+							<img class="kit-verticals-img" src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-30kw.jpg">
+							<div class="kit-verticals-text-body">
 								<div class="little-title">Soluciones Empresa</div>
 								<div class="kw">
-									30kw
+									30 <span>kw</span>
 								</div>
 							</div>
 						</a>
 						
 					</div>	
-					<div class="kit-col-container">
+					<div class="kit-verticals-col">
 						<a class="gray-container"  href="#slide3">
-							<img src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-50kw.jpg">
-							<div class="text-body">
+							<img class="kit-verticals-img" src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-50kw.jpg">
+							<div class="kit-verticals-text-body">
 								<div class="little-title">Soluciones Empresa</div>
 								<div class="kw">
-									50kw
+									50 <span>kw</span>
 								</div>
 							</div>
 						</a>
 						
 					</div>	
-					<div class="kit-col-container">
+					<div class="kit-verticals-col">
 						<a class="gray-container"  href="#slide4">
-							<img src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-100kw.jpg">
-							<div class="text-body">
+							<img class="kit-verticals-img" src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-100kw.jpg">
+							<div class="kit-verticals-text-body">
 								<div class="little-title">Soluciones Empresa</div>
 								<div class="kw">
-									100kw
+									100 <span>kw</span>
 								</div>
 							</div>
 						</a>
 						
 					</div>						    	
-				</div>
-
-			</div>				
 		</section>
-		<section>
-		<div class="swiper-container footer-ofertas-swiper">
+		<section class="vp-t">
+		<div class="swiper-container footer-ofertas-swiper ">
 			<div class="swiper-wrapper">
 			  <div class="swiper-slide" data-hash="slide1">
 			  	<div class="descripcion-oferta">
-			  		<h2>20kw</h2>
-			  		<p>Oferta buenisima</p>
+			  		<div class="title">Soluci&oacute;n empresa <span>20kw</span></div>
 			  		<ul>
-			  			<li>Para consumos desde XXXXXkWh</li>
-			  			<li>Industrias de alimentos</li>
-			  			<li>Cámaras de refrigeración</li>
+			  			<li>Para consumos sobre <strong>300.000 Pesos</strong></li>
+			  			<li>Solución ideal para <strong>Camaras de refrigeración, Negocios de comida rápida, botillerías, carnicerías, Panaderías, etc.</strong></li>
+			  			<li>Ahorre, produzca energ&iacute;a limpia y recupere rapidamente su inversi&oacute;n.</li>
+			  			<li>Cubra al menos el 60% de sus necesidades energéticas actuales.</li>
+			  			<li>Mejorará la imagen de su empresa, ayudará al medio ambiente y aumentará su plusvalía.</li>
 			  		</ul>
 			  	</div>
 			  </div>
 			  <div class="swiper-slide" data-hash="slide2">
 			  	<div class="descripcion-oferta">
-			  		<h2>20kw</h2>
-			  		<p>Oferta buenisima</p>
+			  		<div class="title">Soluci&oacute;n empresa <span>30kw</span></div>
 			  		<ul>
-			  			<li>Para consumos desde XXXXXkWh</li>
-			  			<li>Industrias de alimentos</li>
-			  			<li>Cámaras de refrigeración</li>
+			  			<li>Para consumos sobre <strong>500.000 Pesos</strong></li>
+			  			<li>Solución ideal para <strong>Camaras de refrigeración, Negocios de comida rápida, botillerías, carnicerías, Panaderías, etc.</strong></li>
+			  			<li>Ahorre, produzca energ&iacute;a limpia y recupere rapidamente su inversi&oacute;n.</li>
+			  			<li>Cubra al menos el 60% de sus necesidades energéticas actuales.</li>
+			  			<li>Mejorará la imagen de su empresa, ayudará al medio ambiente y aumentará su plusvalía.</li>
 			  		</ul>
 			  	</div>
 			  </div>
 			  <div class="swiper-slide" data-hash="slide3">
 			  	<div class="descripcion-oferta">
-			  		<h2>20kw</h2>
-			  		<p>Oferta buenisima</p>
+			  		<div class="title">Soluci&oacute;n empresa <span>50kw</span></div>
 			  		<ul>
-			  			<li>Para consumos desde XXXXXkWh</li>
-			  			<li>Industrias de alimentos</li>
-			  			<li>Cámaras de refrigeración</li>
+			  			<li>Para consumos sobre <strong>1.000.000 Pesos</strong></li>
+			  			<li>Solución ideal para <strong>Camaras de refrigeración, Negocios de comida rápida, botillerías, carnicerías, Panaderías, etc.</strong></li>
+			  			<li>Ahorre, produzca energ&iacute;a limpia y recupere rapidamente su inversi&oacute;n.</li>
+			  			<li>Cubra al menos el 60% de sus necesidades energéticas actuales.</li>
+			  			<li>Mejorará la imagen de su empresa, ayudará al medio ambiente y aumentará su plusvalía.</li>
 			  		</ul>
 			  	</div>
 			  </div>
 			  <div class="swiper-slide" data-hash="slide4">
 			  	<div class="descripcion-oferta">
-			  		<h2>20kw</h2>
-			  		<p>Oferta buenisima</p>
+			  		<div class="title">Soluci&oacute;n empresa <span>100kw</span></div>
 			  		<ul>
-			  			<li>Para consumos desde XXXXXkWh</li>
-			  			<li>Industrias de alimentos</li>
-			  			<li>Cámaras de refrigeración</li>
+			  			<li>Para consumos sobre <strong>3.000.000 Pesos</strong></li>
+			  			<li>Solución ideal para <strong>Camaras de refrigeración, Negocios de comida rápida, botillerías, carnicerías, Panaderías, etc.</strong></li>
+			  			<li>Ahorre, produzca energ&iacute;a limpia y recupere rapidamente su inversi&oacute;n.</li>
+			  			<li>Cubra al menos el 60% de sus necesidades energéticas actuales.</li>
+			  			<li>Mejorará la imagen de su empresa, ayudará al medio ambiente y aumentará su plusvalía.</li>
 			  		</ul>
 			  	</div>
 			  </div>
