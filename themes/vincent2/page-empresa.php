@@ -126,27 +126,37 @@
       </div>			
       <div class="swiper-slide empresa-slide">
       		<div class="img-wrapper-empresa">
-      			<div class="empresa-slide" style="background-image: url(<?php echo get_template_directory_uri() ?>/image/pills/20kw-f.jpg);"></div>
+      			<div class="empresa-slide" style="background-image: url(<?php echo get_template_directory_uri() ?>/image/pills/20kw-b.jpg);"></div>
       		</div>
       </div>
       <div class="swiper-slide empresa-slide">
       		<div class="img-wrapper-empresa">
-      			<div class="empresa-slide" style="background-image: url(<?php echo get_template_directory_uri() ?>/image/pills/20kw-f.jpg);"></div>
+      			<div class="empresa-slide" style="background-image: url(<?php echo get_template_directory_uri() ?>/image/pills/30kw-f.jpg);"></div>
       		</div>
       </div>
       <div class="swiper-slide empresa-slide">
       		<div class="img-wrapper-empresa">
-      			<div class="empresa-slide" style="background-image: url(<?php echo get_template_directory_uri() ?>/image/pills/20kw-f.jpg);"></div>
+      			<div class="empresa-slide" style="background-image: url(<?php echo get_template_directory_uri() ?>/image/pills/30kw-b.jpg);"></div>
       		</div>
       </div>
       <div class="swiper-slide empresa-slide">
       		<div class="img-wrapper-empresa">
-      			<div class="empresa-slide" style="background-image: url(<?php echo get_template_directory_uri() ?>/image/pills/20kw-f.jpg);"></div>
+      			<div class="empresa-slide" style="background-image: url(<?php echo get_template_directory_uri() ?>/image/pills/50kw-f.jpg);"></div>
       		</div>
       </div>
       <div class="swiper-slide empresa-slide">
       		<div class="img-wrapper-empresa">
-      			<div class="empresa-slide" style="background-image: url(<?php echo get_template_directory_uri() ?>/image/pills/20kw-f.jpg);"></div>
+      			<div class="empresa-slide" style="background-image: url(<?php echo get_template_directory_uri() ?>/image/pills/50kw-b.jpg);"></div>
+      		</div>
+      </div>
+      <div class="swiper-slide empresa-slide">
+      		<div class="img-wrapper-empresa">
+      			<div class="empresa-slide" style="background-image: url(<?php echo get_template_directory_uri() ?>/image/pills/100kw-f.jpg);"></div>
+      		</div>
+      </div>
+      <div class="swiper-slide empresa-slide">
+      		<div class="img-wrapper-empresa">
+      			<div class="empresa-slide" style="background-image: url(<?php echo get_template_directory_uri() ?>/image/pills/100kw-b.jpg);"></div>
       		</div>
       </div>
     </div>
