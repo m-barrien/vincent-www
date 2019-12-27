@@ -137,12 +137,12 @@ $oferta-wide-scale-lg:0.7;
 	overflow: hidden;
 	&:hover{
 		.img-wrapper{
-			padding-bottom:0px;
+			margin-bottom:0px;
 			border-width: 0 0 4px 0;
 		}
 	}
 	.img-wrapper{
-		padding-bottom:4px;
+		margin-bottom:4px;
 		border-width: 0 0 0 0;
 		border-style: solid;
 		border-color: $vincent-orange;
@@ -151,6 +151,16 @@ $oferta-wide-scale-lg:0.7;
 		}
 		@include media-breakpoint-down(xs) {
 			padding:0px 45px;
+		}
+	}
+	.img-shrink-wrap{
+		width: 100%;
+		height: auto;
+		padding:10px;
+		transition:padding 0.5s; 
+		-webkit-transition:padding 0.5s; 		
+		&:hover{
+			padding:0px;
 		}
 	}
 	.oferta-text-body{

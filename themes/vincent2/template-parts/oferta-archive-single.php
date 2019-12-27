@@ -9,7 +9,9 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 <div class="kit-col-container">
 	<a href="<?php the_permalink(); ?>" class="">
 		<div class="img-wrapper">
-			<img class="img-fluid lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-group-image.png">
+			<div class="img-shrink-wrap">
+				<img class="img-fluid lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-group-image.png">
+			</div>
 		</div>
 		<div class="oferta-text-body">
 			<div class="short"><?php echo $short_title; ?></div>

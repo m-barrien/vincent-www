@@ -1,6 +1,6 @@
 <!-- SECCION PRODUCTOS -->
 <div class="container-fluid">
-	<section class="products-swiper-container">
+	<section class="products-swiper-container vp-t vp-b">
 		<h1 class="section-header">
 			Productos
 		</h1>

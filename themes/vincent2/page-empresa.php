@@ -40,7 +40,7 @@
 	<img class="img-fluid lazy mov" data-src="<?php echo get_template_directory_uri() ?>/image/banners/empresa.jpg">	
 </div>
 <!-- Banner a soluciones empresa -->
-<div class="container-fluid">
+<div class="container-fluid vp-t vp-b">
 	<section class="half-banner tall bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-empresa-2.jpg">
 		<img class="watermark right lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/watermark.png">
 		<div class="half-banner-body">
