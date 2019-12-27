@@ -263,6 +263,7 @@ $oferta-wide-scale-lg:0.7;
 	}
 	@include media-breakpoint-down(sm) {
 		@include make-col(12);  
+		padding:0 60px;
 	}	
 }
 .oferta-description-container{

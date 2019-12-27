@@ -141,6 +141,21 @@ h2{
 			font-size: 40px;
 		}
 	}
+	&.kit-single-title{
+		@include media-breakpoint-up(md) {
+			margin: 3vw 0;
+			font-size: 3.3vw;
+		}
+		@include media-breakpoint-between(xs,md) {
+			margin-top: 35px;
+			font-size: 6vw;
+		}
+		@include media-breakpoint-down(xs) {
+			font-size: 7vw;
+			margin-top: 35px;
+			white-space: nowrap;
+		}
+	}
 }
 h3{
 	@include media-breakpoint-between(lg,xl) {
