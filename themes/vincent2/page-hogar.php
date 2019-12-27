@@ -13,7 +13,7 @@
 </div>
 
 <!-- Banner a beneficios hogar -->
-<div class="container-fluid vp-t vp-b">
+<div class="container-fluid vp-b">
 	<section class="half-banner mt-0" style="background-image:url('<?php echo get_template_directory_uri() ?>/image/covers/seccion-hogar-1.jpg');">
 		<img class="watermark" src="<?php echo get_template_directory_uri() ?>/image/snippets/watermark.png">
 		<div class="half-banner-body right">
@@ -66,11 +66,11 @@
 
 
 <!-- como funciona ongrid -->
-<div class="container vp-t vp-b">
+<div class="container vp-t ">
 	<div id="ongrid"></div>
 	<h1  class="pb-4">¿Como funciona el sistema <span class="orange">ON GRID</span> residencial?</h1>
 </div>
-<div class="container-fluid">
+<div class="container-fluid vp-b">
 	<section class="full-width-diagram bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/paneles-faded.jpg">
 		<div class="img-wrapper">
 			<img class="img-fluid lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/covers/diagrama_hogar_on.png">
