@@ -13,7 +13,7 @@
 </div>
 
 <!-- Banner a beneficios hogar -->
-<div class="container-fluid">
+<div class="container-fluid vp-t vp-b">
 	<section class="half-banner mt-0" style="background-image:url('<?php echo get_template_directory_uri() ?>/image/covers/seccion-hogar-1.jpg');">
 		<img class="watermark" src="<?php echo get_template_directory_uri() ?>/image/snippets/watermark.png">
 		<div class="half-banner-body right">
@@ -33,14 +33,14 @@
 	</section>
 </div>
 <!-- Banner a beneficios hogar -->
-<div class="banner-link">
+<div class="banner-link vp-t vp-b">
 	<a href="/ofertas">
 		<img class="img-fluid lazy desk" data-src="<?php echo get_template_directory_uri() ?>/image/banners/kits.jpg">	
 		<img class="img-fluid lazy mov" data-src="<?php echo get_template_directory_uri() ?>/image/banners/kits.mov.jpg">	
 	</a>
 </div>
 <!-- Banner a soluciones hogar -->
-<div class="container-fluid">
+<div class="container-fluid vp-t vp-b">
 	<section class="half-banner tall bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-hogar-2.jpg">
 		<img class="watermark right lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/watermark.png">
 		<div class="half-banner-body">
@@ -66,7 +66,7 @@
 
 
 <!-- como funciona ongrid -->
-<div class="container v-padding-top">
+<div class="container vp-t vp-b">
 	<div id="ongrid"></div>
 	<h1  class="pb-4">¿Como funciona el sistema <span class="orange">ON GRID</span> residencial?</h1>
 </div>
@@ -80,7 +80,7 @@
 <!-- como funciona ongrid -->
 
 <!-- galeria ongrid -->
-<div id="open-gallery-ongrid" class="banner-link">
+<div id="open-gallery-ongrid vp-t vp-b" class="banner-link">
 	<img class="img-fluid lazy desk" data-src="<?php echo get_template_directory_uri() ?>/image/banners/galeria_ongrid.jpg">	
 	<img class="img-fluid lazy mov" data-src="<?php echo get_template_directory_uri() ?>/image/banners/galeria_ongrid.mov.jpg">	
 </div>
@@ -123,10 +123,10 @@
 
 
 <!-- como funciona offgrid -->
-<div class="container v-padding-top">
+<div class="container vp-t">
 	<h1 class="pb-4">¿Como funciona el sistema <span class="orange">OFF GRID</span> residencial?</h1>
 </div>
-<div class="container-fluid v-padding-bottom" >
+<div class="container-fluid vp-b" >
 	<section class="full-width-diagram bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/paneles-faded.jpg">
 		<div class="img-wrapper">
 			<img class="img-fluid lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/covers/diagrama_hogar_off.png">
