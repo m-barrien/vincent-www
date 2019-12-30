@@ -118,7 +118,7 @@
 			        'order' => 'desc',
 			        'posts_per_page' => '-1',
 			        'post_status'    => 'inherit',
-			        'category_name'=>'hogar',
+			        'category_name'=>'hogar-offgrid',
 			         );
 
 			$loop = new WP_Query( $args );
@@ -150,7 +150,7 @@
 			        'order' => 'desc',
 			        'posts_per_page' => '-1',
 			        'post_status'    => 'inherit',
-			        'category_name'=>'hogar',
+			        'category_name'=>'hogar-ongrid',
 			         );
 
 			$loop = new WP_Query( $args );
