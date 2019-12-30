@@ -307,15 +307,15 @@ nav{
 	-o-transition: margin-left .4s;
 	transition: margin-left .4s;
 	background-color: black;
+	margin-left: -250px;
 	height: 100vh;
-	min-width: 200px;
+	min-width: 250px;
 	z-index: $zindex-fixed;
 	position: fixed;
 	left: 0;
 	top:0;
 	color: $white !important;
-	width: 75vw;
-	margin-left: -75vw;
+	width: 250px;
 	&.visible{
 		margin-left: 0;
 	}
