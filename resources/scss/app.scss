@@ -691,7 +691,7 @@ p{
       	.swiper-pagination{
       		height: 20px;
 			@include media-breakpoint-down(xs) {
-				top: 0;
+				top: 12px;
 			}
 			@include media-breakpoint-up(xs) {
 				bottom: 0;

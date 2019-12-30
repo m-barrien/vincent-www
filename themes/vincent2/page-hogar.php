@@ -80,45 +80,11 @@
 <!-- como funciona ongrid -->
 
 <!-- galeria ongrid -->
-<div id="open-gallery-ongrid vp-t vp-b" class="banner-link">
+<div id="open-gallery-ongrid" class="banner-link  vp-t vp-b">
 	<img class="img-fluid lazy desk" data-src="<?php echo get_template_directory_uri() ?>/image/banners/galeria_ongrid.jpg">	
 	<img class="img-fluid lazy mov" data-src="<?php echo get_template_directory_uri() ?>/image/banners/galeria_ongrid.mov.jpg">	
 </div>
 
-<div class="gallery-container d-none">
-	<h1>Galería de proyectos <strong>ON GRID</strong></h1>
-	<div id="gallery_ongrid" class="lightgallery">
-			<?php
-			$args = array(
-			        'post_type' => 'attachment',
-			        'post_mime_type' => 'image',
-			        'orderby' => 'rand',
-			        'order' => 'desc',
-			        'posts_per_page' => '-1',
-			        'post_status'    => 'inherit',
-			        'category_name'=>'hogar',
-			         );
-
-			$loop = new WP_Query( $args );
-			while ( $loop->have_posts() ) : $loop->the_post();
-				$image = wp_get_attachment_image_src( get_the_ID(), $size="large" ); 
-				$image_thumb = wp_get_attachment_image_src( get_the_ID(), $size="thumbnail" ); 
-					?>
-				<a class="gallery-img-wrapper" href="<?php echo $image[0]; ?>" data-sub-html="<h4><?php the_title(); ?></h4>">
-					<img class="d-none lazy" data-src="<?php echo $image_thumb[0]; ?>">
-					<div class="gallery-image bg-lazy" data-src="<?php echo $image_thumb[0]; ?>" hd-src="<?php echo $image[0]; ?>">
-						
-					</div>
-					<p class="gallery-title">
-						<?php echo mb_strimwidth(get_the_title(), 0, 33, '...');?>
-					</p>
-				</a>
-
-				<?php
-			endwhile;				    
-			?>			
-	</div>
-</div>
 <!-- /galeria ongrid -->
 
 
@@ -174,5 +140,37 @@
 			endwhile;				    
 			?>			
 	</div>
+
+	<div id="gallery_ongrid" class="lightgallery">
+			<?php
+			$args = array(
+			        'post_type' => 'attachment',
+			        'post_mime_type' => 'image',
+			        'orderby' => 'rand',
+			        'order' => 'desc',
+			        'posts_per_page' => '-1',
+			        'post_status'    => 'inherit',
+			        'category_name'=>'hogar',
+			         );
+
+			$loop = new WP_Query( $args );
+			while ( $loop->have_posts() ) : $loop->the_post();
+				$image = wp_get_attachment_image_src( get_the_ID(), $size="large" ); 
+				$image_thumb = wp_get_attachment_image_src( get_the_ID(), $size="thumbnail" ); 
+					?>
+				<a class="gallery-img-wrapper" href="<?php echo $image[0]; ?>" data-sub-html="<h4><?php the_title(); ?></h4>">
+					<img class="d-none lazy" data-src="<?php echo $image_thumb[0]; ?>">
+					<div class="gallery-image bg-lazy" data-src="<?php echo $image_thumb[0]; ?>" hd-src="<?php echo $image[0]; ?>">
+						
+					</div>
+					<p class="gallery-title">
+						<?php echo mb_strimwidth(get_the_title(), 0, 33, '...');?>
+					</p>
+				</a>
+
+				<?php
+			endwhile;				    
+			?>			
+	</div>	
 </div>
 <?php get_footer(); ?>
