@@ -207,20 +207,20 @@ var swiper = new Swiper('.swiper-container.products-swiper', {
         prevEl: '.swiper-button-prev',
   }, 
   breakpoints: {
-    1024: {
-      slidesPerView: 5,
+    1500: {
+      slidesPerView: 6,
       spaceBetween: 40,
     },
-    768: {
-      slidesPerView: 3,
+    1100: {
+      slidesPerView: 6,
       spaceBetween: 30,
     },
-    640: {
-      slidesPerView: 2,
+    900: {
+      slidesPerView: 4 ,
       spaceBetween: 20,
     },
-    320: {
-      slidesPerView: 1,
+    576: {
+      slidesPerView: 2,
       spaceBetween: 10,
     }
   }
