@@ -575,23 +575,31 @@ p{
 	overflow: hidden;
 	@include media-breakpoint-up(sm) {
 		height: 500px;
+		&.small{
+			height: 40vh;
+		}
 	}
 	@include media-breakpoint-down(sm) {
 		height: 44vw;	        
+		&.small{
+			height: 44vw;
+		}		
 	}
 	video{
 		position:relative;
 		width: 100%;
 		height: 56.25vw;
-		min-height: 500px;
 		pointer-events: none;
 		@include media-breakpoint-between(lg,xl) {
 			top:-13vw;
+			min-height: 500px;
 		}
 		@include media-breakpoint-between(md,lg) {
 			top:-5vw;
+			min-height: 400px;
 		}
 		@include media-breakpoint-between(sm,md) {
+			min-height: 350px;
 			top:-0.5vw;
 		}
 		@include media-breakpoint-down(sm) {
