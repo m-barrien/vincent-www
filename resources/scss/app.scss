@@ -884,8 +884,25 @@ footer{
 				}				
 			}
 			@include media-breakpoint-between(sm,md) {
-				font-size: 5vw;
-				width: 100%;
+				font-size: 2vw;	
+				width: 33.3%;
+				padding: 0 20px;	
+				&:first-child{
+					padding: 0 20px;	
+				}
+				&:last-child{
+					padding: 0 20px;	
+				}			
+			}
+			@include media-breakpoint-between(xs,sm) {
+				&:first-child{
+					padding: 0 20px;	
+				}
+				&:last-child{
+					padding: 0 20px;	
+				}				
+				font-size: 3vw;
+				width: 50%;
 				padding: 0 20px;	
 			}			
 			@include media-breakpoint-down(xs) {
