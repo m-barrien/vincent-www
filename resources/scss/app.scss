@@ -1259,12 +1259,12 @@ section > h1.section-header{
 	.img-wrapper{
 		
 		@include media-breakpoint-between(lg,xl) {
-			@include make-col-offset(2);	
-			@include make-col(8);	
+			@include make-col-offset(3);	
+			@include make-col(6);	
 		}
 		@include media-breakpoint-between(md,lg) {
-			@include make-col-offset(1);	
-			@include make-col(10);
+			@include make-col-offset(2);	
+			@include make-col(8);
 		}
 		@include media-breakpoint-down(sm) {
 			@include make-col(12);

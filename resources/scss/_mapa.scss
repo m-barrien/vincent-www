@@ -26,11 +26,9 @@
 .svg-wrapper{
 	min-height: 500px;
 	@include media-breakpoint-up(xs) {
-		height: 95vh;
 		width: 100%;
 	}
 	@include media-breakpoint-down(xs) {
-		height: 95vh;
 		width: 100%;
 	}
 	#mapa{
@@ -91,10 +89,10 @@
 .col-svg-mapa-grande{
 	@include make-col-ready();
 	@include media-breakpoint-between(lg,xl) {
-		@include make-col(3);
+		@include make-col(4);
 	}
 	@include media-breakpoint-between(md,lg) {
-		@include make-col(3);
+		@include make-col(4);
 	}
 	@include media-breakpoint-between(sm,md) {
 		@include make-col(4);
@@ -107,11 +105,11 @@
 .col-svg-mapa-region{
 	@include make-col-ready();
 	@include media-breakpoint-between(lg,xl) {
-		@include make-col-offset(2);
+		@include make-col-offset(1);
 		@include make-col(6);
 	}
 	@include media-breakpoint-between(md,lg) {
-		@include make-col-offset(2);
+		@include make-col-offset(1);
 		@include make-col(6);
 	}
 	@include media-breakpoint-between(sm,md) {
