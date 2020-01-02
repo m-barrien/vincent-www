@@ -30,8 +30,12 @@ defined( 'ABSPATH' ) || exit;
 
 
 	<h2 class="site-title">
-		<?php the_title(); ?>
+		Producto
 	</h2>
+	<h3>
+		<strong><?php the_title(); ?></strong>
+		
+	</h3>
 	<div class="d-none">
 	<?php
 
