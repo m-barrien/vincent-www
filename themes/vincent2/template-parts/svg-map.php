@@ -21,8 +21,47 @@
 	svg#mapa > g:hover > g > rect,
 	svg#mapa > g:hover > g > polygon
 	{
-		fill: #ff8000 ;
+		fill: #ff8000 !important;
 	}
+	#tarapaca_1_ > path{
+		fill: #800c46;
+	}
+	#antofagasta_1_ > path{
+		fill: #66093f;
+	}
+	#atacama_1_ > path{
+		fill: #8f193f;
+	}
+	#coquimbo_1_ > path {
+		fill: #ca482a;
+	}
+	#valparaiso_1_ > path{
+		fill: #d86024;
+	}
+	#santiago_1_ > path{
+		fill: #e87212;
+	}
+	#ohiggins_1_ > path{
+		fill: #f79611;
+	}
+	#maule_1_ > path{
+		fill: #f59e15;
+	}
+	#bio_x5F_bio_1_ > path{
+		fill: #f79611;
+	}
+	#araucania_1_ > path{
+		fill: #f8d932;
+	}
+	#los_x5F_rios_1_ > path{
+		fill: #f7d931;
+	}
+	#los_lagos_region path{
+		fill: #dcf448;
+	}
+
+
+
 </style>
 <g onclick="goto('swiper_antofagasta_1_')" id="antofagasta_1_">
 	<path id="antofagasta" class="st0" d="M659,730.6c-1.2-10.5-1.6-20.5,8.7-29.1c9.2-7.7,10.5-34.4,3.2-43.9
@@ -347,7 +386,7 @@
 		c-1.4-6.1-0.6-10.9,6.1-13.9c6.3-2.8,12.3-6.6,18.2-10.2c10.6-6.4,21.3-9,34.2-6.1C731.3,225.9,743.4,227.2,753,217.8z"/>
 </g>
 <g onclick="goto('swiper_los_x5F_lagos_1_')" id="los_x5F_lagos_1_">
-	<g>
+	<g id="los_lagos_region">
 		<path class="st0" d="M663.6,2044c-6.6-6.5-12.8-12.8-5.2-23.1c1.4-1.9-0.7-7.9-2.9-10.7c-3.5-4.6-8-8.6-12.7-11.9
 			c-11.7-8.4-12.5-14.4-2.7-24.4c1.8-1.8,3.4-3.8,4.7-5.3c-5-11.5-16.8-19.4-13.3-34.3c4.2-0.8,8.6-2.4,13-2.2
 			c8.1,0.3,9.3-4.5,8.9-10.6c-0.7-12.2-1.5-24.5-2.7-36.7c-0.5-4.8-2.8-9.3-3.6-14.1c-1.4-8.2-2.7-16.5-3.4-24.8
