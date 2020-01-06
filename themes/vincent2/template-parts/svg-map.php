@@ -7,6 +7,9 @@
 	.disabled_map{
 		fill: #d0d0d0 !important;
 	}
+	.disabled_map path{
+		fill: #d0d0d0 !important;
+	}	
 	svg#mapa > g.disabled_map > path,
 	svg#mapa > g.disabled_map > polygon,
 	svg#mapa > g.disabled_map > g > path,
@@ -21,7 +24,7 @@
 	svg#mapa > g:hover > g > rect,
 	svg#mapa > g:hover > g > polygon
 	{
-		fill: #ff8000 !important;
+		fill: #ff8000;
 	}
 	#tarapaca_1_ > path{
 		fill: #800c46;
