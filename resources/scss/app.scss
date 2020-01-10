@@ -1163,8 +1163,8 @@ article{
 			border-radius: 6px 0px 0 6px;
 			margin-right: 0;
 			margin-left: auto;
-			width: 45%;
-			min-width: 200px;
+			width: 20%;
+			min-width: 130px;
 			max-width: 250px;
 	        
 	    }
@@ -1182,7 +1182,9 @@ article{
 			background-color: $body-bg;
 			a{
 				@extend .p-2;
-				color: $vincent-blue
+				color: $vincent-blue;
+				width: 50% !important;
+				display: inline-block !important;
 			}
 		}
 		img{
