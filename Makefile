@@ -12,9 +12,11 @@ js:
 	npm run bundle-js
 	make copy
 	npm run minify
-perm:
-	sudo docker-compose exec mysql chown -R mysql:mysql /var/lib/mysql
+permdocker:
 	sudo chown -R www-data:www-data ./public_html
+	sudo chmod 755 ./public_html
+permunlock:
+	sudo chown -R $(USER):$(USER) ./public_html
 	sudo chmod 755 ./public_html
 package:
 	cd public_html/ && \
