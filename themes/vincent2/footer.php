@@ -1,6 +1,7 @@
 <!-- SECCION PRODUCTOS -->
 <?php
-if( $_SERVER['REQUEST_URI'] == "/" || is_404()){
+$match = array();
+if( $_SERVER['REQUEST_URI'] == "/" || preg_match('/productos/', $_SERVER['REQUEST_URI'], $match) || is_404()){
 }
 else{
 	get_template_part( 'template-parts/galeria-productos', 'single' );
@@ -8,7 +9,6 @@ else{
 ?>
 
 <?php
-$match = array();
 if( !preg_match('/noticias/', $_SERVER['REQUEST_URI'], $match)):
 ?>
 <div class="w-100 gray-bg vp-t">	
