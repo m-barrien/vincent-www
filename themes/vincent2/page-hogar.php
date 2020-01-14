@@ -1,22 +1,11 @@
 <?php /* Template Name: Soluciones Hogar */ ?>
  
 <?php get_header(); ?>
-<div class="site-cover-secondary" style="background-image:linear-gradient(to bottom, #00000080 0%, #00000000 25%,#00000000 75%, #00000080 100%),url('<?php echo get_template_directory_uri() ?>/image/covers/residencial.jpg')">
-	<video id="videoPlayer" autoplay loop muted  preload="auto"> 
-	 	<source src="/video/coverhogar" type="video/mp4" media="all and (min-width: 900px)">
-	</video>
-</div>
-
-
-<div class="container">
-	<h2 class="site-title"> <?php the_title(); ?></h2>
-</div>
 
 <!-- Banner a beneficios hogar -->
 <div class="container-fluid vp-b">
-	<section class="half-banner mt-0" style="background-image:url('<?php echo get_template_directory_uri() ?>/image/covers/seccion-hogar-1.jpg');">
-		<img class="watermark" src="<?php echo get_template_directory_uri() ?>/image/snippets/watermark.png">
-		<div class="half-banner-body right">
+	<section class="half-banner h-auto mt-0" style="background-image:url('<?php echo get_template_directory_uri() ?>/image/covers/seccion-hogar-1.jpg');">
+		<div class="half-banner-body menu-top-padding right">
 			<div class="mov-img">
 				<img class=" img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-hogar-1.jpg">
 			</div>			
@@ -32,13 +21,18 @@
 		</div>
 	</section>
 </div>
-<!-- Banner a beneficios hogar -->
-<div class="banner-link vp-t vp-b">
-	<a href="/ofertas">
-		<img class="img-fluid lazy desk" data-src="<?php echo get_template_directory_uri() ?>/image/banners/kits.jpg">	
-		<img class="img-fluid lazy mov" data-src="<?php echo get_template_directory_uri() ?>/image/banners/kits.mov.jpg">	
-	</a>
+
+<div class="container">
+	<h2 class="site-title"> <?php the_title(); ?></h2>
 </div>
+<!-- video -->
+<div class="site-cover-secondary" style="background-image:linear-gradient(to bottom, #00000080 0%, #00000000 25%,#00000000 75%, #00000080 100%),url('<?php echo get_template_directory_uri() ?>/image/covers/residencial.jpg')">
+	<video id="videoPlayer" autoplay loop muted  preload="auto"> 
+	 	<source src="/video/coverhogar" type="video/mp4" media="all and (min-width: 900px)">
+	</video>
+</div>
+<!-- /video -->
+
 <!-- Banner a soluciones hogar -->
 <div class="container-fluid vp-t vp-b">
 	<section class="half-banner tall bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-hogar-2.jpg">
@@ -61,7 +55,15 @@
 		</div>
 	</section>
 </div>
-<!-- Banner a soluciones hogar -->
+<!-- /Banner a soluciones hogar -->
+
+<!-- Banner a beneficios hogar -->
+<div class="banner-link vp-t vp-b">
+	<a href="/ofertas">
+		<img class="img-fluid lazy desk" data-src="<?php echo get_template_directory_uri() ?>/image/banners/kits.jpg">	
+		<img class="img-fluid lazy mov" data-src="<?php echo get_template_directory_uri() ?>/image/banners/kits.mov.jpg">	
+	</a>
+</div>
 
 
 

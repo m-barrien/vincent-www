@@ -1045,6 +1045,9 @@ footer{
 		&.tall{
 			height: 38vw;
 		}
+		&.h-auto{
+			height: auto;
+		}
 	}
 	@include media-breakpoint-down(sm) {
 		min-height: none;
@@ -1071,6 +1074,9 @@ footer{
 		@include make-col(6);
 		&.right{
 			@include make-col-offset(6);
+		}
+		&.menu-top-padding{
+			padding-top: 140px;
 		}
 		.mov-img{
 			display: none;
@@ -1260,11 +1266,13 @@ section > h1.section-header{
 		
 		@include media-breakpoint-between(lg,xl) {
 			@include make-col-offset(3);	
-			@include make-col(6);	
+			@include make-col(6);
+			padding: 0 6vw;	
 		}
 		@include media-breakpoint-between(md,lg) {
 			@include make-col-offset(2);	
 			@include make-col(8);
+			padding: 0 5vw;
 		}
 		@include media-breakpoint-down(sm) {
 			@include make-col(12);
