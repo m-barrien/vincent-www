@@ -28,7 +28,6 @@ $map-overlay-height: 150px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 500px;
 	form .form-control {
 
 		@include media-breakpoint-up(sm) {				
@@ -65,7 +64,6 @@ $map-overlay-height: 150px;
 		font-size: 24px;
 		text-align: center;
 		color: $text-gray;
-		margin-bottom: 45px;
 		opacity: .5;	
 		&.highlight{
 			@include media-breakpoint-up(sm) {				
@@ -91,12 +89,14 @@ $map-overlay-height: 150px;
 	button{
 		display: block;
 		font-weight: 500;
-		@include float-right();
+		margin-left:auto;
+		margin-right: 0;
 		@include media-breakpoint-up(sm) {				
 			font-size: 1.6vw;
 		}
 		@include media-breakpoint-down(sm) {				
 			font-size: 22px;
+			margin-right: auto;
 		}
 		padding: 3px 30px;
 		-webkit-border-radius: 60px;
@@ -104,7 +104,7 @@ $map-overlay-height: 150px;
 		border-radius: 60px;
 		color: $text-gray;
 		background-color: transparent;		
-		margin-top: -30px;
+		margin-top: 0px;
 		
 		border: 2px solid $vincent-orange;
 		-webkit-transition: all .4s;

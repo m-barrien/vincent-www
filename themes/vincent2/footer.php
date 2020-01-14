@@ -6,9 +6,14 @@ else{
 	get_template_part( 'template-parts/galeria-productos', 'single' );
 }
 ?>
+
+<?php
+$match = array();
+if( !preg_match('/noticias/', $_SERVER['REQUEST_URI'], $match)):
+?>
 <div class="w-100 gray-bg vp-t">	
 	<section>
-		<div class="col-sm-12 col-md-12">
+		<div class="col-sm-12 col-md-12" onclick="window.location.href ='noticias'">
 			<h1 class="text-center">&Uacute;ltimas Noticias</h1>
 		</div>
 	</section>
@@ -28,6 +33,9 @@ else{
 		</section>
 	</div>
 </div>
+<?php
+endif;
+?>
 <!-- /SECCION PRODUCTOS -->
 <div class="container-fluid">
 	<section id="contacto-footer" >
@@ -39,26 +47,14 @@ else{
 			<div class="row">
 				<form class="col">
 				  <div class="form-row">
-				    <div class="form-group offset-md-1 col-md-5">
-				      <label for="inputName4">Nombre Completo*</label>
-				      <input type="text" class="form-control" id="inputName4" >
+				    <div class="form-group offset-md-1 col-md-10">
 				      <label for="inputEmail4">Correo*</label>
 				      <input type="email" class="form-control" id="inputEmail4" >
-				      <label for="inputTelefono">Teléfono*</label>
-				      <input type="text" class="form-control" id="inputTelefono">
-				    </div>
-				    <div class="form-group col-md-5">
-					  <div class="form-row">
-					    <div class="form-group col-md-12">
-					      <label for="inputConsulta">Consulta</label>
-					      <textarea name="consulta" type="text" class="form-control" id="inputConsulta"  style=""></textarea>
-					    </div>
-					  </div>				    
 				    </div>
 				  </div>
 				  <div class="form-row">
 				  	<div class="col-md-10 offset-md-1">
-				  		<button type="submit" class="btn">Enviar mensaje</button>
+				  		<button type="submit" class="btn">Enviar</button>
 				  	</div>
 				  </div>
 				</form>				
