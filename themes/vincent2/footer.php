@@ -12,11 +12,9 @@ else{
 if( !preg_match('/noticias/', $_SERVER['REQUEST_URI'], $match)):
 ?>
 <div class="w-100 gray-bg vp-t">	
-	<section>
-		<div class="col-sm-12 col-md-12" onclick="window.location.href ='noticias'">
-			<h1 class="text-center">&Uacute;ltimas Noticias</h1>
-		</div>
-	</section>
+	<div class="w-100" style="overflow: hidden;" onclick="window.location.href ='noticias'">
+		<h1 class="text-center">&Uacute;ltimas Noticias</h1>
+	</div>
 	<div id="noticias-full-container" class="container">
 		<section class="noticias">
 			<?php $the_query = new WP_Query( 'posts_per_page=4' ); ?>
