@@ -6,11 +6,27 @@ else{
 	get_template_part( 'template-parts/galeria-productos', 'single' );
 }
 ?>
-<div class="banner-link">
-	<a href="/noticias">
-		<img class="img-fluid lazy desk" data-src="<?php echo get_template_directory_uri() ?>/image/banners/noticias.jpg">	
-		<img class="img-fluid lazy mov" data-src="<?php echo get_template_directory_uri() ?>/image/banners/noticias.mov.jpg">	
-	</a>
+<div class="w-100 gray-bg vp-t">	
+	<section>
+		<div class="col-sm-12 col-md-12">
+			<h1 class="text-center">&Uacute;ltimas Noticias</h1>
+		</div>
+	</section>
+	<div id="noticias-full-container" class="container">
+		<section class="noticias">
+			<?php $the_query = new WP_Query( 'posts_per_page=4' ); ?>
+			 
+			<?php while ($the_query -> have_posts()) : $the_query -> the_post(); 
+			 	
+				get_template_part( 'template-parts/content-short', get_post_format() );
+			 
+				endwhile;
+				wp_reset_postdata();
+				wp_reset_query();
+			?>
+
+		</section>
+	</div>
 </div>
 <!-- /SECCION PRODUCTOS -->
 <div class="container-fluid">

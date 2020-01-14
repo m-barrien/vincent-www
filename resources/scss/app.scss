@@ -1020,7 +1020,7 @@ footer{
 		color: inherit;
 	}
 	@include media-breakpoint-up(sm) {
-		height: 28vw;
+		height: auto;
 		.product-title{
 			text-align: center;
 			font-size: 1.2vw;

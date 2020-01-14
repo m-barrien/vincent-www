@@ -8,7 +8,7 @@
 			<?php
 			$params = array('posts_per_page' => 15, 
 				'post_type' => 'product',
-				'product_cat'=>'paneles-solares,inversores,kits-solares',
+				'product_cat'=>'paneles-solares,inversores,kits-solares,accesorios',
 				'orderby' => 'rand' 
 			);
 			$wc_query = new WP_Query($params);

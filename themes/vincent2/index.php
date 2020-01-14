@@ -174,7 +174,7 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 					La energía solar es fácil.
 				</h1>
 				<p>
-					Con más de 30 años en el rubro a nivel internacional, somos expertos en soluciones residenciales y empresariales.
+					Con más de 30 años en el rubro a nivel nacional e internacional, somos expertos en soluciones residenciales y empresariales.
 				</p>
 				<a class="orange-with-arrow" href="/soluciones-hogar">Más sobre energía solar</a>
 			</div>
@@ -207,7 +207,7 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 										<span class="bar-number">Paso 1</span>
 									</div>
 									<h1>Inspección &amp; Oferta</h1>
-									<p class="highlight">Revisamos los detalles de la factibilidad ofreciendo asesoria para su instalación. Explicamos los detalles y el tipo de soluciones que vamos a implementar considerando la necesidad del cliente.</p>
+									<p class="highlight">Nuestros ingenieros revisan los detalles de factibilidad explicando todo el tipo de soluciones que vamos a implementar considerando siempre la necesidad del cliente.</p>
 								</div>
 							</div>	
 						</div>
@@ -314,7 +314,7 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 					La mejor solución para tu necesidad
 				</h1>
 				<p>
-					Vincent Solar es sinónimo de calidad en todos los productos, trabajando con prestigiosas marcas y equipamiento que hacen posible nuestra garantía <i>World-Class</i> por 5 años sobre su instalación.
+					Vincent Solar es sinónimo de calidad en todos los productos, trabajando con prestigiosas marcas y equipamiento que hacen posible nuestra garantía <strong><i>World-Class</i> por 5 años sobre su instalación.</strong>
 				</p>
 				<a class="orange-with-arrow" href="/soluciones-hogar">Conozca más sobre nuestros proyectos </a>
 			</div>
@@ -475,18 +475,8 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 		</div>
 	</section>
 	<section class="v-padding-top">
-		<h1 class="section-header">Niveles de radiación en am&eacute;rica latina</h1>
-	</section>
-	<section class="">
-		<div class="image-wrapper">
-			<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mapa_sudamerica.jpg">
-		</div>
-		<div class="image-wrapper">
-			<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mapa_chile.jpg">
-		</div>
-	</section>
-	<section class="v-padding-top">
 		<h1 class="section-header">Proyectos Vincent en Chile</h1>
+		<p class="d-block w-100 highlight text-center">M&aacute;s de 7MW instalado sobre techo en el pa&iacute;s.</p>
 	</section>
 	<div class="indicador-mapa-wrapper">
 		<img data-src="<?php echo get_template_directory_uri() ?>/image/snippets/indicador_mapa.png" class="lazy indicador-mapa">
