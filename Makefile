@@ -12,9 +12,8 @@ js:
 	npm run bundle-js
 	npm run minify
 perm:
-	sudo docker-compose exec mysql chown -R mysql:mysql /var/lib/mysql
 	sudo chown -R vincent:vincent ./public_html
-	sudo chmod 755 ./public_html
+	sudo chown -R www-data:www-data ./public_html/wp-content/uploads
 package:
 	cd public_html/ && \
 	zip -r vin-theme.zip css/app.css js/app.js wp-content/themes/vincent2/*
