@@ -82,122 +82,10 @@ $oferta-wide-scale-lg:0.7;
 		max-width: 100%;
 	} 	
 }
-.kit-group-body{
-	@include make-col-ready();
-	@include make-col(12);
-}
-.kit-group-body-image{
-	padding: 30px;
-	@include media-breakpoint-between(lg,xl) {
-		width: 30%;
-	}
-	@include media-breakpoint-between(md,lg) {
-		width: 50%;
-	}
-	@include media-breakpoint-down(sm) {
-		width: 100%;
-	}
-}
-.kit-group-body-ofertas{
-	@include media-breakpoint-between(lg,xl) {
-		width: 25%;
-	}
-	@include media-breakpoint-between(md,lg) {
-		width: 30%;
-	}
-	@include media-breakpoint-down(sm) {
-		width: 100%;
 
-	}
-}
 .kits-container{
 	@extend .container;
 	padding-top: 0 !important;
-}
-.kit-col-container{
-	@include make-col-ready();
-	@include media-breakpoint-between(lg,xl) {
-		@include make-col-ready();
-		@include make-col(3);
-	}
-	@include media-breakpoint-between(md,lg) {
-		@include make-col(4);
-	}
-	@include media-breakpoint-between(sm,md) {
-		@include make-col(6);
-	}
-	@include media-breakpoint-down(xs) {
-		@include make-col(12);
-	}
-	padding:0;
-	min-height: 400px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	overflow: hidden;
-	&:hover{
-		.img-wrapper{
-			margin-bottom:0px;
-			border-width: 0 0 4px 0;
-		}
-	}
-	.img-wrapper{
-		margin-bottom:4px;
-		border-width: 0 0 0 0;
-		border-style: solid;
-		border-color: $vincent-orange;
-		@include media-breakpoint-up(xs) {
-			padding:0px 20px;
-		}
-		@include media-breakpoint-down(xs) {
-			padding:0px 45px;
-		}
-	}
-	.img-shrink-wrap{
-		width: 100%;
-		height: auto;
-		padding:10px;
-		transition:padding 0.5s; 
-		-webkit-transition:padding 0.5s; 		
-		&:hover{
-			padding:0px;
-		}
-	}
-	.oferta-text-body{
-		text-transform: uppercase;
-		text-align: center;
-		width: 100%;
-		padding-top:5px;
-		color: $text-gray;
-		white-space: nowrap;
-		@include media-breakpoint-between(lg,xl) {
-			font-size: 1vw;
-		}
-		@include media-breakpoint-between(md,lg) {
-			font-size: 1.2vw;
-		}
-		@include media-breakpoint-between(sm,md) {
-			font-size: 2vw;
-		}		
-		@include media-breakpoint-down(xs) {
-			font-size: 4.3vw;
-		}
-		.short{
-			font-weight: 700;
-			color: inherit;
-
-		}
-		.title{
-			font-weight: 500;
-			color: inherit;
-
-		}
-		.price{
-			font-weight: 700;
-			color: inherit;
-		}
-	}
-
 }
 .oferta-short{
 	width: auto;
@@ -869,9 +757,11 @@ h2.titulo-oferta{
 
 .kit-verticals-row{
 	@include make-row();
-	@include media-breakpoint-down(sm) {
-		display: none;
-	}	
+	&.d-none-mov{
+		@include media-breakpoint-down(sm) {
+			display: none;
+		}	
+	}
 }
 $verticals-height: 300px ;
 .kit-verticals-col{

@@ -169,7 +169,7 @@
     <div class="swiper-button-next"></div>
   </div>
 	<div class="container vp-b">
-		<section class="kit-verticals-row">
+		<section class="kit-verticals-row d-none-mov">
 					<div class="kit-verticals-col">
 						<a class="gray-container"  href="#slide1">
 							<img class="kit-verticals-img" src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-20kw.jpg">
