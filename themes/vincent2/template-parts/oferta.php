@@ -11,7 +11,6 @@ if ($tax_term) {
 		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-group-image.png">
 	</div>
 	<div class="oferta-description-container">
-		<?php the_content() ;?>
 		<div class="instalacion-red-tag">Instalaci&oacute;n incluida, llave en mano</div>
 		<div class="oferta-wide-pricetag">
 			<?php echo get_post_meta($post->ID, 'price-tag')[0] ; ?>
@@ -19,6 +18,14 @@ if ($tax_term) {
 		<a href="mailto:info@vincentsolar.com" class="d-block w-100">
 			<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/pills/boton_contacto.jpg">
 		</a>
+	</div>
+	<div class="oferta-full-description-container">
+		<?php the_content() ;?>
+		<script type="text/javascript">
+			function goto(hash) {
+				alert(hash);
+			}
+		</script>		
 	</div>
 </section>
 
