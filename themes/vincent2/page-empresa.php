@@ -23,12 +23,13 @@
 			</div>			
 			<div class="w-100">
 				<h1>
-					Beneficios de la energía fotovoltaica para tu empresa
+					Beneficios de trabajar con Vincent Solar
 				</h1>
 				<ul>
 					<li>Ahorro inmediato en el gasto de energía.</li>
 					<li>Inversión que dura en el tiempo.</li>
 					<li>Cuida el medioambiente, Marketing ecológico para su empresa.</li>
+					<li>Experiencia a lo largo del pa&iacute;s con empresas muy importantes y con m&aacute;s de 7MW sobre techo en Chile.</li>
 				</ul>
 			</div>
 		</div>
