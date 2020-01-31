@@ -1267,12 +1267,12 @@ section > h1.section-header{
 		@include media-breakpoint-between(lg,xl) {
 			@include make-col-offset(3);	
 			@include make-col(6);
-			padding: 0 6vw;	
+			padding: 0 7vw;	
 		}
 		@include media-breakpoint-between(md,lg) {
 			@include make-col-offset(2);	
 			@include make-col(8);
-			padding: 0 5vw;
+			padding: 0 6vw;
 		}
 		@include media-breakpoint-down(sm) {
 			@include make-col(12);
