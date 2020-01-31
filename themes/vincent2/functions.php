@@ -165,3 +165,107 @@ add_filter('wp_nav_menu_objects', 'my_reverse_nav_menu', 10, 2);
 add_filter( 'woocommerce_subcategory_count_html', '__return_false' );
 
 
+// function that runs when shortcode is called
+function kit_map_shortcode($atts = [], $content = null, $tag = '') { 
+  $atts = array_change_key_case((array)$atts, CASE_LOWER);
+
+  // override default attributes with user attributes
+  $wporg_atts = shortcode_atts([
+                                 'kwp' => 1,
+                             ], $atts, $tag);
+
+// Things that you want to do. 
+$message = '
+<h3>¿Cuanto puedo generar en mi zona?</h3>
+<section style="padding-top:0;">
+  <div class="col-svg-mapa-grande">
+    <div id="svgContainer" class="svg-wrapper lazy-map" data-rendered="false"></div>
+    </div>
+    <div class="region-data-container">
+    <div class="region-data-block">
+      <div class="region-data-li-wrapper mov">
+        <div class="region-data-li">
+          <div class="region-data-title">
+            <i class="fas fa-map-marker-alt"></i>
+            Regi&oacute;n
+          </div>
+          <div class="region-data-value region">
+            <div class="custom-region-select">
+              <select>
+                <option value="0"> Seleccionar Regi&oacute;n:  </option>
+                <option value="2130"> Arica  </option>
+                <option value="2100"> Tarapacá  </option>
+                <option value="2070"> Antofagasta  </option>
+                <option value="2050"> Atacama  </option>
+                <option value="1900"> Coquimbo  </option>
+                <option value="1800"> Valparaíso  </option>
+                <option value="1770"> Metropolitana  </option>
+                <option value="1700"> Libertador General Bernardo OHiggins  </option>
+                <option value="1650"> Maule  </option>
+                <option value="1600"> Biobío  </option>
+                <option value="1450"> La Araucanía  </option>
+                <option value="1380"> Los Ríos  </option>
+                <option value="1290"> Los Lagos  </option>
+                <option value="1150"> Aysén  </option>
+                <option value="800" > Magallanes  </option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>      
+      <div class="region-data-li-wrapper">
+        <div class="region-data-li">
+          <div class="region-data-title">
+            <i class="fab fa-cloudscale"></i>
+            Potencia de Soluci&oacute;n
+          </div>
+          <div id="data-kwp" class="region-data-value kwp">
+            ' . esc_html__($wporg_atts['kwp']) . 'kWp
+          </div>
+        </div>
+      </div>
+      <div class="region-data-li-wrapper desk">
+        <div class="region-data-li">
+          <div class="region-data-title">
+            <i class="fas fa-map-marker-alt"></i>
+            Regi&oacute;n
+          </div>
+          <div id="data-region-name" class="region-data-value region">
+            --
+          </div>
+        </div>
+      </div>
+      <div class="region-data-li-wrapper">
+        <div class="region-data-li">
+          <div class="region-data-title">
+            <i class="fas fa-bolt"></i>
+            Generaci&oacute;n Anual kWh
+          </div>
+          <div id="data-kwh" class="region-data-value kwh">
+            --
+          </div>
+        </div>
+      </div>
+      <div class="region-data-li-wrapper">
+        <div class="region-data-li">
+          <div class="region-data-title money">
+            <i class="fas fa-hand-holding-usd"></i>
+            Ahorro anual aproximado
+          </div>
+          <div id="data-saving" class="region-data-value money">
+            --
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</section>
+<script type="text/javascript">
+var kwp='. esc_html__($wporg_atts['kwp']) .';
+</script>
+';
+// Output needs to be return
+return $message;
+} 
+// register shortcode
+add_shortcode('kit_map', 'kit_map_shortcode'); 
