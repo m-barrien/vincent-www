@@ -227,7 +227,7 @@
 			  	<div class="descripcion-oferta">
 			  		<div class="title">Soluci&oacute;n empresa <span>20kw</span></div>
 			  		<ul>
-			  			<li>Para consumos sobre <strong>300.000 Pesos</strong></li>
+			  			<li>Ahorre entre <strong>$4.000.000 a $6.000.000 al año.</strong></li>
 			  			<li>Solución ideal para <strong>camaras de refrigeración, Negocios de comida rápida, botillerías, escuelas, etc.</strong></li>
 			  			<li>Ahorre, produzca energ&iacute;a limpia y recupere rapidamente su inversi&oacute;n.</li>
 			  			<li>Cubra al menos el 60% de sus necesidades energéticas actuales.</li>
@@ -239,7 +239,7 @@
 			  	<div class="descripcion-oferta">
 			  		<div class="title">Soluci&oacute;n empresa <span>30kw</span></div>
 			  		<ul>
-			  			<li>Para consumos sobre <strong>500.000 Pesos</strong></li>
+			  			<li>Ahorre entre <strong>$6.000.000 a $9.000.000 al año.</strong></li>
 			  			<li>Solución ideal para <strong>supermercados, restaurantes, botillerías, carnicer&iacute;as, Panaderías, etc.</strong></li>
 			  			<li>Ahorre, produzca energ&iacute;a limpia y recupere rapidamente su inversi&oacute;n.</li>
 			  			<li>Cubra al menos el 60% de sus necesidades energéticas actuales.</li>
@@ -251,7 +251,7 @@
 			  	<div class="descripcion-oferta">
 			  		<div class="title">Soluci&oacute;n empresa <span>50kw</span></div>
 			  		<ul>
-			  			<li>Para consumos sobre <strong>1.000.000 Pesos</strong></li>
+			  			<li>Ahorre entre <strong>$11.000.000 a $13.000.000 al año.</strong></li>
 			  			<li>Solución ideal para <strong>f&aacute;bricas de alimentos, plantas de manufactura a gran escala, laboratorios, etc.</strong></li>
 			  			<li>Ahorre, produzca energ&iacute;a limpia y recupere rapidamente su inversi&oacute;n.</li>
 			  			<li>Cubra al menos el 60% de sus necesidades energéticas actuales.</li>
@@ -263,7 +263,7 @@
 			  	<div class="descripcion-oferta">
 			  		<div class="title">Soluci&oacute;n empresa <span>100kw</span></div>
 			  		<ul>
-			  			<li>Para consumos sobre <strong>3.000.000 Pesos</strong></li>
+			  			<li>Ahorre entre <strong>$20.000.000 a $26.000.000 al año.</strong></li>
 			  			<li>Solución ideal para <strong>grandes plantas de manufactura, climatizaci&oacute;n a gran escala, plantas de distribuci&oacute;n el&eacute;ctrica, etc.</strong></li>
 			  			<li>Ahorre, produzca energ&iacute;a limpia y recupere rapidamente su inversi&oacute;n.</li>
 			  			<li>Cubra al menos el 60% de sus necesidades energéticas actuales.</li>
