@@ -12,7 +12,7 @@ else{
 if( !preg_match('/noticias/', $_SERVER['REQUEST_URI'], $match)):
 ?>
 <div class="w-100 gray-bg vp-t">	
-	<div class="w-100" style="overflow: hidden;" onclick="window.location.href ='noticias'">
+	<div class="w-100" style="overflow: hidden;" onclick="window.location.href ='/noticias'">
 		<h1 class="text-center">&Uacute;ltimas Noticias</h1>
 	</div>
 	<div id="noticias-full-container" class="container">
@@ -157,7 +157,7 @@ endif;
 					while ( $loop->have_posts() ) : $loop->the_post();
 						$image = wp_get_attachment_image_src( get_the_ID(), $size="full" ); 
 							?>
-							<div class="icon">
+							<div class="icon grow">
 								<img class="img-fluid lazy" src="" data-src="<?php echo $image[0]; ?>">
 							</div>								
 							<?php
@@ -168,7 +168,7 @@ endif;
 		</div>
 	</section>
 	<section>
-		<h3 class="px-2" style="width: 100%; text-align: center; padding-top: 100px;">2019 Vincent Solar | Todos los derechos reservados</h3>
+		<h3 class="px-2" style="width: 100%; text-align: center; padding-top: 100px;">2020 Vincent Solar | Todos los derechos reservados</h3>
 	</section>
 
 </footer>

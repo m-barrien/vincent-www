@@ -965,6 +965,12 @@ footer{
 			@include media-breakpoint-down(sm) {
 				max-width: 70px;
 			}			
+			&.grow {
+			transition: all .3s ease-in-out;
+				&:hover {
+				  transform: scale(1.3);
+				}
+			}
 		}
 	}
 	
