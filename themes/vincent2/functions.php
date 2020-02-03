@@ -231,7 +231,10 @@ $message = '
             Regi&oacute;n
           </div>
           <div id="data-region-name" class="region-data-value region">
-            --
+            <div style="color:white; background-color:red;display:block; border-radius:5px;padding-left:5px;">
+              <i class="far fa-hand-pointer"></i>
+              Seleccione su regi&oacute;n
+            </div>
           </div>
         </div>
       </div>
