@@ -1283,6 +1283,16 @@ section > h1.section-header{
 		@include media-breakpoint-down(sm) {
 			@include make-col(12);
 		}
+		&.wide{
+			@include media-breakpoint-between(lg,xl) {
+				padding: 0 !important;	
+			}
+			@include media-breakpoint-between(md,lg) {
+				padding: 0 !important;
+			}
+			@include media-breakpoint-down(sm) {
+			}	
+		}
 	}
 }
 .gallery-container{

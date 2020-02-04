@@ -272,3 +272,35 @@ return $message;
 } 
 // register shortcode
 add_shortcode('kit_map', 'kit_map_shortcode'); 
+
+
+
+function diagrama_offgrid_shortcode($atts = [], $content = null, $tag = '') { 
+$message = '
+<h3>¿C&oacute;mo funciona una sistema OFFGRID?</h3>
+<div class="container-fluid vp-b">
+  <div class="full-width-diagram" data-src="'.get_template_directory_uri().'/image/covers/paneles-faded.jpg">
+    <div class="img-wrapper wide">
+      <img class="img-fluid lazy" src="'.get_template_directory_uri().'/image/snippets/empty.png" data-src="'.get_template_directory_uri().'/image/covers/diagrama_hogar_off.png">
+    </div>
+  </div>
+</div>
+';
+return $message;
+} 
+add_shortcode('diagrama_offgrid', 'diagrama_offgrid_shortcode'); 
+
+function diagrama_ongrid_shortcode($atts = [], $content = null, $tag = '') { 
+$message = '
+<h3>¿C&oacute;mo funciona una sistema ONGRID?</h3>
+<div class="container-fluid vp-b">
+  <div class="full-width-diagram" data-src="'.get_template_directory_uri().'/image/covers/paneles-faded.jpg">
+    <div class="img-wrapper wide">
+      <img class="img-fluid lazy" src="'.get_template_directory_uri().'/image/snippets/empty.png" data-src="'.get_template_directory_uri().'/image/covers/diagrama_hogar_on.png">
+    </div>
+  </div>
+</div>
+';
+return $message;
+} 
+add_shortcode('diagrama_ongrid', 'diagrama_ongrid_shortcode'); 
