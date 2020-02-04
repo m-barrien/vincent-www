@@ -6,6 +6,10 @@ copy:
 	cp -rf ./themes/vincent2/js ./public_html/
 	cp -rf ./themes/vincent2/fonts ./public_html/
 	cp ./plugins/vincent-custom-types.php ./public_html/wp-content/plugins/
+
+	sudo chown -R www-data:www-data ./public_html/wp-content/uploads
+	sudo chown -R www-data:www-data ./public_html/wp-content/themes	
+		
 sass:
 	npm run sass
 	make copy
