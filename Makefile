@@ -1,5 +1,6 @@
 all:sass js
 copy:
+	sudo chown -R vincent:vincent ./public_html/wp-content/themes
 	cp -rf ./themes/vincent2 ./public_html/wp-content/themes
 	cp -rf ./themes/vincent2/css ./public_html/
 	cp -rf ./themes/vincent2/js ./public_html/
@@ -14,6 +15,7 @@ js:
 perm:
 	sudo chown -R vincent:vincent ./public_html
 	sudo chown -R www-data:www-data ./public_html/wp-content/uploads
+	sudo chown -R www-data:www-data ./public_html/wp-content/themes
 package:
 	cd public_html/ && \
 	zip -r vin-theme.zip css/app.css js/app.js wp-content/themes/vincent2/*
