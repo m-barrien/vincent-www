@@ -787,7 +787,9 @@ $verticals-height: 300px ;
 	}
 	@include media-breakpoint-down(xs) {
 		@include make-col(12);
+		padding:3px 0 !important;
 		min-height: 0;
+		margin-bottom: 6px;
 	}		
 	&:hover{
 		.kit-verticals-img{
@@ -810,9 +812,16 @@ $verticals-height: 300px ;
 	display: block;
 	position:absolute;
 	z-index: 0;
+	@include media-breakpoint-down(xs) {
+		margin-top: -100px;
+		transition:filter 0.5s; 
+		-webkit-transition:filter 0.5s;
+	}
+	@include media-breakpoint-up(xs) {
+		transition:filter 1.5s; 
+		-webkit-transition:filter 1.5s; 	
+	}
 
-	transition:filter 1.5s; 
-	-webkit-transition:filter 1.5s; 	
 
 	filter: none;
 	-webkit-filter: grayscale(100%);
