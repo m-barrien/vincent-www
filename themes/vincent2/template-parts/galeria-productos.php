@@ -31,8 +31,7 @@
 			        	<a class="product-slide" href="<?php the_permalink(); ?>">
 				        	<img class="img-fluid swiper-lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png"  data-src="<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-group-image.m.png">
 				            <h4 class="product-title">
-				               Kit Solar <?php the_title(); ?> con Instalaci&oacute;n
-				           </h4>
+				               Kit Solar <?php the_title(); ?> con Instalaci&oacute;				           </h4>
 			           </a>
 
 					</div>
