@@ -26,7 +26,7 @@ if ($tax_term) {
 				$('#data-region-name').text(data["nombre_region"]);
 				$('#data-kwh').text(Number((kwp * data["kwh"]).toFixed(0)).toLocaleString());
 				var money =kwp * data["kwh"] * 120;
-				$('#data-saving').text("$" + Number((money).toFixed(0)).toLocaleString());
+				$('#data-saving').text(Number(money));
 			}
 		</script>		
 		<script type="text/javascript">

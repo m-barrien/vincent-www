@@ -255,8 +255,8 @@ $message = '
             <i class="fas fa-hand-holding-usd"></i>
             Ahorro anual aproximado
           </div>
-          <div id="data-saving" class="region-data-value money">
-            --
+          <div class="region-data-value money ">
+            $<span class="odometer" id="data-saving">0</span>
           </div>
         </div>
       </div>
@@ -265,6 +265,21 @@ $message = '
 </section>
 <script type="text/javascript">
 var kwp='. esc_html__($wporg_atts['kwp']) .';
+</script>
+<script type="text/javascript" src="/js/odometer.min.js"></script>
+<link rel="stylesheet" id="vincentmap-css" href="/css/odometer-theme-default.css" type="text/css" media="all">
+<script type="text/javascript">
+
+  window.odometerOptions = {
+    auto: true,
+    selector: \'.my-numbers\', // Change the selector used to automatically find things to be animated
+    format: \'\$(,ddd).dd\', // Change how digit groups are formatted, and how many digits are shown after the decimal point
+    duration: 1000, // Change how long the javascript expects the CSS animation to take
+    theme: \'minimal\', // Specify the theme (if you have more than one theme css file on the page)
+    animation: \'count\' 
+  };
+
+
 </script>
 ';
 // Output needs to be return
