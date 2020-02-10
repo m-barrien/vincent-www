@@ -34,7 +34,7 @@
 			<section>
 				<div class="quote-group-item-container">
 					<div class="img-wrapper">
-						<img class="img-fluid framed-pic" src="https://via.placeholder.com/150">
+						<img class="img-fluid framed-pic" src="<?php echo get_template_directory_uri() ?>/image/snippets/quotes/penaflor.jpg">
 					</div>
 					<div class="text-group-item-wrapper">
 						<strong>Claudio G. (Peñaflor) &mdash;</strong> empresa excepcional en responder todas mis consultas, muy r&aacute;pido en instalar y muy profesional. Productos de primera calidad y muy buena posventa.
@@ -42,7 +42,7 @@
 				</div>
 				<div class="quote-group-item-container">
 					<div class="img-wrapper">
-						<img class="img-fluid framed-pic" src="https://via.placeholder.com/150">
+						<img class="img-fluid framed-pic" src="<?php echo get_template_directory_uri() ?>/image/snippets/quotes/vitacura.jpg">
 					</div>
 					<div class="text-group-item-wrapper">
 						<strong>Moises O. (Vitacura) &mdash;</strong> Muy feliz de trabajar con la Vincent, soy ingeniero eléctrico jubilado, creo que fueron cuidadosos con los detalles, gerencia siempre disponible en resolver nuestros requerimientos.
@@ -50,7 +50,7 @@
 				</div>
 				<div class="quote-group-item-container">
 					<div class="img-wrapper">
-						<img class="img-fluid framed-pic" src="https://via.placeholder.com/150">
+						<img class="img-fluid framed-pic" src="<?php echo get_template_directory_uri() ?>/image/snippets/quotes/losandes.jpg">
 					</div>
 					<div class="text-group-item-wrapper">
 						<strong>Carlos Andres. (Los Andes) &mdash;</strong> Instalé 2 sistemas en mis cabañas hace m&aacute;s de 4 años, igual sin tener ningun problema siempre me contactan para resolver calquier duda, excelente posventa, feliz de recomendar a mi vecino.
