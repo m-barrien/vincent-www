@@ -28,9 +28,9 @@ themes/*
 !themes/index.php
 themes/vincentcustom/css/*
 themes/vincent/css/*
-themes/vincent2/css/*
+themes/vincent2/css/app.css
 themes/vincent/js/*
-themes/vincent2/js/*
+themes/vincent2/js/app.js
 !themes/vincentcustom/css/.gitkeep
 !themes/vincent/css/.gitkeep
 !themes/vincent2/css/.gitkeep
