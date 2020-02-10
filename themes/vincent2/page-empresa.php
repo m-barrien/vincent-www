@@ -7,6 +7,21 @@
 	</video>	
 </div>
 
+<div class="quote-container">
+	<section>
+		<div class="text-wrapper">
+			<div class="icon-quote">
+				<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/logo_knop.png">
+			</div>
+			<div class="main-quote">
+				"Impecable empresa con un grupo muy preparado de profesionales, impecable posventa por m&aacute;s de 5 años, resultados sobre expectativas."
+			</div>
+			<div class="secondary-quote">
+				<strong>-Klaus Knop, </strong>Laboratorios KNOP
+			</div>
+		</div>
+	</section>
+</div>
 
 <div class="container">
 	<h2 class="site-title"> <?php the_title(); ?></h2>
@@ -29,7 +44,7 @@
 					<li>Ahorro inmediato en el gasto de energía.</li>
 					<li>Inversión que dura en el tiempo.</li>
 					<li>Cuida el medioambiente, Marketing ecológico para su empresa.</li>
-					<li>Experiencia a lo largo del pa&iacute;s con empresas muy importantes y con m&aacute;s de 7MW sobre techo en Chile.</li>
+					<li>Experiencia internacional con m&aacute;s de 700MW instalados en Europa y m&aacute;s de 10MW sobre techo en el pa&iacute;s, nos hace una empresa reconocida con nuestro logo y con nuestro sello verde (cgreen) que nos distingue en calidad, servicio, y posventa.</li>
 				</ul>
 			</div>
 		</div>
