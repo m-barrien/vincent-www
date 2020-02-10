@@ -319,3 +319,22 @@ $message = '
 return $message;
 } 
 add_shortcode('diagrama_ongrid', 'diagrama_ongrid_shortcode'); 
+
+function ofertas_feats_shortcode($atts = [], $content = null, $tag = '') { 
+$message = '
+<div class="oferta-feat">
+  <div class="oferta-feat-wrapper">
+    <i class="fas fa-shield-alt"></i>
+    5 años de garant&iacute;a
+  </div>
+</div>
+<div class="oferta-feat">
+  <div class="oferta-feat-wrapper">
+    <i class="fas fa-user-cog"></i>
+    Mejor posventa
+  </div>
+</div>
+';
+return $message;
+} 
+add_shortcode('ofertas_feats', 'ofertas_feats_shortcode'); 
