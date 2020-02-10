@@ -61,6 +61,14 @@ endif;
 	</section>
 </div>
 <footer>
+	<section>
+		<div class="col">
+			<h4 class="text-center" style="font-style: italic;">
+				Todos nuestros clientes tienen el sello cGreen que representan...
+			</h4>
+			
+		</div>
+	</section>
 	<section class="footer-cgreen-logo">
 		<img src="<?php echo get_template_directory_uri() ?>/image/snippets/logo_cgreen.png">
 	</section>
