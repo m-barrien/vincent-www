@@ -44,7 +44,7 @@
 					<li>Ahorro inmediato en el gasto de energía.</li>
 					<li>Inversión que dura en el tiempo.</li>
 					<li>Cuida el medioambiente, Marketing ecológico para su empresa.</li>
-					<li>Experiencia internacional con m&aacute;s de 700MW instalados en Europa y m&aacute;s de 10MW sobre techo en el pa&iacute;s, nos hace una empresa reconocida con nuestro logo y con nuestro sello verde (cgreen) que nos distingue en calidad, servicio, y posventa.</li>
+					<li>Experiencia internacional con m&aacute;s de 700MW instalados en Europa y m&aacute;s de 10MW sobre techo en el pa&iacute;s, nos hace una empresa reconocida con nuestro logo y con nuestro sello verde <img style="display: inline;width: 30px;height: auto;" src="<?php echo get_template_directory_uri() ?>/image/snippets/logo_cgreen.png">(cGreen) que nos distingue en calidad, servicio, y posventa.</li>
 				</ul>
 			</div>
 		</div>
@@ -243,7 +243,7 @@
 			  		<div class="title">Soluci&oacute;n empresa <span>20kw</span></div>
 			  		<ul>
 			  			<li>Ahorre entre <strong>$4.000.000 a $6.000.000 al año.</strong></li>
-			  			<li>Solución ideal para <strong>camaras de refrigeración, Negocios de comida rápida, botillerías, escuelas, etc.</strong></li>
+						<li>M&iacute;nimo de <strong>superficie en techo necesaria: 60m<sup>2</sup></strong></li>
 			  			<li>Ahorre, produzca energ&iacute;a limpia y recupere rapidamente su inversi&oacute;n.</li>
 			  			<li>Cubra al menos el 60% de sus necesidades energéticas actuales.</li>
 			  			<li>Mejorará la imagen de su empresa, ayudará al medio ambiente y aumentará su plusvalía.</li>
@@ -255,7 +255,7 @@
 			  		<div class="title">Soluci&oacute;n empresa <span>30kw</span></div>
 			  		<ul>
 			  			<li>Ahorre entre <strong>$6.000.000 a $9.000.000 al año.</strong></li>
-			  			<li>Solución ideal para <strong>supermercados, restaurantes, botillerías, carnicer&iacute;as, Panaderías, etc.</strong></li>
+						<li>M&iacute;nimo de <strong>superficie en techo necesaria: 60m<sup>2</sup></strong></li>
 			  			<li>Ahorre, produzca energ&iacute;a limpia y recupere rapidamente su inversi&oacute;n.</li>
 			  			<li>Cubra al menos el 60% de sus necesidades energéticas actuales.</li>
 			  			<li>Mejorará la imagen de su empresa, ayudará al medio ambiente y aumentará su plusvalía.</li>
@@ -267,7 +267,7 @@
 			  		<div class="title">Soluci&oacute;n empresa <span>50kw</span></div>
 			  		<ul>
 			  			<li>Ahorre entre <strong>$11.000.000 a $13.000.000 al año.</strong></li>
-			  			<li>Solución ideal para <strong>f&aacute;bricas de alimentos, plantas de manufactura a gran escala, laboratorios, etc.</strong></li>
+						<li>M&iacute;nimo de <strong>superficie en techo necesaria: 60m<sup>2</sup></strong></li>
 			  			<li>Ahorre, produzca energ&iacute;a limpia y recupere rapidamente su inversi&oacute;n.</li>
 			  			<li>Cubra al menos el 60% de sus necesidades energéticas actuales.</li>
 			  			<li>Mejorará la imagen de su empresa, ayudará al medio ambiente y aumentará su plusvalía.</li>
@@ -279,7 +279,7 @@
 			  		<div class="title">Soluci&oacute;n empresa <span>100kw</span></div>
 			  		<ul>
 			  			<li>Ahorre entre <strong>$20.000.000 a $26.000.000 al año.</strong></li>
-			  			<li>Solución ideal para <strong>grandes plantas de manufactura, climatizaci&oacute;n a gran escala, plantas de distribuci&oacute;n el&eacute;ctrica, etc.</strong></li>
+						<li>M&iacute;nimo de <strong>superficie en techo necesaria: 60m<sup>2</sup></strong></li>
 			  			<li>Ahorre, produzca energ&iacute;a limpia y recupere rapidamente su inversi&oacute;n.</li>
 			  			<li>Cubra al menos el 60% de sus necesidades energéticas actuales.</li>
 			  			<li>Mejorará la imagen de su empresa, ayudará al medio ambiente y aumentará su plusvalía.</li>
