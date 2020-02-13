@@ -35,7 +35,15 @@
 					<?php
 				}						
 			?>
-
+			<div class="kit-verticals-col">
+				<a href="#" class="gray-container">
+					<img class="kit-verticals-img" src="<?php echo get_template_directory_uri() ?>/image/banners/vertical-termico1.jpg">
+					<div class="kit-verticals-text-body">
+						Consulte por nuestros kits con agua caliente solar.
+					</div>
+				</a>
+				
+			</div>	
 	</section>
 
 <?php 
