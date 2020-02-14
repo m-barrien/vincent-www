@@ -8,6 +8,26 @@
 <div class="container kit-group">
 
 <?php
+	wp_reset_postdata();
+    wp_reset_query();
+    $args= array(
+	'post_type' => array('oferta'),
+	'post_status' => 'publish',
+	'posts_per_page' => -1,
+	'meta_key'		=> 'price',
+	'orderby'		=> 'meta_value',
+	'order'			=> 'ASC',
+    'tax_query' => array(
+        array(
+            'taxonomy' => 'tipo-kit',
+            'field'    => 'slug',
+            'terms'    => 'ongrid',
+        ),
+    ),	
+	);
+
+	$loop = new WP_Query( $args );
+
 	$wcatTerm = get_term_by('slug','ongrid', 'tipo-kit');
 ?>	
 
@@ -18,23 +38,12 @@
 		
 	</div>			
 	<section class="kit-verticals-row">
-			<?php $termchildren = get_term_children( $wcatTerm->term_id, 'tipo-kit' ); ?>
-			<?php 
-				foreach ( $termchildren as $child ) {
-				    $term = get_term_by( 'id', $child, 'tipo-kit' );
-				    ?>
-					<?php if(have_posts()) : while(have_posts()) : the_post(); 
-				   			$tax_id = get_the_terms($post,'tipo-kit')[0]->term_id;
-							if ($tax_id == $term->term_id) {
-				   				get_template_part( 'template-parts/oferta-archive-single', 'single' ); 
-							}
-						endwhile;
-						endif;
-					?>					    
-				    	
-					<?php
-				}						
-			?>
+			<?php if($loop->have_posts()) : while($loop->have_posts()) : $loop->the_post(); 
+		   			$tax_id = get_the_terms($post,'tipo-kit')[1]->term_id;
+		   				get_template_part( 'template-parts/oferta-archive-single', 'single' ); 
+				endwhile;
+				endif;
+				?>					    
 			<div class="kit-verticals-col">
 				<a href="#" class="gray-container">
 					<img class="kit-verticals-img" src="<?php echo get_template_directory_uri() ?>/image/banners/vertical-termico1.jpg">
@@ -49,6 +58,26 @@
 
 
 <?php
+	wp_reset_postdata();
+    wp_reset_query();
+    $args= array(
+	'post_type' => array('oferta'),
+	'post_status' => 'publish',
+	'posts_per_page' => -1,
+	'meta_key'		=> 'price',
+	'orderby'		=> 'meta_value',
+	'order'			=> 'ASC',
+    'tax_query' => array(
+        array(
+            'taxonomy' => 'tipo-kit',
+            'field'    => 'slug',
+            'terms'    => 'offgrid',
+        ),
+    ),	
+	);
+
+	$loop = new WP_Query( $args );
+
 	$wcatTerm = get_term_by('slug','offgrid', 'tipo-kit');
 ?>	
 
@@ -59,32 +88,14 @@
 		
 	</div>			
 	<section class="kit-verticals-row">
-			<?php $termchildren = get_term_children( $wcatTerm->term_id, 'tipo-kit' ); ?>
-			<?php 
-				foreach ( $termchildren as $child ) {
-				    $term = get_term_by( 'id', $child, 'tipo-kit' );
-				    ?>
-					<?php if(have_posts()) : while(have_posts()) : the_post(); 
+					<?php if($loop->have_posts()) : while($loop->have_posts()) : $loop->the_post(); 
 				   			$tax_id = get_the_terms($post,'tipo-kit')[0]->term_id;
-							if ($tax_id == $term->term_id) {
 				   				get_template_part( 'template-parts/oferta-archive-single', 'single' ); 
-							}
 						endwhile;
 						endif;
 					?>					    
 				    	
-					<?php
-				}						
 			?>
-			<div class="kit-verticals-col">
-				<a href="#" class="gray-container">
-					<img class="kit-verticals-img" src="<?php echo get_template_directory_uri() ?>/image/banners/vertical-termico1.jpg">
-					<div class="kit-verticals-text-body" style="font-weight: bold;">
-						Consulte por nuestros kits con agua caliente solar.
-					</div>
-				</a>
-				
-			</div>	
 	</section>
 </div>
 <!-- galeria ongrid -->

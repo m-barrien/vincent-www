@@ -338,3 +338,30 @@ $message = '
 return $message;
 } 
 add_shortcode('ofertas_feats', 'ofertas_feats_shortcode'); 
+
+
+
+// oferta Pre Get Posts
+
+function oferta_pre_get_posts( $query )
+{
+    // validate
+    if( is_admin() )
+    {
+        return $query;
+    }
+
+
+    if( isset($query->query_vars['post_type']) && $query->query_vars['post_type'] == 'oferta' )
+    {
+        $query->set('orderby', 'meta_value');
+        $query->set('meta_key', 'price');
+        $query->set('order', 'ASC');
+    }
+
+    // always return
+    return $query;
+
+}
+
+add_action('pre_get_posts', 'oferta_pre_get_posts');
