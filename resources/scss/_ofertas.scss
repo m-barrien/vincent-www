@@ -855,6 +855,7 @@ $verticals-height: 300px ;
 	@include media-breakpoint-down(sm){
 		transition:none; 
 		-webkit-transition:none; 			
+		min-height: $verticals-height;
 	}
 
 	text-shadow: 1px 1px $text-grayer;
