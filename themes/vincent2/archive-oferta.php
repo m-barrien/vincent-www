@@ -1,5 +1,17 @@
 <?php get_header(); ?>
-<div class="site-cover-secondary small" style="background-image:linear-gradient(to bottom, #00000080 0%, #00000000 25%,#00000000 75%, #00000080 100%),url('<?php echo get_template_directory_uri() ?>/image/covers/ofertas.jpg')">
+<style type="text/css">
+	@media screen and (max-width: 899px) {
+	  .site-cover-secondary {
+	    background-image:linear-gradient(to bottom, #00000000 0%, #00000000 25%,#00000000 75%, #00000000 100%),url('<?php echo get_template_directory_uri() ?>/image/covers/ofertas.jpg')
+	  }
+	}	
+	@media screen and (min-width: 900px) {
+	  .site-cover-secondary {
+	    background-image:linear-gradient(to bottom, #00000080 0%, #00000000 25%,#00000000 75%, #00000080 100%),url('<?php echo get_template_directory_uri() ?>/image/covers/ofertas.jpg')
+	  }
+	}	
+</style>
+<div class="site-cover-secondary small" >
 </div>
 
 <div class="container">
