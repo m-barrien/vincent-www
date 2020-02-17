@@ -87,6 +87,14 @@ section {
 		display: none;
 	}
 }
+.sm-block{
+	@include media-breakpoint-up(sm) {
+		display: block;
+	}
+	@include media-breakpoint-down(sm) {
+		display: none;
+	}
+}
 a{
 	-moz-outline-style: none !important;
 	outline: none !important;
@@ -1186,7 +1194,7 @@ footer{
 			margin-left: auto;
 		}
 		@include media-breakpoint-down(xs) {
-			width: 100%;
+			width: 70%;
 			display: block;
 			margin-right: auto;
 			margin-left: auto;

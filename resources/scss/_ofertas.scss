@@ -824,6 +824,9 @@ $verticals-height: 300px ;
 
 	filter: none;
 	-webkit-filter: grayscale(100%);
+	&.colored{
+		-webkit-filter: grayscale(0%) !important; 
+	}
 }
 .kit-verticals-text-body{
 	display: block;

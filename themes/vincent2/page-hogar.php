@@ -7,7 +7,7 @@
 	<section class="half-banner h-auto mt-0" style="background-image:url('<?php echo get_template_directory_uri() ?>/image/covers/seccion-hogar-1.jpg');">
 		<div class="half-banner-body menu-top-padding right">
 			<div class="mov-img">
-				<img class=" img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-hogar-1.jpg">
+				<img class=" img-fluid" src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-hogar-1.jpg">
 			</div>			
 			<div class="w-100">
 				<h1>
@@ -26,7 +26,7 @@
 	<h2 class="site-title"> <?php the_title(); ?></h2>
 </div>
 <!-- video -->
-<div class="site-cover-secondary" style="background-image:linear-gradient(to bottom, #00000080 0%, #00000000 25%,#00000000 75%, #00000080 100%),url('<?php echo get_template_directory_uri() ?>/image/covers/residencial.jpg')">
+<div class="site-cover-secondary sm-block" style="background-image:linear-gradient(to bottom, #00000080 0%, #00000000 25%,#00000000 75%, #00000080 100%),url('<?php echo get_template_directory_uri() ?>/image/covers/residencial.jpg')">
 	<video id="videoPlayer" autoplay loop muted  preload="auto"> 
 	 	<source src="/video/coverhogar" type="video/mp4" media="all and (min-width: 900px)">
 	</video>
