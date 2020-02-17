@@ -95,7 +95,6 @@
 						endif;
 					?>					    
 				    	
-			?>
 	</section>
 </div>
 <!-- galeria ongrid -->
