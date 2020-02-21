@@ -126,7 +126,7 @@ get_header();
 							Kit solar ongrid <br> Soluci&oacute;n T&eacute;rmica
 						</div>
 						<div class="price">
-							A 
+							 
 							<br>
 							<span class="big">
 								$3.000.000
@@ -135,8 +135,8 @@ get_header();
 						</div>
 						<ul>
 							<li>Instalaci&oacute;n Incluida</li>
-							<li>Productos Europeos</li>
-							<li>Tramitaci&oacute;n SEC LEY 20571</li>
+							<li>Llave en mano</li>
+							<li>Tramitaciones por ley</li>
 							<li>5 Años de garant&iacute;a</li>
 						</ul>
 					</div>
@@ -153,17 +153,17 @@ get_header();
 							Kit solar ongrid
 						</div>
 						<div class="price">
-							A 
+							 
 							<br>
 							<span class="big">
-								$3.300.000
+								$3.000.000
 							</span>
 
 						</div>
 						<ul>
 							<li>Instalaci&oacute;n Incluida</li>
-							<li>Productos Europeos</li>
-							<li>Tramitaci&oacute;n SEC LEY 20571</li>
+							<li>Llave en mano</li>
+							<li>Tramitaciones por ley</li>
 							<li>5 Años de garant&iacute;a</li>
 						</ul>
 					</div>
@@ -180,7 +180,7 @@ get_header();
 							Kit solar ongrid <br> Soluci&oacute;n T&eacute;rmica
 						</div>
 						<div class="price">
-							A 
+							 
 							<br>
 							<span class="big">
 								$3.500.000
@@ -189,8 +189,8 @@ get_header();
 						</div>
 						<ul>
 							<li>Instalaci&oacute;n Incluida</li>
-							<li>Productos Europeos</li>
-							<li>Tramitaci&oacute;n SEC LEY 20571</li>
+							<li>Llave en mano</li>
+							<li>Tramitaciones por ley</li>
 							<li>5 Años de garant&iacute;a</li>
 						</ul>
 					</div>
@@ -207,17 +207,16 @@ get_header();
 							Kit solar offgrid
 						</div>
 						<div class="price">
-							A 
+							 
 							<br>
 							<span class="big">
-								$4.500.000
+								$5.000.000
 							</span>
 
 						</div>
 						<ul>
 							<li>Instalaci&oacute;n Incluida</li>
-							<li>Productos Europeos</li>
-							<li>Tramitaci&oacute;n SEC LEY 20571</li>
+							<li>Llave en mano</li>
 							<li>5 Años de garant&iacute;a</li>
 						</ul>
 					</div>
