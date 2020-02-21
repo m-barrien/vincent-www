@@ -1,6 +1,6 @@
 all:sass js
 copy:
-	sudo chown -R vincent:vincent ./public_html/wp-content/themes
+	sudo chown -R $(USER):$(USER) ./public_html/wp-content/themes
 	cp -rf ./themes/vincent2 ./public_html/wp-content/themes
 	cp -rf ./themes/vincent2/css ./public_html/
 	cp -rf ./themes/vincent2/js ./public_html/
@@ -17,7 +17,7 @@ js:
 	npm run bundle-js
 	npm run minify
 perm:
-	sudo chown -R vincent:vincent ./public_html
+	sudo chown -R $(USER):$(USER) ./public_html
 	sudo chown -R www-data:www-data ./public_html/wp-content/uploads
 	sudo chown -R www-data:www-data ./public_html/wp-content/themes
 package:
