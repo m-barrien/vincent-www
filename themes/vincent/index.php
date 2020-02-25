@@ -1,17 +1,6 @@
 <?php 
 get_header(); 
 ?>
-<!--
-<div class="w-100 video-container">
-	<div class="video-overlay fade-in">
-		<h1>Where the sun is ... <br>Vincent Solar&reg;</h1>
-	</div>
-	<video poster="/videocover.png" id="bgvid" playsinline autoplay muted loop>
-		<source src="/videocover.mp4" type="video/mp4">
-
-	</video>	
-</div>
--->
 <div class="container-fluid">
     <div class="row cover-swiper"><!-- cover -->
                <?php
@@ -227,30 +216,41 @@ get_header();
 
 	</section> <!-- ofertas -->
 </div>
+ <script>
+var options = {
+  enableHighAccuracy: true,
+  timeout: 5000,
+  maximumAge: 0
+};
+function setCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires="+ d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+function success(pos) {
+  var crd = pos.coords;
 
+  console.log('Your current position is:');
+  console.log('Latitude : ' + crd.latitude);
+  console.log('Longitude: ' + crd.longitude);
+  console.log('More or less ' + crd.accuracy + ' meters.');
+  setCookie("lat", crd.latitude, 2);
+  setCookie("lon", crd.longitude, 2);
+  setCookie("accuracy", crd.accuracy, 2);
+};
+
+function error(err) {
+  console.warn('ERROR(' + err.code + '): ' + err.message);
+  setCookie("lat", "-", 1);
+  setCookie("lon", "-", 1);
+  setCookie("accuracy", "-", 1);
+};
+
+navigator.geolocation.getCurrentPosition(success, error, options);
+</script> 
+<div id="demo"></div>
 <div class="container">
-	<!--
-	<section class="main-buttons-group-mov">
-		<div class="pill">
-			<a href="/categoria/paneles-solares">
-				<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/pills/paneles.png">
-				<p>Paneles <br> Solares</p>
-			</a>
-		</div>
-		<div class="pill">
-			<a href="/categoria/inversores">
-				<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/pills/inversor.png">
-				<p>Inversores <br> Solares</p>
-			</a>
-		</div>
-		<div class="pill">
-			<a href="/ofertas">
-				<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/pills/kits.png"	>
-				<p>Kits <br> Solares</p>
-			</a>
-		</div>
-	</section>
-	-->
 	<section class="main-buttons-group">
 		<div class="columna">
 			<a class="card grow" href="/soluciones-hogar">

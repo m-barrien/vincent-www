@@ -137,3 +137,17 @@ function sort_oferta_archive_loop($query) {
     }
 }
 add_action('pre_get_posts', 'sort_oferta_archive_loop');
+
+
+function tracking_cookie() { 
+  if(isset($_COOKIE["paginas_navegadas"])){ 
+      $nvisitas = intval($_COOKIE["paginas_navegadas"]) + 1; 
+  } else{ 
+      $nvisitas = 1; 
+  } 
+
+  setcookie('ultima_pagina',  $_SERVER['REQUEST_URI'] , time()+31556926);
+  setcookie('paginas_navegadas',  $nvisitas, time()+31556926);
+  
+} 
+add_action('init', 'tracking_cookie');
