@@ -1159,13 +1159,12 @@ article{
 			max-width: 23vw;
 	    }
 		@include media-breakpoint-down(sm) {
-			font-size: $font-size-base*1.6;
+			font-size: $font-size-base*1.7;
 			border-radius: 6px 0px 0 6px;
 			margin-right: 0;
 			margin-left: auto;
-			width: 20%;
-			min-width: 130px;
-			max-width: 250px;
+			width: auto;
+			max-width: 150px;
 	        
 	    }
 		a{

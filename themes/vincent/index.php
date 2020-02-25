@@ -249,7 +249,6 @@ function error(err) {
 
 //navigator.geolocation.getCurrentPosition(success, error, options);
 </script> 
-<div id="demo"></div>
 <div class="container">
 	<section class="main-buttons-group">
 		<div class="columna">

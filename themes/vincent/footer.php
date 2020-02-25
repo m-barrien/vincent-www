@@ -116,7 +116,7 @@ grecaptcha.ready(function () {
 			<i class="fas fa-globe"></i>
 			www.vincentsolar.com
 			<br>
-			<a href="mailto:info@vincentsolar.com">
+			<a href="mailto:info@vincentsolar.com?subject=Consulta&body=Quiero%20informaci&oacute;n%20sobre:">
 				<i class="fas fa-envelope"></i>
 				info@vincentsolar.com
 			</a>
@@ -164,12 +164,12 @@ grecaptcha.ready(function () {
 				<i class="fas fa-phone"></i>
 				(32) 294 8569
 			</a>
-			<a href="mailto:info@vincentsolar.com?subject=Consulta">
+			<a href="mailto:info@vincentsolar.com?subject=Consulta&body=Quiero%20informaci&oacute;n%20sobre:">
 				<i class="fas fa-envelope"></i>
 				info@vincentsolar.com
 			</a>
 		</div>
-		<a href="mailto:info@vincentsolar.com?subject=Consulta">
+		<a href="mailto:info@vincentsolar.com?subject=Consulta&body=Quiero%20informaci&oacute;n%20sobre:">
 			<i class="fas fa-hand-pointer"></i>
 			Contacto
 		</a>
@@ -177,22 +177,22 @@ grecaptcha.ready(function () {
 	</div>
 	<div class="dock-button mov" style="margin-bottom: 5px;">
 		<div id="collapseContacto" class="collapse">
-			<a href="mailto:info@vincentsolar.com?subject=Consulta">
+			<a href="mailto:info@vincentsolar.com?subject=Consulta&body=Quiero%20informaci&oacute;n%20sobre:">
 				<i class="fas fa-envelope"></i>
 			</a>
 			<a href="tel:+56322948569">
 				<i class="fas fa-phone"></i>
 			</a>
 		</div>
-		<a href="mailto:info@vincentsolar.com?subject=Consulta">
-			<i class="fas fa-envelope"></i> Escribe
+		<a href="mailto:info@vincentsolar.com?subject=Consulta&body=Quiero%20informaci&oacute;n%20sobre:">
+			<i class="fas fa-envelope"></i> Contacto
 		</a>
 	</div>
 
 	<div class="dock-button mov">
 		<a href="tel:+56322948569">
 			<i class="fas fa-phone"></i>
-			Llama
+			Llamar
 		</a>
 		<img src="<?php echo get_template_directory_uri() ?>/image/snippets/it_line.png">
 	</div>
