@@ -247,7 +247,7 @@ function error(err) {
   setCookie("accuracy", "-", 1);
 };
 
-navigator.geolocation.getCurrentPosition(success, error, options);
+//navigator.geolocation.getCurrentPosition(success, error, options);
 </script> 
 <div id="demo"></div>
 <div class="container">
