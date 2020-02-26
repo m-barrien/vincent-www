@@ -48,12 +48,6 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 						<div class="bullet-image">
 							<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/check.svg">
 						</div>
-						Certificaci&oacute;n SEC e Internacional
-					</div>
-					<div class="bullet">
-						<div class="bullet-image">
-							<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/check.svg">
-						</div>
 						5 años de garant&iacute;a sobre instalacion
 					</div>
 					<div class="bullet">
