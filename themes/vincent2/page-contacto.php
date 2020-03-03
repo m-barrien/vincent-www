@@ -43,51 +43,66 @@
    - The Mandatory check script can modified as to suit your business needs. 
    - It is important that you test the modified form before going live.-->
 <div id='crmWebToEntityForm' style='margin:auto;'>
-   <META HTTP-EQUIV ='content-type' CONTENT='text/html;charset=UTF-8'>
-   <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads3982821000001539001 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory3982821000001539001()' accept-charset='UTF-8'>
- <input type='text' style='display:none;' name='xnQsjsdp' value='37a5c7d9827d14870937a2e6c9164f0257779f1650f6dacaab77624acfa8f4ae'></input> 
- <input type='hidden' name='zc_gad' id='zc_gad' value=''></input> 
- <input type='text' style='display:none;' name='xmIwtLD' value='329db29f0b7db442539a254f4a1b95326e65ae3d7733470283e19c3f60d38a2a'></input> 
- <input type='text'  style='display:none;' name='actionType' value='TGVhZHM='></input>
- <input type='text' style='display:none;' name='returnURL' value='https://vps.vincentsolar.com?response=ok' > </input><br></br>
+	<META HTTP-EQUIV ='content-type' CONTENT='text/html;charset=UTF-8'>
+	<form class="col" action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads3982821000001539001 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory3982821000001539001()' accept-charset='UTF-8'>
+		<input type='text' style='display:none;' name='xnQsjsdp' value='37a5c7d9827d14870937a2e6c9164f0257779f1650f6dacaab77624acfa8f4ae'></input> 
+		<input type='hidden' name='zc_gad' id='zc_gad' value=''></input> 
+		<input type='text' style='display:none;' name='xmIwtLD' value='329db29f0b7db442539a254f4a1b95326e65ae3d7733470283e19c3f60d38a2a'></input> 
+		<input type='text'  style='display:none;' name='actionType' value='TGVhZHM='></input>
+		<input type='text' style='display:none;' name='returnURL' value='https://vps.vincentsolar.com?response=ok' > </input>
 	 <!-- Do not remove this code. -->
 	<style>
+
 		#crmWebToEntityForm tr , #crmWebToEntityForm td { 
 			}
 	</style>
-	<table><tr><td colspan='2' align='left'><strong>Nuevo visitante</strong></td></tr> <br></br><tr><td  >Nombre<span >*</span></td><td  ><input type='text'   maxlength='40' name='First Name' /></td><td ></td></tr><tr><td  >Apellidos<span >*</span></td><td  ><input type='text'   maxlength='80' name='Last Name' /></td><td ></td></tr><tr><td  >Correo electr&oacute;nico</td><td  ><input type='text'   maxlength='100' name='Email' /></td><td ></td></tr><tr><td  >M&oacute;vil</td><td  ><input type='text'   maxlength='30' name='Mobile' /></td><td ></td></tr><tr  ><td style="display: none;">Calificaci&oacute;n</td><td >
-		<select style="display: none;"  name='Rating'>
-			<option value='-None-'>-None-</option>
-			<option selected value='Solo&#x20;primer&#x20;contacto'>Solo primer contacto</option>
-			<option value='Llamado&#x20;y&#x20;Derivado'>Llamado y Derivado</option>
-			<option value='Descartado'>Descartado</option>
-			<option value='Ni&#x20;hablar'>Ni hablar</option>
-			<option value='Inubicable'>Inubicable</option>
-			<option value='Webon&#x20;Cotizando'>Webon Cotizando</option>
-			<option value='Desinteresado'>Desinteresado</option>
-			<option value='Sin&#x20;plata&#x20;pero&#x20;interesado'>Sin plata pero interesado</option>
-			<option value='Interesado'>Interesado</option>
-			<option value='Interesado&#x20;a&#x20;futuro'>Interesado a futuro</option>
-			<option value='Interesado&#x20;pero&#x20;indeciso'>Interesado pero indeciso</option>
-			<option value='Inviable&#x20;por&#x20;distancia'>Inviable por distancia</option>
-			<option value='Muy&#x20;interesado'>Muy interesado</option>
-		</select></td><td></td></tr><tr style='display:none;' ><td >Fuente de Posible cliente</td><td >
-		<select  name='Lead Source'>
-			<option value='-None-'>-None-</option>
+	<div class="form-row">
+	<div class="form-group offset-md-1 col-md-10">
+	  <label for="clientname">Nombre*</label>
+		<input type='text' id="clientname"   maxlength='40' name='First Name' /></td><td ></td>
+	</div>
+	</div>
+	<div class="form-row">
+		<div class="col-md-10 offset-md-1">
+			<button type="submit" class="btn">Enviar</button>
+		</div>
+	</div>
+	<input type='text'   maxlength='80' name='Last Name' /></td><td ></td>
+	<input type='text'   maxlength='100' name='Email' /></td><td ></td>
+	<select style="display: none;"  name='Rating'>
+		<option value='-None-'>-None-</option>
+		<option selected value='Solo&#x20;primer&#x20;contacto'>Solo primer contacto</option>
+		<option value='Llamado&#x20;y&#x20;Derivado'>Llamado y Derivado</option>
+		<option value='Descartado'>Descartado</option>
+		<option value='Ni&#x20;hablar'>Ni hablar</option>
+		<option value='Inubicable'>Inubicable</option>
+		<option value='Webon&#x20;Cotizando'>Webon Cotizando</option>
+		<option value='Desinteresado'>Desinteresado</option>
+		<option value='Sin&#x20;plata&#x20;pero&#x20;interesado'>Sin plata pero interesado</option>
+		<option value='Interesado'>Interesado</option>
+		<option value='Interesado&#x20;a&#x20;futuro'>Interesado a futuro</option>
+		<option value='Interesado&#x20;pero&#x20;indeciso'>Interesado pero indeciso</option>
+		<option value='Inviable&#x20;por&#x20;distancia'>Inviable por distancia</option>
+		<option value='Muy&#x20;interesado'>Muy interesado</option>
+	</select>
+	<select  name='Lead Source'>
+		<option value='-None-'>-None-</option>
 		<option selected value='Google&#x20;&#x2b;&#x20;Adwords'>Google &#x2b; Adwords</option>
-			<option value='Aviso&#x20;Publicitario'>Aviso Publicitario</option>
-			<option value='Boca&#x20;a&#x20;boca'>Boca a boca</option>
-			<option value='Facebook'>Facebook</option>
-			<option value='Twitter'>Twitter</option>
-			<option value='Instagram'>Instagram</option>
-			<option value='Socio'>Socio</option>
-			<option value='Relaciones&#x20;p&uacute;blicas&#x20;&#x2f;&#x20;Vendedor'>Relaciones p&uacute;blicas &#x2f; Vendedor</option>
-			<option value='Correo&#x20;Masivo'>Correo Masivo</option>
-			<option value='Chat'>Chat</option>
-		</select></td><td ></td></tr><tr><td  >Consulta </td><td > <textarea name='Description' maxlength='32000' >&nbsp;</textarea></td><td ></td></tr>
+		<option value='Aviso&#x20;Publicitario'>Aviso Publicitario</option>
+		<option value='Boca&#x20;a&#x20;boca'>Boca a boca</option>
+		<option value='Facebook'>Facebook</option>
+		<option value='Twitter'>Twitter</option>
+		<option value='Instagram'>Instagram</option>
+		<option value='Socio'>Socio</option>
+		<option value='Relaciones&#x20;p&uacute;blicas&#x20;&#x2f;&#x20;Vendedor'>Relaciones p&uacute;blicas &#x2f; Vendedor</option>
+		<option value='Correo&#x20;Masivo'>Correo Masivo</option>
+		<option value='Chat'>Chat</option>
+	</select>
+	<input type='text'   maxlength='30' name='Mobile' />
+	<textarea name='Description' maxlength='32000' >&nbsp;</textarea>
+	<input  id='formsubmit' type='submit' value='Enviar'  ></input> 
+	<input type='reset' name='reset'  value='Restablecer' ></input> 
 
-	<tr><td colspan='2' >
-		<input  id='formsubmit' type='submit' value='Enviar'  ></input> <input type='reset' name='reset'  value='Restablecer' ></input> </td></tr></table>
 	<script>
  	  var mndFileds=new Array('First Name','Last Name');
  	  var fldLangVal=new Array('Nombre','Apellidos'); 
@@ -130,7 +145,7 @@
 		}
 		document.getElementById('formsubmit').disabled=true;
 	}
-</script>
+	</script>
 	</form>
 </div>		
 	</section>
