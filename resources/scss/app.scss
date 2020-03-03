@@ -1108,7 +1108,7 @@ footer{
 	@include media-breakpoint-down(xs) {
 		@include make-col(12);
 		.mov-img{
-			@include make-row();
+			width: 100vw;
 			margin: -4vw -4vw 0 -4vw; 
 		}
 	}
