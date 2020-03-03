@@ -179,23 +179,19 @@ grecaptcha.ready(function () {
 		<div id="collapseContacto" class="collapse">
 			<a href="mailto:info@vincentsolar.com?subject=Consulta&body=Quiero%20informaci&oacute;n%20sobre:">
 				<i class="fas fa-envelope"></i>
+				Correo
 			</a>
 			<a href="tel:+56322948569">
 				<i class="fas fa-phone"></i>
+				Llamar
 			</a>
 		</div>
-		<a href="mailto:info@vincentsolar.com?subject=Consulta&body=Quiero%20informaci&oacute;n%20sobre:">
+		<a data-toggle="collapse" href="#collapseContacto" role="button" aria-expanded="false" aria-controls="collapseContacto">
 			<i class="fas fa-envelope"></i> Contacto
-		</a>
-	</div>
-
-	<div class="dock-button mov">
-		<a href="tel:+56322948569">
-			<i class="fas fa-phone"></i>
-			Llamar
 		</a>
 		<img src="<?php echo get_template_directory_uri() ?>/image/snippets/it_line.png">
 	</div>
+
 </div>
 
   </body>
