@@ -50,83 +50,6 @@
 		</div>
 	</section>
 </div>
-<!-- Banner a beneficios empresa -->
-<div id="open-gallery-empresa" class="banner-link">
-	<img class="img-fluid lazy desk" data-src="<?php echo get_template_directory_uri() ?>/image/banners/empresa.jpg">	
-	<img class="img-fluid lazy mov" data-src="<?php echo get_template_directory_uri() ?>/image/banners/empresa.mov.jpg">	
-</div>
-<!-- Banner a soluciones empresa -->
-<div class="container-fluid vp-t vp-b">
-	<section class="half-banner tall bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-empresa-2.jpg">
-		<img class="watermark right lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/watermark.png">
-		<div class="half-banner-body">
-			<div class="mov-img">
-				<img class=" img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-empresa-2.jpg">
-			</div>
-			<div class="w-100">
-				<h1>
-					La mejor solución
-				</h1>
-				<p>
-					Las soluciones de <strong>Vincent Solar</strong> se distinguen por sus componentes del más alto estándar a nivel internacional, instalado y ejecutado para lograr el máximo beneficio con la <strong>mejor relación precio-calidad</strong>.
-				</p>
-				<div class="img-wrapper">
-					<img class="kit-img lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/equipamiento_empresa.png">
-				</div>				
-			</div>
-		</div>
-	</section>
-</div>
-<!-- Banner a soluciones empresa -->
-
-<!-- como funciona ongrid -->
-<div class="container vp-t">
-	<h1>¿Como funciona el sistema <span class="orange">ON GRID</span> en una empresa?</h1>
-</div>
-<div class="container-fluid">
-	<section class="full-width-diagram bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/paneles-faded.jpg">
-		<div class="img-wrapper">
-			<img class="img-fluid lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/covers/diagrama_empresas.png">
-		</div>
-	</section>
-</div>
-<!-- como funciona ongrid -->
-
-<div class="gallery-container">
-	<h1>Proyectos <span style="font-weight: 700;">Vincent</span> en el pa&iacute;s</h1>
-	<div id="gallery_empresa" class="lightgallery">
-			<?php
-			$args = array(
-			        'post_type' => 'attachment',
-			        'post_mime_type' => 'image',
-			        'orderby' => 'post_date',
-			        'order' => 'desc',
-			        'posts_per_page' => '-1',
-			        'post_status'    => 'inherit',
-			        'category_name'=>'empresas',
-			         );
-
-			$loop = new WP_Query( $args );
-			while ( $loop->have_posts() ) : $loop->the_post();
-				$image = wp_get_attachment_image_src( get_the_ID(), $size="large" ); 
-				$image_thumb = wp_get_attachment_image_src( get_the_ID(), $size="thumbnail" ); 
-					?>
-				<a class="gallery-img-wrapper" href="<?php echo $image[0]; ?>" data-sub-html="<h4><?php the_title(); ?></h4>">
-					<img class="d-none lazy" data-src="<?php echo $image_thumb[0]; ?>">
-					<div class="gallery-image bg-lazy" data-src="<?php echo $image_thumb[0]; ?>" hd-src="<?php echo $image[0]; ?>">
-						
-					</div>
-					<p class="gallery-title">
-						<?php the_title(); ?>
-					</p>
-				</a>
-
-				<?php
-			endwhile;				    
-			?>			
-	</div>
-</div>
-
 
 <div class="footer-ofertas-container vp-t vp-b">
 	<div class="container">
@@ -292,5 +215,84 @@
 	</div>
 	
 </div>
+
+<div class="container-fluid vp-t vp-b">
+	<section class="half-banner tall bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-empresa-2.jpg">
+		<img class="watermark right lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/watermark.png">
+		<div class="half-banner-body">
+			<div class="mov-img">
+				<img class=" img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-empresa-2.jpg">
+			</div>
+			<div class="w-100">
+				<h1>
+					La mejor solución
+				</h1>
+				<p>
+					Las soluciones de <strong>Vincent Solar</strong> se distinguen por sus componentes del más alto estándar a nivel internacional, instalado y ejecutado para lograr el máximo beneficio con la <strong>mejor relación precio-calidad</strong>.
+				</p>
+				<div class="img-wrapper">
+					<img class="kit-img lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/equipamiento_empresa.png">
+				</div>				
+			</div>
+		</div>
+	</section>
+</div>
+<!-- Banner a soluciones empresa -->
+
+<!-- como funciona ongrid -->
+<div class="container vp-t">
+	<h1>¿Como funciona el sistema <span class="orange">ON GRID</span> en una empresa?</h1>
+</div>
+<div class="container-fluid">
+	<section class="full-width-diagram bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/paneles-faded.jpg">
+		<div class="img-wrapper">
+			<img class="img-fluid lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/covers/diagrama_empresas.png">
+		</div>
+	</section>
+</div>
+<!-- como funciona ongrid -->
+<!-- Banner a beneficios empresa -->
+<div id="open-gallery-empresa" class="banner-link">
+	<img class="img-fluid lazy desk" data-src="<?php echo get_template_directory_uri() ?>/image/banners/empresa.jpg">	
+	<img class="img-fluid lazy mov" data-src="<?php echo get_template_directory_uri() ?>/image/banners/empresa.mov.jpg">	
+</div>
+<!-- Banner a soluciones empresa -->
+<div class="gallery-container" style="display: none;">
+	<h1>Proyectos <span style="font-weight: 700;">Vincent</span> en el pa&iacute;s</h1>
+	<div id="gallery_empresa" class="lightgallery">
+			<?php
+			$args = array(
+			        'post_type' => 'attachment',
+			        'post_mime_type' => 'image',
+			        'orderby' => 'post_date',
+			        'order' => 'desc',
+			        'posts_per_page' => '-1',
+			        'post_status'    => 'inherit',
+			        'category_name'=>'empresas',
+			         );
+
+			$loop = new WP_Query( $args );
+			while ( $loop->have_posts() ) : $loop->the_post();
+				$image = wp_get_attachment_image_src( get_the_ID(), $size="large" ); 
+				$image_thumb = wp_get_attachment_image_src( get_the_ID(), $size="thumbnail" ); 
+					?>
+				<a class="gallery-img-wrapper" href="<?php echo $image[0]; ?>" data-sub-html="<h4><?php the_title(); ?></h4>">
+					<img class="d-none lazy" data-src="<?php echo $image_thumb[0]; ?>">
+					<div class="gallery-image bg-lazy" data-src="<?php echo $image_thumb[0]; ?>" hd-src="<?php echo $image[0]; ?>">
+						
+					</div>
+					<p class="gallery-title">
+						<?php the_title(); ?>
+					</p>
+				</a>
+
+				<?php
+			endwhile;				    
+			?>			
+	</div>
+</div>
+
+
+
 
 <?php get_footer(); ?>

@@ -109,7 +109,16 @@ a{
 h1{
 	font-weight: 600;
 	color: $text-gray;
-	@include media-breakpoint-up(sm) {
+	@include media-breakpoint-up(lg) {
+		font-size: 2.3vw;
+		&.shrink-cover{
+			font-size: 1.8vw;
+		}		
+		&.shrink{
+			font-size: 42px;
+		}
+	}
+	@include media-breakpoint-between(xs,lg) {
 		font-size: 3vw;
 		&.shrink-cover{
 			font-size: 2.1vw;
@@ -1159,6 +1168,9 @@ footer{
 		@include media-breakpoint-up(md) {
 			font-size: 1.5vw;
 			padding-top: 1vw;
+			&:before {
+				font-size: 1vw;
+			}
 		}
 		@include media-breakpoint-between(sm,md) {
 			font-size: 1.8vw;
@@ -1277,11 +1289,10 @@ section > h1.section-header{
 	background-repeat: no-repeat;
 	background-size: cover;
 	.img-wrapper{
-		
-		@include media-breakpoint-between(lg,xl) {
+		@include media-breakpoint-up(lg) {
 			@include make-col-offset(3);	
 			@include make-col(6);
-			padding: 0 7vw;	
+			padding: 0;	
 		}
 		@include media-breakpoint-between(md,lg) {
 			@include make-col-offset(2);	
@@ -1458,8 +1469,8 @@ section > h1.section-header{
 .banner-link{
 	cursor: pointer;
 	@include media-breakpoint-between(lg,xl) {
-		padding-left: 10vw ;
-		padding-right: 10vw ;
+		padding-left: 13vw ;
+		padding-right: 13vw ;
 		padding-top: $section-padding-top;
 		padding-bottom: $section-padding-bottom;
 	}
