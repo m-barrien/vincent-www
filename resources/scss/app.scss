@@ -142,7 +142,10 @@ h1{
 h2{
 	font-weight: 700;
 	color: $text-gray;
-	@include media-breakpoint-up(sm) {
+	@include media-breakpoint-up(lg) {
+		font-size: 1.3vw;
+	}
+	@include media-breakpoint-between(xs,lg) {
 		font-size: 1.8vw;
 	}
 	@include media-breakpoint-down(sm) {

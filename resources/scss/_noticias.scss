@@ -143,11 +143,11 @@ article{
 			}
 
 			@include media-breakpoint-between(lg,xl) {
-				height: 20vw;
+				height: auto;
 				padding: 40px 0 40px 30px;
 			}
 			@include media-breakpoint-between(sm,lg) {
-				height: 330px;
+				height: auto;
 				padding: 40px 0 40px 30px;
 			}
 			@include media-breakpoint-down(xs) {
@@ -221,8 +221,8 @@ article{
 					}			
 				}
 				.image-container{
-					min-height: 260px;
-					height: 16vw;
+					min-height: 200px;
+					height: auto;
 					background-repeat: no-repeat;
 					background-size: cover;
 					@include make-col-ready();
