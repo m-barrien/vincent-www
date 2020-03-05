@@ -14,10 +14,14 @@ defined( 'ABSPATH' ) || exit;
 get_header( 'shop' );
 ?>
 
+<div class="site-cover-secondary small" style="background-image:linear-gradient(to bottom, #00000080 0%, #00000000 25%,#00000000 75%, #00000080 100%),url('<?php echo get_template_directory_uri() ?>/image/covers/noticias.jpg')">
+</div>
+
 <div class="container" id="woocommerce">
 <section> <!-- ENCABEZADO -->
 <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
-	<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
+	<h2 class="site-title"><?php woocommerce_page_title(); ?></h2>
+	<!-- esto aplica a todas las categorias grandes -->
 <?php endif; ?>
 <?php
 /**

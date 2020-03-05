@@ -25,6 +25,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 }
 ?>
 <li <?php wc_product_class(); ?>>
+	<!-- aqui parte un producto invdividual en el listado por categoria -->
 	<?php
 	/**
 	 * Hook: woocommerce_before_shop_loop_item.

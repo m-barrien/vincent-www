@@ -6,23 +6,6 @@
 }
 
 #bloques,.related{
-	@include media-breakpoint-between(lg,xl) {
-		padding-top: $section-padding-top;
-		padding-bottom: $section-padding-bottom;
-	}
-	@include media-breakpoint-between(md,lg) {
-		padding-top: $section-padding-top / 1.5;
-		padding-bottom: $section-padding-bottom / 1.5;
-	}
-	@include media-breakpoint-between(sm,md) {
-		padding-top: $section-padding-top / 2;
-		padding-bottom: $section-padding-bottom / 2;
-
-	}
-	@include media-breakpoint-down(xs) {
-		padding-top: $section-padding-top / 2.5;
-		padding-bottom: $section-padding-bottom / 2.5;
-	}
 	.products{
 		width: 100%;
 	}

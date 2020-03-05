@@ -21,6 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 <li <?php wc_product_cat_class( '', $category ); ?>>
+	<!-- aqui parte la carta de una categoria en el listado de categorias -->
 	<?php
 	/**
 	 * woocommerce_before_subcategory hook.
