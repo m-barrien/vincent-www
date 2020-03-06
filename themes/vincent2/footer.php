@@ -268,7 +268,7 @@ endif;
 				info@vincentsolar.com
 			</a>
 		</div>
-		<a href="/contacto">
+		<a href="/contacto#linkFormulario">
 			<i class="fas fa-hand-pointer"></i>
 			Contactenos
 		</a>
