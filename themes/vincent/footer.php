@@ -192,6 +192,11 @@ grecaptcha.ready(function () {
 		<a href="mailto:info@vincentsolar.com?subject=Consulta&body=Quiero%20informaci&oacute;n%20sobre:">
 			<i class="fas fa-envelope"></i> Consulta
 		</a>
+	</div>
+	<div class="dock-button mov" style="margin-bottom: 5px;">
+		<a href="tel:+56322948569">
+			<i class="fas fa-phone"></i> Llamar
+		</a>
 		<img src="<?php echo get_template_directory_uri() ?>/image/snippets/it_line.png">
 	</div>
 
