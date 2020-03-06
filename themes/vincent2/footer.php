@@ -268,7 +268,7 @@ endif;
 				info@vincentsolar.com
 			</a>
 		</div>
-		<a href="mailto:info@vincentsolar.com?subject=Consulta">
+		<a href="/contacto">
 			<i class="fas fa-hand-pointer"></i>
 			Contactenos
 		</a>
