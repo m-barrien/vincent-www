@@ -116,7 +116,7 @@ grecaptcha.ready(function () {
 			<i class="fas fa-globe"></i>
 			www.vincentsolar.com
 			<br>
-			<a href="mailto:info@vincentsolar.com?subject=Consulta&body=Quiero%20informaci&oacute;n%20sobre:">
+			<a href="mailto:info@vincentsolar.com?subject=Contacto%20|%20Vincent%20Solar%20-%20Kit%20Solar%20Ongrid%20|%20Kit%20Solar%20Offgrid%20|%20Energía%20Solar%20|%20Panel%20Solar%20Fotovoltaico%20|%20Paneles%20Fotovoltaicos">
 				<i class="fas fa-envelope"></i>
 				info@vincentsolar.com
 			</a>
@@ -164,12 +164,12 @@ grecaptcha.ready(function () {
 				<i class="fas fa-phone"></i>
 				(32) 294 8569
 			</a>
-			<a href="mailto:info@vincentsolar.com?subject=Consulta&body=Quiero%20informaci&oacute;n%20sobre:">
+			<a href="mailto:info@vincentsolar.com?subject=Contacto%20|%20Vincent%20Solar%20-%20Kit%20Solar%20Ongrid%20|%20Kit%20Solar%20Offgrid%20|%20Energía%20Solar%20|%20Panel%20Solar%20Fotovoltaico%20|%20Paneles%20Fotovoltaicos">
 				<i class="fas fa-envelope"></i>
 				info@vincentsolar.com
 			</a>
 		</div>
-		<a href="mailto:info@vincentsolar.com?subject=Consulta&body=Quiero%20informaci&oacute;n%20sobre:">
+		<a href="mailto:info@vincentsolar.com?subject=Contacto%20|%20Vincent%20Solar%20-%20Kit%20Solar%20Ongrid%20|%20Kit%20Solar%20Offgrid%20|%20Energía%20Solar%20|%20Panel%20Solar%20Fotovoltaico%20|%20Paneles%20Fotovoltaicos">
 			<i class="fas fa-hand-pointer"></i>
 			Contacto
 		</a>
@@ -177,7 +177,7 @@ grecaptcha.ready(function () {
 	</div>
 	<div class="dock-button mov" style="margin-bottom: 5px;">
 		<div id="collapseContacto" class="collapse">
-			<a href="mailto:info@vincentsolar.com?subject=Consulta&body=Quiero%20informaci&oacute;n%20sobre:">
+			<a href="mailto:info@vincentsolar.com?subject=Contacto%20|%20Vincent%20Solar%20-%20Kit%20Solar%20Ongrid%20|%20Kit%20Solar%20Offgrid%20|%20Energía%20Solar%20|%20Panel%20Solar%20Fotovoltaico%20|%20Paneles%20Fotovoltaicos">
 				<i class="fas fa-envelope"></i>
 				Correo
 			</a>
@@ -189,7 +189,7 @@ grecaptcha.ready(function () {
 		<!-- 
 		<a data-toggle="collapse" href="#collapseContacto" role="button" aria-expanded="false" aria-controls="collapseContacto"> 
 		-->
-		<a href="mailto:info@vincentsolar.com?subject=Consulta&body=Quiero%20informaci&oacute;n%20sobre:">
+		<a href="mailto:info@vincentsolar.com?subject=Contacto%20|%20Vincent%20Solar%20-%20Kit%20Solar%20Ongrid%20|%20Kit%20Solar%20Offgrid%20|%20Energía%20Solar%20|%20Panel%20Solar%20Fotovoltaico%20|%20Paneles%20Fotovoltaicos">
 			<i class="fas fa-envelope"></i> Consulta
 		</a>
 	</div>
