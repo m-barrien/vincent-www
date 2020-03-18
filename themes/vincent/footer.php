@@ -1,5 +1,4 @@
 <!-- Modal contacto -->
-<!--
 <script src="https://www.google.com/recaptcha/api.js?render=6LecWrQUAAAAAE83dQ6F_0YUAhDb-LpgPijunvQL"></script>
 <script>
 grecaptcha.ready(function () {
@@ -9,7 +8,6 @@ grecaptcha.ready(function () {
     });
 });
 </script>
--->
 <?php if(isset($_GET['status'])) : ?>
 <div class="modal fade" id="modalGracias" tabindex="-1" role="dialog" aria-labelledby="modalGraciasLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
@@ -65,6 +63,7 @@ grecaptcha.ready(function () {
       </div>
       <div class="modal-body modal-contacto-body" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/snippets/solar-pact.jpg');">
 		<form method="post" id="formContacto" action="/analytics/consulta">
+			<input type="hidden" name="recaptcha_response" id="recaptchaResponse">
 		  <div class="form-group">
 		    <label for="exampleFormControlInput1">E-mail*</label>
 		    <input type="email" name="contacto_email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com" required="">
