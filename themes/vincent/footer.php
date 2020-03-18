@@ -67,7 +67,7 @@ grecaptcha.ready(function () {
 		<form method="post" id="formContacto" action="/analytics/consulta">
 		  <div class="form-group">
 		    <label for="exampleFormControlInput1">E-mail*</label>
-		    <input type="email" name="contacto_email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+		    <input type="email" name="contacto_email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com" required="">
 		  </div>
 		  <div class="form-group">
 		    <label for="exampleFormControlTextarea1">Consulta</label>
