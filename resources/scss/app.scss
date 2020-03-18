@@ -1320,30 +1320,6 @@ a.product-slide{
 	margin-top: 20vh;
 	.modal-content{
 		overflow: hidden;
-		.modal-contacto-body{
-			width: 100%;
-			.button-container{
-				@include make-row();
-				margin-left: 0;
-				margin-right: 0;
-				margin-top: -90px;
-				margin-bottom: 30px;
-				width: 100%;
-				a{
-					@include make-col-ready();
-					@include make-col(5);	
-					@extend .d-block;
-					@extend .btn;
-					@extend .mx-auto;
-					background-color: white;
-					width: 40%;
-					h4{
-						margin:0;
-						padding: 0;
-					}
-				}
-			}
-		}
 		.modal-oferta-body{
 			button{
 				position: absolute;
@@ -1351,6 +1327,28 @@ a.product-slide{
 				right: 4px;
 				top: 4px;
 			}
+		}
+	}
+}
+.modal-contacto-body{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;	
+	form label{
+		font-weight: bold;
+		background: white;
+		border-radius: 5px;
+		padding: 0px 5px;
+	}
+	form .form-group label{
+		font-weight: bold;
+		background-color: #ffffffaf;
+	}
+	form input.form-control, form textarea.form-control{
+		transition: background-color .5s ease;
+		background-color: #ffffffff;
+		&:focus{
+			background-color: #ffffffff;
 		}
 	}
 }

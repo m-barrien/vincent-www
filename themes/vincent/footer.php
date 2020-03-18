@@ -21,7 +21,7 @@ grecaptcha.ready(function () {
 	        	<span aria-hidden="true">&times;</span>
 	        </button>
     	</div>
-		<div class="modal-contacto-body">
+		<div class="modal-gracias-body">
 			<div class="banner-img"
 				 style="background-image: url('<?php echo get_template_directory_uri() ?>/image/snippets/solar-pact.jpg');"
 				 alt="Venta de paneles solares kit placas solares kit"
@@ -43,36 +43,35 @@ grecaptcha.ready(function () {
 </div><!-- Modal gracias -->
 <?php endif; ?>
 
-<div class="modal fade" id="modalContacto" tabindex="-1" role="dialog" aria-labelledby="modalContactoLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
+<div class="modal fade" id="modalContacto" tabindex="-1" role="dialog" aria-labelledby="modalContactoTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
     <div class="modal-content">
-    	<div class="modal-header">
-			<img class="lazy" style="width: 10%; height:auto;" data-src="<?php site_icon_url(); ?>" alt="Vincent Solar">
-    		
-	    	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	        	<span aria-hidden="true">&times;</span>
-	        </button>
-    	</div>
-		<div class="modal-contacto-body">
-			<div class="banner-img"
-				 style="background-image: url('<?php echo get_template_directory_uri() ?>/image/snippets/solar-pact.jpg');"
-				 alt="Venta de paneles solares kit placas solares kit"
-        	>
-        	</div>
-			<form method="POST" action="/consulta">
-			  <div class="form-group">
-			    <label for="exampleInputCorreo1">Correo</label>
-			    <input name="cmail" type="email" class="form-control form-control-lg" id="exampleInputCorreo1" aria-describedby="emailHelp" placeholder="Ingresar Correo">
-			    <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu correo con terceros.</small>
-			  </div>
-				<div class="form-group">
-				<label for="consultaTextbox">Consulta</label>
-					<textarea name="cmessage" class="form-control form-control-lg" id="consultaTextbox" rows="3"></textarea>
-				</div>
-				<input type="hidden" name="recaptcha_response" id="recaptchaResponse">
-			  <button type="submit" class="btn btn-primary">Enviar</button>
-			</form>        	
-		</div>
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalContactoTitle">
+        	<img style="width: 33px;height: auto; display: inline-block;" src="<?php echo get_site_icon_url(); ?>">
+        	Contacto
+    	</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body modal-contacto-body" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/snippets/solar-pact.jpg');">
+		<form method="post" id="formContacto" action="/analytics/consulta">
+		  <div class="form-group">
+		    <label for="exampleFormControlInput1">E-mail*</label>
+		    <input type="email" name="contacto_email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleFormControlTextarea1">Consulta</label>
+		    <textarea class="form-control" name="contacto_query" id="exampleFormControlTextarea1" rows="3"></textarea>
+		  </div>
+		</form>        
+      </div>
+      <div class="modal-footer">
+      	<p class="text-center"><i>Uno de nuestros expertos se pondra en contacto con usted por asesor&iacute;a.</i></p>
+        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="submit" form="formContacto" class="btn btn-primary"><strong>Enviar</strong></button>
+      </div>
     </div>
   </div>
 </div><!-- Modal contacto -->
@@ -169,7 +168,7 @@ grecaptcha.ready(function () {
 				info@vincentsolar.com
 			</a>
 		</div>
-		<a href="mailto:info@vincentsolar.com?subject=Contacto%20|%20Vincent%20Solar%20-%20Kit%20Solar%20Ongrid%20|%20Kit%20Solar%20Offgrid%20|%20Energía%20Solar%20|%20Panel%20Solar%20Fotovoltaico%20|%20Paneles%20Fotovoltaicos">
+		<a href="#modalContacto" data-toggle="modal" data-target="#modalContacto">
 			<i class="fas fa-hand-pointer"></i>
 			Contacto
 		</a>
