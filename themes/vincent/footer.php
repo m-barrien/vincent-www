@@ -14,13 +14,15 @@ grecaptcha.ready(function () {
 <div class="modal fade" id="modalGracias" tabindex="-1" role="dialog" aria-labelledby="modalGraciasLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
-    	<div class="modal-header">
-			<img class="lazy" style="width: 10%; height:auto;" data-src="<?php site_icon_url(); ?>" alt="Vincent Solar">
-    		
-	    	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	        	<span aria-hidden="true">&times;</span>
-	        </button>
-    	</div>
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalContactoTitle">
+        	<img style="width: 33px;height: auto; display: inline-block;" src="<?php echo get_site_icon_url(); ?>">
+        	Contacto
+    	</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
 		<div class="modal-gracias-body">
 			<div class="banner-img"
 				 style="background-image: url('<?php echo get_template_directory_uri() ?>/image/snippets/solar-pact.jpg');"
@@ -41,6 +43,12 @@ grecaptcha.ready(function () {
     </div>
   </div>
 </div><!-- Modal gracias -->
+<script type="text/javascript">
+	$( document ).ready(function() {
+        $('#modalGracias').modal('show');
+    });
+ 
+</script>
 <?php endif; ?>
 
 <div class="modal fade" id="modalContacto" tabindex="-1" role="dialog" aria-labelledby="modalContactoTitle" aria-hidden="true">
@@ -203,3 +211,4 @@ grecaptcha.ready(function () {
 
   </body>
 </html>
+<a href=""></a>
