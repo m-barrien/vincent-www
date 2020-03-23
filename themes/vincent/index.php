@@ -199,7 +199,7 @@ get_header();
 							 
 							<br>
 							<span class="big">
-								$5.000.000
+								$4.500.000
 							</span>
 
 						</div>
