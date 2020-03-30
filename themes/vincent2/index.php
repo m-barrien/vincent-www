@@ -281,9 +281,17 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 									<div class="step-container">
 										<span class="bar-number">Ver m&aacute;s</span>
 									</div>
-									<h1>Algunos de nuestros proyectos</h1>
+									<h1>Algunos de nuestros proyectos
+										<br>
+										&nbsp;
+									</h1>
 									<p class="highlight orange-with-arrow">
 										Visite nuestra galer&iacute;a
+										<br>
+										&nbsp;
+									</p>
+									<p class="highlight">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 									</p>
 								</div>
 							</div>	
@@ -466,22 +474,22 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 
 <!-- SECCION MAPA -->
 <div class="container map-container">
-	<section>
+	<section class="vp-t">
 		<h1 class="section-header">Niveles de radiación en el mundo</h1>
 	</section>
-	<section>
+	<section class="vp-b">
 		<div class="col">
 			<img class="img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/mapa_mundo.jpg">
 		</div>
 	</section>
-	<section class="v-padding-top">
+	<section class="vb-t">
 		<h1 class="section-header">Proyectos Vincent en Chile</h1>
 		<p class="d-block w-100 highlight text-center">M&aacute;s de 7MW instalado sobre techo en el pa&iacute;s.</p>
 	</section>
 	<div class="indicador-mapa-wrapper">
 		<img data-src="<?php echo get_template_directory_uri() ?>/image/snippets/indicador_mapa.png" class="lazy indicador-mapa">
 	</div>
-	<section class="">
+	<section class="vp-b">
 
 
 		<div class="col-svg-mapa-grande" >
