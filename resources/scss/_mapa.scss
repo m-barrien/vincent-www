@@ -181,7 +181,13 @@
 	}
 }
 .region-data-title{
-	font-size: 1.5vw;
+	@include media-breakpoint-up(xl) {
+		font-size: 20px;
+	}
+	@include media-breakpoint-between(md,lg) {
+		font-size: 1.5vw;
+	}
+
 	@include media-breakpoint-down(sm) {
 		font-size: 17px;
 	}
@@ -191,7 +197,12 @@
 	}
 }
 .region-data-value{
-	font-size: 2vw;
+	@include media-breakpoint-up(xl) {
+		font-size: 28px;
+	}
+	@include media-breakpoint-between(md,lg) {
+		font-size: 2vw;
+	}
 	@include media-breakpoint-down(sm) {
 		font-size: 22px;
 	}	
@@ -200,14 +211,24 @@
 	&.region{}
 	&.kwh{
 		color: green;
-		font-size: 2.3vw;
+		@include media-breakpoint-up(xl) {
+			font-size: 32px;
+		}
+		@include media-breakpoint-between(md,lg) {
+			font-size: 2.3vw;
+		}		
 		@include media-breakpoint-down(sm) {
 			font-size: 28px;
 		}
 	}
 	&.money{
 		color: green;
-		font-size: 2.5vw;
+		@include media-breakpoint-up(xl) {
+			font-size: 34px;
+		}
+		@include media-breakpoint-between(md,lg) {
+			font-size: 2.5vw;
+		}
 		@include media-breakpoint-down(sm) {
 			font-size: 40px;
 		}		

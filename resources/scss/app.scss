@@ -210,7 +210,11 @@ h2{
 		}
 	}
 	&.kit-single-title{
-		@include media-breakpoint-up(md) {
+		@include media-breakpoint-up(xl) {
+			margin: 60px 0;
+			font-size: 60px;
+		}
+		@include media-breakpoint-between(md,lg) {
 			margin: 3vw 0;
 			font-size: 3.3vw;
 		}
@@ -287,7 +291,10 @@ p{
 
 .blog-container-width{
 	@extend .container;
-	@include media-breakpoint-up(sm) {
+	@include media-breakpoint-up(xl) {
+		width: $max-window-width *0.8;
+	}
+	@include media-breakpoint-between(md,lg) {
 		width: 870px;
 	}
 	@include media-breakpoint-down(sm) {
