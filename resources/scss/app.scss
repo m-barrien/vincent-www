@@ -857,14 +857,17 @@ p{
 					}
 					.img-wrapper{
 						pointer-events:none;
-			    		padding: 20px ;
 			    		margin: 0 auto 0 auto ;
+			    		@include media-breakpoint-up(xl) {
+			    			padding: 50px ;
+						}
 			    		@include media-breakpoint-between(sm,md) {
 			    			padding: 0px;
 
 			    		}
 						@include media-breakpoint-down(xs) {
 							max-width: 300px;
+			    			padding: 20px ;
 							padding-bottom:0;
 							margin-bottom: -5vw;
 		  

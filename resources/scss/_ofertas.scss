@@ -1,6 +1,7 @@
 $oferta-wide-scale-sm:1;
 $oferta-wide-scale-md:0.8;
 $oferta-wide-scale-lg:0.7;
+$oferta-wide-scale-xl:1;
 #titulo-ofertas{
 	text-transform: uppercase;
 	color: $text-grayer;
@@ -305,10 +306,10 @@ $oferta-wide-scale-lg:0.7;
 	color: $text-grayer;
 	width: 100%;
 	font-weight: 500;
-	@include media-breakpoint-between(lg,xl) {
-		margin-top:0 * $oferta-wide-scale-lg;
-		font-size:1.7vw  * $oferta-wide-scale-lg;
-		padding-bottom:3vw * $oferta-wide-scale-lg;		
+	@include media-breakpoint-up(xl) {
+		margin-top:0 * $oferta-wide-scale-xl;
+		font-size: 15px  * $oferta-wide-scale-xl;
+		padding-bottom: 30px * $oferta-wide-scale-xl;		
 	}
 	@include media-breakpoint-between(md,lg) {
 		margin-top:0 * $oferta-wide-scale-md;
@@ -351,8 +352,8 @@ $oferta-wide-scale-lg:0.7;
 
 .swiper-ofertas{
 	height: auto;
-	@include media-breakpoint-between(lg,xl) {
-		min-width: 34vw;
+	@include media-breakpoint-up(xl) {
+		min-width: none;
 	}
 	@include media-breakpoint-between(md,lg) {
 		min-width: 34vw;
@@ -374,9 +375,10 @@ h2.titulo-oferta{
 		color: inherit;
 		text-transform: lowercase;
 	}
-	@include media-breakpoint-between(lg,xl) {
-		font-size: 3.7vw  * $oferta-wide-scale-lg;
-		letter-spacing: -2px * $oferta-wide-scale-lg;
+
+	@include media-breakpoint-up(xl) {
+		font-size: 40px  * $oferta-wide-scale-xl;
+		letter-spacing: -2px * $oferta-wide-scale-xl;
 	}
 	@include media-breakpoint-between(md,lg) {
 		font-size: 3.7vw  * $oferta-wide-scale-md;
@@ -401,6 +403,9 @@ h2.titulo-oferta{
 .single-oferta-container-padding{
 	display: block;
 	margin: 0 auto;
+	@include media-breakpoint-up(xl) {
+		width: 100% * $oferta-wide-scale-xl;
+	}
 	@include media-breakpoint-between(lg,xl) {
 		width: 100% * $oferta-wide-scale-lg;
 	}
@@ -418,7 +423,13 @@ h2.titulo-oferta{
 	font-family: "Azo Sans";
 	height: auto;
 	cursor: default;
-	padding: 3vw ;
+	@include media-breakpoint-up(xl) {
+		padding: 30px ;
+	}
+	@include media-breakpoint-down(xl) {
+		padding: 3vw ;
+	}
+
 	cursor: pointer !important;
 
 	background-position: center;
@@ -440,8 +451,9 @@ h2.titulo-oferta{
 	}
 	.col-precio{
 		@include make-col(8);
-		@include media-breakpoint-between(lg,xl) {
-			padding-left:4vw  * $oferta-wide-scale-lg !important;
+
+		@include media-breakpoint-up(xl) {
+			padding-left: 30px * $oferta-wide-scale-xl;
 		}
 		@include media-breakpoint-between(md,lg) {
 			padding-left:4vw  * $oferta-wide-scale-md !important;
@@ -472,8 +484,8 @@ h2.titulo-oferta{
 	white-space: nowrap;
 	width: 100%;
 	text-align: left;
-	@include media-breakpoint-between(lg,xl) {
-		font-size: 3.5vw * $oferta-wide-scale-lg;
+	@include media-breakpoint-up(xl) {
+		font-size: 48px * $oferta-wide-scale-xl;
 		line-height: 1.5;
 	}
 	@include media-breakpoint-between(md,lg) {
@@ -495,10 +507,10 @@ h2.titulo-oferta{
 		content: "$";
 		color: inherit;
 
-		@include media-breakpoint-between(lg,xl) {
-			font-size: 2vw * $oferta-wide-scale-lg ;
-		    margin-left: -1.3vw * $oferta-wide-scale-lg ;
-			margin-top: 1vw * $oferta-wide-scale-lg ;
+		@include media-breakpoint-up(xl) {
+			font-size: 2px * 20 * $oferta-wide-scale-lg ;
+		    margin-left: -1.3px * 20 * $oferta-wide-scale-lg ;
+			margin-top: 1px * 20 * $oferta-wide-scale-lg ;
 		}
 		@include media-breakpoint-between(md,lg) {
 			font-size: 2vw * $oferta-wide-scale-md ;
@@ -630,8 +642,8 @@ h2.titulo-oferta{
 	.proud-to-be{
 		height: auto;
 		margin: 0 auto;
-		@include media-breakpoint-between(lg,xl) {
-			width: 5vw * $oferta-wide-scale-lg ;
+		@include media-breakpoint-up(xl) {
+			width: 80px * $oferta-wide-scale-xl ;
 		}
 		@include media-breakpoint-between(md,lg) {
 			width: 5vw * $oferta-wide-scale-md ;
@@ -647,10 +659,10 @@ h2.titulo-oferta{
 	}
 	.cgreen-logo{
 		position:absolute;
-		@include media-breakpoint-between(lg,xl) {
-			width: 6vw * $oferta-wide-scale-lg ;
-			left: 1vw * $oferta-wide-scale-lg ;
-			top: 30vw * $oferta-wide-scale-lg ;
+		@include media-breakpoint-up(xl) {
+			width: 70px * $oferta-wide-scale-xl ;
+			left: 20px * $oferta-wide-scale-xl ;
+			top: 340px * $oferta-wide-scale-xl ;
 		}
 		@include media-breakpoint-between(md,lg) {
 			width: 6vw * $oferta-wide-scale-md ;
@@ -669,10 +681,10 @@ h2.titulo-oferta{
 	height: 0;
 	margin-left: auto;
 	overflow: visible;
-	@include media-breakpoint-between(lg,xl) {
-		top: -10.42vw * $oferta-wide-scale-lg;		
-		margin-right: -4.28vw * $oferta-wide-scale-lg;
-		width: 15vw * $oferta-wide-scale-lg;
+	@include media-breakpoint-up(xl) {
+	    top: -100px  * $oferta-wide-scale-xl;
+	    margin-right: -30px * $oferta-wide-scale-xl;
+	    width: 160px * $oferta-wide-scale-xl;		
 	}
 	@include media-breakpoint-between(md,lg) {
 		top: -11.125vw * $oferta-wide-scale-md;		
@@ -707,10 +719,10 @@ h2.titulo-oferta{
 	position: relative;
 	width: 100%;
 	z-index: 5;
-	@include media-breakpoint-between(lg,xl) {
-	    width: 37%;
+	@include media-breakpoint-up(xl) {
+	    width: 140px;
+		margin-left: 50%  * $oferta-wide-scale-xl;
 		img{
-			margin-left: 20vw  * $oferta-wide-scale-lg;
 		}
 	}
 	@include media-breakpoint-between(md,lg) {
@@ -741,9 +753,9 @@ h2.titulo-oferta{
     display: inline;
     line-height: 0;
 
-	@include media-breakpoint-between(lg,xl) {
-		font-size: 1vw * $oferta-wide-scale-lg;
-	    padding: 0.3vw * $oferta-wide-scale-lg;
+	@include media-breakpoint-up(xl) {
+		font-size: 1px * 17 * $oferta-wide-scale-lg;
+	    padding: 0.3px * 17 * $oferta-wide-scale-lg;
 	}
 	@include media-breakpoint-between(md,lg) {
 		font-size: 1vw * $oferta-wide-scale-md;

@@ -35,7 +35,7 @@ if( !preg_match('/noticias/', $_SERVER['REQUEST_URI'], $match)):
 endif;
 ?>
 <!-- /SECCION PRODUCTOS -->
-<div class="container-fluid">
+<div class="container-fluid vp-t">
 	<section id="contacto-footer" >
 		<div class="col-sm-12 col-md-12">
 			<h1>Recibir Ofertas</h1>
