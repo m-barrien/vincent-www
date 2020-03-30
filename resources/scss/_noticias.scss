@@ -202,7 +202,11 @@ article{
 						display: inline-block;
 						background-color: $white;
 						text-transform: none;		
-						@include media-breakpoint-up(sm) {
+						@include media-breakpoint-up(xl) {
+							font-size: 15px;
+							margin-top: 20px;
+						}			
+						@include media-breakpoint-between(md,lg) {
 							font-size: .9vw;
 							margin-top: 1.5vw;
 						}	

@@ -102,7 +102,14 @@ $('.swiper-slide').mouseenter(
   function(){
     if($(this).find( '.cover-slide' ).attr("data-bg-im")){
       var bg_link = "url('" + $(this).find( '.cover-slide' ).attr("data-bg-im") + "')";
-      $( this ).find( '.cover-slide > .hidden-desc' ).css("height","12vw");
+      if (window.matchMedia("(min-width: 1500px)").matches) {
+        $( this ).find( '.cover-slide > .hidden-desc' ).css("height","200px");
+
+      }
+      else{
+        $( this ).find( '.cover-slide > .hidden-desc' ).css("height","12vw");
+
+      }
       $('.site-cover').css("background-image",bg_link);
     }
 

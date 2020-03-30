@@ -8,6 +8,8 @@
     <title><?php echo get_bloginfo( 'name' ); ?></title>
   </head>
   <body> 
+    <div class="master-container-wrapper">
+    <div class="master-container">
     <?php if( $_SERVER['REQUEST_URI'] == "/" || is_404()): ?>
     <header class="desk">
     <?php else: ?>

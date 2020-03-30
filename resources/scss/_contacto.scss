@@ -51,7 +51,10 @@ $map-overlay-height: 150px;
 		color: $text-gray;
 		text-align: center;
 		font-weight: 400;
-		@include media-breakpoint-up(sm) {				
+		@include media-breakpoint-up(xl) {				
+			font-size: 60px;
+		}
+		@include media-breakpoint-between(md,lg) {				
 			font-size: 4vw;
 		}
 		@include media-breakpoint-down(sm) {				
@@ -76,7 +79,12 @@ $map-overlay-height: 150px;
 		font-weight: 400;
 		text-transform: capitalize;
 		color: $text-gray;
-		@include media-breakpoint-up(sm) {				
+
+		@include media-breakpoint-up(xl) {
+			margin-bottom: 5px;
+			font-size: 20px;
+		}				
+		@include media-breakpoint-between(md,lg) {				
 			margin-bottom: .1vw;
 			font-size: 1.4vw;
 		}
@@ -89,7 +97,11 @@ $map-overlay-height: 150px;
 		font-weight: 500;
 		margin-left:auto;
 		margin-right: 0;
-		@include media-breakpoint-up(sm) {				
+
+		@include media-breakpoint-up(xl) {
+			font-size: 20px;
+		}	
+		@include media-breakpoint-between(md,lg) {				
 			font-size: 1.6vw;
 		}
 		@include media-breakpoint-down(sm) {				

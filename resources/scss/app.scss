@@ -53,9 +53,30 @@
 
 body{
 	font-family: $font-family-sans-serif;
+    margin:0;
+    padding:0;
+    min-width: fit-content;
+    overflow: auto;
+}
+html{
+    margin:0;
+    padding:0;
 }
 section {
     @include make-row();
+}
+.master-container-wrapper{
+	width: 100vw;
+}
+.master-container{
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: none;
+	@include media-breakpoint-up(xl) {
+		max-width: $max-window-width;
+	}
+	box-shadow: 0px 0px 9px #808080;
 }
 .container-fluid{
 	position: relative;
@@ -129,10 +150,10 @@ input[type="color"]:focus,
 h1{
 	font-weight: 600;
 	color: $text-gray;
-	@include media-breakpoint-up(lg) {
-		font-size: 2.3vw;
+	@include media-breakpoint-up(xl) {
+		font-size: 40px;
 		&.shrink-cover{
-			font-size: 1.8vw;
+			font-size: 30px;
 		}		
 		&.shrink{
 			font-size: 42px;
@@ -162,8 +183,8 @@ h1{
 h2{
 	font-weight: 700;
 	color: $text-gray;
-	@include media-breakpoint-up(lg) {
-		font-size: 1.3vw;
+	@include media-breakpoint-up(xl) {
+		font-size: 25px;
 	}
 	@include media-breakpoint-between(xs,lg) {
 		font-size: 1.8vw;
@@ -172,7 +193,11 @@ h2{
 		font-size: 22px;
 	}
 	&.site-title{
-		@include media-breakpoint-up(sm) {
+		@include media-breakpoint-up(xl) {
+			margin: 50px 0;
+			font-size: 40px;
+		}
+		@include media-breakpoint-between(md,lg) {
 			margin: 3vw 0;
 			font-size: 3.3vw;
 		}
@@ -222,7 +247,13 @@ h3{
 }
 p{
 	font-weight: 400;
-	@include media-breakpoint-up(sm) {
+	@include media-breakpoint-up(xl) {
+		font-size: $font-size-base*1.7;
+		&.highlight{
+			font-size: 25px;
+		}
+	}
+	@include media-breakpoint-between(md,lg) {
 		font-size: $font-size-base*1.7;
 		&.highlight{
 			font-size: 1.6vw;
@@ -504,7 +535,12 @@ p{
       align-items: center;
     }	
     .cover-slide{
-		@include media-breakpoint-between(md,xl) {
+    	@include media-breakpoint-up(xl) {
+    		margin-bottom: 10px;
+    		padding: 0 20px;
+    		width: 100%;
+		}
+		@include media-breakpoint-between(md,lg) {
     		margin-bottom: 10px;
     		padding: 0 1.5vw;
 		}
@@ -556,9 +592,9 @@ p{
 				text-decoration: none;
 				font-weight: bold;
 				
-				@include media-breakpoint-between(lg,xl) {
-					font-size: 1.3vw;
-					padding: .5vw 1.7vw;
+				@include media-breakpoint-up(xl) {
+					font-size: 19px;
+					padding: 6px 20px;
 				}
 				@include media-breakpoint-between(md,lg) {
 					font-size: 1.4vw;
@@ -582,7 +618,11 @@ p{
 			p{
 				line-height: 1;
 				color: $text-light-gray;
-				@include media-breakpoint-up(md) {
+				@include media-breakpoint-up(xl) {
+					height: 60px;
+					font-size: 20px;
+				}
+				@include media-breakpoint-between(md,lg) {
 					height: 5vw;
 					font-size: 1.3vw;
 				}
@@ -717,22 +757,32 @@ p{
 		}
 	}
 	.cloud-container{
-		margin-top:-5vw;
+		@include media-breakpoint-up(sm) {
+			margin-top: -30px;
+		}
+		@include media-breakpoint-down(sm) {
+			margin-top:-5vw;
+		}
 		background-position: center top;
 		background-repeat: no-repeat;
 		background-size: cover;
 		overflow: hidden;
 	}
     .swiper-container {
-      width: 100vw;
       background-color: transparent;
       overflow: visible;
       overflow-y: visible;
-      @include media-breakpoint-up(sm) {
+      @include media-breakpoint-up(xl) {
+	    width: 100%;
+
+      }
+      @include media-breakpoint-between(md,lg) {
+	    width: 100vw;
       	min-height: 0;
       	padding-top:30px;
       }
       @include media-breakpoint-down(sm) {
+	    width: 100vw;
       	min-height: 50vh;
       	padding:20px 0;
       }
@@ -779,10 +829,14 @@ p{
 		    	-webkit-align-items: center;
 		    	align-items: center;			    	
 		    	@include make-row();	
-				@include media-breakpoint-up(lg) {
-					padding-left: 7% !important;   
-					padding-right: 7% !important; 	
+				@include media-breakpoint-up(xl) {
+					padding-left: 0;   
+					padding-right: 0; 	
 				}
+				@include media-breakpoint-between(md,lg) {
+					padding-left: 7%;   
+					padding-right: 7%; 	
+				}	
 				@include media-breakpoint-down(xs) {
 					padding-left: 7% !important;   
 					padding-right: 7% !important; 	
@@ -860,7 +914,11 @@ p{
 							display: inline-block;
 							text-align: left;
 							font-weight: 400;
-							@include media-breakpoint-between(md,xl) {
+
+							@include media-breakpoint-up(xl) {
+								font-size: 30px;
+							}
+							@include media-breakpoint-between(md,lg) {
 								font-size: 2vw;
 							}
 							@include media-breakpoint-between(sm,md) {
@@ -908,7 +966,11 @@ footer{
 	}
 	.footer-cgreen-logo > img{
 		@extend .mx-auto;
-		@include media-breakpoint-up(sm) {
+		@include media-breakpoint-up(xl) {
+			width: 100px;
+			height: 100px;			
+		}
+		@include media-breakpoint-between(md,lg) {
 			width: 7vw;
 			height: 7vw;
 
@@ -922,7 +984,16 @@ footer{
 		@extend .flex-container;
 		@extend .space-between;
 		address{
-			@include media-breakpoint-between(md,xl) {
+			@include media-breakpoint-up(xl) {
+				font-size: 15px;	
+				&:first-child{
+					padding-left: 5%;
+				}
+				&:last-child{
+					padding-right: 5%;
+				}					
+			}
+			@include media-breakpoint-between(md,lg) {
 				font-size: 1.2vw;	
 				&:first-child{
 					padding-left: 5%;
@@ -986,7 +1057,11 @@ footer{
 			text-align: center;
 			font-weight: bold;
 			text-transform: uppercase;
-			@include media-breakpoint-up(sm) {
+
+			@include media-breakpoint-up(xl) {
+				font-size: 14px;
+			}
+			@include media-breakpoint-between(md,lg) {
 				font-size: 1vw;
 			}
 			@include media-breakpoint-down(sm) {
@@ -996,8 +1071,8 @@ footer{
 		.icon{
 			@extend .mx-auto;
 			height: auto;
-			@include media-breakpoint-between(lg,xl) {
-				max-width: 5vw;
+			@include media-breakpoint-up(xl) {
+				max-width: 80px;
 			}
 			@include media-breakpoint-between(md,lg) {
 				max-width: 6vw;
@@ -1065,7 +1140,18 @@ footer{
 	a{
 		color: inherit;
 	}
-	@include media-breakpoint-up(sm) {
+	@include media-breakpoint-up(xl) {
+		height: auto;
+		.product-title{
+			text-align: center;
+			font-size: 18px;
+		}
+		img{
+			padding:10%;
+		}
+	}
+
+	@include media-breakpoint-between(md,lg) {
 		height: auto;
 		.product-title{
 			text-align: center;
@@ -1085,7 +1171,18 @@ footer{
 
 
 .half-banner{
-	@include media-breakpoint-up(sm) {
+	@include media-breakpoint-up(xl) {
+		min-height: 400px;
+		height: auto;
+		&.tall{
+			height: auto;
+		}
+		&.h-auto{
+			height: auto;
+		}		
+	}
+
+	@include media-breakpoint-between(sm,lg) {
 		min-height: 400px;
 		height: 35vw;
 		&.tall{
@@ -1151,8 +1248,8 @@ footer{
 	h1{
 		line-height: 1;
 
-		@include media-breakpoint-between(lg,xl) {
-			font-size: 2.9vw;
+		@include media-breakpoint-up(xl) {
+			font-size: 40px;
 		}
 		@include media-breakpoint-between(md,lg) {
 			font-size: 3.0vw;
@@ -1167,7 +1264,13 @@ footer{
 		}
 	}
 	p{
-		font-size: 1.8vw;
+		@include media-breakpoint-up(xl) {
+			font-size: 20px;
+		}
+
+		@include media-breakpoint-between(md,lg) {
+			font-size: 1.8vw;
+		}
 		@include media-breakpoint-between(sm,md) {
 			font-size: 1rem;
 		}
@@ -1214,15 +1317,15 @@ footer{
 		margin-top: -6vw;
 	}
 	img.kit-img{
-		@include media-breakpoint-up(sm) {
-			width: 21vw;
+		@include media-breakpoint-up(xl) {
+			width: 60%;
 			display: block;
 			margin-right: 0;
 			margin-left: auto;
 
 		}
 
-		@include media-breakpoint-between(sm,md) {
+		@include media-breakpoint-between(sm,lg) {
 			width: 40%;
 			display: block;
 			margin-right: 0;
@@ -1244,7 +1347,12 @@ a.orange-with-arrow , p.orange-with-arrow{
 }
 a.orange-with-arrow{
 	display: inline-block;
-	@include media-breakpoint-up(md) {
+
+	@include media-breakpoint-up(xl) {
+		font-size: 18px;
+		white-space: nowrap;		
+	}
+	@include media-breakpoint-between(md,lg) {
 		font-size: 1.35vw;
 		white-space: nowrap;		
 	}
@@ -1491,9 +1599,9 @@ section > h1.section-header{
 
 .banner-link{
 	cursor: pointer;
-	@include media-breakpoint-between(lg,xl) {
-		padding-left: 13vw ;
-		padding-right: 13vw ;
+	@include media-breakpoint-up(xl) {
+		padding-left: 10%;
+		padding-right: 10%;
 		padding-top: $section-padding-top;
 		padding-bottom: $section-padding-bottom;
 	}
@@ -1534,7 +1642,7 @@ section > h1.section-header{
 	}
 }
 .vp-t{
-	@include media-breakpoint-between(lg,xl) {
+	@include media-breakpoint-up(xl) {
 		padding-top: $section-padding-top;
 	}
 	@include media-breakpoint-between(md,lg) {
@@ -1549,8 +1657,8 @@ section > h1.section-header{
 	}
 }
 .vp-b{
-	@include media-breakpoint-between(lg,xl) {
-		padding-bottom: $section-padding-bottom;
+	@include media-breakpoint-up(xl) {
+		padding-top: $section-padding-bottom;
 	}
 	@include media-breakpoint-between(md,lg) {
 		padding-bottom: $section-padding-bottom / 1.5;

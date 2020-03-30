@@ -180,6 +180,9 @@ endif;
 	</section>
 
 </footer>
+</div> <!-- master container -->
+</div> <!-- master container wrapper -->
+
 
 <?php
 	if ($_SESSION['show_modal'] && false) {
@@ -255,6 +258,7 @@ endif;
 	</div>
 </div>
 -->
+
 
 <div class="bottom-dock">
 	<div class="dock-button desk">

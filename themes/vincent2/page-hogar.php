@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 
 <!-- Banner a beneficios hogar -->
-<div class="container-fluid vp-b">
+<div class="container-fluid">
 	<section class="half-banner h-auto mt-0" style="background-image:url('<?php echo get_template_directory_uri() ?>/image/covers/seccion-hogar-1.jpg');">
 		<div class="half-banner-body menu-top-padding right">
 			<div class="mov-img">
