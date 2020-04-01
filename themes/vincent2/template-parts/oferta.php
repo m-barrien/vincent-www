@@ -25,11 +25,31 @@ if ($tax_term) {
 		<?php the_content() ;?>
 
 		<script type="text/javascript">
+			//funcion offgrid appliances colorear iconos
+			function setAppliances(kwh = 1750) {
+			  var _kwh_gen = kwh * $("#data-kwp").attr("data-kwp");
+			  $(".appliance-tab").each(function(){
+			  	var kwh_needs = 1750 * $(this).attr("data-needs");
+			    if(kwh_needs > _kwh_gen + 1000){
+			      $(this).removeClass("great");
+			      $(this).removeClass("warn");
+			    }
+			    else if(kwh_needs > _kwh_gen){
+			      $(this).removeClass("great");
+			      $(this).addClass("warn");
+			    }
+			    else{
+			      $(this).removeClass("warn");
+			      $(this).addClass("great");
+			    }
+			  }); 
+			}			
 			async function goto(hash,data) {
 				$('#data-region-name').text(data["nombre_region"]);
 				$('#data-kwh').text(Number((kwp * data["kwh"]).toFixed(0)).toLocaleString());
 				var money =kwp * data["kwh"] * 120;
 				$('#data-saving').text(Number(money));
+				setAppliances(data["kwh"]);
 			}
 		</script>		
 		<script type="text/javascript">

@@ -305,21 +305,7 @@ if(photo_arr.length >0 ){
 
 
 
-//funcion offgrid appliances
-function setAppliances() {
-  var _kwp = $("#data-kwp").attr("data-kwp");
-  $(".appliance-tab").each(function(){
-    if($(this).attr("data-needs") > _kwp){
-      $(this).toggleClass("bad");
-    }
-    else if($(this).attr("data-needs") == _kwp){
-      $(this).toggleClass("warn");
-    }
-    else{
-      $(this).toggleClass("great");
-    }
-  }); 
-}
+
 /**
  * Returns an array with arrays of the given size.
  *
