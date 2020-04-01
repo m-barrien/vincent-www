@@ -310,7 +310,7 @@ p{
 .video-container{
 	overflow: hidden;
 	position: relative;
-	@include media-breakpoint-between(lg,xl) {
+	@include media-breakpoint-up(xl) {
 		display: block;
 		height: 50vw;
 	}
@@ -663,7 +663,13 @@ p{
 	background-size: cover;
 	color: $white;
 	overflow: hidden;
-	@include media-breakpoint-up(sm) {
+	@include media-breakpoint-up(xl) {
+		height: 500px;
+		&.small{
+			height: 500px;
+		}		
+	}
+	@include media-breakpoint-between(md,lg) {
 		height: 500px;
 		&.small{
 			height: 40vh;
@@ -680,6 +686,10 @@ p{
 		width: 100%;
 		height: 56.25vw;
 		pointer-events: none;
+		@include media-breakpoint-up(xl) {
+			top:0 !important ;
+			height: auto;
+		}
 		@include media-breakpoint-between(lg,xl) {
 			top:-13vw;
 			min-height: 500px;
@@ -1215,9 +1225,15 @@ footer{
 
 	.favicon, .watermark{
 		position: absolute;
-		margin: 2vw;
 		height: auto;
-		width: 4vw;
+		@include media-breakpoint-up(xl) {
+			width: 68px;
+			margin: 20px;
+		}
+		@include media-breakpoint-down(xl) {
+			width: 4vw;
+			margin: 2vw;
+		}
 		&.right{
 			right: 0;
 		}
