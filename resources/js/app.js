@@ -318,9 +318,6 @@ function setAppliances() {
     else{
       $(this).toggleClass("great");
     }
-    console.log($(this).attr("data-needs"));
-    console.log(_kwp);
-
   }); 
 }
 /**
