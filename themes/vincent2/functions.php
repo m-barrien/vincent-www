@@ -172,9 +172,111 @@ function kit_map_shortcode($atts = [], $content = null, $tag = '') {
   // override default attributes with user attributes
   $wporg_atts = shortcode_atts([
                                  'kwp' => 1,
+                                 'type' => "ongrid",
                              ], $atts, $tag);
 
 // Things that you want to do. 
+if($wporg_atts['type'] == "ongrid"){
+  $offgrid_icons="";
+}
+else{
+  $offgrid_icons= do_shortcode('[svgicons]').'
+  <div class="region-data-li-wrapper">
+    <div class="region-data-li">
+      <div class="region-data-title money">
+        <i class="fas fa-plug"></i>
+        Compatible con
+      </div>
+      <div class="region-data-value appliances">
+        <div class="appliance-tab-wrapper">
+          <div class="appliance-tab" data-needs="1">
+            <div class="appliance-icon-wrapper">
+        <svg class="appliance-icon">
+        <use xlink:href="#luz"></use>
+        </svg>
+            </div>
+            <div class="appliance-name">
+          Luces
+            </div>
+          </div>
+        </div>
+        <div class="appliance-tab-wrapper">
+          <div class="appliance-tab" data-needs="1">
+            <div class="appliance-icon-wrapper">
+        <svg class="appliance-icon">
+        <use xlink:href="#computador"></use>
+        </svg>
+            </div>
+            <div class="appliance-name">
+          Celulares / Computadores
+            </div>
+          </div>
+        </div>
+        <div class="appliance-tab-wrapper" >
+          <div class="appliance-tab" data-needs="1.5">
+            <div class="appliance-icon-wrapper">
+        <svg class="appliance-icon">
+        <use xlink:href="#tv"></use>
+        </svg>
+            </div>
+            <div class="appliance-name">
+          TV
+            </div>
+          </div>
+        </div>
+        <div class="appliance-tab-wrapper">
+          <div class="appliance-tab" data-needs="2">
+            <div class="appliance-icon-wrapper">
+        <svg class="appliance-icon">
+        <use xlink:href="#refrigerador"></use>
+        </svg>
+            </div>
+            <div class="appliance-name">
+          Refrigerador
+            </div>
+          </div>
+        </div>
+        <div class="appliance-tab-wrapper">
+          <div class="appliance-tab" data-needs="2">
+            <div class="appliance-icon-wrapper">
+        <svg class="appliance-icon">
+        <use xlink:href="#lavadora"></use>
+        </svg>
+            </div>
+            <div class="appliance-name">
+          Lavadora
+            </div>
+          </div>
+        </div>
+        <div class="appliance-tab-wrapper">
+          <div class="appliance-tab" data-needs="3">
+            <div class="appliance-icon-wrapper">
+        <svg class="appliance-icon">
+        <use xlink:href="#secador_pelo"></use>
+        </svg>
+            </div>
+            <div class="appliance-name">
+          Secador de pelo
+            </div>
+          </div>
+        </div>
+        <div class="appliance-tab-wrapper">
+          <div class="appliance-tab" data-needs="3">
+            <div class="appliance-icon-wrapper">
+        <svg class="appliance-icon">
+        <use xlink:href="#bomba"></use>
+        </svg>
+            </div>
+            <div class="appliance-name">
+          Bomba de agua
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  ';
+}
 $message = '
 <h3>¿Cuanto puedo generar en mi zona?</h3>
 <section style="padding-top:0;">
@@ -219,7 +321,7 @@ $message = '
             <i class="fab fa-cloudscale"></i>
             Potencia de Soluci&oacute;n
           </div>
-          <div id="data-kwp" class="region-data-value kwp">
+          <div id="data-kwp" class="region-data-value kwp" data-kwp="' . esc_html__($wporg_atts['kwp']) . '">
             ' . esc_html__($wporg_atts['kwp']) . 'kWp
           </div>
         </div>
@@ -260,6 +362,7 @@ $message = '
           </div>
         </div>
       </div>
+      '. $offgrid_icons .'
     </div>
     </div>
 </section>
@@ -342,7 +445,7 @@ add_shortcode('ofertas_feats', 'ofertas_feats_shortcode');
 
 function svgiconsshortcode($atts = [], $content = null, $tag = '') { 
 $message = '
-<svg width="0" height="0" class="hidden">
+<svg width="0" height="0" style="display:none;" class="hidden">
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 47" id="aireacondicionado">
     <path d="M66.482 2.022H5.585a4.917 4.917 0 0 0-4.91 4.911v18.662a4.917 4.917 0 0 0 4.91 4.911h60.897a4.917 4.917 0 0 0 4.91-4.91V6.932a4.917 4.917 0 0 0-4.91-4.91zM5.585 3.987h60.897a2.95 2.95 0 0 1 2.946 2.946v13.751H2.64V6.934a2.95 2.95 0 0 1 2.946-2.947zm26.52 24.555H11.478v-1.964H60.59v1.964H39.962zm34.377 0h-3.929v-3.929H9.514v3.929H5.585a2.95 2.95 0 0 1-2.946-2.947V22.65h66.789v2.946a2.95 2.95 0 0 1-2.946 2.947z"
       stroke-width=".982"></path>
