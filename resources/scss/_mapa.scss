@@ -339,6 +339,12 @@
     border-radius: 25px;
     overflow: hidden;	
 
+    .appliance-icon {
+		transition: fill .4s ease;
+	}
+	.appliance-icon-wrapper{
+		transition: background-color .4s ease;
+	}
 	&.great{
 		border-color: $light-green;
 		.appliance-icon-wrapper{
