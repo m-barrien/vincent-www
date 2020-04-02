@@ -118,9 +118,54 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 </div>
 
 <!-- ofertas wide -->
+<style type="text/css">
+
+.scene {
+  width: 200px;
+  height: 260px;
+  border: 1px solid #CCC;
+  margin: 40px 0;
+  perspective: 600px;
+  display: inline-block;
+}
+
+.oferta-card {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.oferta-card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.oferta-card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 260px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.oferta-card__face--front {
+  background: red;
+}
+
+.oferta-card__face--back {
+  background: blue;
+  transform: rotateY(180deg);
+}
+
+</style>
 <div class="ofertas-wide vp-b">
-	<div class="swiper-container swiper-ofertas">
-		<div class="swiper-wrapper">
 		<?php
 		wp_reset_postdata();
 	    wp_reset_query();
@@ -141,9 +186,7 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 				$image = null;
 					?>
 
-				<div class="swiper-slide">
-					<?php get_template_part( 'template-parts/oferta-wide', 'single' ); ?>
-				</div>
+					<?php get_template_part( 'template-parts/oferta-card', 'single' ); ?>
 						
 					<?php
 
@@ -152,13 +195,9 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 	        wp_reset_query();
 		?>
 
-		</div>
 
-		<!-- Add Pagination -->
-		<div class="swiper-button-next"></div>
-		<div class="swiper-button-prev"></div>				
-	</div>
 </div>
+<!-- /ofertas wide -->
 
 <!-- Banner a seccion de hogar -->
 <div class="vp-t"></div>

@@ -65,6 +65,49 @@
 	</a>
 </div>
 
+<!-- ofertas wide -->
+<div class="ofertas-wide vp-b">
+	<div class="swiper-container swiper-ofertas">
+		<div class="swiper-wrapper">
+		<?php
+		wp_reset_postdata();
+	    wp_reset_query();
+	    $args= array(
+		'post_type' => array('oferta'),
+		'post_status' => 'publish',
+		'posts_per_page' => -1,
+		'meta_key'		=> 'price',
+		'orderby'		=> 'meta_value',
+		'order'			=> 'ASC'
+		);
+
+		$loop = new WP_Query( $args );
+		?>	
+	    <?php
+	    	$i=0;
+			while ( $loop->have_posts() ) : $loop->the_post();
+				$image = null;
+					?>
+
+				<div class="swiper-slide">
+					<?php get_template_part( 'template-parts/oferta-wide', 'single' ); ?>
+				</div>
+						
+					<?php
+
+			endwhile;
+			wp_reset_postdata();
+	        wp_reset_query();
+		?>
+
+		</div>
+
+		<!-- Add Pagination -->
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>				
+	</div>
+</div>
+<!-- /ofertas wide -->
 
 
 <!-- como funciona ongrid -->
