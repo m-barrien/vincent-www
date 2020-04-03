@@ -122,7 +122,7 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 
 .oferta-card-scene {
   width: 300px;
-  height: 400px;
+  height: 480px;
   border: 1px solid #CCC;
   margin: 40px 0;
   perspective: 800px;
@@ -138,35 +138,38 @@ if (window.matchMedia("(min-width: 900px)").matches) {
   cursor: pointer;
   position: relative;
   pointer-events: none;
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
 }
 
 .oferta-card.is-flipped {
   transform: rotateY(180deg);
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
 }
 
 .oferta-card__face {
   position: absolute;
   width: 100%;
   height: 100%;
-  line-height: 260px;
   color: #222222;
   text-align: center;
   font-weight: bold;
   font-size: 40px;
-  background: white;
+  background: transparent;
 }
 
 .oferta-card__face--front {
-  background: white;
+	transform: rotateY(0deg);
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden; 
 }
 
 .oferta-card__face--back {
-  background: white;
-  transform: rotateY(180deg);
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
+	transform: rotateY(180deg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
 }
 
 </style>
