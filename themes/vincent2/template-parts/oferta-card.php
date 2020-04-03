@@ -23,7 +23,7 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 			
 		</div>	
     </div>
-    <div class="oferta-card__face oferta-card__face--back" style="background-image:url('<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-bg-mov.jpg');">
+    <div class="oferta-card__face oferta-card__face--back" style="background-color:white; background-image:url('<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-bg-mov.jpg');">
 <div class="oferta-index-single-row" >
 	<div class="oferta-mov-header">
 		<h2 class="titulo-oferta">Kit Solar <?php the_title(); ?>
@@ -50,7 +50,7 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 				<div class="bullet-image vertical">
 					<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/snippets/check.svg">
 				</div>
-				Paneles Solares Sunergy o Canadian Solar
+				Paneles Solares TrinaSolar o Vincent Solar
 			</div>
 			<div class="bullet">
 				<div class="bullet-image vertical">

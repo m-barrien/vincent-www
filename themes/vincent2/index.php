@@ -159,17 +159,19 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 
 .oferta-card__face--front {
 	transform: rotateY(0deg);
+	z-index: 100;
 	backface-visibility: hidden;
 	-webkit-backface-visibility: hidden; 
 }
 
 .oferta-card__face--back {
 	transform: rotateY(180deg);
+	z-index: 90;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
 	backface-visibility: hidden;
-	-webkit-backface-visibility: hidden;
+	-webkit-backface-visibility: visible;
 }
 
 </style>

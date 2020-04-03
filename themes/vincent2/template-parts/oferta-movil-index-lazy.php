@@ -33,7 +33,7 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 				<div class="bullet-image">
 					<img class="img-fluid lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/check.svg">
 				</div>
-				Paneles Solares Sunergy o Canadian Solar
+				Paneles Solares Trina o Vincent Solar
 			</div>
 			<div class="bullet">
 				<div class="bullet-image">
