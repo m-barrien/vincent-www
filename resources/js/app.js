@@ -140,11 +140,11 @@ $('.fixed-button-header').click(function(){
 });
 
 
-$('.oferta-card').mouseenter(function(){
-    $( this ).addClass('is-flipped');
+$('.oferta-card-scene').mouseenter(function(){
+    $( this ).children().addClass('is-flipped');
 });
-$('.oferta-card').mouseleave(function(){
-    $(this).removeClass('is-flipped');
+$('.oferta-card-scene').mouseleave(function(){
+    $(this).children().removeClass('is-flipped');
 });
 //$('.fullvideo-cover').click(function(){
 //  $( '.video-container > iframe' ).attr("src", "https://player.vimeo.com/video/356704763?&amp;autoplay=1&amp;muted=1&amp;loop=1?autoplay=0&amp;background=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;player_id=iframe39000&amp;api=1");
