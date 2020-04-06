@@ -175,21 +175,34 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 }
 
 </style>
-<div class="ofertas-wide vp-b">
+<div class="ofertas-wide-card-container vp-b" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/banners/banner-ongrid.jpg');">
+	<div class="ofertas-cards-header">
+		Soluciones solares ONGRID
+	</div>
+	<div class="ofertas-card-container">
 		<?php
-		wp_reset_postdata();
-	    wp_reset_query();
-	    $args= array(
-		'post_type' => array('oferta'),
-		'post_status' => 'publish',
-		'posts_per_page' => -1,
-		'meta_key'		=> 'price',
-		'orderby'		=> 'meta_value',
-		'order'			=> 'ASC'
-		);
+			wp_reset_postdata();
+		    wp_reset_query();
+		    $args= array(
+			'post_type' => array('oferta'),
+			'post_status' => 'publish',
+			'posts_per_page' => -1,
+			'meta_key'		=> 'price',
+			'orderby'		=> 'meta_value',
+			'order'			=> 'ASC',
+		    'tax_query' => array(
+		        array(
+		            'taxonomy' => 'tipo-kit',
+		            'field'    => 'slug',
+		            'terms'    => 'ongrid',
+		        ),
+		    ),	
+			);
 
-		$loop = new WP_Query( $args );
-		?>	
+			$loop = new WP_Query( $args );
+
+			$wcatTerm = get_term_by('slug','ongrid', 'tipo-kit');
+		?>		
 	    <?php
 	    	$i=0;
 			while ( $loop->have_posts() ) : $loop->the_post();
@@ -204,13 +217,57 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 			wp_reset_postdata();
 	        wp_reset_query();
 		?>
+	</div>
 
+</div>
+<div class="ofertas-wide-card-container vp-t vp-b" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/banners/banner-offgrid.jpg');">
+	<div class="ofertas-cards-header">
+		Mundo OFFGRID by Victron Energy
+	</div>
+	<div class="ofertas-card-container">
+		<?php
+			wp_reset_postdata();
+		    wp_reset_query();
+		    $args= array(
+			'post_type' => array('oferta'),
+			'post_status' => 'publish',
+			'posts_per_page' => -1,
+			'meta_key'		=> 'price',
+			'orderby'		=> 'meta_value',
+			'order'			=> 'ASC',
+		    'tax_query' => array(
+		        array(
+		            'taxonomy' => 'tipo-kit',
+		            'field'    => 'slug',
+		            'terms'    => 'offgrid',
+		        ),
+		    ),	
+			);
+
+			$loop = new WP_Query( $args );
+
+			$wcatTerm = get_term_by('slug','ongrid', 'tipo-kit');
+		?>		
+	    <?php
+	    	$i=0;
+			while ( $loop->have_posts() ) : $loop->the_post();
+				$image = null;
+					?>
+
+					<?php get_template_part( 'template-parts/oferta-card', 'single' ); ?>
+						
+					<?php
+
+			endwhile;
+			wp_reset_postdata();
+	        wp_reset_query();
+		?>
+	</div>
 
 </div>
 <!-- /ofertas wide -->
 
 <!-- Banner a seccion de hogar -->
-<div class="vp-t"></div>
 <div class="container-fluid vp-t vp-b">
 	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-inicio-1.jpg">
 		<img class="watermark lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/watermark.png">

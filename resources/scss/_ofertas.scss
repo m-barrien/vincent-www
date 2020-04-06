@@ -1049,3 +1049,15 @@ $verticals-height: 300px ;
 .oferta-feat-wrapper{
 	padding: 10px;
 }
+
+
+.ofertas-wide-card-container{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.ofertas-card-container{
+	@extend .flex-container;
+
+}
+.ofertas-cards-header{}
