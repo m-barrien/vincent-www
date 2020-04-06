@@ -119,6 +119,11 @@ section {
 		display: none;
 	}
 }
+.d-none-mov{
+	@include media-breakpoint-down(sm) {
+		display: none;
+	}	
+}
 a{
 	-moz-outline-style: none !important;
 	outline: none !important;

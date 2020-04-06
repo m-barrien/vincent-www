@@ -175,12 +175,12 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 }
 
 </style>
-<div class="ofertas-wide-card-container vp-b vm-t vm-b" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/banners/banner-ongrid.jpg');">
-	<div class="ofertas-cards-header">
-		<h1>
-			Soluciones solares ONGRID
-		</h1>
-	</div>
+<div class="ofertas-cards-header d-none-mov vm-t">
+	<h1 class="">
+		Kit Solar Residencial <span class="orange">ONGRID</span>
+	</h1>
+</div>
+<div class="ofertas-wide-card-container  d-none-mov vp-b vm-b" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/banners/banner-ongrid.jpg');">
 	<div class="ofertas-card-container">
 		<?php
 			wp_reset_postdata();
@@ -222,10 +222,13 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 	</div>
 
 </div>
-<div class="ofertas-wide-card-container vp-t vp-b vm-b" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/banners/banner-offgrid.jpg');">
-	<div class="ofertas-cards-header">
-		Mundo OFFGRID by Victron Energy
-	</div>
+
+<div class="ofertas-cards-header d-none-mov">
+	<h1 class="">
+		Mundo <span class="orange">OFFGRID</span> by Victron Energy
+	</h1>
+</div>
+<div class="ofertas-wide-card-container d-none-mov vp-b vm-b" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/banners/banner-offgrid.jpg');">
 	<div class="ofertas-card-container">
 		<?php
 			wp_reset_postdata();
