@@ -861,6 +861,7 @@ h2.titulo-oferta{
 }
 
 .kit-verticals-row{
+	@include make-row();
 	&.d-none-mov{
 		@include media-breakpoint-down(sm) {
 			display: none;
@@ -891,6 +892,28 @@ $verticals-height: 300px ;
 		min-height: 0;
 		margin-bottom: 6px;
 	}		
+}
+.kit-verticals-flex-col{
+	@include make-col-ready();
+	@include media-breakpoint-up(xl) {
+		@include make-col(3);
+		min-height: $verticals-height;
+	}
+	@include media-breakpoint-between(md,lg) {
+		@include make-col(3);
+		min-height: $verticals-height;
+	}
+	@include media-breakpoint-between(sm,md) {
+		@include make-col(4);
+		min-height: $verticals-height/2;
+		padding-top:15px;
+	}
+	@include media-breakpoint-down(xs) {
+		@include make-col(12);
+		padding:3px 0 !important;
+		min-height: 0;
+		margin-bottom: 6px;
+	}
 }
 .kit-verticals-img{
 	width: 100%;

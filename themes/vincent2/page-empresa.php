@@ -109,7 +109,7 @@
   </div>
 	<div class="container vp-b">
 		<section class="kit-verticals-row d-none-mov">
-					<div class="kit-verticals-col">
+					<div class="kit-verticals-flex-col">
 						<a class="gray-container"  href="#slide1">
 							<img class="kit-verticals-img" src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-20kw.jpg">
 							<div class="kit-verticals-text-body">
@@ -121,7 +121,7 @@
 						</a>
 						
 					</div>	
-					<div class="kit-verticals-col">
+					<div class="kit-verticals-flex-col">
 						<a class="gray-container"  href="#slide2">
 							<img class="kit-verticals-img" src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-30kw.jpg">
 							<div class="kit-verticals-text-body">
@@ -133,7 +133,7 @@
 						</a>
 						
 					</div>	
-					<div class="kit-verticals-col">
+					<div class="kit-verticals-flex-col">
 						<a class="gray-container"  href="#slide3">
 							<img class="kit-verticals-img" src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-50kw.jpg">
 							<div class="kit-verticals-text-body">
@@ -145,7 +145,7 @@
 						</a>
 						
 					</div>	
-					<div class="kit-verticals-col">
+					<div class="kit-verticals-flex-col">
 						<a class="gray-container"  href="#slide4">
 							<img class="kit-verticals-img" src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-100kw.jpg">
 							<div class="kit-verticals-text-body">

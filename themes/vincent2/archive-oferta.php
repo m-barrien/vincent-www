@@ -56,7 +56,7 @@
 				endwhile;
 				endif;
 				?>					    
-			<div class="kit-verticals-col">
+			<div class="kit-verticals-flex-col">
 				<div class="gray-container">
 					<img class="kit-verticals-img colored" src="<?php echo get_template_directory_uri() ?>/image/banners/vertical-termico1.jpg">
 					<div class="kit-verticals-text-body" style="font-weight: bold;">
