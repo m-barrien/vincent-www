@@ -175,9 +175,11 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 }
 
 </style>
-<div class="ofertas-wide-card-container vp-b" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/banners/banner-ongrid.jpg');">
+<div class="ofertas-wide-card-container vp-b vm-t vm-b" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/banners/banner-ongrid.jpg');">
 	<div class="ofertas-cards-header">
-		Soluciones solares ONGRID
+		<h1>
+			Soluciones solares ONGRID
+		</h1>
 	</div>
 	<div class="ofertas-card-container">
 		<?php
@@ -220,7 +222,7 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 	</div>
 
 </div>
-<div class="ofertas-wide-card-container vp-t vp-b" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/banners/banner-offgrid.jpg');">
+<div class="ofertas-wide-card-container vp-t vp-b vm-b" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/banners/banner-offgrid.jpg');">
 	<div class="ofertas-cards-header">
 		Mundo OFFGRID by Victron Energy
 	</div>
