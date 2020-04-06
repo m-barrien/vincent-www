@@ -966,14 +966,13 @@ $verticals-height: 300px ;
 	}
 
 	text-shadow: 1px 1px 2px $text-grayer;
-	color: $text-black;
+	color: $white;
 	.little-title{
 		font-weight: 700;
 		text-transform: uppercase;
 		white-space: nowrap;
 		line-height: 0;
 		text-align: inherit;
-		text-shadow: none;
 		color: inherit;
 		@include media-breakpoint-between(lg,xl) {
 			font-size: 14px ;
