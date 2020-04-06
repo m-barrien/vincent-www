@@ -874,9 +874,9 @@ $verticals-height: 300px ;
 	height: 100%;
 	overflow: hidden;
 	position:relative;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
     background: white;
 	@include media-breakpoint-up(xl) {
 		min-height: $verticals-height;
@@ -973,8 +973,8 @@ $verticals-height: 300px ;
 		white-space: nowrap;
 		line-height: 0;
 		text-align: inherit;
+		text-shadow: none;
 		color: inherit;
-		text-shadow: none !important;
 		@include media-breakpoint-between(lg,xl) {
 			font-size: 14px ;
 		}

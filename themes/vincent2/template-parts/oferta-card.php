@@ -11,7 +11,7 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 <div class="oferta-card-scene" onclick="window.location='<?php the_permalink(); ?>'">
   <div class="oferta-card">
     <div class="oferta-card__face oferta-card__face--front">
-		<div class="kit-verticals-col" >
+		<div class="kit-verticals-col" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-vertical-image.jpg');"	 >
 			<!-- style="background-image: url('<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-vertical-image.jpg');" -->
 			<a href="<?php the_permalink(); ?>" class="gray-container">
 				<div class="kit-verticals-text-body">
