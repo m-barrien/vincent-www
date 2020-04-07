@@ -15,7 +15,7 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 			<!-- style="background-image: url('<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-vertical-image.jpg');" -->
 			<a href="<?php the_permalink(); ?>" class="gray-container">
 				<div class="kit-verticals-text-body">
-					<div class="little-title">Soluci&oacute;n Hogar</div>
+					<div class="little-title">Kit <br> Fotovoltaico <br> Hogar </div>
 					<div class="kw">
 						<?php echo $short_title; ?>
 					</div>

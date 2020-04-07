@@ -118,63 +118,6 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 </div>
 
 <!-- ofertas wide -->
-<style type="text/css">
-
-.oferta-card-scene {
-  width: 300px;
-  height: 480px;
-  border: 1px solid #CCC;
-  margin: 40px 0;
-  perspective: 800px;
-  display: inline-block;
-  pointer-events: all;
-}
-
-.oferta-card {
-  width: 100%;
-  height: 100%;
-  transition: transform 1s;
-  transform-style: preserve-3d;
-  cursor: pointer;
-  position: relative;
-  pointer-events: none;
-  backface-visibility: visible;
-  -webkit-backface-visibility: visible;
-}
-
-.oferta-card.is-flipped {
-  transform: rotateY(180deg);
-}
-
-.oferta-card__face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  color: #222222;
-  text-align: center;
-  font-weight: bold;
-  font-size: 40px;
-  background: transparent;
-}
-
-.oferta-card__face--front {
-	transform: rotateY(0deg);
-	z-index: 100;
-	backface-visibility: hidden;
-	-webkit-backface-visibility: hidden; 
-}
-
-.oferta-card__face--back {
-	transform: rotateY(180deg);
-	z-index: 90;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-	backface-visibility: hidden;
-	-webkit-backface-visibility: visible;
-}
-
-</style>
 <div class="ofertas-cards-header d-none-mov vm-t">
 	<h1 class="">
 		Kit Solar Residencial <span class="orange">ONGRID</span>
@@ -223,9 +166,9 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 
 </div>
 
-<div class="ofertas-cards-header d-none-mov">
+<div class="ofertas-cards-header d-none-mov vm-t">
 	<h1 class="">
-		Mundo <span class="orange">OFFGRID</span> by Victron Energy
+		Mundo <span class="orange">OFFGRID</span> by <img class="victron-title-img" src="<?php echo get_template_directory_uri() ?>/image/logos/victron.png">
 	</h1>
 </div>
 <div class="ofertas-wide-card-container d-none-mov vp-b vm-b" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/banners/banner-offgrid.jpg');">
