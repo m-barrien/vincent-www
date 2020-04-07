@@ -49,23 +49,16 @@
 		</div>
 		
 	</div>			
-	<section class="kit-verticals-row">
+	<div class="ofertas-wide-card-container d-none-mov vp-b vm-b">
+		<div class="ofertas-card-container">
 			<?php if($loop->have_posts()) : while($loop->have_posts()) : $loop->the_post(); 
-		   			$tax_id = get_the_terms($post,'tipo-kit')[1]->term_id;
-		   				get_template_part( 'template-parts/oferta-archive-single', 'single' ); 
+		   			get_template_part( 'template-parts/oferta-card', 'single' );
 				endwhile;
 				endif;
-				?>					    
-			<div class="kit-verticals-flex-col">
-				<div class="gray-container">
-					<img class="kit-verticals-img colored" src="<?php echo get_template_directory_uri() ?>/image/banners/vertical-termico1.jpg">
-					<div class="kit-verticals-text-body" style="font-weight: bold;">
-						Consulte por nuestros kits con agua caliente solar.
-					</div>
-				</div>
-				
-			</div>	
-	</section>
+			?>				
+		</div>
+
+	</div>
 
 
 
@@ -99,15 +92,16 @@
 		</div>
 		
 	</div>			
-	<section class="kit-verticals-row">
-					<?php if($loop->have_posts()) : while($loop->have_posts()) : $loop->the_post(); 
-				   			$tax_id = get_the_terms($post,'tipo-kit')[0]->term_id;
-				   				get_template_part( 'template-parts/oferta-archive-single', 'single' ); 
-						endwhile;
-						endif;
-					?>					    
-				    	
-	</section>
+	<div class="ofertas-wide-card-container d-none-mov vp-b vm-b">
+		<div class="ofertas-card-container">
+			<?php if($loop->have_posts()) : while($loop->have_posts()) : $loop->the_post(); 
+		   			get_template_part( 'template-parts/oferta-card', 'single' );
+				endwhile;
+				endif;
+			?>				
+		</div>
+
+	</div>
 </div>
 <!-- galeria ongrid -->
 <div id="open-gallery-ongrid" class="banner-link">
