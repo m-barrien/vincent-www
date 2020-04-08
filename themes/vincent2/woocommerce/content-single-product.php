@@ -27,8 +27,6 @@ defined( 'ABSPATH' ) || exit;
 
 <section class="product-singleton" id="product-<?php the_ID(); ?>">
 <div class="col">
-
-
 	<h2 class="site-title">
 		Producto
 	</h2>
