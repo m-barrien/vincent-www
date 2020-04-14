@@ -11,6 +11,8 @@
 //@import "../../plugins/woocommerce/assets/css/woocommerce.scss"; 
 //@import "../../plugins/woocommerce/assets/css/woocommerce-layout.scss"; 
 
+@import '../../node_modules/@mdi/font/scss/materialdesignicons.scss';
+
 @import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
 @import '../../node_modules/@fortawesome/fontawesome-free/scss/solid';
 @import '../../node_modules/@fortawesome/fontawesome-free/scss/regular';
@@ -1765,6 +1767,50 @@ section > h1.section-header{
 		margin-bottom: $section-padding-bottom / 2.5;
 	}
 }
+.text-with-image{
+	padding: 20px 10px ;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	@include media-breakpoint-up(sm) {
+		flex-direction: row;
+	}
+	@include media-breakpoint-down(sm) {
+		flex-direction: column;
+	}
+	.text-part{
+		order:1;
+		text-align: justify;
+		&.flip{
+			order: 2;
+		}
+		h2{
+			text-align: left;
+		}
+		h2 span{
+			font-size: 50px;
+			color: $vincent-orange;
+		}
+		@include media-breakpoint-up(sm) {
+			width: 50%;
+		}
+		@include media-breakpoint-down(sm) {
+			width: 100%;
+			order: 2 !important;
+		}
+	}
+	.img-part{
+		order:2;
+		&.flip{
+			order: 1;
+		}
+		@include media-breakpoint-down(sm) {
+			order: 1 !important;
+		}
+
+	}
+}
+
 @import 'generacion';
 @import 'mapa';
 @import 'noticias';

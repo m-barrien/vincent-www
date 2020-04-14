@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",
+    "@mdi/font": "^5.0.45",
     "bootstrap": "^4.4.0",
     "bundle-js": "^1.0.3",
     "jquery": "^3.4.1",
