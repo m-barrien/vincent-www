@@ -147,65 +147,7 @@
 <!-- como funciona offgrid -->
 <!-- mundo offgrid -->
 <div class="container-fluid">
-	<div class="text-with-image">
-		<div class="text-part">
-			<h2>
-				<span class="mdi mdi-scale-balance"></span>
-				&Uacute;nica funci&oacute;n PowerAssist 
-			</h2>
-			<p>
-				Su Multiplus prevendr&aacute; la sobrecarga de una fuente limitada de corriente alterna, tales como generadores a gasolina. Primero, la carga de bater&iacute;as sera reducida automaticamente cuando ocurra la sobrecarga. El segundo nivel <strong>amplificara la potencia de su generador</strong> con la energ&iacute;a entregada por las bater&iacute;as.
-			</p>
-		</div>
-		<div class="img-part">
-			<img src="<?php echo get_template_directory_uri() ?>/image/snippets/mundooffgrid/powerassist.png">
-		</div>
-	</div>
-	<div class="text-with-image">
-		<div class="text-part flip">
-			<h2>
-				<span class="mdi mdi-axis-z-arrow"></span>
-				Electricidad sin Interrupci&oacute;n(UPS)
-			</h2>
-			<p>
-				En el caso de un fallo en la red, o cuando su generador sea desconectado, el inversor dentro de su Multiplus es automaticamente activado y suministra energ&iacute;a a las cargas conectadas. Esto ocurre t&aacute;n r&aacute;pido(menos de 20milisegundos) que los computadores y otro <strong>equipamento electr&oacute;nico operan sin interrupci&oacute;n.</strong>
-				
-			</p>
-		</div>
-		<div class="img-part flip">
-			<img src="<?php echo get_template_directory_uri() ?>/image/snippets/mundooffgrid/powerline.png">
-		</div>
-	</div>
-	<div class="text-with-image">
-		<div class="text-part">
-			<h2>
-				<span class="mdi mdi-dice-6-outline"></span>
-				Poder virtualmente ilimitado en operacion paralela
-			</h2>
-			<p>
-				Hasta 6 Multis pueden operar en paralelo para alcanzar un suministro energ&eacute;tico mayor. En 3-fases o en modo operativo de media fase tambien es posible. Sujeto a modelos especificos para operacion paralela.
-				
-			</p>
-		</div>
-		<div class="img-part">
-			<img src="<?php echo get_template_directory_uri() ?>/image/snippets/mundooffgrid/6multiplus.png">
-		</div>
-	</div>	
-	<div class="text-with-image">
-		<div class="text-part flip">
-			<h2>
-				<span class="mdi mdi-chart-areaspline"></span>
-				Monitoreo y Control remoto
-			</h2>
-			<p>
-				Monitoree y controle sus Multiplus y sus derivados por su red local (LAN) o de forma remota con internet desde cualquier parte del mundo, usando la aplicaci&oacute;n VRM por Victron Energy. Acceda desde su celular, tablet, o computadora. No hay limite al nivel de control para ajustar su Multiplus.
-				
-			</p>
-		</div>
-		<div class="img-part flip">
-			<img src="<?php echo get_template_directory_uri() ?>/image/snippets/mundooffgrid/pc.png">
-		</div>
-	</div>
+	<?php echo do_shortcode( '[multiplus_feats]' ); ?>
 </div>
 <!-- /mundo offgrid -->
 
