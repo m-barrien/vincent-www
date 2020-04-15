@@ -147,6 +147,14 @@
 <!-- como funciona offgrid -->
 <!-- mundo offgrid -->
 <div class="container-fluid">
+	<div class="row banner-mundo-offgrid bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/banners/mundooffgrid.jpg">
+		<div class="victron-header">
+			<h1 class="">
+				Mundo <span class="orange">OFFGRID</span> by <img class="victron-title-img" src="<?php echo get_template_directory_uri() ?>/image/logos/victron.png">
+			</h1>
+		</div>
+		<img class="victronmultiplus" src="<?php echo get_template_directory_uri() ?>/image/snippets/mundooffgrid/multiplus_front.png">
+	</div>
 	<?php echo do_shortcode( '[multiplus_feats]' ); ?>
 </div>
 <!-- /mundo offgrid -->

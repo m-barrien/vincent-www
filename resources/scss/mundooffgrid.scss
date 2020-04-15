@@ -1,0 +1,25 @@
+.banner-mundo-offgrid{
+	min-height: 400px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	display: flex !important;
+	flex-direction: row;
+	justify-content: space-around;
+}
+img.victronmultiplus{
+	width: 300px;
+	height: auto;
+	transform: translate(0,100px);
+}
+.victron-header{
+	align-self: center;
+}
+
+/*animation: move 4s ease-in-out infinite alternate;
+@keyframes move {
+  to { transform: translate(0,100px); }
+}
+*/
+
