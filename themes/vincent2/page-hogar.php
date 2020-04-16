@@ -153,9 +153,10 @@
 				Mundo <span class="orange">OFFGRID</span> by <img class="victron-title-img" src="<?php echo get_template_directory_uri() ?>/image/logos/victron.png">
 			</h1>
 		</div>
-		<div class="inverter-gallery">
+		<div class="inverter-gallery" data-visible-index="0">
 			<img class="victroninverter" src="<?php echo get_template_directory_uri() ?>/image/snippets/mundooffgrid/multiplus_front.png">
 			<img class="victroninverter hide" src="<?php echo get_template_directory_uri() ?>/image/snippets/mundooffgrid/easysolar_right.png">
+			<img class="victroninverter hide" src="<?php echo get_template_directory_uri() ?>/image/snippets/mundooffgrid/phoenix_front.png">
 		</div>
 	</div>
 	<?php echo do_shortcode( '[multiplus_feats]' ); ?>

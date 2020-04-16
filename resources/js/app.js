@@ -303,7 +303,17 @@ setAppliances();
 
 
 function moveVictronInverters() {
-  $(".inverter-gallery").children().toggleClass("hide");
+  var inv_indx=($(".inverter-gallery").attr("data-visible-index") + 1) % 3;
+  $(".inverter-gallery").attr("data-visible-index", inv_indx);
+  $(".inverter-gallery").children().each(function(){
+    if (inv_indx == $(this).index()) {
+      $(this).removeClass("hide");
+    }
+    else{
+      $(this).addClass("hide");
+    }
+  });
+
 } 
 
 
