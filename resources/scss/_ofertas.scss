@@ -895,6 +895,10 @@ $verticals-height: 480px ;
 	}		
 }
 .kit-verticals-flex-col{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
 	@include make-col-ready();
 	@include media-breakpoint-up(xl) {
 		@include make-col(3);

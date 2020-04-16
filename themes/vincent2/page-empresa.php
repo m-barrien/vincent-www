@@ -109,9 +109,8 @@
   </div>
 	<div class="container vp-b">
 		<section class="kit-verticals-row d-none-mov">
-					<div class="kit-verticals-flex-col">
+					<div class="kit-verticals-flex-col" style="background-image: url(<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-20kw.jpg);">
 						<a class="gray-container"  href="#slide1">
-							<img class="kit-verticals-img" src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-20kw.jpg">
 							<div class="kit-verticals-text-body">
 								<div class="little-title">Soluciones Empresa</div>
 								<div class="kw">
@@ -121,9 +120,8 @@
 						</a>
 						
 					</div>	
-					<div class="kit-verticals-flex-col">
-						<a class="gray-container"  href="#slide2">
-							<img class="kit-verticals-img" src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-30kw.jpg">
+					<div class="kit-verticals-flex-col" style="background-image: url(<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-30kw.jpg);">
+						<a class="gray-container"  href="#slide2" >
 							<div class="kit-verticals-text-body">
 								<div class="little-title">Soluciones Empresa</div>
 								<div class="kw">
@@ -133,9 +131,8 @@
 						</a>
 						
 					</div>	
-					<div class="kit-verticals-flex-col">
-						<a class="gray-container"  href="#slide3">
-							<img class="kit-verticals-img" src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-50kw.jpg">
+					<div class="kit-verticals-flex-col" style="background-image: url(<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-50kw.jpg);">
+						<a class="gray-container"  href="#slide3" >
 							<div class="kit-verticals-text-body">
 								<div class="little-title">Soluciones Empresa</div>
 								<div class="kw">
@@ -145,9 +142,8 @@
 						</a>
 						
 					</div>	
-					<div class="kit-verticals-flex-col">
-						<a class="gray-container"  href="#slide4">
-							<img class="kit-verticals-img" src="<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-100kw.jpg">
+					<div class="kit-verticals-flex-col" style="background-image: url(<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-100kw.jpg);">
+						<a class="gray-container"  href="#slide4" >
 							<div class="kit-verticals-text-body">
 								<div class="little-title">Soluciones Empresa</div>
 								<div class="kw">
@@ -158,7 +154,7 @@
 						
 					</div>						    	
 		</section>
-		<section class="vp-t">
+		<section class="" style="padding-top: 20px;">
 		<div class="swiper-container footer-ofertas-swiper ">
 			<div class="swiper-wrapper">
 			  <div class="swiper-slide" data-hash="slide1">
@@ -166,7 +162,7 @@
 			  		<div class="title">Soluci&oacute;n empresa <span>20kw</span></div>
 			  		<ul>
 			  			<li>Ahorre entre <strong>$4.000.000 a $6.000.000 al año.</strong></li>
-						<li>M&iacute;nimo de <strong>superficie en techo necesaria: 60m<sup>2</sup></strong></li>
+						<li>M&iacute;nimo de <strong>superficie en techo necesaria: 140m<sup>2</sup></strong></li>
 			  			<li>Ahorre, produzca energ&iacute;a limpia y recupere rapidamente su inversi&oacute;n.</li>
 			  			<li>Cubra al menos el 60% de sus necesidades energéticas actuales.</li>
 			  			<li>Mejorará la imagen de su empresa, ayudará al medio ambiente y aumentará su plusvalía.</li>
@@ -178,7 +174,7 @@
 			  		<div class="title">Soluci&oacute;n empresa <span>30kw</span></div>
 			  		<ul>
 			  			<li>Ahorre entre <strong>$6.000.000 a $9.000.000 al año.</strong></li>
-						<li>M&iacute;nimo de <strong>superficie en techo necesaria: 60m<sup>2</sup></strong></li>
+						<li>M&iacute;nimo de <strong>superficie en techo necesaria: 210m<sup>2</sup></strong></li>
 			  			<li>Ahorre, produzca energ&iacute;a limpia y recupere rapidamente su inversi&oacute;n.</li>
 			  			<li>Cubra al menos el 60% de sus necesidades energéticas actuales.</li>
 			  			<li>Mejorará la imagen de su empresa, ayudará al medio ambiente y aumentará su plusvalía.</li>
@@ -190,7 +186,7 @@
 			  		<div class="title">Soluci&oacute;n empresa <span>50kw</span></div>
 			  		<ul>
 			  			<li>Ahorre entre <strong>$11.000.000 a $13.000.000 al año.</strong></li>
-						<li>M&iacute;nimo de <strong>superficie en techo necesaria: 60m<sup>2</sup></strong></li>
+						<li>M&iacute;nimo de <strong>superficie en techo necesaria: 350m<sup>2</sup></strong></li>
 			  			<li>Ahorre, produzca energ&iacute;a limpia y recupere rapidamente su inversi&oacute;n.</li>
 			  			<li>Cubra al menos el 60% de sus necesidades energéticas actuales.</li>
 			  			<li>Mejorará la imagen de su empresa, ayudará al medio ambiente y aumentará su plusvalía.</li>
@@ -202,7 +198,7 @@
 			  		<div class="title">Soluci&oacute;n empresa <span>100kw</span></div>
 			  		<ul>
 			  			<li>Ahorre entre <strong>$20.000.000 a $26.000.000 al año.</strong></li>
-						<li>M&iacute;nimo de <strong>superficie en techo necesaria: 60m<sup>2</sup></strong></li>
+						<li>M&iacute;nimo de <strong>superficie en techo necesaria: 700m<sup>2</sup></strong></li>
 			  			<li>Ahorre, produzca energ&iacute;a limpia y recupere rapidamente su inversi&oacute;n.</li>
 			  			<li>Cubra al menos el 60% de sus necesidades energéticas actuales.</li>
 			  			<li>Mejorará la imagen de su empresa, ayudará al medio ambiente y aumentará su plusvalía.</li>
