@@ -38,19 +38,19 @@
 			</div>			
 			<div class="w-100">
 				<h1>
-					Beneficios de trabajar con Vincent Solar
+					Beneficios de energ&iacute;a solar
 				</h1>
 				<ul>
 					<li>Ahorro inmediato en el gasto de energía.</li>
 					<li>Inversión que dura en el tiempo.</li>
-					<li>Cuida el medioambiente, Marketing ecológico para su empresa.</li>
-					<li>Experiencia internacional con m&aacute;s de 700MW instalados en Europa y m&aacute;s de 10MW sobre techo en el pa&iacute;s, nos hace una empresa reconocida con nuestro logo y con nuestro sello verde <img style="display: inline;width: 30px;height: auto;" src="<?php echo get_template_directory_uri() ?>/image/snippets/logo_cgreen.png">(cGreen) que nos distingue en calidad, servicio, y posventa.</li>
+					<li>Cuida el medioambiente, <strong>Marketing ecológico para su empresa</strong>.</li>
+					<li>Trabajar con Vincent Solar es una de las mejores garant&iacute;as en el pa&iacute;s, con m&aacute;s de 700MW instalado en techo en Europa, y m&aacute;s de 10MW en Chile. Nos hace una empresa responsable y reconocida por calidad, servicio y posventa. </li>
 				</ul>
 			</div>
 		</div>
 	</section>
 </div>
-
+<!-- TODO: Han confiado en nosotros logo de empresa, poner carrusel de galeria proyecto -->
 <div class="footer-ofertas-container vp-t vp-b">
 	<div class="container">
 		<h1>Nuestros kits en <span class="orange">OFERTA</span></h1>
@@ -154,6 +154,7 @@
 						
 					</div>						    	
 		</section>
+		<!--  TODO: en este espacio poner prouductos destacar kW en rojo  -->
 		<section class="" style="padding-top: 20px;">
 		<div class="swiper-container footer-ofertas-swiper ">
 			<div class="swiper-wrapper">

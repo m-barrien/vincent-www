@@ -73,11 +73,11 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 	      <div class="swiper-slide">
 	      	<a href="/soluciones-hogar" class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/1.jpg" >
 		      	<h1 class="shrink-cover">
-		      		¿Quiere ahorrar con energ&iacute;a solar?
+		      		¿Eco-sustentabilidad y ahorro econ&oacute;mico hogar?
 		      		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		      	</h1>
 	      		<div class="hidden-desc">
-		      		<p>Ahorro inmediato sobre su cuenta de luz. Es una inversión para Ud. y su familia. Cuidamos el medio ambiente.</p>
+		      		<p>Ahorro inmediato sobre la cuenta de luz.</p>
 		      		<button >Descubra nuestras soluciones</button>
 	      			
 	      		</div>
@@ -86,11 +86,12 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 	      <div class="swiper-slide">
 	      	<a href="/soluciones-empresa" class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/2.jpg">
 		      	<h1 class="shrink-cover">
-		      		¿Quiere maximizar la productividad de su empresa?
+		      		¿Quiere su empresa eco-sustentable?
+		      		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		      	</h1>
 	      		<div class="hidden-desc">
 		      		<p>
-		      			Juntos encontraremos la solución más adecuada para el consumo de energía de su negocio.
+		      			Juntos encontraremos la solución más adecuada para el consumo de energía de su operaciones.
 		      		</p>
 		      		<button>Pida nuestro consejo</button>
 	      			
@@ -100,8 +101,8 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 	      <div class="swiper-slide">
 	      	<a href="mailto:info@vincentsolar.com" class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/3.jpg">
 		      	<h1 class="shrink-cover">
-		      		¿Quiere aprovechar al máximo su sistema solar?
-		      		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		      		Busca los productos y las soluciones solares para tu necesidad.
+		      		
 		      	</h1>
 		      	<div  class="hidden-desc">
 			      	<p>Ofrecemos kits diseñados a la medida en soluciones fotovoltaicas y térmicas para su abastecimiento de electricidad y gas.</p>
