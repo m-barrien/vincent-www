@@ -49,7 +49,7 @@
 			</div>
 		</div>
 	</section>
-	<section>
+	<section class="vp-b">
 		<div class="partners-container">
 			<h3>Han confiado en nosotros</h3>
 			<div class="row">
