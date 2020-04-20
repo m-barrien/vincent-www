@@ -160,7 +160,7 @@
 			<div class="swiper-wrapper">
 			  <div class="swiper-slide" data-hash="slide1">
 			  	<div class="descripcion-oferta">
-			  		<div class="title">Soluci&oacute;n empresa <span>20kw</span></div>
+			  		<div class="title">Soluci&oacute;n empresa <span class="red">20kw</span></div>
 			  		<ul>
 			  			<li>Ahorre entre <strong>$4.000.000 a $6.000.000 al año.</strong></li>
 						<li>M&iacute;nimo de <strong>superficie en techo necesaria: 140m<sup>2</sup></strong></li>
@@ -172,7 +172,7 @@
 			  </div>
 			  <div class="swiper-slide" data-hash="slide2">
 			  	<div class="descripcion-oferta">
-			  		<div class="title">Soluci&oacute;n empresa <span>30kw</span></div>
+			  		<div class="title">Soluci&oacute;n empresa <span class="red">30kw</span></div>
 			  		<ul>
 			  			<li>Ahorre entre <strong>$6.000.000 a $9.000.000 al año.</strong></li>
 						<li>M&iacute;nimo de <strong>superficie en techo necesaria: 210m<sup>2</sup></strong></li>
@@ -184,7 +184,7 @@
 			  </div>
 			  <div class="swiper-slide" data-hash="slide3">
 			  	<div class="descripcion-oferta">
-			  		<div class="title">Soluci&oacute;n empresa <span>50kw</span></div>
+			  		<div class="title">Soluci&oacute;n empresa <span class="red">50kw</span></div>
 			  		<ul>
 			  			<li>Ahorre entre <strong>$11.000.000 a $13.000.000 al año.</strong></li>
 						<li>M&iacute;nimo de <strong>superficie en techo necesaria: 350m<sup>2</sup></strong></li>
@@ -196,7 +196,7 @@
 			  </div>
 			  <div class="swiper-slide" data-hash="slide4">
 			  	<div class="descripcion-oferta">
-			  		<div class="title">Soluci&oacute;n empresa <span>100kw</span></div>
+			  		<div class="title">Soluci&oacute;n empresa <span class="red">100kw</span></div>
 			  		<ul>
 			  			<li>Ahorre entre <strong>$20.000.000 a $26.000.000 al año.</strong></li>
 						<li>M&iacute;nimo de <strong>superficie en techo necesaria: 700m<sup>2</sup></strong></li>

@@ -57,41 +57,46 @@
 </div>
 <!-- /Banner a soluciones hogar -->
 
-<!-- Banner a beneficios hogar -->
-<div class="banner-link vp-t vp-b">
-	<a href="/ofertas">
-		<img class="img-fluid lazy desk" data-src="<?php echo get_template_directory_uri() ?>/image/banners/kits.jpg">	
-		<img class="img-fluid lazy mov" data-src="<?php echo get_template_directory_uri() ?>/image/banners/kits.mov.jpg">	
-	</a>
+
+
+
+<div class="ofertas-cards-header d-none-mov vm-t">
+	<h1 class="">
+		Kit Solar Residencial <span class="orange">ONGRID</span>
+	</h1>
 </div>
-
-<!-- ofertas wide -->
-<div class="ofertas-wide vp-b">
-	<div class="swiper-container swiper-ofertas">
-		<div class="swiper-wrapper">
+<div class="ofertas-wide-card-container  d-none-mov vp-b vm-b" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/banners/banner-ongrid.jpg');">
+	<div class="ofertas-card-container">
 		<?php
-		wp_reset_postdata();
-	    wp_reset_query();
-	    $args= array(
-		'post_type' => array('oferta'),
-		'post_status' => 'publish',
-		'posts_per_page' => -1,
-		'meta_key'		=> 'price',
-		'orderby'		=> 'meta_value',
-		'order'			=> 'ASC'
-		);
+			wp_reset_postdata();
+		    wp_reset_query();
+		    $args= array(
+			'post_type' => array('oferta'),
+			'post_status' => 'publish',
+			'posts_per_page' => -1,
+			'meta_key'		=> 'price',
+			'orderby'		=> 'meta_value',
+			'order'			=> 'ASC',
+		    'tax_query' => array(
+		        array(
+		            'taxonomy' => 'tipo-kit',
+		            'field'    => 'slug',
+		            'terms'    => 'ongrid',
+		        ),
+		    ),	
+			);
 
-		$loop = new WP_Query( $args );
-		?>	
+			$loop = new WP_Query( $args );
+
+			$wcatTerm = get_term_by('slug','ongrid', 'tipo-kit');
+		?>		
 	    <?php
 	    	$i=0;
 			while ( $loop->have_posts() ) : $loop->the_post();
 				$image = null;
 					?>
 
-				<div class="swiper-slide">
-					<?php get_template_part( 'template-parts/oferta-wide', 'single' ); ?>
-				</div>
+					<?php get_template_part( 'template-parts/oferta-card', 'single' ); ?>
 						
 					<?php
 
@@ -99,17 +104,9 @@
 			wp_reset_postdata();
 	        wp_reset_query();
 		?>
-
-		</div>
-
-		<!-- Add Pagination -->
-		<div class="swiper-button-next"></div>
-		<div class="swiper-button-prev"></div>				
 	</div>
+
 </div>
-<!-- /ofertas wide -->
-
-
 <!-- como funciona ongrid -->
 <div class="container vp-t ">
 	<div id="ongrid"></div>
@@ -152,6 +149,9 @@
 			<h1 class="">
 				Mundo <span class="orange">OFFGRID</span> by <img class="victron-title-img" src="<?php echo get_template_directory_uri() ?>/image/logos/victron.png">
 			</h1>
+			<h2>
+				Entra en el mundo de ser totalmente independiente.
+			</h2>
 		</div>
 		<div class="inverter-gallery" data-visible-index="0">
 			<img class="victroninverter" src="<?php echo get_template_directory_uri() ?>/image/snippets/mundooffgrid/multiplus_front.png">
@@ -160,6 +160,54 @@
 		</div>
 	</div>
 	<?php echo do_shortcode( '[multiplus_feats]' ); ?>
+</div>
+
+<div class="ofertas-cards-header d-none-mov vm-t">
+	<h1 class="">
+		Mundo <span class="orange">OFFGRID</span> by <img class="victron-title-img" src="<?php echo get_template_directory_uri() ?>/image/logos/victron.png">
+	</h1>
+</div>
+<div class="ofertas-wide-card-container d-none-mov vp-b vm-b" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/banners/banner-offgrid.jpg');">
+	<div class="ofertas-card-container">
+		<?php
+			wp_reset_postdata();
+		    wp_reset_query();
+		    $args= array(
+			'post_type' => array('oferta'),
+			'post_status' => 'publish',
+			'posts_per_page' => -1,
+			'meta_key'		=> 'price',
+			'orderby'		=> 'meta_value',
+			'order'			=> 'ASC',
+		    'tax_query' => array(
+		        array(
+		            'taxonomy' => 'tipo-kit',
+		            'field'    => 'slug',
+		            'terms'    => 'offgrid',
+		        ),
+		    ),	
+			);
+
+			$loop = new WP_Query( $args );
+
+			$wcatTerm = get_term_by('slug','ongrid', 'tipo-kit');
+		?>		
+	    <?php
+	    	$i=0;
+			while ( $loop->have_posts() ) : $loop->the_post();
+				$image = null;
+					?>
+
+					<?php get_template_part( 'template-parts/oferta-card', 'single' ); ?>
+						
+					<?php
+
+			endwhile;
+			wp_reset_postdata();
+	        wp_reset_query();
+		?>
+	</div>
+
 </div>
 <!-- /mundo offgrid -->
 
