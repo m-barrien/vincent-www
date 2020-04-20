@@ -49,7 +49,39 @@
 			</div>
 		</div>
 	</section>
+	<section>
+		<div class="partners-container">
+			<h3>Han confiado en nosotros</h3>
+			<div class="row">
+					<?php
+					wp_reset_query();
+					$args = array(
+					        'post_type' => 'attachment',
+					        'post_mime_type' => 'image',
+					        'orderby' => 'post_date',
+					        'order' => 'desc',
+					        'posts_per_page' => '-1',
+					        'post_status'    => 'inherit',
+					        'category_name'=>'clientes',
+					         );
+
+					$loop = new WP_Query( $args );
+
+					while ( $loop->have_posts() ) : $loop->the_post();
+						$image = wp_get_attachment_image_src( get_the_ID(), $size="full" ); 
+							?>
+							<div class="icon grow">
+								<img class="img-fluid lazy" src="" data-src="<?php echo $image[0]; ?>">
+							</div>								
+							<?php
+
+					endwhile;
+					?>				
+			</div>
+		</div>
+	</section>
 </div>
+
 <!-- TODO: Han confiado en nosotros logo de empresa, poner carrusel de galeria proyecto -->
 <div class="footer-ofertas-container vp-t vp-b">
 	<div class="container">
