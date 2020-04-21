@@ -116,7 +116,7 @@ endif;
 	<section>
 		<div class="partners-container">
 			<h3>Han confiado en nosotros</h3>
-			<div class="row">
+			<div class="row icon-row">
 					<?php
 					wp_reset_query();
 					$args = array(
