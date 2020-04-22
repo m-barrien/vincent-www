@@ -1103,7 +1103,11 @@ footer{
 		}
 	}
 	.icon-row{
+		width: 100%;
 		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly; 
 	}
 	.icon{
 		@extend .mx-auto;
