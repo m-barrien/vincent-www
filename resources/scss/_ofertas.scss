@@ -878,6 +878,8 @@ $verticals-height: 480px ;
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background: white;
+
+
 	@include media-breakpoint-up(xl) {
 		min-height: $verticals-height;
 	}
@@ -899,6 +901,11 @@ $verticals-height: 480px ;
 	background-repeat: no-repeat;
 	background-position: center;
 	cursor: pointer;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: $dark-bg;
+    
 	@include make-col-ready();
 	@include media-breakpoint-up(xl) {
 		@include make-col(3);
