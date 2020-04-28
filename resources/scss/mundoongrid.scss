@@ -1,0 +1,50 @@
+.banner-mundo-ongrid{
+	@extend .banner-mundo-offgrid;
+}
+/*
+.inverter-gallery{
+	width: 300px;
+	pointer-events:none;
+}
+*/
+img.smainverter{
+	pointer-events: none;
+	width: 300px;
+	height: auto;
+	display: block;
+	position: absolute;
+	margin: 0 auto;
+	opacity: 1;
+
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    @include media-breakpoint-up(sm) {
+		transform: translate(0,100px);
+    }
+    @include media-breakpoint-down(sm) {
+		transform: translate(0,-130px);
+	}
+	&.hide{
+		opacity: 0;
+	}
+}
+.sma-header{
+	align-self: flex-start;
+	padding: 30px 15px;
+	@include media-breakpoint-up(sm) {
+		max-width: 60%; 
+	}
+}
+
+
+/*animation: move 4s ease-in-out infinite alternate;
+@keyframes move {
+  to { transform: translate(0,100px); }
+}
+*/
+
+.sma-title-img{
+	max-height: 40px;
+	width: auto;
+}

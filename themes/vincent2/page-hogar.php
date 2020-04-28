@@ -57,7 +57,84 @@
 </div>
 <!-- /Banner a soluciones hogar -->
 
-
+<!-- Mundo ONGRID -->
+<div class="container-fluid">
+	<div class="row banner-mundo-offgrid bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/banners/mundoongrid.jpg">
+		<div class="sma-header">
+			<h1 class="">
+				Mundo <span class="orange">ONGRID</span> by <img class="sma-title-img" src="<?php echo get_template_directory_uri() ?>/image/logos/sma.png">
+			</h1>
+			<h2>
+				De ser consumidor de energía eléctrica a convertirse en su propio proveedor de energía renovable.
+			</h2>
+		</div>
+		<div class="inverter-gallery" data-visible-index="0">
+			<img class="victroninverter" src="<?php echo get_template_directory_uri() ?>/image/snippets/mundoongrid/sunnyboy.png">
+			<img class="victroninverter hide" src="<?php echo get_template_directory_uri() ?>/image/snippets/mundoongrid/sunnyboy2.png">
+			<img class="victroninverter hide" src="<?php echo get_template_directory_uri() ?>/image/snippets/mundoongrid/huaweiinverter.png">
+		</div>
+	</div>
+	<div class="text-with-image">
+	    <div class="text-part">
+	      <h2>
+	        <span class="mdi mdi-truck-fast-outline"></span>
+	        Instalaci&oacute;n sencilla y r&aacute;pida
+	      </h2>
+	      <p>
+	        Obtenga su soluci&oacute;n solar <span class="orange">ONGRID</span> en tan solo <strong>2 a 3 d&iacute;as</strong>. Nuestro equipo de expertos en energ&iacute;a solar le explicar&aacute; donde y como ser&iacute;a ejecutada la soluci&oacute;n solar en su domicilio. Todos nuestros proyetos se entregan funcionando <strong>llave en mano</strong>.
+	      </p>
+	    </div>
+	    <div class="img-part">
+	      <img src="<?php echo get_template_directory_uri() ; ?>/image/snippets/mundooffgrid/powerassist.png">
+	    </div>
+	</div>
+	<div class="text-with-image">
+	    <div class="text-part flip">
+	      <h2>
+	        <span class="mdi mdi-lan"></span>
+	        Todos los equipos consumidores de su hogar interconectados en un sistema integral
+	      </h2>
+	      <p>
+	        Su soluci&oacute;n solar no solo le ser&aacute; &uacute;til para ahorrar en el consumo de su televisor, o refrigerador, o luces. Sino que su soluci&oacute;n solar ongrid <strong>reduce el consumo de todos los aparatos conectados a su red</strong>. Significando un ahorro a nivel global en su cuenta de luz.
+	        
+	      </p>
+	    </div>
+	    <div class="img-part flip">
+	      <img src="<?php echo get_template_directory_uri() ; ?>/image/snippets/mundooffgrid/powerline.png">
+	    </div>
+	</div>
+	<div class="text-with-image">
+	    <div class="text-part">
+	      <h2>
+	        <span class="mdi mdi-shield-sun-outline"></span>
+	        Protección contra las subidas de los precios de la energía
+	      </h2>
+	      <p>
+	      	Cada vez que usted es notificado en un alza del valor en su cuenta de luz. Usted estar&aacute; <strong>ahorrando cada vez m&aacute;s por cada kiloWatthora</strong> generado por su sistema solar. Esto significa que mientras m&aacute;s alzas, m&aacute;s r&aacute;pido recuperar&aacute; su inversi&oacute;n solar.
+	        
+	      </p>
+	    </div>
+	    <div class="img-part">
+	      <img src="<?php echo get_template_directory_uri() ; ?>/image/snippets/mundooffgrid/powerline.png">
+	    </div>
+	</div>
+	<div class="text-with-image">
+	    <div class="text-part flip">
+	      <h2>
+	        <span class="mdi mdi-power-settings"></span>
+	        Completamente autom&aacute;tico y aut&oacute;nomo
+	      </h2>
+	      <p>
+	      	Una vez conectado puede olvidarse de su sistema solar. El cual esta diseñado para estar protegido ante irregularidades y fallas en la red electrica, con desconexi&oacute;n y <strong>reconexi&oacute;n autom&aacute;tica</strong> para proteger su inversi&oacute;n. Adem&aacute;s de que todas nuestras soluciones ofrecen <strong>monitoreo online</strong> desde su celular o computadora.
+	        
+	      </p>
+	    </div>
+	    <div class="img-part flip">
+	      <img src="<?php echo get_template_directory_uri() ; ?>/image/snippets/mundooffgrid/powerline.png">
+	    </div>
+	</div>
+</div>
+<!-- /Mundo ONGRID -->
 
 
 <div class="ofertas-cards-header d-none-mov vm-t">
@@ -130,18 +207,7 @@
 <!-- /galeria ongrid -->
 
 
-<!-- como funciona offgrid -->
-<div class="container vp-t">
-	<h1 class="pb-4">¿Como funciona el sistema <span class="orange">OFF GRID</span> residencial?</h1>
-</div>
-<div class="container-fluid vp-b" >
-	<section class="full-width-diagram bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/paneles-faded.jpg">
-		<div class="img-wrapper">
-			<img class="img-fluid lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/covers/diagrama_hogar_off.png">
-		</div>
-	</section>
-</div>
-<!-- como funciona offgrid -->
+
 <!-- mundo offgrid -->
 <div class="container-fluid">
 	<div class="row banner-mundo-offgrid bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/banners/mundooffgrid.jpg">
@@ -210,6 +276,19 @@
 
 </div>
 <!-- /mundo offgrid -->
+
+<!-- como funciona offgrid -->
+<div class="container vp-t">
+	<h1 class="pb-4">¿Como funciona el sistema <span class="orange">OFF GRID</span> residencial?</h1>
+</div>
+<div class="container-fluid vp-b" >
+	<section class="full-width-diagram bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/paneles-faded.jpg">
+		<div class="img-wrapper">
+			<img class="img-fluid lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/covers/diagrama_hogar_off.png">
+		</div>
+	</section>
+</div>
+<!-- como funciona offgrid -->
 
 <div id="open-gallery-offgrid" class="banner-link">
 	<img class="img-fluid lazy desk" data-src="<?php echo get_template_directory_uri() ?>/image/banners/galeria_offgrid.jpg">	
