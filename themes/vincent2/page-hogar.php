@@ -62,16 +62,16 @@
 	<div class="row banner-mundo-offgrid bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/banners/mundoongrid.jpg">
 		<div class="sma-header">
 			<h1 class="">
-				Mundo <span class="orange">ONGRID</span> by <img class="sma-title-img" src="<?php echo get_template_directory_uri() ?>/image/logos/sma.png">
+				Mundo <span class="orange">ONGRID</span> by <img class="sma-title-img" src="<?php echo get_template_directory_uri() ?>/image/logos/sma.png"> <img class="sma-title-img" src="<?php echo get_template_directory_uri() ?>/image/logos/huawei.png">
 			</h1>
 			<h2>
-				De ser consumidor de energía eléctrica a convertirse en su propio proveedor de energía renovable.
+				Pase de ser consumidor de energía eléctrica a convertirse en su propio proveedor de energía renovable.
 			</h2>
 		</div>
 		<div class="inverter-gallery" data-visible-index="0">
-			<img class="victroninverter" src="<?php echo get_template_directory_uri() ?>/image/snippets/mundoongrid/sunnyboy.png">
 			<img class="victroninverter hide" src="<?php echo get_template_directory_uri() ?>/image/snippets/mundoongrid/sunnyboy2.png">
 			<img class="victroninverter hide" src="<?php echo get_template_directory_uri() ?>/image/snippets/mundoongrid/huaweiinverter.png">
+			<img class="victroninverter" src="<?php echo get_template_directory_uri() ?>/image/snippets/mundoongrid/sunnyboy.png">
 		</div>
 	</div>
 	<div class="text-with-image">
@@ -85,7 +85,7 @@
 	      </p>
 	    </div>
 	    <div class="img-part">
-	      <img src="<?php echo get_template_directory_uri() ; ?>/image/snippets/mundooffgrid/powerassist.png">
+	      <img src="<?php echo get_template_directory_uri() ; ?>/image/snippets/mundoongrid/quickinstall.png">
 	    </div>
 	</div>
 	<div class="text-with-image">
@@ -100,7 +100,7 @@
 	      </p>
 	    </div>
 	    <div class="img-part flip">
-	      <img src="<?php echo get_template_directory_uri() ; ?>/image/snippets/mundooffgrid/powerline.png">
+	      <img src="<?php echo get_template_directory_uri() ; ?>/image/snippets/mundoongrid/homeappliances.png">
 	    </div>
 	</div>
 	<div class="text-with-image">
@@ -115,7 +115,7 @@
 	      </p>
 	    </div>
 	    <div class="img-part">
-	      <img src="<?php echo get_template_directory_uri() ; ?>/image/snippets/mundooffgrid/powerline.png">
+	      <img src="<?php echo get_template_directory_uri() ; ?>/image/snippets/mundoongrid/savings.png">
 	    </div>
 	</div>
 	<div class="text-with-image">
@@ -130,7 +130,7 @@
 	      </p>
 	    </div>
 	    <div class="img-part flip">
-	      <img src="<?php echo get_template_directory_uri() ; ?>/image/snippets/mundooffgrid/powerline.png">
+	      <img src="<?php echo get_template_directory_uri() ; ?>/image/snippets/mundoongrid/selfrepair.png">
 	    </div>
 	</div>
 </div>
@@ -189,7 +189,7 @@
 	<div id="ongrid"></div>
 	<h1  class="pb-4">¿Como funciona el sistema <span class="orange">ON GRID</span> residencial?</h1>
 </div>
-<div class="container-fluid vp-b">
+<div class="container-fluid">
 	<section class="full-width-diagram bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/paneles-faded.jpg">
 		<div class="img-wrapper">
 			<img class="img-fluid lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/covers/diagrama_hogar_on.png">
@@ -209,7 +209,7 @@
 
 
 <!-- mundo offgrid -->
-<div class="container-fluid">
+<div class="container-fluid vp-t">
 	<div class="row banner-mundo-offgrid bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/banners/mundooffgrid.jpg">
 		<div class="victron-header">
 			<h1 class="">
