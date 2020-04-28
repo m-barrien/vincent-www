@@ -85,7 +85,7 @@
 	      </p>
 	    </div>
 	    <div class="img-part">
-	      <img src="<?php echo get_template_directory_uri() ; ?>/image/snippets/mundoongrid/quickinstall.png">
+	      <img class="img-fluid" src="<?php echo get_template_directory_uri() ; ?>/image/snippets/mundoongrid/quickinstall.png">
 	    </div>
 	</div>
 	<div class="text-with-image">
@@ -100,7 +100,7 @@
 	      </p>
 	    </div>
 	    <div class="img-part flip">
-	      <img src="<?php echo get_template_directory_uri() ; ?>/image/snippets/mundoongrid/homeappliances.png">
+	      <img class="img-fluid" src="<?php echo get_template_directory_uri() ; ?>/image/snippets/mundoongrid/homeappliances.png">
 	    </div>
 	</div>
 	<div class="text-with-image">
@@ -115,7 +115,7 @@
 	      </p>
 	    </div>
 	    <div class="img-part">
-	      <img src="<?php echo get_template_directory_uri() ; ?>/image/snippets/mundoongrid/savings.png">
+	      <img class="img-fluid" src="<?php echo get_template_directory_uri() ; ?>/image/snippets/mundoongrid/savings.png">
 	    </div>
 	</div>
 	<div class="text-with-image">
@@ -130,7 +130,7 @@
 	      </p>
 	    </div>
 	    <div class="img-part flip">
-	      <img src="<?php echo get_template_directory_uri() ; ?>/image/snippets/mundoongrid/selfrepair.png">
+	      <img class="img-fluid" src="<?php echo get_template_directory_uri() ; ?>/image/snippets/mundoongrid/selfrepair.png">
 	    </div>
 	</div>
 </div>
