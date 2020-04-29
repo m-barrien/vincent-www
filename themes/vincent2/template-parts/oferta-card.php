@@ -25,7 +25,7 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 		</div>	
     </div>
     <div class="oferta-card__face oferta-card__face--back" style="background-color:white; background-image:url('<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-bg-mov.jpg');">
-<div class="oferta-index-single-row" >
+<div class="oferta-index-single-row nomargin" >
 	<div class="oferta-mov-header">
 		<h2 class="titulo-oferta">Kit Solar <?php the_title(); ?>
 		</h2>
@@ -40,7 +40,7 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 		
 	</div>
 	<div class="oferta-index-description-container">
-		<div class="oferta-price-mov-container">
+		<div class="oferta-price-mov-container card-type">
 			<div class="instalacion-red-tag vertical">Instalaci&oacute;n incluida, llave en mano</div>
 			<div class="oferta-vertical-pricetag">
 				<?php echo get_post_meta($post->ID, 'price-tag')[0] ; ?>

@@ -49,7 +49,10 @@
 		</div>
 		
 	</div>			
-	<div class="ofertas-wide-card-container d-none-mov vp-b vm-b">
+</div>
+<div class="container-fluid">
+	
+	<div class="ofertas-wide-card-container vp-b vm-b">
 		<div class="ofertas-card-container">
 			<?php if($loop->have_posts()) : while($loop->have_posts()) : $loop->the_post(); 
 		   			get_template_part( 'template-parts/oferta-card', 'single' );
@@ -59,7 +62,7 @@
 		</div>
 
 	</div>
-
+</div>
 
 
 <?php
@@ -86,13 +89,17 @@
 	$wcatTerm = get_term_by('slug','offgrid', 'tipo-kit');
 ?>	
 
+<div class="container kit-group">
 	<div class="kit-group-header">
 		<div class="kit-group-header-text <?php  echo $wcatTerm->slug ?>">
 			<h1 href="<?php echo get_term_link( $wcatTerm->slug, $wcatTerm->taxonomy ); ?>"><?php echo $wcatTerm->name; ?></h1>
 		</div>
 		
-	</div>			
-	<div class="ofertas-wide-card-container d-none-mov vp-b vm-b">
+	</div>		
+</div>
+		
+<div class="container-fluid">
+	<div class="ofertas-wide-card-container vp-b vm-b">
 		<div class="ofertas-card-container">
 			<?php if($loop->have_posts()) : while($loop->have_posts()) : $loop->the_post(); 
 		   			get_template_part( 'template-parts/oferta-card', 'single' );

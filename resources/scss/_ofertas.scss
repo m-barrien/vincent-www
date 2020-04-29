@@ -252,12 +252,7 @@ $oferta-wide-scale-xl:1;
 	}
 	.center-img{
 		height: auto;
-		@include media-breakpoint-up(sm) {
-			width: 55% !important;
-		}
-		@include media-breakpoint-down(sm) {
-			width: 64vw;
-		}
+		width: 55% !important;
 
 	}
 }
@@ -267,6 +262,9 @@ $oferta-wide-scale-xl:1;
 	}
 	@include media-breakpoint-down(sm) {
 		@include make-row();
+	}
+	&.nomargin{
+		margin: 0 !important;
 	}
 	background-position: contain;
 	background-repeat: no-repeat;
@@ -349,7 +347,7 @@ $oferta-wide-scale-xl:1;
 	    font-size: inherit;
 		color: inherit;
 		white-space: nowrap;
-		line-height: 1.2;
+		line-height: 1.7;
 		.bullet-image{
 			height: 20px ;
 			display: inline-block;
@@ -419,15 +417,11 @@ h2.titulo-oferta{
 		font-size: 3.7vw  * $oferta-wide-scale-md;
 		letter-spacing: -2px * $oferta-wide-scale-md;
 	}
-	@include media-breakpoint-between(sm,md) {
-		font-size: 3.7vw * $oferta-wide-scale-sm;
-		letter-spacing: -2px * $oferta-wide-scale-sm;
-	}		
-	@include media-breakpoint-down(xs) {
+	@include media-breakpoint-down(md) {
 		font-family: 'Azo Sans';
 		text-align: center;
 		padding:0 20px;
-		font-size: 7vw ;
+		font-size: 30px ;
 		font-weight: 700;
 		margin-top:20px;
 		letter-spacing: -1.75px;
@@ -526,11 +520,9 @@ h2.titulo-oferta{
 		content: "$";
 		color: inherit;
 
-		@include media-breakpoint-up(sm) {
-			font-size: 22px ;
-		    margin-left: -15px ;
-			margin-top: 7px ;
-		}
+		font-size: 22px ;
+	    margin-left: -15px ;
+		margin-top: 7px ;
 
 	    font-weight: inherit;
 	    position: absolute;
@@ -761,28 +753,32 @@ h2.titulo-oferta{
 		margin-right: 0;
 	}
 	&.vertical{
-	    top: -80px;
 	    margin-right: 0;
-	    width: 30%;		
+	    width: 30%;	
+	    top: -72px;
 	}
 }
 .oferta-price-mov-container{
 	display: block;
 	width: 100%;
-	@include media-breakpoint-up(sm) {
-		line-height: 1;	
+	text-align: left;
+	line-height: 1.7;	
+	@include media-breakpoint-up(md) {
 		padding:0 0 0 17%;
-		text-align: left;
 	}
-	@include media-breakpoint-down(sm) {
-		padding:0 0 0 17vw;
+	@include media-breakpoint-down(md) {
+		padding: 20px 0 0 17vw;
 	}
+
+	&.card-type{
+		padding:0 0 0 60px;
+		line-height: 1;
+
+	}
+
 }
 .oferta-mov-header{
 	width: 100%;
-	@include media-breakpoint-up(sm) {
-		padding-top:20px;
-	}
 }
 .superoferta-wrapper{
 	height: 0;
@@ -852,11 +848,10 @@ h2.titulo-oferta{
 	    padding: 1vw; 
 	}
 	&.vertical{
-		@include media-breakpoint-up(sm) {
-			font-size: 9px !important;
-			padding:2px !important;
-			line-height: 3;
-		}
+		font-size: 9px !important;
+		padding:2px !important;
+		line-height: 1;
+		text-align: left;
 	}	    
 }
 
@@ -1076,7 +1071,28 @@ $verticals-height: 480px ;
 	background-size: cover;
 }
 .ofertas-card-container{
-	@extend .flex-container;
+	display: -webkit-box; 
+	display: -webkit-flex; 
+	display: -moz-box; 
+	display: -ms-flexbox; 
+	display: flex; 
+	-webkit-box-align: center; 
+	-webkit-align-items: center; 
+	-moz-box-align: center; 
+	-ms-flex-align: center; 
+	align-items: center; 
+	-webkit-box-pack: center; 
+	-webkit-justify-content: center; 
+	-moz-box-pack: center; 
+	-ms-flex-pack: center; 
+	justify-content: center;
+	@include media-breakpoint-up(xs) {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	@include media-breakpoint-down(xs) {
+		flex-direction: column;
+	}
 
 }
 .ofertas-cards-header{
@@ -1097,11 +1113,17 @@ $verticals-height: 480px ;
   width: 300px;
   height: $verticals-height;
   border: 1px solid #CCC;
-  margin: 40px 0;
   perspective: 800px;
-  display: inline-block;
+  display: block;
   pointer-events: all;
+  flex: none;
   cursor: pointer;
+  @include media-breakpoint-up(md) {
+  	margin: 40px 0;
+  }
+  @include media-breakpoint-down(md) {
+  	margin: 10px 0;
+  }
 }
 
 .oferta-card {
@@ -1117,7 +1139,14 @@ $verticals-height: 480px ;
 }
 
 .oferta-card.is-flipped {
-  transform: rotateY(180deg);
+  	@include media-breakpoint-up(sm) {
+		transform: rotateY(180deg);
+
+	}
+	@include media-breakpoint-down(sm) {
+		transform: rotateY(0deg);
+
+	}
 }
 
 .oferta-card__face {
@@ -1136,14 +1165,26 @@ $verticals-height: 480px ;
 	z-index: 100;
 	backface-visibility: hidden;
 	-webkit-backface-visibility: hidden; 
+
+	@include media-breakpoint-down(sm) {
+		display: none;
+	}
 }
 
 .oferta-card__face--back {
-	transform: rotateY(180deg);
 	z-index: 90;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
 	backface-visibility: hidden;
 	-webkit-backface-visibility: visible;
+
+	@include media-breakpoint-up(sm) {
+		transform: rotateY(180deg);
+
+	}
+	@include media-breakpoint-down(sm) {
+		transform: rotateY(0deg);
+
+	}
 }
