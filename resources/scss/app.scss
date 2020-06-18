@@ -746,6 +746,13 @@ p{
 				text-align: center;
 				
 				color: inherit;
+				@include media-breakpoint-between(md,lg) {
+					font-size: .8rem;
+				}
+				@include media-breakpoint-up(lg) {
+					font-size: 1rem;
+
+				}
 			}
 
 		}
