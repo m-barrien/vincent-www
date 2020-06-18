@@ -65,7 +65,7 @@
 				Mundo <span class="orange">ONGRID</span> by <img class="vincent-title-img-inline" src="<?php echo get_template_directory_uri() ?>/image/snippets/logo-mov.png"> 
 			</h1>
 			<h2>
-				Pase de ser consumidor de energía eléctrica a convertirse en su propio proveedor de energía renovable.
+				Ahorro inmediato de energ&iacute;a.
 			</h2>
 		</div>
 		<div class="inverter-gallery" data-visible-index="0">
