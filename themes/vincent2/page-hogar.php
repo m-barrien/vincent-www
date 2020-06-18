@@ -43,10 +43,10 @@
 			</div>
 			<div class="w-100">
 				<h1>
-					La mejor solución.
+					La Solución.
 				</h1>
 				<p>
-					Las soluciones de <strong>Vincent Solar</strong> se distinguen por sus componentes del más alto estándar a nivel internacional, instalado y ejecutado para lograr el máximo beneficio con la mejor relación precio-calidad.
+					<strong>Vincent Solar</strong> se distingue por su estándar de asesoría y ejecución al mas alto nivel. Nuestros clientes a lo largo del país lo valoran. Todos sus productos y sistemas instalados cuentan con todas las calificaciones y estándar internacional por dar el máximo beneficio a nuestros clientes en relación precio-calidad.
 				</p>
 				<div class="img-wrapper">
 					<img class="kit-img lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/equipamiento_hogar.png">
@@ -62,7 +62,7 @@
 	<div class="row banner-mundo-offgrid bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/banners/mundoongrid.jpg">
 		<div class="sma-header">
 			<h1 class="">
-				Mundo <span class="orange">ONGRID</span> by <img class="sma-title-img" src="<?php echo get_template_directory_uri() ?>/image/logos/sma.png"> <img class="sma-title-img" src="<?php echo get_template_directory_uri() ?>/image/logos/huawei.png">
+				Mundo <span class="orange">ONGRID</span> by <img class="vincent-title-img-inline" src="<?php echo get_template_directory_uri() ?>/image/snippets/logo-mov.png"> 
 			</h1>
 			<h2>
 				Pase de ser consumidor de energía eléctrica a convertirse en su propio proveedor de energía renovable.
