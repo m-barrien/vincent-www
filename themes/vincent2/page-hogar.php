@@ -81,7 +81,7 @@
 	        Instalaci&oacute;n sencilla y r&aacute;pida
 	      </h2>
 	      <p>
-	        Obtenga su soluci&oacute;n solar <span class="orange">ONGRID</span> en tan solo <strong>2 a 3 d&iacute;as</strong>. Nuestro equipo de expertos en energ&iacute;a solar le explicar&aacute; donde y como ser&iacute;a ejecutada la soluci&oacute;n solar en su domicilio. Todos nuestros proyetos se entregan funcionando <strong>llave en mano</strong>.
+	        La solución solar <span class="orange">ONGRID</span> de <img class="vincent-title-img-inline sm" src="<?php echo get_template_directory_uri() ?>/image/snippets/logo-mov.png"> es rápida y eficiente con nuestro equipo de técnicos certificados.
 	      </p>
 	    </div>
 	    <div class="img-part">
@@ -95,7 +95,7 @@
 	        Todos los equipos consumidores de su hogar interconectados en un sistema integral
 	      </h2>
 	      <p>
-	        Su soluci&oacute;n solar no solo le ser&aacute; &uacute;til para ahorrar en el consumo de su televisor, o refrigerador, o luces. Sino que su soluci&oacute;n solar ongrid <strong>reduce el consumo de todos los aparatos conectados a su red</strong>. Significando un ahorro a nivel global en su cuenta de luz.
+	        Su soluci&oacute;n solar no solo le ser&aacute; &uacute;til para ahorrar en el consumo de su televisor, o refrigerador, o luces. Sino que su soluci&oacute;n solar ongrid <strong>reduce el consumo de todos los aparatos conectados a su red</strong>. Significando un ahorro completo en su cuenta de luz.
 	        
 	      </p>
 	    </div>

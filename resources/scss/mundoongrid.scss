@@ -51,4 +51,7 @@ img.smainverter{
 .vincent-title-img-inline{
 	max-height: 60px;
 	width: auto;
+	&.sm {
+		max-height:40px;
+	}
 }
