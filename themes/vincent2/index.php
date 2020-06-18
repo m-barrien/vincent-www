@@ -73,7 +73,7 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 	      <div class="swiper-slide">
 	      	<a href="/soluciones-hogar" class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/1.jpg" >
 		      	<h1 class="shrink-cover">
-		      		¿Eco-sustentabilidad y ahorro econ&oacute;mico hogar?
+		      		Hogar.
 		      		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		      	</h1>
 	      		<div class="hidden-desc">
@@ -86,27 +86,27 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 	      <div class="swiper-slide">
 	      	<a href="/soluciones-empresa" class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/2.jpg">
 		      	<h1 class="shrink-cover">
-		      		¿Quiere su empresa eco-sustentable?
+		      		Empresa.
 		      		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		      	</h1>
 	      		<div class="hidden-desc">
 		      		<p>
-		      			Juntos encontraremos la solución más adecuada para el consumo de energía de su operaciones.
+		      			Muchas empresas han confiado en Vincent Solar.
 		      		</p>
-		      		<button>Pida nuestro consejo</button>
+		      		<button>Cont&aacute;ctenos</button>
 	      			
 	      		</div>
 	      	</a>
 	      </div>
 	      <div class="swiper-slide">
-	      	<a href="mailto:info@vincentsolar.com" class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/3.jpg">
+	      	<a href="/ofertas" class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/3.jpg">
 		      	<h1 class="shrink-cover">
-		      		Busca los productos y las soluciones solares para tu necesidad.
+		      		Productos con el m&aacute;s alto estandar a nivel internacional.
 		      		
 		      	</h1>
 		      	<div  class="hidden-desc">
 			      	<p>Ofrecemos kits diseñados a la medida en soluciones fotovoltaicas y térmicas para su abastecimiento de electricidad y gas.</p>
-		      		<button>Contactactanos</button>
+		      		<button>Ver m&aacute;s</button>
 		      		
 		      	</div>
 	      	</a>
