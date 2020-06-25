@@ -123,7 +123,7 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 	<section id="porque-elegirnos" class="flex-container space-between" style="background-image:url('<?php echo get_template_directory_uri() ?>/image/covers/fade-paneles.png')">
 		<div class="col-md-5">
 			<h1>¿Por qu&eacute; elegirnos?</h1>
-			<p>Somos una empresa italiana con más de 30 años de experiencia, calidad e innovaciónen los que hemos reunido conocimientos técnicos e instrumentos de última generación, lo que nos transforma en una empresa con diversas habilidades que brinda soluciones versátiles, creativas e innovadoras.</p>
+			<p>Somos una empresa italiana con más de 30 años de experiencia, calidad e innovaciónen en soluciones solares. Hemos reunido conocimientos técnicos e instrumentos de última generación como empresa con habilidades que brinda soluciones versátiles, creativas e innovadoras.</p>
 			<img src="<?php echo get_template_directory_uri() ?>/image/snippets/quienessomos.png" class="img-fluid p-2">
 		</div>
 		<div class="col-md-7">
