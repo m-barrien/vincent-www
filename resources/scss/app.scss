@@ -258,7 +258,7 @@ p{
 		}
 	}
 	@include media-breakpoint-between(md,lg) {
-		font-size: $font-size-base*1.7;
+		font-size: $font-size-base*1.5;
 		&.highlight{
 			font-size: 1.6vw;
 		}		
@@ -712,6 +712,9 @@ p{
 	background-size: cover;
 	h1{
 
+	}
+	p{
+		line-height: 1.45;
 	}
 
 	.card{
