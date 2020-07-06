@@ -38,8 +38,8 @@ endif;
 <div class="container-fluid vp-t">
 	<section id="contacto-footer" >
 		<div class="col-sm-12 col-md-12">
-			<h1>Recibir Ofertas</h1>
-			<p class="highlight text-center">Suscribase a nuestras ofertas</p>
+			<h1>Contactanos</h1>
+			<p class="highlight text-center">Envianos tus consultas</p>
 		</div>
 		<div class="container">
 			<div class="row">
@@ -49,6 +49,10 @@ endif;
 				      <label for="inputEmail4">Correo*</label>
 				      <input type="email" class="form-control" id="inputEmail4" >
 				    </div>
+				    <div class="form-group offset-md-1 col-md-10">
+				      <label for="inputConsulta">Consulta</label>
+				      <textarea name='Description' maxlength='32000' type="text" class="form-control" id="inputConsulta"  style=""></textarea>
+				    </div>				    
 				  </div>
 				  <div class="form-row">
 				  	<div class="col-md-10 offset-md-1">

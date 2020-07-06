@@ -119,55 +119,40 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 </div>
 
 <!-- Seccion por que nosotros -->
-<div class="container-fluid">
-	<section id="porque-elegirnos" class="flex-container space-between" style="background-image:url('<?php echo get_template_directory_uri() ?>/image/covers/fade-paneles.png')">
-		<div class="col-md-5">
+<div class="container">
+	<section id="porque-elegirnos" class="flex-container space-between">
+		<div class="col-md-12">
 			<h1>¿Por qu&eacute; elegirnos?</h1>
 			<p>Vicent Solar es una empresa de origen italiano con m&aacute;s de 30 años de experiencia a nivel internacional. Pioneros hace 6 años en nuestro pa&iacute;s con el sistema NetBilling, con m&aacute;s de 7000kWp instalados sobre techos chilenos. </p>
+			<p>
+				Ofrecemos soluciones de eficiencia energ&eacute;tica con productos de alta gama, kits completos e instalados con garant&iacute;a y certificaciones ante la SEC y organismos internacionales.
+			</p>
 		</div>
-		<div class="col-md-7">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="card">
-						<div class="card-body">
-							<img src="<?php echo get_template_directory_uri() ?>/image/snippets/h-shake.png">
-							<h3>Transparencia y Confianza</h3>
-							<p>Nos encanta ser sinceros y directos en la comunicación y siempre decimos las cosas como son. La confianza en las relaciones es fundamental para nosotros.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="card">
-						<div class="card-body">
-							<img src="<?php echo get_template_directory_uri() ?>/image/snippets/h-shake.png">
-							<h3>Tenemos un sueño</h3>
-							<p>Creemos que hacerse independiente de la energía es un derecho y una opción libre para todos.</p>					
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="card">
-						<div class="card-body">
-							<img src="<?php echo get_template_directory_uri() ?>/image/snippets/h-shake.png">
-							<h3>No tendr&aacute;s preocupaciones</h3>
-							<p>Estás en primer plano, entonces llegamos. Esta es la filosofía que nos ha guiado todos los días durante veinte años. No tendrás que preocuparte por nada.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="card">
-						<div class="card-body">
-							<img src="<?php echo get_template_directory_uri() ?>/image/snippets/h-shake.png">
-							<h3>Tambi&eacute;n estamos despu&eacute;s</h3>
-							<p>Con el servicio "1 año junto a usted", un grupo de técnicos especializados supervisará la producción y la situación económica para verificar que se logren los objetivos esperados.</p>					
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+
 	</section>	
 </div>
 <!-- //Seccion por que nosotros -->
+
+
+<!-- Banner a averiagua cuale es la mejor solucion para tus encesidades energetics -->
+<div class="container-fluid vp-t vp-b">
+	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-hogar-2.jpg">
+		<img class="watermark lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/watermark.png">
+		<div class="half-banner-body">
+			<div class="mov-img">
+				<img class=" img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/banners/seccion-hogar-2.jpg">
+			</div>						
+			<div class="w-100 pt-4">
+				<h1>
+					Averigua cual es la mejor soluci&oacute;n para tus necesidades energeticas.
+				</h1>
+				<a class="orange-with-arrow" target="_blank" href="https://planner.vincentsolar.com">Ver más</a>
+			</div>
+		</div>
+	</section>
+</div>
+<!-- Banner a averiagua cuale es la mejor solucion para tus encesidades energetics -->
+
 
 <!-- ofertas wide -->
 <div class="ofertas-cards-header d-none-mov vm-t">
@@ -267,181 +252,8 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 </div>
 <!-- /ofertas wide -->
 
-<!-- Banner a seccion de hogar -->
-<div class="container-fluid vp-t vp-b">
-	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-inicio-1.jpg">
-		<img class="watermark lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/watermark.png">
-		<div class="half-banner-body right">
-			<div class="mov-img">
-				<img class=" img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-inicio-1.jpg">
-			</div>						
-			<div class="w-100">
-				<h1>
-					La energía solar es fácil.
-				</h1>
-				<p>
-					Con más de 30 años en el rubro a nivel nacional e internacional, somos expertos en soluciones residenciales y empresariales.
-				</p>
-				<a class="orange-with-arrow" href="/soluciones-hogar">Más sobre energía solar</a>
-			</div>
-		</div>
-	</section>
-</div>
-<!-- Banner a seccion de hogar -->
-
-<div class="container-fluid vp-t vp-b">
-	<section id="how-we-work">
-		<div class="col-sm-12">
-			<h1 class="section-header">Cómo trabajamos...</h1>
-			<p class="highlight">Estamos comprometidos con entregar la mejor solución para sus necesidades.</p>
-			
-		</div>
-		<div class="col-sm-12">
-			<section class="cloud-container">
-				<div class="swiper-container swiper-how-we-work">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<div class="how-we-work-slide">
-								<div class="img-container">
-									<div class="img-wrapper">
-										<img class="swiper-lazy bubble-img" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAQAAAD8IX00AAAADklEQVR42mNkAANGFAoAAD8ABLZPixAAAAAASUVORK5CYII=" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/inspeccion.jpg">
-										<div class="swiper-lazy-preloader"></div>
-									</div>
-								</div>
-								<div class="text-container">
-									<div class="step-container">
-										<span class="bar-number">Paso 1</span>
-									</div>
-									<h1>Inspección &amp; Oferta</h1>
-									<p class="highlight">Nuestros ingenieros revisan los detalles de factibilidad explicando todo el tipo de soluciones que vamos a implementar considerando siempre la necesidad del cliente.</p>
-								</div>
-							</div>	
-						</div>
-
-						<div class="swiper-slide">
-							<div class="how-we-work-slide">
-								<div class="img-container">
-									<div class="img-wrapper">
-										<img class="swiper-lazy bubble-img" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAQAAAD8IX00AAAADklEQVR42mNkAANGFAoAAD8ABLZPixAAAAAASUVORK5CYII=" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/instalacion.jpg">
-										<div class="swiper-lazy-preloader"></div>
-									</div>
-								</div>
-								<div class="text-container">
-									<div class="step-container">
-										<span class="bar-number">Paso 2</span>
-									</div>
-									<h1>Instalación</h1>
-									<p class="highlight">Instalamos con el más alto estándar de certificación a nivel nacional e internacional. Nuestros clientes siempre recomiendan nuestro servicio por su eficiencia.</p>
-								</div>
-							</div>	
-						</div>
-						<div class="swiper-slide">
-							<div class="how-we-work-slide">
-								<div class="img-container">
-									<div class="img-wrapper">
-										<img class="swiper-lazy bubble-img" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAQAAAD8IX00AAAADklEQVR42mNkAANGFAoAAD8ABLZPixAAAAAASUVORK5CYII=" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/activacion.jpg">
-										<div class="swiper-lazy-preloader"></div>
-									</div>
-								</div>
-								<div class="text-container">
-									<div class="step-container">
-										<span class="bar-number">Paso 3</span>
-									</div>
-									<h1>¡Hecho!</h1>
-									<p class="highlight">
-										Disfruta de la energía más limpia del mundo.
-										<span style="color: transparent;">
-											Disfruta de la energía más limpia del mundo.
-											Disfruta de la energía más limpia del mundo.
-										</span>
-									</p>
-								</div>
-							</div>	
-						</div>
-						<div class="swiper-slide">
-							<div class="how-we-work-slide">
-								<div class="img-container">
-									<div class="img-wrapper">
-										<img class="swiper-lazy bubble-img" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAQAAAD8IX00AAAADklEQVR42mNkAANGFAoAAD8ABLZPixAAAAAASUVORK5CYII=" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/despues.jpg">
-										<div class="swiper-lazy-preloader"></div>
-									</div>
-								</div>
-								<div class="text-container">
-									<div class="step-container">
-										<span class="bar-number">Paso 4</span>
-									</div>
-									<h1>Soporte &amp; posventa</h1>
-									<p class="highlight">Nuestra garant&iacute;a  <i>World-Class</i> es de 5 años sobre la instalación, lider en el mercado, ofrecemos asesoría y soporte a todos nuestros clientes.</p>
-								</div>
-							</div>	
-						</div>	
-						<div class="swiper-slide">
-							<div id="magic_start_gallery" class="how-we-work-slide">
-								<div class="img-container">
-									<div class="img-wrapper">
-										<img class="swiper-lazy bubble-img" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAQAAAD8IX00AAAADklEQVR42mNkAANGFAoAAD8ABLZPixAAAAAASUVORK5CYII=" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/vermasgaleria.jpg">
-										<div class="swiper-lazy-preloader"></div>
-									</div>
-								</div>
-								<div class="text-container">
-									<div class="step-container">
-										<span class="bar-number">Ver m&aacute;s</span>
-									</div>
-									<h1>Algunos de nuestros proyectos
-										<br>
-										&nbsp;
-									</h1>
-									<p class="highlight orange-with-arrow">
-										Visite nuestra galer&iacute;a
-										<br>
-										&nbsp;
-									</p>
-									<p class="highlight">
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									</p>
-								</div>
-							</div>	
-						</div>						
-
-					</div>
-					<!-- Add Pagination -->
-					<div class="swiper-pagination"></div>
-					<div class="swiper-button-next"></div>
-					<div class="swiper-button-prev"></div>
-				</div>
-			</section>
-		</div>
-	</section>
-</div>
 
 
-<!-- Banner a calidad productos -->
-<div class="container-fluid vp-t vp-b">
-	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-inicio-2.jpg">
-		<img class="watermark right lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/watermark.png">
-		<div class="half-banner-body">
-			<div class="mov-img">
-				<img class=" img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-inicio-2.jpg">
-			</div>								
-			<div class="w-100">
-				<h1>
-					La mejor solución para tu necesidad
-				</h1>
-				<p>
-					Vincent Solar es sinónimo de calidad en todos los productos, trabajando con prestigiosas marcas y equipamiento que hacen posible nuestra garantía <strong><i>World-Class</i> por 5 años sobre su instalación.</strong>
-				</p>
-				<a class="orange-with-arrow" href="/soluciones-hogar">Conozca más sobre nuestros proyectos </a>
-			</div>
-		</div>
-	</section>
-</div>
-<!-- Banner a calidad productos -->
-<div class="banner-link">
-	<a href="/ofertas">
-		<img class="img-fluid lazy desk" data-src="<?php echo get_template_directory_uri() ?>/image/banners/kits.jpg">			
-		<img class="img-fluid lazy mov" data-src="<?php echo get_template_directory_uri() ?>/image/banners/kits.mov.jpg">	
-	</a>
-</div>
 <div class="gallery-container d-none">
 	<div id="lightgallery_hogar" class="lightgallery">
 			<?php
@@ -572,10 +384,6 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 -->
 <!-- //SECCION VIDEOS -->
 
-
-<!-- SECCION PRODUCTOS -->
-<?php get_template_part( 'template-parts/galeria-productos', 'single' ); ?>
-<!-- /SECCION PRODUCTOS -->
 
 
 <!-- SECCION MAPA -->
