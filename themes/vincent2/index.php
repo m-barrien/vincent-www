@@ -84,7 +84,7 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 	      	</a>
 	      </div>
 	      <div class="swiper-slide">
-	      	<a href="/soluciones-empresa" class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/2.jpg">
+	      	<a href="/soluciones-empresa" class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/1.jpg">
 		      	<h1 class="shrink-cover">
 		      		Empresa.
 		      		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -99,7 +99,7 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 	      	</a>
 	      </div>
 	      <div class="swiper-slide">
-	      	<a href="/ofertas" class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/3.jpg">
+	      	<a href="/ofertas" class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/1.jpg">
 		      	<h1 class="shrink-cover">
 		      		Productos con el m&aacute;s alto estandar a nivel internacional.
 		      		
@@ -123,8 +123,7 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 	<section id="porque-elegirnos" class="flex-container space-between" style="background-image:url('<?php echo get_template_directory_uri() ?>/image/covers/fade-paneles.png')">
 		<div class="col-md-5">
 			<h1>¿Por qu&eacute; elegirnos?</h1>
-			<p>Somos una empresa italiana con más de 30 años de experiencia, calidad e innovaciónen en soluciones solares. Hemos reunido conocimientos técnicos e instrumentos de última generación como empresa con habilidades que brinda soluciones versátiles, creativas e innovadoras.</p>
-			<img src="<?php echo get_template_directory_uri() ?>/image/snippets/quienessomos.png" class="img-fluid p-2">
+			<p>Vicent Solar es una empresa de origen italiano con m&aacute;s de 30 años de experiencia a nivel internacional. Pioneros hace 6 años en nuestro pa&iacute;s con el sistema NetBilling, con m&aacute;s de 7000kWp instalados sobre techos chilenos. </p>
 		</div>
 		<div class="col-md-7">
 			<div class="row">
