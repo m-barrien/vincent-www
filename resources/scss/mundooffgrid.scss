@@ -19,7 +19,8 @@
 }
 .inverter-gallery{
 	width: 300px;
-	pointer-events:none;
+	height: 200px;
+	align-self: flex-end;
 }
 img.victroninverter{
 	pointer-events: none;

@@ -14,7 +14,7 @@
 					Independiente<br> Inteligente <br>Conveniente
 				</h1>
 				<p>
-					Invierta de forma inteligente, con las soluciones de Vincent Solar ahorre inmediatamente en su cuenta de energ&iacute;a eléctrica.
+					Invierta de forma inteligente con las soluciones de Vincent Solar, ahorre inmediatamente en su cuenta de energ&iacute;a eléctrica.
 				</p>
 				<a class="orange-with-arrow" href="#ongrid">¿Como funcionan los sistemas solares? </a>
 			</div>
@@ -35,31 +35,17 @@
 
 <!-- Banner a soluciones hogar -->
 <div class="container-fluid vp-t vp-b">
-	<h1>
+	<h1 class="text-center py-4">
 		La Solución.
 	</h1>
-	<section class="half-banner tall bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/condominio-casas.png">
-		<img class="watermark right lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/watermark.png">
-		<div class="half-banner-body">
-			<div class="mov-img">
-				<img class=" img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/condominio-casas.png">
-			</div>
-			<div class="w-100">
-				<!--
-				<p>
-					<strong>Vincent Solar</strong> se distingue por su estándar de asesoría y ejecución al mas alto nivel. Nuestros clientes a lo largo del país lo valoran. Todos sus productos y sistemas instalados cuentan con todas las calificaciones y estándar internacional por dar el máximo beneficio a nuestros clientes en relación precio-calidad.
-				</p>
-				-->
-				
-			</div>
-		</div>
-	</section>
 </div>
 <!-- /Banner a soluciones hogar -->
 
+
+
 <!-- Mundo ONGRID -->
 <div class="container-fluid">
-	<div class="row banner-mundo-offgrid bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/banners/mundoongrid.jpg">
+	<div class="row banner-mundo-offgrid bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/condominio-casas.png">
 		<div class="sma-header">
 			<h1 class="">
 				Mundo <span class="orange">ONGRID</span> by <img class="vincent-title-img-inline" src="<?php echo get_template_directory_uri() ?>/image/snippets/logo-mov.png"> 
@@ -68,12 +54,25 @@
 				Ahorro inmediato de energ&iacute;a.
 			</h2>
 		</div>
-		<div class="inverter-gallery" data-visible-index="0">
-			<img class="victroninverter hide" src="<?php echo get_template_directory_uri() ?>/image/snippets/mundoongrid/sunnyboy2.png">
-			<img class="victroninverter hide" src="<?php echo get_template_directory_uri() ?>/image/snippets/mundoongrid/huaweiinverter.png">
-			<img class="victroninverter" src="<?php echo get_template_directory_uri() ?>/image/snippets/mundoongrid/sunnyboy.png">
+		<div class="inverter-gallery">
+			<img src="https://via.placeholder.com/300" class="">
 		</div>
+
 	</div>
+	<!-- como funciona ongrid -->
+	<div class="container vp-t ">
+		<div id="ongrid"></div>
+		<h1  class="pb-4">¿Como funciona el sistema <span class="orange">ON GRID</span> residencial?</h1>
+	</div>
+	<div class="container-fluid">
+		<section class="full-width-diagram bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/paneles-faded.jpg">
+			<div class="img-wrapper">
+				<img class="img-fluid lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/covers/diagrama_hogar_on.png">
+			</div>
+		</section>
+	</div>
+	<!-- como funciona ongrid -->
+	<!--	
 	<div class="text-with-image">
 	    <div class="text-part">
 	      <h2>
@@ -133,6 +132,7 @@
 	      <img class="img-fluid" src="<?php echo get_template_directory_uri() ; ?>/image/snippets/mundoongrid/selfrepair.png">
 	    </div>
 	</div>
+	-->
 </div>
 <!-- /Mundo ONGRID -->
 
@@ -184,19 +184,7 @@
 	</div>
 
 </div>
-<!-- como funciona ongrid -->
-<div class="container vp-t ">
-	<div id="ongrid"></div>
-	<h1  class="pb-4">¿Como funciona el sistema <span class="orange">ON GRID</span> residencial?</h1>
-</div>
-<div class="container-fluid">
-	<section class="full-width-diagram bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/paneles-faded.jpg">
-		<div class="img-wrapper">
-			<img class="img-fluid lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/covers/diagrama_hogar_on.png">
-		</div>
-	</section>
-</div>
-<!-- como funciona ongrid -->
+
 
 <!-- galeria ongrid -->
 <div id="open-gallery-ongrid" class="banner-link  vp-t vp-b">

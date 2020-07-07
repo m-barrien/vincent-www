@@ -32,8 +32,12 @@ img.smainverter{
 .sma-header{
 	align-self: flex-start;
 	padding: 30px 15px;
+	color: $white;
 	@include media-breakpoint-up(sm) {
 		max-width: 60%; 
+	}
+	h1, h2{
+		color: white !important;
 	}
 }
 
