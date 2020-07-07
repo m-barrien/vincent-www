@@ -570,7 +570,7 @@ p{
 
     	.hidden-desc{
 			@include media-breakpoint-up(sm) {
-				height: 0px;
+				height: auto;
 			}
 			@include media-breakpoint-down(sm) {
 				height: auto !important;
@@ -705,7 +705,7 @@ p{
 	}
 }
 #porque-elegirnos{
-	padding-top: $section-padding-top;
+	padding-top: $section-padding-top/2;
 	padding-bottom: $section-padding-bottom;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1256,6 +1256,7 @@ footer{
 
 }
 .half-banner-body{
+	display: flex;
 	@include make-col-ready();
 	background-color: $white-overlay-strong;
 	@include media-breakpoint-up(xl) {
@@ -1414,7 +1415,13 @@ footer{
 		}
 	}
 
-
+}
+.half-banner-body-content{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-self:center;
 }
 a.orange-with-arrow , p.orange-with-arrow{
 	color: $vincent-orange !important;

@@ -73,12 +73,9 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 	      <div class="swiper-slide">
 	      	<a href="/soluciones-hogar" class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/1.jpg" >
 		      	<h1 class="shrink-cover">
-		      		Hogar.
-		      		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		      	</h1>
 	      		<div class="hidden-desc">
-		      		<p>Ahorro inmediato sobre la cuenta de luz.</p>
-		      		<button >Descubra nuestras soluciones</button>
+		      		<button >Hogar</button>
 	      			
 	      		</div>
 	      	</a>
@@ -86,14 +83,9 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 	      <div class="swiper-slide">
 	      	<a href="/soluciones-empresa" class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/1.jpg">
 		      	<h1 class="shrink-cover">
-		      		Empresa.
-		      		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		      	</h1>
 	      		<div class="hidden-desc">
-		      		<p>
-		      			Muchas empresas han confiado en Vincent Solar.
-		      		</p>
-		      		<button>Cont&aacute;ctenos</button>
+		      		<button>Empresas</button>
 	      			
 	      		</div>
 	      	</a>
@@ -101,12 +93,12 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 	      <div class="swiper-slide">
 	      	<a href="/ofertas" class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/1.jpg">
 		      	<h1 class="shrink-cover">
-		      		Productos con el m&aacute;s alto estandar a nivel internacional.
+		      		
 		      		
 		      	</h1>
 		      	<div  class="hidden-desc">
-			      	<p>Ofrecemos kits diseñados a la medida en soluciones fotovoltaicas y térmicas para su abastecimiento de electricidad y gas.</p>
-		      		<button>Ver m&aacute;s</button>
+			      
+		      		<button>Productos</button>
 		      		
 		      	</div>
 	      	</a>
@@ -142,7 +134,7 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 			<div class="mov-img">
 				<img class=" img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/banners/seccion-hogar-2.jpg">
 			</div>						
-			<div class="w-100 pt-4">
+			<div class="half-banner-body-content">
 				<h1>
 					Averigua cual es la mejor soluci&oacute;n para tus necesidades energeticas.
 				</h1>
@@ -205,7 +197,7 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 
 <div class="ofertas-cards-header d-none-mov vm-t">
 	<h1 class="">
-		Mundo <span class="orange">OFFGRID</span> by <img class="victron-title-img" src="<?php echo get_template_directory_uri() ?>/image/logos/victron.png">
+		Kit Solar Residencial <span class="orange">OFFGRID</span>
 	</h1>
 </div>
 <div class="ofertas-wide-card-container d-none-mov vp-b vm-b" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/banners/banner-offgrid.jpg');">
