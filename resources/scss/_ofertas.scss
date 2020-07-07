@@ -1224,9 +1224,14 @@ $verticals-height: 480px ;
 				&:hover{
 					background-color: $gray-overlay;
 					text-decoration: none;
+					.text-body{
+						margin-top: 25px;
+						color: white !important;
+					}
 
 				}				
-				.text-body{
+				.text-body{ 
+					pointer-events: none;
 					color: $text-black;
 					padding-left: 10%;
 					padding-right: 20%;
@@ -1236,20 +1241,8 @@ $verticals-height: 480px ;
 					-moz-transition: all 1s;
 					-o-transition: all 1s;
 					transition: all 1s;		
-					&.rise{
-						margin-top: 10%;
-						color: $white; 
-						.number{
-							color: $white;
-						}
-						.little-title{
-							color: $white;
-						}
-						.kw{
-							color: $white;
-						}
-					}								
 					.number{
+						pointer-events: none;
 						color: $text-gray;
 						font-size: 22px;
 						font-weight: 300;
@@ -1259,6 +1252,7 @@ $verticals-height: 480px ;
 						transition: all 1s;	
 					}
 					.little-title{
+						pointer-events: none;
 						color: inherit;
 						font-size: 14px;
 						font-weight: bold;
@@ -1268,6 +1262,7 @@ $verticals-height: 480px ;
 						transition: all 1s;	
 					}
 					.kw{
+						pointer-events: none;
 						color: inherit;
 						font-size: 70px;
 						font-weight: 900;

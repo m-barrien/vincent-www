@@ -7,11 +7,12 @@ if ($tax_term) {
 
 ?>
 <section class="oferta-single-row  pt-2">
+	<!-- 
 	<div class="oferta-category-kit-img">
 		<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/taxonomy/tipo-kit/<?php echo $tax_term[0]->slug; ?>/kit-group-image.png">
 	</div>
 	<div class="oferta-description-container">
-		<?php echo do_shortcode( '[ofertas_feats]' ); ?>
+		<?php echo do_shortcode( '[ofertas_feats]' ); ?> 
 		<br>
 		<div class="instalacion-red-tag">Instalaci&oacute;n incluida, llave en mano</div>
 		<div class="oferta-wide-pricetag">
@@ -21,6 +22,7 @@ if ($tax_term) {
 			<img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/image/pills/boton_contacto.jpg">
 		</a>
 	</div>
+	-->
 	<div class="oferta-full-description-container">
 		<?php the_content() ;?>
 

@@ -36,20 +36,31 @@
 </div>
 
 <!-- Banner a soluciones hogar -->
-<div class="container vp-t vp-b">
+<div class="blog-container vp-t vp-b">
 	<h1 class="text-center pt-4">
 		La Solución
 	</h1>
-	<p class="text-center">Si buscas invertir en una soluci&oacute;n que te proporcione ahorro inmediato y que se mantenga en el tiempo, o si buscas obtener energ&iacute;a limpia y sustentable estas son las opciones para ti.</p>
+	<p class="text-justify">Quienes eligen instalar paneles fotovoltaicos en su hogar eligen una forma de inversión rentable y sostenible; toma una decisión que mejora la calidad de vida y la de las personas cercanas a él, produciendo energía limpia y reduciendo las emisiones de CO2, perjudiciales para el medio ambiente.</p>
+	<h2>
+		Fotovoltaica en tu hogar
+	</h2>
+	<p>
+		Junto con usted, evaluamos sus necesidades energéticas y sus necesidades, para proponer el sistema fotovoltaico más adecuado y de mayor tamaño para el hogar y capaz de hacerlo lo más independiente posible en términos de energía.
+	</p>
+	<p>
+		Las energías renovables no son el futuro, sino el presente: equipar su hogar con un sistema inteligente de recuperación de energía no es solo un movimiento correcto, sino el movimiento correcto en el momento correcto.	
+	</p>
+	<h2>
+		Elija el sistema fotovoltaico adecuado para su hogar
+		
+	</h2>
+	<p>
+		¿No está seguro de cuántos y qué paneles fotovoltaicos instalar en su hogar? Contáctenos: evaluaremos juntos la solución más adecuada para usted.
+	</p>
+
+
 </div>
 <!-- /Banner a soluciones hogar -->
-
-
-<div class="ofertas-cards-header d-none-mov vm-t">
-	<h1 class="">
-		Kit Solar Residencial
-	</h1>
-</div>
 <?php 
 $args= array(
 'post_type' => array('oferta'),
@@ -80,44 +91,13 @@ $i=0;
 			    if ($tax_term) {
 			    	$oferta_category = $tax_term[0]->name;
 			    }
-		?>
-				<div class="kit-col-container" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/soluciones/vertical-3kw.jpg')">
-					<a class="white-container" href="<?php echo get_permalink() ; ?>">
-						<div class="text-body">
-							<div class="number">0<?php echo ++$i; ?></div>
-							<div class="little-title"><?php echo $oferta_category; ?></div>
-							<div class="kw"><?php echo get_post_meta($post_id, 'short-title')[0] ; ?></div>
-						</div>
-					</a>
-				</div>
-		<?php 
+			    get_template_part( 'template-parts/oferta-card', 'single' );
 			}
 			wp_reset_query();
 		?>
 	</section>
 </div>
 
-
-<!-- galeria ongrid -->
-<div id="open-gallery-ongrid" class="banner-link  vp-t vp-b">
-	<img class="img-fluid lazy desk" data-src="<?php echo get_template_directory_uri() ?>/image/banners/galeria_ongrid.jpg">	
-	<img class="img-fluid lazy mov" data-src="<?php echo get_template_directory_uri() ?>/image/banners/galeria_ongrid.mov.jpg">	
-</div>
-
-<!-- /galeria ongrid -->
-
-<!-- como funciona offgrid -->
-<div class="container vp-t">
-	<h1 class="pb-4">¿Como funciona el sistema <span class="orange">OFF GRID</span> residencial?</h1>
-</div>
-<div class="container-fluid vp-b" >
-	<section class="full-width-diagram bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/paneles-faded.jpg">
-		<div class="img-wrapper">
-			<img class="img-fluid lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/covers/diagrama_hogar_off.png">
-		</div>
-	</section>
-</div>
-<!-- como funciona offgrid -->
 
 
 <?php get_footer(); ?>
