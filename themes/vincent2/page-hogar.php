@@ -34,10 +34,11 @@
 <!-- /video -->
 
 <!-- Banner a soluciones hogar -->
-<div class="container-fluid vp-t vp-b">
-	<h1 class="text-center py-4">
-		La Solución.
+<div class="container vp-t vp-b">
+	<h1 class="text-center pt-4">
+		La Solución
 	</h1>
+	<p class="text-center">Si buscas invertir en una soluci&oacute;n que te proporcione ahorro inmediato y que se mantenga en el tiempo, o si buscas obtener energ&iacute;a limpia y sustentable estas son las opciones para ti.</p>
 </div>
 <!-- /Banner a soluciones hogar -->
 
@@ -63,6 +64,7 @@
 	<div class="container vp-t ">
 		<div id="ongrid"></div>
 		<h1  class="pb-4">¿Como funciona el sistema <span class="orange">ON GRID</span> residencial?</h1>
+		<p>Los sistemas solares <span class="orange">ONGRID</span> son lejos los mas implementados por hogares y empresas. Estos sistemas no necesitan bater&iacute;as y usan inversores solares que se conectan directamente a su red eléctrica tradicional. Cualquier exceso de engerg&iacute;a solar que usted genere, ser&aacute; exportado al tendido el&eacute;ctrico, resultando en un cr&eacute;dito para reducir su cuenta de luz.</p>
 	</div>
 	<div class="container-fluid">
 		<section class="full-width-diagram bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/paneles-faded.jpg">
@@ -201,7 +203,7 @@
 	<div class="row banner-mundo-offgrid bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/banners/mundooffgrid.jpg">
 		<div class="victron-header">
 			<h1 class="">
-				Mundo <span class="orange">OFFGRID</span> by <img class="victron-title-img" src="<?php echo get_template_directory_uri() ?>/image/logos/victron.png">
+				Mundo <span class="orange">OFFGRID</span> by <img class="vincent-title-img-inline" src="<?php echo get_template_directory_uri() ?>/image/snippets/logo-mov.png"> 
 			</h1>
 			<h2>
 				Entra en el mundo de ser totalmente independiente.
