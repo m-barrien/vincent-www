@@ -971,11 +971,11 @@ $verticals-height: 480px ;
 		min-height: $verticals-height;
 	}
 
-	text-shadow: 1px 1px 2px $text-grayer;
 	color: $text-black;
 	.little-title{
 		font-weight: 900;
 		text-transform: uppercase;
+		-webkit-text-stroke: 1px white;
 		white-space: wrap;
 		line-height: 1;
 		text-align: inherit;
@@ -999,7 +999,8 @@ $verticals-height: 480px ;
 		display: inline;
 		white-space: nowrap;
 		text-align: inherit;
-		color: inherit;
+		color: white;
+		-webkit-text-stroke: 0.5px $text-black;
 		@include media-breakpoint-up(xl) {
 			font-size: 60px ;
 		}

@@ -11,10 +11,10 @@
 			</div>			
 			<div class="w-100">
 				<h1>
-					Independiente,<br> inteligente, <br>conveniente
+					Independiente<br> Inteligente <br>Conveniente
 				</h1>
 				<p>
-					Las soluciones fotovoltaicas Vincent Solar, permiten ser más independiente del aumento de los costos de electricidad. Proporcionando suministro de energía sostenible y renovable.
+					Invierta de forma inteligente, con las soluciones de Vincent Solar ahorre inmediatamente en su cuenta de energ&iacute;a eléctrica.
 				</p>
 				<a class="orange-with-arrow" href="#ongrid">¿Como funcionan los sistemas solares? </a>
 			</div>
@@ -35,22 +35,22 @@
 
 <!-- Banner a soluciones hogar -->
 <div class="container-fluid vp-t vp-b">
-	<section class="half-banner tall bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-hogar-2.jpg">
+	<h1>
+		La Solución.
+	</h1>
+	<section class="half-banner tall bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/condominio-casas.png">
 		<img class="watermark right lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/watermark.png">
 		<div class="half-banner-body">
 			<div class="mov-img">
-				<img class=" img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-hogar-2.jpg">
+				<img class=" img-fluid lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/condominio-casas.png">
 			</div>
 			<div class="w-100">
-				<h1>
-					La Solución.
-				</h1>
+				<!--
 				<p>
 					<strong>Vincent Solar</strong> se distingue por su estándar de asesoría y ejecución al mas alto nivel. Nuestros clientes a lo largo del país lo valoran. Todos sus productos y sistemas instalados cuentan con todas las calificaciones y estándar internacional por dar el máximo beneficio a nuestros clientes en relación precio-calidad.
 				</p>
-				<div class="img-wrapper">
-					<img class="kit-img lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/equipamiento_hogar.png">
-				</div>
+				-->
+				
 			</div>
 		</div>
 	</section>
@@ -218,11 +218,6 @@
 			<h2>
 				Entra en el mundo de ser totalmente independiente.
 			</h2>
-		</div>
-		<div class="inverter-gallery" data-visible-index="0">
-			<img class="victroninverter" src="<?php echo get_template_directory_uri() ?>/image/snippets/mundooffgrid/multiplus_front.png">
-			<img class="victroninverter hide" src="<?php echo get_template_directory_uri() ?>/image/snippets/mundooffgrid/easysolar_right.png">
-			<img class="victroninverter hide" src="<?php echo get_template_directory_uri() ?>/image/snippets/mundooffgrid/phoenix_front.png">
 		</div>
 	</div>
 	<?php echo do_shortcode( '[multiplus_feats]' ); ?>
