@@ -28,7 +28,7 @@ var swiper = new Swiper('.ofertas-empresa-swiper', {
 });
 
 var swiper_home = new Swiper('.swiper-cover', {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 0,
       // init: false,
       pagination: {
@@ -41,11 +41,11 @@ var swiper_home = new Swiper('.swiper-cover', {
       },      
       breakpoints: {
         1499: {
-          slidesPerView: 3,
+          slidesPerView: 2,
           spaceBetween: 0,
         },
         1099: {
-          slidesPerView: 3,
+          slidesPerView: 2,
           spaceBetween: 0,
         },
         899: {

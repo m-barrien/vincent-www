@@ -90,19 +90,6 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 	      		</div>
 	      	</a>
 	      </div>
-	      <div class="swiper-slide">
-	      	<a href="/ofertas" class="cover-slide" data-bg-im="<?php echo get_template_directory_uri() ?>/image/covers/1.jpg">
-		      	<h1 class="shrink-cover">
-		      		
-		      		
-		      	</h1>
-		      	<div  class="hidden-desc">
-			      
-		      		<button>Productos</button>
-		      		
-		      	</div>
-	      	</a>
-	      </div>
 	    </div>
 		<div class="swiper-button-next"></div>
 		<div class="swiper-button-prev"></div>				
@@ -115,10 +102,8 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 	<section id="porque-elegirnos" class="flex-container space-between">
 		<div class="col-md-12">
 			<h1>¿Por qu&eacute; elegirnos?</h1>
-			<p>Vicent Solar es una empresa de origen italiano con m&aacute;s de 30 años de experiencia a nivel internacional. Pioneros hace 6 años en nuestro pa&iacute;s con el sistema NetBilling, con m&aacute;s de 7000kWp instalados sobre techos chilenos. </p>
-			<p>
-				Ofrecemos soluciones de eficiencia energ&eacute;tica con productos de alta gama, kits completos e instalados con garant&iacute;a y certificaciones ante la SEC y organismos internacionales.
-			</p>
+			<p><img class="vincent-title-img-inline" src="<?php echo get_template_directory_uri() ?>/image/snippets/logo-mov.png">  es una empresa de origen italiano con m&aacute;s de 30 años de experiencia a nivel internacional. Pioneros en el sistema Netbilling en Chile, y en otro pais con m&aacute;s de 7.000kWp instalados sobre techos chilenos y mas de 100.000kWp sobre techos en Europa. </p>
+			
 		</div>
 
 	</section>	
@@ -136,113 +121,18 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 			</div>						
 			<div class="half-banner-body-content">
 				<h1>
-					Averigua cual es la mejor soluci&oacute;n para tus necesidades energeticas.
+					Averigua cual es la mejor soluci&oacute;n para tus necesidades energeticas. 				
 				</h1>
-				<a class="orange-with-arrow" target="_blank" href="https://planner.vincentsolar.com">Ver más</a>
+				<p>
+				Ofrecemos soluciones de eficiencia energ&eacute;tica con productos de alta gama, instalados con garant&iacute;a y certificaciones ante organismos locales e internacionales. 
+				</p>
+				<a class="orange-with-arrow" href="/soluciones-hogar">Ver más</a>
 			</div>
 		</div>
 	</section>
 </div>
 <!-- Banner a averiagua cuale es la mejor solucion para tus encesidades energetics -->
 
-
-<!-- ofertas wide -->
-<div class="ofertas-cards-header d-none-mov vm-t">
-	<h1 class="">
-		Kit Solar Residencial <span class="orange">ONGRID</span>
-	</h1>
-</div>
-<div class="ofertas-wide-card-container  d-none-mov vp-b vm-b" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/banners/banner-ongrid.jpg');">
-	<div class="ofertas-card-container">
-		<?php
-			wp_reset_postdata();
-		    wp_reset_query();
-		    $args= array(
-			'post_type' => array('oferta'),
-			'post_status' => 'publish',
-			'posts_per_page' => -1,
-			'meta_key'		=> 'price',
-			'orderby'		=> 'meta_value',
-			'order'			=> 'ASC',
-		    'tax_query' => array(
-		        array(
-		            'taxonomy' => 'tipo-kit',
-		            'field'    => 'slug',
-		            'terms'    => 'ongrid',
-		        ),
-		    ),	
-			);
-
-			$loop = new WP_Query( $args );
-
-			$wcatTerm = get_term_by('slug','ongrid', 'tipo-kit');
-		?>		
-	    <?php
-	    	$i=0;
-			while ( $loop->have_posts() ) : $loop->the_post();
-				$image = null;
-					?>
-
-					<?php get_template_part( 'template-parts/oferta-card', 'single' ); ?>
-						
-					<?php
-
-			endwhile;
-			wp_reset_postdata();
-	        wp_reset_query();
-		?>
-	</div>
-
-</div>
-
-<div class="ofertas-cards-header d-none-mov vm-t">
-	<h1 class="">
-		Kit Solar Residencial <span class="orange">OFFGRID</span>
-	</h1>
-</div>
-<div class="ofertas-wide-card-container d-none-mov vp-b vm-b" style="background-image: url('<?php echo get_template_directory_uri() ?>/image/banners/banner-offgrid.jpg');">
-	<div class="ofertas-card-container">
-		<?php
-			wp_reset_postdata();
-		    wp_reset_query();
-		    $args= array(
-			'post_type' => array('oferta'),
-			'post_status' => 'publish',
-			'posts_per_page' => -1,
-			'meta_key'		=> 'price',
-			'orderby'		=> 'meta_value',
-			'order'			=> 'ASC',
-		    'tax_query' => array(
-		        array(
-		            'taxonomy' => 'tipo-kit',
-		            'field'    => 'slug',
-		            'terms'    => 'offgrid',
-		        ),
-		    ),	
-			);
-
-			$loop = new WP_Query( $args );
-
-			$wcatTerm = get_term_by('slug','ongrid', 'tipo-kit');
-		?>		
-	    <?php
-	    	$i=0;
-			while ( $loop->have_posts() ) : $loop->the_post();
-				$image = null;
-					?>
-
-					<?php get_template_part( 'template-parts/oferta-card', 'single' ); ?>
-						
-					<?php
-
-			endwhile;
-			wp_reset_postdata();
-	        wp_reset_query();
-		?>
-	</div>
-
-</div>
-<!-- /ofertas wide -->
 
 
 
