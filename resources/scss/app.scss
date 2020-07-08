@@ -258,7 +258,7 @@ p{
 		}
 	}
 	@include media-breakpoint-between(md,lg) {
-		font-size: $font-size-base*1.3;
+		font-size: $font-size-base*1.5;
 		&.highlight{
 			font-size: 1.6vw;
 		}		
@@ -396,8 +396,8 @@ p{
 	}
 	p{
 		color: $text-black;
-		font-size: 18px;
-		line-height: 26px;
+		font-size: 16px;
+		line-height: 24px;
 		font-weight: 400;
 		text-align: justify;
 	}

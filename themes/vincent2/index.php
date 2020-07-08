@@ -102,7 +102,7 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 	<section id="porque-elegirnos" class="flex-container space-between">
 		<div class="col-md-12">
 			<h1>¿Por qu&eacute; elegirnos? <img class="vincent-title-img-inline" src="<?php echo get_template_directory_uri() ?>/image/snippets/logo-mov.png"></h1>
-			<p> Vincent Solar es una empresa de origen italiano con m&aacute;s de 30 años de experiencia a nivel internacional. Pioneros en el sistema Netbilling en Chile, y en otro pais con m&aacute;s de 7.000kWp instalados sobre techos chilenos y mas de 100.000kWp sobre techos en Europa. </p>
+			<p> Vincent Solar es una empresa de origen italiano con m&aacute;s de 30 años de experiencia a nivel internacional. Pioneros en el sistema Netbilling en Chile, con m&aacute;s de 7.000kWp instalados a lo largo del pa&iacute;s y m&aacute;s de 100.000kWp instalados sobre techos en Europa. </p>
 			
 		</div>
 
