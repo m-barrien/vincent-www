@@ -145,7 +145,13 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 </div>
 <!-- Banner a averiagua cuale es la mejor solucion para tus encesidades energetics -->
 
-
+<!-- Banner a averiagua cuale es la mejor solucion para tus encesidades energetics -->
+<div class="container-fluid vp-t vp-b">
+	<section>
+		<div class=""></div>
+	</section>
+</div>
+<!-- Banner a averiagua cuale es la mejor solucion para tus encesidades energetics -->
 
 
 <div class="gallery-container d-none">

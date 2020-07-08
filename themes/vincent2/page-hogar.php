@@ -52,7 +52,7 @@
 		
 	</h2>
 	<p>
-		¿No está seguro de cuántos y qué paneles fotovoltaicos instalar en su hogar? Contáctenos: evaluaremos juntos la solución más adecuada para usted.
+		¿No está seguro de cuántos y qué paneles fotovoltaicos instalar en su hogar? <span class="orange">Descubra la mejor opci&oacute;n para sus necesidades.</span>
 	</p>
 
 

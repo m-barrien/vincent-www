@@ -11,7 +11,7 @@ $short_title=get_post_meta($post->ID, 'short-title')[0] ;
 	<a class="white-container" href="<?php echo get_permalink() ; ?>">
 		<div class="text-body">
 			<div class="number">00</div>
-			<div class="little-title"><?php echo $oferta_category; ?></div>
+			<div class="little-title">Sistemas Solares</div>
 			<div class="kw"><?php echo $short_title; ?></div>
 		</div>
 	</a>
