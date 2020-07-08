@@ -11,11 +11,11 @@
 <!-- /video -->
 
 
-<div class="container">
-	<h2 class="site-title"> <?php the_title(); ?></h2>
+<div class="blog-container-width vp-t">
+	<h1 class="site-title"> <?php the_title(); ?></h1>
 </div>
 
-<!-- Banner a beneficios hogar -->
+<!-- Banner a beneficios hogar 
 <div class="container-fluid">
 	<section class="half-banner h-auto mt-0" style="background-image:url('<?php echo get_template_directory_uri() ?>/image/covers/seccion-hogar-1.jpg');">
 		<div class="half-banner-body menu-top-padding right">
@@ -35,14 +35,11 @@
 	</section>
 </div>
 
-<!-- Banner a soluciones hogar -->
-<div class="blog-container vp-t vp-b">
-	<h1 class="text-center pt-4">
-		La Solución
-	</h1>
+ Banner a soluciones hogar -->
+<div class="blog-container vp-b">
 	<p class="text-justify">Quienes eligen instalar paneles fotovoltaicos en su hogar eligen una forma de inversión rentable y sostenible; toma una decisión que mejora la calidad de vida y la de las personas cercanas a él, produciendo energía limpia y reduciendo las emisiones de CO2, perjudiciales para el medio ambiente.</p>
 	<h2>
-		Fotovoltaica en tu hogar
+		Energ&iacute;a fotovoltaica en tu hogar
 	</h2>
 	<p>
 		Junto con usted, evaluamos sus necesidades energéticas y sus necesidades, para proponer el sistema fotovoltaico más adecuado y de mayor tamaño para el hogar y capaz de hacerlo lo más independiente posible en términos de energía.
