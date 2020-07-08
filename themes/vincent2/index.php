@@ -101,19 +101,31 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 <div class="container">
 	<section id="porque-elegirnos" class="flex-container space-between">
 		<div class="col-md-12">
-			<h1>¿Por qu&eacute; elegirnos?</h1>
-			<p><img class="vincent-title-img-inline" src="<?php echo get_template_directory_uri() ?>/image/snippets/logo-mov.png">  es una empresa de origen italiano con m&aacute;s de 30 años de experiencia a nivel internacional. Pioneros en el sistema Netbilling en Chile, y en otro pais con m&aacute;s de 7.000kWp instalados sobre techos chilenos y mas de 100.000kWp sobre techos en Europa. </p>
+			<h1>¿Por qu&eacute; elegirnos? <img class="vincent-title-img-inline" src="<?php echo get_template_directory_uri() ?>/image/snippets/logo-mov.png"></h1>
+			<p> Vincent Solar es una empresa de origen italiano con m&aacute;s de 30 años de experiencia a nivel internacional. Pioneros en el sistema Netbilling en Chile, y en otro pais con m&aacute;s de 7.000kWp instalados sobre techos chilenos y mas de 100.000kWp sobre techos en Europa. </p>
 			
 		</div>
 
-	</section>	
+	</section>
+	<section class="international-blocks">
+		<div class="international-block">
+			<p>Italia</p>
+			<!-- 2 py it y 2 en grecia -->
+			<img class="img-fluid" src="https://via.placeholder.com/700x400">
+		</div>
+
+		<div class="international-block">
+			<p>Grecia</p>
+			<img class="img-fluid" src="https://via.placeholder.com/700x400">
+		</div>
+	</section>
 </div>
 <!-- //Seccion por que nosotros -->
 
 
 <!-- Banner a averiagua cuale es la mejor solucion para tus encesidades energetics -->
 <div class="container-fluid vp-t vp-b">
-	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/covers/seccion-hogar-2.jpg">
+	<section class="half-banner bg-lazy" data-src="<?php echo get_template_directory_uri() ?>/image/banners/ppp-huawei2.jpg">
 		<img class="watermark lazy" src="<?php echo get_template_directory_uri() ?>/image/snippets/empty.png" data-src="<?php echo get_template_directory_uri() ?>/image/snippets/watermark.png">
 		<div class="half-banner-body">
 			<div class="mov-img">

@@ -258,7 +258,7 @@ p{
 		}
 	}
 	@include media-breakpoint-between(md,lg) {
-		font-size: $font-size-base*1.5;
+		font-size: $font-size-base*1.6;
 		&.highlight{
 			font-size: 1.6vw;
 		}		
@@ -600,16 +600,18 @@ p{
 				font-weight: bold;
 				
 				@include media-breakpoint-up(xl) {
-					font-size: 19px;
-					padding: 6px 20px;
+					font-size: 30px;
+					padding: 6px 25px;
+					margin-bottom: 15px;
 				}
 				@include media-breakpoint-between(md,lg) {
-					font-size: 1.4vw;
+					font-size: 1.7vw;
 					padding: .5vw 1.7vw;
+					margin-bottom: 15px;
 				}				
 				@include media-breakpoint-between(sm,md) {
 					padding: 8px 25px;
-					font-size: 1.6vw ;
+					font-size: 1.7vw ;
 					border-radius: 50px;
 				}
 				@include media-breakpoint-down(xs) {
@@ -1830,6 +1832,15 @@ section > h1.section-header{
 	color: $red;
 }
 
+.international-blocks{
+	display: flex;
+	align-items: space-between;
+}
+.international-block{
+	@include make-col-ready();
+	@include make-col(6);
+
+}
 @import 'generacion';
 @import 'mapa';
 @import 'noticias';

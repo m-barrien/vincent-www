@@ -2,7 +2,7 @@
 <div class="site-cover-secondary" style="background-image:linear-gradient(to bottom, #00000080 0%, #00000000 25%,#00000000 75%, #00000080 100%),url('<?php echo get_template_directory_uri() ?>/image/covers/seccion-hogar-1.jpg')">
 </div>
 <div class="blog-container-width">
-	<h2 class="kit-single-title mb-0">Kit Solar <?php the_title(); ?></h2>
+	<h2 class="kit-single-title mb-0"> Instalaci&oacute;n fotovoltaica de <?php the_title(); ?></h2>
 </div>
 <div class="blog-container">
 
