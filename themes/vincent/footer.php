@@ -157,7 +157,7 @@ grecaptcha.ready(function () {
 		</div>
 	</section>
 	<section>
-		<h3 style="width: 100%; text-align: center; padding-top: 100px;">2019 Vincent Solar | Todos los derechos reservados</h3>
+		<h3 style="width: 100%; text-align: center; padding-top: 100px;">2020 Vincent Solar | Todos los derechos reservados</h3>
 	</section>
 
 </footer>
@@ -166,9 +166,9 @@ grecaptcha.ready(function () {
 <div class="bottom-dock">
 	<div class="dock-button desk">
 		<div id="collapseContacto" class="collapse">
-			<a href="tel:+56322948569">
+			<a href="tel:+56228696306">
 				<i class="fas fa-phone"></i>
-				(32) 294 8569
+				(2) 2869 6306
 			</a>
 			<a href="mailto:info@vincentsolar.com?subject=Contacto%20|%20Vincent%20Solar%20-%20Kit%20Solar%20Ongrid%20|%20Kit%20Solar%20Offgrid%20|%20Energía%20Solar%20|%20Panel%20Solar%20Fotovoltaico%20|%20Paneles%20Fotovoltaicos">
 				<i class="fas fa-envelope"></i>
@@ -187,7 +187,7 @@ grecaptcha.ready(function () {
 				<i class="fas fa-envelope"></i>
 				Correo
 			</a>
-			<a href="tel:+56322948569">
+			<a href="tel:+56228696306">
 				<i class="fas fa-phone"></i>
 				Llamar
 			</a>
@@ -200,7 +200,7 @@ grecaptcha.ready(function () {
 		</a>
 	</div>
 	<div class="dock-button mov" style="margin-bottom: 5px;">
-		<a href="tel:+56322948569">
+		<a href="tel:+56228696306">
 			<i class="fas fa-phone"></i> Llamar
 		</a>
 		<img src="<?php echo get_template_directory_uri() ?>/image/snippets/it_line.png">
