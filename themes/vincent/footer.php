@@ -113,9 +113,9 @@ grecaptcha.ready(function () {
 			</div>
 		</address>
 		<address>
-			<a href="tel:+56322948569">
+			<a href="tel:+56228696306">
 				<i class="fas fa-phone"></i>
-				+56 32 2948 569
+				+56 2 2869 6306
 			</a>
 		</address>
 		<address>
