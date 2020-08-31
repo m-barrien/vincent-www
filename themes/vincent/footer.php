@@ -91,7 +91,7 @@ grecaptcha.ready(function () {
 		<address>
 			<i class="fas fa-map-marker-alt"></i>
 			<div class="address-text">
-				Los Conquistadores 1925
+				Huechuraba
 				<br>
 				<span>Santiago, Chile</span>
 			</div>
@@ -99,9 +99,9 @@ grecaptcha.ready(function () {
 		<address>
 			<i class="fas fa-map-marker-alt"></i>
 			<div class="address-text">
-				Av. Industrial 1198
+				Conc&oacute;n
 				<br>
-				<span>El Belloto, Chile</span>
+				<span>Valparaiso, Chile</span>
 			</div>
 		</address>
 		<address>
