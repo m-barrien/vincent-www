@@ -182,6 +182,7 @@ grecaptcha.ready(function () {
 		<img src="<?php echo get_template_directory_uri() ?>/image/snippets/it_line.png">
 	</div>
 	<div class="dock-button mov" style="margin-bottom: 5px;">
+			<!--
 		<div id="collapseContacto" class="collapse">
 			<a href="mailto:info@vincentsolar.com?subject=Contacto%20|%20Vincent%20Solar%20-%20Kit%20Solar%20Ongrid%20|%20Kit%20Solar%20Offgrid%20|%20Energía%20Solar%20|%20Panel%20Solar%20Fotovoltaico%20|%20Paneles%20Fotovoltaicos">
 				<i class="fas fa-envelope"></i>
@@ -192,12 +193,17 @@ grecaptcha.ready(function () {
 				Llamar
 			</a>
 		</div>
+			-->
+			<a href="#modalContacto" data-toggle="modal" data-target="#modalContacto">
+				<i class="fas fa-hand-pointer"></i>
+				Contacto
+			</a>
 		<!-- 
 		<a data-toggle="collapse" href="#collapseContacto" role="button" aria-expanded="false" aria-controls="collapseContacto"> 
-		-->
 		<a href="mailto:info@vincentsolar.com?subject=Contacto%20|%20Vincent%20Solar%20-%20Kit%20Solar%20Ongrid%20|%20Kit%20Solar%20Offgrid%20|%20Energía%20Solar%20|%20Panel%20Solar%20Fotovoltaico%20|%20Paneles%20Fotovoltaicos">
 			<i class="fas fa-envelope"></i> Consulta
 		</a>
+		-->
 	</div>
 	<div class="dock-button mov" style="margin-bottom: 5px;">
 		<a href="tel:+56228696306">
@@ -210,4 +216,3 @@ grecaptcha.ready(function () {
 
   </body>
 </html>
-<a href=""></a>

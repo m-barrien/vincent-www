@@ -118,7 +118,7 @@ get_header();
 							 
 							<br>
 							<span class="big">
-								$3.000.000
+								$2.500.000<small>+IVA</small> 
 							</span>
 
 						</div>
@@ -146,7 +146,7 @@ get_header();
 							 
 							<br>
 							<span class="big">
-								$5.000.000
+								$4.500.000<small>+IVA</small> 
 							</span>
 
 						</div>
