@@ -194,9 +194,9 @@ grecaptcha.ready(function () {
 			</a>
 		</div>
 			-->
-			<a href="#modalContacto" data-toggle="modal" data-target="#modalContacto">
+			<a href="mailto:info@vincentsolar.com?subject=Contacto%20|%20Vincent%20Solar%20-%20Kit%20Solar%20Ongrid%20|%20Kit%20Solar%20Offgrid%20|%20Energía%20Solar%20|%20Panel%20Solar%20Fotovoltaico%20|%20Paneles%20Fotovoltaicos">
 				<i class="fas fa-hand-pointer"></i>
-				Contacto
+				Consulta
 			</a>
 		<!-- 
 		<a data-toggle="collapse" href="#collapseContacto" role="button" aria-expanded="false" aria-controls="collapseContacto"> 
